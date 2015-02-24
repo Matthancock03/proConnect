@@ -1,0 +1,6 @@
+2015-02-17 18:54:46,160 - [INFO] - from play in pool-6-thread-1 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2015-02-17 19:08:41,707 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
