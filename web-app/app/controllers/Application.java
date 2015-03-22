@@ -15,11 +15,6 @@ import play.libs.EventSource;
 
 public class Application extends Controller{
 
-  public static Result index(){
-
-    return ok(login.render(""));
-  }
-
 
   public static Result register(){
     return ok("Registered!");

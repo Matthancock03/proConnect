@@ -2,13 +2,11 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET     /		                      controllers.Application.index()
 POST     /register                 controllers.Application.register()
 POST     /login                    controllers.Application.login()
 POST     /loginUser                controllers.DbController.loginUser()
 POST     /signUpUser               controllers.DbController.signUpUser()
-GET    /loginUser                controllers.DbController.loginForm()
-GET    /signUpUser               controllers.DbController.signUpForm()
+GET      /                         controllers.DbController.loginPage()
 
 
 # Map static resources from the /public folder to the /assets URL path

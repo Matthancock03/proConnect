@@ -1,6 +1,6 @@
-@(message: String)
-@(loginFormData : Form[views.formData.loginFormData])
-@(signUpFormData : Form[views.formData.signUpFormData])
+
+@(message: String,loginForm : Form[views.formData.loginFormData], signUpForm : Form[views.formData.signUpFormData])
+
 
 @import helper._
 
@@ -31,23 +31,23 @@
 				<input class="form-control"
 				placeholder="Email Address"
 				type="email"
-				name="@signUpFormData("email").name"
-				id="@signUpFormData("email").id"
-				value="@signUpFormData("email").value"
+				name="@signUpForm("email").name"
+				id="@signUpForm("email").id"
+				value="@signUpForm("email").value"
 			/>
 		<input class="form-control"
 				placeholder="Password"
 				type="password"
-				name="@signUpFormData("password").name"
-				id="@signUpFormData("password").id"
-				value="@signUpFormData("password").value"
+				name="@signUpForm("password").name"
+				id="@signUpForm("password").id"
+				value="@signUpForm("password").value"
 			/>
 		<input class="form-control"
 				placeholder="Verify Password"
 				type="password"
-				name="@signUpFormData("passwordVerification").name"
-				id="@signUpFormData("passwordVerification").id"
-				value="@signUpFormData("passwordVerification").value"
+				name="@signUpForm("passwordVerification").name"
+				id="@signUpForm("passwordVerification").id"
+				value="@signUpForm("passwordVerification").value"
 			/>
 		<div class="checkbox"><label><input type="checkbox" value="remember-me" />Remember Me</label>
 		</div><button class="btn btn-success btn-lg btn-block" type="submit">Sign Up</button>
@@ -60,16 +60,16 @@
 			<input class="form-control"
 					placeholder="Email Address"
 					type="email"
-					name="@loginFormData("email").name"
-					id="@loginFormData("email").id"
-					value="@loginFormData("email").value"
+					name="@loginForm("email").name"
+					id="@loginForm("email").id"
+					value="@loginForm("email").value"
 				/>
 			<input class="form-control"
 					placeholder="Password"
 					type="password"
-					name="@loginFormData("password").name"
-					id="@loginFormData("password").id"
-					value="@loginFormData("password").value"
+					name="@loginForm("password").name"
+					id="@loginForm("password").id"
+					value="@loginForm("password").value"
 				/>
 
 		<div class="checkbox"><label>
