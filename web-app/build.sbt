@@ -18,4 +18,4 @@ libraryDependencies ++= Seq(
   // "group" % "artifact" % "version"
 )
 
-play.Project.playScalaSettings
+play.Project.playJavaSettings

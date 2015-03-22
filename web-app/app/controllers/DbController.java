@@ -1,8 +1,6 @@
 package controllers;
 
-import play.api.db.DB;
-import anorm.Sql;
-import anorm.SqlParser;
+
 import play.*;
 import play.api.libs.json.JsPath;
 import play.mvc.*;
@@ -15,18 +13,10 @@ public class DbController extends Controller{
 
 
   public static Result loginPage(){
-    Form<loginFormData> formData = Form.form(loginFormData.class);
-    return ok(login.render("", loginForm(), signUpForm()));
-  }
+    Form<loginFormData> loginFormData = Form.form(loginFormData.class);
+    Form<signUpFormData> signUpFormData = Form.form(signUpFormData.class);
 
-  public static Form loginForm(){
-    Form<loginFormData> formData = Form.form(loginFormData.class);
-    return formData;
-  }
-
-  public static Form signUpForm(){
-    Form<signUpFormData> formData = Form.form(signUpFormData.class);
-    return formData;
+    return ok(login.render("", loginFormData, signUpFormData));
   }
 
   public static Result loginUser(){

@@ -8,9 +8,16 @@ import play.api.templates._
 import play.api.templates.PlayMagic._
 import models._
 import controllers._
+import java.lang._
+import java.util._
+import scala.collection.JavaConversions._
+import scala.collection.JavaConverters._
 import play.api.i18n._
-import play.api.mvc._
-import play.api.data._
+import play.core.j.PlayMagicForJava._
+import play.mvc._
+import play.data._
+import play.api.data.Field
+import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
 object main extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template2[String,Html,play.api.templates.HtmlFormat.Appendable] {
@@ -54,11 +61,11 @@ Seq[Any](format.raw/*1.32*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Mar 22 13:41:20 PDT 2015
+                    DATE: Sun Mar 22 14:46:15 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/main.scala.html
-                    HASH: 924421b5eb8f24b1a9eda0e17aecba017aefb78e
-                    MATRIX: 560->1|684->31|772->84|798->89|1443->698|1472->705
-                    LINES: 19->1|22->1|28->7|28->7|42->21|42->21
+                    HASH: 986078b2244df647525aac00eba501a374a59b58
+                    MATRIX: 778->1|902->31|990->84|1016->89|1661->698|1690->705
+                    LINES: 26->1|29->1|35->7|35->7|49->21|49->21
                     -- GENERATED --
                 */
             
