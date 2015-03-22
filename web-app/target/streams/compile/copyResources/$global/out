@@ -1,5 +1,5 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/home/misanthropic/repos/proConnect/target/scala-2.10/resource_managed/main/public/stylesheets/index.css,/home/misanthropic/repos/proConnect/target/scala-2.10/classes/public/stylesheets/index.css)[0m
-[0m[[0mdebug[0m] [0m	(/home/misanthropic/repos/proConnect/target/scala-2.10/resource_managed/main/public/stylesheets/index.min.css,/home/misanthropic/repos/proConnect/target/scala-2.10/classes/public/stylesheets/index.min.css)[0m
-[0m[[0mdebug[0m] [0m	(/home/misanthropic/repos/proConnect/conf/application.conf,/home/misanthropic/repos/proConnect/target/scala-2.10/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/home/misanthropic/repos/proConnect/conf/routes,/home/misanthropic/repos/proConnect/target/scala-2.10/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/misanthropic/repos/schoolWork/proConnect/web-app/target/scala-2.10/resource_managed/main/public/stylesheets/index.css,/home/misanthropic/repos/schoolWork/proConnect/web-app/target/scala-2.10/classes/public/stylesheets/index.css)[0m
+[0m[[0mdebug[0m] [0m	(/home/misanthropic/repos/schoolWork/proConnect/web-app/target/scala-2.10/resource_managed/main/public/stylesheets/index.min.css,/home/misanthropic/repos/schoolWork/proConnect/web-app/target/scala-2.10/classes/public/stylesheets/index.min.css)[0m
+[0m[[0mdebug[0m] [0m	(/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/application.conf,/home/misanthropic/repos/schoolWork/proConnect/web-app/target/scala-2.10/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes,/home/misanthropic/repos/schoolWork/proConnect/web-app/target/scala-2.10/classes/routes)[0m

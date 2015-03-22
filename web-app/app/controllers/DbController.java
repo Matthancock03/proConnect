@@ -7,6 +7,7 @@ import play.mvc.*;
 import views.formData.*;
 import views.html.*;
 import play.data.*;
+import play.Logger;
 
 
 public class DbController extends Controller{
@@ -22,15 +23,15 @@ public class DbController extends Controller{
   public static Result loginUser(){
     Form<loginFormData> formData = Form.form(loginFormData.class).bindFromRequest();
     loginFormData user = formData.get();
-    System.out.println(user.email + "  " + user.password);
-    return ok("");
+    Logger.debug(user.email + "  " + user.password);
+    return ok("Logged In!");
   }
 
   public static Result signUpUser(){
     Form<signUpFormData> formData = Form.form(signUpFormData.class).bindFromRequest();
     signUpFormData user = formData.get();
-    System.out.println(user.email + "  " + user.password + "  " + user.passwordVerification);
-    return ok("");
+    Logger.debug(user.email + "  " + user.password + "  " + user.passwordVerification);
+    return ok("Registered!");
   }
 
 }
