@@ -1,4 +1,8 @@
 @(message: String)
+@(signUpFormData : Form[views.formData.signUpFormData])
+@(lognFormData : Form[views.formData.loginFormData])
+
+@import helper._
 
 @main("ProConnect") {
 
@@ -21,23 +25,58 @@
 	<div class="container">
 	<div class="col-lg-2 col-md-2 col-sm-2"></div>
 
-	<form class="form-login col-lg-4 col-md-4 col-sm-4" action = "@routes.Application.register()" method ="post" role="form">
-	<h2 class="form-login-heading">Sign Up</h2>
-	<input class="form-control" placeholder="Email Address" type="email" name="email" />
-	<input class="form-control" placeholder="Password" type="password" name="password" />
-	<input class="form-control" placeholder="Verify Password" type="password" name="passwordVerification" />
-	<div class="checkbox"><label><input type="checkbox" value="remember-me" />Remember Me</label>
-	</div><button class="btn btn-success btn-lg btn-block" type="submit">Sign Up</button>
-	</form>
+  @form(routes.DbController.signUpUser(), 'class -> "form-login col-lg-4 col-md-4 col-sm-4"){
+	<div class="form-group">
+		<h2 class="form-login-heading">Sign Up</h2>
+				<input class="form-control"
+				placeholder="Email Address"
+				type="email"
+				name="@signUpFormData("email").name"
+				id="@signUpFormData("email").id"
+				value="@signUpFormData("email").value"
+			/>
+		<input class="form-control"
+				placeholder="Password"
+				type="password"
+				name="@signUpFormData("password").name"
+				id="@signUpFormData("password").id"
+				value="@signUpFormData("password").value"
+			/>
+		<input class="form-control"
+				placeholder="Verify Password"
+				type="password"
+				name="@signUpFormData("passwordVerification").name"
+				id="@signUpFormData("passwordVerification").id"
+				value="@signUpFormData("passwordVerification").value"
+			/>
+		<div class="checkbox"><label><input type="checkbox" value="remember-me" />Remember Me</label>
+		</div><button class="btn btn-success btn-lg btn-block" type="submit">Sign Up</button>
+	</div>
+	}
 
-	<form class="form-signin col-lg-4 col-md-4 col-sm-4" action = "@routes.Application.login()" method = "post" role="form">
-	<h2 class="form-signin-heading">Welcome</h2>
-	<input class="form-control" placeholder="Email Address" type="email" name="email" />
-	<input class="form-control" placeholder="Password" type="password" name="password" />
-	<div class="checkbox"><label>
-	<input type="checkbox" value="remember-me" />Remember Me</label></div>
-	<button class="btn btn-primary btn-lg btn-block" type="submit">Login In</button>
-	<h5 lass="form-signin-heading" style="color:red">@message</h5>
-	</form></div>
+	@form(routes.DbController.loginUser(), 'class -> "form-login col-lg-4 col-md-4 col-sm-4"){
+	<div class="form-group">
+		<h2 class="form-signin-heading">Welcome</h2>
+			<input class="form-control"
+					placeholder="Email Address"
+					type="email"
+					name="@loginFormData("email").name"
+					id="@loginFormData("email").id"
+					value="@loginFormData("email").value"
+				/>
+			<input class="form-control"
+					placeholder="Password"
+					type="password"
+					name="@loginFormData("password").name"
+					id="@loginFormData("password").id"
+					value="@loginFormData("password").value"
+				/>
 
+		<div class="checkbox"><label>
+		<input type="checkbox" value="remember-me" />Remember Me</label></div>
+		<button class="btn btn-primary btn-lg btn-block" type="submit">Login In</button>
+		<h5 lass="form-signin-heading" style="color:red">@message</h5>
+	</div>
+	}
+</div>
 }
