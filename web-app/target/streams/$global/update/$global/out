@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@712eae4d[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52677829[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.2[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.2[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.2 in sbt-chain[0m
@@ -612,27 +612,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.10;2.2.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-java-jdbc_2.10;2.2.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-java-jdbc_2.10;2.2.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-java-jdbc_2.10/2.2.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#play-java-jdbc_2.10;2.2.1[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/activator-1.2.12/repository/com.typesafe.play/play-java-jdbc_2.10/2.2.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#play-java-jdbc_2.10;2.2.1[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.play#play-java-jdbc_2.10;2.2.1[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.pom[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.play#play-java-jdbc_2.10;2.2.1[0m
-[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.pom (2.2.1)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.pom[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-java-jdbc_2.10;2.2.1!play-java-jdbc_2.10.pom(pom.original) (1291ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-java-jdbc_2.10/2.2.1/jars/play-java-jdbc_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/activator-1.2.12/repository/com.typesafe.play/play-java-jdbc_2.10/2.2.1/jars/play-java-jdbc_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.jar[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java-jdbc_2.10;2.2.1 in typesafe-releases[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-java-jdbc_2.10;2.2.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-java-jdbc_2.10;2.2.1[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java-jdbc_2.10;2.2.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.10;2.2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.10;2.2.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.1->com.typesafe.play#play-jdbc_2.10;2.2.1 [compile->master(*)][0m
@@ -874,6 +856,28 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving postgresql#postgresql;9.1-901-1.jdbc4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: postgresql#postgresql;9.1-901-1.jdbc4 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/postgresql/postgresql/9.1-901-1.jdbc4/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for postgresql#postgresql;9.1-901-1.jdbc4[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/activator-1.2.12/repository/postgresql/postgresql/9.1-901-1.jdbc4/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for postgresql#postgresql;9.1-901-1.jdbc4[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for postgresql#postgresql;9.1-901-1.jdbc4[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.pom (9.1-901-1.jdbc4)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] postgresql#postgresql;9.1-901-1.jdbc4!postgresql.pom(pom.original) (445ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/postgresql/postgresql/9.1-901-1.jdbc4/jars/postgresql.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/activator-1.2.12/repository/postgresql/postgresql/9.1-901-1.jdbc4/jars/postgresql.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar[0m
+[0m[[0mdebug[0m] [0m	found postgresql#postgresql;9.1-901-1.jdbc4 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
@@ -1377,6 +1381,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
@@ -1881,6 +1889,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
@@ -3439,6 +3451,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
@@ -3945,6 +3961,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
@@ -4451,6 +4471,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.mindrot#jbcrypt;0.3m [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
@@ -5741,16 +5765,17 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.2!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-jdbc_2.10;2.2.1!play-jdbc_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#anorm_2.10;2.2.1!anorm_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.jar[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-java-jdbc_2.10;2.2.1!play-java-jdbc_2.10.jar (922ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-jdbc_2.10;2.2.1!play-java-jdbc_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java_2.10;2.2.1!play-java_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#webjars-play_2.10;2.2.0!webjars-play_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#bootstrap;2.3.1!bootstrap.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.mindrot#jbcrypt;0.3m!jbcrypt.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] postgresql#postgresql;9.1-901-1.jdbc4!postgresql.jar (1194ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play_2.10;2.2.1!play_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.jolbox#bonecp;0.8.0.RELEASE!bonecp.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.guava#guava;14.0.1!guava.jar(bundle)[0m
@@ -5870,7 +5895,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.2!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.2!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 7293ms :: artifacts dl 1002ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 8312ms :: artifacts dl 1308ms[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT compile produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT runtime produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT test produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-test.xml[0m
@@ -5884,5 +5909,5 @@
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT docs produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT pom produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT scala-tool produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (7293ms resolve - 1002ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (8312ms resolve - 1308ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

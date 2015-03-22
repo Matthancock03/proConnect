@@ -9,7 +9,8 @@ libraryDependencies ++= Seq(
     javaCore,
   "org.webjars" %% "webjars-play" % "2.2.0",
   "org.webjars" % "bootstrap" % "2.3.1",
-  "org.mindrot"  % "jbcrypt"   % "0.3m"
+  "org.mindrot"  % "jbcrypt"   % "0.3m",
+  "postgresql" % "postgresql" % "9.1-901-1.jdbc4"
 )
 
 play.Project.playJavaSettings

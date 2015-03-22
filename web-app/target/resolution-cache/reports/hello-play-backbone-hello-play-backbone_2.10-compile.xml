@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150322151748"/>
+		date="20150322162322"/>
 	<dependencies>
 		<module organisation="org.mindrot" name="jbcrypt">
 			<revision name="0.3m" status="release" pubdate="20100516194639" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.mindrot.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="66">
@@ -82,11 +82,11 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-java-jdbc_2.10">
-			<revision name="2.2.1" status="release" pubdate="20150322000628" resolver="typesafe-releases" artresolver="typesafe-releases" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="47">
-				<metadata-artifact status="successful" details="" size="1215" time="1291" location="/home/misanthropic/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/ivy-2.2.1.xml" searched="true" original-local-location="/home/misanthropic/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/ivy-2.2.1.xml.original" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.pom"/>
+			<revision name="2.2.1" status="release" pubdate="20150322000628" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="47">
+				<metadata-artifact status="no" details="" size="2710" time="0" location="/home/misanthropic/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/ivy-2.2.1.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.pom"/>
 				<caller organisation="hello-play-backbone" name="hello-play-backbone_2.10" conf="compile" rev="2.2.1" rev-constraint-default="2.2.1" rev-constraint-dynamic="2.2.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-java-jdbc_2.10" type="jar" ext="jar" status="successful" details="" size="1141" time="922" location="/home/misanthropic/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.1.jar">
+					<artifact name="play-java-jdbc_2.10" type="jar" ext="jar" status="no" details="" size="1141" time="0" location="/home/misanthropic/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.1.jar">
 						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.1/play-java-jdbc_2.10-2.2.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -299,6 +299,18 @@
 				<artifacts>
 					<artifact name="bonecp" type="bundle" ext="jar" status="no" details="" size="110600" time="0" location="/home/misanthropic/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar">
 						<origin-location is-local="false" location="file:/home/misanthropic/activator-1.2.12/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="postgresql" name="postgresql">
+			<revision name="9.1-901-1.jdbc4" status="release" pubdate="20111218155532" resolver="public" artresolver="public" homepage="http://jdbc.postgresql.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="67">
+				<license name="BSD License" url="http://jdbc.postgresql.org/license.html"/>
+				<metadata-artifact status="successful" details="" size="1064" time="445" location="/home/misanthropic/.ivy2/cache/postgresql/postgresql/ivy-9.1-901-1.jdbc4.xml" searched="true" original-local-location="/home/misanthropic/.ivy2/cache/postgresql/postgresql/ivy-9.1-901-1.jdbc4.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.pom"/>
+				<caller organisation="hello-play-backbone" name="hello-play-backbone_2.10" conf="compile" rev="9.1-901-1.jdbc4" rev-constraint-default="9.1-901-1.jdbc4" rev-constraint-dynamic="9.1-901-1.jdbc4" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="postgresql" type="jar" ext="jar" status="successful" details="" size="551290" time="1194" location="/home/misanthropic/.ivy2/cache/postgresql/postgresql/jars/postgresql-9.1-901-1.jdbc4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
