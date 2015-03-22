@@ -1,6 +1,6 @@
-// @SOURCE:/home/misanthropic/repos/proConnect/conf/routes
-// @HASH:e118739800617f598833eeb54d321bdf4b5c3068
-// @DATE:Tue Feb 17 09:41:37 PST 2015
+// @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
+// @HASH:3bae227fd90d9122959f41da5d9bb30cf45a763b
+// @DATE:Sun Mar 22 13:41:16 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -13,18 +13,22 @@ import play.api.mvc._
 import Router.queryString
 
 
+// @LINE:16
+// @LINE:15
 // @LINE:11
 // @LINE:10
+// @LINE:9
+// @LINE:8
 // @LINE:7
 // @LINE:6
 // @LINE:5
 package controllers {
 
-// @LINE:11
+// @LINE:16
 class ReverseWebJarAssets {
     
 
-// @LINE:11
+// @LINE:16
 def at(file:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "webjars/" + implicitly[PathBindable[String]].unbind("file", file))
 }
@@ -33,13 +37,47 @@ def at(file:String): Call = {
 }
                           
 
-// @LINE:10
+// @LINE:15
 class ReverseAssets {
     
 
-// @LINE:10
+// @LINE:15
 def at(file:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
+}
+                                                
+    
+}
+                          
+
+// @LINE:11
+// @LINE:10
+// @LINE:9
+// @LINE:8
+class ReverseDbController {
+    
+
+// @LINE:11
+def signUpForm(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "signUpUser")
+}
+                                                
+
+// @LINE:9
+def signUpUser(): Call = {
+   Call("POST", _prefix + { _defaultPrefix } + "signUpUser")
+}
+                                                
+
+// @LINE:8
+def loginUser(): Call = {
+   Call("POST", _prefix + { _defaultPrefix } + "loginUser")
+}
+                                                
+
+// @LINE:10
+def loginForm(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "loginUser")
 }
                                                 
     
@@ -76,18 +114,22 @@ def login(): Call = {
                   
 
 
+// @LINE:16
+// @LINE:15
 // @LINE:11
 // @LINE:10
+// @LINE:9
+// @LINE:8
 // @LINE:7
 // @LINE:6
 // @LINE:5
 package controllers.javascript {
 
-// @LINE:11
+// @LINE:16
 class ReverseWebJarAssets {
     
 
-// @LINE:11
+// @LINE:16
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WebJarAssets.at",
    """
@@ -101,16 +143,70 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:10
+// @LINE:15
 class ReverseAssets {
     
 
-// @LINE:10
+// @LINE:15
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.at",
    """
       function(file) {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("file", file)})
+      }
+   """
+)
+                        
+    
+}
+              
+
+// @LINE:11
+// @LINE:10
+// @LINE:9
+// @LINE:8
+class ReverseDbController {
+    
+
+// @LINE:11
+def signUpForm : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.DbController.signUpForm",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "signUpUser"})
+      }
+   """
+)
+                        
+
+// @LINE:9
+def signUpUser : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.DbController.signUpUser",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "signUpUser"})
+      }
+   """
+)
+                        
+
+// @LINE:8
+def loginUser : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.DbController.loginUser",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "loginUser"})
+      }
+   """
+)
+                        
+
+// @LINE:10
+def loginForm : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.DbController.loginForm",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "loginUser"})
       }
    """
 )
@@ -164,19 +260,23 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:16
+// @LINE:15
 // @LINE:11
 // @LINE:10
+// @LINE:9
+// @LINE:8
 // @LINE:7
 // @LINE:6
 // @LINE:5
 package controllers.ref {
 
 
-// @LINE:11
+// @LINE:16
 class ReverseWebJarAssets {
     
 
-// @LINE:11
+// @LINE:16
 def at(file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.WebJarAssets.at(file), HandlerDef(this, "controllers.WebJarAssets", "at", Seq(classOf[String]), "GET", """""", _prefix + """webjars/$file<.+>""")
 )
@@ -185,13 +285,47 @@ def at(file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
-// @LINE:10
+// @LINE:15
 class ReverseAssets {
     
 
-// @LINE:10
+// @LINE:15
 def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this, "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
+)
+                      
+    
+}
+                          
+
+// @LINE:11
+// @LINE:10
+// @LINE:9
+// @LINE:8
+class ReverseDbController {
+    
+
+// @LINE:11
+def signUpForm(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.DbController.signUpForm(), HandlerDef(this, "controllers.DbController", "signUpForm", Seq(), "GET", """""", _prefix + """signUpUser""")
+)
+                      
+
+// @LINE:9
+def signUpUser(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.DbController.signUpUser(), HandlerDef(this, "controllers.DbController", "signUpUser", Seq(), "POST", """""", _prefix + """signUpUser""")
+)
+                      
+
+// @LINE:8
+def loginUser(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.DbController.loginUser(), HandlerDef(this, "controllers.DbController", "loginUser", Seq(), "POST", """""", _prefix + """loginUser""")
+)
+                      
+
+// @LINE:10
+def loginForm(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.DbController.loginForm(), HandlerDef(this, "controllers.DbController", "loginForm", Seq(), "GET", """""", _prefix + """loginUser""")
 )
                       
     
