@@ -62,3 +62,9 @@ Caused by: org.postgresql.util.PSQLException: FATAL: no pg_hba.conf entry for ho
 	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:245) ~[play-jdbc_2.10-2.2.1.jar:2.2.1]
 	... 30 common frames omitted
 
+2015-03-22 23:19:55,440 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-22 23:19:55,480 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
