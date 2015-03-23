@@ -11,11 +11,13 @@ import anorm.SqlParser;
 import controllers.*;
 import org.mindrot.jbcrypt.BCrypt;
 import java.net.*;
+import play.Logger;
+
 
 public class LoginDB{
 
   public static void getConnection(){
-
+    /*
     try{
     URI dbUri = new URI(System.getenv("DATABASE_URL"));
     String username = dbUri.getUserInfo().split(":")[0];
@@ -23,8 +25,8 @@ public class LoginDB{
     String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
     Connection connection = DriverManager.getConnection(dbUrl, username, password);
     } catch (Exception ex) {
-            //Logger.getLogger(Jdbc.class.getName()).log(Level.SEVERE, null, ex);
-        }
 
+        }
+    */
   }
 }
