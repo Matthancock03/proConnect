@@ -12,6 +12,11 @@ import org.mindrot.jbcrypt.BCrypt;
 
 public class LoginDB{
 
-  Connection connection = DB.getConnection();
+  URI dbUri = new URI(System.getenv("DATABASE_URL"));
+  String username = dbUri.getUserInfo().split(":")[0];
+  String password = dbUri.getUserInfo().split(":")[1];
+  String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+  Connection connection = DriverManager.getConnection(dbUrl, username, password);
 
+  
 }
