@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52677829[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@55e6b021[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.2[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.2[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.2 in sbt-chain[0m
@@ -859,25 +859,88 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving postgresql#postgresql;9.1-901-1.jdbc4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: postgresql#postgresql;9.1-901-1.jdbc4 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/postgresql/postgresql/9.1-901-1.jdbc4/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for postgresql#postgresql;9.1-901-1.jdbc4[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/activator-1.2.12/repository/postgresql/postgresql/9.1-901-1.jdbc4/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for postgresql#postgresql;9.1-901-1.jdbc4[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for postgresql#postgresql;9.1-901-1.jdbc4[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.pom (9.1-901-1.jdbc4)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] postgresql#postgresql;9.1-901-1.jdbc4!postgresql.pom(pom.original) (445ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/postgresql/postgresql/9.1-901-1.jdbc4/jars/postgresql.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/activator-1.2.12/repository/postgresql/postgresql/9.1-901-1.jdbc4/jars/postgresql.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar[0m
-[0m[[0mdebug[0m] [0m	found postgresql#postgresql;9.1-901-1.jdbc4 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: postgresql#postgresql;9.1-901-1.jdbc4[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: postgresql#postgresql;9.1-901-1.jdbc4[0m
+[0m[[0mdebug[0m] [0m	found postgresql#postgresql;9.1-901-1.jdbc4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->be.objectify#deadbolt-java_2.10;2.2-RC5 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving be.objectify#deadbolt-java_2.10;2.2-RC5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: be.objectify#deadbolt-java_2.10;2.2-RC5 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: be.objectify#deadbolt-java_2.10;2.2-RC5[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: be.objectify#deadbolt-java_2.10;2.2-RC5[0m
+[0m[[0mdebug[0m] [0m	found be.objectify#deadbolt-java_2.10;2.2-RC5 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#play-cache_2.10;2.2.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-cache_2.10;2.2.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-cache_2.10;2.2.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-cache_2.10;2.2.0[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-cache_2.10;2.2.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving net.sf.ehcache#ehcache-core;2.6.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.sf.ehcache#ehcache-core;2.6.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.sf.ehcache#ehcache-core;2.6.6[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: net.sf.ehcache#ehcache-core;2.6.6[0m
+[0m[[0mdebug[0m] [0m	found net.sf.ehcache#ehcache-core;2.6.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.hibernate#hibernate-core;3.5.1-Final {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.hibernate#hibernate-core;3.3.2.GA {provided=[compile(*), provided(*), runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1.1 {test=[runtime(*), master(*)]} => dependency: commons-logging#commons-logging;1.0.4 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->be.objectify#deadbolt-core_2.10;2.2-RC4 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving be.objectify#deadbolt-core_2.10;2.2-RC4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: be.objectify#deadbolt-core_2.10;2.2-RC4 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: be.objectify#deadbolt-core_2.10;2.2-RC4[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: be.objectify#deadbolt-core_2.10;2.2-RC4[0m
+[0m[[0mdebug[0m] [0m	found be.objectify#deadbolt-core_2.10;2.2-RC4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
@@ -1385,6 +1448,60 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->be.objectify#deadbolt-java_2.10;2.2-RC5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.hibernate#hibernate-core;3.5.1-Final {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.hibernate#hibernate-core;3.3.2.GA {provided=[compile(*), provided(*), runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1.1 {test=[runtime(*), master(*)]} => dependency: commons-logging#commons-logging;1.0.4 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->be.objectify#deadbolt-core_2.10;2.2-RC4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
@@ -1893,6 +2010,60 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->be.objectify#deadbolt-java_2.10;2.2-RC5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.hibernate#hibernate-core;3.5.1-Final {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.hibernate#hibernate-core;3.3.2.GA {provided=[compile(*), provided(*), runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1.1 {test=[runtime(*), master(*)]} => dependency: commons-logging#commons-logging;1.0.4 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->be.objectify#deadbolt-core_2.10;2.2-RC4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
@@ -3455,6 +3626,60 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->be.objectify#deadbolt-java_2.10;2.2-RC5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.hibernate#hibernate-core;3.5.1-Final {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.hibernate#hibernate-core;3.3.2.GA {provided=[compile(*), provided(*), runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1.1 {test=[runtime(*), master(*)]} => dependency: commons-logging#commons-logging;1.0.4 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->be.objectify#deadbolt-core_2.10;2.2-RC4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
@@ -3965,6 +4190,60 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->be.objectify#deadbolt-java_2.10;2.2-RC5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.hibernate#hibernate-core;3.5.1-Final {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.hibernate#hibernate-core;3.3.2.GA {provided=[compile(*), provided(*), runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1.1 {test=[runtime(*), master(*)]} => dependency: commons-logging#commons-logging;1.0.4 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->be.objectify#deadbolt-core_2.10;2.2-RC4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
@@ -4475,6 +4754,60 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->postgresql#postgresql;9.1-901-1.jdbc4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->be.objectify#deadbolt-java_2.10;2.2-RC5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-java_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.hibernate#hibernate-core;3.5.1-Final {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.hibernate#hibernate-core;3.3.2.GA {provided=[compile(*), provided(*), runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1.1 {test=[runtime(*), master(*)]} => dependency: commons-logging#commons-logging;1.0.4 {test=[runtime(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->com.typesafe.play#play_2.10;2.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.0->net.sf.ehcache#ehcache-core;2.6.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->com.typesafe.play#play-cache_2.10;2.2.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-java_2.10;2.2-RC5->be.objectify#deadbolt-core_2.10;2.2-RC4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play_2.10;2.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies be.objectify#deadbolt-core_2.10;2.2-RC4->com.typesafe.play#play-java_2.10;2.2.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play_2.10;2.2.1 [compile->compile][0m
@@ -5770,12 +6103,8 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#webjars-play_2.10;2.2.0!webjars-play_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#bootstrap;2.3.1!bootstrap.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.mindrot#jbcrypt;0.3m!jbcrypt.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/postgresql/postgresql/9.1-901-1.jdbc4/postgresql-9.1-901-1.jdbc4.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] postgresql#postgresql;9.1-901-1.jdbc4!postgresql.jar (1194ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] postgresql#postgresql;9.1-901-1.jdbc4!postgresql.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] be.objectify#deadbolt-java_2.10;2.2-RC5!deadbolt-java_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play_2.10;2.2.1!play_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.jolbox#bonecp;0.8.0.RELEASE!bonecp.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.guava#guava;14.0.1!guava.jar(bundle)[0m
@@ -5835,6 +6164,9 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#requirejs;2.1.8!requirejs.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#webjars-locator;0.5!webjars-locator.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#jquery;1.9.0!jquery.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-cache_2.10;2.2.0!play-cache_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] be.objectify#deadbolt-core_2.10;2.2-RC4!deadbolt-core_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.sf.ehcache#ehcache-core;2.6.6!ehcache-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-test_2.10;2.2.1!play-test_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] junit#junit;4.11!junit.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.specs2#specs2_2.10;2.1.1!specs2_2.10.jar[0m
@@ -5895,7 +6227,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.2!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.2!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 8312ms :: artifacts dl 1308ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3901ms :: artifacts dl 79ms[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT compile produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT runtime produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT test produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-test.xml[0m
@@ -5909,5 +6241,5 @@
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT docs produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT pom produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT scala-tool produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (8312ms resolve - 1308ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (3901ms resolve - 79ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

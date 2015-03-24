@@ -1,5 +1,7 @@
 package views.formData;
 import play.data.validation.Constraints;
+import play.data.validation.*;
+import play.data.*;
 
 public class signUpFormData{
 
@@ -7,10 +9,10 @@ public class signUpFormData{
   public String email = "";
   public String password = "";
   public String passwordVerification = "";
-  
+
   public String validate() {
-        if (authenticate(email, password, passwordVerification) == null) {
-            return "Invalid email or password";
+        if (email == null || password == null || passwordVerification == null) {
+            return "Ensure fields are filled correctly";
         }
         return null;
     }
