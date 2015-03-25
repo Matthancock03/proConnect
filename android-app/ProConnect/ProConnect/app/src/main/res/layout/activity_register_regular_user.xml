@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.brandon.proconnect.RegisterRegularUser">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Regular Registration"
+        android:id="@+id/RegularRegistrationTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Username:"
+        android:id="@+id/RegularUsernameText"
+        android:layout_below="@+id/RegularRegistrationTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password"
+        android:id="@+id/RegularPasswordText"
+        android:layout_below="@+id/RegularUsernameText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Confirm Password:"
+        android:id="@+id/RegularConfirmPasswordText"
+        android:layout_below="@+id/RegularPasswordText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email:"
+        android:id="@+id/RegularEmailText"
+        android:layout_below="@+id/RegularConfirmPasswordText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="First Name:"
+        android:id="@+id/RegularFirstNameText"
+        android:layout_below="@+id/RegularEmailText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Last Name:"
+        android:id="@+id/RegularLastNameText"
+        android:layout_below="@+id/RegularFirstNameText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Resume"
+        android:id="@+id/ResumeText"
+        android:layout_below="@+id/RegularLastNameText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Profile Picture"
+        android:id="@+id/RegularProfilePictureText"
+        android:layout_below="@+id/ResumeText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Choose File"
+        android:id="@+id/ResumeButton"
+        android:layout_alignTop="@+id/ResumeText"
+        android:layout_toRightOf="@+id/ResumeText"
+        android:layout_toEndOf="@+id/ResumeText" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Choose FIle"
+        android:id="@+id/ChangeProfilePictureButton"
+        android:layout_alignTop="@+id/RegularProfilePictureText"
+        android:layout_toRightOf="@+id/RegularProfilePictureText"
+        android:layout_toEndOf="@+id/RegularProfilePictureText" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/RegularSubmitButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/ChangeProfilePictureButton"
+        android:layout_alignStart="@+id/ChangeProfilePictureButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/RegularUsernameEdit"
+        android:layout_alignTop="@+id/RegularUsernameText"
+        android:layout_toRightOf="@+id/RegularFirstNameText"
+        android:layout_toEndOf="@+id/RegularFirstNameText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/RegularPasswordEdit"
+        android:layout_alignTop="@+id/RegularPasswordText"
+        android:layout_toRightOf="@+id/RegularPasswordText"
+        android:layout_toEndOf="@+id/RegularPasswordText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/RegularConfirmPasswordEdit"
+        android:layout_alignTop="@+id/RegularConfirmPasswordText"
+        android:layout_toRightOf="@+id/RegularConfirmPasswordText"
+        android:layout_toEndOf="@+id/RegularConfirmPasswordText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/RegularEmailEdit"
+        android:layout_alignTop="@+id/RegularEmailText"
+        android:layout_toRightOf="@+id/RegularEmailText"
+        android:layout_toEndOf="@+id/RegularEmailText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/RegularFirstNameEdit"
+        android:layout_alignTop="@+id/RegularFirstNameText"
+        android:layout_toRightOf="@+id/RegularFirstNameText"
+        android:layout_toEndOf="@+id/RegularFirstNameText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/RegularLastNameEdit"
+        android:layout_alignTop="@+id/RegularLastNameText"
+        android:layout_toRightOf="@+id/RegularLastNameText"
+        android:layout_toEndOf="@+id/RegularLastNameText" />
+</RelativeLayout>
