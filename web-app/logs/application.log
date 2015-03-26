@@ -184,3 +184,96 @@ database [default] connected at jdbc:h2:mem:play
 2015-03-24 10:45:47,511 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
+2015-03-24 11:29:34,300 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-24 11:29:34,314 - [ERROR] - from application in New I/O worker #4 
+
+
+! @6li2ffc1k - Internal server error, for (GET) [/] ->
+
+play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt handler: bar]
+	at play.api.Configuration$.play$api$Configuration$$configError(Configuration.scala:92) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Configuration.reportError(Configuration.scala:570) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.Configuration.reportError(Configuration.java:298) ~[play_2.10-2.2.1.jar:2.2.1]
+	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:78) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$.start(Play.scala:87) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+Caused by: java.lang.ClassNotFoundException: com.example.security.BarDeadboltHandler
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_40]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_40]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_40]
+	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:71) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
+	... 23 common frames omitted
+
+2015-03-24 11:29:34,316 - [ERROR] - from application in New I/O worker #3 
+
+
+! @6li2ffc1k - Internal server error, for (GET) [/] ->
+
+play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt handler: bar]
+	at play.api.Configuration$.play$api$Configuration$$configError(Configuration.scala:92) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Configuration.reportError(Configuration.scala:570) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.Configuration.reportError(Configuration.java:298) ~[play_2.10-2.2.1.jar:2.2.1]
+	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:78) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$.start(Play.scala:87) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+Caused by: java.lang.ClassNotFoundException: com.example.security.BarDeadboltHandler
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_40]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_40]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_40]
+	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_40]
+	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:71) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
+	... 23 common frames omitted
+
+2015-03-24 11:40:29,193 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-24 11:40:29,202 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
