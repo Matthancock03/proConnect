@@ -1,19 +1,19 @@
-2015-03-24 10:30:51,662 - [INFO] - from play in pool-6-thread-5 
+2015-03-26 09:14:25,977 - [INFO] - from play in pool-6-thread-3 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-03-24 10:31:03,097 - [INFO] - from play in play-internal-execution-context-1 
+2015-03-26 09:15:12,843 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-03-24 10:31:03,314 - [ERROR] - from application in New I/O worker #1 
+2015-03-26 09:15:13,597 - [ERROR] - from application in New I/O worker #2 
 
 
-! @6li27ni6l - Internal server error, for (GET) [/] ->
+! @6ligc2b27 - Internal server error, for (GET) [/] ->
 
-play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt handler: defaultHandler]
+play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt handler: security.MyDeadboltHandler]
 	at play.api.Configuration$.play$api$Configuration$$configError(Configuration.scala:92) ~[play_2.10-2.2.1.jar:2.2.1]
 	at play.api.Configuration.reportError(Configuration.scala:570) ~[play_2.10-2.2.1.jar:2.2.1]
 	at play.Configuration.reportError(Configuration.java:298) ~[play_2.10-2.2.1.jar:2.2.1]
-	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:78) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
+	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:98) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
 	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
 	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
 	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library.jar:na]
@@ -37,166 +37,25 @@ play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt hand
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
-Caused by: java.lang.ClassNotFoundException: com.example.security.MyDeadboltHandler
+Caused by: java.lang.ClassNotFoundException: security.MyDeadboltHandler
 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_40]
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_40]
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_40]
 	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_40]
 	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_40]
-	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:71) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
+	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:91) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
 	... 23 common frames omitted
 
-2015-03-24 10:31:39,274 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-03-24 10:31:39,309 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-03-24 10:31:44,094 - [ERROR] - from play in play-internal-execution-context-1 
-Cannot invoke the action, eventually got an error: java.lang.IllegalStateException: No value
-
-2015-03-24 10:31:44,163 - [ERROR] - from application in play-internal-execution-context-1 
+2015-03-26 09:15:13,595 - [ERROR] - from application in New I/O worker #1 
 
 
-! @6li2800i7 - Internal server error, for (POST) [/loginUser] ->
+! @6ligc2b27 - Internal server error, for (GET) [/] ->
 
-play.api.Application$$anon$1: Execution exception[[IllegalStateException: No value]]
-	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.1.jar:2.2.1]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:261) [play_2.10-2.2.1.jar:2.2.1]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:261) [play_2.10-2.2.1.jar:2.2.1]
-	at scala.Option.map(Option.scala:145) [scala-library.jar:na]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2.applyOrElse(PlayDefaultUpstreamHandler.scala:261) [play_2.10-2.2.1.jar:2.2.1]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2.applyOrElse(PlayDefaultUpstreamHandler.scala:257) [play_2.10-2.2.1.jar:2.2.1]
-	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:33) [scala-library.jar:na]
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:411) [scala-library.jar:na]
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:408) [scala-library.jar:na]
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:29) [scala-library.jar:na]
-	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.1.jar:2.2.1]
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:37) [scala-library.jar:na]
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:133) [scala-library.jar:na]
-	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library.jar:na]
-	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:58) [scala-library.jar:na]
-	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:254) [scala-library.jar:na]
-	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:249) [scala-library.jar:na]
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:29) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library.jar:na]
-Caused by: java.lang.IllegalStateException: No value
-	at play.libs.F$None.get(F.java:703) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.data.Form.get(Form.java:539) ~[play-java_2.10-2.2.1.jar:2.2.1]
-	at controllers.DbController.loginUser(DbController.java:25) ~[na:na]
-	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:85) ~[na:na]
-	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:85) ~[na:na]
-	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.1.jar:2.2.1]
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:278) ~[scala-library.jar:na]
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:274) ~[scala-library.jar:na]
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:29) [scala-library.jar:na]
-	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.1.jar:2.2.1]
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
-	... 4 common frames omitted
-
-2015-03-24 10:35:28,403 - [ERROR] - from play in play-internal-execution-context-1 
-Cannot invoke the action, eventually got an error: java.lang.IllegalStateException: No value
-
-2015-03-24 10:35:28,410 - [ERROR] - from application in play-internal-execution-context-1 
-
-
-! @6li28ckba - Internal server error, for (POST) [/signUpUser] ->
-
-play.api.Application$$anon$1: Execution exception[[IllegalStateException: No value]]
-	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.1.jar:2.2.1]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:261) [play_2.10-2.2.1.jar:2.2.1]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:261) [play_2.10-2.2.1.jar:2.2.1]
-	at scala.Option.map(Option.scala:145) [scala-library.jar:na]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2.applyOrElse(PlayDefaultUpstreamHandler.scala:261) [play_2.10-2.2.1.jar:2.2.1]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2.applyOrElse(PlayDefaultUpstreamHandler.scala:257) [play_2.10-2.2.1.jar:2.2.1]
-	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:33) [scala-library.jar:na]
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:411) [scala-library.jar:na]
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:408) [scala-library.jar:na]
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:29) [scala-library.jar:na]
-	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.1.jar:2.2.1]
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:37) [scala-library.jar:na]
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:133) [scala-library.jar:na]
-	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library.jar:na]
-	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:58) [scala-library.jar:na]
-	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:254) [scala-library.jar:na]
-	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:249) [scala-library.jar:na]
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:29) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library.jar:na]
-Caused by: java.lang.IllegalStateException: No value
-	at play.libs.F$None.get(F.java:703) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.data.Form.get(Form.java:539) ~[play-java_2.10-2.2.1.jar:2.2.1]
-	at controllers.DbController.signUpUser(DbController.java:32) ~[na:na]
-	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(routes_routing.scala:93) ~[na:na]
-	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(routes_routing.scala:93) ~[na:na]
-	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.1.jar:2.2.1]
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:278) ~[scala-library.jar:na]
-	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:274) ~[scala-library.jar:na]
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:29) [scala-library.jar:na]
-	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.1.jar:2.2.1]
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
-	... 4 common frames omitted
-
-2015-03-24 10:36:14,334 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-03-24 10:36:14,363 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-03-24 10:41:42,266 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-03-24 10:41:42,284 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-03-24 10:42:12,927 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-03-24 10:42:12,940 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-03-24 10:45:47,498 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-03-24 10:45:47,511 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-03-24 11:29:34,300 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-03-24 11:29:34,314 - [ERROR] - from application in New I/O worker #4 
-
-
-! @6li2ffc1k - Internal server error, for (GET) [/] ->
-
-play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt handler: bar]
+play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt handler: security.MyDeadboltHandler]
 	at play.api.Configuration$.play$api$Configuration$$configError(Configuration.scala:92) ~[play_2.10-2.2.1.jar:2.2.1]
 	at play.api.Configuration.reportError(Configuration.scala:570) ~[play_2.10-2.2.1.jar:2.2.1]
 	at play.Configuration.reportError(Configuration.java:298) ~[play_2.10-2.2.1.jar:2.2.1]
-	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:78) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
+	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:98) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
 	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
 	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
 	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library.jar:na]
@@ -220,25 +79,28 @@ play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt hand
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
-Caused by: java.lang.ClassNotFoundException: com.example.security.BarDeadboltHandler
+Caused by: java.lang.ClassNotFoundException: security.MyDeadboltHandler
 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_40]
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_40]
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_40]
 	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_40]
 	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_40]
-	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:71) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
+	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:91) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
 	... 23 common frames omitted
 
-2015-03-24 11:29:34,316 - [ERROR] - from application in New I/O worker #3 
+2015-03-26 09:32:40,592 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-26 09:32:40,642 - [ERROR] - from application in New I/O worker #3 
 
 
-! @6li2ffc1k - Internal server error, for (GET) [/] ->
+! @6ligea032 - Internal server error, for (GET) [/] ->
 
-play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt handler: bar]
+play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt handler: security.MyDeadboltHandler]
 	at play.api.Configuration$.play$api$Configuration$$configError(Configuration.scala:92) ~[play_2.10-2.2.1.jar:2.2.1]
 	at play.api.Configuration.reportError(Configuration.scala:570) ~[play_2.10-2.2.1.jar:2.2.1]
 	at play.Configuration.reportError(Configuration.java:298) ~[play_2.10-2.2.1.jar:2.2.1]
-	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:78) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
+	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:98) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
 	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
 	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
 	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library.jar:na]
@@ -262,18 +124,61 @@ play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt hand
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
-Caused by: java.lang.ClassNotFoundException: com.example.security.BarDeadboltHandler
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_40]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_40]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_40]
-	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_40]
-	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_40]
-	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:71) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
+Caused by: java.lang.ClassCastException: security.MyDeadboltHandler cannot be cast to be.objectify.deadbolt.java.DeadboltHandler
+	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:91) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
 	... 23 common frames omitted
 
-2015-03-24 11:40:29,193 - [INFO] - from play in play-internal-execution-context-1 
+2015-03-26 09:34:24,933 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-03-24 11:40:29,202 - [INFO] - from play in play-internal-execution-context-1 
+2015-03-26 09:34:24,993 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-03-26 10:24:43,809 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-26 10:24:43,858 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-03-26 10:26:05,744 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-26 10:26:05,757 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-03-26 10:28:48,001 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-26 10:28:48,018 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-03-26 10:29:54,908 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-26 10:29:54,923 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-03-26 10:32:00,085 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-26 10:32:00,101 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-03-26 10:36:26,300 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-26 10:36:26,315 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-03-26 10:36:47,267 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-26 10:36:47,286 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-03-26 10:40:26,672 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-26 10:40:26,940 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 

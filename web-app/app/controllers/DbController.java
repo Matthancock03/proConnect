@@ -29,7 +29,7 @@ public class DbController extends Controller{
     } else {
         loginFormData user = formData.get();
         //Logger.debug(user.email + "  " + user.password);
-        return ok("Logged In!");
+        return ok(home.render());
     }
   }
 
