@@ -33,20 +33,8 @@ Seq[Any](format.raw/*2.1*/("""
 <div class="container">
 	<div class="row clearfix">
 
-    <nav class="navbar navbar-inverse">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">ProConnect</a>
-          </div>
-          <div id="navbar" class="collapse navbar-collapse">
-        </div>
-      </nav>iv.
+    """),_display_(Seq[Any](/*8.6*/navbar/*8.12*/.render())),format.raw/*8.21*/("""
+
 		<div class="col-md-12 column">
 
 
@@ -313,7 +301,7 @@ Seq[Any](format.raw/*2.1*/("""
 		</div>
 	</div>
 </div>
-""")))})),format.raw/*288.2*/("""
+""")))})),format.raw/*276.2*/("""
 """))}
     }
     
@@ -326,11 +314,11 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Mar 26 11:16:23 PDT 2015
+                    DATE: Thu Mar 26 20:31:46 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
-                    HASH: 0b19c2d3d0eac1b67858c58885f2fad7f1197d72
-                    MATRIX: 870->17|906->19|932->37|971->39|9102->8138
-                    LINES: 30->2|31->3|31->3|31->3|316->288
+                    HASH: 48e51a61931f051626b2608b458ec8f1b1eeadb1
+                    MATRIX: 870->17|906->19|932->37|971->39|1065->99|1079->105|1109->114|8533->7506
+                    LINES: 30->2|31->3|31->3|31->3|36->8|36->8|36->8|304->276
                     -- GENERATED --
                 */
             

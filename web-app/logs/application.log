@@ -1,34 +1,41 @@
-2015-03-26 09:14:25,977 - [INFO] - from play in pool-6-thread-3 
+2015-03-26 20:11:04,945 - [INFO] - from play in pool-6-thread-3 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-03-26 09:15:12,843 - [INFO] - from play in play-internal-execution-context-1 
+2015-03-26 20:15:29,370 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-03-26 09:15:13,597 - [ERROR] - from application in New I/O worker #2 
+2015-03-26 20:15:29,850 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-03-26 20:18:09,487 - [INFO] - from play in play-internal-execution-context-2 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-26 20:18:09,513 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+
+2015-03-26 20:22:59,985 - [INFO] - from play in play-internal-execution-context-2 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-26 20:23:00,023 - [INFO] - from play in play-internal-execution-context-2 
+Application started (Dev)
+
+2015-03-26 20:26:01,722 - [ERROR] - from application in New I/O worker #2 
 
 
-! @6ligc2b27 - Internal server error, for (GET) [/] ->
+! @6lijm49m9 - Internal server error, for (POST) [/loginUser] ->
 
-play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt handler: security.MyDeadboltHandler]
-	at play.api.Configuration$.play$api$Configuration$$configError(Configuration.scala:92) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Configuration.reportError(Configuration.scala:570) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.Configuration.reportError(Configuration.java:298) ~[play_2.10-2.2.1.jar:2.2.1]
-	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:98) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
-	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library.jar:na]
-	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Play$.start(Play.scala:87) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
+play.PlayExceptions$CompilationException: Compilation error[play.api.templates.HtmlFormat.Appendable does not take parameters]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
 	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
-	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library.jar:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.1.jar:2.2.1]
 	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.1.jar:2.2.1]
 	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
 	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
@@ -37,40 +44,24 @@ play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt hand
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
-Caused by: java.lang.ClassNotFoundException: security.MyDeadboltHandler
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_40]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_40]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_40]
-	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_40]
-	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_40]
-	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:91) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
-	... 23 common frames omitted
 
-2015-03-26 09:15:13,595 - [ERROR] - from application in New I/O worker #1 
+2015-03-26 20:26:28,474 - [ERROR] - from application in New I/O worker #2 
 
 
-! @6ligc2b27 - Internal server error, for (GET) [/] ->
+! @6lijm5nbj - Internal server error, for (POST) [/loginUser] ->
 
-play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt handler: security.MyDeadboltHandler]
-	at play.api.Configuration$.play$api$Configuration$$configError(Configuration.scala:92) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Configuration.reportError(Configuration.scala:570) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.Configuration.reportError(Configuration.java:298) ~[play_2.10-2.2.1.jar:2.2.1]
-	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:98) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
-	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library.jar:na]
-	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Play$.start(Play.scala:87) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
+play.PlayExceptions$CompilationException: Compilation error[too many arguments for method apply: ()play.api.templates.HtmlFormat.Appendable in object navbar]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
 	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
-	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library.jar:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.1.jar:2.2.1]
 	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.1.jar:2.2.1]
 	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
 	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
@@ -79,118 +70,28 @@ play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt hand
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
-Caused by: java.lang.ClassNotFoundException: security.MyDeadboltHandler
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_40]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_40]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_40]
-	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_40]
-	at java.lang.Class.forName(Class.java:348) ~[na:1.8.0_40]
-	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:91) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
-	... 23 common frames omitted
 
-2015-03-26 09:32:40,592 - [INFO] - from play in play-internal-execution-context-1 
+2015-03-26 20:27:02,787 - [INFO] - from play in play-internal-execution-context-2 
 database [default] connected at jdbc:h2:mem:play
 
-2015-03-26 09:32:40,642 - [ERROR] - from application in New I/O worker #3 
-
-
-! @6ligea032 - Internal server error, for (GET) [/] ->
-
-play.api.Configuration$$anon$1: Configuration error[Error creating Deadbolt handler: security.MyDeadboltHandler]
-	at play.api.Configuration$.play$api$Configuration$$configError(Configuration.scala:92) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Configuration.reportError(Configuration.scala:570) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.Configuration.reportError(Configuration.java:298) ~[play_2.10-2.2.1.jar:2.2.1]
-	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:98) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
-	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library.jar:na]
-	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.Play$.start(Play.scala:87) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
-	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
-	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library.jar:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.1.jar:2.2.1]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
-Caused by: java.lang.ClassCastException: security.MyDeadboltHandler cannot be cast to be.objectify.deadbolt.java.DeadboltHandler
-	at be.objectify.deadbolt.java.DeadboltPlugin.onStart(DeadboltPlugin.java:91) ~[deadbolt-java_2.10-2.2-RC5.jar:2.2-RC5]
-	... 23 common frames omitted
-
-2015-03-26 09:34:24,933 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-03-26 09:34:24,993 - [INFO] - from play in play-internal-execution-context-1 
+2015-03-26 20:27:02,816 - [INFO] - from play in play-internal-execution-context-2 
 Application started (Dev)
 
-2015-03-26 10:24:43,809 - [INFO] - from play in play-internal-execution-context-1 
+2015-03-26 20:31:56,046 - [INFO] - from play in play-internal-execution-context-2 
 database [default] connected at jdbc:h2:mem:play
 
-2015-03-26 10:24:43,858 - [INFO] - from play in play-internal-execution-context-1 
+2015-03-26 20:31:56,066 - [INFO] - from play in play-internal-execution-context-2 
 Application started (Dev)
 
-2015-03-26 10:26:05,744 - [INFO] - from play in play-internal-execution-context-1 
+2015-03-26 20:32:53,455 - [INFO] - from play in play-internal-execution-context-2 
 database [default] connected at jdbc:h2:mem:play
 
-2015-03-26 10:26:05,757 - [INFO] - from play in play-internal-execution-context-1 
+2015-03-26 20:32:53,468 - [INFO] - from play in play-internal-execution-context-2 
 Application started (Dev)
 
-2015-03-26 10:28:48,001 - [INFO] - from play in play-internal-execution-context-1 
+2015-03-26 20:36:50,213 - [INFO] - from play in play-internal-execution-context-2 
 database [default] connected at jdbc:h2:mem:play
 
-2015-03-26 10:28:48,018 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-03-26 10:29:54,908 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-03-26 10:29:54,923 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-03-26 10:32:00,085 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-03-26 10:32:00,101 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-03-26 10:36:26,300 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-03-26 10:36:26,315 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-03-26 10:36:47,267 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-03-26 10:36:47,286 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-03-26 10:40:26,672 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-03-26 10:40:26,940 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-03-26 11:15:47,808 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-03-26 11:15:47,990 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-03-26 11:16:27,830 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-03-26 11:16:27,974 - [INFO] - from play in play-internal-execution-context-1 
+2015-03-26 20:36:50,233 - [INFO] - from play in play-internal-execution-context-2 
 Application started (Dev)
 
