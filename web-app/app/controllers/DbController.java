@@ -33,6 +33,10 @@ public class DbController extends Controller{
     }
   }
 
+  public static Result home(){
+    return ok(home.render());
+  }
+
   public static Result signUpUser(){
       Form<signUpFormData> formData = Form.form(signUpFormData.class).bindFromRequest();
       if (formData.hasErrors()) {

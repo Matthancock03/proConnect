@@ -7,6 +7,7 @@ POST     /login                    controllers.Application.login()
 POST     /loginUser                controllers.DbController.loginUser()
 POST     /signUpUser               controllers.DbController.signUpUser()
 GET      /                         controllers.DbController.loginPage()
+GET      /loginUser                controllers.DbController.home()
 
 
 # Map static resources from the /public folder to the /assets URL path

@@ -1,6 +1,6 @@
 // @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
-// @HASH:4806ce85d09b2ec03586d3551e77e259ae3f0c36
-// @DATE:Sun Mar 22 14:46:14 PDT 2015
+// @HASH:6ecff2de5e25c597dccc51955d3fe406ac2ce047
+// @DATE:Fri Mar 27 15:29:42 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -13,8 +13,9 @@ import play.libs.F
 import Router.queryString
 
 
+// @LINE:15
 // @LINE:14
-// @LINE:13
+// @LINE:10
 // @LINE:9
 // @LINE:8
 // @LINE:7
@@ -22,11 +23,11 @@ import Router.queryString
 // @LINE:5
 package controllers {
 
-// @LINE:14
+// @LINE:15
 class ReverseWebJarAssets {
     
 
-// @LINE:14
+// @LINE:15
 def at(file:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "webjars/" + implicitly[PathBindable[String]].unbind("file", file))
 }
@@ -35,11 +36,11 @@ def at(file:String): Call = {
 }
                           
 
-// @LINE:13
+// @LINE:14
 class ReverseAssets {
     
 
-// @LINE:13
+// @LINE:14
 def at(file:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
 }
@@ -48,6 +49,7 @@ def at(file:String): Call = {
 }
                           
 
+// @LINE:10
 // @LINE:9
 // @LINE:8
 // @LINE:7
@@ -63,6 +65,12 @@ def signUpUser(): Call = {
 // @LINE:7
 def loginUser(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "loginUser")
+}
+                                                
+
+// @LINE:10
+def home(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "loginUser")
 }
                                                 
 
@@ -98,8 +106,9 @@ def login(): Call = {
                   
 
 
+// @LINE:15
 // @LINE:14
-// @LINE:13
+// @LINE:10
 // @LINE:9
 // @LINE:8
 // @LINE:7
@@ -107,11 +116,11 @@ def login(): Call = {
 // @LINE:5
 package controllers.javascript {
 
-// @LINE:14
+// @LINE:15
 class ReverseWebJarAssets {
     
 
-// @LINE:14
+// @LINE:15
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WebJarAssets.at",
    """
@@ -125,11 +134,11 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:13
+// @LINE:14
 class ReverseAssets {
     
 
-// @LINE:13
+// @LINE:14
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.at",
    """
@@ -143,6 +152,7 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:10
 // @LINE:9
 // @LINE:8
 // @LINE:7
@@ -166,6 +176,17 @@ def loginUser : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "loginUser"})
+      }
+   """
+)
+                        
+
+// @LINE:10
+def home : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.DbController.home",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "loginUser"})
       }
    """
 )
@@ -218,8 +239,9 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:15
 // @LINE:14
-// @LINE:13
+// @LINE:10
 // @LINE:9
 // @LINE:8
 // @LINE:7
@@ -228,11 +250,11 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
-// @LINE:14
+// @LINE:15
 class ReverseWebJarAssets {
     
 
-// @LINE:14
+// @LINE:15
 def at(file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.WebJarAssets.at(file), HandlerDef(this, "controllers.WebJarAssets", "at", Seq(classOf[String]), "GET", """""", _prefix + """webjars/$file<.+>""")
 )
@@ -241,11 +263,11 @@ def at(file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
-// @LINE:13
+// @LINE:14
 class ReverseAssets {
     
 
-// @LINE:13
+// @LINE:14
 def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this, "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -254,6 +276,7 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
+// @LINE:10
 // @LINE:9
 // @LINE:8
 // @LINE:7
@@ -269,6 +292,12 @@ def signUpUser(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:7
 def loginUser(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.DbController.loginUser(), HandlerDef(this, "controllers.DbController", "loginUser", Seq(), "POST", """""", _prefix + """loginUser""")
+)
+                      
+
+// @LINE:10
+def home(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.DbController.home(), HandlerDef(this, "controllers.DbController", "home", Seq(), "GET", """""", _prefix + """loginUser""")
 )
                       
 
