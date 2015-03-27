@@ -32,85 +32,17 @@ Seq[Any](format.raw/*2.1*/("""
 
 <div class="container">
 	<div class="row clearfix">
+		"""),_display_(Seq[Any](/*7.4*/navbar/*7.10*/.render())),format.raw/*7.19*/("""
+	</div>
 
-    """),_display_(Seq[Any](/*8.6*/navbar/*8.12*/.render())),format.raw/*8.21*/("""
-
-		<div class="col-md-12 column">
-
-
-        <ul class="nav nav-pills">
-          <li class="active">
-             <a href="#"> <span class="badge pull-right">42</span> Home</a>
-          </li>
-          <li>
-             <a href="#"> <span class="badge pull-right">16</span> More</a>
-          </li>
-        </ul>
-
-			<ul class="nav nav-tabs">
-				<li class="active">
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#">Profile</a>
-				</li>
-				<li class="disabled">
-					<a href="#">Messages</a>
-				</li>
-				<li class="dropdown pull-right">
-					 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown<strong class="caret"></strong></a>
-					<ul class="dropdown-menu">
-						<li>
-							<a href="#">Action</a>
-						</li>
-						<li>
-							<a href="#">Another action</a>
-						</li>
-						<li>
-							<a href="#">Something else here</a>
-						</li>
-						<li class="divider">
-						</li>
-						<li>
-							<a href="#">Separated link</a>
-						</li>
-					</ul>
-				</li>
-			</ul><img alt="140x140" src="http://lorempixel.com/140/140/" />
+	<div class="row clearfix">
+		<div class="col-xs-12 column">
 		</div>
 	</div>
+
 	<div class="row clearfix">
-		<div class="col-md-6 column">
-			<img alt="140x140" src="http://lorempixel.com/140/140/" />
-			<dl class="dl-horizontal">
-				<dt>
-					Description lists
-				</dt>
-				<dd>
-					A description list is perfect for defining terms.
-				</dd>
-				<dt>
-					Euismod
-				</dt>
-				<dd>
-					Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
-				</dd>
-				<dd>
-					Donec id elit non mi porta gravida at eget metus.
-				</dd>
-				<dt>
-					Malesuada porta
-				</dt>
-				<dd>
-					Etiam porta sem malesuada magna mollis euismod.
-				</dd>
-				<dt>
-					Felis euismod semper eget lacinia
-				</dt>
-				<dd>
-					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-				</dd>
-			</dl>
+		<div class="col-xs-3 column clearfix">
+			<img alt="140x140" class = "img-thumbnail img-rounded" src="http://i.imgur.com/PcoAz60.jpg?1" />
 			<div class="btn-group">
 				 <button class="btn btn-default">ViewProfileAs</button> <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
 				<ul class="dropdown-menu">
@@ -127,8 +59,25 @@ Seq[Any](format.raw/*2.1*/("""
 					</li>
 				</ul>
 			</div>
+
+			<dl class="dl-horizontal">
+				<dt>
+					Description lists
+				</dt>
+				<dd>
+					A description list is perfect for defining terms.
+				</dd>
+				<dt>
+					Euismod
+				</dt>
+				<dd>
+					Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+				</dd>
+			</dl>
+
 		</div>
-		<div class="col-md-6 column">
+		<div class="col-xs-1 column"></div>
+		<div class="col-xs-8 column">
 			<div class="carousel slide" id="carousel-13062">
 				<ol class="carousel-indicators">
 					<li class="active" data-slide-to="0" data-target="#carousel-13062">
@@ -177,7 +126,7 @@ Seq[Any](format.raw/*2.1*/("""
 		</div>
 	</div>
 	<div class="row clearfix">
-		<div class="col-md-6 column">
+		<div class="col-xs-6 column">
 			<h2>
 				Heading
 			</h2>
@@ -188,7 +137,7 @@ Seq[Any](format.raw/*2.1*/("""
 				<a class="btn" href="#">View details »</a>
 			</p>
 		</div>
-		<div class="col-md-6 column">
+		<div class="col-xs-6 column">
 			<h2>
 				Heading
 			</h2>
@@ -201,7 +150,7 @@ Seq[Any](format.raw/*2.1*/("""
 		</div>
 	</div>
 	<div class="row clearfix">
-		<div class="col-md-4 column">
+		<div class="col-xs-4 column">
 			<dl>
 				<dt>
 					Description lists
@@ -232,7 +181,7 @@ Seq[Any](format.raw/*2.1*/("""
 				</dd>
 			</dl>
 		</div>
-		<div class="col-md-4 column">
+		<div class="col-xs-4 column">
 			<dl>
 				<dt>
 					Description lists
@@ -263,7 +212,7 @@ Seq[Any](format.raw/*2.1*/("""
 				</dd>
 			</dl>
 		</div>
-		<div class="col-md-4 column">
+		<div class="col-xs-4 column">
 			<dl>
 				<dt>
 					Description lists
@@ -296,12 +245,9 @@ Seq[Any](format.raw/*2.1*/("""
 		</div>
 	</div>
 	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<img alt="140x140" src="http://lorempixel.com/140/140/" /><img alt="140x140" src="http://lorempixel.com/140/140/" />
-		</div>
 	</div>
 </div>
-""")))})),format.raw/*276.2*/("""
+""")))})),format.raw/*222.2*/("""
 """))}
     }
     
@@ -314,11 +260,11 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Mar 26 20:31:46 PDT 2015
+                    DATE: Fri Mar 27 15:05:06 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
-                    HASH: 48e51a61931f051626b2608b458ec8f1b1eeadb1
-                    MATRIX: 870->17|906->19|932->37|971->39|1065->99|1079->105|1109->114|8533->7506
-                    LINES: 30->2|31->3|31->3|31->3|36->8|36->8|36->8|304->276
+                    HASH: bbf081bb7d9ffbcde31e4c4895fd2275dd9d7953
+                    MATRIX: 870->17|906->19|932->37|971->39|1062->96|1076->102|1106->111|7080->6053
+                    LINES: 30->2|31->3|31->3|31->3|35->7|35->7|35->7|250->222
                     -- GENERATED --
                 */
             

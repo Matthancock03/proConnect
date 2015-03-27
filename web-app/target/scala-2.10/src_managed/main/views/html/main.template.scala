@@ -43,10 +43,12 @@ Seq[Any](format.raw/*1.32*/("""
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href=""""),_display_(Seq[Any](/*18.39*/routes/*18.45*/.Assets.at("stylesheets/container.min.css"))),format.raw/*18.88*/("""">
+        <link rel="stylesheet" href=""""),_display_(Seq[Any](/*19.39*/routes/*19.45*/.Assets.at("stylesheets/main.min.css"))),format.raw/*19.83*/("""">
 
         </head>
     <body>
-        """),_display_(Seq[Any](/*21.10*/content)),format.raw/*21.17*/("""
+        """),_display_(Seq[Any](/*23.10*/content)),format.raw/*23.17*/("""
     </body>
 </html>
 """))}
@@ -61,11 +63,11 @@ Seq[Any](format.raw/*1.32*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Mar 26 10:36:41 PDT 2015
+                    DATE: Fri Mar 27 15:05:06 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/main.scala.html
-                    HASH: 986078b2244df647525aac00eba501a374a59b58
-                    MATRIX: 778->1|902->31|990->84|1016->89|1661->698|1690->705
-                    LINES: 26->1|29->1|35->7|35->7|49->21|49->21
+                    HASH: 22f8669388434dccec33472ae2355ca1088303d8
+                    MATRIX: 778->1|902->31|990->84|1016->89|1662->699|1677->705|1742->748|1819->789|1834->795|1894->833|1970->873|1999->880
+                    LINES: 26->1|29->1|35->7|35->7|46->18|46->18|46->18|47->19|47->19|47->19|51->23|51->23
                     -- GENERATED --
                 */
             
