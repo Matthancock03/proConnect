@@ -1,15 +1,18 @@
 body {
-  background-color: #cccccc;
+  background-color: #ffffff;
 }
 .dl-horizontal dt {
   text-align: left;
   margin-bottom: 1em;
   width: auto;
-  padding-right: 1em;
+  clear: both;
 }
 .dl-horizontal dd {
   margin-left: 0;
   margin-bottom: 1em;
+}
+ul {
+  list-style-type: none;
 }
 .row {
   background-color: #EBEBEB !important;

@@ -64,15 +64,9 @@ Seq[Any](format.raw/*2.1*/("""
 				<dt>
 					Description lists
 				</dt>
-				<dd>
-					A description list is perfect for defining terms.
-				</dd>
 				<dt>
 					Euismod
 				</dt>
-				<dd>
-					Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
-				</dd>
 			</dl>
 
 		</div>
@@ -247,7 +241,7 @@ Seq[Any](format.raw/*2.1*/("""
 	<div class="row clearfix">
 	</div>
 </div>
-""")))})),format.raw/*222.2*/("""
+""")))})),format.raw/*216.2*/("""
 """))}
     }
     
@@ -260,11 +254,11 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Mar 27 15:05:06 PDT 2015
+                    DATE: Fri Mar 27 15:16:00 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
-                    HASH: bbf081bb7d9ffbcde31e4c4895fd2275dd9d7953
-                    MATRIX: 870->17|906->19|932->37|971->39|1062->96|1076->102|1106->111|7080->6053
-                    LINES: 30->2|31->3|31->3|31->3|35->7|35->7|35->7|250->222
+                    HASH: 600fe0c964d145db6a48f28d700a89b290a35f96
+                    MATRIX: 870->17|906->19|932->37|971->39|1062->96|1076->102|1106->111|6902->5875
+                    LINES: 30->2|31->3|31->3|31->3|35->7|35->7|35->7|244->216
                     -- GENERATED --
                 */
             
