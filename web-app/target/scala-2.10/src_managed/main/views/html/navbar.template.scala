@@ -82,7 +82,7 @@ Seq[Any](format.raw/*1.1*/("""<link rel="stylesheet" href=""""),_display_(Seq[An
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Mar 27 21:31:25 PDT 2015
+                    DATE: Fri Mar 27 21:37:50 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/navbar.scala.html
                     HASH: 07778f5f3b8394ef590fa1d9bc45270c9294487c
                     MATRIX: 856->0|921->30|935->36|996->76
