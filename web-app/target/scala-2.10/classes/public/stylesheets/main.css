@@ -3,17 +3,17 @@ body {
 }
 .dl-horizontal dt {
   text-align: left;
-  margin-bottom: 1em;
-  width: auto;
+  float: both;
   clear: both;
 }
 .dl-horizontal dd {
   margin-left: 0;
-  margin-bottom: 1em;
+  float: both;
+  clear: both;
 }
 ul {
   list-style-type: none;
 }
 .row {
-  background-color: #EBEBEB !important;
+  background-color: #FFFAF0 !important;
 }

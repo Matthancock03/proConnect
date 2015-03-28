@@ -41,37 +41,23 @@ Seq[Any](format.raw/*2.1*/("""
 	</div>
 
 	<div class="row clearfix">
-		<div class="col-xs-3 column clearfix">
-			<img alt="140x140" class = "img-thumbnail img-rounded" src="http://i.imgur.com/PcoAz60.jpg?1" />
-			<div class="btn-group">
-				 <button class="btn btn-default">ViewProfileAs</button> <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
-				<ul class="dropdown-menu">
-					<li>
-						<a href="#">Action</a>
-					</li>
-					<li class="disabled">
-						<a href="#">Another action</a>
-					</li>
-					<li class="divider">
-					</li>
-					<li>
-						<a href="#">Something else here</a>
-					</li>
-				</ul>
-			</div>
+		<div class="col-xs-2 column">
+			<img alt="140x140" class = "img-thumbnail profileImage" src="http://i.imgur.com/PcoAz60.jpg?1" />
 
 			<dl class="dl-horizontal">
 				<dt>
-					Description lists
+					Matthew Hancock
 				</dt>
-				<dt>
-					Euismod
-				</dt>
+				<dd>
+					Beyond Prosthetics
+				</dd>
+				<dd>
+					San Jose State University
+				</dd>
 			</dl>
-
 		</div>
-		<div class="col-xs-1 column"></div>
-		<div class="col-xs-8 column">
+
+		<div class="col-xs-6 column clearfix">
 			<div class="carousel slide" id="carousel-13062">
 				<ol class="carousel-indicators">
 					<li class="active" data-slide-to="0" data-target="#carousel-13062">
@@ -118,7 +104,23 @@ Seq[Any](format.raw/*2.1*/("""
 				</div> <a class="left carousel-control" href="#carousel-13062" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-13062" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 			</div>
 		</div>
-	</div>
+		<div class="col-xs-4 column">
+			<div>
+				<div class="panel panel-default">
+				  <div class="panel-heading">Twitter Feed</div>
+				  <div class="panel-body">
+						<ul class="list-group">
+							  <li class="list-group-item">First item</li>
+							  <li class="list-group-item">Second item</li>
+							  <li class="list-group-item">Third item</li>
+							</ul>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+
+		</div>
 	<div class="row clearfix">
 		<div class="col-xs-6 column">
 			<h2>
@@ -152,27 +154,6 @@ Seq[Any](format.raw/*2.1*/("""
 				<dd>
 					A description list is perfect for defining terms.
 				</dd>
-				<dt>
-					Euismod
-				</dt>
-				<dd>
-					Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
-				</dd>
-				<dd>
-					Donec id elit non mi porta gravida at eget metus.
-				</dd>
-				<dt>
-					Malesuada porta
-				</dt>
-				<dd>
-					Etiam porta sem malesuada magna mollis euismod.
-				</dd>
-				<dt>
-					Felis euismod semper eget lacinia
-				</dt>
-				<dd>
-					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-				</dd>
 			</dl>
 		</div>
 		<div class="col-xs-4 column">
@@ -183,27 +164,6 @@ Seq[Any](format.raw/*2.1*/("""
 				<dd>
 					A description list is perfect for defining terms.
 				</dd>
-				<dt>
-					Euismod
-				</dt>
-				<dd>
-					Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
-				</dd>
-				<dd>
-					Donec id elit non mi porta gravida at eget metus.
-				</dd>
-				<dt>
-					Malesuada porta
-				</dt>
-				<dd>
-					Etiam porta sem malesuada magna mollis euismod.
-				</dd>
-				<dt>
-					Felis euismod semper eget lacinia
-				</dt>
-				<dd>
-					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-				</dd>
 			</dl>
 		</div>
 		<div class="col-xs-4 column">
@@ -213,35 +173,15 @@ Seq[Any](format.raw/*2.1*/("""
 				</dt>
 				<dd>
 					A description list is perfect for defining terms.
-				</dd>
-				<dt>
-					Euismod
-				</dt>
-				<dd>
-					Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
-				</dd>
-				<dd>
-					Donec id elit non mi porta gravida at eget metus.
-				</dd>
-				<dt>
-					Malesuada porta
-				</dt>
-				<dd>
-					Etiam porta sem malesuada magna mollis euismod.
-				</dd>
-				<dt>
-					Felis euismod semper eget lacinia
-				</dt>
-				<dd>
-					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 				</dd>
 			</dl>
 		</div>
 	</div>
 	<div class="row clearfix">
 	</div>
+  </div>
 </div>
-""")))})),format.raw/*216.2*/("""
+""")))})),format.raw/*156.2*/("""
 """))}
     }
     
@@ -254,11 +194,11 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Mar 27 15:16:00 PDT 2015
+                    DATE: Fri Mar 27 21:31:25 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
-                    HASH: 600fe0c964d145db6a48f28d700a89b290a35f96
-                    MATRIX: 870->17|906->19|932->37|971->39|1062->96|1076->102|1106->111|6902->5875
-                    LINES: 30->2|31->3|31->3|31->3|35->7|35->7|35->7|244->216
+                    HASH: 30d4dbd48f2f4c3a90fbbc20e14447273b42a7aa
+                    MATRIX: 870->17|906->19|932->37|971->39|1062->96|1076->102|1106->111|5319->4292
+                    LINES: 30->2|31->3|31->3|31->3|35->7|35->7|35->7|184->156
                     -- GENERATED --
                 */
             

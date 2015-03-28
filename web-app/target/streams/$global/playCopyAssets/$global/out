@@ -1,5 +1,7 @@
 [0m[[0mdebug[0m] [0mCopy play resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/misanthropic/repos/schoolWork/proConnect/web-app/public/images/photo-1421757295538-9c80958e75b0.jpg,/home/misanthropic/repos/schoolWork/proConnect/web-app/target/scala-2.10/classes/public/images/photo-1421757295538-9c80958e75b0.jpg)[0m
 [0m[[0mdebug[0m] [0m	(/home/misanthropic/repos/schoolWork/proConnect/web-app/public/images/favicon.png,/home/misanthropic/repos/schoolWork/proConnect/web-app/target/scala-2.10/classes/public/images/favicon.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/misanthropic/repos/schoolWork/proConnect/web-app/public/images/businessImage1.jpg,/home/misanthropic/repos/schoolWork/proConnect/web-app/target/scala-2.10/classes/public/images/businessImage1.jpg)[0m
 [0m[[0mdebug[0m] [0m	(/home/misanthropic/repos/schoolWork/proConnect/web-app/public/bower_components/jquery/jquery.min.map,/home/misanthropic/repos/schoolWork/proConnect/web-app/target/scala-2.10/classes/public/bower_components/jquery/jquery.min.map)[0m
 [0m[[0mdebug[0m] [0m	(/home/misanthropic/repos/schoolWork/proConnect/web-app/public/bower_components/jquery/README.md,/home/misanthropic/repos/schoolWork/proConnect/web-app/target/scala-2.10/classes/public/bower_components/jquery/README.md)[0m
 [0m[[0mdebug[0m] [0m	(/home/misanthropic/repos/schoolWork/proConnect/web-app/public/bower_components/jquery/jquery.js,/home/misanthropic/repos/schoolWork/proConnect/web-app/target/scala-2.10/classes/public/bower_components/jquery/jquery.js)[0m
