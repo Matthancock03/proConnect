@@ -26,9 +26,7 @@ object navbar extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable
     def apply():play.api.templates.HtmlFormat.Appendable = {
         _display_ {
 
-Seq[Any](format.raw/*1.1*/("""<link rel="stylesheet" href=""""),_display_(Seq[Any](/*1.31*/routes/*1.37*/.Assets.at("stylesheets/navbar.min.css"))),format.raw/*1.77*/("""">
-
-<nav class="navbar navbar-inverse">
+Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -82,11 +80,11 @@ Seq[Any](format.raw/*1.1*/("""<link rel="stylesheet" href=""""),_display_(Seq[An
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Mar 27 21:37:50 PDT 2015
+                    DATE: Sat Mar 28 13:08:07 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/navbar.scala.html
-                    HASH: 07778f5f3b8394ef590fa1d9bc45270c9294487c
-                    MATRIX: 856->0|921->30|935->36|996->76
-                    LINES: 29->1|29->1|29->1|29->1
+                    HASH: 0a98025ec917d5b9aa58924dad3927b1f2156d6b
+                    MATRIX: 856->1
+                    LINES: 29->2
                     -- GENERATED --
                 */
             

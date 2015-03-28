@@ -107,10 +107,19 @@ Seq[Any](format.raw/*2.1*/("""
 		<div class="col-xs-4 column">
 			<div>
 				<div class="panel panel-default">
-				  <div class="panel-heading">Twitter Feed</div>
+				  <div class="panel-heading tweetHeader">Twitter Feed</div>
 				  <div class="panel-body">
-						<ul class="list-group">
+						<ul class="list-group overflow-y-scroll tweetTable">
 							  <li class="list-group-item">First item</li>
+							  <li class="list-group-item">Second item</li>
+							  <li class="list-group-item">Third item</li>
+								<li class="list-group-item">First item</li>
+							  <li class="list-group-item">Second item</li>
+							  <li class="list-group-item">Third item</li>
+								<li class="list-group-item">First item</li>
+							  <li class="list-group-item">Second item</li>
+							  <li class="list-group-item">Third item</li>
+								<li class="list-group-item">First item</li>
 							  <li class="list-group-item">Second item</li>
 							  <li class="list-group-item">Third item</li>
 							</ul>
@@ -181,7 +190,7 @@ Seq[Any](format.raw/*2.1*/("""
 	</div>
   </div>
 </div>
-""")))})),format.raw/*156.2*/("""
+""")))})),format.raw/*165.2*/("""
 """))}
     }
     
@@ -194,11 +203,11 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Mar 27 21:37:50 PDT 2015
+                    DATE: Sat Mar 28 13:08:07 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
-                    HASH: 30d4dbd48f2f4c3a90fbbc20e14447273b42a7aa
-                    MATRIX: 870->17|906->19|932->37|971->39|1062->96|1076->102|1106->111|5319->4292
-                    LINES: 30->2|31->3|31->3|31->3|35->7|35->7|35->7|184->156
+                    HASH: 9a456c17da5332481e526268da365a0dacf2a6b7
+                    MATRIX: 870->17|906->19|932->37|971->39|1062->96|1076->102|1106->111|5837->4810
+                    LINES: 30->2|31->3|31->3|31->3|35->7|35->7|35->7|193->165
                     -- GENERATED --
                 */
             

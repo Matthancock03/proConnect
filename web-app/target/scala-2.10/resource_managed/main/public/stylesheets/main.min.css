@@ -1,5 +1,5 @@
-body{background-color:#fff}
+
 .dl-horizontal dt{text-align:left;float:both;clear:both}
 .dl-horizontal dd{margin-left:0;float:both;clear:both}
 ul{list-style-type:none}
-.row{background-color:#FFFAF0 !important}
+.tweetTable{height:150px;overflow:scroll;width:100%}
