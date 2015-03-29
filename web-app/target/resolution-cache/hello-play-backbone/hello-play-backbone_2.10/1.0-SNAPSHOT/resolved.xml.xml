@@ -4,7 +4,7 @@
 		module="hello-play-backbone_2.10"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20150324103046"
+		publication="20150329122021"
 	>
 		<description>
 		hello-play-backbone
@@ -43,6 +43,8 @@
 		<dependency org="org.mindrot" name="jbcrypt" rev="0.3m" conf="compile->default(compile)"/>
 		<dependency org="postgresql" name="postgresql" rev="9.1-901-1.jdbc4" conf="compile->default(compile)"/>
 		<dependency org="be.objectify" name="deadbolt-java_2.10" rev="2.2-RC5" conf="compile->default(compile)"/>
+		<dependency org="org.twitter4j" name="twitter4j-core" rev="3.0.3" conf="compile->default(compile)"/>
+		<dependency org="ws.securesocial" name="securesocial_2.10" rev="2.1.4" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play_2.10" rev="2.2.1" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-test_2.10" rev="2.2.1" conf="test->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-docs_2.10" rev="2.2.1" conf="docs->default(compile)"/>

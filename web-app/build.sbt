@@ -11,7 +11,9 @@ libraryDependencies ++= Seq(
   "org.webjars" % "bootstrap" % "2.3.1",
   "org.mindrot"  % "jbcrypt"   % "0.3m",
   "postgresql" % "postgresql" % "9.1-901-1.jdbc4",
-  "be.objectify" %% "deadbolt-java" % "2.2-RC5"
+  "be.objectify" %% "deadbolt-java" % "2.2-RC5",
+  "org.twitter4j" % "twitter4j-core" % "3.0.3",
+  "ws.securesocial" %% "securesocial" % "2.1.4"
 )
 
 resolvers += Resolver.url("Objectify Play Repository", url("http://deadbolt.ws/releases/"))(Resolver.ivyStylePatterns)
