@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@304c7041[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@658a91ff[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.2[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.2[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.2 in sbt-chain[0m
@@ -612,27 +612,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-java-ebean_2.10;2.2.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-java-ebean_2.10;2.2.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-java-ebean_2.10/2.2.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#play-java-ebean_2.10;2.2.1[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/play-java-ebean_2.10/2.2.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#play-java-ebean_2.10;2.2.1[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.play#play-java-ebean_2.10;2.2.1[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.pom[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.play#play-java-ebean_2.10;2.2.1[0m
-[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.pom (2.2.1)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.pom[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-java-ebean_2.10;2.2.1!play-java-ebean_2.10.pom(pom.original) (525ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-java-ebean_2.10/2.2.1/jars/play-java-ebean_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/play-java-ebean_2.10/2.2.1/jars/play-java-ebean_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.jar[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java-ebean_2.10;2.2.1 in typesafe-releases[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-java-ebean_2.10;2.2.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-java-ebean_2.10;2.2.1[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java-ebean_2.10;2.2.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.1->com.typesafe.play#play-java-jdbc_2.10;2.2.1 [compile->master(*)][0m
@@ -825,78 +807,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.1->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.avaje.ebeanorm/avaje-ebeanorm/3.2.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.avaje.ebeanorm#avaje-ebeanorm;3.2.2[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.avaje.ebeanorm/avaje-ebeanorm/3.2.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.avaje.ebeanorm#avaje-ebeanorm;3.2.2[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.avaje.ebeanorm#avaje-ebeanorm;3.2.2[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom (3.2.2)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.avaje.ebeanorm#avaje-ebeanorm;3.2.2!avaje-ebeanorm.pom(pom.original) (308ms)[0m
-[0m[[0minfo[0m] [0mResolving org.avaje#avaje-javaparent;1.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.avaje#avaje-javaparent;1.2 {}[0m
-[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.avaje/avaje-javaparent/1.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.avaje#avaje-javaparent;1.2[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.avaje/avaje-javaparent/1.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.avaje#avaje-javaparent;1.2[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.avaje#avaje-javaparent;1.2[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.pom (1.2)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.avaje#avaje-javaparent;1.2!avaje-javaparent.pom(pom.original) (1321ms)[0m
-[0m[[0minfo[0m] [0mResolving org.avaje#avaje-parent;1.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.avaje#avaje-parent;1.2 {}[0m
-[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.avaje/avaje-parent/1.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.avaje#avaje-parent;1.2[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.avaje/avaje-parent/1.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.avaje#avaje-parent;1.2[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.avaje#avaje-parent;1.2[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.pom (1.2)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.avaje#avaje-parent;1.2!avaje-parent.pom(pom.original) (300ms)[0m
-[0m[[0minfo[0m] [0mResolving org.sonatype.oss#oss-parent;7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.sonatype.oss#oss-parent;7[0m
-[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.avaje/avaje-parent/1.2/jars/avaje-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.avaje/avaje-parent/1.2/jars/avaje-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-parent/1.2/avaje-parent-1.2.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-parent/1.2/avaje-parent-1.2.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/org.avaje/avaje-parent/1.2/jars/avaje-parent.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.avaje/avaje-parent/1.2/jars/avaje-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje/avaje-parent/1.2/jars/avaje-parent.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje/avaje-parent/1.2/jars/avaje-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-parent/1.2/avaje-parent-1.2.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-parent/1.2/avaje-parent-1.2.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.avaje/avaje-javaparent/1.2/jars/avaje-javaparent.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.avaje/avaje-javaparent/1.2/jars/avaje-javaparent.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/org.avaje/avaje-javaparent/1.2/jars/avaje-javaparent.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.avaje/avaje-javaparent/1.2/jars/avaje-javaparent.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje/avaje-javaparent/1.2/jars/avaje-javaparent.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje/avaje-javaparent/1.2/jars/avaje-javaparent.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.avaje.ebeanorm/avaje-ebeanorm/3.2.2/jars/avaje-ebeanorm.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.avaje.ebeanorm/avaje-ebeanorm/3.2.2/jars/avaje-ebeanorm.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.jar[0m
-[0m[[0mdebug[0m] [0m	found org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.avaje.ebeanorm#avaje-ebeanorm;3.2.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.avaje.ebeanorm#avaje-ebeanorm;3.2.2[0m
+[0m[[0mdebug[0m] [0m	found org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.1->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.1->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->runtime(*)][0m
@@ -6716,12 +6629,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.2!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-jdbc_2.10;2.2.1!play-jdbc_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#anorm_2.10;2.2.1!anorm_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.jar[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-java-ebean_2.10;2.2.1!play-java-ebean_2.10.jar (1181ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-ebean_2.10;2.2.1!play-java-ebean_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-jdbc_2.10;2.2.1!play-java-jdbc_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java_2.10;2.2.1!play-java_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#webjars-play_2.10;2.2.0!webjars-play_2.10.jar[0m
@@ -6775,12 +6683,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.0.1!httpclient.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-logging#commons-logging;1.1.1!commons-logging.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] xml-apis#xml-apis;1.4.01!xml-apis.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.avaje.ebeanorm#avaje-ebeanorm;3.2.2!avaje-ebeanorm.jar (3660ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.avaje.ebeanorm#avaje-ebeanorm;3.2.2!avaje-ebeanorm.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1!avaje-ebeanorm-agent.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final!hibernate-jpa-2.0-api.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.yaml#snakeyaml;1.12!snakeyaml.jar(bundle)[0m
@@ -6866,7 +6769,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.2!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.2!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 13499ms :: artifacts dl 4989ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2550ms :: artifacts dl 95ms[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT compile produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT runtime produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT test produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-test.xml[0m
@@ -6880,5 +6783,5 @@
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT docs produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT pom produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT scala-tool produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (13499ms resolve - 4989ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (2550ms resolve - 95ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

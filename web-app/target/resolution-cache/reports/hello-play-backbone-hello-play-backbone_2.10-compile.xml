@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150329152857"/>
+		date="20150329225202"/>
 	<dependencies>
 		<module organisation="com.typesafe.play" name="play-mailer_2.10">
 			<revision name="2.4.0" status="release" pubdate="20150108160759" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-mailer" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="77">
@@ -292,11 +292,11 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-java-ebean_2.10">
-			<revision name="2.2.1" status="release" pubdate="20150329070456" resolver="typesafe-releases" artresolver="typesafe-releases" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="46">
-				<metadata-artifact status="successful" details="" size="1911" time="525" location="/home/misanthropic/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/ivy-2.2.1.xml" searched="true" original-local-location="/home/misanthropic/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/ivy-2.2.1.xml.original" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.pom"/>
+			<revision name="2.2.1" status="release" pubdate="20150329070456" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="46">
+				<metadata-artifact status="no" details="" size="3156" time="0" location="/home/misanthropic/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/ivy-2.2.1.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.pom"/>
 				<caller organisation="hello-play-backbone" name="hello-play-backbone_2.10" conf="compile" rev="2.2.1" rev-constraint-default="2.2.1" rev-constraint-dynamic="2.2.1" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-java-ebean_2.10" type="jar" ext="jar" status="successful" details="" size="12641" time="1181" location="/home/misanthropic/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.1.jar">
+					<artifact name="play-java-ebean_2.10" type="jar" ext="jar" status="no" details="" size="12641" time="0" location="/home/misanthropic/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.1.jar">
 						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.1/play-java-ebean_2.10-2.2.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -315,12 +315,12 @@
 			</revision>
 		</module>
 		<module organisation="org.avaje.ebeanorm" name="avaje-ebeanorm">
-			<revision name="3.2.2" status="release" pubdate="20130712021342" resolver="public" artresolver="public" homepage="http://www.avaje.org" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="61">
+			<revision name="3.2.2" status="release" pubdate="20130712021342" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.avaje.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="61">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="5652" time="308" location="/home/misanthropic/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/ivy-3.2.2.xml" searched="true" original-local-location="/home/misanthropic/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/ivy-3.2.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom"/>
+				<metadata-artifact status="no" details="" size="6277" time="0" location="/home/misanthropic/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/ivy-3.2.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom"/>
 				<caller organisation="com.typesafe.play" name="play-java-ebean_2.10" conf="default, compile, runtime, master" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="2.2.1"/>
 				<artifacts>
-					<artifact name="avaje-ebeanorm" type="jar" ext="jar" status="successful" details="" size="1582101" time="3660" location="/home/misanthropic/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar">
+					<artifact name="avaje-ebeanorm" type="jar" ext="jar" status="no" details="" size="1582101" time="0" location="/home/misanthropic/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.jar"/>
 					</artifact>
 				</artifacts>
