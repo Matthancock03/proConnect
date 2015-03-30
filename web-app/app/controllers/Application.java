@@ -1,29 +1,38 @@
 package controllers;
 
-import com.fasterxml.jackson.databind.node.*;
 import play.*;
 import play.api.libs.json.JsPath;
 import play.mvc.*;
-import play.libs.Json;
 import play.data.Form;
 import views.html.*;
-import java.util.*;
+import plugins.*;
 import models.*;
 import play.Logger;
-import play.libs.EventSource;
+import securesocial.core.*;
+import securesocial.*;
+import securesocial.core.java.SecureSocial;
+
 
 
 public class Application extends Controller{
 
-  public static Result register(){
-    return ok("Registered!");
-  }
+  @SecureSocial.SecuredAction
+   public static Result index() {
+       Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);
+       return ok("index.render(user)");
+   }
 
-  public static Result login(){
+   @SecureSocial.UserAwareAction
+   public static Result userAware() {
+       Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);
+       final String userName = user != null ? user.fullName() : "guest";
+       final String email = user.email().get() != null ? user.email().get() : "No email provided";
+       final String provider = user.identityId().providerId() != null ? user.identityId().providerId() : "No provider";
+       return ok("Hello " + userName + " " + email + " " + provider);
+   }
 
-
-    return ok("Logged In!");
-  }
-
-
+   @SecureSocial.SecuredAction(ajaxCall = true)
+   public static Result ajaxCall() {
+       return ok("{'Matt': 'Hancock'}");
+   }
 }

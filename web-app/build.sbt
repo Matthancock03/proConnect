@@ -5,17 +5,18 @@ version := "1.0-SNAPSHOT"
 libraryDependencies ++= Seq(
     jdbc,
     anorm,
+    javaEbean,
     javaJdbc,
     javaCore,
   "org.webjars" %% "webjars-play" % "2.2.0",
   "org.webjars" % "bootstrap" % "2.3.1",
   "org.mindrot"  % "jbcrypt"   % "0.3m",
   "postgresql" % "postgresql" % "9.1-901-1.jdbc4",
-  "be.objectify" %% "deadbolt-java" % "2.2-RC5",
   "org.twitter4j" % "twitter4j-core" % "3.0.3",
-  "ws.securesocial" %% "securesocial" % "2.1.4"
+  "ws.securesocial" %% "securesocial" % "2.1.3",
+  "com.typesafe.play" %% "play-mailer" % "2.4.0"
 )
 
-resolvers += Resolver.url("Objectify Play Repository", url("http://deadbolt.ws/releases/"))(Resolver.ivyStylePatterns)
+resolvers += Resolver.url("sbt-plugin-releases", new URL("http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/"))(Resolver.ivyStylePatterns)
 
 play.Project.playJavaSettings
