@@ -8,6 +8,9 @@ import views.formData.*;
 import views.html.*;
 import play.data.*;
 import play.Logger;
+import securesocial.core.*;
+import securesocial.*;
+import securesocial.core.java.SecureSocial;
 
 
 public class DbController extends Controller{
@@ -32,7 +35,8 @@ public class DbController extends Controller{
         return ok(home.render());
     }
   }
-
+  
+  @SecureSocial.SecuredAction
   public static Result home(){
     return ok(home.render());
   }

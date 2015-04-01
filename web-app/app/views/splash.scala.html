@@ -1,0 +1,43 @@
+@main("ProConnect"){
+<link rel="stylesheet" href="@routes.Assets.at("stylesheets/splash.min.css")">
+<div class="container-fluid">
+
+
+	<div class="row clearfix topSplash">
+    <nav class="navbar navbar-inverse">
+  				<div class="navbar-header">
+  					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  						<span class="sr-only">Toggle navigation</span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  					</button>
+  					<a class="navbar-brand" href="#">ProConnect</a>
+  				</div>
+  				<div id="navbar" class="collapse navbar-collapse">
+  			</div>
+  		</nav>
+
+  		<div class="col-md-3 column">
+  		</div>
+      <div class="col-md-6 column">
+        <h1 class="header-text text-center">A New Way To Connect</h1>
+  		</div>
+  		<div class="col-md-3 column">
+  		</div>
+	</div>
+	<div class="row clearfix bottomSplash">
+  		<div class="col-md-3 column">
+  		</div>
+      <div class="col-md-6 column">
+
+        <a href="@securesocial.controllers.routes.LoginPage.login().absoluteURL()">
+          <button class="btn center-block connect-button btn-lg">Get Connected</button>
+        </a>
+        <image class="logo-img" src="@routes.Assets.at("images/proConnect.jpg")">
+  		</div>
+  		<div class="col-md-3 column">
+  		</div>
+	</div>
+</div>
+}

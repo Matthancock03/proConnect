@@ -1,6 +1,6 @@
 // @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
-// @HASH:3179948cdbc2e8515ea56d79da3373ec6092093f
-// @DATE:Sun Mar 29 19:13:15 PDT 2015
+// @HASH:d0b2062da6652e7d6006684d75063706b25b543f
+// @DATE:Tue Mar 31 20:04:16 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -49,7 +49,6 @@ def at(file:String): Call = {
                           
 
 // @LINE:9
-// @LINE:8
 // @LINE:7
 // @LINE:6
 class ReverseDbController {
@@ -72,19 +71,20 @@ def home(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "loginUser")
 }
                                                 
-
-// @LINE:8
-def loginPage(): Call = {
-   Call("GET", _prefix)
-}
-                                                
     
 }
                           
 
 // @LINE:10
+// @LINE:8
 class ReverseApplication {
     
+
+// @LINE:8
+def splashPage(): Call = {
+   Call("GET", _prefix)
+}
+                                                
 
 // @LINE:10
 def userAware(): Call = {
@@ -292,7 +292,6 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
               
 
 // @LINE:9
-// @LINE:8
 // @LINE:7
 // @LINE:6
 class ReverseDbController {
@@ -330,10 +329,18 @@ def home : JavascriptReverseRoute = JavascriptReverseRoute(
    """
 )
                         
+    
+}
+              
+
+// @LINE:10
+// @LINE:8
+class ReverseApplication {
+    
 
 // @LINE:8
-def loginPage : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.DbController.loginPage",
+def splashPage : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.splashPage",
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + """"})
@@ -341,13 +348,6 @@ def loginPage : JavascriptReverseRoute = JavascriptReverseRoute(
    """
 )
                         
-    
-}
-              
-
-// @LINE:10
-class ReverseApplication {
-    
 
 // @LINE:10
 def userAware : JavascriptReverseRoute = JavascriptReverseRoute(
@@ -626,7 +626,6 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
                           
 
 // @LINE:9
-// @LINE:8
 // @LINE:7
 // @LINE:6
 class ReverseDbController {
@@ -640,7 +639,7 @@ def signUpUser(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 
 // @LINE:6
 def loginUser(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.DbController.loginUser(), HandlerDef(this, "controllers.DbController", "loginUser", Seq(), "POST", """POST     /login                    controllers.Application.login()""", _prefix + """loginUser""")
+   controllers.DbController.loginUser(), HandlerDef(this, "controllers.DbController", "loginUser", Seq(), "POST", """POST     /login                   controllers.Application.login()""", _prefix + """loginUser""")
 )
                       
 
@@ -649,19 +648,20 @@ def home(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.DbController.home(), HandlerDef(this, "controllers.DbController", "home", Seq(), "GET", """""", _prefix + """loginUser""")
 )
                       
-
-// @LINE:8
-def loginPage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.DbController.loginPage(), HandlerDef(this, "controllers.DbController", "loginPage", Seq(), "GET", """""", _prefix + """""")
-)
-                      
     
 }
                           
 
 // @LINE:10
+// @LINE:8
 class ReverseApplication {
     
+
+// @LINE:8
+def splashPage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.splashPage(), HandlerDef(this, "controllers.Application", "splashPage", Seq(), "GET", """""", _prefix + """""")
+)
+                      
 
 // @LINE:10
 def userAware(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(

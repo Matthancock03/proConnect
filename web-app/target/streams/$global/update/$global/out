@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@74799d69[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4e7a5ae7[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.2[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.2[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.2 in sbt-chain[0m
@@ -6567,7 +6567,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.2!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.2!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 5683ms :: artifacts dl 174ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 15370ms :: artifacts dl 2629ms[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT compile produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT runtime produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT test produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-test.xml[0m
@@ -6581,5 +6581,5 @@
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT docs produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT pom produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT scala-tool produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (5683ms resolve - 174ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (15370ms resolve - 2629ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

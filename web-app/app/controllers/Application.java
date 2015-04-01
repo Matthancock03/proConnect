@@ -16,6 +16,10 @@ import securesocial.core.java.SecureSocial;
 
 public class Application extends Controller{
 
+  public static Result splashPage(){
+    return ok(splash.render());
+  }
+
   @SecureSocial.SecuredAction
    public static Result index() {
        Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);
