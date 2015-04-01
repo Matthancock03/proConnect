@@ -5,3 +5,15 @@
 .tweetHeader {
   background-color: #1f0eb6;
 }
+.peopleCarouselImg {
+  width: auto !important;
+  max-height: 50px;
+}
+.carousel {
+  max-height: 100px !important;
+  overflow: hidden;
+}
+.carousel .item img {
+  width: 100%;
+  height: auto;
+}

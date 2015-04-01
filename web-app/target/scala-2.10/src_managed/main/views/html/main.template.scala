@@ -46,10 +46,11 @@ Seq[Any](format.raw/*1.32*/("""
         <link rel="stylesheet" href=""""),_display_(Seq[Any](/*18.39*/routes/*18.45*/.Assets.at("stylesheets/container.min.css"))),format.raw/*18.88*/("""">
         <link rel="stylesheet" href=""""),_display_(Seq[Any](/*19.39*/routes/*19.45*/.Assets.at("stylesheets/main.min.css"))),format.raw/*19.83*/("""">
         <link rel="stylesheet" href=""""),_display_(Seq[Any](/*20.39*/routes/*20.45*/.Assets.at("stylesheets/navbar.min.css"))),format.raw/*20.85*/("""">
-        <link rel="shortcut icon" type="image/png" href=""""),_display_(Seq[Any](/*21.59*/routes/*21.65*/.Assets.at("images/proConnect.jpg"))),format.raw/*21.100*/("""">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abril+Fatface" />
+        <link rel="shortcut icon" type="image/png" href=""""),_display_(Seq[Any](/*22.59*/routes/*22.65*/.Assets.at("images/proConnect.jpg"))),format.raw/*22.100*/("""">
         </head>
     <body>
-        """),_display_(Seq[Any](/*24.10*/content)),format.raw/*24.17*/("""
+        """),_display_(Seq[Any](/*25.10*/content)),format.raw/*25.17*/("""
     </body>
 </html>
 """))}
@@ -64,11 +65,11 @@ Seq[Any](format.raw/*1.32*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Mar 31 21:05:25 PDT 2015
+                    DATE: Tue Mar 31 23:02:34 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/main.scala.html
-                    HASH: 2880fd40c0f0eaf87b2c523c47829968db5a1c41
-                    MATRIX: 778->1|902->31|990->84|1016->89|1662->699|1677->705|1742->748|1819->789|1834->795|1894->833|1971->874|1986->880|2048->920|2145->981|2160->987|2218->1022|2293->1061|2322->1068
-                    LINES: 26->1|29->1|35->7|35->7|46->18|46->18|46->18|47->19|47->19|47->19|48->20|48->20|48->20|49->21|49->21|49->21|52->24|52->24
+                    HASH: 73a1f599712f7e59b8a2009bedf61b1851af0ea6
+                    MATRIX: 778->1|902->31|990->84|1016->89|1662->699|1677->705|1742->748|1819->789|1834->795|1894->833|1971->874|1986->880|2048->920|2250->1086|2265->1092|2323->1127|2398->1166|2427->1173
+                    LINES: 26->1|29->1|35->7|35->7|46->18|46->18|46->18|47->19|47->19|47->19|48->20|48->20|48->20|50->22|50->22|50->22|53->25|53->25
                     -- GENERATED --
                 */
             

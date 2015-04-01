@@ -16,3 +16,6 @@ ul {
   overflow: scroll;
   width: 100%;
 }
+a {
+  text-decoration: none;
+}
