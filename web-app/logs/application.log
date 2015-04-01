@@ -2164,3 +2164,72 @@ Starting application default Akka system.
 2015-03-31 20:40:39,816 - [INFO] - from play in play-internal-execution-context-9 
 Application started (Dev)
 
+2015-03-31 20:45:39,816 - [DEBUG] - from application in play-akka.actor.default-dispatcher-213 
+[securesocial] calling deleteExpiredTokens()
+
+2015-03-31 20:48:10,467 - [INFO] - from application in play-internal-execution-context-9 
+[securesocial] unloaded identity provider: userpass
+
+2015-03-31 20:48:10,467 - [INFO] - from application in play-internal-execution-context-9 
+[securesocial] unloaded identity provider: google
+
+2015-03-31 20:48:10,467 - [INFO] - from application in play-internal-execution-context-9 
+[securesocial] unloaded identity provider: facebook
+
+2015-03-31 20:48:10,467 - [INFO] - from application in play-internal-execution-context-9 
+[securesocial] unloaded identity provider: twitter
+
+2015-03-31 20:48:10,467 - [INFO] - from application in play-internal-execution-context-9 
+[securesocial] unloaded password hasher bcrypt
+
+2015-03-31 20:48:10,467 - [INFO] - from play in play-internal-execution-context-9 
+Shutdown application default Akka system.
+
+2015-03-31 20:48:11,086 - [INFO] - from play in play-internal-execution-context-9 
+database [default] connected at jdbc:h2:mem:play
+
+2015-03-31 20:48:11,491 - [INFO] - from application in play-internal-execution-context-9 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-03-31 20:48:11,504 - [INFO] - from play in play-internal-execution-context-9 
+Starting application default Akka system.
+
+2015-03-31 20:48:11,504 - [INFO] - from application in play-internal-execution-context-9 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-03-31 20:48:11,504 - [INFO] - from application in play-internal-execution-context-9 
+[securesocial] loaded password hasher bcrypt
+
+2015-03-31 20:48:11,507 - [INFO] - from application in play-internal-execution-context-9 
+[securesocial] loaded identity provider: twitter
+
+2015-03-31 20:48:11,507 - [INFO] - from application in play-internal-execution-context-9 
+[securesocial] loaded identity provider: facebook
+
+2015-03-31 20:48:11,507 - [INFO] - from application in play-internal-execution-context-9 
+[securesocial] loaded identity provider: google
+
+2015-03-31 20:48:11,507 - [DEBUG] - from application in play-akka.actor.default-dispatcher-213 
+[securesocial] calling deleteExpiredTokens()
+
+2015-03-31 20:48:11,512 - [INFO] - from application in play-internal-execution-context-9 
+[securesocial] loaded identity provider: userpass
+
+2015-03-31 20:48:11,513 - [INFO] - from play in play-internal-execution-context-9 
+Application started (Dev)
+
+2015-03-31 20:48:30,908 - [DEBUG] - from application in play-akka.actor.default-dispatcher-220 
+[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
+
+2015-03-31 20:48:30,912 - [DEBUG] - from application in play-akka.actor.default-dispatcher-220 
+[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=57fd3d31-cdaf-48c7-97fb-1c3c8a56b0ff]
+
+2015-03-31 20:48:39,057 - [DEBUG] - from application in play-akka.actor.default-dispatcher-216 
+[securesocial] got json back [{"access_token":"ya29.SAHUke6hmzYfL7Hf_UMp_ysxl5g6P6eQdNgIdBA6miGffoKQxub8dt_ZG1KJ_XE_qkuiuXmyBIF_dg","token_type":"Bearer","expires_in":3593,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjljMWMyZTZjODliYWQ3ZTlmMDJlOTg2MTk1NmQ2YTE5ZTNiMTliMjkifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTA3OTI1NDIxNzg4ODI3MzA5NTIxIiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6Im1hdHRoYW5jb2NrMDNAZ21haWwuY29tIiwiYXRfaGFzaCI6IlRfZHVJdExCUlFlMUFnLTJ0VFlxREEiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0Mjc4NjAwODgsImV4cCI6MTQyNzg2MzcxOH0.gAtPv8TqevfdWCbxh0wWtIvxxG6dsvv6hz6MTkjxmDyujBigKEc4C59TXfiHtssGMON1YDqkXGbIMdxchCfT3e_1-qi5asYgQwSVEeVZgINjSMamROz3xUIHRWrWa0SLhiy45aVe-cX3dsW__qsSJVOPywktz2z2DCGgth56wPI"}]
+
+2015-03-31 20:48:39,331 - [DEBUG] - from application in play-akka.actor.default-dispatcher-216 
+[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.SAHUke6hmzYfL7Hf_UMp_ysxl5g6P6eQdNgIdBA6miGffoKQxub8dt_ZG1KJ_XE_qkuiuXmyBIF_dg,Some(Bearer),Some(3593),None)),None))
+
+2015-03-31 20:48:40,033 - [DEBUG] - from application in play-akka.actor.default-dispatcher-216 
+[securesocial] user logged in : [SocialUser(IdentityId(107925421788827309521,google),Matthew,Hancock,Matthew Hancock,Some(matthancock03@gmail.com),Some(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.SAHUke6hmzYfL7Hf_UMp_ysxl5g6P6eQdNgIdBA6miGffoKQxub8dt_ZG1KJ_XE_qkuiuXmyBIF_dg,Some(Bearer),Some(3593),None)),None)]
+

@@ -69,36 +69,27 @@ Seq[Any](format.raw/*2.1*/("""
 				</ol>
 				<div class="carousel-inner">
 					<div class="item active">
-						<img alt="" src="http://lorempixel.com/1600/500/sports/1" />
+						<img alt="" src=""""),_display_(Seq[Any](/*44.25*/routes/*44.31*/.Assets.at("images/businessImage1.jpg"))),format.raw/*44.70*/("""" />
 						<div class="carousel-caption">
 							<h4>
-								First Thumbnail label
+								Engage Your Peers
 							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
 						</div>
 					</div>
 					<div class="item">
-						<img alt="" src="http://lorempixel.com/1600/500/sports/2" />
+						<img alt="" src=""""),_display_(Seq[Any](/*52.25*/routes/*52.31*/.Assets.at("images/business2.jpg"))),format.raw/*52.65*/("""" />
 						<div class="carousel-caption">
 							<h4>
-								Second Thumbnail label
+								Get Connected
 							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
 						</div>
 					</div>
 					<div class="item">
-						<img alt="" src="http://lorempixel.com/1600/500/sports/3" />
+						<img alt="" src=""""),_display_(Seq[Any](/*60.25*/routes/*60.31*/.Assets.at("images/proConnect.jpg"))),format.raw/*60.66*/("""" />
 						<div class="carousel-caption">
 							<h4>
-								Third Thumbnail label
+								ProConnect
 							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
 						</div>
 					</div>
 				</div> <a class="left carousel-control" href="#carousel-13062" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-13062" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -190,7 +181,7 @@ Seq[Any](format.raw/*2.1*/("""
 	</div>
   </div>
 </div>
-""")))})),format.raw/*165.2*/("""
+""")))})),format.raw/*156.2*/("""
 """))}
     }
     
@@ -203,11 +194,11 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Mar 31 20:42:59 PDT 2015
+                    DATE: Tue Mar 31 20:50:00 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
-                    HASH: 9a456c17da5332481e526268da365a0dacf2a6b7
-                    MATRIX: 870->17|906->19|932->37|971->39|1062->96|1076->102|1106->111|5837->4810
-                    LINES: 30->2|31->3|31->3|31->3|35->7|35->7|35->7|193->165
+                    HASH: 8c63431e1eef13ea4cfefd09fdadbeca9888c668
+                    MATRIX: 870->17|906->19|932->37|971->39|1062->96|1076->102|1106->111|2025->994|2040->1000|2101->1039|2303->1205|2318->1211|2374->1245|2572->1407|2587->1413|2644->1448|5435->4207
+                    LINES: 30->2|31->3|31->3|31->3|35->7|35->7|35->7|72->44|72->44|72->44|80->52|80->52|80->52|88->60|88->60|88->60|184->156
                     -- GENERATED --
                 */
             
