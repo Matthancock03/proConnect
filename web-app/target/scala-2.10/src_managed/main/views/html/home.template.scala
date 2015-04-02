@@ -29,10 +29,12 @@ object home extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,F
 
 Seq[Any](format.raw/*2.1*/("""
 """),_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any](format.raw/*3.22*/("""
+	<link rel="stylesheet" href=""""),_display_(Seq[Any](/*4.32*/routes/*4.38*/.Assets.at("stylesheets/home.min.css"))),format.raw/*4.76*/("""">
+
 
 <div class="container-fluid">
 	<div class="row clearfix">
-		"""),_display_(Seq[Any](/*7.4*/navbar/*7.10*/.render())),format.raw/*7.19*/("""
+		"""),_display_(Seq[Any](/*9.4*/navbar/*9.10*/.render())),format.raw/*9.19*/("""
 	</div>
 
 	<div class="row clearfix">
@@ -69,7 +71,7 @@ Seq[Any](format.raw/*2.1*/("""
 				</ol>
 				<div class="carousel-inner">
 					<div class="item active">
-						<img alt="" src=""""),_display_(Seq[Any](/*44.25*/routes/*44.31*/.Assets.at("images/businessImage1.jpg"))),format.raw/*44.70*/("""" />
+						<img class="img-responsive center-block" alt="" src=""""),_display_(Seq[Any](/*46.61*/routes/*46.67*/.Assets.at("images/businessImage1.jpg"))),format.raw/*46.106*/("""" />
 						<div class="carousel-caption">
 							<h4>
 								Engage Your Peers
@@ -77,7 +79,7 @@ Seq[Any](format.raw/*2.1*/("""
 						</div>
 					</div>
 					<div class="item">
-						<img alt="" src=""""),_display_(Seq[Any](/*52.25*/routes/*52.31*/.Assets.at("images/business2.jpg"))),format.raw/*52.65*/("""" />
+						<img class="img-responsive center-block" alt="" src=""""),_display_(Seq[Any](/*54.61*/routes/*54.67*/.Assets.at("images/business2.jpg"))),format.raw/*54.101*/("""" />
 						<div class="carousel-caption">
 							<h4>
 								Get Connected
@@ -85,7 +87,7 @@ Seq[Any](format.raw/*2.1*/("""
 						</div>
 					</div>
 					<div class="item">
-						<img alt="" src=""""),_display_(Seq[Any](/*60.25*/routes/*60.31*/.Assets.at("images/proConnect.jpg"))),format.raw/*60.66*/("""" />
+						<img class="img-responsive center-block" alt="" src=""""),_display_(Seq[Any](/*62.61*/routes/*62.67*/.Assets.at("images/proConnect.jpg"))),format.raw/*62.102*/("""" />
 						<div class="carousel-caption">
 							<h4>
 								ProConnect
@@ -98,7 +100,7 @@ Seq[Any](format.raw/*2.1*/("""
 		<div class="col-xs-4 column">
 			<div>
 				<div class="panel panel-default">
-				  <div class="panel-heading tweetHeader">Twitter Feed</div>
+				  <div class="panel-heading">Twitter Feed</div>
 				  <div class="panel-body">
 						<ul class="list-group overflow-y-scroll tweetTable">
 							  <li class="list-group-item">First item</li>
@@ -181,7 +183,7 @@ Seq[Any](format.raw/*2.1*/("""
 	</div>
   </div>
 </div>
-""")))})),format.raw/*156.2*/("""
+""")))})),format.raw/*158.2*/("""
 """))}
     }
     
@@ -194,11 +196,11 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed Apr 01 20:54:49 PDT 2015
+                    DATE: Thu Apr 02 09:39:46 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
-                    HASH: 9c8fc56229c10c2401aea87e45f97cb7e0a8dba5
-                    MATRIX: 870->17|906->19|932->37|971->39|1068->102|1082->108|1112->117|2031->1000|2046->1006|2107->1045|2309->1211|2324->1217|2380->1251|2578->1413|2593->1419|2650->1454|5441->4213
-                    LINES: 30->2|31->3|31->3|31->3|35->7|35->7|35->7|72->44|72->44|72->44|80->52|80->52|80->52|88->60|88->60|88->60|184->156
+                    HASH: 83aa004a45e850f666452cd24513a7e0d23d8584
+                    MATRIX: 870->17|906->19|932->37|971->39|1038->71|1052->77|1111->115|1211->181|1225->187|1255->196|2210->1115|2225->1121|2287->1160|2525->1362|2540->1368|2597->1402|2831->1600|2846->1606|2904->1641|5683->4388
+                    LINES: 30->2|31->3|31->3|31->3|32->4|32->4|32->4|37->9|37->9|37->9|74->46|74->46|74->46|82->54|82->54|82->54|90->62|90->62|90->62|186->158
                     -- GENERATED --
                 */
             

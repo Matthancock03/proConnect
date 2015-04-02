@@ -1,19 +1,17 @@
-.profileImage {
-  width: 50%;
-  height: 20%;
-}
-.tweetHeader {
-  background-color: #1f0eb6;
+.panel > .panel-heading {
+  background-image: none;
+  background-color: #0c98cf;
+  color: white;
 }
 .peopleCarouselImg {
   width: auto !important;
-  max-height: 50px;
+  max-height: 300px;
 }
 .carousel {
-  max-height: 100px !important;
+  max-height: 300px !important;
   overflow: hidden;
 }
 .carousel .item img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 300px;
 }

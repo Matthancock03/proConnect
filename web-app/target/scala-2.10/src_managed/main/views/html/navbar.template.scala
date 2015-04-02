@@ -57,10 +57,11 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account<span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*35.25*/routes/*35.31*/.Application.about())),format.raw/*35.51*/("""">About ProConnect</a></li>
           <li class="divider"></li>
-          <li><a href=""""),_display_(Seq[Any](/*36.25*/securesocial/*36.37*/.controllers.routes.LoginPage.logout().absoluteURL())),format.raw/*36.89*/("""">Sign Out</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*37.25*/securesocial/*37.37*/.controllers.routes.LoginPage.logout().absoluteURL())),format.raw/*37.89*/("""">Sign Out</a></li>
         </ul>
       </li>
     </ul>
@@ -79,11 +80,11 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed Apr 01 21:24:04 PDT 2015
+                    DATE: Thu Apr 02 09:21:14 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/navbar.scala.html
-                    HASH: cc77d8a1eea956c64ef8654592a97636365fd906
-                    MATRIX: 856->1|1413->522|1428->528|1470->548|1734->776|1749->782|1791->802|1863->838|1878->844|1927->871|2002->910|2017->916|2065->942|2144->985|2159->991|2201->1011|2933->1707|2954->1719|3028->1771
-                    LINES: 29->2|39->12|39->12|39->12|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21|63->36|63->36|63->36
+                    HASH: e9fbc72e18464c0bdb99413e94b88dfb0b1fa512
+                    MATRIX: 856->1|1413->522|1428->528|1470->548|1734->776|1749->782|1791->802|1863->838|1878->844|1927->871|2002->910|2017->916|2065->942|2144->985|2159->991|2201->1011|2889->1663|2904->1669|2946->1689|3070->1777|3091->1789|3165->1841
+                    LINES: 29->2|39->12|39->12|39->12|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21|62->35|62->35|62->35|64->37|64->37|64->37
                     -- GENERATED --
                 */
             
