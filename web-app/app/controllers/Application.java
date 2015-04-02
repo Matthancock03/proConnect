@@ -16,6 +16,12 @@ import securesocial.core.java.SecureSocial;
 
 public class Application extends Controller{
 
+  public static Result forum(){
+    return ok(forum.render());
+  }
+  public static Result connections(){
+    return ok(connections.render());
+  }
   public static Result splashPage(){
     return ok(splash.render());
   }

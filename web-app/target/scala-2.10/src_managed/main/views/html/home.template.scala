@@ -30,7 +30,7 @@ object home extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,F
 Seq[Any](format.raw/*2.1*/("""
 """),_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any](format.raw/*3.22*/("""
 
-<div class="container">
+<div class="container-fluid">
 	<div class="row clearfix">
 		"""),_display_(Seq[Any](/*7.4*/navbar/*7.10*/.render())),format.raw/*7.19*/("""
 	</div>
@@ -194,10 +194,10 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Mar 31 23:11:55 PDT 2015
+                    DATE: Wed Apr 01 20:54:49 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
-                    HASH: 8c63431e1eef13ea4cfefd09fdadbeca9888c668
-                    MATRIX: 870->17|906->19|932->37|971->39|1062->96|1076->102|1106->111|2025->994|2040->1000|2101->1039|2303->1205|2318->1211|2374->1245|2572->1407|2587->1413|2644->1448|5435->4207
+                    HASH: 9c8fc56229c10c2401aea87e45f97cb7e0a8dba5
+                    MATRIX: 870->17|906->19|932->37|971->39|1068->102|1082->108|1112->117|2031->1000|2046->1006|2107->1045|2309->1211|2324->1217|2380->1251|2578->1413|2593->1419|2650->1454|5441->4213
                     LINES: 30->2|31->3|31->3|31->3|35->7|35->7|35->7|72->44|72->44|72->44|80->52|80->52|80->52|88->60|88->60|88->60|184->156
                     -- GENERATED --
                 */

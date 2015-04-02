@@ -23,6 +23,11 @@ public class DbController extends Controller{
     return ok(login.render("", loginFormData, signUpFormData));
   }
 
+  public static Result editProfile(){
+
+    return ok(profileEdit.render());
+  }
+
   public static Result loginUser(){
       Form<loginFormData> formData = Form.form(loginFormData.class).bindFromRequest();
       if (formData.hasErrors()) {
@@ -35,7 +40,7 @@ public class DbController extends Controller{
         return ok(home.render());
     }
   }
-  
+
   @SecureSocial.SecuredAction
   public static Result home(){
     return ok(home.render());

@@ -36,16 +36,16 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Proconnect</a>
+      <a class="navbar-brand" href=""""),_display_(Seq[Any](/*12.38*/routes/*12.44*/.DbController.home())),format.raw/*12.64*/("""">Proconnect</a>
     </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Connections</a></li>
-      <li><a href="#">Forums</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*18.21*/routes/*18.27*/.DbController.home())),format.raw/*18.47*/("""">Home</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*19.21*/routes/*19.27*/.DbController.editProfile())),format.raw/*19.54*/("""">Profile</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*20.21*/routes/*20.27*/.Application.connections())),format.raw/*20.53*/("""">Connections</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*21.21*/routes/*21.27*/.Application.forum())),format.raw/*21.47*/("""">Forums</a></li>
     </ul>
     <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
@@ -80,11 +80,11 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Mar 28 13:08:07 PDT 2015
+                    DATE: Wed Apr 01 21:03:00 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/navbar.scala.html
-                    HASH: 0a98025ec917d5b9aa58924dad3927b1f2156d6b
-                    MATRIX: 856->1
-                    LINES: 29->2
+                    HASH: 3ab63cd898705d514e1173d55f67f175021e8ae5
+                    MATRIX: 856->1|1413->522|1428->528|1470->548|1734->776|1749->782|1791->802|1863->838|1878->844|1927->871|2002->910|2017->916|2065->942|2144->985|2159->991|2201->1011
+                    LINES: 29->2|39->12|39->12|39->12|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21
                     -- GENERATED --
                 */
             
