@@ -7,11 +7,10 @@ import play.data.*;
 
 
 
-public class User {
+public class User{
 
-  
+
   public String id;
-
   public String firstName;
   public String lastName;
   public String email;

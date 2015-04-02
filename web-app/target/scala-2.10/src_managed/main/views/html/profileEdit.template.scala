@@ -62,22 +62,46 @@ Seq[Any](format.raw/*2.1*/("""
           <div class="break-after">
           <label class="spacer" for="comment">Experience:</label>
             <textarea class="form-control" rows="4" id="comment"></textarea>
+            <div>
+            <button type="button" class="btn btn-danger  btn-xs" aria-label="left Align">
+              <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="btn btn-info  btn-xs" aria-label="left Align">
+              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            </button>
+          </div>
           </div>
           <div class="break-after">
           <label class="spacer" for="comment">Projects Or Skills Highlight:</label>
               <textarea class="form-control" rows="4" id="comment"></textarea>
+              <div>
+              <button type="button" class="btn btn-danger  btn-xs" aria-label="left Align">
+                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+              </button>
+              <button type="button" class="btn btn-info  btn-xs" aria-label="left Align">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+              </button>
+            </div>
             </div>
             <div class="break-after">
-          <label class="spacer" for="comment">Education:</label>
+              <label class="spacer" for="comment">Education:</label>
                 <textarea class="form-control" rows="4" id="comment"></textarea>
+                <div>
+                <button type="button" class="btn btn-danger  btn-xs" aria-label="left Align">
+                  <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-info  btn-xs" aria-label="left Align">
+                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </button>
+              </div>
           </div>
           <button type="submit" class="btn save-button">Submit</button>
     </div>
       </div>
       <div class="col-xs-2 column bottom-div"></div>
-    """)))})),format.raw/*50.6*/("""
+    """)))})),format.raw/*74.6*/("""
 		</div>
-""")))})),format.raw/*52.2*/("""
+""")))})),format.raw/*76.2*/("""
 """))}
     }
     
@@ -90,11 +114,11 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed Apr 01 21:24:04 PDT 2015
+                    DATE: Thu Apr 02 10:35:56 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileEdit.scala.html
-                    HASH: 52631aea2d63765d96188ebacf859f986f639b7f
-                    MATRIX: 877->17|913->19|939->37|977->38|1015->42|1029->48|1057->55|1125->88|1139->94|1205->139|1626->525|1641->531|1690->571|1729->572|3434->2246|3476->2257
-                    LINES: 30->2|31->3|31->3|31->3|32->4|32->4|32->4|33->5|33->5|33->5|44->16|44->16|44->16|44->16|78->50|80->52
+                    HASH: a5e04702a53240ba7840589ce61caf7eb9242683
+                    MATRIX: 877->17|913->19|939->37|977->38|1015->42|1029->48|1057->55|1125->88|1139->94|1205->139|1626->525|1641->531|1690->571|1729->572|4740->3552|4782->3563
+                    LINES: 30->2|31->3|31->3|31->3|32->4|32->4|32->4|33->5|33->5|33->5|44->16|44->16|44->16|44->16|102->74|104->76
                     -- GENERATED --
                 */
             
