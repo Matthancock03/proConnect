@@ -80,7 +80,7 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Apr 02 09:21:14 PDT 2015
+                    DATE: Sat Apr 04 15:18:41 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/navbar.scala.html
                     HASH: e9fbc72e18464c0bdb99413e94b88dfb0b1fa512
                     MATRIX: 856->1|1413->522|1428->528|1470->548|1734->776|1749->782|1791->802|1863->838|1878->844|1927->871|2002->910|2017->916|2065->942|2144->985|2159->991|2201->1011|2889->1663|2904->1669|2946->1689|3070->1777|3091->1789|3165->1841

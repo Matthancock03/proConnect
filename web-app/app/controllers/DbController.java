@@ -41,7 +41,7 @@ public class DbController extends Controller{
     }
   }
 
-  @SecureSocial.SecuredAction
+  //@SecureSocial.SecuredAction
   public static Result home(){
     return ok(home.render());
   }

@@ -1,10 +1,11 @@
 @main("ProConnect"){
 <link rel="stylesheet" href="@routes.Assets.at("stylesheets/splash.min.css")">
+
 <div class="container-fluid">
 
 
 	<div class="row clearfix topSplash">
-    <nav class="navbar navbar-inverse">
+    <!--<nav class="navbar navbar-inverse">
   				<div class="navbar-header">
   					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
   						<span class="sr-only">Toggle navigation</span>
@@ -16,13 +17,49 @@
   				</div>
   				<div id="navbar" class="collapse navbar-collapse">
   			</div>
-  		</nav>
+  		</nav> -->
 
   		<div class="col-xs-3 column">
   		</div>
-      <div class="col-xs-6 column">
-        <h1 class ="header-text text-center">ProConnect</h1>
-        <h3 class="text-center top-text">A New Way To Connect</h3>
+      <div class="col-xs-6 column" style="padding-top: 25px;">
+				<div class="carousel slide" id="carousel-13062">
+					<ol class="carousel-indicators">
+						<li class="active" data-slide-to="0" data-target="#carousel-13062">
+						</li>
+						<li data-slide-to="1" data-target="#carousel-13062">
+						</li>
+						<li data-slide-to="2" data-target="#carousel-13062">
+						</li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item">
+							<img class="img-responsive center-block" alt="" src="@routes.Assets.at("images/Networking.jpg")" />
+							<div class="carousel-caption">
+								<h4>
+									Engage Your Peers
+								</h4>
+							</div>
+						</div>
+						<div class="item">
+							<img class="img-responsive center-block" alt="" src="@routes.Assets.at("images/business2.jpg")" />
+							<div class="carousel-caption">
+								<h4>
+									Get Connected
+								</h4>
+							</div>
+						</div>
+						<div class="item active">
+							<img class="img-responsive center-block" alt="" src="@routes.Assets.at("images/proConnect.jpg")" />
+							<div class="carousel-caption">
+								<h4>
+									ProConnect
+								</h4>
+							</div>
+						</div>
+					</div> <a class="left carousel-control" href="#carousel-13062" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-13062" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+				</div>
+        <!-- <h1 class ="header-text text-center">ProConnect</h1>
+        <h3 class="text-center top-text">A New Way To Connect</h3> -->
 
   		</div>
   		<div class="col-xs-3 column">
@@ -30,7 +67,7 @@
 	</div>
 	<div class="row clearfix bottomSplash">
   		<div class="col-xs-3 column text-div">
-        <image class="logo-img " src="@routes.Assets.at("images/proConnect.jpg")">
+        <!-- <image class="logo-img " src="@routes.Assets.at("images/proConnect.jpg")"> -->
 
   		</div>
       <div class="col-xs-6 column">

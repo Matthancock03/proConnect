@@ -8,6 +8,18 @@
 .top-text {
   margin-top: 50px;
 }
+.peopleCarouselImg {
+  width: auto !important;
+  max-height: 300px;
+}
+.carousel {
+  max-height: 300px !important;
+  overflow: hidden;
+}
+.carousel .item img {
+  width: auto;
+  height: 300px;
+}
 .connect-button {
   background-color: #fff568;
   margin-top: 50px;
