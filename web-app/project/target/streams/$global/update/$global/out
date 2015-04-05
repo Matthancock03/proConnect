@@ -3089,7 +3089,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.0!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.2!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4310ms :: artifacts dl 183ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 5628ms :: artifacts dl 87ms[0m
 [0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT compile produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT runtime produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT test produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-test.xml[0m
@@ -3103,5 +3103,5 @@
 [0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT docs produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT pom produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT scala-tool produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (4310ms resolve - 183ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (5628ms resolve - 87ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
