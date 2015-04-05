@@ -7,7 +7,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4981cb50[0m
+=======
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e0967a0[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -18,9 +22,33 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-jdbc_2.10;2.2.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-jdbc_2.10;2.2.3 {compile=[default(compile)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-jdbc_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-jdbc_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-jdbc_2.10;2.2.3 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-jdbc_2.10/2.2.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#play-jdbc_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/play-jdbc_2.10/2.2.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#play-jdbc_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.play#play-jdbc_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.play#play-jdbc_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.pom (2.2.3)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-jdbc_2.10;2.2.3!play-jdbc_2.10.pom(pom.original) (434ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-jdbc_2.10/2.2.3/jars/play-jdbc_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/play-jdbc_2.10/2.2.3/jars/play-jdbc_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-jdbc_2.10;2.2.3 in typesafe-releases[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.2.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-jdbc_2.10;2.2.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-jdbc_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->master(*)][0m
@@ -607,9 +635,33 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#anorm_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#anorm_2.10;2.2.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#anorm_2.10;2.2.3 {compile=[default(compile)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#anorm_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#anorm_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#anorm_2.10;2.2.3 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/anorm_2.10/2.2.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#anorm_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/anorm_2.10/2.2.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#anorm_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.play#anorm_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.play#anorm_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.pom (2.2.3)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#anorm_2.10;2.2.3!anorm_2.10.pom(pom.original) (458ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/anorm_2.10/2.2.3/jars/anorm_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/anorm_2.10/2.2.3/jars/anorm_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#anorm_2.10;2.2.3 in typesafe-releases[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#anorm_2.10;2.2.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#anorm_2.10;2.2.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#anorm_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
@@ -620,26 +672,98 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-java-ebean_2.10;2.2.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-java-ebean_2.10;2.2.3 {compile=[default(compile)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-java-ebean_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-java-ebean_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java-ebean_2.10;2.2.3 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-java-ebean_2.10/2.2.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#play-java-ebean_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/play-java-ebean_2.10/2.2.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#play-java-ebean_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.play#play-java-ebean_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.play#play-java-ebean_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom (2.2.3)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-java-ebean_2.10;2.2.3!play-java-ebean_2.10.pom(pom.original) (484ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-java-ebean_2.10/2.2.3/jars/play-java-ebean_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/play-java-ebean_2.10/2.2.3/jars/play-java-ebean_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java-ebean_2.10;2.2.3 in typesafe-releases[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-java-jdbc_2.10;2.2.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-java-jdbc_2.10;2.2.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-java-jdbc_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-java-jdbc_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java-jdbc_2.10;2.2.3 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-java-jdbc_2.10/2.2.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#play-java-jdbc_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/play-java-jdbc_2.10/2.2.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#play-java-jdbc_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.play#play-java-jdbc_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.play#play-java-jdbc_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.pom (2.2.3)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-java-jdbc_2.10;2.2.3!play-java-jdbc_2.10.pom(pom.original) (432ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-java-jdbc_2.10/2.2.3/jars/play-java-jdbc_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/play-java-jdbc_2.10/2.2.3/jars/play-java-jdbc_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java-jdbc_2.10;2.2.3 in typesafe-releases[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->com.typesafe.play#play-jdbc_2.10;2.2.3 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->com.typesafe.play#play-jdbc_2.10;2.2.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->com.typesafe.play#play-java_2.10;2.2.3 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-java_2.10;2.2.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-java_2.10;2.2.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-java_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-java_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java_2.10;2.2.3 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-java_2.10/2.2.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#play-java_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/play-java_2.10/2.2.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#play-java_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.play#play-java_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.play#play-java_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.pom (2.2.3)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-java_2.10;2.2.3!play-java_2.10.pom(pom.original) (462ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-java_2.10/2.2.3/jars/play-java_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/play-java_2.10/2.2.3/jars/play-java_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java_2.10;2.2.3 in typesafe-releases[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->com.typesafe.play#play-java_2.10;2.2.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->compile(*)][0m
@@ -2341,9 +2465,33 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-test_2.10;2.2.3 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-test_2.10;2.2.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-test_2.10;2.2.3 {test=[default(compile)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-test_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-test_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-test_2.10;2.2.3 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-test_2.10/2.2.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#play-test_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/play-test_2.10/2.2.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#play-test_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.play#play-test_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.play#play-test_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.pom (2.2.3)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-test_2.10;2.2.3!play-test_2.10.pom(pom.original) (436ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-test_2.10/2.2.3/jars/play-test_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/play-test_2.10/2.2.3/jars/play-test_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-test_2.10;2.2.3 in typesafe-releases[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-test_2.10;2.2.3 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-test_2.10;2.2.3 [test->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->master(*)][0m
@@ -6102,9 +6250,33 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-docs_2.10;2.2.3 [docs->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-docs_2.10;2.2.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-docs_2.10;2.2.3 {docs=[default(compile)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-docs_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-docs_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-docs_2.10;2.2.3 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-docs_2.10/2.2.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#play-docs_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/play-docs_2.10/2.2.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#play-docs_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.play#play-docs_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.play#play-docs_2.10;2.2.3[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.pom (2.2.3)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-docs_2.10;2.2.3!play-docs_2.10.pom(pom.original) (839ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.play/play-docs_2.10/2.2.3/jars/play-docs_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.play/play-docs_2.10/2.2.3/jars/play-docs_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-docs_2.10;2.2.3 in typesafe-releases[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-docs_2.10;2.2.3 [docs->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.play#play-docs_2.10;2.2.3 [docs->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-docs_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->master(*)][0m
@@ -6560,9 +6732,28 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#jline;2.10.3 [optional->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#jline;2.10.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.3 {optional=[compile(*), master(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#jline;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#jline;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#jline;2.10.3 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.scala-lang/jline/2.10.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-lang#jline;2.10.3[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.scala-lang/jline/2.10.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.scala-lang#jline;2.10.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.scala-lang#jline;2.10.3[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3.pom (2.10.3)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#jline;2.10.3!jline.pom(pom.original) (265ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.scala-lang/jline/2.10.3/jars/jline.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.scala-lang/jline/2.10.3/jars/jline.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3.jar[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#jline;2.10.3 in public[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#jline;2.10.3 [optional->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.10.3->org.fusesource.jansi#jansi;1.4 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.fusesource.jansi#jansi;1.4 ...[0m
@@ -7212,9 +7403,33 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.trace#trace-play-2.2.3;0.1.5 [echo-trace-compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.trace#trace-play-2.2.3;0.1.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.trace#trace-play-2.2.3;0.1.5 {echo-trace-compile=[default(compile)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.trace#trace-play-2.2.3;0.1.5[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.trace#trace-play-2.2.3;0.1.5[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.trace#trace-play-2.2.3;0.1.5 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/trace-play-2.2.3/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.trace#trace-play-2.2.3;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/trace-play-2.2.3/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.trace#trace-play-2.2.3;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.trace#trace-play-2.2.3;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.trace#trace-play-2.2.3;0.1.5[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.pom (0.1.5)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-play-2.2.3;0.1.5!trace-play-2.2.3.pom(pom.original) (441ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/trace-play-2.2.3/0.1.5/jars/trace-play-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/trace-play-2.2.3/0.1.5/jars/trace-play-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.trace#trace-play-2.2.3;0.1.5 in typesafe-releases[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.trace#trace-play-2.2.3;0.1.5 [echo-trace-compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.trace#trace-play-2.2.3;0.1.5 [echo-trace-compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-play-2.2.3;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
@@ -7223,6 +7438,10 @@
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
+<<<<<<< HEAD
+=======
+[0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-play-2.2.3;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-play-2.2.3;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->default][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-play-2.2.3;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -7240,61 +7459,247 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-play-2.2.3;0.1.5->com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/trace-akka-2.2.4_2.10/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/trace-akka-2.2.4_2.10/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.pom (0.1.5)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5!trace-akka-2.2.4_2.10.pom(pom.original) (431ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/trace-akka-2.2.4_2.10/0.1.5/jars/trace-akka-2.2.4_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/trace-akka-2.2.4_2.10/0.1.5/jars/trace-akka-2.2.4_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5 in typesafe-releases[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-play-2.2.3;0.1.5->com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5->com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/trace-scala-protobuf24-2.10.4/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/trace-scala-protobuf24-2.10.4/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.pom (0.1.5)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5!trace-scala-protobuf24-2.10.4.pom(pom.original) (463ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/trace-scala-protobuf24-2.10.4/0.1.5/jars/trace-scala-protobuf24-2.10.4.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/trace-scala-protobuf24-2.10.4/0.1.5/jars/trace-scala-protobuf24-2.10.4.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5 in typesafe-releases[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5->com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5->com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/trace-core-protobuf24_2.10/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/trace-core-protobuf24_2.10/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.pom (0.1.5)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5!trace-core-protobuf24_2.10.pom(pom.original) (512ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/trace-core-protobuf24_2.10/0.1.5/jars/trace-core-protobuf24_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/trace-core-protobuf24_2.10/0.1.5/jars/trace-core-protobuf24_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5 in typesafe-releases[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5->com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5->com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/trace-event-protobuf24_2.10/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/trace-event-protobuf24_2.10/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.pom (0.1.5)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5!trace-event-protobuf24_2.10.pom(pom.original) (1880ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/trace-event-protobuf24_2.10/0.1.5/jars/trace-event-protobuf24_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/trace-event-protobuf24_2.10/0.1.5/jars/trace-event-protobuf24_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5 in typesafe-releases[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5->com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5->com.typesafe.trace#protocol-protobuf24;0.1.5 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.trace#protocol-protobuf24;0.1.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.trace#protocol-protobuf24;0.1.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.trace#protocol-protobuf24;0.1.5[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.trace#protocol-protobuf24;0.1.5[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.trace#protocol-protobuf24;0.1.5 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/protocol-protobuf24/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.trace#protocol-protobuf24;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/protocol-protobuf24/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.trace#protocol-protobuf24;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.trace#protocol-protobuf24;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.trace#protocol-protobuf24;0.1.5[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.pom (0.1.5)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#protocol-protobuf24;0.1.5!protocol-protobuf24.pom(pom.original) (484ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/protocol-protobuf24/0.1.5/jars/protocol-protobuf24.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/protocol-protobuf24/0.1.5/jars/protocol-protobuf24.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.trace#protocol-protobuf24;0.1.5 in typesafe-releases[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5->com.typesafe.trace#protocol-protobuf24;0.1.5 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#protocol-protobuf24;0.1.5->com.google.protobuf#protobuf-java;2.4.1 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.google.protobuf#protobuf-java;2.4.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.protobuf#protobuf-java;2.4.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.protobuf#protobuf-java;2.4.1[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.google.protobuf#protobuf-java;2.4.1[0m
 [0m[[0mdebug[0m] [0m	found com.google.protobuf#protobuf-java;2.4.1 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.google.protobuf/protobuf-java/2.4.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.google.protobuf#protobuf-java;2.4.1[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.google.protobuf/protobuf-java/2.4.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.google.protobuf#protobuf-java;2.4.1[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.google.protobuf#protobuf-java;2.4.1[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.pom (2.4.1)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.google.protobuf#protobuf-java;2.4.1!protobuf-java.pom(pom.original) (388ms)[0m
+[0m[[0minfo[0m] [0mResolving com.google#google;1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google#google;1 {}[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.google/google/1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.google#google;1[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.google/google/1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.google#google;1[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/google/google/1/google-1.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.google#google;1[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/google/google/1/google-1.pom (1)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/google/google/1/google-1.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/google/google/1/google-1.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/google/google/1/google-1.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/google/google/1/google-1.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.google#google;1!google.pom(pom.original) (292ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.google/google/1/jars/google.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.google/google/1/jars/google.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/google/google/1/google-1.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/google/google/1/google-1.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/google/google/1/google-1.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/com/google/google/1/google-1.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/com.google/google/1/jars/google.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.google/google/1/jars/google.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/google/google/1/google-1.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/com/google/google/1/google-1.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.google/google/1/jars/google.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.google/google/1/jars/google.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/google/google/1/google-1.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/com/google/google/1/google-1.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.google.protobuf/protobuf-java/2.4.1/jars/protobuf-java.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.google.protobuf/protobuf-java/2.4.1/jars/protobuf-java.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar[0m
+[0m[[0mdebug[0m] [0m	found com.google.protobuf#protobuf-java;2.4.1 in public[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#protocol-protobuf24;0.1.5->com.google.protobuf#protobuf-java;2.4.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5->com.typesafe#config;1.0.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5->com.typesafe#config;1.0.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5->org.aspectj#aspectjrt;1.7.3 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.aspectj#aspectjrt;1.7.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.aspectj#aspectjrt;1.7.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.aspectj#aspectjrt;1.7.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.aspectj#aspectjrt;1.7.3[0m
 [0m[[0mdebug[0m] [0m	found org.aspectj#aspectjrt;1.7.3 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.aspectj/aspectjrt/1.7.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.aspectj#aspectjrt;1.7.3[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.aspectj/aspectjrt/1.7.3/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.aspectj#aspectjrt;1.7.3[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.3/aspectjrt-1.7.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.aspectj#aspectjrt;1.7.3[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.3/aspectjrt-1.7.3.pom (1.7.3)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.3/aspectjrt-1.7.3.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.3/aspectjrt-1.7.3.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.3/aspectjrt-1.7.3.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.3/aspectjrt-1.7.3.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.aspectj#aspectjrt;1.7.3!aspectjrt.pom(pom.original) (525ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.aspectj/aspectjrt/1.7.3/jars/aspectjrt.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.aspectj/aspectjrt/1.7.3/jars/aspectjrt.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.3/aspectjrt-1.7.3.jar[0m
+[0m[[0mdebug[0m] [0m	found org.aspectj#aspectjrt;1.7.3 in public[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5->org.aspectj#aspectjrt;1.7.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5->org.aspectj#aspectjrt;1.7.3 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5->org.aspectj#aspectjrt;1.7.3 [compile->compile][0m
@@ -7303,9 +7708,28 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5->com.typesafe.akka#akka-actor_2.10;2.2.4 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.10;2.2.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-actor_2.10;2.2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.10;2.2.4[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-actor_2.10;2.2.4[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-actor_2.10;2.2.4 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.akka/akka-actor_2.10/2.2.4/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.akka#akka-actor_2.10;2.2.4[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.akka/akka-actor_2.10/2.2.4/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.akka#akka-actor_2.10;2.2.4[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.4/akka-actor_2.10-2.2.4.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe.akka#akka-actor_2.10;2.2.4[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.4/akka-actor_2.10-2.2.4.pom (2.2.4)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.4/akka-actor_2.10-2.2.4.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.4/akka-actor_2.10-2.2.4.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.4/akka-actor_2.10-2.2.4.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.4/akka-actor_2.10-2.2.4.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-actor_2.10;2.2.4!akka-actor_2.10.pom(pom.original) (339ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.akka/akka-actor_2.10/2.2.4/jars/akka-actor_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.akka/akka-actor_2.10/2.2.4/jars/akka-actor_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.4/akka-actor_2.10-2.2.4.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-actor_2.10;2.2.4 in public[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5->com.typesafe.akka#akka-actor_2.10;2.2.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.2.4->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.2.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
@@ -7323,9 +7747,28 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5->com.typesafe.akka#akka-remote_2.10;2.2.4 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-remote_2.10;2.2.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-remote_2.10;2.2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-remote_2.10;2.2.4[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-remote_2.10;2.2.4[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-remote_2.10;2.2.4 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.akka/akka-remote_2.10/2.2.4/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.akka#akka-remote_2.10;2.2.4[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.akka/akka-remote_2.10/2.2.4/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.akka#akka-remote_2.10;2.2.4[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.2.4/akka-remote_2.10-2.2.4.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe.akka#akka-remote_2.10;2.2.4[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.2.4/akka-remote_2.10-2.2.4.pom (2.2.4)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.2.4/akka-remote_2.10-2.2.4.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.2.4/akka-remote_2.10-2.2.4.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.2.4/akka-remote_2.10-2.2.4.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.2.4/akka-remote_2.10-2.2.4.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-remote_2.10;2.2.4!akka-remote_2.10.pom(pom.original) (611ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.akka/akka-remote_2.10/2.2.4/bundles/akka-remote_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.akka/akka-remote_2.10/2.2.4/bundles/akka-remote_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.2.4/akka-remote_2.10-2.2.4.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-remote_2.10;2.2.4 in public[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5->com.typesafe.akka#akka-remote_2.10;2.2.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.4->com.typesafe.akka#akka-actor_2.10;2.2.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.4->com.typesafe.akka#akka-actor_2.10;2.2.4 [compile->compile(*)][0m
@@ -7351,9 +7794,28 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5->com.typesafe.akka#akka-slf4j_2.10;2.2.4 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-slf4j_2.10;2.2.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-slf4j_2.10;2.2.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-slf4j_2.10;2.2.4[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-slf4j_2.10;2.2.4[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-slf4j_2.10;2.2.4 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.akka/akka-slf4j_2.10/2.2.4/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.akka#akka-slf4j_2.10;2.2.4[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.akka/akka-slf4j_2.10/2.2.4/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.akka#akka-slf4j_2.10;2.2.4[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.4/akka-slf4j_2.10-2.2.4.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe.akka#akka-slf4j_2.10;2.2.4[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.4/akka-slf4j_2.10-2.2.4.pom (2.2.4)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.4/akka-slf4j_2.10-2.2.4.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.4/akka-slf4j_2.10-2.2.4.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.4/akka-slf4j_2.10-2.2.4.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.4/akka-slf4j_2.10-2.2.4.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-slf4j_2.10;2.2.4!akka-slf4j_2.10.pom(pom.original) (444ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.akka/akka-slf4j_2.10/2.2.4/bundles/akka-slf4j_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.akka/akka-slf4j_2.10/2.2.4/bundles/akka-slf4j_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.4/akka-slf4j_2.10-2.2.4.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-slf4j_2.10;2.2.4 in public[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5->com.typesafe.akka#akka-slf4j_2.10;2.2.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.4->com.typesafe.akka#akka-actor_2.10;2.2.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.4->com.typesafe.akka#akka-actor_2.10;2.2.4 [compile->compile(*)][0m
@@ -7378,16 +7840,82 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5->org.fusesource#sigar;1.6.4 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.fusesource#sigar;1.6.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.fusesource#sigar;1.6.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.fusesource#sigar;1.6.4[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.fusesource#sigar;1.6.4[0m
 [0m[[0mdebug[0m] [0m	found org.fusesource#sigar;1.6.4 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.fusesource/sigar/1.6.4/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.fusesource#sigar;1.6.4[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.fusesource/sigar/1.6.4/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.fusesource#sigar;1.6.4[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.fusesource#sigar;1.6.4[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom (1.6.4)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.fusesource#sigar;1.6.4!sigar.pom(pom.original) (404ms)[0m
+[0m[[0minfo[0m] [0mResolving org.fusesource#fusesource-pom;1.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.fusesource#fusesource-pom;1.5 {}[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.fusesource/fusesource-pom/1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.fusesource#fusesource-pom;1.5[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.fusesource/fusesource-pom/1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.fusesource#fusesource-pom;1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.fusesource#fusesource-pom;1.5[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom (1.5)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.fusesource#fusesource-pom;1.5!fusesource-pom.pom(pom.original) (442ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.fusesource/fusesource-pom/1.5/jars/fusesource-pom.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.fusesource/fusesource-pom/1.5/jars/fusesource-pom.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/org.fusesource/fusesource-pom/1.5/jars/fusesource-pom.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.fusesource/fusesource-pom/1.5/jars/fusesource-pom.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.fusesource/fusesource-pom/1.5/jars/fusesource-pom.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.fusesource/fusesource-pom/1.5/jars/fusesource-pom.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.fusesource/sigar/1.6.4/jars/sigar.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.fusesource/sigar/1.6.4/jars/sigar.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar[0m
+[0m[[0mdebug[0m] [0m	found org.fusesource#sigar;1.6.4 in public[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5->org.fusesource#sigar;1.6.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.fusesource#sigar;1.6.4->log4j#log4j;1.2.15 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving log4j#log4j;1.2.15 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: log4j#log4j;1.2.15 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: log4j#log4j;1.2.15[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: log4j#log4j;1.2.15[0m
 [0m[[0mdebug[0m] [0m	found log4j#log4j;1.2.15 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/log4j/log4j/1.2.15/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for log4j#log4j;1.2.15[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/log4j/log4j/1.2.15/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for log4j#log4j;1.2.15[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for log4j#log4j;1.2.15[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.pom (1.2.15)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] log4j#log4j;1.2.15!log4j.pom(pom.original) (382ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/log4j/log4j/1.2.15/jars/log4j.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/log4j/log4j/1.2.15/jars/log4j.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
+[0m[[0mdebug[0m] [0m	found log4j#log4j;1.2.15 in public[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies org.fusesource#sigar;1.6.4->log4j#log4j;1.2.15 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javax.mail#mail;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javax.jms#jms;1.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
@@ -7450,9 +7978,33 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-play-2.2.3;0.1.5->com.typesafe.trace#trace-play-common;0.1.5 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.trace#trace-play-common;0.1.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.trace#trace-play-common;0.1.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.trace#trace-play-common;0.1.5[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.trace#trace-play-common;0.1.5[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.trace#trace-play-common;0.1.5 in sbt-chain[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/trace-play-common/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.trace#trace-play-common;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/trace-play-common/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.trace#trace-play-common;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.trace#trace-play-common;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.trace#trace-play-common;0.1.5[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.pom (0.1.5)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-play-common;0.1.5!trace-play-common.pom(pom.original) (527ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/trace-play-common/0.1.5/jars/trace-play-common.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/trace-play-common/0.1.5/jars/trace-play-common.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.trace#trace-play-common;0.1.5 in typesafe-releases[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-play-2.2.3;0.1.5->com.typesafe.trace#trace-play-common;0.1.5 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-play-common;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-play-common;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
@@ -9097,6 +9649,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.trace#trace-sigar-libs;0.1.5 [echo-sigar->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.trace#trace-sigar-libs;0.1.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.trace#trace-sigar-libs;0.1.5 {echo-sigar=[default(compile)]}[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.trace#trace-sigar-libs;0.1.5[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.trace#trace-sigar-libs;0.1.5[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.trace#trace-sigar-libs;0.1.5 in sbt-chain[0m
@@ -9111,6 +9664,65 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-ebean_2.10;2.2.3!play-java-ebean_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-jdbc_2.10;2.2.3!play-java-jdbc_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java_2.10;2.2.3!play-java_2.10.jar[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/trace-sigar-libs/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.trace#trace-sigar-libs;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/trace-sigar-libs/0.1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.trace#trace-sigar-libs;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.trace#trace-sigar-libs;0.1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.trace#trace-sigar-libs;0.1.5[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.pom (0.1.5)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.pom ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-sigar-libs;0.1.5!trace-sigar-libs.pom(pom.original) (469ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/com.typesafe.trace/trace-sigar-libs/0.1.5/jars/trace-sigar-libs.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/com.typesafe.trace/trace-sigar-libs/0.1.5/jars/trace-sigar-libs.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.trace#trace-sigar-libs;0.1.5 in typesafe-releases[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.trace#trace-sigar-libs;0.1.5 [echo-sigar->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.trace#trace-sigar-libs;0.1.5 [echo-sigar->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.trace#trace-sigar-libs;0.1.5 [echo-sigar->master][0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/hello-play-backbone/hello-play-backbone_2.10/1.0-SNAPSHOT/resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.3!scala-library.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-jdbc_2.10/2.2.3/play-jdbc_2.10-2.2.3.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-jdbc_2.10;2.2.3!play-jdbc_2.10.jar (2478ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/anorm_2.10/2.2.3/anorm_2.10-2.2.3.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#anorm_2.10;2.2.3!anorm_2.10.jar (2200ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-java-ebean_2.10;2.2.3!play-java-ebean_2.10.jar (464ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-java-jdbc_2.10;2.2.3!play-java-jdbc_2.10.jar (436ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java_2.10/2.2.3/play-java_2.10-2.2.3.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-java_2.10;2.2.3!play-java_2.10.jar (910ms)[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#webjars-play_2.10;2.2.0!webjars-play_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#bootstrap;2.3.1!bootstrap.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.mindrot#jbcrypt;0.3m!jbcrypt.jar[0m
@@ -9186,7 +9798,16 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-email;1.2!commons-email.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] javax.mail#mail;1.4.1!mail.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] javax.activation#activation;1.1!activation.jar[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-test_2.10;2.2.3!play-test_2.10.jar[0m
+=======
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-test_2.10/2.2.3/play-test_2.10-2.2.3.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-test_2.10;2.2.3!play-test_2.10.jar (1118ms)[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] junit#junit;4.11!junit.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.specs2#specs2_2.10;2.1.1!specs2_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.novocode#junit-interface;0.10!junit-interface.jar[0m
@@ -9233,7 +9854,16 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-io;8.1.9.v20130131!jetty-io.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-http;8.1.9.v20130131!jetty-http.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.easytesting#fest-util;1.1.6!fest-util.jar[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-docs_2.10;2.2.3!play-docs_2.10.jar[0m
+=======
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-docs_2.10;2.2.3!play-docs_2.10.jar (63810ms)[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-doc_2.10;1.0.3!play-doc_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.pegdown#pegdown;1.4.0!pegdown.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-io#commons-io;2.4!commons-io.jar[0m
@@ -9243,6 +9873,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.ow2.asm#asm-tree;4.1!asm-tree.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.ow2.asm#asm-analysis;4.1!asm-analysis.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.ow2.asm#asm-util;4.1!asm-util.jar[0m
+<<<<<<< HEAD
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.3!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.3!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
@@ -9283,4 +9914,133 @@
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT echo-weave produced in C:\Users\Roya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-echo-weave.xml[0m
 [0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT echo-sigar produced in C:\Users\Roya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-echo-sigar.xml[0m
 [0m[[0mdebug[0m] [0m	resolve done (4918ms resolve - 247ms download)[0m
+=======
+[0m[[0mdebug[0m] [0m		tried /home/misanthropic/.ivy2/local/org.scala-lang/scala-compiler/2.10.3/jars/scala-compiler.jar[0m
+[0m[[0mdebug[0m] [0m		tried file:/home/misanthropic/repos/schoolWork/proConnect/web-app/repository/org.scala-lang/scala-compiler/2.10.3/jars/scala-compiler.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.3/scala-compiler-2.10.3.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.10.3!scala-compiler.jar (43514ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/jline/2.10.3/jline-2.10.3.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#jline;2.10.3!jline.jar (518ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-2.2.3/0.1.5/trace-play-2.2.3-0.1.5.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-play-2.2.3;0.1.5!trace-play-2.2.3.jar (1145ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-akka-2.2.4_2.10/0.1.5/trace-akka-2.2.4_2.10-0.1.5.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-akka-2.2.4_2.10;0.1.5!trace-akka-2.2.4_2.10.jar (1673ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-play-common/0.1.5/trace-play-common-0.1.5.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-play-common;0.1.5!trace-play-common.jar (495ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.3/aspectjrt-1.7.3.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.3/aspectjrt-1.7.3.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.3/aspectjrt-1.7.3.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.3/aspectjrt-1.7.3.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.3/aspectjrt-1.7.3.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.aspectj#aspectjrt;1.7.3!aspectjrt.jar (442ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-scala-protobuf24-2.10.4/0.1.5/trace-scala-protobuf24-2.10.4-0.1.5.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-scala-protobuf24-2.10.4;0.1.5!trace-scala-protobuf24-2.10.4.jar (655ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.4/akka-actor_2.10-2.2.4.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.4/akka-actor_2.10-2.2.4.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.4/akka-actor_2.10-2.2.4.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.4/akka-actor_2.10-2.2.4.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.4/akka-actor_2.10-2.2.4.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-actor_2.10;2.2.4!akka-actor_2.10.jar (6246ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.2.4/akka-remote_2.10-2.2.4.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.2.4/akka-remote_2.10-2.2.4.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.2.4/akka-remote_2.10-2.2.4.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.2.4/akka-remote_2.10-2.2.4.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.2.4/akka-remote_2.10-2.2.4.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-remote_2.10;2.2.4!akka-remote_2.10.jar(bundle) (3119ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.4/akka-slf4j_2.10-2.2.4.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.4/akka-slf4j_2.10-2.2.4.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.4/akka-slf4j_2.10-2.2.4.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.4/akka-slf4j_2.10-2.2.4.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.4/akka-slf4j_2.10-2.2.4.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-slf4j_2.10;2.2.4!akka-slf4j_2.10.jar(bundle) (268ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.fusesource#sigar;1.6.4!sigar.jar (1092ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5!trace-core-protobuf24_2.10.jar (1167ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5!trace-event-protobuf24_2.10.jar (3358ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#protocol-protobuf24;0.1.5!protocol-protobuf24.jar (2380ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.google.protobuf#protobuf-java;2.4.1!protobuf-java.jar (1338ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.uncommons.maths#uncommons-maths;1.2.2a!uncommons-maths.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] log4j#log4j;1.2.15!log4j.jar (898ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.aspectj#aspectjweaver;1.7.3!aspectjweaver.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar ...[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-sigar-libs;0.1.5!trace-sigar-libs.jar (8231ms)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 31422ms :: artifacts dl 148227ms[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT compile produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT runtime produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT test produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT provided produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT optional produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT compile-internal produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT runtime-internal produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT test-internal produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT plugin produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT sources produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT docs produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT pom produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT scala-tool produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT echo-trace-compile produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-echo-trace-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT echo-trace-test produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-echo-trace-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT echo-weave produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-echo-weave.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT echo-sigar produced in /home/misanthropic/repos/schoolWork/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-echo-sigar.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (31422ms resolve - 148227ms download)[0m
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 [0m[[0minfo[0m] [0mDone updating.[0m

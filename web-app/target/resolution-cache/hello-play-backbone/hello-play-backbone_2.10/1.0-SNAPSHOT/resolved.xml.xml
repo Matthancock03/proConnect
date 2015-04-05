@@ -4,7 +4,11 @@
 		module="hello-play-backbone_2.10"
 		revision="1.0-SNAPSHOT"
 		status="integration"
+<<<<<<< HEAD
 		publication="20150404160602"
+=======
+		publication="20150404161210"
+>>>>>>> 963a368dee704e8d00bbef949070e4d6b4a3447f
 	>
 		<description>
 		hello-play-backbone
