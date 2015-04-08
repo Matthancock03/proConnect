@@ -6,10 +6,9 @@ import java.util.*;
 import java.io.*;
 import java.sql.*;
 import play.db.*;
-import play.db.ebean.Model;
 
 
-public class Forum extends Model {
+public class Forum {
 
   public String forumId;
   public String ownerId;

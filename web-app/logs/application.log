@@ -119,3 +119,6 @@ Application started (Dev)
 2015-04-07 22:05:43,565 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
 [securesocial] user logged in : [SocialUser(IdentityId(107925421788827309521,google),Matthew,Hancock,Matthew Hancock,Some(matthancock03@gmail.com),Some(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.TwGFWi4pCmMfqgvLA_VW9WAfJWPAQYv4R_t8BPgqF3E5_PWBLxSlfpqxZMgQcSuX4GRX4r_oJb6_xQ,Some(Bearer),Some(3598),None)),None)]
 
+2015-04-07 22:10:25,327 - [DEBUG] - from application in play-akka.actor.default-dispatcher-14 
+[securesocial] calling deleteExpiredTokens()
+

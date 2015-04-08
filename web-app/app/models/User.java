@@ -13,13 +13,13 @@ import java.util.*;
 import java.io.*;
 import java.sql.*;
 import play.db.*;
-import play.db.ebean.Model;
 
 
 
 
 
-public class User extends Model{
+
+public class User{
 
 
   public String id;
