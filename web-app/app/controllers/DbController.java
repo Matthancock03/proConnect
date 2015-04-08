@@ -28,7 +28,11 @@ public class DbController extends Controller{
     return ok(profileEdit.render());
   }
 
-  public static Result loginUser(){
+  //@SecureSocial.SecuredAction
+  public static Result home(){
+    return ok(home.render());
+  }
+  /*public static Result loginUser(){
       Form<loginFormData> formData = Form.form(loginFormData.class).bindFromRequest();
       if (formData.hasErrors()) {
         Form<loginFormData> loginFormData = Form.form(loginFormData.class);
@@ -41,10 +45,7 @@ public class DbController extends Controller{
     }
   }
 
-  //@SecureSocial.SecuredAction
-  public static Result home(){
-    return ok(home.render());
-  }
+
 
   public static Result signUpUser(){
       Form<signUpFormData> formData = Form.form(signUpFormData.class).bindFromRequest();
@@ -58,5 +59,5 @@ public class DbController extends Controller{
       return ok("Registered!");
     }
   }
-
+  */
 }

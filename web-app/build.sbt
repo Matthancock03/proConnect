@@ -16,6 +16,4 @@ libraryDependencies ++= Seq(
   "ws.securesocial" %% "securesocial" % "2.1.3"
 )
 
-resolvers += Resolver.url("sbt-plugin-releases", new URL("http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/"))(Resolver.ivyStylePatterns)
-
 play.Project.playJavaSettings
