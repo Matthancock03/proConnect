@@ -3,8 +3,6 @@
 # ~~~~
 
 #POST     /login                   controllers.Application.login()
-POST     /loginUser                controllers.DbController.loginUser()
-POST     /signUpUser               controllers.DbController.signUpUser()
 GET      /                         controllers.Application.splashPage()
 GET      /loginUser                controllers.DbController.home()
 GET      /userAware                controllers.Application.userAware()

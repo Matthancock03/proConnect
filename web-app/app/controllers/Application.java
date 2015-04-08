@@ -39,6 +39,7 @@ public class Application extends Controller{
    @SecureSocial.UserAwareAction
    public static Result userAware() {
        Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);
+
        final String userName = user != null ? user.fullName() : "guest";
        final String email = user.email().get() != null ? user.email().get() : "No email provided";
        final String provider = user.identityId().providerId() != null ? user.identityId().providerId() : "No provider";
