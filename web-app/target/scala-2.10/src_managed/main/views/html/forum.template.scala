@@ -48,7 +48,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x600" src="http://www.jobinterviewperfection.com/images/interview-success.jpg" />
+						<img alt="300x600" src="http://blog.peertransfer.com/wp-content/uploads/2013/04/Biz-Finding-A-Job-May-Mean-Getting-More-Niche.jpg" />
 						<div class="caption">
 							<h3>
 								How to Prepare for an Interview
@@ -64,7 +64,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://blog.peertransfer.com/wp-content/uploads/2013/04/Biz-Finding-A-Job-May-Mean-Getting-More-Niche.jpg" />
+						<img alt="300x200" src="http://www.jobinterviewperfection.com/images/interview-success.jpg" />
 						<div class="caption">
 							<h3>
 								How to Get a Job With No Experience
@@ -114,7 +114,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://lorempixel.com/600/200/city" />
+						<img alt="300x200" src="https://media.licdn.com/mpr/mpr/p/8/005/081/32b/3e3556e.jpg" />
 						<div class="caption">
 							<h3>
 								10 Steps to Starting a Business 
@@ -407,10 +407,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Apr 07 21:54:31 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/forum.scala.html
-                    HASH: 14d46612fb1476d75a6e0e9e3040f462043c6159
-                    MATRIX: 864->1|890->19|928->20|966->24|980->30|1008->37|11571->10568
+                    DATE: Wed Apr 08 14:01:09 PDT 2015
+                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/forum.scala.html
+                    HASH: 5eba3c5292d4d5061aee4281d9279a3a39c07db8
+                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|11964->10961
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|397->369
                     -- GENERATED --
                 */
