@@ -48,13 +48,13 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<src="http://www.jobinterviewperfection.com/images/interview-success.jpg" height = "200" width = "300" />
+						<img alt="300x600" src="http://www.jobinterviewperfection.com/images/interview-success.jpg" />
 						<div class="caption">
 							<h3>
 								How to Prepare for an Interview
 							</h3>
 							<p>
-								Prepare for your interview with 7 simple and easy steps.
+								Interviews could be stressful. You can ace your interview with these 7 simple and easy steps and give a great first impression to the employer.
 							</p>
 							<p>
 								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
@@ -64,13 +64,13 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://lorempixel.com/600/200/city" />
+						<img alt="300x200" src="http://blog.peertransfer.com/wp-content/uploads/2013/04/Biz-Finding-A-Job-May-Mean-Getting-More-Niche.jpg" />
 						<div class="caption">
 							<h3>
 								How to Get a Job With No Experience
 							</h3>
 							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+								Having no experience for a job of your choice will not necessarily eliminate you from being a good candidate. Your dedication, communication skills, and work ethic play a big role. However, in order to stand out you will need to follow and accomplish a few rules and strategies. 
 							</p>
 							<p>
 								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
@@ -407,10 +407,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Apr 06 15:04:56 PDT 2015
+                    DATE: Tue Apr 07 18:36:05 PDT 2015
                     SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/forum.scala.html
-                    HASH: 0eafb77919d631db41e56f1d91446bdc8e9f307b
-                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|11732->10729
+                    HASH: d26972c0e1283ad0ceb3af49bb007c3fca447325
+                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|11993->10990
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|397->369
                     -- GENERATED --
                 */
