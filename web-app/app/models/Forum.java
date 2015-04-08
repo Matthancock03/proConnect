@@ -6,6 +6,8 @@ import java.util.*;
 import java.io.*;
 import java.sql.*;
 import play.db.*;
+import play.db.ebean.Model;
+
 
 public class Forum extends Model {
 
@@ -15,14 +17,14 @@ public class Forum extends Model {
   public String body;
   public Forum[] responses;
 
-  forum (){
+  public Forum (){
 
   }
 
-  forum (String forId, String header, String topBody){
-    this.forumId = forId;
-    this.header = topicHeader;
-    this.body = topBody;
+  public Forum (String forId, String header, String topBody){
+    forumId = forId;
+    header = topicHeader;
+    body = topBody;
   }
 
 }

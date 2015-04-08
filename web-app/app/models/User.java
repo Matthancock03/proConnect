@@ -3,12 +3,17 @@ package models;
 import play.data.validation.Constraints;
 import play.data.*;
 import securesocial.core.java.SecureSocial;
+import scala.Option;
+import securesocial.core.Identity;
+import securesocial.core.IdentityId;
+import securesocial.core.java.BaseUserService;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.util.*;
 import java.io.*;
 import java.sql.*;
 import play.db.*;
+import play.db.ebean.Model;
 
 
 
@@ -26,12 +31,12 @@ public class User extends Model{
 
 
 
-  public static void loadUser(Identity user){
+  public void loadUser(Identity user){
     //this.id = user.id;
-    this.firstName = user.fullName();
-    this.lastName = user.fullName();
-    this.loginProvider = user.identityId().providerId();
-    this.email = user.email().get();
+    firstName = user.fullName();
+    lastName = user.fullName();
+    loginProvider = user.identityId().providerId();
+    email = user.email().get();
 
   }
 
