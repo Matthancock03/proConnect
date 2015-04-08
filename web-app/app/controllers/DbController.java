@@ -15,14 +15,6 @@ import securesocial.core.java.SecureSocial;
 
 public class DbController extends Controller{
 
-
-  public static Result loginPage(){
-    Form<loginFormData> loginFormData = Form.form(loginFormData.class);
-    Form<signUpFormData> signUpFormData = Form.form(signUpFormData.class);
-
-    return ok(login.render("", loginFormData, signUpFormData));
-  }
-
   public static Result editProfile(){
 
     return ok(profileEdit.render());
@@ -46,6 +38,12 @@ public class DbController extends Controller{
   }
 
 
+    public static Result loginPage(){
+      Form<loginFormData> loginFormData = Form.form(loginFormData.class);
+      Form<signUpFormData> signUpFormData = Form.form(signUpFormData.class);
+
+      return ok(login.render("", loginFormData, signUpFormData));
+    }
 
   public static Result signUpUser(){
       Form<signUpFormData> formData = Form.form(signUpFormData.class).bindFromRequest();
