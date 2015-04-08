@@ -2,6 +2,7 @@
 // @HASH:07cab5cd2a97522214c60419206a0c5c626cb2c4
 // @DATE:Tue Apr 07 19:08:26 PDT 2015
 
+
 package controllers;
 
 public class routes {
@@ -22,4 +23,3 @@ public static final controllers.ref.ReverseDbController DbController = new contr
 public static final controllers.ref.ReverseApplication Application = new controllers.ref.ReverseApplication();
 }
 }
-          
