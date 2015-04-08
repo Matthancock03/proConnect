@@ -37,7 +37,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 			</h3>
 						<form class="navbar-form navbar-right" role="search">
 		      <div class="form-group">
-		        <input type="text" class="form-control" placeholder="Search">
+		        <input type="text" class="form-control" placeholder="Search for Forums">
 		      </div>
 		      <button type="submit" class="btn btn-default">Submit</button>
 		    </form>
@@ -54,10 +54,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								How to Prepare for an Interview
 							</h3>
 							<p>
-								Interviews could be stressful. You can ace your interview with these 7 simple and easy steps and give a great first impression to the employer.
+								Interviews could be stressful. You can build confidence and ace your interview with these 7 simple and easy steps and give a great first impression to the employer.
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+								<a class="btn btn-primary" href="#">Read</a> 
 							</p>
 						</div>
 					</div>
@@ -70,10 +70,60 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								How to Get a Job With No Experience
 							</h3>
 							<p>
-								Having no experience for a job of your choice will not necessarily eliminate you from being a good candidate. Your dedication, communication skills, and work ethic play a big role. However, in order to stand out you will need to follow and accomplish a few rules and strategies. 
+								Having no experience for a job of your choice will not necessarily eliminate you from being a good candidate. Your dedication, communication skills, and work ethic play a big role. However, in order to stand out you will need to follow a few rules and strategies. 
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+								<a class="btn btn-primary" href="#">Read</a> 
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="http://collegeinformations.com/wp-content/uploads/2012/05/choosing-a-major.jpg" />
+						<div class="caption">
+							<h3>
+								5 Tips for Choosing the Right Major
+							</h3>
+							<p>
+								They say choose your passion as your major and you will never have to work a day in your life. While this is true, there is more to knowing what major is right for you.
+							</p>
+							<p>
+								<a class="btn btn-primary" href="#">Read</a> 
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="http://blog.nextsociety.com/wp-content/uploads/2014/09/entrepreneurship-networking-advice-1.jpg" />
+						<div class="caption">
+							<h3>
+								How to Grow your Network
+							</h3>
+							<p>
+								Whether you want to grow your business or get an entry job position, networking is one of the many crucial factors which you should practice like any other skill to master it.
+							</p>
+							<p>
+								<a class="btn btn-primary" href="#">Read</a> 
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="http://lorempixel.com/600/200/city" />
+						<div class="caption">
+							<h3>
+								10 Steps to Starting a Business 
+							</h3>
+							<p>
+								Starting a business involves a lot of research, financial investment, and going through a series of legal work. These 10 steps can help you get your business started and also prepare and manage your business.
+							</p>
+							<p>
+								<a class="btn btn-primary" href="#">Action</a> 
 							</p>
 						</div>
 					</div>
@@ -133,60 +183,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 						<img alt="300x200" src="http://lorempixel.com/600/200/sports" />
 						<div class="caption">
 							<h3>
-								Thumbnail label
+								General Discussion
 							</h3>
 							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<img alt="300x200" src="http://lorempixel.com/600/200/people" />
-						<div class="caption">
-							<h3>
-								Thumbnail label
-							</h3>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<img alt="300x200" src="http://lorempixel.com/600/200/city" />
-						<div class="caption">
-							<h3>
-								Thumbnail label
-							</h3>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<img alt="300x200" src="http://lorempixel.com/600/200/sports" />
-						<div class="caption">
-							<h3>
-								Thumbnail label
-							</h3>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+								You can find a wide variety of topics and questions in this forum.
 							</p>
 							<p>
 								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
@@ -407,10 +407,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Apr 07 18:36:05 PDT 2015
+                    DATE: Tue Apr 07 19:58:04 PDT 2015
                     SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/forum.scala.html
-                    HASH: d26972c0e1283ad0ceb3af49bb007c3fca447325
-                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|11993->10990
+                    HASH: e6eb2831a0d4e1c73dcff066d3cf263734916028
+                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|11939->10936
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|397->369
                     -- GENERATED --
                 */
