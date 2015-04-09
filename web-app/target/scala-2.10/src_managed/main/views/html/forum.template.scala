@@ -44,7 +44,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 		</div>
 	</div>
 	<div class="row clearfix">
-		<div class="col-md-12 column">
+		<div class="col-md-20 column">
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
@@ -123,23 +123,23 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								Starting a business involves a lot of research, financial investment, and going through a series of legal work. These 10 steps can help you get your business started and also prepare and manage your business.
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Action</a> 
+								<a class="btn btn-primary" href="#">Read</a> 
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://lorempixel.com/600/200/sports" />
+						<img alt="300x200" src="http://familywings.org/wp-content/uploads/2011/04/a-paper_11.jpg" />
 						<div class="caption">
 							<h3>
-								Thumbnail label
+								Study Tips
 							</h3>
 							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+								Wondering why the all nighter before your final exam did not pay off and did not get you the grade you hoped for? Need to know how to study effectively? Then look no further. Any student can benefit from these tips and techniques.
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+								<a class="btn btn-primary" href="#">Read</a>
 							</p>
 						</div>
 					</div>
@@ -148,48 +148,48 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://lorempixel.com/600/200/people" />
+						<img alt="300x200" src="http://www.outsourcedcfo.co.za/wp-content/uploads/2014/02/financial-management.jpg" />
 						<div class="caption">
 							<h3>
-								Thumbnail label
+								Beginner's Guide to Managing Your Finances
 							</h3>
 							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+								Whether you want to admit it or not, money is a huge part of your life nowadays, thus knowing how to manage it will help you take controlof your life and get you ahead financially and socially.
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+								<a class="btn btn-primary" href="#">Read</a> 
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://lorempixel.com/600/200/city" />
+						<img alt="300x200" src="http://higherperspective.com/wp-content/uploads/2014/12/Successful-Business-Risk.jpg" />
 						<div class="caption">
 							<h3>
-								Thumbnail label
+								3 Ways to be More Successful
 							</h3>
 							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+								It's human nature to desire success no matter where they are in life. However, it's easier said than done, hence not a lot of people are willing to do what is necessary to reach success.
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+								<a class="btn btn-primary" href="#">Read</a> 
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://lorempixel.com/600/200/sports" />
+						<img alt="300x200" src="https://venkyias.files.wordpress.com/2012/08/discussion1.jpg" />
 						<div class="caption">
 							<h3>
 								General Discussion
 							</h3>
 							<p>
-								You can find a wide variety of topics and questions in this forum.
+								If you cannot find the forum looking for, you can either create your own forum or try this one. You can find a wide variety of topics and questions in this forum. 
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+								<a class="btn btn-primary" href="#">Read</a> 
 							</p>
 						</div>
 					</div>
@@ -407,10 +407,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed Apr 08 14:01:09 PDT 2015
+                    DATE: Wed Apr 08 19:49:31 PDT 2015
                     SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/forum.scala.html
-                    HASH: 5eba3c5292d4d5061aee4281d9279a3a39c07db8
-                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|11964->10961
+                    HASH: c0bdc0ffc0e2e4b268d3a009bf1c7a1e4811078b
+                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|12211->11208
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|397->369
                     -- GENERATED --
                 */
