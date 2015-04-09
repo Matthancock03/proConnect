@@ -63,7 +63,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 						<div class="item">
 							<img class="img-responsive center-block" alt="" src=""""),_display_(Seq[Any](/*36.62*/routes/*36.68*/.Assets.at("images/Networking.jpg"))),format.raw/*36.103*/("""" />
 							<div class="carousel-caption">
-								<h4>
+								<h4 class="carousel-text-white center-block">
 									Engage Your Peers
 								</h4>
 							</div>
@@ -71,7 +71,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 						<div class="item">
 							<img class="img-responsive center-block" alt="" src=""""),_display_(Seq[Any](/*44.62*/routes/*44.68*/.Assets.at("images/business2.jpg"))),format.raw/*44.102*/("""" />
 							<div class="carousel-caption">
-								<h4>
+								<h4 class="carousel-text-black center-block">
 									Get Connected
 								</h4>
 							</div>
@@ -79,7 +79,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 						<div class="item active">
 							<img class="img-responsive center-block" alt="" src=""""),_display_(Seq[Any](/*52.62*/routes/*52.68*/.Assets.at("images/proConnect.jpg"))),format.raw/*52.103*/("""" />
 							<div class="carousel-caption">
-								<h4>
+								<h4 class="carousel-text-black center-block">
 									ProConnect
 								</h4>
 							</div>
@@ -123,10 +123,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed Apr 08 13:50:38 PDT 2015
-                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/splash.scala.html
-                    HASH: d3a7839fcfd18229873544bbf9eb900bfa7276a2
-                    MATRIX: 865->1|891->19|929->20|996->52|1010->58|1071->98|2345->1336|2360->1342|2418->1377|2672->1595|2687->1601|2744->1635|3001->1856|3016->1862|3074->1897|3866->2653|3881->2659|3938->2694|4307->3027|4328->3039|4401->3090|4616->3274
+                    DATE: Thu Apr 09 08:42:37 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/splash.scala.html
+                    HASH: 75a61adcd0ae16d488bae61ccefd051eaf83ae09
+                    MATRIX: 865->1|891->19|929->20|995->51|1009->57|1070->97|2310->1301|2325->1307|2383->1342|2670->1593|2685->1599|2742->1633|3032->1887|3047->1893|3105->1928|3920->2707|3935->2713|3992->2748|4354->3074|4375->3086|4448->3137|4655->3313
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|64->36|64->36|64->36|72->44|72->44|72->44|80->52|80->52|80->52|98->70|98->70|98->70|105->77|105->77|105->77|113->85
                     -- GENERATED --
                 */

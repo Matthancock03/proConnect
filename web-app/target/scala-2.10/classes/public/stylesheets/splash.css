@@ -36,6 +36,25 @@
   font-weight: bold;
   line-height: 53.9000015258789px;
 }
+.carousel-text-black {
+  color: #2d3033;
+  background-color: #25aaa0;
+  max-width: 200px;
+  font-size: 25px;
+  font-family: 'Abril Fatface';
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.carousel-text-white {
+  color: white;
+  background-color: black;
+  font-size: 25px;
+  font-family: 'Abril Fatface';
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: bold;
+}
 .text-div {
   clear: right;
 }

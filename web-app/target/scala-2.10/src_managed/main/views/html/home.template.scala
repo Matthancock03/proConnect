@@ -82,67 +82,10 @@ Seq[Any](format.raw/*2.1*/("""
 
 
 		</div>
-	<div class="row clearfix">
-		<div class="col-xs-6 column">
-			<h2>
-				Heading
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				<a class="btn" href="#">View details »</a>
-			</p>
-		</div>
-		<div class="col-xs-6 column">
-			<h2>
-				Heading
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				<a class="btn" href="#">View details »</a>
-			</p>
-		</div>
-	</div>
-	<div class="row clearfix">
-		<div class="col-xs-4 column">
-			<dl>
-				<dt>
-					Description lists
-				</dt>
-				<dd>
-					A description list is perfect for defining terms.
-				</dd>
-			</dl>
-		</div>
-		<div class="col-xs-4 column">
-			<dl>
-				<dt>
-					Description lists
-				</dt>
-				<dd>
-					A description list is perfect for defining terms.
-				</dd>
-			</dl>
-		</div>
-		<div class="col-xs-4 column">
-			<dl>
-				<dt>
-					Description lists
-				</dt>
-				<dd>
-					A description list is perfect for defining terms.
-				</dd>
-			</dl>
-		</div>
-	</div>
-	<div class="row clearfix">
-	</div>
+
   </div>
 </div>
-""")))})),format.raw/*117.2*/("""
+""")))})),format.raw/*60.2*/("""
 """))}
     }
     
@@ -155,11 +98,11 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed Apr 08 13:50:38 PDT 2015
-                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/home.scala.html
-                    HASH: 09906f2e59afeb4c98017217b5875dc8d1a5e5eb
-                    MATRIX: 871->18|908->21|934->39|973->41|1041->74|1055->80|1114->118|1219->189|1233->195|1263->204|3907->2816
-                    LINES: 30->2|31->3|31->3|31->3|32->4|32->4|32->4|37->9|37->9|37->9|145->117
+                    DATE: Thu Apr 09 08:49:32 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
+                    HASH: 57b5a186a4960edc8d8c7ed44c4971034c7b0f29
+                    MATRIX: 870->17|906->19|932->37|971->39|1038->71|1052->77|1111->115|1211->181|1225->187|1255->196|2395->1305
+                    LINES: 30->2|31->3|31->3|31->3|32->4|32->4|32->4|37->9|37->9|37->9|88->60
                     -- GENERATED --
                 */
             
