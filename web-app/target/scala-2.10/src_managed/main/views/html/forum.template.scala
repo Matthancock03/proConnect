@@ -28,7 +28,8 @@ object forum extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,
 
 Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any](format.raw/*1.21*/("""
   """),_display_(Seq[Any](/*2.4*/navbar/*2.10*/.render)),format.raw/*2.17*/("""
-<div class="container">
+
+  <div class="container">
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<h3>
@@ -195,7 +196,6 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 		</div>
 	</div>
 </div>
-  
 
 """)))})),format.raw/*172.2*/("""
 """))}
@@ -210,10 +210,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Apr 04 16:58:41 PDT 2015
-                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/forum.scala.html
-                    HASH: 4b5671f2e9dcf4a3d92eea01b9cdaa9343f5272e
-                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|5630->4627
+                    DATE: Sat Apr 04 19:04:07 PDT 2015
+                    SOURCE: /Users/LB/Desktop/proConnect/web-app/app/views/forum.scala.html
+                    HASH: f1e5014e62c2b4376fdb55a7a7eb0a972d8286ed
+                    MATRIX: 864->1|890->19|928->20|966->24|980->30|1008->37|5459->4456
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|200->172
                     -- GENERATED --
                 */
