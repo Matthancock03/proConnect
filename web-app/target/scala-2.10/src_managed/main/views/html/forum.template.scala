@@ -44,7 +44,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 		</div>
 	</div>
 	<div class="row clearfix">
-		<div class="col-md-20 column">
+		<div class="col-md-12 column">
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
@@ -407,10 +407,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Apr 09 08:23:11 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/forum.scala.html
-                    HASH: 05c67841f1b9f14a78eeda857de4db83f344bb7c
-                    MATRIX: 864->1|890->19|928->20|966->24|980->30|1008->37|11843->10840
+                    DATE: Thu Apr 09 20:31:06 PDT 2015
+                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/forum.scala.html
+                    HASH: f6e46c5f963fceba69d912985ef4976efda336b4
+                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|12211->11208
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|397->369
                     -- GENERATED --
                 */
