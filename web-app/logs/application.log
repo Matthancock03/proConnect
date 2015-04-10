@@ -1,725 +1,83 @@
-2015-04-10 12:38:01,372 - [INFO] - from play in pool-6-thread-3 
+2015-04-10 14:42:56,710 - [INFO] - from play in pool-6-thread-4 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-04-10 12:39:35,833 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-10 15:20:51,503 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-04-10 12:39:38,372 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-10 15:20:53,801 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
 
-2015-04-10 12:39:39,620 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-10 15:20:56,843 - [INFO] - from play in play-internal-execution-context-1 
 Starting application default Akka system.
 
-2015-04-10 12:39:39,764 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
+2015-04-10 15:20:56,934 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
 [securesocial] calling deleteExpiredTokens()
 
-2015-04-10 12:39:39,769 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-10 15:20:56,939 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded user service: class plugins.InMemoryUserService
 
-2015-04-10 12:39:39,775 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-10 15:20:56,941 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded password hasher bcrypt
 
-2015-04-10 12:39:39,786 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-10 15:20:56,973 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: twitter
 
-2015-04-10 12:39:39,791 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-10 15:20:56,979 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: facebook
 
-2015-04-10 12:39:39,795 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-10 15:20:56,980 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: google
 
-2015-04-10 12:39:39,797 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-10 15:20:56,981 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: userpass
 
-2015-04-10 12:39:39,829 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-10 15:20:57,038 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-04-10 12:44:39,771 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
+2015-04-10 15:23:36,407 - [ERROR] - from play in play-internal-execution-context-1 
+Cannot invoke the action, eventually got an error: java.util.concurrent.TimeoutException: Request reached time out of 120000 ms after 120668 ms
+
+2015-04-10 15:23:36,466 - [ERROR] - from application in play-internal-execution-context-1 
+
+
+! @6lmnacne0 - Internal server error, for (GET) [/feedZilla] ->
+
+play.api.Application$$anon$1: Execution exception[[TimeoutException: Request reached time out of 120000 ms after 120668 ms]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.1.jar:2.2.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:261) [play_2.10-2.2.1.jar:2.2.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:261) [play_2.10-2.2.1.jar:2.2.1]
+	at scala.Option.map(Option.scala:145) [scala-library.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2.applyOrElse(PlayDefaultUpstreamHandler.scala:261) [play_2.10-2.2.1.jar:2.2.1]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2.applyOrElse(PlayDefaultUpstreamHandler.scala:257) [play_2.10-2.2.1.jar:2.2.1]
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:33) [scala-library.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:411) [scala-library.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:408) [scala-library.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:29) [scala-library.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.1.jar:2.2.1]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:37) [scala-library.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:133) [scala-library.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:58) [scala-library.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:254) [scala-library.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:249) [scala-library.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:29) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library.jar:na]
+java.util.concurrent.TimeoutException: Request reached time out of 120000 ms after 120668 ms
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.expire(NettyAsyncHttpProvider.java:1773) ~[async-http-client-1.7.18.jar:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.run(NettyAsyncHttpProvider.java:1794) ~[async-http-client-1.7.18.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_40]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) ~[na:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) ~[na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_40]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_40]
+
+2015-04-10 15:25:56,932 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
 [securesocial] calling deleteExpiredTokens()
-
-2015-04-10 12:45:35,890 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] unloaded identity provider: userpass
-
-2015-04-10 12:45:35,890 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] unloaded identity provider: google
-
-2015-04-10 12:45:35,890 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] unloaded identity provider: facebook
-
-2015-04-10 12:45:35,890 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] unloaded identity provider: twitter
-
-2015-04-10 12:45:35,905 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] unloaded password hasher bcrypt
-
-2015-04-10 12:45:35,905 - [INFO] - from play in play-internal-execution-context-1 
-Shutdown application default Akka system.
-
-2015-04-10 12:45:36,724 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-04-10 12:45:37,447 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2015-04-10 12:45:37,508 - [INFO] - from play in play-internal-execution-context-1 
-Starting application default Akka system.
-
-2015-04-10 12:45:37,514 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 12:45:37,515 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] loaded user service: class plugins.InMemoryUserService
-
-2015-04-10 12:45:37,524 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] loaded password hasher bcrypt
-
-2015-04-10 12:45:37,529 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] loaded identity provider: twitter
-
-2015-04-10 12:45:37,531 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] loaded identity provider: facebook
-
-2015-04-10 12:45:37,536 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] loaded identity provider: google
-
-2015-04-10 12:45:37,540 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] loaded identity provider: userpass
-
-2015-04-10 12:45:37,544 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-04-10 12:50:37,542 - [DEBUG] - from application in play-akka.actor.default-dispatcher-13 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 12:55:37,510 - [DEBUG] - from application in play-akka.actor.default-dispatcher-13 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 13:00:37,522 - [DEBUG] - from application in play-akka.actor.default-dispatcher-13 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 13:03:27,812 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: userpass
-
-2015-04-10 13:03:27,812 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: google
-
-2015-04-10 13:03:27,812 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: facebook
-
-2015-04-10 13:03:27,812 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: twitter
-
-2015-04-10 13:03:27,828 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded password hasher bcrypt
-
-2015-04-10 13:03:27,828 - [INFO] - from play in play-internal-execution-context-3 
-Shutdown application default Akka system.
-
-2015-04-10 13:03:28,455 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:mem:play
-
-2015-04-10 13:03:29,236 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2015-04-10 13:03:29,331 - [INFO] - from play in play-internal-execution-context-3 
-Starting application default Akka system.
-
-2015-04-10 13:03:29,340 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded user service: class plugins.InMemoryUserService
-
-2015-04-10 13:03:29,340 - [DEBUG] - from application in play-akka.actor.default-dispatcher-13 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 13:03:29,355 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded password hasher bcrypt
-
-2015-04-10 13:03:29,366 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: twitter
-
-2015-04-10 13:03:29,369 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: facebook
-
-2015-04-10 13:03:29,373 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: google
-
-2015-04-10 13:03:29,382 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: userpass
-
-2015-04-10 13:03:29,393 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-04-10 13:08:29,340 - [DEBUG] - from application in play-akka.actor.default-dispatcher-13 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 13:10:10,886 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: userpass
-
-2015-04-10 13:10:10,886 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: google
-
-2015-04-10 13:10:10,886 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: facebook
-
-2015-04-10 13:10:10,902 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: twitter
-
-2015-04-10 13:10:10,902 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded password hasher bcrypt
-
-2015-04-10 13:10:10,902 - [INFO] - from play in play-internal-execution-context-3 
-Shutdown application default Akka system.
-
-2015-04-10 13:10:11,152 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:mem:play
-
-2015-04-10 13:10:11,683 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2015-04-10 13:10:11,699 - [INFO] - from play in play-internal-execution-context-3 
-Starting application default Akka system.
-
-2015-04-10 13:10:11,715 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 13:10:11,730 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded user service: class plugins.InMemoryUserService
-
-2015-04-10 13:10:11,730 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded password hasher bcrypt
-
-2015-04-10 13:10:11,730 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: twitter
-
-2015-04-10 13:10:11,746 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: facebook
-
-2015-04-10 13:10:11,746 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: google
-
-2015-04-10 13:10:11,746 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: userpass
-
-2015-04-10 13:10:11,746 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-04-10 13:13:10,350 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: userpass
-
-2015-04-10 13:13:10,350 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: google
-
-2015-04-10 13:13:10,350 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: facebook
-
-2015-04-10 13:13:10,350 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: twitter
-
-2015-04-10 13:13:10,350 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded password hasher bcrypt
-
-2015-04-10 13:13:10,350 - [INFO] - from play in play-internal-execution-context-3 
-Shutdown application default Akka system.
-
-2015-04-10 13:13:10,616 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:mem:play
-
-2015-04-10 13:13:11,169 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2015-04-10 13:13:11,185 - [INFO] - from play in play-internal-execution-context-3 
-Starting application default Akka system.
-
-2015-04-10 13:13:11,200 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded user service: class plugins.InMemoryUserService
-
-2015-04-10 13:13:11,200 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded password hasher bcrypt
-
-2015-04-10 13:13:11,200 - [DEBUG] - from application in play-akka.actor.default-dispatcher-32 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 13:13:11,200 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: twitter
-
-2015-04-10 13:13:11,200 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: facebook
-
-2015-04-10 13:13:11,200 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: google
-
-2015-04-10 13:13:11,200 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: userpass
-
-2015-04-10 13:13:11,200 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-04-10 13:13:39,633 - [ERROR] - from application in New I/O worker #8 
-
-
-! @6lmmjb7ag - Internal server error, for (GET) [/forum] ->
-
-play.PlayExceptions$TemplateCompilationException: Compilation error[Unmatched bracket]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:55) ~[na:na]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:30) ~[na:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:35) ~[scala-library.jar:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:34) ~[scala-library.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
-
-2015-04-10 13:13:43,411 - [ERROR] - from application in New I/O worker #8 
-
-
-! @6lmmjbd3i - Internal server error, for (GET) [/assets/images/proConnect.jpg] ->
-
-play.PlayExceptions$TemplateCompilationException: Compilation error[Unmatched bracket]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:55) ~[na:na]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:30) ~[na:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:35) ~[scala-library.jar:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:34) ~[scala-library.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
-
-2015-04-10 13:13:43,843 - [ERROR] - from application in New I/O worker #8 
-
-
-! @6lmmjbdj4 - Internal server error, for (GET) [/assets/images/proConnect.jpg] ->
-
-play.PlayExceptions$TemplateCompilationException: Compilation error[Unmatched bracket]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:55) ~[na:na]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:30) ~[na:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:35) ~[scala-library.jar:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:34) ~[scala-library.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
-
-2015-04-10 13:13:44,649 - [ERROR] - from application in New I/O worker #8 
-
-
-! @6lmmjbf1e - Internal server error, for (GET) [/forum] ->
-
-play.PlayExceptions$TemplateCompilationException: Compilation error[Unmatched bracket]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:55) ~[na:na]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:30) ~[na:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:35) ~[scala-library.jar:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:34) ~[scala-library.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
-
-2015-04-10 13:14:05,938 - [ERROR] - from application in New I/O worker #8 
-
-
-! @6lmmjckak - Internal server error, for (GET) [/forum] ->
-
-play.PlayExceptions$TemplateCompilationException: Compilation error[Unmatched bracket]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:55) ~[na:na]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:30) ~[na:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:35) ~[scala-library.jar:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:34) ~[scala-library.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
-
-2015-04-10 13:14:09,554 - [ERROR] - from application in New I/O worker #8 
-
-
-! @6lmmjcpmg - Internal server error, for (GET) [/connections] ->
-
-play.PlayExceptions$TemplateCompilationException: Compilation error[Unmatched bracket]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:55) ~[na:na]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:30) ~[na:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:35) ~[scala-library.jar:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:34) ~[scala-library.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
-
-2015-04-10 13:14:12,124 - [ERROR] - from application in New I/O worker #8 
-
-
-! @6lmmjd3in - Internal server error, for (GET) [/connections] ->
-
-play.PlayExceptions$TemplateCompilationException: Compilation error[Unmatched bracket]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:55) ~[na:na]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:30) ~[na:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:35) ~[scala-library.jar:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:34) ~[scala-library.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
-
-2015-04-10 13:15:01,287 - [ERROR] - from application in New I/O worker #8 
-
-
-! @6lmmjfobk - Internal server error, for (GET) [/connections] ->
-
-play.PlayExceptions$TemplateCompilationException: Compilation error[Unmatched bracket]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:55) ~[na:na]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:30) ~[na:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:35) ~[scala-library.jar:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:34) ~[scala-library.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
-
-2015-04-10 13:15:03,314 - [ERROR] - from application in New I/O worker #8 
-
-
-! @6lmmjg19o - Internal server error, for (GET) [/connections] ->
-
-play.PlayExceptions$TemplateCompilationException: Compilation error[Unmatched bracket]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:55) ~[na:na]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:30) ~[na:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:35) ~[scala-library.jar:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:34) ~[scala-library.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
-
-2015-04-10 13:15:08,642 - [ERROR] - from application in New I/O worker #8 
-
-
-! @6lmmjg997 - Internal server error, for (GET) [/forum] ->
-
-play.PlayExceptions$TemplateCompilationException: Compilation error[Unmatched bracket]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:55) ~[na:na]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:30) ~[na:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:35) ~[scala-library.jar:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:34) ~[scala-library.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
-
-2015-04-10 13:15:47,402 - [ERROR] - from application in New I/O worker #8 
-
-
-! @6lmmjieig - Internal server error, for (GET) [/forum] ->
-
-play.PlayExceptions$TemplateCompilationException: Compilation error[Not parsed?]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:55) ~[na:na]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:30) ~[na:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:35) ~[scala-library.jar:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:34) ~[scala-library.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
-
-2015-04-10 13:16:11,813 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: userpass
-
-2015-04-10 13:16:11,813 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: google
-
-2015-04-10 13:16:11,813 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: facebook
-
-2015-04-10 13:16:11,813 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded identity provider: twitter
-
-2015-04-10 13:16:11,813 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] unloaded password hasher bcrypt
-
-2015-04-10 13:16:11,813 - [INFO] - from play in play-internal-execution-context-3 
-Shutdown application default Akka system.
-
-2015-04-10 13:16:12,219 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:mem:play
-
-2015-04-10 13:16:12,641 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2015-04-10 13:16:12,657 - [INFO] - from play in play-internal-execution-context-3 
-Starting application default Akka system.
-
-2015-04-10 13:16:12,657 - [DEBUG] - from application in play-akka.actor.default-dispatcher-35 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 13:16:12,657 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded user service: class plugins.InMemoryUserService
-
-2015-04-10 13:16:12,657 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded password hasher bcrypt
-
-2015-04-10 13:16:12,657 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: twitter
-
-2015-04-10 13:16:12,657 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: facebook
-
-2015-04-10 13:16:12,657 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: google
-
-2015-04-10 13:16:12,657 - [INFO] - from application in play-internal-execution-context-3 
-[securesocial] loaded identity provider: userpass
-
-2015-04-10 13:16:12,657 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-04-10 13:16:40,304 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] unloaded identity provider: userpass
-
-2015-04-10 13:16:40,304 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] unloaded identity provider: google
-
-2015-04-10 13:16:40,304 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] unloaded identity provider: facebook
-
-2015-04-10 13:16:40,304 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] unloaded identity provider: twitter
-
-2015-04-10 13:16:40,304 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] unloaded password hasher bcrypt
-
-2015-04-10 13:16:40,304 - [INFO] - from play in play-internal-execution-context-8 
-Shutdown application default Akka system.
-
-2015-04-10 13:16:40,632 - [INFO] - from play in play-internal-execution-context-8 
-database [default] connected at jdbc:h2:mem:play
-
-2015-04-10 13:16:41,023 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2015-04-10 13:16:41,054 - [INFO] - from play in play-internal-execution-context-8 
-Starting application default Akka system.
-
-2015-04-10 13:16:41,054 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] loaded user service: class plugins.InMemoryUserService
-
-2015-04-10 13:16:41,054 - [DEBUG] - from application in play-akka.actor.default-dispatcher-35 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 13:16:41,054 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] loaded password hasher bcrypt
-
-2015-04-10 13:16:41,054 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] loaded identity provider: twitter
-
-2015-04-10 13:16:41,054 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] loaded identity provider: facebook
-
-2015-04-10 13:16:41,069 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] loaded identity provider: google
-
-2015-04-10 13:16:41,069 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] loaded identity provider: userpass
-
-2015-04-10 13:16:41,069 - [INFO] - from play in play-internal-execution-context-8 
-Application started (Dev)
-
-2015-04-10 13:21:41,066 - [DEBUG] - from application in play-akka.actor.default-dispatcher-38 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 13:26:41,060 - [DEBUG] - from application in play-akka.actor.default-dispatcher-38 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 13:31:41,076 - [DEBUG] - from application in play-akka.actor.default-dispatcher-38 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 13:35:32,641 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] unloaded identity provider: userpass
-
-2015-04-10 13:35:32,646 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] unloaded identity provider: google
-
-2015-04-10 13:35:32,649 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] unloaded identity provider: facebook
-
-2015-04-10 13:35:32,652 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] unloaded identity provider: twitter
-
-2015-04-10 13:35:32,658 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] unloaded password hasher bcrypt
-
-2015-04-10 13:35:32,661 - [INFO] - from play in play-internal-execution-context-8 
-Shutdown application default Akka system.
-
-2015-04-10 13:35:33,082 - [INFO] - from play in play-internal-execution-context-8 
-database [default] connected at jdbc:h2:mem:play
-
-2015-04-10 13:35:33,692 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2015-04-10 13:35:33,733 - [INFO] - from play in play-internal-execution-context-8 
-Starting application default Akka system.
-
-2015-04-10 13:35:33,735 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] loaded user service: class plugins.InMemoryUserService
-
-2015-04-10 13:35:33,735 - [DEBUG] - from application in play-akka.actor.default-dispatcher-38 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 13:35:33,741 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] loaded password hasher bcrypt
-
-2015-04-10 13:35:33,744 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] loaded identity provider: twitter
-
-2015-04-10 13:35:33,747 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] loaded identity provider: facebook
-
-2015-04-10 13:35:33,749 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] loaded identity provider: google
-
-2015-04-10 13:35:33,753 - [INFO] - from application in play-internal-execution-context-8 
-[securesocial] loaded identity provider: userpass
-
-2015-04-10 13:35:33,756 - [INFO] - from play in play-internal-execution-context-8 
-Application started (Dev)
 

@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/Roya/Desktop/proConnect/web-app/}web-app...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/beyondprosthetics/repos/school/proConnect/web-app/}web-app...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@31543f3f[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10269e57[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.2[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.2[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.2 in sbt-chain[0m
@@ -1050,26 +1050,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.json#org.json;chargebee-1.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.json#org.json;chargebee-1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.json#org.json;chargebee-1.0 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Roya\.ivy2\local\org.json\org.json\chargebee-1.0\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.json#org.json;chargebee-1.0[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/Roya/Desktop/proConnect/web-app/repository/org.json/org.json/chargebee-1.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.json#org.json;chargebee-1.0[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.json#org.json;chargebee-1.0[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.pom (chargebee-1.0)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.json#org.json;chargebee-1.0!org.json.pom(pom.original) (595ms)[0m
-[0m[[0minfo[0m] [0mResolving org.sonatype.oss#oss-parent;7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.sonatype.oss#oss-parent;7[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Roya\.ivy2\local\org.json\org.json\chargebee-1.0\jars\org.json.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/Roya/Desktop/proConnect/web-app/repository/org.json/org.json/chargebee-1.0/jars/org.json.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.jar[0m
-[0m[[0mdebug[0m] [0m	found org.json#org.json;chargebee-1.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.json#org.json;chargebee-1.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.json#org.json;chargebee-1.0[0m
+[0m[[0mdebug[0m] [0m	found org.json#org.json;chargebee-1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.json#org.json;chargebee-1.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.json#org.json;chargebee-1.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.json#org.json;chargebee-1.0 [compile->master][0m
@@ -6470,7 +6453,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->optional(default)][0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in C:\Users\Roya\Desktop\proConnect\web-app\target\resolution-cache\hello-play-backbone\hello-play-backbone_2.10\1.0-SNAPSHOT\resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/hello-play-backbone/hello-play-backbone_2.10/1.0-SNAPSHOT/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.2!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-jdbc_2.10;2.2.1!play-jdbc_2.10.jar[0m
@@ -6484,12 +6467,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] postgresql#postgresql;9.1-901-1.jdbc4!postgresql.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.twitter4j#twitter4j-core;3.0.3!twitter4j-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] ws.securesocial#securesocial_2.10;2.1.3!securesocial_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/json/org.json/chargebee-1.0/org.json-chargebee-1.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.json#org.json;chargebee-1.0!org.json.jar (1399ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.json#org.json;chargebee-1.0!org.json.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play_2.10;2.2.1!play_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.jolbox#bonecp;0.8.0.RELEASE!bonecp.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.guava#guava;14.0.1!guava.jar(bundle)[0m
@@ -6619,19 +6597,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.2!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.2!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 15073ms :: artifacts dl 2001ms[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT compile produced in C:\Users\Roya\Desktop\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT runtime produced in C:\Users\Roya\Desktop\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT test produced in C:\Users\Roya\Desktop\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT provided produced in C:\Users\Roya\Desktop\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT optional produced in C:\Users\Roya\Desktop\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT compile-internal produced in C:\Users\Roya\Desktop\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT runtime-internal produced in C:\Users\Roya\Desktop\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT test-internal produced in C:\Users\Roya\Desktop\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT plugin produced in C:\Users\Roya\Desktop\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT sources produced in C:\Users\Roya\Desktop\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT docs produced in C:\Users\Roya\Desktop\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT pom produced in C:\Users\Roya\Desktop\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT scala-tool produced in C:\Users\Roya\Desktop\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (15073ms resolve - 2001ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 5505ms :: artifacts dl 212ms[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT compile produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT runtime produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT test produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT provided produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT optional produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT compile-internal produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT runtime-internal produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT test-internal produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT plugin produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT sources produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT docs produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT pom produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT scala-tool produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (5505ms resolve - 212ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

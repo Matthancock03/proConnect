@@ -58,7 +58,7 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account<span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
           <li><a href="#">Settings</a></li>
-          <li><a href="#">Help</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*34.25*/routes/*34.31*/.Application.help())),format.raw/*34.50*/("""">Help</a></li>
           <li><a href=""""),_display_(Seq[Any](/*35.25*/routes/*35.31*/.Application.about())),format.raw/*35.51*/("""">About ProConnect</a></li>
           <li class="divider"></li>
           <li><a href=""""),_display_(Seq[Any](/*37.25*/securesocial/*37.37*/.controllers.routes.LoginPage.logout().absoluteURL())),format.raw/*37.89*/("""">Sign Out</a></li>
@@ -80,11 +80,11 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Apr 10 12:38:08 PDT 2015
-                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/navbar.scala.html
-                    HASH: 0e759b9309982498735b983919cc274053d1f529
-                    MATRIX: 856->2|1423->533|1438->539|1480->559|1750->793|1765->799|1807->819|1880->856|1895->862|1944->889|2020->929|2035->935|2083->961|2163->1005|2178->1011|2220->1031|2922->1697|2937->1703|2979->1723|3105->1813|3126->1825|3200->1877
-                    LINES: 29->2|39->12|39->12|39->12|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21|62->35|62->35|62->35|64->37|64->37|64->37
+                    DATE: Fri Apr 10 13:50:44 PDT 2015
+                    SOURCE: /home/beyondprosthetics/repos/school/proConnect/web-app/app/views/navbar.scala.html
+                    HASH: 91de6db833e9c0366d9ab7c153e5e6fb023e29d4
+                    MATRIX: 856->1|1413->522|1428->528|1470->548|1734->776|1749->782|1791->802|1863->838|1878->844|1927->871|2002->910|2017->916|2065->942|2144->985|2159->991|2201->1011|2849->1623|2864->1629|2905->1648|2981->1688|2996->1694|3038->1714|3162->1802|3183->1814|3257->1866
+                    LINES: 29->2|39->12|39->12|39->12|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21|61->34|61->34|61->34|62->35|62->35|62->35|64->37|64->37|64->37
                     -- GENERATED --
                 */
             

@@ -60,7 +60,32 @@ Seq[Any](format.raw/*2.1*/("""
 		</div>
 
 		<div class="col-xs-6 column clearfix">
+			<!-- Feedzilla Widget BEGIN -->
 
+				<div class="feedzilla-news-widget feedzilla-9679638077504933" style="width:700px; padding-top: 50px; text-align: center; font-size: 11px; border: 0;">
+				<script type="text/javascript" src="http://widgets.feedzilla.com/news/iframe/js/widget.js"></script>
+				<script type="text/javascript">
+				new FEEDZILLA.Widget("""),format.raw/*40.26*/("""{"""),format.raw/*40.27*/("""
+					style: 'slide-top-to-bottom',
+					culture_code: 'en_us',
+					c: '30',
+					sc: '-',
+					headerBackgroundColor: '#0C98CF',
+					footerBackgroundColor: '#0C98CF',
+					title: 'ProConnect',
+					order: 'relevance',
+					count: '20',
+					w: '700',
+					h: '500',
+					timestamp: 'true',
+					scrollbar: 'false',
+					theme: 'ui-lightness',
+					className: 'feedzilla-9679638077504933'
+				"""),format.raw/*56.5*/("""}"""),format.raw/*56.6*/(""");
+				</script><br />
+				</div>
+
+				<!-- Feedzilla Widget END -->
 		</div>
 		<div class="col-xs-4 column">
 			<div>
@@ -85,7 +110,7 @@ Seq[Any](format.raw/*2.1*/("""
 
   </div>
 </div>
-""")))})),format.raw/*60.2*/("""
+""")))})),format.raw/*85.2*/("""
 """))}
     }
     
@@ -98,11 +123,11 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Apr 10 12:38:07 PDT 2015
-                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/home.scala.html
-                    HASH: b3e342f2f5895364fe4352ce1aa0bf41b204acb9
-                    MATRIX: 871->18|908->21|934->39|973->41|1041->74|1055->80|1114->118|1219->189|1233->195|1263->204|2454->1364
-                    LINES: 30->2|31->3|31->3|31->3|32->4|32->4|32->4|37->9|37->9|37->9|88->60
+                    DATE: Fri Apr 10 14:12:19 PDT 2015
+                    SOURCE: /home/beyondprosthetics/repos/school/proConnect/web-app/app/views/home.scala.html
+                    HASH: 105820a69be5d7f25a8d46be3ff4533df20a809d
+                    MATRIX: 870->17|906->19|932->37|971->39|1038->71|1052->77|1111->115|1211->181|1225->187|1255->196|2114->1027|2143->1028|2565->1423|2593->1424|3327->2127
+                    LINES: 30->2|31->3|31->3|31->3|32->4|32->4|32->4|37->9|37->9|37->9|68->40|68->40|84->56|84->56|113->85
                     -- GENERATED --
                 */
             

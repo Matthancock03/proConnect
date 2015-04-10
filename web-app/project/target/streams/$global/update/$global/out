@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/Roya/Desktop/proConnect/web-app/project/}web-app-build...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/beyondprosthetics/repos/school/proConnect/web-app/project/}web-app-build...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#web-app-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -3010,7 +3010,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#web-app-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#web-app-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#web-app-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->optional(default)][0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in C:\Users\Roya\Desktop\proConnect\web-app\project\target\resolution-cache\default\web-app-build\scala_2.10\sbt_0.13\0.1-SNAPSHOT\resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/beyondprosthetics/repos/school/proConnect/web-app/project/target/resolution-cache/default/web-app-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#sbt-plugin;2.2.1!sbt-plugin.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#sbt-link;2.2.1!sbt-link.jar[0m
@@ -3089,19 +3089,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.0!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.2!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 9204ms :: artifacts dl 499ms[0m
-[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT compile produced in C:\Users\Roya\Desktop\proConnect\web-app\project\target\resolution-cache\reports\default-web-app-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT runtime produced in C:\Users\Roya\Desktop\proConnect\web-app\project\target\resolution-cache\reports\default-web-app-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT test produced in C:\Users\Roya\Desktop\proConnect\web-app\project\target\resolution-cache\reports\default-web-app-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT provided produced in C:\Users\Roya\Desktop\proConnect\web-app\project\target\resolution-cache\reports\default-web-app-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT optional produced in C:\Users\Roya\Desktop\proConnect\web-app\project\target\resolution-cache\reports\default-web-app-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT compile-internal produced in C:\Users\Roya\Desktop\proConnect\web-app\project\target\resolution-cache\reports\default-web-app-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT runtime-internal produced in C:\Users\Roya\Desktop\proConnect\web-app\project\target\resolution-cache\reports\default-web-app-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT test-internal produced in C:\Users\Roya\Desktop\proConnect\web-app\project\target\resolution-cache\reports\default-web-app-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT plugin produced in C:\Users\Roya\Desktop\proConnect\web-app\project\target\resolution-cache\reports\default-web-app-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT sources produced in C:\Users\Roya\Desktop\proConnect\web-app\project\target\resolution-cache\reports\default-web-app-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT docs produced in C:\Users\Roya\Desktop\proConnect\web-app\project\target\resolution-cache\reports\default-web-app-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT pom produced in C:\Users\Roya\Desktop\proConnect\web-app\project\target\resolution-cache\reports\default-web-app-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT scala-tool produced in C:\Users\Roya\Desktop\proConnect\web-app\project\target\resolution-cache\reports\default-web-app-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (9204ms resolve - 499ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4578ms :: artifacts dl 185ms[0m
+[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT compile produced in /home/beyondprosthetics/repos/school/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT runtime produced in /home/beyondprosthetics/repos/school/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT test produced in /home/beyondprosthetics/repos/school/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT provided produced in /home/beyondprosthetics/repos/school/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT optional produced in /home/beyondprosthetics/repos/school/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT compile-internal produced in /home/beyondprosthetics/repos/school/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT runtime-internal produced in /home/beyondprosthetics/repos/school/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT test-internal produced in /home/beyondprosthetics/repos/school/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT plugin produced in /home/beyondprosthetics/repos/school/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT sources produced in /home/beyondprosthetics/repos/school/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT docs produced in /home/beyondprosthetics/repos/school/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT pom produced in /home/beyondprosthetics/repos/school/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#web-app-build;0.1-SNAPSHOT scala-tool produced in /home/beyondprosthetics/repos/school/proConnect/web-app/project/target/resolution-cache/reports/default-web-app-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (4578ms resolve - 185ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
