@@ -1,83 +1,42 @@
-2015-04-10 14:42:56,710 - [INFO] - from play in pool-6-thread-4 
+2015-04-10 15:52:50,963 - [INFO] - from play in pool-6-thread-5 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-04-10 15:20:51,503 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-10 15:53:38,029 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-04-10 15:20:53,801 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-10 15:53:39,513 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
 
-2015-04-10 15:20:56,843 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-10 15:53:40,559 - [INFO] - from play in play-internal-execution-context-1 
 Starting application default Akka system.
 
-2015-04-10 15:20:56,934 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-10 15:20:56,939 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-10 15:53:40,619 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded user service: class plugins.InMemoryUserService
 
-2015-04-10 15:20:56,941 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-10 15:53:40,640 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-10 15:53:40,641 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded password hasher bcrypt
 
-2015-04-10 15:20:56,973 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-10 15:53:40,652 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: twitter
 
-2015-04-10 15:20:56,979 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-10 15:53:40,654 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: facebook
 
-2015-04-10 15:20:56,980 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-10 15:53:40,654 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: google
 
-2015-04-10 15:20:56,981 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-10 15:53:40,655 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: userpass
 
-2015-04-10 15:20:57,038 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-10 15:53:40,662 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-04-10 15:23:36,407 - [ERROR] - from play in play-internal-execution-context-1 
-Cannot invoke the action, eventually got an error: java.util.concurrent.TimeoutException: Request reached time out of 120000 ms after 120668 ms
+2015-04-10 15:58:40,627 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
+[securesocial] calling deleteExpiredTokens()
 
-2015-04-10 15:23:36,466 - [ERROR] - from application in play-internal-execution-context-1 
-
-
-! @6lmnacne0 - Internal server error, for (GET) [/feedZilla] ->
-
-play.api.Application$$anon$1: Execution exception[[TimeoutException: Request reached time out of 120000 ms after 120668 ms]]
-	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.1.jar:2.2.1]
-	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.1.jar:2.2.1]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:261) [play_2.10-2.2.1.jar:2.2.1]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:261) [play_2.10-2.2.1.jar:2.2.1]
-	at scala.Option.map(Option.scala:145) [scala-library.jar:na]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2.applyOrElse(PlayDefaultUpstreamHandler.scala:261) [play_2.10-2.2.1.jar:2.2.1]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2.applyOrElse(PlayDefaultUpstreamHandler.scala:257) [play_2.10-2.2.1.jar:2.2.1]
-	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:33) [scala-library.jar:na]
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:411) [scala-library.jar:na]
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:408) [scala-library.jar:na]
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:29) [scala-library.jar:na]
-	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.1.jar:2.2.1]
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:37) [scala-library.jar:na]
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:133) [scala-library.jar:na]
-	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library.jar:na]
-	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:58) [scala-library.jar:na]
-	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:254) [scala-library.jar:na]
-	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:249) [scala-library.jar:na]
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:29) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library.jar:na]
-java.util.concurrent.TimeoutException: Request reached time out of 120000 ms after 120668 ms
-	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.expire(NettyAsyncHttpProvider.java:1773) ~[async-http-client-1.7.18.jar:na]
-	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.run(NettyAsyncHttpProvider.java:1794) ~[async-http-client-1.7.18.jar:na]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_40]
-	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) ~[na:1.8.0_40]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_40]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) ~[na:1.8.0_40]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_40]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_40]
-	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_40]
-
-2015-04-10 15:25:56,932 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+2015-04-10 16:03:40,617 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
 [securesocial] calling deleteExpiredTokens()
 
