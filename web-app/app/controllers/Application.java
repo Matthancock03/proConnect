@@ -29,6 +29,9 @@ public class Application extends Controller{
   public static Result splashPage(){
     return ok(splash.render());
   }
+  public static Result help(){
+    return ok(help.render());
+  }
 
   @SecureSocial.SecuredAction
    public static Result index() {
