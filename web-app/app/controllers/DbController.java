@@ -11,6 +11,13 @@ import play.Logger;
 import securesocial.core.*;
 import securesocial.*;
 import securesocial.core.java.SecureSocial;
+import play.mvc.BodyParser;
+import play.libs.Json;
+import play.libs.Json.*;
+import static play.libs.Json.toJson;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import com.fasterxml.jackson.databind.node.*;
 
 
 public class DbController extends Controller{
@@ -25,9 +32,18 @@ public class DbController extends Controller{
     return ok(home.render());
   }
 
-  public static Result androidLogin(String userName, String password){
-    return ok("");
+  @BodyParser.Of(BodyParser.Json.class)
+  public static Result androidLogin(String name, String password) {
+
+      ObjectNode result = Json.newObject();
+        if(name != ""){
+          result.put("Accepted", "True");
+        }else{
+          result.put("Accepted", "False");
+        }
+        return ok(result);
   }
+
   /*public static Result loginUser(){
       Form<loginFormData> formData = Form.form(loginFormData.class).bindFromRequest();
       if (formData.hasErrors()) {

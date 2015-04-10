@@ -1,6 +1,6 @@
-// @SOURCE:C:/Users/Roya/Desktop/proConnect/web-app/conf/routes
-// @HASH:86efdc9a502d1d8572560f13ea7ef5bd4a6cd4c1
-// @DATE:Thu Apr 09 20:22:52 PDT 2015
+// @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
+// @HASH:b900326e564b370bddbe43617b15521a2c5b411e
+// @DATE:Thu Apr 09 23:08:21 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,6 +15,7 @@ import Router.queryString
 
 // @LINE:16
 // @LINE:15
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
@@ -50,6 +51,7 @@ def at(file:String): Call = {
 }
                           
 
+// @LINE:13
 // @LINE:9
 // @LINE:7
 class ReverseDbController {
@@ -64,6 +66,12 @@ def home(): Call = {
 // @LINE:9
 def editProfile(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "editProfile")
+}
+                                                
+
+// @LINE:13
+def androidLogin(name:String, password:String): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "androidLogin" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("name", name)), Some(implicitly[QueryStringBindable[String]].unbind("password", password)))))
 }
                                                 
     
@@ -264,6 +272,7 @@ def login(): Call = {
 
 // @LINE:16
 // @LINE:15
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
@@ -309,6 +318,7 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:13
 // @LINE:9
 // @LINE:7
 class ReverseDbController {
@@ -331,6 +341,17 @@ def editProfile : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "editProfile"})
+      }
+   """
+)
+                        
+
+// @LINE:13
+def androidLogin : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.DbController.androidLogin",
+   """
+      function(name,password) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "androidLogin" + _qS([(""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("name", name), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("password", password)])})
       }
    """
 )
@@ -633,6 +654,7 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
 
 // @LINE:16
 // @LINE:15
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
@@ -669,6 +691,7 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
+// @LINE:13
 // @LINE:9
 // @LINE:7
 class ReverseDbController {
@@ -683,6 +706,12 @@ def home(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:9
 def editProfile(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.DbController.editProfile(), HandlerDef(this, "controllers.DbController", "editProfile", Seq(), "GET", """""", _prefix + """editProfile""")
+)
+                      
+
+// @LINE:13
+def androidLogin(name:String, password:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.DbController.androidLogin(name, password), HandlerDef(this, "controllers.DbController", "androidLogin", Seq(classOf[String], classOf[String]), "GET", """""", _prefix + """androidLogin""")
 )
                       
     
