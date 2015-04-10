@@ -11,6 +11,7 @@ GET      /forum                    controllers.Application.forum()
 GET      /connections              controllers.Application.connections()
 GET      /about                    controllers.Application.about()
 GET      /androidLogin             controllers.DbController.androidLogin(name: String, password: String)
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 GET     /webjars/*file              controllers.WebJarAssets.at(file)
