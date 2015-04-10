@@ -24,6 +24,10 @@ public class DbController extends Controller{
   public static Result home(){
     return ok(home.render());
   }
+
+  public static Result androidLogin(String userName, String password){
+    return ok("");
+  }
   /*public static Result loginUser(){
       Form<loginFormData> formData = Form.form(loginFormData.class).bindFromRequest();
       if (formData.hasErrors()) {
