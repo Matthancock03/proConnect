@@ -33,16 +33,69 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<h3>
-				h3. Lorem ipsum dolor sit amet.
+				Help Center<br />
 			</h3>
 		</div>
 	</div>
 	<div class="row clearfix">
 		<div class="col-md-12 column">
-			<img alt="140x140" src="http://lorempixel.com/140/140/" />
-			<h3>
-				h3. Lorem ipsum dolor sit amet.
-			</h3> <a href="#" class="btn" type="button">Button</a> <a href="#" class="btn" type="button">Button</a> <a href="#" class="btn" type="button">Button</a> <a href="#" class="btn" type="button">Button</a> <a href="#" class="btn" type="button">Button</a> <a href="#" class="btn" type="button">Button</a>
+			<img alt="140x140" src="http://www.medisolsoft.com/images/support.jpg" />
+			<form class="navbar-form navbar-right" role="search">
+		      <div class="form-group">
+		        <input type="text" class="form-control" placeholder="How Can We Help You?">
+		      </div>
+		      <button type="submit" class="btn btn-default">Submit</button>
+		    </form>
+		    <br /><br /><br />
+
+		</div>
+	</div>
+
+	<h3>
+				Frequently Asked Questions<br />
+			</h3>
+	<div class="row clearfix">
+		<div class="col-md-6 column">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						ProConnect Account
+					</h3>
+				</div>
+				<div class="panel-body">
+					How do I update my profile page?
+				</div>
+				<div class="panel-body">
+					How can I turn off Twitter feed?
+				</div>
+				<div class="panel-body">
+					How do I change my profile picture?
+				</div>
+				<div class="panel-body">
+					How can I delete my proConnect account?
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 column">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Connections
+					</h3>
+				</div>
+				<div class="panel-body">
+					How do I add friends on ProConnect?
+				</div>
+				<div class="panel-body">
+					Where can I view who my connections are?
+				</div>
+				<div class="panel-body">
+					How can I remove someone from my connections?
+				</div>
+				<div class="panel-body">
+					How can I block someone on ProConnect?
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="row clearfix">
@@ -50,14 +103,17 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						Panel title
+						Forums
 					</h3>
 				</div>
 				<div class="panel-body">
-					Panel content
+					What are forums for on ProConnect?
 				</div>
-				<div class="panel-footer">
-					Panel footer
+				<div class="panel-body">
+					How can I create a new forum?
+				</div>
+				<div class="panel-body">
+					How can I contribute to a forum?
 				</div>
 			</div>
 		</div>
@@ -65,14 +121,17 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						Panel title
+						Job Search
 					</h3>
 				</div>
 				<div class="panel-body">
-					Panel content
+					How can I search for jobs on ProConnect?
 				</div>
-				<div class="panel-footer">
-					Panel footer
+				<div class="panel-body">
+					How can I apply to a job through ProConnect?<br /><br />
+				</div>
+				<div class="panel-body">
+					
 				</div>
 			</div>
 		</div>
@@ -82,14 +141,17 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						Panel title
+						Privacy Settings
 					</h3>
 				</div>
 				<div class="panel-body">
-					Panel content
+					How can I change my password?
 				</div>
-				<div class="panel-footer">
-					Panel footer
+				<div class="panel-body">
+					Who can view my profile?
+				</div>
+				<div class="panel-body">
+					How can I change my email address?
 				</div>
 			</div>
 		</div>
@@ -97,24 +159,31 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						Panel title
+						Premium Accounts
 					</h3>
 				</div>
 				<div class="panel-body">
-					Panel content
+					What are the benefits of a premium account?
 				</div>
-				<div class="panel-footer">
-					Panel footer
+				<div class="panel-body">
+					How can I cancel my premium membership?<br /><br />
 				</div>
+				<div class="panel-body">
+					
+				</div>
+				
 			</div>
 		</div>
 	</div>
+
 	<div class="row clearfix">
 		<div class="col-md-6 column">
-			<img alt="140x140" src="http://lorempixel.com/140/140/" />
+			<img alt="140x140" src="http://www.medisolsoft.com/images/support.jpg" /><br /><br />
 		</div>
 		<div class="col-md-6 column">
-			 <address> <strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br /> <abbr title="Phone">P:</abbr> (123) 456-7890</address>
+		<h3>
+			 Can't find what you are looking for?<br />Contact us at supportproConnectors.com and we will get back to you within 24 hours.
+			 </h3>
 		</div>
 	</div>
 </div>
@@ -131,10 +200,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Apr 10 13:50:44 PDT 2015
-                    SOURCE: /home/beyondprosthetics/repos/school/proConnect/web-app/app/views/help.scala.html
-                    HASH: ab4c7ba61aedb8aad2774986be984e8d62140a37
-                    MATRIX: 863->1|888->18|926->19|962->21|975->27|1003->34
+                    DATE: Fri Apr 10 19:05:14 PDT 2015
+                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/help.scala.html
+                    HASH: a08e737f8a6e0e37f2c14163cc0f7a0d82c453d9
+                    MATRIX: 863->1|888->18|926->19|963->22|976->28|1004->35
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2
                     -- GENERATED --
                 */
