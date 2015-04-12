@@ -79,8 +79,8 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Apr 11 19:50:02 MST 2015
-                    SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/navbar.scala.html
+                    DATE: Sat Apr 11 22:10:56 PDT 2015
+                    SOURCE: C:/Users/Daisy/Documents/GitHub/proConnect/web-app/app/views/navbar.scala.html
                     HASH: ee6cb0fc64472b6bd8d79bcfc6a890254e704505
                     MATRIX: 856->2|1423->533|1438->539|1480->559|1748->791|1763->797|1805->817|1878->854|1893->860|1942->887|2018->927|2033->933|2081->959|2156->998|2171->1004|2213->1024|2874->1649|2889->1655|2930->1674|3007->1715|3022->1721|3064->1741|3190->1831|3211->1843|3285->1895
                     LINES: 29->2|39->12|39->12|39->12|44->17|44->17|44->17|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|60->33|60->33|60->33|61->34|61->34|61->34|63->36|63->36|63->36
