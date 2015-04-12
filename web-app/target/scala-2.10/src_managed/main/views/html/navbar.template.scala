@@ -45,7 +45,6 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
       <li><a href=""""),_display_(Seq[Any](/*18.21*/routes/*18.27*/.DbController.editProfile())),format.raw/*18.54*/("""">Profile</a></li>
       <li><a href=""""),_display_(Seq[Any](/*19.21*/routes/*19.27*/.Application.connections())),format.raw/*19.53*/("""">Connections</a></li>
  <li><a href=""""),_display_(Seq[Any](/*20.16*/routes/*20.22*/.Application.forum())),format.raw/*20.42*/("""">Forums</a></li>
-   <li><a href=""""),_display_(Seq[Any](/*21.18*/routes/*21.24*/.Application.forum())),format.raw/*21.44*/("""">Search</a></li>
     </ul>
     <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
@@ -58,10 +57,10 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account<span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
           <li><a href="#">Settings</a></li>
-          <li><a href=""""),_display_(Seq[Any](/*34.25*/routes/*34.31*/.Application.help())),format.raw/*34.50*/("""">Help</a></li>
-          <li><a href=""""),_display_(Seq[Any](/*35.25*/routes/*35.31*/.Application.about())),format.raw/*35.51*/("""">About ProConnect</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*33.25*/routes/*33.31*/.Application.help())),format.raw/*33.50*/("""">Help</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*34.25*/routes/*34.31*/.Application.about())),format.raw/*34.51*/("""">About ProConnect</a></li>
           <li class="divider"></li>
-          <li><a href=""""),_display_(Seq[Any](/*37.25*/securesocial/*37.37*/.controllers.routes.LoginPage.logout().absoluteURL())),format.raw/*37.89*/("""">Sign Out</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*36.25*/securesocial/*36.37*/.controllers.routes.LoginPage.logout().absoluteURL())),format.raw/*36.89*/("""">Sign Out</a></li>
         </ul>
       </li>
     </ul>
@@ -80,11 +79,11 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Apr 11 18:24:01 MST 2015
+                    DATE: Sat Apr 11 19:50:02 MST 2015
                     SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/navbar.scala.html
-                    HASH: 448da04760c2978ded632682585f38535ae28feb
-                    MATRIX: 856->2|1423->533|1438->539|1480->559|1748->791|1763->797|1805->817|1878->854|1893->860|1942->887|2018->927|2033->933|2081->959|2156->998|2171->1004|2213->1024|2285->1060|2300->1066|2342->1086|3003->1711|3018->1717|3059->1736|3136->1777|3151->1783|3193->1803|3319->1893|3340->1905|3414->1957
-                    LINES: 29->2|39->12|39->12|39->12|44->17|44->17|44->17|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21|61->34|61->34|61->34|62->35|62->35|62->35|64->37|64->37|64->37
+                    HASH: ee6cb0fc64472b6bd8d79bcfc6a890254e704505
+                    MATRIX: 856->2|1423->533|1438->539|1480->559|1748->791|1763->797|1805->817|1878->854|1893->860|1942->887|2018->927|2033->933|2081->959|2156->998|2171->1004|2213->1024|2874->1649|2889->1655|2930->1674|3007->1715|3022->1721|3064->1741|3190->1831|3211->1843|3285->1895
+                    LINES: 29->2|39->12|39->12|39->12|44->17|44->17|44->17|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|60->33|60->33|60->33|61->34|61->34|61->34|63->36|63->36|63->36
                     -- GENERATED --
                 */
             

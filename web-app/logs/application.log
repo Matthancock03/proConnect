@@ -1,51 +1,65 @@
-2015-04-11 18:47:53,769 - [INFO] - from play in pool-6-thread-8 
+2015-04-11 19:46:13,401 - [INFO] - from play in pool-6-thread-2 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-04-11 18:56:56,910 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-11 19:49:10,726 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6ln60b7eo - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value search is not a member of controllers.ReverseApplication]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+
+2015-04-11 19:49:10,807 - [WARN] - from play in New I/O worker #1 
+No application found at invoker init
+
+2015-04-11 19:50:05,200 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-04-11 18:56:57,437 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-11 19:50:05,702 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
 
-2015-04-11 18:56:57,739 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-11 19:50:05,759 - [INFO] - from play in play-internal-execution-context-1 
 Starting application default Akka system.
 
-2015-04-11 18:56:57,755 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
+2015-04-11 19:50:05,764 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
 [securesocial] calling deleteExpiredTokens()
 
-2015-04-11 18:56:57,756 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-11 19:50:05,765 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded user service: class plugins.InMemoryUserService
 
-2015-04-11 18:56:57,757 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-11 19:50:05,767 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded password hasher bcrypt
 
-2015-04-11 18:56:57,759 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-11 19:50:05,769 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: twitter
 
-2015-04-11 18:56:57,759 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-11 19:50:05,770 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: facebook
 
-2015-04-11 18:56:57,759 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-11 19:50:05,771 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: google
 
-2015-04-11 18:56:57,759 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-11 19:50:05,773 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: userpass
 
-2015-04-11 18:56:57,763 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-11 19:50:05,780 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
-
-2015-04-11 18:56:59,946 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
-[securesocial] bootstrap path = securesocial/bootstrap/css/bootstrap.min.css
-
-2015-04-11 18:56:59,947 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
-[securesocial] assets controller = controllers.ReverseAssets
-
-2015-04-11 18:56:59,949 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
-[securesocial] favicon path = securesocial/images/favicon.png
-
-2015-04-11 18:56:59,950 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
-[securesocial] Jquery path = securesocial/javascripts/jquery-1.7.1.min.js
-
-2015-04-11 18:56:59,950 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
-[securesocial] custom css path = None
 
