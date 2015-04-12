@@ -280,3 +280,18 @@ Starting application default Akka system.
 2015-04-12 00:03:12,266 - [INFO] - from play in play-internal-execution-context-11 
 Application started (Dev)
 
+2015-04-12 00:08:12,266 - [DEBUG] - from application in play-akka.actor.default-dispatcher-45 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-12 00:13:12,281 - [DEBUG] - from application in play-akka.actor.default-dispatcher-45 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-12 00:18:12,272 - [DEBUG] - from application in play-akka.actor.default-dispatcher-45 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-12 00:23:12,271 - [DEBUG] - from application in play-akka.actor.default-dispatcher-45 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-12 00:28:12,278 - [DEBUG] - from application in play-akka.actor.default-dispatcher-45 
+[securesocial] calling deleteExpiredTokens()
+
