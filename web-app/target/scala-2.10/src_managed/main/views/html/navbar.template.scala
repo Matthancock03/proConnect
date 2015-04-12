@@ -38,14 +38,14 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
       </button>
       <a class="navbar-brand" href=""""),_display_(Seq[Any](/*12.38*/routes/*12.44*/.DbController.home())),format.raw/*12.64*/("""">Proconnect</a>
     </div>
-
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li><a href=""""),_display_(Seq[Any](/*18.21*/routes/*18.27*/.DbController.home())),format.raw/*18.47*/("""">Home</a></li>
-      <li><a href=""""),_display_(Seq[Any](/*19.21*/routes/*19.27*/.DbController.editProfile())),format.raw/*19.54*/("""">Profile</a></li>
-      <li><a href=""""),_display_(Seq[Any](/*20.21*/routes/*20.27*/.Application.connections())),format.raw/*20.53*/("""">Connections</a></li>
-      <li><a href=""""),_display_(Seq[Any](/*21.21*/routes/*21.27*/.Application.forum())),format.raw/*21.47*/("""">Forums</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*17.21*/routes/*17.27*/.DbController.home())),format.raw/*17.47*/("""">Home</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*18.21*/routes/*18.27*/.DbController.editProfile())),format.raw/*18.54*/("""">Profile</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*19.21*/routes/*19.27*/.Application.connections())),format.raw/*19.53*/("""">Connections</a></li>
+ <li><a href=""""),_display_(Seq[Any](/*20.16*/routes/*20.22*/.Application.forum())),format.raw/*20.42*/("""">Forums</a></li>
+   <li><a href=""""),_display_(Seq[Any](/*21.18*/routes/*21.24*/.Application.forum())),format.raw/*21.44*/("""">Search</a></li>
     </ul>
     <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
@@ -80,11 +80,11 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Apr 10 23:21:23 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/navbar.scala.html
-                    HASH: 91de6db833e9c0366d9ab7c153e5e6fb023e29d4
-                    MATRIX: 856->1|1413->522|1428->528|1470->548|1734->776|1749->782|1791->802|1863->838|1878->844|1927->871|2002->910|2017->916|2065->942|2144->985|2159->991|2201->1011|2849->1623|2864->1629|2905->1648|2981->1688|2996->1694|3038->1714|3162->1802|3183->1814|3257->1866
-                    LINES: 29->2|39->12|39->12|39->12|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21|61->34|61->34|61->34|62->35|62->35|62->35|64->37|64->37|64->37
+                    DATE: Sat Apr 11 18:24:01 MST 2015
+                    SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/navbar.scala.html
+                    HASH: 448da04760c2978ded632682585f38535ae28feb
+                    MATRIX: 856->2|1423->533|1438->539|1480->559|1748->791|1763->797|1805->817|1878->854|1893->860|1942->887|2018->927|2033->933|2081->959|2156->998|2171->1004|2213->1024|2285->1060|2300->1066|2342->1086|3003->1711|3018->1717|3059->1736|3136->1777|3151->1783|3193->1803|3319->1893|3340->1905|3414->1957
+                    LINES: 29->2|39->12|39->12|39->12|44->17|44->17|44->17|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21|61->34|61->34|61->34|62->35|62->35|62->35|64->37|64->37|64->37
                     -- GENERATED --
                 */
             

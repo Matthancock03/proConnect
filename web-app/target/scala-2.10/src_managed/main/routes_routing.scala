@@ -1,6 +1,6 @@
-// @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
-// @HASH:f5690518573c79d8a33f2e87399cf0f353dec6b1
-// @DATE:Fri Apr 10 23:21:21 PDT 2015
+// @SOURCE:C:/Users/Eya/Documents/GitHub/proConnect/web-app/conf/routes
+// @HASH:cedaac014cb3e4b60297f8b522caca18abb24a5d
+// @DATE:Sat Apr 11 15:38:02 MST 2015
 
 
 import play.core._
