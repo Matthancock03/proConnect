@@ -29,8 +29,14 @@ public class Application extends Controller{
   public static Result splashPage(){
     return ok(splash.render());
   }
+
+
   public static Result help(){
     return ok(help.render());
+  }
+
+  public static Result search(){
+    return ok(search.render());
   }
 
   @SecureSocial.SecuredAction

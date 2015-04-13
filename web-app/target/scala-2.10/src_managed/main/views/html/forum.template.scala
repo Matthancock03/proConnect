@@ -54,7 +54,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								How to Prepare for an Interview
 							</h3>
 							<p>
-								Interviews could be stressful. You can build confidence and ace your interview with these 7 simple and easy steps and give a great first impression to the employer.
+								Interviews could be stressful. You can build confidence and ace your interview with these 7 simple and easy steps and give a great first impression to the employer.<br /><br /><br />
 							</p>
 							<p>
 								<a class="btn btn-primary" href="#">Read</a> 
@@ -238,10 +238,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Apr 10 15:38:01 PDT 2015
+                    DATE: Sun Apr 12 11:20:08 PDT 2015
                     SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/forum.scala.html
-                    HASH: ec2fb435846d744554c2d4f6f2047dcca49720f1
-                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|7619->6616
+                    HASH: bf7895b733ff0d0b18416b31b899b7de6d2398a0
+                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|7637->6634
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|228->200
                     -- GENERATED --
                 */

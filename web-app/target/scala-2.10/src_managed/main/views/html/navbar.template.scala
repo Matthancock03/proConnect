@@ -38,14 +38,14 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
       </button>
       <a class="navbar-brand" href=""""),_display_(Seq[Any](/*12.38*/routes/*12.44*/.DbController.home())),format.raw/*12.64*/("""">Proconnect</a>
     </div>
-
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li><a href=""""),_display_(Seq[Any](/*18.21*/routes/*18.27*/.DbController.home())),format.raw/*18.47*/("""">Home</a></li>
-      <li><a href=""""),_display_(Seq[Any](/*19.21*/routes/*19.27*/.DbController.editProfile())),format.raw/*19.54*/("""">Profile</a></li>
-      <li><a href=""""),_display_(Seq[Any](/*20.21*/routes/*20.27*/.Application.connections())),format.raw/*20.53*/("""">Connections</a></li>
-      <li><a href=""""),_display_(Seq[Any](/*21.21*/routes/*21.27*/.Application.forum())),format.raw/*21.47*/("""">Forums</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*17.21*/routes/*17.27*/.DbController.home())),format.raw/*17.47*/("""">Home</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*18.21*/routes/*18.27*/.DbController.editProfile())),format.raw/*18.54*/("""">Profile</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*19.21*/routes/*19.27*/.Application.connections())),format.raw/*19.53*/("""">Connections</a></li>
+ <li><a href=""""),_display_(Seq[Any](/*20.16*/routes/*20.22*/.Application.forum())),format.raw/*20.42*/("""">Forums</a></li>
+
     </ul>
     <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
@@ -53,15 +53,16 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
+   
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account<span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
           <li><a href="#">Settings</a></li>
-          <li><a href=""""),_display_(Seq[Any](/*34.25*/routes/*34.31*/.Application.help())),format.raw/*34.50*/("""">Help</a></li>
-          <li><a href=""""),_display_(Seq[Any](/*35.25*/routes/*35.31*/.Application.about())),format.raw/*35.51*/("""">About ProConnect</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*35.25*/routes/*35.31*/.Application.help())),format.raw/*35.50*/("""">Help</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*36.25*/routes/*36.31*/.Application.about())),format.raw/*36.51*/("""">About ProConnect</a></li>
           <li class="divider"></li>
-          <li><a href=""""),_display_(Seq[Any](/*37.25*/securesocial/*37.37*/.controllers.routes.LoginPage.logout().absoluteURL())),format.raw/*37.89*/("""">Sign Out</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*38.25*/securesocial/*38.37*/.controllers.routes.LoginPage.logout().absoluteURL())),format.raw/*38.89*/("""">Sign Out</a></li>
         </ul>
       </li>
     </ul>
@@ -80,11 +81,11 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Apr 10 15:38:02 PDT 2015
+                    DATE: Sun Apr 12 10:58:06 PDT 2015
                     SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/navbar.scala.html
-                    HASH: a882478e0000a05fdd0e712aa8a68924c327d7f5
-                    MATRIX: 856->2|1423->533|1438->539|1480->559|1750->793|1765->799|1807->819|1880->856|1895->862|1944->889|2020->929|2035->935|2083->961|2163->1005|2178->1011|2220->1031|2881->1656|2896->1662|2937->1681|3014->1722|3029->1728|3071->1748|3197->1838|3218->1850|3292->1902
-                    LINES: 29->2|39->12|39->12|39->12|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21|61->34|61->34|61->34|62->35|62->35|62->35|64->37|64->37|64->37
+                    HASH: fb750d8cab7b5131c2f16e1f5b1e5c3550bb93c0
+                    MATRIX: 856->2|1423->533|1438->539|1480->559|1748->791|1763->797|1805->817|1878->854|1893->860|1942->887|2018->927|2033->933|2081->959|2156->998|2171->1004|2213->1024|2881->1656|2896->1662|2937->1681|3014->1722|3029->1728|3071->1748|3197->1838|3218->1850|3292->1902
+                    LINES: 29->2|39->12|39->12|39->12|44->17|44->17|44->17|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|62->35|62->35|62->35|63->36|63->36|63->36|65->38|65->38|65->38
                     -- GENERATED --
                 */
             
