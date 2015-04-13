@@ -18,7 +18,7 @@
 
 	<div class="row clearfix">
 		<div class="col-xs-2 column">
-			<img alt="140x140" class = "img-thumbnail profileImage" src="http://i.imgur.com/PcoAz60.jpg?1" />
+			<img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")" />
 
 			<dl class="dl-horizontal">
 				<dt>
@@ -34,16 +34,19 @@
 		</div>
 
 		<div class="col-xs-6 column clearfix">
-			<img alt="" src="@routes.Assets.at("images/header.jpg")" />
+		<img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/header.jpg")" />
 			<div class="feed-div">
 			@for(feedItem <- feedItems){
 				@if(feedItem.publish_date != ""){
 					<a href="@feedItem.url" style="text-decoration: none;">
 					<div class="panel panel-default">
 						<div class="panel-body">
-						<h3 class="panel-title head-text">@feedItem.title</h3>
+						<div class="feed-head">
+							<img alt="" class="feed-image feed-head" src="@routes.Assets.at("images/tech.png")" />
+							<h3 class="panel-title head-text feed-head">@feedItem.title</h3>
+						</div>
 						<br>
-						<p>@feedItem.summary</p>
+						<p style="padding-top: 10px;">@feedItem.summary</p>
 						<p class="foot-text">@feedItem.publish_date  @feedItem.source</p>
 					</div>
 				</div>

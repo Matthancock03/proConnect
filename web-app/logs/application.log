@@ -1,66 +1,515 @@
-2015-04-13 00:02:36,186 - [INFO] - from play in pool-6-thread-3 
+2015-04-13 10:27:28,985 - [INFO] - from play in pool-6-thread-4 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-04-13 00:02:40,962 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-13 10:28:13,228 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-04-13 00:02:41,636 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-13 10:28:14,740 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
 
-2015-04-13 00:02:42,120 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-13 10:28:16,019 - [INFO] - from play in play-internal-execution-context-1 
 Starting application default Akka system.
 
-2015-04-13 00:02:42,194 - [DEBUG] - from application in play-akka.actor.default-dispatcher-3 
+2015-04-13 10:28:16,058 - [DEBUG] - from application in play-akka.actor.default-dispatcher-3 
 [securesocial] calling deleteExpiredTokens()
 
-2015-04-13 00:02:42,201 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-13 10:28:16,061 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded user service: class plugins.InMemoryUserService
 
-2015-04-13 00:02:42,203 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-13 10:28:16,063 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded password hasher bcrypt
 
-2015-04-13 00:02:42,209 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-13 10:28:16,070 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: twitter
 
-2015-04-13 00:02:42,210 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-13 10:28:16,071 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: facebook
 
-2015-04-13 00:02:42,210 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-13 10:28:16,071 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: google
 
-2015-04-13 00:02:42,210 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-13 10:28:16,071 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: userpass
 
-2015-04-13 00:02:42,223 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-13 10:28:16,081 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-04-13 00:02:50,438 - [DEBUG] - from application in play-akka.actor.default-dispatcher-3 
+2015-04-13 10:28:21,127 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
 [securesocial] bootstrap path = securesocial/bootstrap/css/bootstrap.min.css
 
-2015-04-13 00:02:50,439 - [DEBUG] - from application in play-akka.actor.default-dispatcher-3 
+2015-04-13 10:28:21,129 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
 [securesocial] assets controller = controllers.ReverseAssets
 
-2015-04-13 00:02:50,442 - [DEBUG] - from application in play-akka.actor.default-dispatcher-3 
+2015-04-13 10:28:21,131 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
 [securesocial] favicon path = securesocial/images/favicon.png
 
-2015-04-13 00:02:50,443 - [DEBUG] - from application in play-akka.actor.default-dispatcher-3 
+2015-04-13 10:28:21,133 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
 [securesocial] Jquery path = securesocial/javascripts/jquery-1.7.1.min.js
 
-2015-04-13 00:02:50,443 - [DEBUG] - from application in play-akka.actor.default-dispatcher-3 
+2015-04-13 10:28:21,133 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
 [securesocial] custom css path = None
 
-2015-04-13 00:02:53,587 - [DEBUG] - from application in play-akka.actor.default-dispatcher-3 
+2015-04-13 10:28:23,822 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
 [securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
 
-2015-04-13 00:02:53,589 - [DEBUG] - from application in play-akka.actor.default-dispatcher-3 
-[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=a10c23a6-cb6c-4b6b-b5ef-5433eb9afc91]
+2015-04-13 10:28:23,823 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=454b55cd-91a0-42c9-9550-38ba00980d1a]
 
-2015-04-13 00:02:55,591 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
-[securesocial] got json back [{"access_token":"ya29.VAEVBx5Kfit7vzPdcBtkuwn1dI9h3r7hkvDC1wnwi5fWjiALWtQTMrEq8XX89yraKNy0-58czSfntQ","token_type":"Bearer","expires_in":3599,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlMDYzZGUwYzlmNjY4NmRlYjY2ZTc0NTRiMzIwMWMxMTE0ZWJhNmUifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTA3OTI1NDIxNzg4ODI3MzA5NTIxIiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6Im1hdHRoYW5jb2NrMDNAZ21haWwuY29tIiwiYXRfaGFzaCI6Imx0eEdtMDVPMHdrNGVmdGFwSWc4eVEiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0Mjg5MDg1NzUsImV4cCI6MTQyODkxMjE3NX0.ETvuzBeokhRo4Gc_3rdI0zykwoLUv2E197waeyM11djMpDhyiCi3f8zRpeHT04_B2CwzskC9pYCc8I2XjZZXFZhsz2G7V1Ri3bBq4lGU-dI1lRyvr-2J2kvLDeQ1AtfizwsqniiQjSs6XNlAwuWTB2OL84gPWH9c32-AeV8zgZQ"}]
+2015-04-13 10:28:26,231 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] got json back [{"access_token":"ya29.VAEkuJYFMYx2r4JNBuVgplTbGQswZMnpPA45VqfvzkZHn16eJjpJ_e6ogkgb7GJAgSUhFomF2FWdMw","token_type":"Bearer","expires_in":3598,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlMDYzZGUwYzlmNjY4NmRlYjY2ZTc0NTRiMzIwMWMxMTE0ZWJhNmUifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTA3OTI1NDIxNzg4ODI3MzA5NTIxIiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6Im1hdHRoYW5jb2NrMDNAZ21haWwuY29tIiwiYXRfaGFzaCI6IllWODczeURvTHVUOVg5UzRCZ3M0SmciLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0Mjg5NDYwOTcsImV4cCI6MTQyODk0OTY5N30.VOxrd21KvkZlWxEfWOaIBZge-hvZYS1m_HrOPokPNgbYtMCljYVLpR6_FuWDgWi1dXm6KOCWEMz3jaBnaQdyyZuabNOPKSaj7JkbNJ7eHrafdtlUTttv07Xwvy2G_st-ZmaJelioA1ateCz96aCvwcriIrBzCJFCYPMbFXHrELQ"}]
 
-2015-04-13 00:02:55,633 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
-[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.VAEVBx5Kfit7vzPdcBtkuwn1dI9h3r7hkvDC1wnwi5fWjiALWtQTMrEq8XX89yraKNy0-58czSfntQ,Some(Bearer),Some(3599),None)),None))
+2015-04-13 10:28:26,364 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.VAEkuJYFMYx2r4JNBuVgplTbGQswZMnpPA45VqfvzkZHn16eJjpJ_e6ogkgb7GJAgSUhFomF2FWdMw,Some(Bearer),Some(3598),None)),None))
 
-2015-04-13 00:02:56,121 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
-[securesocial] user logged in : [SocialUser(IdentityId(107925421788827309521,google),Matthew,Hancock,Matthew Hancock,Some(matthancock03@gmail.com),Some(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.VAEVBx5Kfit7vzPdcBtkuwn1dI9h3r7hkvDC1wnwi5fWjiALWtQTMrEq8XX89yraKNy0-58czSfntQ,Some(Bearer),Some(3599),None)),None)]
+2015-04-13 10:28:26,759 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] user logged in : [SocialUser(IdentityId(107925421788827309521,google),Matthew,Hancock,Matthew Hancock,Some(matthancock03@gmail.com),Some(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.VAEkuJYFMYx2r4JNBuVgplTbGQswZMnpPA45VqfvzkZHn16eJjpJ_e6ogkgb7GJAgSUhFomF2FWdMw,Some(Bearer),Some(3598),None)),None)]
+
+2015-04-13 10:30:01,801 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
+{"articles":[{"author":"The Associated Press","publish_date":"Mon, 13 Apr 2015 18:17:00 +0100","source":"Mashable?format=xml","source_url":"http:\/\/feeds.feedburner.com\/Mashable?format=xml","summary":"NEW YORK -- Today's traveler faces a bewildering choice of hotel brands with\u000asimilar-sounding and confusing names. Want to stay at a Hyatt? Take your pick.\u000aThere's Hyatt Regency, Park Hyatt, Grand Hyatt, Hyatt House, Hyatt Place and,\u000acoming soon, Hyatt Centric.\u000a\u000aVacationers once relied on big-name hotel brands to signal the kind of\u000aexperience they could expect. People knew what Holiday Inn, Hilton, Hyatt or\u000aMarriott meant. Familiarity bred a sense of comfort.\u000a\u000aNo longer.\u000a\u000aSee also: Startup aims to end the stigma of booking hotels by the hour\u000a\u000aThe world's 10 largest hotel chains now offer a combined 113 brands at various\u000aprice points, 31 of which didn't exist a decade ago. And there's no sign of\u000athis proliferation slowing down. Read more...\u000a\u000aMore about Travel, Hotels, Hospitality, Lifestyle, and Travel Leisure\u000a\u000a","title":"Hotel brands multiply with questionable benefit to travelers (Mashable?format=xml)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431142963?count=2&client_source=api&order=date&format=json"},{"author":"Brian Ries","publish_date":"Mon, 13 Apr 2015 17:54:00 +0100","source":"Mashable?format=xml","source_url":"http:\/\/feeds.feedburner.com\/Mashable?format=xml","summary":"Newly minted presidential candidate Hillary Clinton hit the campaign trail on\u000aSunday in a van she nicknamed \"Scooby.\"\u000a\u000aThe van was reportedly named as an homage to the Mystery Machine that ferried\u000aScooby-Doo, Shaggy, Fred, Velma and Daphne around in the iconic _Scooby Doo_\u000acartoons.\u000a\u000aSee also: America reacts to Hillary Clinton's 2016 presidential campaign\u000alaunch\u000a\u000aThe Mystery Machine at St. Elizabeth Ann Seton School in Louisiana in April\u000a2014. Not Hillary's van.\u000a\u000aImage: Erika Goldring\/Getty Images\u000a\u000aClinton took off in the van for a \"road trip\" on Sunday from her home in\u000aChappaqua, New York, bound for Monticello, Iowa, where she plans to meet\u000avoters in the early primary state on Tuesday. Read more...\u000a\u000aMore about Hillary Clinton, Us World, Politics, Us, and Pics\u000a\u000a","title":"Hillary Clinton is on a 1,000-mile road trip in a campaign van named Scooby (Mashable?format=xml)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431142962?count=2&client_source=api&order=date&format=json"}],"description":"Technology News","syndication_url":"http:\/\/news.feedzilla.com\/en_us\/news\/technology.rss?count=2&client_source=api&order=date","title":"Feedzilla: Technology News"}
+
+2015-04-13 10:30:01,819 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
+rootNode = Mon, 13 Apr 2015 18:17:00 +0100
+
+2015-04-13 10:30:01,819 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
+idNode = Mon, 13 Apr 2015 18:17:00 +0100
+
+2015-04-13 10:33:04,246 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: userpass
+
+2015-04-13 10:33:04,246 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: google
+
+2015-04-13 10:33:04,247 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-13 10:33:04,248 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-13 10:33:04,250 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-13 10:33:04,251 - [INFO] - from play in play-internal-execution-context-1 
+Shutdown application default Akka system.
+
+2015-04-13 10:33:04,700 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-13 10:33:04,758 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-13 10:33:04,800 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-13 10:33:04,807 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-13 10:33:04,807 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-13 10:33:04,809 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-13 10:33:04,811 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-13 10:33:04,812 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-13 10:33:04,812 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-13 10:33:04,812 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-13 10:33:04,812 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-13 10:33:33,929 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+{"articles":[{"author":"The Associated Press","publish_date":"Mon, 13 Apr 2015 18:17:00 +0100","source":"Mashable?format=xml","source_url":"http:\/\/feeds.feedburner.com\/Mashable?format=xml","summary":"NEW YORK -- Today's traveler faces a bewildering choice of hotel brands with\u000asimilar-sounding and confusing names. Want to stay at a Hyatt? Take your pick.\u000aThere's Hyatt Regency, Park Hyatt, Grand Hyatt, Hyatt House, Hyatt Place and,\u000acoming soon, Hyatt Centric.\u000a\u000aVacationers once relied on big-name hotel brands to signal the kind of\u000aexperience they could expect. People knew what Holiday Inn, Hilton, Hyatt or\u000aMarriott meant. Familiarity bred a sense of comfort.\u000a\u000aNo longer.\u000a\u000aSee also: Startup aims to end the stigma of booking hotels by the hour\u000a\u000aThe world's 10 largest hotel chains now offer a combined 113 brands at various\u000aprice points, 31 of which didn't exist a decade ago. And there's no sign of\u000athis proliferation slowing down. Read more...\u000a\u000aMore about Travel, Hotels, Hospitality, Lifestyle, and Travel Leisure\u000a\u000a","title":"Hotel brands multiply with questionable benefit to travelers (Mashable?format=xml)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431142963?count=2&client_source=api&order=date&format=json"},{"author":"Brian Ries","publish_date":"Mon, 13 Apr 2015 17:54:00 +0100","source":"Mashable?format=xml","source_url":"http:\/\/feeds.feedburner.com\/Mashable?format=xml","summary":"Newly minted presidential candidate Hillary Clinton hit the campaign trail on\u000aSunday in a van she nicknamed \"Scooby.\"\u000a\u000aThe van was reportedly named as an homage to the Mystery Machine that ferried\u000aScooby-Doo, Shaggy, Fred, Velma and Daphne around in the iconic _Scooby Doo_\u000acartoons.\u000a\u000aSee also: America reacts to Hillary Clinton's 2016 presidential campaign\u000alaunch\u000a\u000aThe Mystery Machine at St. Elizabeth Ann Seton School in Louisiana in April\u000a2014. Not Hillary's van.\u000a\u000aImage: Erika Goldring\/Getty Images\u000a\u000aClinton took off in the van for a \"road trip\" on Sunday from her home in\u000aChappaqua, New York, bound for Monticello, Iowa, where she plans to meet\u000avoters in the early primary state on Tuesday. Read more...\u000a\u000aMore about Hillary Clinton, Us World, Politics, Us, and Pics\u000a\u000a","title":"Hillary Clinton is on a 1,000-mile road trip in a campaign van named Scooby (Mashable?format=xml)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431142962?count=2&client_source=api&order=date&format=json"}],"description":"Technology News","syndication_url":"http:\/\/news.feedzilla.com\/en_us\/news\/technology.rss?count=2&client_source=api&order=date","title":"Feedzilla: Technology News"}
+
+2015-04-13 10:33:33,943 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+rootNode = Mon, 13 Apr 2015 18:17:00 +0100
+
+2015-04-13 10:33:33,944 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+idNode = Mon, 13 Apr 2015 18:17:00 +0100
+
+2015-04-13 10:35:15,535 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: userpass
+
+2015-04-13 10:35:15,535 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: google
+
+2015-04-13 10:35:15,536 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-13 10:35:15,536 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-13 10:35:15,536 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-13 10:35:15,536 - [INFO] - from play in play-internal-execution-context-1 
+Shutdown application default Akka system.
+
+2015-04-13 10:35:15,633 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-13 10:35:15,675 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-13 10:35:15,700 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-13 10:35:15,701 - [DEBUG] - from application in play-akka.actor.default-dispatcher-22 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-13 10:35:15,704 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-13 10:35:15,706 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-13 10:35:15,706 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-13 10:35:15,706 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-13 10:35:15,707 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-13 10:35:15,707 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-13 10:35:15,707 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-13 10:36:20,053 - [DEBUG] - from application in play-akka.actor.default-dispatcher-31 
+[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
+
+2015-04-13 10:36:20,054 - [DEBUG] - from application in play-akka.actor.default-dispatcher-31 
+[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=8d98dce6-5a23-4e0e-80de-211c650ffe8e]
+
+2015-04-13 10:36:20,428 - [DEBUG] - from application in play-akka.actor.default-dispatcher-33 
+[securesocial] got json back [{"access_token":"ya29.VAHYsSiJsN9mEKN8aTRhH1Pzyznplx0pRuDdOV4fyKpUMe7oxU0yOqRFAfa1NC6nrtp6HQaZQXdnlw","token_type":"Bearer","expires_in":3600,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlMDYzZGUwYzlmNjY4NmRlYjY2ZTc0NTRiMzIwMWMxMTE0ZWJhNmUifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTA3OTI1NDIxNzg4ODI3MzA5NTIxIiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6Im1hdHRoYW5jb2NrMDNAZ21haWwuY29tIiwiYXRfaGFzaCI6IkhhR01rdXVEdWhSa1VTSXp4R1dCalEiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0Mjg5NDY1NzEsImV4cCI6MTQyODk1MDE3MX0.n61eFfAb9zAWDxB76UlD9n8OE9EOjnbBO4oYtsInqdANUjm__f4e4EoSHCc66eGsIPKdl866IZ4isYehr63q-GzqNDgHMyKHvhF_fv9neVaWEFPzlHiOnoJIdc3lwa3NRBoG9mSvZ1gnyzw7h9YVLUW2NSVAaheg_4hQecR7NCc"}]
+
+2015-04-13 10:36:20,429 - [DEBUG] - from application in play-akka.actor.default-dispatcher-33 
+[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.VAHYsSiJsN9mEKN8aTRhH1Pzyznplx0pRuDdOV4fyKpUMe7oxU0yOqRFAfa1NC6nrtp6HQaZQXdnlw,Some(Bearer),Some(3600),None)),None))
+
+2015-04-13 10:36:20,750 - [DEBUG] - from application in play-akka.actor.default-dispatcher-33 
+[securesocial] user logged in : [SocialUser(IdentityId(107925421788827309521,google),Matthew,Hancock,Matthew Hancock,Some(matthancock03@gmail.com),Some(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.VAHYsSiJsN9mEKN8aTRhH1Pzyznplx0pRuDdOV4fyKpUMe7oxU0yOqRFAfa1NC6nrtp6HQaZQXdnlw,Some(Bearer),Some(3600),None)),None)]
+
+2015-04-13 10:37:15,723 - [ERROR] - from play in play-internal-execution-context-1 
+Cannot invoke the action, eventually got an error: java.util.concurrent.TimeoutException: Request reached time out of 120000 ms after 120001 ms
+
+2015-04-13 10:37:15,863 - [ERROR] - from application in play-internal-execution-context-1 
+
+
+! @6lnhk2k88 - Internal server error, for (GET) [/feedZilla] ->
+
+play.api.Application$$anon$1: Execution exception[[TimeoutException: Request reached time out of 120000 ms after 120001 ms]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+java.util.concurrent.TimeoutException: Request reached time out of 120000 ms after 120001 ms
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.expire(NettyAsyncHttpProvider.java:1773) ~[async-http-client-1.7.18.jar:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.run(NettyAsyncHttpProvider.java:1794) ~[async-http-client-1.7.18.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_40]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) ~[na:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) ~[na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_40]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_40]
+
+2015-04-13 10:37:36,852 - [DEBUG] - from application in play-akka.actor.default-dispatcher-32 
+{"articles":[{"author":"Gregory Ferenstein","enclosures":[{"media_type":"image\/jpg","uri":"http:\/\/a1.files.readwrite.com\/image\/upload\/c_fill,cs_srgb,dpr_1.0,h_380,q_80,w_630\/MTI5NDU0NjAyMDIxMDE2ODUw.jpg"}],"publish_date":"Mon, 13 Apr 2015 17:32:00 +0100","source":"readwriteweb","source_url":"http:\/\/feeds.feedburner.com\/readwriteweb","summary":"_This post first appeared on the Ferenstein Wire, a syndicated news service.\u000aPublishing partners may edit posts. For inquires, please email author and\u000apublisher Gregory Ferenstein._\u000a\u000aTaxi unions aren't the only government-protected industry that ride-hailing\u000acompanies are overhauling. Auto dealerships are also indirectly feeling the\u000aheat, in part because American teens are taking a pass on their driver’s\u000alicense.\u000a\u000aGetting a license was once an established rite of passage in American culture.\u000aBut over the last 30 years, the number of 16-year-olds with driver’s licenses\u000ahas plummeted roughly 40%, according to 2012 research by University of\u000aMichigan researcher Michael Sivak published in the journal _Traffic Injury\u000aPrevention_.\u000a\u000a> **See also: Welcome To Peak Car—And A Transformation In How We Get Around**\u000a\u000aAuto dealers benefit from state government regulations that ban car\u000amanufacturers from directly selling to consumers. Though some dealerships only\u000asell one brand of vehicle, they are still independently operated, making them\u000acostly middlemen between consumers and carmakers.\u000a\u000a## Another Reason To Hate Car Salesmen\u000a\u000aTesla, for instance, was recently banned from selling directly to consumers in\u000aWest Virginia, where auto dealers have lobbied the local government to protect\u000atheir salesmen from competition.\u000a\u000aBut the next generation of Americans has ...","title":"Uber's Going To Bulldoze Another Cozy Business: Auto Dealers (readwriteweb)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431145853?count=2&client_source=api&order=date&format=json"},{"author":"Adriana Lee","enclosures":[{"media_type":"image\/jpg","uri":"http:\/\/a1.files.readwrite.com\/image\/upload\/c_fill,cs_srgb,dpr_1.0,h_380,q_80,w_630\/MTI5Mzg5OTQ4NTM2MTM0MTEw.jpg"}],"publish_date":"Mon, 13 Apr 2015 14:00:00 +0100","source":"readwriteweb","source_url":"http:\/\/feeds.feedburner.com\/readwriteweb","summary":"In 2001, Steve Jobs shared a vision of computing—the personal computer as a\u000a\"digital hub\" for organizing users' lives—that would inform Apple's road map\u000afor years to come. Before a Macworld audience, the late Apple co-founder\u000aexplained how the personal computer was entering a new golden age \"driven by\u000aan explosion of new digital devices,” all connecting to and relying on the Mac\u000ato corral and make sense of their data.\u000a\u000aFourteen years later, current CEO Tim Cook has officially retired Jobs' vision\u000aby making a new laptop with a single port—the \"new MacBook.\"\u000a\u000a> **See also: There's A New MacBook In Town**\u000a\u000aThese days, the hub has shifted, from local computing in our machines and\u000agadgets to the cloud. There’s no need for a beefy processor or numerous ports\u000awhen online services do the heavy lifting for us. The Internet ably manages\u000aour media and other personal data, and its capacity will only grow over time,\u000aas smartwatches, homes, cars, fitness gizmos and health trackers put more of\u000aour lives online.\u000a\u000aThis is the future the new MacBook was built for, and it has nothing to do\u000awith plugging in devices.\u000a\u000a## **Hub No More**\u000a\u000aSix years ...","title":"How The New Apple MacBook Retired Steve Jobs’s Vision Of Computing (readwriteweb)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431145847?count=2&client_source=api&order=date&format=json"}],"description":"Technology News","syndication_url":"http:\/\/news.feedzilla.com\/en_us\/news\/technology.rss?count=2&client_source=api&order=date","title":"Feedzilla: Technology News"}
+
+2015-04-13 10:37:36,858 - [DEBUG] - from application in play-akka.actor.default-dispatcher-32 
+rootNode = Mon, 13 Apr 2015 17:32:00 +0100
+
+2015-04-13 10:37:36,859 - [DEBUG] - from application in play-akka.actor.default-dispatcher-32 
+idNode = Mon, 13 Apr 2015 17:32:00 +0100
+
+2015-04-13 10:37:43,919 - [DEBUG] - from application in play-akka.actor.default-dispatcher-37 
+{"articles":[{"author":"Gregory Ferenstein","enclosures":[{"media_type":"image\/jpg","uri":"http:\/\/a1.files.readwrite.com\/image\/upload\/c_fill,cs_srgb,dpr_1.0,h_380,q_80,w_630\/MTI5NDU0NjAyMDIxMDE2ODUw.jpg"}],"publish_date":"Mon, 13 Apr 2015 17:32:00 +0100","source":"readwriteweb","source_url":"http:\/\/feeds.feedburner.com\/readwriteweb","summary":"_This post first appeared on the Ferenstein Wire, a syndicated news service.\u000aPublishing partners may edit posts. For inquires, please email author and\u000apublisher Gregory Ferenstein._\u000a\u000aTaxi unions aren't the only government-protected industry that ride-hailing\u000acompanies are overhauling. Auto dealerships are also indirectly feeling the\u000aheat, in part because American teens are taking a pass on their driver’s\u000alicense.\u000a\u000aGetting a license was once an established rite of passage in American culture.\u000aBut over the last 30 years, the number of 16-year-olds with driver’s licenses\u000ahas plummeted roughly 40%, according to 2012 research by University of\u000aMichigan researcher Michael Sivak published in the journal _Traffic Injury\u000aPrevention_.\u000a\u000a> **See also: Welcome To Peak Car—And A Transformation In How We Get Around**\u000a\u000aAuto dealers benefit from state government regulations that ban car\u000amanufacturers from directly selling to consumers. Though some dealerships only\u000asell one brand of vehicle, they are still independently operated, making them\u000acostly middlemen between consumers and carmakers.\u000a\u000a## Another Reason To Hate Car Salesmen\u000a\u000aTesla, for instance, was recently banned from selling directly to consumers in\u000aWest Virginia, where auto dealers have lobbied the local government to protect\u000atheir salesmen from competition.\u000a\u000aBut the next generation of Americans has ...","title":"Uber's Going To Bulldoze Another Cozy Business: Auto Dealers (readwriteweb)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431145853?count=2&client_source=api&order=date&format=json"},{"author":"Adriana Lee","enclosures":[{"media_type":"image\/jpg","uri":"http:\/\/a1.files.readwrite.com\/image\/upload\/c_fill,cs_srgb,dpr_1.0,h_380,q_80,w_630\/MTI5Mzg5OTQ4NTM2MTM0MTEw.jpg"}],"publish_date":"Mon, 13 Apr 2015 14:00:00 +0100","source":"readwriteweb","source_url":"http:\/\/feeds.feedburner.com\/readwriteweb","summary":"In 2001, Steve Jobs shared a vision of computing—the personal computer as a\u000a\"digital hub\" for organizing users' lives—that would inform Apple's road map\u000afor years to come. Before a Macworld audience, the late Apple co-founder\u000aexplained how the personal computer was entering a new golden age \"driven by\u000aan explosion of new digital devices,” all connecting to and relying on the Mac\u000ato corral and make sense of their data.\u000a\u000aFourteen years later, current CEO Tim Cook has officially retired Jobs' vision\u000aby making a new laptop with a single port—the \"new MacBook.\"\u000a\u000a> **See also: There's A New MacBook In Town**\u000a\u000aThese days, the hub has shifted, from local computing in our machines and\u000agadgets to the cloud. There’s no need for a beefy processor or numerous ports\u000awhen online services do the heavy lifting for us. The Internet ably manages\u000aour media and other personal data, and its capacity will only grow over time,\u000aas smartwatches, homes, cars, fitness gizmos and health trackers put more of\u000aour lives online.\u000a\u000aThis is the future the new MacBook was built for, and it has nothing to do\u000awith plugging in devices.\u000a\u000a## **Hub No More**\u000a\u000aSix years ...","title":"How The New Apple MacBook Retired Steve Jobs’s Vision Of Computing (readwriteweb)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431145847?count=2&client_source=api&order=date&format=json"}],"description":"Technology News","syndication_url":"http:\/\/news.feedzilla.com\/en_us\/news\/technology.rss?count=2&client_source=api&order=date","title":"Feedzilla: Technology News"}
+
+2015-04-13 10:37:43,921 - [DEBUG] - from application in play-akka.actor.default-dispatcher-37 
+rootNode = Mon, 13 Apr 2015 17:32:00 +0100
+
+2015-04-13 10:37:43,921 - [DEBUG] - from application in play-akka.actor.default-dispatcher-37 
+idNode = Mon, 13 Apr 2015 17:32:00 +0100
+
+2015-04-13 10:40:15,712 - [DEBUG] - from application in play-akka.actor.default-dispatcher-34 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-13 10:41:16,289 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: userpass
+
+2015-04-13 10:41:16,289 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: google
+
+2015-04-13 10:41:16,289 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-13 10:41:16,289 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-13 10:41:16,290 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-13 10:41:16,290 - [INFO] - from play in play-internal-execution-context-1 
+Shutdown application default Akka system.
+
+2015-04-13 10:41:16,440 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-13 10:41:16,501 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-13 10:41:16,523 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-13 10:41:16,525 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-13 10:41:16,525 - [DEBUG] - from application in play-akka.actor.default-dispatcher-34 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-13 10:41:16,530 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-13 10:41:16,531 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-13 10:41:16,532 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-13 10:41:16,532 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-13 10:41:16,532 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-13 10:41:16,532 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-13 10:41:24,413 - [DEBUG] - from application in play-akka.actor.default-dispatcher-34 
+{"articles":[{"author":"Gregory Ferenstein","enclosures":[{"media_type":"image\/jpg","uri":"http:\/\/a1.files.readwrite.com\/image\/upload\/c_fill,cs_srgb,dpr_1.0,h_380,q_80,w_630\/MTI5NDU0NjAyMDIxMDE2ODUw.jpg"}],"publish_date":"Mon, 13 Apr 2015 17:32:00 +0100","source":"readwriteweb","source_url":"http:\/\/feeds.feedburner.com\/readwriteweb","summary":"_This post first appeared on the Ferenstein Wire, a syndicated news service.\u000aPublishing partners may edit posts. For inquires, please email author and\u000apublisher Gregory Ferenstein._\u000a\u000aTaxi unions aren't the only government-protected industry that ride-hailing\u000acompanies are overhauling. Auto dealerships are also indirectly feeling the\u000aheat, in part because American teens are taking a pass on their driver’s\u000alicense.\u000a\u000aGetting a license was once an established rite of passage in American culture.\u000aBut over the last 30 years, the number of 16-year-olds with driver’s licenses\u000ahas plummeted roughly 40%, according to 2012 research by University of\u000aMichigan researcher Michael Sivak published in the journal _Traffic Injury\u000aPrevention_.\u000a\u000a> **See also: Welcome To Peak Car—And A Transformation In How We Get Around**\u000a\u000aAuto dealers benefit from state government regulations that ban car\u000amanufacturers from directly selling to consumers. Though some dealerships only\u000asell one brand of vehicle, they are still independently operated, making them\u000acostly middlemen between consumers and carmakers.\u000a\u000a## Another Reason To Hate Car Salesmen\u000a\u000aTesla, for instance, was recently banned from selling directly to consumers in\u000aWest Virginia, where auto dealers have lobbied the local government to protect\u000atheir salesmen from competition.\u000a\u000aBut the next generation of Americans has ...","title":"Uber's Going To Bulldoze Another Cozy Business: Auto Dealers (readwriteweb)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431145853?count=2&client_source=api&order=date&format=json"},{"author":"Adriana Lee","enclosures":[{"media_type":"image\/jpg","uri":"http:\/\/a1.files.readwrite.com\/image\/upload\/c_fill,cs_srgb,dpr_1.0,h_380,q_80,w_630\/MTI5Mzg5OTQ4NTM2MTM0MTEw.jpg"}],"publish_date":"Mon, 13 Apr 2015 14:00:00 +0100","source":"readwriteweb","source_url":"http:\/\/feeds.feedburner.com\/readwriteweb","summary":"In 2001, Steve Jobs shared a vision of computing—the personal computer as a\u000a\"digital hub\" for organizing users' lives—that would inform Apple's road map\u000afor years to come. Before a Macworld audience, the late Apple co-founder\u000aexplained how the personal computer was entering a new golden age \"driven by\u000aan explosion of new digital devices,” all connecting to and relying on the Mac\u000ato corral and make sense of their data.\u000a\u000aFourteen years later, current CEO Tim Cook has officially retired Jobs' vision\u000aby making a new laptop with a single port—the \"new MacBook.\"\u000a\u000a> **See also: There's A New MacBook In Town**\u000a\u000aThese days, the hub has shifted, from local computing in our machines and\u000agadgets to the cloud. There’s no need for a beefy processor or numerous ports\u000awhen online services do the heavy lifting for us. The Internet ably manages\u000aour media and other personal data, and its capacity will only grow over time,\u000aas smartwatches, homes, cars, fitness gizmos and health trackers put more of\u000aour lives online.\u000a\u000aThis is the future the new MacBook was built for, and it has nothing to do\u000awith plugging in devices.\u000a\u000a## **Hub No More**\u000a\u000aSix years ...","title":"How The New Apple MacBook Retired Steve Jobs’s Vision Of Computing (readwriteweb)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431145847?count=2&client_source=api&order=date&format=json"}],"description":"Technology News","syndication_url":"http:\/\/news.feedzilla.com\/en_us\/news\/technology.rss?count=2&client_source=api&order=date","title":"Feedzilla: Technology News"}
+
+2015-04-13 10:41:24,421 - [DEBUG] - from application in play-akka.actor.default-dispatcher-34 
+rootNode = Mon, 13 Apr 2015 17:32:00 +0100
+
+2015-04-13 10:41:24,422 - [DEBUG] - from application in play-akka.actor.default-dispatcher-34 
+idNode = Mon, 13 Apr 2015 17:32:00 +0100
+
+2015-04-13 10:44:00,882 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: userpass
+
+2015-04-13 10:44:00,883 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: google
+
+2015-04-13 10:44:00,883 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-13 10:44:00,883 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-13 10:44:00,883 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-13 10:44:00,883 - [INFO] - from play in play-internal-execution-context-1 
+Shutdown application default Akka system.
+
+2015-04-13 10:44:01,027 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-13 10:44:01,073 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-13 10:44:01,095 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-13 10:44:01,096 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-13 10:44:01,096 - [DEBUG] - from application in play-akka.actor.default-dispatcher-40 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-13 10:44:01,099 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-13 10:44:01,099 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-13 10:44:01,099 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-13 10:44:01,100 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-13 10:44:01,100 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-13 10:44:01,100 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-13 10:44:25,626 - [DEBUG] - from application in play-akka.actor.default-dispatcher-47 
+[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
+
+2015-04-13 10:44:25,627 - [DEBUG] - from application in play-akka.actor.default-dispatcher-47 
+[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=2b157674-ef09-4536-a72f-993c7c2302b8]
+
+2015-04-13 10:44:26,168 - [DEBUG] - from application in play-akka.actor.default-dispatcher-54 
+[securesocial] got json back [{"access_token":"ya29.VAH-nNoLv5hpljj7cenmnY1HZrbqAwb6pd32OBbqjcn8G8dR5vo32nKxjy3Ca-GKH2-GyUHBrdWHQw","token_type":"Bearer","expires_in":3599,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlMDYzZGUwYzlmNjY4NmRlYjY2ZTc0NTRiMzIwMWMxMTE0ZWJhNmUifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTA3OTI1NDIxNzg4ODI3MzA5NTIxIiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6Im1hdHRoYW5jb2NrMDNAZ21haWwuY29tIiwiYXRfaGFzaCI6IkZhaFpvWlNHalFtRzBoM2llREpoQnciLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0Mjg5NDcwNTcsImV4cCI6MTQyODk1MDY1N30.UnqX9nNgUG0w9tF7L1ZD42qLmR3vEM7r82o2WkQSge2GuHo-bM1FeLZmenq3RUJ3uhOswF33ErOs3FIzhVCv3Q6Pr8YXlsikPK0sxUXTMyXEwl0MuFwYhxsFM5w8TZN7tLI91evncwEq28nRLZdZu92hA6ynQjcUwZS00DGSgyg"}]
+
+2015-04-13 10:44:26,171 - [DEBUG] - from application in play-akka.actor.default-dispatcher-54 
+[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.VAH-nNoLv5hpljj7cenmnY1HZrbqAwb6pd32OBbqjcn8G8dR5vo32nKxjy3Ca-GKH2-GyUHBrdWHQw,Some(Bearer),Some(3599),None)),None))
+
+2015-04-13 10:44:26,518 - [DEBUG] - from application in play-akka.actor.default-dispatcher-54 
+[securesocial] user logged in : [SocialUser(IdentityId(107925421788827309521,google),Matthew,Hancock,Matthew Hancock,Some(matthancock03@gmail.com),Some(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.VAH-nNoLv5hpljj7cenmnY1HZrbqAwb6pd32OBbqjcn8G8dR5vo32nKxjy3Ca-GKH2-GyUHBrdWHQw,Some(Bearer),Some(3599),None)),None)]
+
+2015-04-13 10:45:55,534 - [DEBUG] - from application in play-akka.actor.default-dispatcher-48 
+{"articles":[{"author":"samzenpus","publish_date":"Mon, 13 Apr 2015 18:05:00 +0100","source":"Slashdot","source_url":"http:\/\/rss.slashdot.org\/Slashdot\/slashdot","summary":"Lasrick writes Mark Gubrud writes about the fuzzy definitions used to\u000adifferentiate autonomous lethal weapons from those classified as semi-\u000aautonomous: \"After all, if the only criterion is that a human nominates the\u000atarget, then even The Terminator...might qualify as semi-autonomous.\" Gubrud\u000awants a ban against autonomous hunter-killer weapons like the Long-Range Anti-\u000aShip Missile and the canceled Low-Cost Autonomous Attack System, and vague\u000adefinitions surrounding autonomous and semi-autonomous weapons that will allow\u000aweapons that should be classified as autonomous but aren't. Existing\u000adefinitions draw a \"distinction without a difference\" and \"will not hold\u000aagainst the advance of technology.\" Gubrud prefers a definition that reduces\u000aautonomy to a simple operational fact, an approach he calls \"autonomy without\u000amystery.\" In the end, Gubrud writes, \"Where one draws the line is less\u000aimportant than that it is drawn somewhere. If the international community can\u000aagree on this, then the remaining details become a matter of common interest\u000aand old-fashioned horse trading.\"\u000a\u000aRead more of this story at Slashdot.\u000a\u000a","title":"Killer Robots In Plato's Cave (Slashdot)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431147669?count=2&client_source=api&order=date&format=json"},{"author":"samzenpus","publish_date":"Mon, 13 Apr 2015 14:30:00 +0100","source":"Slashdot","source_url":"http:\/\/rss.slashdot.org\/Slashdot\/slashdot","summary":"HughPickens.com writes Paul Tassi reports at Forbes that the first four\u000aepisodes of the new season of \"Game of Thrones\", nearly half of the ten total\u000aepisodes, have been leaked online to various torrent sites. The four episodes\u000aappeared to come from a screener sent to reviewers with the digital watermark\u000ablurred out and are in 480p video format, equivalent to standard-definition\u000aTV, not HD.The episodes have already been downloaded almost 800,000 times, and\u000athat figure was expected to blow past a million downloads by the season 5\u000apremiere. Game of Thrones has consistently set records for piracy, which has\u000aalmost been a point of pride for HBO. \"Our experience is [piracy] leads to\u000amore penetration, more paying subs, more health for HBO, less reliance on\u000ahaving to do paid advertising If you go around the world, I think you're\u000aright, Game of Thrones is the most pirated show in the world. Well, you know,\u000athat's better than an Emmy.\" How the leak happened isn't a mystery. Television\u000acritics typically receive the first four episodes of an HBO show before its\u000aseason premiere, and \"Game of Thrones\" is no exception. HBO could not\u000aimmediately say ...","title":"Nearly Half of <em>Game of Thrones<\/em> Season 5 Leaks Online (Slashdot)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431147668?count=2&client_source=api&order=date&format=json"}],"description":"Technology News","syndication_url":"http:\/\/news.feedzilla.com\/en_us\/news\/technology.rss?count=2&client_source=api&order=date","title":"Feedzilla: Technology News"}
+
+2015-04-13 10:45:55,966 - [DEBUG] - from application in play-akka.actor.default-dispatcher-48 
+rootNode = Mon, 13 Apr 2015 18:05:00 +0100
+
+2015-04-13 10:45:55,966 - [DEBUG] - from application in play-akka.actor.default-dispatcher-48 
+idNode = Mon, 13 Apr 2015 18:05:00 +0100
+
+2015-04-13 10:46:16,375 - [DEBUG] - from application in play-akka.actor.default-dispatcher-55 
+{"articles":[{"author":"samzenpus","publish_date":"Mon, 13 Apr 2015 18:05:00 +0100","source":"Slashdot","source_url":"http:\/\/rss.slashdot.org\/Slashdot\/slashdot","summary":"Lasrick writes Mark Gubrud writes about the fuzzy definitions used to\u000adifferentiate autonomous lethal weapons from those classified as semi-\u000aautonomous: \"After all, if the only criterion is that a human nominates the\u000atarget, then even The Terminator...might qualify as semi-autonomous.\" Gubrud\u000awants a ban against autonomous hunter-killer weapons like the Long-Range Anti-\u000aShip Missile and the canceled Low-Cost Autonomous Attack System, and vague\u000adefinitions surrounding autonomous and semi-autonomous weapons that will allow\u000aweapons that should be classified as autonomous but aren't. Existing\u000adefinitions draw a \"distinction without a difference\" and \"will not hold\u000aagainst the advance of technology.\" Gubrud prefers a definition that reduces\u000aautonomy to a simple operational fact, an approach he calls \"autonomy without\u000amystery.\" In the end, Gubrud writes, \"Where one draws the line is less\u000aimportant than that it is drawn somewhere. If the international community can\u000aagree on this, then the remaining details become a matter of common interest\u000aand old-fashioned horse trading.\"\u000a\u000aRead more of this story at Slashdot.\u000a\u000a","title":"Killer Robots In Plato's Cave (Slashdot)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431147669?count=2&client_source=api&order=date&format=json"},{"author":"samzenpus","publish_date":"Mon, 13 Apr 2015 14:30:00 +0100","source":"Slashdot","source_url":"http:\/\/rss.slashdot.org\/Slashdot\/slashdot","summary":"HughPickens.com writes Paul Tassi reports at Forbes that the first four\u000aepisodes of the new season of \"Game of Thrones\", nearly half of the ten total\u000aepisodes, have been leaked online to various torrent sites. The four episodes\u000aappeared to come from a screener sent to reviewers with the digital watermark\u000ablurred out and are in 480p video format, equivalent to standard-definition\u000aTV, not HD.The episodes have already been downloaded almost 800,000 times, and\u000athat figure was expected to blow past a million downloads by the season 5\u000apremiere. Game of Thrones has consistently set records for piracy, which has\u000aalmost been a point of pride for HBO. \"Our experience is [piracy] leads to\u000amore penetration, more paying subs, more health for HBO, less reliance on\u000ahaving to do paid advertising If you go around the world, I think you're\u000aright, Game of Thrones is the most pirated show in the world. Well, you know,\u000athat's better than an Emmy.\" How the leak happened isn't a mystery. Television\u000acritics typically receive the first four episodes of an HBO show before its\u000aseason premiere, and \"Game of Thrones\" is no exception. HBO could not\u000aimmediately say ...","title":"Nearly Half of <em>Game of Thrones<\/em> Season 5 Leaks Online (Slashdot)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431147668?count=2&client_source=api&order=date&format=json"}],"description":"Technology News","syndication_url":"http:\/\/news.feedzilla.com\/en_us\/news\/technology.rss?count=2&client_source=api&order=date","title":"Feedzilla: Technology News"}
+
+2015-04-13 10:46:16,378 - [DEBUG] - from application in play-akka.actor.default-dispatcher-55 
+rootNode = Mon, 13 Apr 2015 18:05:00 +0100
+
+2015-04-13 10:46:16,379 - [DEBUG] - from application in play-akka.actor.default-dispatcher-55 
+idNode = Mon, 13 Apr 2015 18:05:00 +0100
+
+2015-04-13 10:46:37,495 - [ERROR] - from play in play-internal-execution-context-1 
+Cannot invoke the action, eventually got an error: java.util.concurrent.TimeoutException: Request reached time out of 120000 ms after 120253 ms
+
+2015-04-13 10:46:37,502 - [ERROR] - from application in play-internal-execution-context-1 
+
+
+! @6lnhl8j65 - Internal server error, for (GET) [/feedZilla] ->
+
+play.api.Application$$anon$1: Execution exception[[TimeoutException: Request reached time out of 120000 ms after 120253 ms]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+java.util.concurrent.TimeoutException: Request reached time out of 120000 ms after 120253 ms
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.expire(NettyAsyncHttpProvider.java:1773) ~[async-http-client-1.7.18.jar:na]
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.run(NettyAsyncHttpProvider.java:1794) ~[async-http-client-1.7.18.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_40]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) ~[na:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_40]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) ~[na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_40]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_40]
+
+2015-04-13 10:49:01,108 - [DEBUG] - from application in play-akka.actor.default-dispatcher-57 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-13 10:49:20,571 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: userpass
+
+2015-04-13 10:49:20,571 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: google
+
+2015-04-13 10:49:20,571 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-13 10:49:20,571 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-13 10:49:20,571 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-13 10:49:20,572 - [INFO] - from play in play-internal-execution-context-1 
+Shutdown application default Akka system.
+
+2015-04-13 10:49:21,931 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-13 10:49:23,051 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-13 10:49:23,062 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-13 10:49:23,066 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-13 10:49:23,068 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-13 10:49:23,068 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-13 10:49:23,068 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-13 10:49:23,068 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-13 10:49:23,068 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-13 10:49:23,069 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-13 10:49:23,067 - [DEBUG] - from application in play-akka.actor.default-dispatcher-57 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-13 10:50:00,313 - [DEBUG] - from application in play-akka.actor.default-dispatcher-61 
+{"articles":[{"author":"samzenpus","publish_date":"Mon, 13 Apr 2015 18:05:00 +0100","source":"Slashdot","source_url":"http:\/\/rss.slashdot.org\/Slashdot\/slashdot","summary":"Lasrick writes Mark Gubrud writes about the fuzzy definitions used to\u000adifferentiate autonomous lethal weapons from those classified as semi-\u000aautonomous: \"After all, if the only criterion is that a human nominates the\u000atarget, then even The Terminator...might qualify as semi-autonomous.\" Gubrud\u000awants a ban against autonomous hunter-killer weapons like the Long-Range Anti-\u000aShip Missile and the canceled Low-Cost Autonomous Attack System, and vague\u000adefinitions surrounding autonomous and semi-autonomous weapons that will allow\u000aweapons that should be classified as autonomous but aren't. Existing\u000adefinitions draw a \"distinction without a difference\" and \"will not hold\u000aagainst the advance of technology.\" Gubrud prefers a definition that reduces\u000aautonomy to a simple operational fact, an approach he calls \"autonomy without\u000amystery.\" In the end, Gubrud writes, \"Where one draws the line is less\u000aimportant than that it is drawn somewhere. If the international community can\u000aagree on this, then the remaining details become a matter of common interest\u000aand old-fashioned horse trading.\"\u000a\u000aRead more of this story at Slashdot.\u000a\u000a","title":"Killer Robots In Plato's Cave (Slashdot)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431147669?count=2&client_source=api&order=date&format=json"},{"author":"samzenpus","publish_date":"Mon, 13 Apr 2015 14:30:00 +0100","source":"Slashdot","source_url":"http:\/\/rss.slashdot.org\/Slashdot\/slashdot","summary":"HughPickens.com writes Paul Tassi reports at Forbes that the first four\u000aepisodes of the new season of \"Game of Thrones\", nearly half of the ten total\u000aepisodes, have been leaked online to various torrent sites. The four episodes\u000aappeared to come from a screener sent to reviewers with the digital watermark\u000ablurred out and are in 480p video format, equivalent to standard-definition\u000aTV, not HD.The episodes have already been downloaded almost 800,000 times, and\u000athat figure was expected to blow past a million downloads by the season 5\u000apremiere. Game of Thrones has consistently set records for piracy, which has\u000aalmost been a point of pride for HBO. \"Our experience is [piracy] leads to\u000amore penetration, more paying subs, more health for HBO, less reliance on\u000ahaving to do paid advertising If you go around the world, I think you're\u000aright, Game of Thrones is the most pirated show in the world. Well, you know,\u000athat's better than an Emmy.\" How the leak happened isn't a mystery. Television\u000acritics typically receive the first four episodes of an HBO show before its\u000aseason premiere, and \"Game of Thrones\" is no exception. HBO could not\u000aimmediately say ...","title":"Nearly Half of <em>Game of Thrones<\/em> Season 5 Leaks Online (Slashdot)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431147668?count=2&client_source=api&order=date&format=json"}],"description":"Technology News","syndication_url":"http:\/\/news.feedzilla.com\/en_us\/news\/technology.rss?count=2&client_source=api&order=date","title":"Feedzilla: Technology News"}
+
+2015-04-13 10:50:00,327 - [DEBUG] - from application in play-akka.actor.default-dispatcher-61 
+rootNode = Mon, 13 Apr 2015 18:05:00 +0100
+
+2015-04-13 10:50:00,327 - [DEBUG] - from application in play-akka.actor.default-dispatcher-61 
+idNode = Mon, 13 Apr 2015 18:05:00 +0100
 

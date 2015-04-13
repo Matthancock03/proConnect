@@ -46,7 +46,7 @@ Seq[Any](format.raw/*1.29*/("""
 
 	<div class="row clearfix">
 		<div class="col-xs-2 column">
-			<img alt="140x140" class = "img-thumbnail profileImage" src="http://i.imgur.com/PcoAz60.jpg?1" />
+			<img alt="140x140" class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*21.66*/routes/*21.72*/.Assets.at("images/profile_holder.png"))),format.raw/*21.111*/("""" />
 
 			<dl class="dl-horizontal">
 				<dt>
@@ -62,22 +62,25 @@ Seq[Any](format.raw/*1.29*/("""
 		</div>
 
 		<div class="col-xs-6 column clearfix">
-			<img alt="" src=""""),_display_(Seq[Any](/*37.22*/routes/*37.28*/.Assets.at("images/header.jpg"))),format.raw/*37.59*/("""" />
+		<img alt="140x140" class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*37.65*/routes/*37.71*/.Assets.at("images/header.jpg"))),format.raw/*37.102*/("""" />
 			<div class="feed-div">
 			"""),_display_(Seq[Any](/*39.5*/for(feedItem <- feedItems) yield /*39.31*/{_display_(Seq[Any](format.raw/*39.32*/("""
 				"""),_display_(Seq[Any](/*40.6*/if(feedItem.publish_date != "")/*40.37*/{_display_(Seq[Any](format.raw/*40.38*/("""
 					<a href=""""),_display_(Seq[Any](/*41.16*/feedItem/*41.24*/.url)),format.raw/*41.28*/("""" style="text-decoration: none;">
 					<div class="panel panel-default">
 						<div class="panel-body">
-						<h3 class="panel-title head-text">"""),_display_(Seq[Any](/*44.42*/feedItem/*44.50*/.title)),format.raw/*44.56*/("""</h3>
+						<div class="feed-head">
+							<img alt="" class="feed-image feed-head" src=""""),_display_(Seq[Any](/*45.55*/routes/*45.61*/.Assets.at("images/tech.png"))),format.raw/*45.90*/("""" />
+							<h3 class="panel-title head-text feed-head">"""),_display_(Seq[Any](/*46.53*/feedItem/*46.61*/.title)),format.raw/*46.67*/("""</h3>
+						</div>
 						<br>
-						<p>"""),_display_(Seq[Any](/*46.11*/feedItem/*46.19*/.summary)),format.raw/*46.27*/("""</p>
-						<p class="foot-text">"""),_display_(Seq[Any](/*47.29*/feedItem/*47.37*/.publish_date)),format.raw/*47.50*/("""  """),_display_(Seq[Any](/*47.53*/feedItem/*47.61*/.source)),format.raw/*47.68*/("""</p>
+						<p style="padding-top: 10px;">"""),_display_(Seq[Any](/*49.38*/feedItem/*49.46*/.summary)),format.raw/*49.54*/("""</p>
+						<p class="foot-text">"""),_display_(Seq[Any](/*50.29*/feedItem/*50.37*/.publish_date)),format.raw/*50.50*/("""  """),_display_(Seq[Any](/*50.53*/feedItem/*50.61*/.source)),format.raw/*50.68*/("""</p>
 					</div>
 				</div>
 				</a>
-				""")))})),format.raw/*51.6*/("""
-			""")))})),format.raw/*52.5*/("""
+				""")))})),format.raw/*54.6*/("""
+			""")))})),format.raw/*55.5*/("""
 		</div>
 		</div>
 		<div class="col-xs-4 column">
@@ -103,7 +106,7 @@ Seq[Any](format.raw/*1.29*/("""
 
   </div>
 </div>
-""")))})),format.raw/*78.2*/("""
+""")))})),format.raw/*81.2*/("""
 """))}
     }
     
@@ -116,11 +119,11 @@ Seq[Any](format.raw/*1.29*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Apr 12 23:59:20 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
-                    HASH: eba20ad3ebc0be19cb49fd27a2889b3abe83a3de
-                    MATRIX: 781->1|918->28|946->47|982->49|1008->67|1047->69|1114->101|1128->107|1187->145|1288->211|1303->217|1334->226|1865->721|1880->727|1933->758|2003->793|2045->819|2084->820|2125->826|2165->857|2204->858|2256->874|2273->882|2299->886|2480->1031|2497->1039|2525->1045|2588->1072|2605->1080|2635->1088|2704->1121|2721->1129|2756->1142|2795->1145|2812->1153|2841->1160|2914->1202|2950->1207|3625->1851
-                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|39->11|39->11|39->11|65->37|65->37|65->37|67->39|67->39|67->39|68->40|68->40|68->40|69->41|69->41|69->41|72->44|72->44|72->44|74->46|74->46|74->46|75->47|75->47|75->47|75->47|75->47|75->47|79->51|80->52|106->78
+                    DATE: Mon Apr 13 10:47:41 PDT 2015
+                    SOURCE: /home/beyondprosthetics/repos/school/proConnect/web-app/app/views/home.scala.html
+                    HASH: 6c0890465f738d3b5e7b5ce1f45e19cbd28efeca
+                    MATRIX: 781->1|918->28|946->47|982->49|1008->67|1047->69|1114->101|1128->107|1187->145|1288->211|1303->217|1334->226|1584->440|1599->446|1661->485|1990->778|2005->784|2059->815|2129->850|2171->876|2210->877|2251->883|2291->914|2330->915|2382->931|2399->939|2425->943|2649->1131|2664->1137|2715->1166|2808->1223|2825->1231|2853->1237|2956->1304|2973->1312|3003->1320|3072->1353|3089->1361|3124->1374|3163->1377|3180->1385|3209->1392|3282->1434|3318->1439|3993->2083
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|39->11|39->11|39->11|49->21|49->21|49->21|65->37|65->37|65->37|67->39|67->39|67->39|68->40|68->40|68->40|69->41|69->41|69->41|73->45|73->45|73->45|74->46|74->46|74->46|77->49|77->49|77->49|78->50|78->50|78->50|78->50|78->50|78->50|82->54|83->55|109->81
                     -- GENERATED --
                 */
             
