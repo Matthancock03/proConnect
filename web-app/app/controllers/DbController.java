@@ -18,6 +18,11 @@ import static play.libs.Json.toJson;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import com.fasterxml.jackson.databind.node.*;
+import com.fasterxml.jackson.databind.JsonNode;
+import play.mvc.Result;
+import play.libs.F.Function;
+import play.libs.F.Promise;
+import models.FeedItem;
 
 
 public class DbController extends Controller{
@@ -29,7 +34,11 @@ public class DbController extends Controller{
 
   //@SecureSocial.SecuredAction
   public static Result home(){
-    return ok(home.render());
+    Promise<JsonNode> feedNode = NewsFeed.feedTest();
+    FeedItem feedItem = new FeedItem();
+    //JsonNode feed = feedNode.get(100000);
+    
+    return ok(home.render(feedItem));
   }
 
   @BodyParser.Of(BodyParser.Json.class)

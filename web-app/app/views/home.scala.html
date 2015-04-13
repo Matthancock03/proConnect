@@ -1,3 +1,5 @@
+@(feedItem: FeedItem)
+
 @import helper._
 
 @main("ProConnect") {
@@ -32,32 +34,15 @@
 		</div>
 
 		<div class="col-xs-6 column clearfix">
-			<!-- Feedzilla Widget BEGIN -->
+				@if(feedItem.publish_date != ""){
+					<p>@feedItem.publish_date</p>
+					<p>@feedItem.source</p>
+					<p>@feedItem.source_url</p>
+					<p>@feedItem.summary</p>
+					<p>@feedItem.title</p>
+					<p>@feedItem.url</p>
+				}
 
-				<div class="feedzilla-news-widget feedzilla-9679638077504933" style="width:700px; padding-top: 50px; text-align: center; font-size: 11px; border: 0;">
-				<script type="text/javascript" src="http://widgets.feedzilla.com/news/iframe/js/widget.js"></script>
-				<script type="text/javascript">
-				new FEEDZILLA.Widget({
-					style: 'slide-top-to-bottom',
-					culture_code: 'en_us',
-					c: '30',
-					sc: '-',
-					headerBackgroundColor: '#0C98CF',
-					footerBackgroundColor: '#0C98CF',
-					title: 'ProConnect',
-					order: 'relevance',
-					count: '20',
-					w: '700',
-					h: '500',
-					timestamp: 'true',
-					scrollbar: 'false',
-					theme: 'ui-lightness',
-					className: 'feedzilla-9679638077504933'
-				});
-				</script><br />
-				</div>
-
-				<!-- Feedzilla Widget END -->
 		</div>
 		<div class="col-xs-4 column">
 			<div>
