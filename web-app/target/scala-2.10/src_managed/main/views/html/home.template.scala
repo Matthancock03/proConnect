@@ -20,14 +20,14 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
-object home extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template1[FeedItem,play.api.templates.HtmlFormat.Appendable] {
+object home extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template1[List[FeedItem],play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply/*1.2*/(feedItem: FeedItem):play.api.templates.HtmlFormat.Appendable = {
+    def apply/*1.2*/(feedItems: List[FeedItem]):play.api.templates.HtmlFormat.Appendable = {
         _display_ {import helper._
 
 
-Seq[Any](format.raw/*1.22*/("""
+Seq[Any](format.raw/*1.29*/("""
 
 """),format.raw/*4.1*/("""
 """),_display_(Seq[Any](/*5.2*/main("ProConnect")/*5.20*/ {_display_(Seq[Any](format.raw/*5.22*/("""
@@ -62,15 +62,23 @@ Seq[Any](format.raw/*1.22*/("""
 		</div>
 
 		<div class="col-xs-6 column clearfix">
-				"""),_display_(Seq[Any](/*37.6*/if(feedItem.publish_date != "")/*37.37*/{_display_(Seq[Any](format.raw/*37.38*/("""
-					<p>"""),_display_(Seq[Any](/*38.10*/feedItem/*38.18*/.publish_date)),format.raw/*38.31*/("""</p>
-					<p>"""),_display_(Seq[Any](/*39.10*/feedItem/*39.18*/.source)),format.raw/*39.25*/("""</p>
-					<p>"""),_display_(Seq[Any](/*40.10*/feedItem/*40.18*/.source_url)),format.raw/*40.29*/("""</p>
-					<p>"""),_display_(Seq[Any](/*41.10*/feedItem/*41.18*/.summary)),format.raw/*41.26*/("""</p>
-					<p>"""),_display_(Seq[Any](/*42.10*/feedItem/*42.18*/.title)),format.raw/*42.24*/("""</p>
-					<p>"""),_display_(Seq[Any](/*43.10*/feedItem/*43.18*/.url)),format.raw/*43.22*/("""</p>
-				""")))})),format.raw/*44.6*/("""
-
+			<img alt="" src=""""),_display_(Seq[Any](/*37.22*/routes/*37.28*/.Assets.at("images/header.jpg"))),format.raw/*37.59*/("""" />
+			<div class="feed-div">
+			"""),_display_(Seq[Any](/*39.5*/for(feedItem <- feedItems) yield /*39.31*/{_display_(Seq[Any](format.raw/*39.32*/("""
+				"""),_display_(Seq[Any](/*40.6*/if(feedItem.publish_date != "")/*40.37*/{_display_(Seq[Any](format.raw/*40.38*/("""
+					<a href=""""),_display_(Seq[Any](/*41.16*/feedItem/*41.24*/.url)),format.raw/*41.28*/("""" style="text-decoration: none;">
+					<div class="panel panel-default">
+						<div class="panel-body">
+						<h3 class="panel-title head-text">"""),_display_(Seq[Any](/*44.42*/feedItem/*44.50*/.title)),format.raw/*44.56*/("""</h3>
+						<br>
+						<p>"""),_display_(Seq[Any](/*46.11*/feedItem/*46.19*/.summary)),format.raw/*46.27*/("""</p>
+						<p class="foot-text">"""),_display_(Seq[Any](/*47.29*/feedItem/*47.37*/.publish_date)),format.raw/*47.50*/("""  """),_display_(Seq[Any](/*47.53*/feedItem/*47.61*/.source)),format.raw/*47.68*/("""</p>
+					</div>
+				</div>
+				</a>
+				""")))})),format.raw/*51.6*/("""
+			""")))})),format.raw/*52.5*/("""
+		</div>
 		</div>
 		<div class="col-xs-4 column">
 			<div>
@@ -95,24 +103,24 @@ Seq[Any](format.raw/*1.22*/("""
 
   </div>
 </div>
-""")))})),format.raw/*70.2*/("""
+""")))})),format.raw/*78.2*/("""
 """))}
     }
     
-    def render(feedItem:FeedItem): play.api.templates.HtmlFormat.Appendable = apply(feedItem)
+    def render(feedItems:List[FeedItem]): play.api.templates.HtmlFormat.Appendable = apply(feedItems)
     
-    def f:((FeedItem) => play.api.templates.HtmlFormat.Appendable) = (feedItem) => apply(feedItem)
+    def f:((List[FeedItem]) => play.api.templates.HtmlFormat.Appendable) = (feedItems) => apply(feedItems)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Apr 12 16:18:27 PDT 2015
+                    DATE: Sun Apr 12 23:59:20 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
-                    HASH: a6d59e1d5287ee91ace3ccdf9bc785fb3521b356
-                    MATRIX: 775->1|905->21|933->40|969->42|995->60|1034->62|1101->94|1115->100|1174->138|1275->204|1290->210|1321->219|1835->698|1875->729|1914->730|1960->740|1977->748|2012->761|2062->775|2079->783|2108->790|2158->804|2175->812|2208->823|2258->837|2275->845|2305->853|2355->867|2372->875|2400->881|2450->895|2467->903|2493->907|2534->917|3201->1553
-                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|39->11|39->11|39->11|65->37|65->37|65->37|66->38|66->38|66->38|67->39|67->39|67->39|68->40|68->40|68->40|69->41|69->41|69->41|70->42|70->42|70->42|71->43|71->43|71->43|72->44|98->70
+                    HASH: eba20ad3ebc0be19cb49fd27a2889b3abe83a3de
+                    MATRIX: 781->1|918->28|946->47|982->49|1008->67|1047->69|1114->101|1128->107|1187->145|1288->211|1303->217|1334->226|1865->721|1880->727|1933->758|2003->793|2045->819|2084->820|2125->826|2165->857|2204->858|2256->874|2273->882|2299->886|2480->1031|2497->1039|2525->1045|2588->1072|2605->1080|2635->1088|2704->1121|2721->1129|2756->1142|2795->1145|2812->1153|2841->1160|2914->1202|2950->1207|3625->1851
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|39->11|39->11|39->11|65->37|65->37|65->37|67->39|67->39|67->39|68->40|68->40|68->40|69->41|69->41|69->41|72->44|72->44|72->44|74->46|74->46|74->46|75->47|75->47|75->47|75->47|75->47|75->47|79->51|80->52|106->78
                     -- GENERATED --
                 */
             

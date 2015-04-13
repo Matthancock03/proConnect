@@ -14,6 +14,7 @@ import securesocial.core.java.SecureSocial;
 import play.mvc.BodyParser;
 import play.libs.Json;
 import play.libs.Json.*;
+import java.util.*;
 import static play.libs.Json.toJson;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -35,10 +36,11 @@ public class DbController extends Controller{
   //@SecureSocial.SecuredAction
   public static Result home(){
     Promise<JsonNode> feedNode = NewsFeed.feedTest();
+    List<FeedItem> feeds = new ArrayList();
     FeedItem feedItem = new FeedItem();
-    //JsonNode feed = feedNode.get(100000);
-    
-    return ok(home.render(feedItem));
+    //r apJsonNode feed = feedNode.get(100000);
+    feeds.add(feedItem);
+    return ok(home.render(feeds));
   }
 
   @BodyParser.Of(BodyParser.Json.class)

@@ -1,4 +1,4 @@
-@(feedItem: FeedItem)
+@(feedItems: List[FeedItem])
 
 @import helper._
 
@@ -34,15 +34,23 @@
 		</div>
 
 		<div class="col-xs-6 column clearfix">
+			<img alt="" src="@routes.Assets.at("images/header.jpg")" />
+			<div class="feed-div">
+			@for(feedItem <- feedItems){
 				@if(feedItem.publish_date != ""){
-					<p>@feedItem.publish_date</p>
-					<p>@feedItem.source</p>
-					<p>@feedItem.source_url</p>
-					<p>@feedItem.summary</p>
-					<p>@feedItem.title</p>
-					<p>@feedItem.url</p>
+					<a href="@feedItem.url" style="text-decoration: none;">
+					<div class="panel panel-default">
+						<div class="panel-body">
+						<h3 class="panel-title head-text">@feedItem.title</h3>
+						<br>
+						<p>@feedItem.summary</p>
+						<p class="foot-text">@feedItem.publish_date  @feedItem.source</p>
+					</div>
+				</div>
+				</a>
 				}
-
+			}
+		</div>
 		</div>
 		<div class="col-xs-4 column">
 			<div>
