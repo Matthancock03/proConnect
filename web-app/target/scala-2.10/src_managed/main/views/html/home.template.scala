@@ -20,21 +20,23 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
-object home extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template0[play.api.templates.HtmlFormat.Appendable] {
+object home extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template1[List[FeedItem],play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply():play.api.templates.HtmlFormat.Appendable = {
+    def apply/*1.2*/(feedItems: List[FeedItem]):play.api.templates.HtmlFormat.Appendable = {
         _display_ {import helper._
 
 
-Seq[Any](format.raw/*2.1*/("""
-"""),_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any](format.raw/*3.22*/("""
-	<link rel="stylesheet" href=""""),_display_(Seq[Any](/*4.32*/routes/*4.38*/.Assets.at("stylesheets/home.min.css"))),format.raw/*4.76*/("""">
+Seq[Any](format.raw/*1.29*/("""
+
+"""),format.raw/*4.1*/("""
+"""),_display_(Seq[Any](/*5.2*/main("ProConnect")/*5.20*/ {_display_(Seq[Any](format.raw/*5.22*/("""
+	<link rel="stylesheet" href=""""),_display_(Seq[Any](/*6.32*/routes/*6.38*/.Assets.at("stylesheets/home.min.css"))),format.raw/*6.76*/("""">
 
 
 <div class="container-fluid">
 	<div class="row clearfix">
-		"""),_display_(Seq[Any](/*9.4*/navbar/*9.10*/.render())),format.raw/*9.19*/("""
+		"""),_display_(Seq[Any](/*11.4*/navbar/*11.10*/.render())),format.raw/*11.19*/("""
 	</div>
 
 	<div class="row clearfix">
@@ -44,7 +46,7 @@ Seq[Any](format.raw/*2.1*/("""
 
 	<div class="row clearfix">
 		<div class="col-xs-2 column">
-			<img alt="140x140" class = "img-thumbnail profileImage" src="http://i.imgur.com/PcoAz60.jpg?1" />
+			<img alt="140x140" class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*21.66*/routes/*21.72*/.Assets.at("images/profile_holder.png"))),format.raw/*21.111*/("""" />
 
 			<dl class="dl-horizontal">
 				<dt>
@@ -60,32 +62,26 @@ Seq[Any](format.raw/*2.1*/("""
 		</div>
 
 		<div class="col-xs-6 column clearfix">
-			<!-- Feedzilla Widget BEGIN -->
-
-				<div class="feedzilla-news-widget feedzilla-9679638077504933" style="width:700px; padding-top: 50px; text-align: center; font-size: 11px; border: 0;">
-				<script type="text/javascript" src="http://widgets.feedzilla.com/news/iframe/js/widget.js"></script>
-				<script type="text/javascript">
-				new FEEDZILLA.Widget("""),format.raw/*40.26*/("""{"""),format.raw/*40.27*/("""
-					style: 'slide-top-to-bottom',
-					culture_code: 'en_us',
-					c: '30',
-					sc: '-',
-					headerBackgroundColor: '#0C98CF',
-					footerBackgroundColor: '#0C98CF',
-					title: 'ProConnect',
-					order: 'relevance',
-					count: '20',
-					w: '700',
-					h: '500',
-					timestamp: 'true',
-					scrollbar: 'false',
-					theme: 'ui-lightness',
-					className: 'feedzilla-9679638077504933'
-				"""),format.raw/*56.5*/("""}"""),format.raw/*56.6*/(""");
-				</script><br />
+		<img alt="140x140" class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*37.65*/routes/*37.71*/.Assets.at("images/header.jpg"))),format.raw/*37.102*/("""" />
+			<div class="feed-div">
+			"""),_display_(Seq[Any](/*39.5*/for(feedItem <- feedItems) yield /*39.31*/{_display_(Seq[Any](format.raw/*39.32*/("""
+				"""),_display_(Seq[Any](/*40.6*/if(feedItem.publish_date != "")/*40.37*/{_display_(Seq[Any](format.raw/*40.38*/("""
+					<a href=""""),_display_(Seq[Any](/*41.16*/feedItem/*41.24*/.url)),format.raw/*41.28*/("""" style="text-decoration: none;">
+					<div class="panel panel-default">
+						<div class="panel-body">
+						<div>
+							<img alt="" class="feed-image feed-head" src=""""),_display_(Seq[Any](/*45.55*/routes/*45.61*/.Assets.at("images/tech.png"))),format.raw/*45.90*/("""" />
+							<h3 class="panel-title head-text feed-head">"""),_display_(Seq[Any](/*46.53*/feedItem/*46.61*/.title)),format.raw/*46.67*/("""</h3>
+						</div>
+						<br>
+						<p style="padding-top: 10px;">"""),_display_(Seq[Any](/*49.38*/feedItem/*49.46*/.summary)),format.raw/*49.54*/("""</p>
+						<p class="foot-text">"""),_display_(Seq[Any](/*50.29*/feedItem/*50.37*/.publish_date)),format.raw/*50.50*/("""  """),_display_(Seq[Any](/*50.53*/feedItem/*50.61*/.source)),format.raw/*50.68*/("""</p>
+					</div>
 				</div>
-
-				<!-- Feedzilla Widget END -->
+				</a>
+				""")))})),format.raw/*54.6*/("""
+			""")))})),format.raw/*55.5*/("""
+		</div>
 		</div>
 		<div class="col-xs-4 column">
 			<div>
@@ -110,24 +106,23 @@ Seq[Any](format.raw/*2.1*/("""
 
   </div>
 </div>
-""")))})),format.raw/*85.2*/("""
-"""))}
+""")))})))}
     }
     
-    def render(): play.api.templates.HtmlFormat.Appendable = apply()
+    def render(feedItems:List[FeedItem]): play.api.templates.HtmlFormat.Appendable = apply(feedItems)
     
-    def f:(() => play.api.templates.HtmlFormat.Appendable) = () => apply()
+    def f:((List[FeedItem]) => play.api.templates.HtmlFormat.Appendable) = (feedItems) => apply(feedItems)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Apr 11 22:10:56 PDT 2015
-                    SOURCE: C:/Users/Daisy/Documents/GitHub/proConnect/web-app/app/views/home.scala.html
-                    HASH: 29ec02fb70aa04d5285e8e4089490e2db8b0b689
-                    MATRIX: 871->18|908->21|934->39|973->41|1041->74|1055->80|1114->118|1219->189|1233->195|1263->204|2153->1066|2182->1067|2620->1478|2648->1479|3411->2211
-                    LINES: 30->2|31->3|31->3|31->3|32->4|32->4|32->4|37->9|37->9|37->9|68->40|68->40|84->56|84->56|113->85
+                    DATE: Mon Apr 13 11:29:41 PDT 2015
+                    SOURCE: /home/beyondprosthetics/repos/school/proConnect/web-app/app/views/home.scala.html
+                    HASH: 27224be750801eac24e40908154baed57a2480ae
+                    MATRIX: 781->1|918->28|946->47|982->49|1008->67|1047->69|1114->101|1128->107|1187->145|1288->211|1303->217|1334->226|1584->440|1599->446|1661->485|1990->778|2005->784|2059->815|2129->850|2171->876|2210->877|2251->883|2291->914|2330->915|2382->931|2399->939|2425->943|2631->1113|2646->1119|2697->1148|2790->1205|2807->1213|2835->1219|2938->1286|2955->1294|2985->1302|3054->1335|3071->1343|3106->1356|3145->1359|3162->1367|3191->1374|3264->1416|3300->1421
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|39->11|39->11|39->11|49->21|49->21|49->21|65->37|65->37|65->37|67->39|67->39|67->39|68->40|68->40|68->40|69->41|69->41|69->41|73->45|73->45|73->45|74->46|74->46|74->46|77->49|77->49|77->49|78->50|78->50|78->50|78->50|78->50|78->50|82->54|83->55
                     -- GENERATED --
                 */
             
