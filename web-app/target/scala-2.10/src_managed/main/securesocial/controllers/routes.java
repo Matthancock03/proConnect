@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 // @SOURCE:C:/Users/Roya/Desktop/proConnect/web-app/conf/routes
 // @HASH:9189c68c91d9503311fcca16b03febb0cd434718
 // @DATE:Sun Apr 12 10:49:51 PDT 2015
+=======
+// @SOURCE:/home/beyondprosthetics/repos/school/proConnect/web-app/conf/routes
+// @HASH:f5690518573c79d8a33f2e87399cf0f353dec6b1
+// @DATE:Mon Apr 13 12:13:25 PDT 2015
+>>>>>>> e982e8c79cee97b72b05ee7de778fce31714ddfa
 
 package securesocial.controllers;
 
