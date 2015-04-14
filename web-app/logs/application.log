@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2015-04-13 20:18:25,384 - [INFO] - from play in pool-6-thread-5 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
@@ -63,4 +64,80 @@ Application started (Dev)
 
 2015-04-13 20:19:35,038 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
 [securesocial] user logged in : [SocialUser(IdentityId(112997115940965642866,google),eya,badal,eya badal,Some(badaleya@gmail.com),Some(https://lh3.googleusercontent.com/-symHNEEKzn8/AAAAAAAAAAI/AAAAAAAAAEc/BfhGshNjQDI/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.VQG-gDwIgQtn7hIWLadkeP45ANAiWghIvgrH8QM99hRcBATmN1RS1225wo4wle4PeiJbwaU9ohiFzA,Some(Bearer),Some(3599),None)),None)]
+=======
+2015-04-13 12:13:23,780 - [INFO] - from play in pool-6-thread-1 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2015-04-13 12:14:32,351 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-13 12:14:33,926 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-13 12:14:34,985 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-13 12:14:35,042 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-13 12:14:35,044 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-13 12:14:35,049 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-13 12:14:35,054 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-13 12:14:35,054 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-13 12:14:35,054 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-13 12:14:35,054 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-13 12:14:35,068 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-13 12:14:40,301 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] bootstrap path = securesocial/bootstrap/css/bootstrap.min.css
+
+2015-04-13 12:14:40,302 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] assets controller = controllers.ReverseAssets
+
+2015-04-13 12:14:40,304 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] favicon path = securesocial/images/favicon.png
+
+2015-04-13 12:14:40,305 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] Jquery path = securesocial/javascripts/jquery-1.7.1.min.js
+
+2015-04-13 12:14:40,306 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] custom css path = None
+
+2015-04-13 12:14:42,986 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
+
+2015-04-13 12:14:42,987 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=d2dd2f08-efd5-4b94-b357-61be741cac51]
+
+2015-04-13 12:14:46,016 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
+[securesocial] got json back [{"access_token":"ya29.VAF11-DrKbD_FZwWUm-a7DyWvVyFs_xjWyl_8x1LlJq9BbZhpMoXN7hxSHLnVh2_NPK6MW3YBLxl1Q","token_type":"Bearer","expires_in":3598,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlMDYzZGUwYzlmNjY4NmRlYjY2ZTc0NTRiMzIwMWMxMTE0ZWJhNmUifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTA3OTI1NDIxNzg4ODI3MzA5NTIxIiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6Im1hdHRoYW5jb2NrMDNAZ21haWwuY29tIiwiYXRfaGFzaCI6Ik82Vk5SYkFYeTBFNmFaTW0tQ1JfRGciLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0Mjg5NTI0NzYsImV4cCI6MTQyODk1NjA3Nn0.aAmQDE0iCXvswktRdfIbILz6sTlu1awtlulgfIW0GCuxf2w8G1h4D-QdrMLtqWdNhdOqRmLv0f3OdONs9sQnRDnt0AtrsE47KjIJPrEOSfpofhnc5T_S1544jocHBzq5I5Vit97-ac9XlnoOxBBG2fC2aUTMQSvi19WUPTRkRU8"}]
+
+2015-04-13 12:14:46,158 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
+[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.VAF11-DrKbD_FZwWUm-a7DyWvVyFs_xjWyl_8x1LlJq9BbZhpMoXN7hxSHLnVh2_NPK6MW3YBLxl1Q,Some(Bearer),Some(3598),None)),None))
+
+2015-04-13 12:14:46,507 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
+[securesocial] user logged in : [SocialUser(IdentityId(107925421788827309521,google),Matthew,Hancock,Matthew Hancock,Some(matthancock03@gmail.com),Some(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.VAF11-DrKbD_FZwWUm-a7DyWvVyFs_xjWyl_8x1LlJq9BbZhpMoXN7hxSHLnVh2_NPK6MW3YBLxl1Q,Some(Bearer),Some(3598),None)),None)]
+
+2015-04-13 12:14:51,490 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+{"articles":[{"author":"Evan Selleck","publish_date":"Mon, 13 Apr 2015 19:45:00 +0100","source":"iPhone Hacks","source_url":"http:\/\/feeds.iphonehacks.com\/iphonehacks?format=xml","summary":"When Apple finally opened the gates for third-party keyboard replacements on\u000aiOS, SwiftKey quickly became one of the most popular options available.\u000aContinue reading ->\u000a\u000a","title":"SwiftKey for iOS getting a new Theme Store soon (iPhone Hacks)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431165176?count=2&client_source=api&order=date&format=json"},{"author":"Evan Selleck","publish_date":"Mon, 13 Apr 2015 19:12:00 +0100","source":"iPhone Hacks","source_url":"http:\/\/feeds.iphonehacks.com\/iphonehacks?format=xml","summary":"At the very end of 2014, Apple began a new ad campaign entitled \"Start\u000aSomething New,\" which would eventually expand into Apple Retail Stores as\u000awell. Continue reading ->\u000a\u000a","title":"Apple and artists sued over artwork portrayed in ‘Start Something New’ ad campaign (iPhone Hacks)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431165174?count=2&client_source=api&order=date&format=json"}],"description":"Technology News","syndication_url":"http:\/\/news.feedzilla.com\/en_us\/news\/technology.rss?count=2&client_source=api&order=date","title":"Feedzilla: Technology News"}
+
+2015-04-13 12:14:51,492 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+rootNode = Mon, 13 Apr 2015 19:45:00 +0100
+
+2015-04-13 12:14:51,499 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+idNode = Mon, 13 Apr 2015 19:45:00 +0100
+>>>>>>> e982e8c79cee97b72b05ee7de778fce31714ddfa
 

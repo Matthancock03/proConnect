@@ -1,3 +1,5 @@
+@(feedItems: List[FeedItem])
+
 @import helper._
 
 @main("ProConnect") {
@@ -16,7 +18,7 @@
 
 	<div class="row clearfix">
 		<div class="col-xs-2 column">
-			<img alt="140x140" class = "img-thumbnail profileImage" src="http://i.imgur.com/PcoAz60.jpg?1" />
+			<img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")" />
 
 			<dl class="dl-horizontal">
 				<dt>
@@ -32,32 +34,26 @@
 		</div>
 
 		<div class="col-xs-6 column clearfix">
-			<!-- Feedzilla Widget BEGIN -->
-
-				<div class="feedzilla-news-widget feedzilla-9679638077504933" style="width:700px; padding-top: 50px; text-align: center; font-size: 11px; border: 0;">
-				<script type="text/javascript" src="http://widgets.feedzilla.com/news/iframe/js/widget.js"></script>
-				<script type="text/javascript">
-				new FEEDZILLA.Widget({
-					style: 'slide-top-to-bottom',
-					culture_code: 'en_us',
-					c: '30',
-					sc: '-',
-					headerBackgroundColor: '#0C98CF',
-					footerBackgroundColor: '#0C98CF',
-					title: 'ProConnect',
-					order: 'relevance',
-					count: '20',
-					w: '700',
-					h: '500',
-					timestamp: 'true',
-					scrollbar: 'false',
-					theme: 'ui-lightness',
-					className: 'feedzilla-9679638077504933'
-				});
-				</script><br />
+		<img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/header.jpg")" />
+			<div class="feed-div">
+			@for(feedItem <- feedItems){
+				@if(feedItem.publish_date != ""){
+					<a href="@feedItem.url" target="_blank" style="text-decoration: none;">
+					<div class="panel panel-default">
+						<div class="panel-body">
+						<div>
+							<img alt="" class="feed-image feed-head" src="@routes.Assets.at("images/tech.png")" />
+							<h3 class="panel-title head-text feed-head">@feedItem.title</h3>
+						</div>
+						<br>
+						<p style="padding-top: 10px;">@feedItem.summary</p>
+						<p class="foot-text">@feedItem.publish_date  @feedItem.source</p>
+					</div>
 				</div>
-
-				<!-- Feedzilla Widget END -->
+				</a>
+				}
+			}
+		</div>
 		</div>
 		<div class="col-xs-4 column">
 			<div>

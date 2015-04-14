@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/Eya/Documents/GitHub/proConnect/web-app/}web-app...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/beyondprosthetics/repos/school/proConnect/web-app/}web-app...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@44dda7da[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6a67a35d[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -9140,7 +9140,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.trace#trace-sigar-libs;0.1.5 [echo-sigar->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.trace#trace-sigar-libs;0.1.5 [echo-sigar->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT->com.typesafe.trace#trace-sigar-libs;0.1.5 [echo-sigar->master][0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\hello-play-backbone\hello-play-backbone_2.10\1.0-SNAPSHOT\resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/hello-play-backbone/hello-play-backbone_2.10/1.0-SNAPSHOT/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.3!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-jdbc_2.10;2.2.3!play-jdbc_2.10.jar[0m
@@ -9294,95 +9294,31 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-remote_2.10;2.2.4!akka-remote_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-slf4j_2.10;2.2.4!akka-slf4j_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource#sigar;1.6.4!sigar.jar[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Eya\.ivy2\local\com.typesafe.trace\trace-core-protobuf24_2.10\0.1.5\jars\trace-core-protobuf24_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/Eya/Documents/GitHub/proConnect/web-app/repository/com.typesafe.trace/trace-core-protobuf24_2.10/0.1.5/jars/trace-core-protobuf24_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar ...[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-core-protobuf24_2.10/0.1.5/trace-core-protobuf24_2.10-0.1.5.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5!trace-core-protobuf24_2.10.jar (1287ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Eya\.ivy2\local\com.typesafe.trace\trace-event-protobuf24_2.10\0.1.5\jars\trace-event-protobuf24_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/Eya/Documents/GitHub/proConnect/web-app/repository/com.typesafe.trace/trace-event-protobuf24_2.10/0.1.5/jars/trace-event-protobuf24_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar ...[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-event-protobuf24_2.10/0.1.5/trace-event-protobuf24_2.10-0.1.5.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5!trace-event-protobuf24_2.10.jar (2252ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Eya\.ivy2\local\com.typesafe.trace\protocol-protobuf24\0.1.5\jars\protocol-protobuf24.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/Eya/Documents/GitHub/proConnect/web-app/repository/com.typesafe.trace/protocol-protobuf24/0.1.5/jars/protocol-protobuf24.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar ...[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/protocol-protobuf24/0.1.5/protocol-protobuf24-0.1.5.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#protocol-protobuf24;0.1.5!protocol-protobuf24.jar (1485ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Eya\.ivy2\local\com.google.protobuf\protobuf-java\2.4.1\jars\protobuf-java.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/Eya/Documents/GitHub/proConnect/web-app/repository/com.google.protobuf/protobuf-java/2.4.1/jars/protobuf-java.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.google.protobuf#protobuf-java;2.4.1!protobuf-java.jar (1971ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Eya\.ivy2\local\org.uncommons.maths\uncommons-maths\1.2.2a\jars\uncommons-maths.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/Eya/Documents/GitHub/proConnect/web-app/repository/org.uncommons.maths/uncommons-maths/1.2.2a/jars/uncommons-maths.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.uncommons.maths#uncommons-maths;1.2.2a!uncommons-maths.jar (888ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Eya\.ivy2\local\log4j\log4j\1.2.15\jars\log4j.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/Eya/Documents/GitHub/proConnect/web-app/repository/log4j/log4j/1.2.15/jars/log4j.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] log4j#log4j;1.2.15!log4j.jar (1555ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Eya\.ivy2\local\org.aspectj\aspectjweaver\1.7.3\jars\aspectjweaver.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/Eya/Documents/GitHub/proConnect/web-app/repository/org.aspectj/aspectjweaver/1.7.3/jars/aspectjweaver.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.3/aspectjweaver-1.7.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.3/aspectjweaver-1.7.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.3/aspectjweaver-1.7.3.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.3/aspectjweaver-1.7.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.3/aspectjweaver-1.7.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.aspectj#aspectjweaver;1.7.3!aspectjweaver.jar (2898ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\Eya\.ivy2\local\com.typesafe.trace\trace-sigar-libs\0.1.5\jars\trace-sigar-libs.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/Eya/Documents/GitHub/proConnect/web-app/repository/com.typesafe.trace/trace-sigar-libs/0.1.5/jars/trace-sigar-libs.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar ...[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/trace/trace-sigar-libs/0.1.5/trace-sigar-libs-0.1.5.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.trace#trace-sigar-libs;0.1.5!trace-sigar-libs.jar (4533ms)[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3010ms :: artifacts dl 17811ms[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT compile produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT runtime produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT test produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT provided produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT optional produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT compile-internal produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT runtime-internal produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT test-internal produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT plugin produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT sources produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT docs produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT pom produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT scala-tool produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT echo-trace-compile produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-echo-trace-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT echo-trace-test produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-echo-trace-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT echo-weave produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-echo-weave.xml[0m
-[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT echo-sigar produced in C:\Users\Eya\Documents\GitHub\proConnect\web-app\target\resolution-cache\reports\hello-play-backbone-hello-play-backbone_2.10-echo-sigar.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (3010ms resolve - 17811ms download)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.trace#trace-core-protobuf24_2.10;0.1.5!trace-core-protobuf24_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.trace#trace-event-protobuf24_2.10;0.1.5!trace-event-protobuf24_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.trace#protocol-protobuf24;0.1.5!protocol-protobuf24.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.protobuf#protobuf-java;2.4.1!protobuf-java.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.uncommons.maths#uncommons-maths;1.2.2a!uncommons-maths.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] log4j#log4j;1.2.15!log4j.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.aspectj#aspectjweaver;1.7.3!aspectjweaver.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.trace#trace-sigar-libs;0.1.5!trace-sigar-libs.jar[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 9096ms :: artifacts dl 276ms[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT compile produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT runtime produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT test produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT provided produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT optional produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT compile-internal produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT runtime-internal produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT test-internal produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT plugin produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT sources produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT docs produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT pom produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT scala-tool produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT echo-trace-compile produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-echo-trace-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT echo-trace-test produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-echo-trace-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT echo-weave produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-echo-weave.xml[0m
+[0m[[0mdebug[0m] [0m	report for hello-play-backbone#hello-play-backbone_2.10;1.0-SNAPSHOT echo-sigar produced in /home/beyondprosthetics/repos/school/proConnect/web-app/target/resolution-cache/reports/hello-play-backbone-hello-play-backbone_2.10-echo-sigar.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (9096ms resolve - 276ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
