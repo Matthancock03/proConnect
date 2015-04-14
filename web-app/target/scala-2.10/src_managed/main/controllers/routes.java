@@ -1,6 +1,6 @@
 // @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
-// @HASH:99e37d748243f79c26dcad8e9fa288ed7a3cb569
-// @DATE:Mon Apr 13 20:33:58 PDT 2015
+// @HASH:f5690518573c79d8a33f2e87399cf0f353dec6b1
+// @DATE:Mon Apr 13 22:12:45 PDT 2015
 
 package controllers;
 
