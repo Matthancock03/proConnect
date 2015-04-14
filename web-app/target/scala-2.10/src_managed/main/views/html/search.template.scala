@@ -164,19 +164,11 @@ Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any
 }
                 /*
                     -- GENERATED --
-<<<<<<< HEAD
-                    DATE: Tue Apr 14 10:24:33 MST 2015
-                    SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/search.scala.html
-                    HASH: a2719fe8003ff114455fa621d60617ec4f64b749
-                    MATRIX: 775->1|884->16|923->21|949->39|988->41|1026->45|1039->51|1067->58|1275->230|1302->235|2048->950
-                    LINES: 26->1|29->1|31->3|31->3|31->3|32->4|32->4|32->4|45->17|45->17|88->60
-=======
-                    DATE: Tue Apr 14 10:44:00 PDT 2015
-                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/search.scala.html
-                    HASH: 0abd8a5b7fe78b9cbd599e0912f28ddc3629e4df
-                    MATRIX: 865->5|891->23|930->25|968->29|981->35|1009->42
+                    DATE: Tue Apr 14 15:44:42 PDT 2015
+                    SOURCE: /home/beyondprosthetics/repos/school/proConnect/web-app/app/views/search.scala.html
+                    HASH: e0b5a937e02ba86a4925413cada95cac319b7c7c
+                    MATRIX: 865->3|891->21|930->23|967->26|980->32|1008->39
                     LINES: 29->3|29->3|29->3|30->4|30->4|30->4
->>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
                     -- GENERATED --
                 */
             

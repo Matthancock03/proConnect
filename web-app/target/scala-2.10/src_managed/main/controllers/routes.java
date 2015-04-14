@@ -1,24 +1,6 @@
-<<<<<<< HEAD
-// @SOURCE:C:/Users/Eya/Documents/GitHub/proConnect/web-app/conf/routes
-// @HASH:9fb4839a32e5672e55b058bea03195c238f20e96
-// @DATE:Tue Apr 14 10:24:29 MST 2015
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// @SOURCE:C:/Users/Roya/Desktop/proConnect/web-app/conf/routes
-// @HASH:9189c68c91d9503311fcca16b03febb0cd434718
-// @DATE:Sun Apr 12 10:49:51 PDT 2015
-=======
 // @SOURCE:/home/beyondprosthetics/repos/school/proConnect/web-app/conf/routes
-// @HASH:f5690518573c79d8a33f2e87399cf0f353dec6b1
-// @DATE:Mon Apr 13 12:13:25 PDT 2015
->>>>>>> e982e8c79cee97b72b05ee7de778fce31714ddfa
-=======
-// @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
-// @HASH:f5690518573c79d8a33f2e87399cf0f353dec6b1
-// @DATE:Mon Apr 13 22:12:45 PDT 2015
->>>>>>> 111561ec00ddec99120c0157e26d4448093f470d
->>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
+// @HASH:d33415376637602def7a88abc080b8634574e055
+// @DATE:Tue Apr 14 15:44:36 PDT 2015
 
 package controllers;
 

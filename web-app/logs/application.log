@@ -1,382 +1,72 @@
-<<<<<<< HEAD
-2015-04-14 10:24:28,275 - [INFO] - from play in pool-6-thread-4 
+2015-04-14 15:44:34,701 - [INFO] - from play in pool-6-thread-2 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-04-14 10:24:55,887 - [ERROR] - from application in New I/O worker #1 
+2015-04-14 15:46:19,003 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
 
+2015-04-14 15:46:23,029 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
 
-! @6lnopec8c - Internal server error, for (GET) [/] ->
+2015-04-14 15:46:31,920 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
 
-play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatException: For input string: "<<<<<<< HEAD
-<<<<<<< HEAD
-1428981527069
-=======
-1428952477280
->>>>>>> e982e8c79cee97b72b05ee7de778fce31714ddfa
-=======
-1428983423089
->>>>>>> 3dba2c174c7146ea9f17d524ff21969458093abd
-"]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:309) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-java.lang.NumberFormatException: For input string: "<<<<<<< HEAD
-<<<<<<< HEAD
-1428981527069
-=======
-1428952477280
->>>>>>> e982e8c79cee97b72b05ee7de778fce31714ddfa
-=======
-1428983423089
->>>>>>> 3dba2c174c7146ea9f17d524ff21969458093abd
-"
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:1.8.0_25]
-	at java.lang.Long.parseLong(Long.java:589) ~[na:1.8.0_25]
-	at java.lang.Long.parseLong(Long.java:631) ~[na:1.8.0_25]
-	at scala.collection.immutable.StringLike$class.toLong(StringLike.scala:230) ~[scala-library-2.10.3.jar:na]
-	at scala.collection.immutable.StringOps.toLong(StringOps.scala:31) ~[scala-library-2.10.3.jar:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:100) ~[na:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:95) ~[na:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:35) ~[scala-library-2.10.3.jar:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:34) ~[scala-library-2.10.3.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library-2.10.3.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_25]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_25]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_25]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+2015-04-14 15:46:31,979 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+[securesocial] calling deleteExpiredTokens()
 
-2015-04-14 10:24:56,049 - [WARN] - from play in New I/O worker #1 
-No application found at invoker init
+2015-04-14 15:46:31,984 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
 
-2015-04-14 10:24:58,935 - [ERROR] - from application in New I/O worker #2 
+2015-04-14 15:46:31,987 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
 
+2015-04-14 15:46:31,993 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
 
-! @6lnopego5 - Internal server error, for (GET) [/] ->
+2015-04-14 15:46:31,993 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
 
-play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatException: For input string: "<<<<<<< HEAD
-<<<<<<< HEAD
-1428981527069
-=======
-1428952477280
->>>>>>> e982e8c79cee97b72b05ee7de778fce31714ddfa
-=======
-1428983423089
->>>>>>> 3dba2c174c7146ea9f17d524ff21969458093abd
-"]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:309) ~[na:na]
-=======
-2015-04-14 10:43:49,976 - [INFO] - from play in pool-6-thread-6 
-Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2015-04-14 15:46:31,994 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
 
-2015-04-14 10:44:27,822 - [ERROR] - from application in New I/O worker #1 
+2015-04-14 15:46:31,994 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
 
+2015-04-14 15:46:32,033 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
 
-! @6lnp233il - Internal server error, for (GET) [/forum] ->
+2015-04-14 15:51:31,979 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
+[securesocial] calling deleteExpiredTokens()
 
-play.PlayExceptions$CompilationException: Compilation error[illegal start of type declaration]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
->>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-<<<<<<< HEAD
-java.lang.NumberFormatException: For input string: "<<<<<<< HEAD
-<<<<<<< HEAD
-1428981527069
-=======
-1428952477280
->>>>>>> e982e8c79cee97b72b05ee7de778fce31714ddfa
-=======
-1428983423089
->>>>>>> 3dba2c174c7146ea9f17d524ff21969458093abd
-"
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:1.8.0_25]
-	at java.lang.Long.parseLong(Long.java:589) ~[na:1.8.0_25]
-	at java.lang.Long.parseLong(Long.java:631) ~[na:1.8.0_25]
-	at scala.collection.immutable.StringLike$class.toLong(StringLike.scala:230) ~[scala-library-2.10.3.jar:na]
-	at scala.collection.immutable.StringOps.toLong(StringOps.scala:31) ~[scala-library-2.10.3.jar:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:100) ~[na:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:95) ~[na:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:35) ~[scala-library-2.10.3.jar:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:34) ~[scala-library-2.10.3.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library-2.10.3.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_25]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_25]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_25]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+2015-04-14 15:53:09,534 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
+[securesocial] bootstrap path = securesocial/bootstrap/css/bootstrap.min.css
 
-2015-04-14 10:25:08,716 - [ERROR] - from application in New I/O worker #2 
+2015-04-14 15:53:09,535 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
+[securesocial] assets controller = controllers.ReverseAssets
 
+2015-04-14 15:53:09,564 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
+[securesocial] favicon path = securesocial/images/favicon.png
 
-! @6lnopf5a9 - Internal server error, for (GET) [/] ->
+2015-04-14 15:53:09,565 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
+[securesocial] Jquery path = securesocial/javascripts/jquery-1.7.1.min.js
 
-play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatException: For input string: "<<<<<<< HEAD
-<<<<<<< HEAD
-1428981527069
-=======
-1428952477280
->>>>>>> e982e8c79cee97b72b05ee7de778fce31714ddfa
-=======
-1428983423089
->>>>>>> 3dba2c174c7146ea9f17d524ff21969458093abd
-"]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:309) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-java.lang.NumberFormatException: For input string: "<<<<<<< HEAD
-<<<<<<< HEAD
-1428981527069
-=======
-1428952477280
->>>>>>> e982e8c79cee97b72b05ee7de778fce31714ddfa
-=======
-1428983423089
->>>>>>> 3dba2c174c7146ea9f17d524ff21969458093abd
-"
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:1.8.0_25]
-	at java.lang.Long.parseLong(Long.java:589) ~[na:1.8.0_25]
-	at java.lang.Long.parseLong(Long.java:631) ~[na:1.8.0_25]
-	at scala.collection.immutable.StringLike$class.toLong(StringLike.scala:230) ~[scala-library-2.10.3.jar:na]
-	at scala.collection.immutable.StringOps.toLong(StringOps.scala:31) ~[scala-library-2.10.3.jar:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:100) ~[na:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:95) ~[na:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:35) ~[scala-library-2.10.3.jar:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:34) ~[scala-library-2.10.3.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library-2.10.3.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_25]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_25]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_25]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+2015-04-14 15:53:09,565 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
+[securesocial] custom css path = None
 
-2015-04-14 10:27:05,179 - [ERROR] - from application in New I/O worker #2 
+2015-04-14 15:53:16,463 - [INFO] - from application in pool-6-thread-2 
+[securesocial] unloaded identity provider: userpass
 
+2015-04-14 15:53:16,467 - [INFO] - from application in pool-6-thread-2 
+[securesocial] unloaded identity provider: google
 
-! @6lnopllhj - Internal server error, for (GET) [/] ->
+2015-04-14 15:53:16,468 - [INFO] - from application in pool-6-thread-2 
+[securesocial] unloaded identity provider: facebook
 
-play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatException: For input string: "<<<<<<< HEAD
-<<<<<<< HEAD
-1428981527069
-=======
-1428952477280
->>>>>>> e982e8c79cee97b72b05ee7de778fce31714ddfa
-=======
-1428983423089
->>>>>>> 3dba2c174c7146ea9f17d524ff21969458093abd
-"]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:309) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-java.lang.NumberFormatException: For input string: "<<<<<<< HEAD
-<<<<<<< HEAD
-1428981527069
-=======
-1428952477280
->>>>>>> e982e8c79cee97b72b05ee7de778fce31714ddfa
-=======
-1428983423089
->>>>>>> 3dba2c174c7146ea9f17d524ff21969458093abd
-"
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:1.8.0_25]
-	at java.lang.Long.parseLong(Long.java:589) ~[na:1.8.0_25]
-	at java.lang.Long.parseLong(Long.java:631) ~[na:1.8.0_25]
-	at scala.collection.immutable.StringLike$class.toLong(StringLike.scala:230) ~[scala-library-2.10.3.jar:na]
-	at scala.collection.immutable.StringOps.toLong(StringOps.scala:31) ~[scala-library-2.10.3.jar:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:100) ~[na:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:95) ~[na:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:35) ~[scala-library-2.10.3.jar:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:34) ~[scala-library-2.10.3.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library-2.10.3.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_25]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_25]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_25]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+2015-04-14 15:53:16,470 - [INFO] - from application in pool-6-thread-2 
+[securesocial] unloaded identity provider: twitter
 
-2015-04-14 12:01:19,351 - [ERROR] - from application in New I/O worker #5 
+2015-04-14 15:53:16,479 - [INFO] - from application in pool-6-thread-2 
+[securesocial] unloaded password hasher bcrypt
 
-
-! @6lnpc5dll - Internal server error, for (GET) [/] ->
-
-play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatException: For input string: "<<<<<<< HEAD
-<<<<<<< HEAD
-1428981527069
-=======
-1428952477280
->>>>>>> e982e8c79cee97b72b05ee7de778fce31714ddfa
-=======
-1428983423089
->>>>>>> 3dba2c174c7146ea9f17d524ff21969458093abd
-"]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:309) ~[na:na]
-=======
-
-2015-04-14 10:44:28,325 - [WARN] - from play in New I/O worker #1 
-No application found at invoker init
-
-2015-04-14 10:48:29,144 - [ERROR] - from application in New I/O worker #2 
-
-
-! @6lnp2gn0k - Internal server error, for (GET) [/forum] ->
-
-play.PlayExceptions$CompilationException: Compilation error[illegal start of type declaration]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
->>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-<<<<<<< HEAD
-java.lang.NumberFormatException: For input string: "<<<<<<< HEAD
-<<<<<<< HEAD
-1428981527069
-=======
-1428952477280
->>>>>>> e982e8c79cee97b72b05ee7de778fce31714ddfa
-=======
-1428983423089
->>>>>>> 3dba2c174c7146ea9f17d524ff21969458093abd
-"
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:1.8.0_25]
-	at java.lang.Long.parseLong(Long.java:589) ~[na:1.8.0_25]
-	at java.lang.Long.parseLong(Long.java:631) ~[na:1.8.0_25]
-	at scala.collection.immutable.StringLike$class.toLong(StringLike.scala:230) ~[scala-library-2.10.3.jar:na]
-	at scala.collection.immutable.StringOps.toLong(StringOps.scala:31) ~[scala-library-2.10.3.jar:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:100) ~[na:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:95) ~[na:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:35) ~[scala-library-2.10.3.jar:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:34) ~[scala-library-2.10.3.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library-2.10.3.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_25]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_25]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_25]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
-=======
->>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
+2015-04-14 15:53:16,489 - [INFO] - from play in pool-6-thread-2 
+Shutdown application default Akka system.
 

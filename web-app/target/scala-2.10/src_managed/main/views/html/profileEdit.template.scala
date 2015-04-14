@@ -114,15 +114,10 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-<<<<<<< HEAD
-                    DATE: Tue Apr 14 10:24:33 MST 2015
-                    SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/profileEdit.scala.html
-=======
-                    DATE: Tue Apr 14 10:44:00 PDT 2015
-                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/profileEdit.scala.html
->>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
-                    HASH: 806eda70b428660e27fe54d459f68663624f1950
-                    MATRIX: 878->18|915->21|941->39|979->40|1018->45|1032->51|1060->58|1129->92|1143->98|1209->143|1641->540|1656->546|1705->586|1744->587|4813->3625|4857->3638
+                    DATE: Tue Apr 14 15:44:42 PDT 2015
+                    SOURCE: /home/beyondprosthetics/repos/school/proConnect/web-app/app/views/profileEdit.scala.html
+                    HASH: a5e04702a53240ba7840589ce61caf7eb9242683
+                    MATRIX: 877->17|913->19|939->37|977->38|1015->42|1029->48|1057->55|1125->88|1139->94|1205->139|1626->525|1641->531|1690->571|1729->572|4740->3552|4782->3563
                     LINES: 30->2|31->3|31->3|31->3|32->4|32->4|32->4|33->5|33->5|33->5|44->16|44->16|44->16|44->16|102->74|104->76
                     -- GENERATED --
                 */
