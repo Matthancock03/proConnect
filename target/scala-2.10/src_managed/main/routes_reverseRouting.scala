@@ -1,6 +1,6 @@
-// @SOURCE:/home/beyondprosthetics/repos/school/proConnect/web-app/conf/routes
+// @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/conf/routes
 // @HASH:f5690518573c79d8a33f2e87399cf0f353dec6b1
-// @DATE:Mon Apr 13 11:21:07 PDT 2015
+// @DATE:Mon Apr 13 20:00:22 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._

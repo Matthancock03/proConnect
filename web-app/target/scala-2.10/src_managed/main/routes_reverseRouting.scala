@@ -1,6 +1,6 @@
-// @SOURCE:/home/beyondprosthetics/repos/school/proConnect/web-app/conf/routes
-// @HASH:f5690518573c79d8a33f2e87399cf0f353dec6b1
-// @DATE:Mon Apr 13 12:13:25 PDT 2015
+// @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
+// @HASH:99e37d748243f79c26dcad8e9fa288ed7a3cb569
+// @DATE:Mon Apr 13 20:33:58 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,6 +15,7 @@ import Router.queryString
 
 // @LINE:19
 // @LINE:18
+// @LINE:16
 // @LINE:15
 // @LINE:14
 // @LINE:13
@@ -66,6 +67,7 @@ def at(file:String): Call = {
 }
                           
 
+// @LINE:16
 // @LINE:13
 // @LINE:12
 // @LINE:11
@@ -108,6 +110,12 @@ def connections(): Call = {
 // @LINE:12
 def about(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "about")
+}
+                                                
+
+// @LINE:16
+def search(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "search")
 }
                                                 
     
@@ -294,6 +302,7 @@ def login(): Call = {
 
 // @LINE:19
 // @LINE:18
+// @LINE:16
 // @LINE:15
 // @LINE:14
 // @LINE:13
@@ -360,6 +369,7 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:16
 // @LINE:13
 // @LINE:12
 // @LINE:11
@@ -430,6 +440,17 @@ def about : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "about"})
+      }
+   """
+)
+                        
+
+// @LINE:16
+def search : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.search",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "search"})
       }
    """
 )
@@ -708,6 +729,7 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
 
 // @LINE:19
 // @LINE:18
+// @LINE:16
 // @LINE:15
 // @LINE:14
 // @LINE:13
@@ -760,6 +782,7 @@ def at(file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
+// @LINE:16
 // @LINE:13
 // @LINE:12
 // @LINE:11
@@ -802,6 +825,12 @@ def connections(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:12
 def about(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.about(), HandlerDef(this, "controllers.Application", "about", Seq(), "GET", """""", _prefix + """about""")
+)
+                      
+
+// @LINE:16
+def search(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.search(), HandlerDef(this, "controllers.Application", "search", Seq(), "GET", """""", _prefix + """search""")
 )
                       
     

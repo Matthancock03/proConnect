@@ -24,9 +24,11 @@ object navbar extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable
 
     /**/
     def apply():play.api.templates.HtmlFormat.Appendable = {
-        _display_ {
+        _display_ {import helper._
 
-Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
+
+Seq[Any](format.raw/*2.1*/("""
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -36,31 +38,31 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href=""""),_display_(Seq[Any](/*12.38*/routes/*12.44*/.DbController.home())),format.raw/*12.64*/("""">Proconnect</a>
+      <a class="navbar-brand" href=""""),_display_(Seq[Any](/*13.38*/routes/*13.44*/.DbController.home())),format.raw/*13.64*/("""">Proconnect</a>
     </div>
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li><a href=""""),_display_(Seq[Any](/*17.21*/routes/*17.27*/.DbController.home())),format.raw/*17.47*/("""">Home</a></li>
-      <li><a href=""""),_display_(Seq[Any](/*18.21*/routes/*18.27*/.DbController.editProfile())),format.raw/*18.54*/("""">Profile</a></li>
-      <li><a href=""""),_display_(Seq[Any](/*19.21*/routes/*19.27*/.Application.connections())),format.raw/*19.53*/("""">Connections</a></li>
- <li><a href=""""),_display_(Seq[Any](/*20.16*/routes/*20.22*/.Application.forum())),format.raw/*20.42*/("""">Forums</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*18.21*/routes/*18.27*/.DbController.home())),format.raw/*18.47*/("""">Home</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*19.21*/routes/*19.27*/.DbController.editProfile())),format.raw/*19.54*/("""">Profile</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*20.21*/routes/*20.27*/.Application.connections())),format.raw/*20.53*/("""">Connections</a></li>
+ <li><a href=""""),_display_(Seq[Any](/*21.16*/routes/*21.22*/.Application.forum())),format.raw/*21.42*/("""">Forums</a></li>
     </ul>
-    <form class="navbar-form navbar-left" role="search">
+    """),_display_(Seq[Any](/*23.6*/helper/*23.12*/.form(action = routes.Application.search(), 'class -> "navbar-form navbar-left")/*23.92*/ {_display_(Seq[Any](format.raw/*23.94*/("""
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
+        <input type="text" class="form-control" placeholder="Search" name="query" id="query">
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+      """)))})),format.raw/*28.8*/("""
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account<span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
           <li><a href="#">Settings</a></li>
-          <li><a href=""""),_display_(Seq[Any](/*33.25*/routes/*33.31*/.Application.help())),format.raw/*33.50*/("""">Help</a></li>
-          <li><a href=""""),_display_(Seq[Any](/*34.25*/routes/*34.31*/.Application.about())),format.raw/*34.51*/("""">About ProConnect</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*34.25*/routes/*34.31*/.Application.help())),format.raw/*34.50*/("""">Help</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*35.25*/routes/*35.31*/.Application.about())),format.raw/*35.51*/("""">About ProConnect</a></li>
           <li class="divider"></li>
-          <li><a href=""""),_display_(Seq[Any](/*36.25*/securesocial/*36.37*/.controllers.routes.LoginPage.logout().absoluteURL())),format.raw/*36.89*/("""">Sign Out</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*37.25*/securesocial/*37.37*/.controllers.routes.LoginPage.logout().absoluteURL())),format.raw/*37.89*/("""">Sign Out</a></li>
         </ul>
       </li>
     </ul>
@@ -79,11 +81,11 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Apr 13 12:13:29 PDT 2015
-                    SOURCE: /home/beyondprosthetics/repos/school/proConnect/web-app/app/views/navbar.scala.html
-                    HASH: 99be731f5d21d4072bb620f1a218b9178f595ba1
-                    MATRIX: 856->1|1413->522|1428->528|1470->548|1733->775|1748->781|1790->801|1862->837|1877->843|1926->870|2001->909|2016->915|2064->941|2138->979|2153->985|2195->1005|2843->1617|2858->1623|2899->1642|2975->1682|2990->1688|3032->1708|3156->1796|3177->1808|3251->1860
-                    LINES: 29->2|39->12|39->12|39->12|44->17|44->17|44->17|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|60->33|60->33|60->33|61->34|61->34|61->34|63->36|63->36|63->36
+                    DATE: Mon Apr 13 20:49:40 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/navbar.scala.html
+                    HASH: 3c49b13a2b66af62d232dc0c5445725ef837bafc
+                    MATRIX: 872->17|1430->539|1445->545|1487->565|1750->792|1765->798|1807->818|1879->854|1894->860|1943->887|2018->926|2033->932|2081->958|2155->996|2170->1002|2212->1022|2280->1055|2295->1061|2384->1141|2424->1143|2669->1357|3039->1691|3054->1697|3095->1716|3171->1756|3186->1762|3228->1782|3352->1870|3373->1882|3447->1934
+                    LINES: 30->2|41->13|41->13|41->13|46->18|46->18|46->18|47->19|47->19|47->19|48->20|48->20|48->20|49->21|49->21|49->21|51->23|51->23|51->23|51->23|56->28|62->34|62->34|62->34|63->35|63->35|63->35|65->37|65->37|65->37
                     -- GENERATED --
                 */
             
