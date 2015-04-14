@@ -1,227 +1,36 @@
-2015-04-13 11:21:05,976 - [INFO] - from play in pool-6-thread-3 
+2015-04-13 20:31:09,008 - [INFO] - from play in pool-6-thread-3 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-04-13 11:23:12,785 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-13 20:32:02,395 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-04-13 11:23:14,483 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-13 20:32:03,062 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
 
-2015-04-13 11:23:15,888 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-13 20:32:03,567 - [INFO] - from play in play-internal-execution-context-1 
 Starting application default Akka system.
 
-2015-04-13 11:23:15,948 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-13 20:32:03,636 - [DEBUG] - from application in play-akka.actor.default-dispatcher-3 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-13 20:32:03,643 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded user service: class plugins.InMemoryUserService
 
-2015-04-13 11:23:15,949 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-13 11:23:15,953 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-13 20:32:03,647 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded password hasher bcrypt
 
-2015-04-13 11:23:15,968 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-13 20:32:03,650 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: twitter
 
-2015-04-13 11:23:15,969 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-13 20:32:03,652 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: facebook
 
-2015-04-13 11:23:15,969 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-13 20:32:03,653 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: google
 
-2015-04-13 11:23:15,969 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-13 20:32:03,653 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: userpass
 
-2015-04-13 11:23:16,002 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-13 20:32:03,662 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
-
-2015-04-13 11:23:21,310 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
-[securesocial] bootstrap path = securesocial/bootstrap/css/bootstrap.min.css
-
-2015-04-13 11:23:21,311 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
-[securesocial] assets controller = controllers.ReverseAssets
-
-2015-04-13 11:23:21,314 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
-[securesocial] favicon path = securesocial/images/favicon.png
-
-2015-04-13 11:23:21,315 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
-[securesocial] Jquery path = securesocial/javascripts/jquery-1.7.1.min.js
-
-2015-04-13 11:23:21,315 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
-[securesocial] custom css path = None
-
-2015-04-13 11:23:24,012 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
-[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
-
-2015-04-13 11:23:24,015 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
-[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=20c4743a-7d78-462a-9cb4-96ca2b38b0d5]
-
-2015-04-13 11:23:27,469 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
-[securesocial] got json back [{"access_token":"ya29.VAFsWxS8zyPOWuRbcQE_naynNMTx39qxHQqBaRl6XBnFr_jo8DROkJ4uuVWRQ71SIl37RbbS638uvg","token_type":"Bearer","expires_in":3599,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlMDYzZGUwYzlmNjY4NmRlYjY2ZTc0NTRiMzIwMWMxMTE0ZWJhNmUifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTA3OTI1NDIxNzg4ODI3MzA5NTIxIiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6Im1hdHRoYW5jb2NrMDNAZ21haWwuY29tIiwiYXRfaGFzaCI6ImpfS0xTaUNsWHlmU3lZUGwxLXg1NVEiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0Mjg5NDkzOTcsImV4cCI6MTQyODk1Mjk5N30.XN5EZmkIdoPcXLQrasAr4jMdinEi2rezNihZEbx2PWe4hz3kRuoNc28gI9mYIihEFIquQNQNLAzn87rRNGECTj5ak5tPxI16xHlqJHQ3rMiU5YhGTsz_DqsIefDeyTaGvrccqxOQ_zCuK5In9AQ9gaksFIZiaw9GiO3DjX-xxn4"}]
-
-2015-04-13 11:23:27,745 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
-[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.VAFsWxS8zyPOWuRbcQE_naynNMTx39qxHQqBaRl6XBnFr_jo8DROkJ4uuVWRQ71SIl37RbbS638uvg,Some(Bearer),Some(3599),None)),None))
-
-2015-04-13 11:23:33,176 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
-[securesocial] user logged in : [SocialUser(IdentityId(107925421788827309521,google),Matthew,Hancock,Matthew Hancock,Some(matthancock03@gmail.com),Some(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.VAFsWxS8zyPOWuRbcQE_naynNMTx39qxHQqBaRl6XBnFr_jo8DROkJ4uuVWRQ71SIl37RbbS638uvg,Some(Bearer),Some(3599),None)),None)]
-
-2015-04-13 11:27:29,598 - [DEBUG] - from application in play-akka.actor.default-dispatcher-17 
-{"articles":[{"author":"Joseph Keller","publish_date":"Mon, 13 Apr 2015 18:58:00 +0100","source":"TheIphoneBlog?format=xml","source_url":"http:\/\/feeds.feedburner.com\/TheIphoneBlog?format=xml","summary":"Apple's new Swift programming language is proving quite popular with\u000adevelopers, according to a new survey.\u000a\u000aMore than three-quarters of the developers currently using Swift have said\u000athat they plan to continue using it. Swift has proven more popular than the\u000alikes of C++ and Rust, according to the Stack Overflow 2015 Developer Survey.\u000aHowever, Swift is only ninth on the list of languages and technologies that\u000adevelopers look forward to using.\u000a\u000aSwift was first introduced at WWDC 2014. Presented as the next generation of\u000aprogramming for Apple devices, Swift is able to sit alongside Objective-C code\u000ain apps, or stand on its own. Swift also continues to grow and change, with\u000athe language recently hitting version 1.2 with the release of Xcode 6.3.\u000a\u000aFor its part, Objective-C, the primary language used for developing apps on\u000aiOS and Mac, also made some top spots on the list. While only number 12 on the\u000alist of most popular technologies for 2015, the language did claim the top\u000aspot in monetary compensation for developers.\u000a\u000aYou can read the whole report at Stack Overflow at the link below.\u000a\u000aSource: Stack Overflow\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a","title":"Developers are loving Apple's Swift programming language (TheIphoneBlog?format=xml)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431158192?count=2&client_source=api&order=date&format=json"},{"author":"Andy Meek","publish_date":"Mon, 13 Apr 2015 18:11:00 +0100","source":"The Boy Genius Report","source_url":"http:\/\/feeds.feedburner.com\/TheBoyGeniusReport?format=xml","summary":"For the next chapter of their careers, two prominent technologists from the\u000aObama 2012 re-election campaign decided to trade politics for the startup\u000alife, building some of their experiences and insights from the campaign into\u000athe foundation of their newly launched Chicago-based venture called Modest.\u000aModest’s co-founders are Harper Reed, the highly regarded CTO of the Obama\u000a2012 campaign, and Dylan Richard, the campaign’s director of engineering. Reed\u000atells BGR that he and Richard had been “hovering around ideas” about how to\u000aimprove the e-commerce experience on mobile for a while now, well before the\u000acampaign. Outside of politics, for example, Reed’s past experience includes a\u000astint as the CTO at T-shirt design company Threadless, while Richard is, in\u000aaddition\u000a\u000a","title":"EXCLUSIVE INTERVIEW -- Life after Obama: Why the president's 2012 campaign CTO left politics (The Boy Genius Report)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431157992?count=2&client_source=api&order=date&format=json"}],"description":"Technology News","syndication_url":"http:\/\/news.feedzilla.com\/en_us\/news\/technology.rss?count=2&client_source=api&order=date","title":"Feedzilla: Technology News"}
-
-2015-04-13 11:27:29,603 - [DEBUG] - from application in play-akka.actor.default-dispatcher-17 
-rootNode = Mon, 13 Apr 2015 18:58:00 +0100
-
-2015-04-13 11:27:29,604 - [DEBUG] - from application in play-akka.actor.default-dispatcher-17 
-idNode = Mon, 13 Apr 2015 18:58:00 +0100
-
-2015-04-13 11:27:30,044 - [DEBUG] - from application in play-akka.actor.default-dispatcher-17 
-{"articles":[{"author":"Joseph Keller","publish_date":"Mon, 13 Apr 2015 18:58:00 +0100","source":"TheIphoneBlog?format=xml","source_url":"http:\/\/feeds.feedburner.com\/TheIphoneBlog?format=xml","summary":"Apple's new Swift programming language is proving quite popular with\u000adevelopers, according to a new survey.\u000a\u000aMore than three-quarters of the developers currently using Swift have said\u000athat they plan to continue using it. Swift has proven more popular than the\u000alikes of C++ and Rust, according to the Stack Overflow 2015 Developer Survey.\u000aHowever, Swift is only ninth on the list of languages and technologies that\u000adevelopers look forward to using.\u000a\u000aSwift was first introduced at WWDC 2014. Presented as the next generation of\u000aprogramming for Apple devices, Swift is able to sit alongside Objective-C code\u000ain apps, or stand on its own. Swift also continues to grow and change, with\u000athe language recently hitting version 1.2 with the release of Xcode 6.3.\u000a\u000aFor its part, Objective-C, the primary language used for developing apps on\u000aiOS and Mac, also made some top spots on the list. While only number 12 on the\u000alist of most popular technologies for 2015, the language did claim the top\u000aspot in monetary compensation for developers.\u000a\u000aYou can read the whole report at Stack Overflow at the link below.\u000a\u000aSource: Stack Overflow\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a\u000a","title":"Developers are loving Apple's Swift programming language (TheIphoneBlog?format=xml)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431158192?count=2&client_source=api&order=date&format=json"},{"author":"Andy Meek","publish_date":"Mon, 13 Apr 2015 18:11:00 +0100","source":"The Boy Genius Report","source_url":"http:\/\/feeds.feedburner.com\/TheBoyGeniusReport?format=xml","summary":"For the next chapter of their careers, two prominent technologists from the\u000aObama 2012 re-election campaign decided to trade politics for the startup\u000alife, building some of their experiences and insights from the campaign into\u000athe foundation of their newly launched Chicago-based venture called Modest.\u000aModest’s co-founders are Harper Reed, the highly regarded CTO of the Obama\u000a2012 campaign, and Dylan Richard, the campaign’s director of engineering. Reed\u000atells BGR that he and Richard had been “hovering around ideas” about how to\u000aimprove the e-commerce experience on mobile for a while now, well before the\u000acampaign. Outside of politics, for example, Reed’s past experience includes a\u000astint as the CTO at T-shirt design company Threadless, while Richard is, in\u000aaddition\u000a\u000a","title":"EXCLUSIVE INTERVIEW -- Life after Obama: Why the president's 2012 campaign CTO left politics (The Boy Genius Report)","url":"http:\/\/news.feedzilla.com\/en_us\/stories\/technology\/431157992?count=2&client_source=api&order=date&format=json"}],"description":"Technology News","syndication_url":"http:\/\/news.feedzilla.com\/en_us\/news\/technology.rss?count=2&client_source=api&order=date","title":"Feedzilla: Technology News"}
-
-2015-04-13 11:27:30,047 - [DEBUG] - from application in play-akka.actor.default-dispatcher-17 
-rootNode = Mon, 13 Apr 2015 18:58:00 +0100
-
-2015-04-13 11:27:30,048 - [DEBUG] - from application in play-akka.actor.default-dispatcher-17 
-idNode = Mon, 13 Apr 2015 18:58:00 +0100
-
-2015-04-13 11:27:38,130 - [ERROR] - from play in play-internal-execution-context-1 
-Cannot invoke the action, eventually got an error: java.util.concurrent.TimeoutException: Request reached time out of 120000 ms after 120165 ms
-
-2015-04-13 11:27:38,250 - [ERROR] - from application in play-internal-execution-context-1 
-
-
-! @6lni0ij7k - Internal server error, for (GET) [/feedZilla] ->
-
-play.api.Application$$anon$1: Execution exception[[TimeoutException: Request reached time out of 120000 ms after 120165 ms]]
-	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
-	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
-	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
-java.util.concurrent.TimeoutException: Request reached time out of 120000 ms after 120165 ms
-	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.expire(NettyAsyncHttpProvider.java:1773) ~[async-http-client-1.7.18.jar:na]
-	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.run(NettyAsyncHttpProvider.java:1794) ~[async-http-client-1.7.18.jar:na]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_40]
-	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) ~[na:1.8.0_40]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_40]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) ~[na:1.8.0_40]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_40]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_40]
-	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_40]
-
-2015-04-13 11:27:38,479 - [ERROR] - from play in play-internal-execution-context-1 
-Cannot invoke the action, eventually got an error: java.util.concurrent.TimeoutException: Request reached time out of 120000 ms after 120164 ms
-
-2015-04-13 11:27:38,489 - [ERROR] - from application in play-internal-execution-context-1 
-
-
-! @6lni0ijjf - Internal server error, for (GET) [/feedZilla] ->
-
-play.api.Application$$anon$1: Execution exception[[TimeoutException: Request reached time out of 120000 ms after 120164 ms]]
-	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
-	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
-	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
-java.util.concurrent.TimeoutException: Request reached time out of 120000 ms after 120164 ms
-	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.expire(NettyAsyncHttpProvider.java:1773) ~[async-http-client-1.7.18.jar:na]
-	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.run(NettyAsyncHttpProvider.java:1794) ~[async-http-client-1.7.18.jar:na]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_40]
-	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) ~[na:1.8.0_40]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) ~[na:1.8.0_40]
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) ~[na:1.8.0_40]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_40]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_40]
-	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_40]
-
-2015-04-13 11:28:15,956 - [DEBUG] - from application in play-akka.actor.default-dispatcher-19 
-[securesocial] calling deleteExpiredTokens()
-
-2015-04-13 11:28:48,113 - [DEBUG] - from application in play-akka.actor.default-dispatcher-23 
-User already logged in, skipping login page. Redirecting to /loginUser
-
-2015-04-13 11:30:03,803 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] unloaded identity provider: userpass
-
-2015-04-13 11:30:03,919 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] unloaded identity provider: google
-
-2015-04-13 11:30:03,920 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] unloaded identity provider: facebook
-
-2015-04-13 11:30:03,921 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] unloaded identity provider: twitter
-
-2015-04-13 11:30:03,972 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] unloaded password hasher bcrypt
-
-2015-04-13 11:30:04,065 - [INFO] - from play in play-internal-execution-context-1 
-Shutdown application default Akka system.
-
-2015-04-13 11:30:10,524 - [INFO] - from play in play-internal-execution-context-1 
-database [default] connected at jdbc:h2:mem:play
-
-2015-04-13 11:30:12,345 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2015-04-13 11:30:12,368 - [INFO] - from play in play-internal-execution-context-1 
-Starting application default Akka system.
-
-2015-04-13 11:30:12,374 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] loaded user service: class plugins.InMemoryUserService
-
-2015-04-13 11:30:12,375 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] loaded password hasher bcrypt
-
-2015-04-13 11:30:12,376 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] loaded identity provider: twitter
-
-2015-04-13 11:30:12,376 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] loaded identity provider: facebook
-
-2015-04-13 11:30:12,376 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] loaded identity provider: google
-
-2015-04-13 11:30:12,376 - [INFO] - from application in play-internal-execution-context-1 
-[securesocial] loaded identity provider: userpass
-
-2015-04-13 11:30:12,377 - [INFO] - from play in play-internal-execution-context-1 
-Application started (Dev)
-
-2015-04-13 11:30:12,376 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
-[securesocial] calling deleteExpiredTokens()
 
