@@ -59,12 +59,52 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
         <div class="col-xs-3 column">
     		</div>
         <div class="col-xs-6 column">
-          <h1 class ="text-center">About Page Coming Soon</h1>
+
+
+
+
+
+
+
+
+       
+                    <h3 style="color:green",class ="text-left">  <b> About us </b>
+                    <p> 
+                    Welcome to Proconnect, a professional networking service - a networking service that helps professional to connect with worlds of professions
+                     </p>
+</h3>
+<p></p>
+                    <h3 style="color:black",class ="text-left",style="font-size:200%"> <b>Mission</b>
+                    <p>
+                     Our Mission is to help people to create a profile and connect with other professionals, to join discussions, share experiences, and make announcements.
+                    </p>
+</h3> 
+<p></p>
+
+                   <h3 style="color:green",class ="text-left">  <b>Information</b>
+                    <p> 
+                   Procennect is publicly held and has a diversified business model
+                    </p>
+                    <p></p>
+                    <p></p>
+                    <p style="color:black">                  
+                      For more information about our company, please visit our Company Page.
+                      </p>
+                    <p>
+                      
+                    </p>
+                    <p></p>
+             <p>
+              For more information, please contact us at proconect.com.
+             </p>
+          
+   </h3>
+
         </div>
         <div class="col-xs-3 column">
         </div>
       </div>
-""")))})),format.raw/*39.2*/("""
+""")))})),format.raw/*79.2*/("""
 """))}
     }
     
@@ -77,11 +117,11 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Apr 11 16:14:17 MST 2015
+                    DATE: Mon Apr 13 20:18:30 MST 2015
                     SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/about.scala.html
-                    HASH: 69d8709c29f3a667f35a4511f7b2094315a45cc0
-                    MATRIX: 864->1|890->19|928->20|995->52|1009->58|1070->98|1645->637|1666->649|1740->700|2385->1314
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|67->39
+                    HASH: 8195ddc2575694defe6b02af91b33aaf1c672738
+                    MATRIX: 864->1|890->19|928->20|995->52|1009->58|1070->98|1645->637|1666->649|1740->700|3711->2640
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|107->79
                     -- GENERATED --
                 */
             
