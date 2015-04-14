@@ -130,8 +130,13 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Tue Apr 14 10:24:33 MST 2015
                     SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/connections.scala.html
+=======
+                    DATE: Tue Apr 14 10:43:58 PDT 2015
+                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/connections.scala.html
+>>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
                     HASH: 96919da79489e54ae29b3d14f875957499f71aa4
                     MATRIX: 870->1|896->19|934->20|973->25|987->31|1015->38|1060->53
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|34->6

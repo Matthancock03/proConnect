@@ -11,7 +11,7 @@ import play.Logger;
 import securesocial.core.*;
 import securesocial.*;
 import securesocial.core.java.SecureSocial;
-import play.data.DynamicForm;
+
 
 
 public class Application extends Controller{
@@ -30,15 +30,13 @@ public class Application extends Controller{
     return ok(splash.render());
   }
 
-  public static Result search(){
-    DynamicForm requestData = Form.form().bindFromRequest();
-    String query = requestData.get("query");
-    return ok(search.render(query));
-  }
-
 
   public static Result help(){
     return ok(help.render());
+  }
+
+  public static Result search(){
+    return ok(search.render());
   }
 
   @SecureSocial.SecuredAction

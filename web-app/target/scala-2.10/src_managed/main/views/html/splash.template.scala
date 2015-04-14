@@ -123,8 +123,13 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Tue Apr 14 10:24:33 MST 2015
                     SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/splash.scala.html
+=======
+                    DATE: Tue Apr 14 10:44:00 PDT 2015
+                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/splash.scala.html
+>>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
                     HASH: 6cc2c73fb6342667324ec67ec58542dbc69977a1
                     MATRIX: 865->1|891->19|929->20|996->52|1010->58|1071->98|2345->1336|2360->1342|2418->1377|2713->1636|2728->1642|2785->1676|3083->1938|3098->1944|3156->1979|3989->2776|4004->2782|4061->2817|4430->3150|4451->3162|4524->3213|4739->3397
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|64->36|64->36|64->36|72->44|72->44|72->44|80->52|80->52|80->52|98->70|98->70|98->70|105->77|105->77|105->77|113->85

@@ -62,11 +62,11 @@ Seq[Any](format.raw/*1.29*/("""
 		</div>
 
 		<div class="col-xs-6 column clearfix">
-		<img alt="140x140" class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*37.65*/routes/*37.71*/.Assets.at("images/header.jpg"))),format.raw/*37.102*/("""" />
+		<img alt="140x140" class = "img-thumbnail profileImage" target="_blank" src=""""),_display_(Seq[Any](/*37.81*/routes/*37.87*/.Assets.at("images/header.jpg"))),format.raw/*37.118*/("""" />
 			<div class="feed-div">
 			"""),_display_(Seq[Any](/*39.5*/for(feedItem <- feedItems) yield /*39.31*/{_display_(Seq[Any](format.raw/*39.32*/("""
 				"""),_display_(Seq[Any](/*40.6*/if(feedItem.publish_date != "")/*40.37*/{_display_(Seq[Any](format.raw/*40.38*/("""
-					<a href=""""),_display_(Seq[Any](/*41.16*/feedItem/*41.24*/.url)),format.raw/*41.28*/("""" target="_blank" style="text-decoration: none;">
+					<a href=""""),_display_(Seq[Any](/*41.16*/feedItem/*41.24*/.url)),format.raw/*41.28*/("""" style="text-decoration: none;">
 					<div class="panel panel-default">
 						<div class="panel-body">
 						<div>
@@ -119,10 +119,17 @@ Seq[Any](format.raw/*1.29*/("""
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Tue Apr 14 10:24:33 MST 2015
                     SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/home.scala.html
                     HASH: bf649900bfb9f1d6ef25a5fde7d12d98e1ce7035
                     MATRIX: 781->1|919->28|949->50|986->53|1012->71|1051->73|1119->106|1133->112|1192->150|1298->221|1313->227|1344->236|1604->460|1619->466|1681->505|2026->814|2041->820|2095->851|2167->888|2209->914|2248->915|2290->922|2330->953|2369->954|2422->971|2439->979|2465->983|2691->1173|2706->1179|2757->1208|2851->1266|2868->1274|2896->1280|3002->1350|3019->1358|3049->1366|3119->1400|3136->1408|3171->1421|3210->1424|3227->1432|3256->1439|3333->1485|3370->1491|4071->2161
+=======
+                    DATE: Tue Apr 14 10:43:59 PDT 2015
+                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/home.scala.html
+                    HASH: 8e3c8a9c0f470280606554a4a22307d2cffc9d86
+                    MATRIX: 781->1|919->28|949->50|986->53|1012->71|1051->73|1119->106|1133->112|1192->150|1298->221|1313->227|1344->236|1604->460|1619->466|1681->505|2042->830|2057->836|2111->867|2183->904|2225->930|2264->931|2306->938|2346->969|2385->970|2438->987|2455->995|2481->999|2691->1173|2706->1179|2757->1208|2851->1266|2868->1274|2896->1280|3002->1350|3019->1358|3049->1366|3119->1400|3136->1408|3171->1421|3210->1424|3227->1432|3256->1439|3333->1485|3370->1491|4071->2161
+>>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
                     LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|39->11|39->11|39->11|49->21|49->21|49->21|65->37|65->37|65->37|67->39|67->39|67->39|68->40|68->40|68->40|69->41|69->41|69->41|73->45|73->45|73->45|74->46|74->46|74->46|77->49|77->49|77->49|78->50|78->50|78->50|78->50|78->50|78->50|82->54|83->55|109->81
                     -- GENERATED --
                 */

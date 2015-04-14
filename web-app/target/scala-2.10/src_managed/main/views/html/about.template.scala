@@ -117,11 +117,19 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Tue Apr 14 10:24:33 MST 2015
                     SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/about.scala.html
                     HASH: 8195ddc2575694defe6b02af91b33aaf1c672738
                     MATRIX: 864->1|890->19|928->20|995->52|1009->58|1070->98|1645->637|1666->649|1740->700|3711->2640
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|107->79
+=======
+                    DATE: Tue Apr 14 10:43:58 PDT 2015
+                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/about.scala.html
+                    HASH: 69d8709c29f3a667f35a4511f7b2094315a45cc0
+                    MATRIX: 864->1|890->19|928->20|995->52|1009->58|1070->98|1645->637|1666->649|1740->700|2385->1314
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|67->39
+>>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
                     -- GENERATED --
                 */
             

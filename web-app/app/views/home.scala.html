@@ -34,11 +34,11 @@
 		</div>
 
 		<div class="col-xs-6 column clearfix">
-		<img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/header.jpg")" />
+		<img alt="140x140" class = "img-thumbnail profileImage" target="_blank" src="@routes.Assets.at("images/header.jpg")" />
 			<div class="feed-div">
 			@for(feedItem <- feedItems){
 				@if(feedItem.publish_date != ""){
-					<a href="@feedItem.url" target="_blank" style="text-decoration: none;">
+					<a href="@feedItem.url" style="text-decoration: none;">
 					<div class="panel panel-default">
 						<div class="panel-body">
 						<div>

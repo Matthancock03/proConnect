@@ -65,8 +65,13 @@ Seq[Any](format.raw/*1.32*/("""
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Tue Apr 14 10:24:33 MST 2015
                     SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/main.scala.html
+=======
+                    DATE: Tue Apr 14 10:43:59 PDT 2015
+                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/main.scala.html
+>>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
                     HASH: c3ce70eb092990d26f1cdfcbec6e0865efe49473
                     MATRIX: 778->1|902->31|996->90|1022->95|1679->716|1694->722|1759->765|1837->807|1852->813|1912->851|1990->893|2005->899|2067->939|2271->1107|2286->1113|2344->1148|2422->1190|2451->1197
                     LINES: 26->1|29->1|35->7|35->7|46->18|46->18|46->18|47->19|47->19|47->19|48->20|48->20|48->20|50->22|50->22|50->22|53->25|53->25

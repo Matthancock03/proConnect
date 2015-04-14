@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2015-04-14 10:24:28,275 - [INFO] - from play in pool-6-thread-4 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
@@ -88,6 +89,21 @@ play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatExcept
 >>>>>>> 3dba2c174c7146ea9f17d524ff21969458093abd
 "]
 	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:309) ~[na:na]
+=======
+2015-04-14 10:43:49,976 - [INFO] - from play in pool-6-thread-6 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2015-04-14 10:44:27,822 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6lnp233il - Internal server error, for (GET) [/forum] ->
+
+play.PlayExceptions$CompilationException: Compilation error[illegal start of type declaration]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+>>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
 	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
 	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
 	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
@@ -103,6 +119,7 @@ play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatExcept
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+<<<<<<< HEAD
 java.lang.NumberFormatException: For input string: "<<<<<<< HEAD
 <<<<<<< HEAD
 1428981527069
@@ -292,6 +309,22 @@ play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatExcept
 >>>>>>> 3dba2c174c7146ea9f17d524ff21969458093abd
 "]
 	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:309) ~[na:na]
+=======
+
+2015-04-14 10:44:28,325 - [WARN] - from play in New I/O worker #1 
+No application found at invoker init
+
+2015-04-14 10:48:29,144 - [ERROR] - from application in New I/O worker #2 
+
+
+! @6lnp2gn0k - Internal server error, for (GET) [/forum] ->
+
+play.PlayExceptions$CompilationException: Compilation error[illegal start of type declaration]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+>>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
 	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
 	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
 	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
@@ -307,6 +340,7 @@ play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatExcept
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+<<<<<<< HEAD
 java.lang.NumberFormatException: For input string: "<<<<<<< HEAD
 <<<<<<< HEAD
 1428981527069
@@ -343,4 +377,6 @@ java.lang.NumberFormatException: For input string: "<<<<<<< HEAD
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+=======
+>>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
 

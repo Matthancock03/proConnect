@@ -1,6 +1,24 @@
+<<<<<<< HEAD
 // @SOURCE:C:/Users/Eya/Documents/GitHub/proConnect/web-app/conf/routes
 // @HASH:9fb4839a32e5672e55b058bea03195c238f20e96
 // @DATE:Tue Apr 14 10:24:29 MST 2015
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+// @SOURCE:C:/Users/Roya/Desktop/proConnect/web-app/conf/routes
+// @HASH:9189c68c91d9503311fcca16b03febb0cd434718
+// @DATE:Sun Apr 12 10:49:51 PDT 2015
+=======
+// @SOURCE:/home/beyondprosthetics/repos/school/proConnect/web-app/conf/routes
+// @HASH:f5690518573c79d8a33f2e87399cf0f353dec6b1
+// @DATE:Mon Apr 13 12:13:25 PDT 2015
+>>>>>>> e982e8c79cee97b72b05ee7de778fce31714ddfa
+=======
+// @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
+// @HASH:f5690518573c79d8a33f2e87399cf0f353dec6b1
+// @DATE:Mon Apr 13 22:12:45 PDT 2015
+>>>>>>> 111561ec00ddec99120c0157e26d4448093f470d
+>>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,7 +33,6 @@ import Router.queryString
 
 // @LINE:19
 // @LINE:18
-// @LINE:16
 // @LINE:15
 // @LINE:14
 // @LINE:13
@@ -67,7 +84,6 @@ def at(file:String): Call = {
 }
                           
 
-// @LINE:16
 // @LINE:13
 // @LINE:12
 // @LINE:11
@@ -110,12 +126,6 @@ def connections(): Call = {
 // @LINE:12
 def about(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "about")
-}
-                                                
-
-// @LINE:16
-def search(): Call = {
-   Call("GET", _prefix + { _defaultPrefix } + "search")
 }
                                                 
     
@@ -302,7 +312,6 @@ def login(): Call = {
 
 // @LINE:19
 // @LINE:18
-// @LINE:16
 // @LINE:15
 // @LINE:14
 // @LINE:13
@@ -369,7 +378,6 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:16
 // @LINE:13
 // @LINE:12
 // @LINE:11
@@ -440,17 +448,6 @@ def about : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "about"})
-      }
-   """
-)
-                        
-
-// @LINE:16
-def search : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Application.search",
-   """
-      function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "search"})
       }
    """
 )
@@ -729,7 +726,6 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
 
 // @LINE:19
 // @LINE:18
-// @LINE:16
 // @LINE:15
 // @LINE:14
 // @LINE:13
@@ -782,7 +778,6 @@ def at(file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
-// @LINE:16
 // @LINE:13
 // @LINE:12
 // @LINE:11
@@ -825,12 +820,6 @@ def connections(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:12
 def about(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.about(), HandlerDef(this, "controllers.Application", "about", Seq(), "GET", """""", _prefix + """about""")
-)
-                      
-
-// @LINE:16
-def search(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.search(), HandlerDef(this, "controllers.Application", "search", Seq(), "GET", """""", _prefix + """search""")
 )
                       
     

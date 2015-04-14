@@ -20,15 +20,13 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
-object search extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template1[String,play.api.templates.HtmlFormat.Appendable] {
+object search extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template0[play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply/*1.2*/(query: String):play.api.templates.HtmlFormat.Appendable = {
+    def apply():play.api.templates.HtmlFormat.Appendable = {
         _display_ {
 
-Seq[Any](format.raw/*1.17*/("""
-
-"""),_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any](format.raw/*3.22*/("""
+Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any](format.raw/*3.22*/("""
  """),_display_(Seq[Any](/*4.3*/navbar/*4.9*/.render)),format.raw/*4.16*/("""
 
 
@@ -42,7 +40,76 @@ Seq[Any](format.raw/*1.17*/("""
 <div class="container">
 	<div class="row clearfix">
 		<div class="col-md-12 column">
-      <h1>You searched for: """),_display_(Seq[Any](/*17.30*/query)),format.raw/*17.35*/("""</h1>
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">People</a>
+								</li>
+								<li>
+									<a href="#">Jobs</a>
+								</li>
+								<li>
+									<a href="#">Companies</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">Groups</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">Inbox</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" />
+						</div> <button type="submit" class="btn btn-default">Submit</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</nav>
 			<h3>
 				Advanced People Search
 			</h3>
@@ -53,7 +120,7 @@ Seq[Any](format.raw/*1.17*/("""
 					</h3>
 				</div>
 				<div class="panel-body">
-					Companies
+					Compnaies 
 				</div>
 				<div class="panel-footer">
 					Location
@@ -85,24 +152,31 @@ Seq[Any](format.raw/*1.17*/("""
 		</div>
 	</div>
 </div>
-""")))})),format.raw/*60.2*/("""
-"""))}
+""")))})))}
     }
     
-    def render(query:String): play.api.templates.HtmlFormat.Appendable = apply(query)
+    def render(): play.api.templates.HtmlFormat.Appendable = apply()
     
-    def f:((String) => play.api.templates.HtmlFormat.Appendable) = (query) => apply(query)
+    def f:(() => play.api.templates.HtmlFormat.Appendable) = () => apply()
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Tue Apr 14 10:24:33 MST 2015
                     SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/search.scala.html
                     HASH: a2719fe8003ff114455fa621d60617ec4f64b749
                     MATRIX: 775->1|884->16|923->21|949->39|988->41|1026->45|1039->51|1067->58|1275->230|1302->235|2048->950
                     LINES: 26->1|29->1|31->3|31->3|31->3|32->4|32->4|32->4|45->17|45->17|88->60
+=======
+                    DATE: Tue Apr 14 10:44:00 PDT 2015
+                    SOURCE: C:/Users/Roya/Desktop/proConnect/web-app/app/views/search.scala.html
+                    HASH: 0abd8a5b7fe78b9cbd599e0912f28ddc3629e4df
+                    MATRIX: 865->5|891->23|930->25|968->29|981->35|1009->42
+                    LINES: 29->3|29->3|29->3|30->4|30->4|30->4
+>>>>>>> f8e697ee13f9d3cdedb418b29b234e4435427eb4
                     -- GENERATED --
                 */
             
