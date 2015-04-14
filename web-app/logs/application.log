@@ -49,3 +49,39 @@ Application started (Dev)
 2015-04-14 16:06:24,784 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
 [securesocial] custom css path = None
 
+2015-04-14 16:14:30,649 - [INFO] - from play in main 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-14 16:14:32,870 - [INFO] - from application in main 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-14 16:14:34,317 - [INFO] - from play in main 
+Starting application default Akka system.
+
+2015-04-14 16:14:34,387 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-14 16:14:34,391 - [INFO] - from application in main 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-14 16:14:34,393 - [INFO] - from application in main 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-14 16:14:34,405 - [INFO] - from application in main 
+[securesocial] loaded identity provider: twitter
+
+2015-04-14 16:14:34,406 - [INFO] - from application in main 
+[securesocial] loaded identity provider: facebook
+
+2015-04-14 16:14:34,407 - [INFO] - from application in main 
+[securesocial] loaded identity provider: google
+
+2015-04-14 16:14:34,408 - [INFO] - from application in main 
+[securesocial] loaded identity provider: userpass
+
+2015-04-14 16:14:34,434 - [INFO] - from play in main 
+Application started (Prod)
+
+2015-04-14 16:14:34,794 - [INFO] - from play in main 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
