@@ -106,12 +106,60 @@ ProConnect provides an Android application were users can disscuss and share exp
         <div class="col-xs-3 column">
     		</div>
         <div class="col-xs-6 column">
+<<<<<<< HEAD
           <h1 class ="text-center"></h1>
+=======
+
+
+
+
+
+
+
+
+       
+                    <h3 style="color:green",class ="text-left">  <b> About us </b>
+                    <p> 
+                    Welcome to Proconnect, a professional networking service - a networking service that helps professional to connect with worlds of professions
+                     </p>
+</h3>
+<p></p>
+                    <h3 style="color:black",class ="text-left",style="font-size:200%"> <b>Mission</b>
+                    <p>
+                     Our Mission is to help people to create a profile and connect with other professionals, to join discussions, share experiences, and make announcements.
+                    </p>
+</h3> 
+<p></p>
+
+                   <h3 style="color:green",class ="text-left">  <b>Information</b>
+                    <p> 
+                   Procennect is publicly held and has a diversified business model
+                    </p>
+                    <p></p>
+                    <p></p>
+                    <p style="color:black">                  
+                      For more information about our company, please visit our Company Page.
+                      </p>
+                    <p>
+                      
+                    </p>
+                    <p></p>
+             <p>
+              For more information, please contact us at proconect.com.
+             </p>
+          
+   </h3>
+
+>>>>>>> 7c95026abe9834688ea1a9556ae5cae74d40ba7f
         </div>
         <div class="col-xs-3 column">
         </div>
       </div>
+<<<<<<< HEAD
 """)))})),format.raw/*86.2*/("""
+=======
+""")))})),format.raw/*79.2*/("""
+>>>>>>> 7c95026abe9834688ea1a9556ae5cae74d40ba7f
 """))}
     }
     
@@ -124,11 +172,19 @@ ProConnect provides an Android application were users can disscuss and share exp
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Wed Apr 15 22:26:43 PDT 2015
                     SOURCE: C:/Users/Daisy/Documents/GitHub/proConnect/web-app/app/views/about.scala.html
                     HASH: 8787aacf1bad6b99ba99c932fb11d2844e5be121
                     MATRIX: 864->1|890->19|928->20|995->52|1009->58|1070->98|1645->637|1666->649|1740->700|3747->2676
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|114->86
+=======
+                    DATE: Wed Apr 15 15:58:58 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/about.scala.html
+                    HASH: 8195ddc2575694defe6b02af91b33aaf1c672738
+                    MATRIX: 864->1|890->19|928->20|995->52|1009->58|1070->98|1645->637|1666->649|1740->700|3711->2640
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|107->79
+>>>>>>> 7c95026abe9834688ea1a9556ae5cae74d40ba7f
                     -- GENERATED --
                 */
             

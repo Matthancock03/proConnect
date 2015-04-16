@@ -44,7 +44,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 		      <div class="form-group">
 		        <input type="text" class="form-control" placeholder="How Can We Help You?">
 		      </div>
-		      <button type="submit" class="btn btn-default">Submit</button>
+		      <button type="submit" class="btn btn-success">Submit</button>
 		    </form>
 		    <br /><br /><br />
 
@@ -63,16 +63,17 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 					</h3>
 				</div>
 				<div class="panel-body">
-					How do I update my profile page?
+				<a href="#" class="btn" type="button">How do I update my profile page?</a>
+					
 				</div>
 				<div class="panel-body">
-					How can I turn off Twitter feed?
+				<a href="#" class="btn" type="button">How can I turn off Twitter feed?</a>
 				</div>
 				<div class="panel-body">
-					How do I change my profile picture?
+				<a href="#" class="btn" type="button">How do I change my profile picture?</a>
 				</div>
 				<div class="panel-body">
-					How can I delete my proConnect account?
+				<a href="#" class="btn" type="button">How can I delete my proConnect account?</a>
 				</div>
 			</div>
 		</div>
@@ -84,16 +85,16 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 					</h3>
 				</div>
 				<div class="panel-body">
-					How do I add friends on ProConnect?
+				<a href="#" class="btn" type="button">How do I add friends on ProConnect?</a>
 				</div>
 				<div class="panel-body">
-					Where can I view who my connections are?
+				<a href="#" class="btn" type="button">Where can I view who my connections are?</a>
 				</div>
 				<div class="panel-body">
-					How can I remove someone from my connections?
+				<a href="#" class="btn" type="button">How can I remove someone from my connections?</a>
 				</div>
 				<div class="panel-body">
-					How can I block someone on ProConnect?
+				<a href="#" class="btn" type="button">How can I block someone on ProConnect?</a>
 				</div>
 			</div>
 		</div>
@@ -107,13 +108,13 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 					</h3>
 				</div>
 				<div class="panel-body">
-					What are forums for on ProConnect?
+				<a href="#" class="btn" type="button">What are forums for on ProConnect?</a>
 				</div>
 				<div class="panel-body">
-					How can I create a new forum?
+				<a href="#" class="btn" type="button">How can I create a new forum?</a>
 				</div>
 				<div class="panel-body">
-					How can I contribute to a forum?
+				<a href="#" class="btn" type="button">How can I contribute to a forum?</a>
 				</div>
 			</div>
 		</div>
@@ -125,14 +126,12 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 					</h3>
 				</div>
 				<div class="panel-body">
-					How can I search for jobs on ProConnect?
+				<a href="#" class="btn" type="button">How can I search for jobs on ProConnect?</a>
 				</div>
 				<div class="panel-body">
-					How can I apply to a job through ProConnect?<br /><br />
+				<a href="#" class="btn" type="button">How can I apply to a job through ProConnect?<br /><br /><br /><br /></a>
 				</div>
-				<div class="panel-body">
-					
-				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -145,13 +144,13 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 					</h3>
 				</div>
 				<div class="panel-body">
-					How can I change my password?
+				<a href="#" class="btn" type="button">How can I change my password?</a>
 				</div>
 				<div class="panel-body">
-					Who can view my profile?
+				<a href="#" class="btn" type="button">Who can view my profile?</a>
 				</div>
 				<div class="panel-body">
-					How can I change my email address?
+				<a href="#" class="btn" type="button">How can I change my email address?</a>
 				</div>
 			</div>
 		</div>
@@ -163,13 +162,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 					</h3>
 				</div>
 				<div class="panel-body">
-					What are the benefits of a premium account?
+				<a href="#" class="btn" type="button">What are the benefits of a premium account?</a>
 				</div>
 				<div class="panel-body">
-					How can I cancel my premium membership?<br /><br />
-				</div>
-				<div class="panel-body">
-					
+				<a href="#" class="btn" type="button">How can I cancel my premium membership?<br /><br /><br /><br /></a>
 				</div>
 				
 			</div>
@@ -200,9 +196,9 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Apr 11 22:10:56 PDT 2015
-                    SOURCE: C:/Users/Daisy/Documents/GitHub/proConnect/web-app/app/views/help.scala.html
-                    HASH: a08e737f8a6e0e37f2c14163cc0f7a0d82c453d9
+                    DATE: Wed Apr 15 20:39:31 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/help.scala.html
+                    HASH: 6aa43262bbb2fa46dba33d7a2fcb4fff5d695b25
                     MATRIX: 863->1|888->18|926->19|963->22|976->28|1004->35
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2
                     -- GENERATED --

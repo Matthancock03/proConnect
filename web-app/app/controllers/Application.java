@@ -35,6 +35,10 @@ public class Application extends Controller{
     return ok(help.render());
   }
 
+  public static Result search(){
+    return ok(search.render());
+  }
+
   @SecureSocial.SecuredAction
    public static Result index() {
        Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);

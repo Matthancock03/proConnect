@@ -33,15 +33,29 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<h3>
-				Forums
+				Forums</br ><br /><br />
 			</h3>
-						<form class="navbar-form navbar-right" role="search">
+
+
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-6 column">
+			 <button type="button" class="btn btn-success">New Forum</button>
+		</div>
+		<div class="col-md-6 column">
+			 <form class="navbar-form navbar-right" role="search">
+
 		      <div class="form-group">
 		        <input type="text" class="form-control" placeholder="Search for Forums">
 		      </div>
-		      <button type="submit" class="btn btn-default">Submit</button>
+		      <button type="submit" class="btn btn-success">Submit</button>
 		    </form>
+
 		</div>
+		</div>
+	</div>
+</div>
+
 	</div>
 	<div class="row clearfix">
 		<div class="col-md-12 column">
@@ -54,10 +68,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								How to Prepare for an Interview
 							</h3>
 							<p>
-								Interviews could be stressful. You can build confidence and ace your interview with these 7 simple and easy steps and give a great first impression to the employer.
+								Interviews could be stressful. You can build confidence and ace your interview with these 7 simple and easy steps and give a great first impression to the employer.<br /><br /><br />
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a> 
 							</p>
 						</div>
 					</div>
@@ -73,7 +87,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								Having no experience for a job of your choice will not necessarily eliminate you from being a good candidate. Your dedication, communication skills, and work ethic play a big role. However, in order to stand out you will need to follow a few rules and strategies. 
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a> 
 							</p>
 						</div>
 					</div>
@@ -89,7 +103,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								They say choose your passion as your major and you will never have to work a day in your life. While this is true, there is more to knowing what major is right for you.
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a> 
 							</p>
 						</div>
 					</div>
@@ -107,7 +121,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								Whether you want to grow your business or get an entry job position, networking is one of the many crucial factors which you should practice like any other skill to master it.
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a> 
 							</p>
 						</div>
 					</div>
@@ -123,7 +137,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								Starting a business involves a lot of research, financial investment, and going through a series of legal work. These 10 steps can help you get your business started and also prepare and manage your business.
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a> 
 							</p>
 						</div>
 					</div>
@@ -139,7 +153,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								Wondering why the all nighter before your final exam did not pay off and did not get you the grade you hoped for? Need to know how to study effectively? Then look no further. Any student can benefit from these tips and techniques.
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Read</a>
+								<a class="btn btn-success" href="#">Read</a>
 							</p>
 						</div>
 					</div>
@@ -157,7 +171,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								Whether you want to admit it or not, money is a huge part of your life nowadays, thus knowing how to manage it will help you take controlof your life and get you ahead financially and socially.
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a> 
 							</p>
 						</div>
 					</div>
@@ -173,7 +187,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								It's human nature to desire success no matter where they are in life. However, it's easier said than done, hence not a lot of people are willing to do what is necessary to reach success.
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a> 
 							</p>
 						</div>
 					</div>
@@ -189,7 +203,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								If you cannot find the forum looking for, you can either create your own forum or try this one. You can find a wide variety of topics and questions in this forum. 
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a> 
 							</p>
 						</div>
 					</div>
@@ -225,7 +239,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 		</div>
 	</div>
 </div>
-""")))})),format.raw/*200.2*/("""
+""")))})),format.raw/*214.2*/("""
 """))}
     }
     
@@ -238,11 +252,11 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Apr 11 22:10:56 PDT 2015
-                    SOURCE: C:/Users/Daisy/Documents/GitHub/proConnect/web-app/app/views/forum.scala.html
-                    HASH: ec2fb435846d744554c2d4f6f2047dcca49720f1
-                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|7619->6616
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|228->200
+                    DATE: Wed Apr 15 20:58:00 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/forum.scala.html
+                    HASH: 19760e78d9f03b8f4b04f46988bf82b6f1b63fef
+                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|7890->6887
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|242->214
                     -- GENERATED --
                 */
             
