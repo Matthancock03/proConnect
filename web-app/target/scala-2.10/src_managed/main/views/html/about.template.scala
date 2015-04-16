@@ -49,22 +49,69 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
       <div class="col-xs-3 column">
   		</div>
       <div class="col-xs-6 column">
-        <h1 class ="header-text text-center">ProConnect</h1>
+				<h1 class ="header-text text-left"> ProConnect </h1>
+				<h1 class ="text-center">Connect with Proffesionals</h1>
   		</div>
   		<div class="col-xs-3 column">
   		</div>
     </div>
 
+	</div>
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="row clearfix">
+					<div class="col-md-4 column">
+						<h2>
+							Getting Started
+						</h2>
+						<p>
+							Our purpose is to connect with other proffesionals and share skill sets and accomplisments. Hiring managers and recruiters have the ability to search a compiled database of candidates that meet their criteria.
+						</p>
+						<p>
+							<a class="btn" href="#">Get Started Here »</a>
+						</p><img alt="140x140" src = "  http://proconnect.herokuapp.com/assets/images/proConnect.jpg " class="img-rounded" />
+					</div>
+					<div class="col-md-4 column">
+					</div>
+					<div class="col-md-4 column">
+						<h2>
+							Take proConnect with you
+						</h2>
+						<p>
+ProConnect provides an Android application were users can disscuss and share experiences on the go.
+						</p>
+						<p>
+							<a class="btn" href="#">View details »</a>
+						</p><img alt="140x140" src=" http://www.smallbusinesscomputing.com/imagesvr_ce/9337/Technology_350.jpg" class="img-rounded" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row clearfix">
+			<div class="col-md-4 column">
+			</div>
+			<div class="col-md-4 column">
+			</div>
+			<div class="col-md-4 column">
+			</div>
+
+
+
+
+
+
+
+
       <div class="row clearfix">
         <div class="col-xs-3 column">
     		</div>
         <div class="col-xs-6 column">
-          <h1 class ="text-center">About Page Coming Soon</h1>
+          <h1 class ="text-center"></h1>
         </div>
         <div class="col-xs-3 column">
         </div>
       </div>
-""")))})),format.raw/*39.2*/("""
+""")))})),format.raw/*86.2*/("""
 """))}
     }
     
@@ -77,11 +124,11 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Apr 11 22:10:55 PDT 2015
+                    DATE: Wed Apr 15 22:26:43 PDT 2015
                     SOURCE: C:/Users/Daisy/Documents/GitHub/proConnect/web-app/app/views/about.scala.html
-                    HASH: 69d8709c29f3a667f35a4511f7b2094315a45cc0
-                    MATRIX: 864->1|890->19|928->20|995->52|1009->58|1070->98|1645->637|1666->649|1740->700|2385->1314
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|67->39
+                    HASH: 8787aacf1bad6b99ba99c932fb11d2844e5be121
+                    MATRIX: 864->1|890->19|928->20|995->52|1009->58|1070->98|1645->637|1666->649|1740->700|3747->2676
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|114->86
                     -- GENERATED --
                 */
             
