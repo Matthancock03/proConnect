@@ -1,0 +1,153 @@
+@main("ProConect"){
+@navbar.render
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="page-header">
+				<h1>
+					Messages 
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-2 column">
+			
+			<div class="btn-group btn-group-vertical btn-group-md">
+			<br /><br /><br />
+			 <button type="button" class="btn btn-success">Compose</button>
+			 <br />
+				 <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-left"></em> Inbox</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-center"></em> Sent</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-right"></em> Trash</button> <
+			</div>
+		</div>
+		<div class="col-md-6 column">
+		<form class="navbar-form navbar-right" role="search">
+
+		      <div class="form-group">
+		        <input type="text" class="form-control" placeholder="Search for Messages">
+		      </div>
+		      <button type="submit" class="btn btn-success">Submit</button>
+		    </form>
+			<table class="table table-condensed">
+				<thead>
+					<tr>
+						<th>
+							#
+						</th>
+						<th>
+							Message
+						</th>
+						<th>
+							Date
+						</th>
+						<th>
+							Status
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+						<a href="#" class="btn" type="button">Message 1</a>
+						</td>
+						<td>
+							01/04/2012
+						</td>
+						<td>
+							Read
+						</td>
+					</tr>
+					<tr class="active">
+						<td>
+							2
+						</td>
+						<td>
+							<a href="#" class="btn" type="button">Message 2</a>
+						</td>
+						<td>
+							01/04/2012
+						</td>
+						<td>
+							Unread
+						</td>
+					</tr>
+					<tr class="success">
+						<td>
+							3
+						</td>
+						<td>
+							<a href="#" class="btn" type="button">Message 3</a>
+						</td>
+						<td>
+							02/04/2012
+						</td>
+						<td>
+							Read
+						</td>
+					</tr>
+					<tr class="warning">
+						<td>
+							4
+						</td>
+						<td>
+							<a href="#" class="btn" type="button">Message 4</a>
+						</td>
+						<td>
+							03/04/2012
+						</td>
+						<td>
+							Read
+						</td>
+					</tr>
+					<tr class="danger">
+						<td>
+							5
+						</td>
+						<td>
+							<a href="#" class="btn" type="button">Message 5</a>
+						</td>
+						<td>
+							04/04/2012
+						</td>
+						<td>
+							Read
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-4 column">
+		</div>
+		<div class="col-md-8 column">
+			<ul class="pagination">
+				<li>
+					<a href="#">Prev</a>
+				</li>
+				<li>
+					<a href="#">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+				<li>
+					<a href="#">5</a>
+				</li>
+				<li>
+					<a href="#">Next</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+}

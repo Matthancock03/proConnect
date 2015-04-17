@@ -62,7 +62,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x600" src="http://blog.peertransfer.com/wp-content/uploads/2013/04/Biz-Finding-A-Job-May-Mean-Getting-More-Niche.jpg" />
+						<img src="http://blog.peertransfer.com/wp-content/uploads/2013/04/Biz-Finding-A-Job-May-Mean-Getting-More-Niche.jpg" width="400" height="400" />
 						<div class="caption">
 							<h3>
 								How to Prepare for an Interview
@@ -78,7 +78,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://www.jobinterviewperfection.com/images/interview-success.jpg" />
+						<img src="http://www.jobinterviewperfection.com/images/interview-success.jpg" width="400" height="400"/>
 						<div class="caption">
 							<h3>
 								How to Get a Job With No Experience
@@ -94,8 +94,8 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://collegeinformations.com/wp-content/uploads/2012/05/choosing-a-major.jpg" />
-						<div class="caption">
+						<img src="http://collegeinformations.com/wp-content/uploads/2012/05/choosing-a-major.jpg" />
+						<div class="caption" width="400" height="400">
 							<h3>
 								5 Tips for Choosing the Right Major
 							</h3>
@@ -112,7 +112,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://blog.nextsociety.com/wp-content/uploads/2014/09/entrepreneurship-networking-advice-1.jpg" />
+						<img src="http://blog.nextsociety.com/wp-content/uploads/2014/09/entrepreneurship-networking-advice-1.jpg" width="400" height="400"/>
 						<div class="caption">
 							<h3>
 								How to Grow your Network
@@ -128,7 +128,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="https://media.licdn.com/mpr/mpr/p/8/005/081/32b/3e3556e.jpg" />
+						<img src="https://media.licdn.com/mpr/mpr/p/8/005/081/32b/3e3556e.jpg" width="400" height="400"/>
 						<div class="caption">
 							<h3>
 								10 Steps to Starting a Business 
@@ -144,7 +144,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://familywings.org/wp-content/uploads/2011/04/a-paper_11.jpg" />
+						<img src="http://familywings.org/wp-content/uploads/2011/04/a-paper_11.jpg" width="200" height="200"/>
 						<div class="caption">
 							<h3>
 								Study Tips
@@ -162,7 +162,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://www.outsourcedcfo.co.za/wp-content/uploads/2014/02/financial-management.jpg" />
+						<img src="http://www.outsourcedcfo.co.za/wp-content/uploads/2014/02/financial-management.jpg" width="400" height="400"/>
 						<div class="caption">
 							<h3>
 								Beginner's Guide to Managing Your Finances
@@ -178,7 +178,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="http://higherperspective.com/wp-content/uploads/2014/12/Successful-Business-Risk.jpg" />
+						<img src="http://higherperspective.com/wp-content/uploads/2014/12/Successful-Business-Risk.jpg" width="400" height="400"/>
 						<div class="caption">
 							<h3>
 								3 Ways to be More Successful
@@ -194,7 +194,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img alt="300x200" src="https://venkyias.files.wordpress.com/2012/08/discussion1.jpg" />
+						<img src="https://venkyias.files.wordpress.com/2012/08/discussion1.jpg" width="400" height="400"/>
 						<div class="caption">
 							<h3>
 								General Discussion
@@ -252,10 +252,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Apr 16 12:20:45 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/forum.scala.html
-                    HASH: 1db293ed670ce76dc179f8a6975f7cddd13e96b4
-                    MATRIX: 864->1|890->19|928->20|966->24|980->30|1008->37|7677->6674
+                    DATE: Thu Apr 16 17:24:51 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/forum.scala.html
+                    HASH: c48967934f9e96e1c80ea9f75e7c9e2d7bdfa5f1
+                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|7982->6979
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|242->214
                     -- GENERATED --
                 */

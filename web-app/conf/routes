@@ -11,6 +11,7 @@ GET      /forum                    controllers.Application.forum()
 GET      /connections              controllers.Application.connections()
 GET      /about                    controllers.Application.about()
 GET      /help                     controllers.Application.help()
+GET		 /message                  controllers.Application.message()
 GET      /androidLogin             controllers.DbController.androidLogin(name: String, password: String)
 GET      /feedZilla                controllers.NewsFeed.feedZilla()
 

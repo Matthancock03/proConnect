@@ -44,7 +44,7 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
       <li><a href=""""),_display_(Seq[Any](/*17.21*/routes/*17.27*/.DbController.home())),format.raw/*17.47*/("""">Home</a></li>
       <li><a href=""""),_display_(Seq[Any](/*18.21*/routes/*18.27*/.DbController.editProfile())),format.raw/*18.54*/("""">Profile</a></li>
       <li><a href=""""),_display_(Seq[Any](/*19.21*/routes/*19.27*/.Application.connections())),format.raw/*19.53*/("""">Connections</a></li>
-      <li><a href=""""),_display_(Seq[Any](/*20.21*/routes/*20.27*/.Application.connections())),format.raw/*20.53*/("""">Messages</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*20.21*/routes/*20.27*/.Application.message())),format.raw/*20.49*/("""">Messages</a></li>
  <li><a href=""""),_display_(Seq[Any](/*21.16*/routes/*21.22*/.Application.forum())),format.raw/*21.42*/("""">Forums</a></li>
 
     </ul>
@@ -82,10 +82,10 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Apr 16 12:20:46 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/navbar.scala.html
-                    HASH: 0606a11e87f167487de665c6a278f7a80be2f1b6
-                    MATRIX: 856->1|1413->522|1428->528|1470->548|1733->775|1748->781|1790->801|1862->837|1877->843|1926->870|2001->909|2016->915|2064->941|2143->984|2158->990|2206->1016|2277->1051|2292->1057|2334->1077|2987->1694|3002->1700|3043->1719|3119->1759|3134->1765|3176->1785|3300->1873|3321->1885|3395->1937
+                    DATE: Thu Apr 16 15:40:34 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/navbar.scala.html
+                    HASH: cdc97ba43dec0812b3ce8cb4f73012ffd9c686c3
+                    MATRIX: 856->2|1423->533|1438->539|1480->559|1748->791|1763->797|1805->817|1878->854|1893->860|1942->887|2018->927|2033->933|2081->959|2161->1003|2176->1009|2220->1031|2292->1067|2307->1073|2349->1093|3017->1725|3032->1731|3073->1750|3150->1791|3165->1797|3207->1817|3333->1907|3354->1919|3428->1971
                     LINES: 29->2|39->12|39->12|39->12|44->17|44->17|44->17|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21|63->36|63->36|63->36|64->37|64->37|64->37|66->39|66->39|66->39
                     -- GENERATED --
                 */

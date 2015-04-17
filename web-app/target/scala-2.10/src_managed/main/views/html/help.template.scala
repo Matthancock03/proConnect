@@ -51,6 +51,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 		</div>
 	</div>
 
+
 	<h3>
 				Frequently Asked Questions<br />
 			</h3>
@@ -63,6 +64,9 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 					</h3>
 				</div>
 				<div class="panel-body">
+
+
+
 				<a href="#" class="btn" type="button">How do I update my profile page?</a>
 					
 				</div>
@@ -196,10 +200,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Apr 16 12:20:45 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/help.scala.html
-                    HASH: e3c277fffa6a96499c62478d3f93939ec0b7890f
-                    MATRIX: 863->1|888->18|926->19|962->21|975->27|1003->34
+                    DATE: Thu Apr 16 18:05:19 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/help.scala.html
+                    HASH: 8a5858ed584fdbf507da8f5ca1e1dd648281ea08
+                    MATRIX: 863->1|888->18|926->19|963->22|976->28|1004->35
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2
                     -- GENERATED --
                 */
