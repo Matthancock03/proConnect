@@ -43,6 +43,10 @@ public class Application extends Controller{
     return ok(message.render());
   }
 
+    public static Result profileMain(){
+    return ok(profileMain.render());
+  }
+
 
   @SecureSocial.SecuredAction
    public static Result index() {

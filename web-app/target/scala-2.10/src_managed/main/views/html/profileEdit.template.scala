@@ -24,85 +24,88 @@ object profileEdit extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appen
 
     /**/
     def apply():play.api.templates.HtmlFormat.Appendable = {
-        _display_ {import helper._
+        _display_ {
 
+Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](format.raw/*1.20*/("""
+"""),_display_(Seq[Any](/*2.2*/navbar/*2.8*/.render)),format.raw/*2.15*/("""
 
-Seq[Any](format.raw/*2.1*/("""
-"""),_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/{_display_(Seq[Any](format.raw/*3.21*/("""
-  """),_display_(Seq[Any](/*4.4*/navbar/*4.10*/.render)),format.raw/*4.17*/("""
-  <link rel="stylesheet" href=""""),_display_(Seq[Any](/*5.33*/routes/*5.39*/.Assets.at("stylesheets/editProfile.min.css"))),format.raw/*5.84*/("""">
+<link rel="stylesheet" href=""""),_display_(Seq[Any](/*4.31*/routes/*4.37*/.Assets.at("stylesheets/editProfile.min.css"))),format.raw/*4.82*/("""">
 
-<div class="container-fluid">
-	<div class="row clearfix">
-		<div class="col-xs-2 column logo-img img-div">
-			<img alt="140x140" class="img-rounded"src="http://lorempixel.com/140/140/" />
-      <label for="exampleInputFile">Profile Image</label><input type="file" id="exampleInputFile" />
-		</div>
-    <div class="col-xs-2 column">
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-3 column">
+      <img alt="140x140" src="http://lorempixel.com/140/140/" /><br /><br /><br />
+      <button type="button" class="btn btn-default">Edit Profile</button>
     </div>
-		<div class="col-xs-6 column">
-      """),_display_(Seq[Any](/*16.8*/helper/*16.14*/.form(action = routes.DbController.home)/*16.54*/{_display_(Seq[Any](format.raw/*16.55*/("""
-				<div class="form-group break-after">
-					 <label class="spacer">Name</label><input type="text" class="form-control" id="exampleInputEmail1" />
-					 <label class="spacer-min">Personal Headline</label><input type="text"  class="form-control" id="exampleInputPassword1" />
-           <label class="spacer-min">Location</label><input type="text"  class="form-control" id="exampleInputPassword1" />
-           <label class="spacer-min">Current Employer</label><input type="text"  class="form-control" id="exampleInputPassword1" />
-				</div>
-
-		</div>
-    <div class="col-xs-2 column"></div>
-	</div>
-	<div class="row clearfix">
-    <div class="col-xs-2 column logo-img"></div>
-		<div class="col-xs-8 column">
-          <div class="break-after">
-          <label class="spacer" for="comment">About Me:</label>
-            <textarea class="form-control" rows="4" id="comment"></textarea>
-          </div>
-          <div class="break-after">
-          <label class="spacer" for="comment">Experience:</label>
-            <textarea class="form-control" rows="4" id="comment"></textarea>
-            <div>
-            <button type="button" class="btn btn-danger  btn-xs" aria-label="left Align">
-              <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-            </button>
-            <button type="button" class="btn btn-info  btn-xs" aria-label="left Align">
-              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-            </button>
-          </div>
-          </div>
-          <div class="break-after">
-          <label class="spacer" for="comment">Projects Or Skills Highlight:</label>
-              <textarea class="form-control" rows="4" id="comment"></textarea>
-              <div>
-              <button type="button" class="btn btn-danger  btn-xs" aria-label="left Align">
-                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-              </button>
-              <button type="button" class="btn btn-info  btn-xs" aria-label="left Align">
-                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-              </button>
-            </div>
-            </div>
-            <div class="break-after">
-              <label class="spacer" for="comment">Education:</label>
-                <textarea class="form-control" rows="4" id="comment"></textarea>
-                <div>
-                <button type="button" class="btn btn-danger  btn-xs" aria-label="left Align">
-                  <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-                </button>
-                <button type="button" class="btn btn-info  btn-xs" aria-label="left Align">
-                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                </button>
-              </div>
-          </div>
-          <button type="submit" class="btn save-button">Submit</button>
+    <div class="col-md-6 column">
+      <h3>
+        Name
+      </h3>
+      <h3>
+        Personal Headline
+      </h3>
+      <h3>
+        Current Employer
+      </h3>
+      <h3>
+        Location
+      </h3>
     </div>
-      </div>
-      <div class="col-xs-2 column bottom-div"></div>
-    """)))})),format.raw/*74.6*/("""
-		</div>
-""")))})),format.raw/*76.2*/("""
-"""))}
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h2>
+        About Me
+      </h2>
+      <p>
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      </p>
+      <p>
+        <a class="btn" href="#">Edit About Me »</a>
+      </p>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h2>
+        Experience
+      </h2>
+      <p>
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      </p>
+      <p>
+        <a class="btn" href="#">Edit Experience »</a>
+      </p>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h2>
+        Projects or Skills Highlight
+      </h2>
+      <p>
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      </p>
+      <p>
+        <a class="btn" href="#">Edit Skills »</a>
+      </p>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h2>
+        Education
+      </h2>
+      <p>
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      </p>
+      <p>
+        <a class="btn" href="#">Edit Education »</a>
+      </p>
+    </div>
+  </div>
+</div>
+""")))})))}
     }
     
     def render(): play.api.templates.HtmlFormat.Appendable = apply()
@@ -114,11 +117,11 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Apr 19 21:59:44 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileEdit.scala.html
-                    HASH: a5e04702a53240ba7840589ce61caf7eb9242683
-                    MATRIX: 877->17|913->19|939->37|977->38|1015->42|1029->48|1057->55|1125->88|1139->94|1205->139|1626->525|1641->531|1690->571|1729->572|4740->3552|4782->3563
-                    LINES: 30->2|31->3|31->3|31->3|32->4|32->4|32->4|33->5|33->5|33->5|44->16|44->16|44->16|44->16|102->74|104->76
+                    DATE: Mon Apr 20 13:14:52 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/profileEdit.scala.html
+                    HASH: 3c02e2158691f615bb8b247e1ab8faabf5daaf10
+                    MATRIX: 870->1|895->18|933->19|970->22|983->28|1011->35|1080->69|1094->75|1160->120
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|32->4|32->4|32->4
                     -- GENERATED --
                 */
             

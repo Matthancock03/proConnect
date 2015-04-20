@@ -1,76 +1,80 @@
-@import helper._
+@main("ProConect"){
+@navbar.render
 
-@main("ProConnect"){
-  @navbar.render
-  <link rel="stylesheet" href="@routes.Assets.at("stylesheets/editProfile.min.css")">
+<link rel="stylesheet" href="@routes.Assets.at("stylesheets/editProfile.min.css")">
 
-<div class="container-fluid">
-	<div class="row clearfix">
-		<div class="col-xs-2 column logo-img img-div">
-			<img alt="140x140" class="img-rounded"src="http://lorempixel.com/140/140/" />
-      <label for="exampleInputFile">Profile Image</label><input type="file" id="exampleInputFile" />
-		</div>
-    <div class="col-xs-2 column">
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-3 column">
+      <img alt="140x140" src="http://lorempixel.com/140/140/" /><br /><br /><br />
+      <button type="button" class="btn btn-default">Edit Profile</button>
     </div>
-		<div class="col-xs-6 column">
-      @helper.form(action = routes.DbController.home){
-				<div class="form-group break-after">
-					 <label class="spacer">Name</label><input type="text" class="form-control" id="exampleInputEmail1" />
-					 <label class="spacer-min">Personal Headline</label><input type="text"  class="form-control" id="exampleInputPassword1" />
-           <label class="spacer-min">Location</label><input type="text"  class="form-control" id="exampleInputPassword1" />
-           <label class="spacer-min">Current Employer</label><input type="text"  class="form-control" id="exampleInputPassword1" />
-				</div>
-
-		</div>
-    <div class="col-xs-2 column"></div>
-	</div>
-	<div class="row clearfix">
-    <div class="col-xs-2 column logo-img"></div>
-		<div class="col-xs-8 column">
-          <div class="break-after">
-          <label class="spacer" for="comment">About Me:</label>
-            <textarea class="form-control" rows="4" id="comment"></textarea>
-          </div>
-          <div class="break-after">
-          <label class="spacer" for="comment">Experience:</label>
-            <textarea class="form-control" rows="4" id="comment"></textarea>
-            <div>
-            <button type="button" class="btn btn-danger  btn-xs" aria-label="left Align">
-              <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-            </button>
-            <button type="button" class="btn btn-info  btn-xs" aria-label="left Align">
-              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-            </button>
-          </div>
-          </div>
-          <div class="break-after">
-          <label class="spacer" for="comment">Projects Or Skills Highlight:</label>
-              <textarea class="form-control" rows="4" id="comment"></textarea>
-              <div>
-              <button type="button" class="btn btn-danger  btn-xs" aria-label="left Align">
-                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-              </button>
-              <button type="button" class="btn btn-info  btn-xs" aria-label="left Align">
-                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-              </button>
-            </div>
-            </div>
-            <div class="break-after">
-              <label class="spacer" for="comment">Education:</label>
-                <textarea class="form-control" rows="4" id="comment"></textarea>
-                <div>
-                <button type="button" class="btn btn-danger  btn-xs" aria-label="left Align">
-                  <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-                </button>
-                <button type="button" class="btn btn-info  btn-xs" aria-label="left Align">
-                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                </button>
-              </div>
-          </div>
-          <button type="submit" class="btn save-button">Submit</button>
+    <div class="col-md-6 column">
+      <h3>
+        Name
+      </h3>
+      <h3>
+        Personal Headline
+      </h3>
+      <h3>
+        Current Employer
+      </h3>
+      <h3>
+        Location
+      </h3>
     </div>
-      </div>
-      <div class="col-xs-2 column bottom-div"></div>
-    }
-		</div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h2>
+        About Me
+      </h2>
+      <p>
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      </p>
+      <p>
+        <a class="btn" href="#">Edit About Me »</a>
+      </p>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h2>
+        Experience
+      </h2>
+      <p>
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      </p>
+      <p>
+        <a class="btn" href="#">Edit Experience »</a>
+      </p>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h2>
+        Projects or Skills Highlight
+      </h2>
+      <p>
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      </p>
+      <p>
+        <a class="btn" href="#">Edit Skills »</a>
+      </p>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h2>
+        Education
+      </h2>
+      <p>
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      </p>
+      <p>
+        <a class="btn" href="#">Edit Education »</a>
+      </p>
+    </div>
+  </div>
+</div>
 }
