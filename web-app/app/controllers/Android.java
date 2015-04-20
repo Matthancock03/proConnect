@@ -23,7 +23,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import play.mvc.Result;
 import play.libs.F.Function;
 import play.libs.F.Promise;
-import models.FeedItem;
+import models.*;
 
 public class Android extends Controller{
   @BodyParser.Of(BodyParser.Json.class)
@@ -33,7 +33,8 @@ public class Android extends Controller{
         if(name == "denied" || name != ""){
           result.put("Accepted", "False");
         }else{
-          result.put("Accepted", "True");
+          User user = new User();
+
         }
         return ok(result);
   }

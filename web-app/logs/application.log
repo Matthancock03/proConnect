@@ -1,66 +1,54 @@
-2015-04-19 20:38:23,392 - [INFO] - from play in pool-6-thread-6 
+2015-04-19 22:01:37,556 - [INFO] - from play in pool-6-thread-5 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-04-19 20:45:04,499 - [ERROR] - from application in New I/O worker #1 
+2015-04-19 22:02:10,477 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
 
+2015-04-19 22:02:11,783 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
 
-! @6lpcc8bn4 - Internal server error, for (GET) [/login] ->
+2015-04-19 22:02:12,974 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
 
-play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatException: For input string: "<<<<<<< HEAD
-1429497051179
-=======
-1429487585728
->>>>>>> d4f2cbdd18cae83fa3631fee70bf447ae4a7bf82
-"]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:309) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-java.lang.NumberFormatException: For input string: "<<<<<<< HEAD
-1429497051179
-=======
-1429487585728
->>>>>>> d4f2cbdd18cae83fa3631fee70bf447ae4a7bf82
-"
-	at java.lang.NumberFormatException.forInputString(Unknown Source) ~[na:1.8.0_31]
-	at java.lang.Long.parseLong(Unknown Source) ~[na:1.8.0_31]
-	at java.lang.Long.parseLong(Unknown Source) ~[na:1.8.0_31]
-	at scala.collection.immutable.StringLike$class.toLong(StringLike.scala:230) ~[scala-library-2.10.3.jar:na]
-	at scala.collection.immutable.StringOps.toLong(StringOps.scala:31) ~[scala-library-2.10.3.jar:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:100) ~[na:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:95) ~[na:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:35) ~[scala-library-2.10.3.jar:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:34) ~[scala-library-2.10.3.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library-2.10.3.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
+2015-04-19 22:02:13,016 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
+[securesocial] calling deleteExpiredTokens()
 
-2015-04-19 20:45:04,773 - [WARN] - from play in New I/O worker #1 
-No application found at invoker init
+2015-04-19 22:02:13,019 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-19 22:02:13,021 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-19 22:02:13,024 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-19 22:02:13,024 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-19 22:02:13,024 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-19 22:02:13,025 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-19 22:02:13,033 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-19 22:03:03,184 - [INFO] - from application in pool-6-thread-5 
+[securesocial] unloaded identity provider: userpass
+
+2015-04-19 22:03:03,185 - [INFO] - from application in pool-6-thread-5 
+[securesocial] unloaded identity provider: google
+
+2015-04-19 22:03:03,185 - [INFO] - from application in pool-6-thread-5 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-19 22:03:03,186 - [INFO] - from application in pool-6-thread-5 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-19 22:03:03,187 - [INFO] - from application in pool-6-thread-5 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-19 22:03:03,189 - [INFO] - from play in pool-6-thread-5 
+Shutdown application default Akka system.
 
