@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.StrictMode;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -22,7 +21,6 @@ import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
@@ -32,9 +30,6 @@ import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,10 +39,6 @@ public class LogInScreen extends ActionBarActivity {
     private String username,password;
     EditText usernameField, passwordField;
     private Button LogInButton;
-    InputStream is = null;
-    String resultRegular = "";
-    String resultPremium = "";
-    boolean isPremium = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,118 +59,73 @@ public class LogInScreen extends ActionBarActivity {
                 username = usernameField.getText().toString();
                 password = passwordField.getText().toString();
 
+                InputStream is = null;
+                String result = "";
+
                 List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
-                nameValuePairs.add(new BasicNameValuePair("name", username));
-                nameValuePairs.add(new BasicNameValuePair("password", password));
+                nameValuePairs.add(new BasicNameValuePair("name",username));
+                nameValuePairs.add(new BasicNameValuePair("password",password));
 
-                    if(username.trim().length() !=0 && password.trim().length() !=0) {
-                        //sends username and password to URL
-                        try {
-                            HttpClient httpClient = new DefaultHttpClient();
+                try {
+                    HttpClient httpClient = new DefaultHttpClient();
 
-                            HttpGet httpPost = new HttpGet("http://proconnect.herokuapp.com/androidLogin?name=Matt;password=Password");
+                    HttpPost httpPost = new HttpPost("http://10.189.17.58/Log_in_Regular.php");
 
-                            HttpResponse response = httpClient.execute(httpPost);
+                    httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
-                            HttpEntity entity = response.getEntity();
+                    HttpResponse response = httpClient.execute(httpPost);
 
-                            is = entity.getContent();
+                    HttpEntity entity = response.getEntity();
 
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                        //URL SENDS BACK RESPONSE
-                        try {
-                            BufferedReader response = new BufferedReader(new InputStreamReader(is, "iso-8859-1"), 8);
-                            StringBuilder sb = new StringBuilder();
-                            String line = null;
-                            while ((line = response.readLine()) != null) {
-                                sb.append(line + "\n");
-
-                                is.close();
-                                resultRegular = sb.toString();
-
-                            }
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-
-                        try {
-                            HttpClient httpClient = new DefaultHttpClient();
-
-                            HttpPost httpPost = new HttpPost("http://192.168.1.119/Log_in_Premium.php");
-
-                            httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-
-                            HttpResponse response = httpClient.execute(httpPost);
-
-                            HttpEntity entity = response.getEntity();
-
-                            is = entity.getContent();
+                    is = entity.getContent();
 
 
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
-                        try {
-                            BufferedReader response = new BufferedReader(new InputStreamReader(is, "iso-8859-1"), 8);
-                            StringBuilder sb = new StringBuilder();
-                            String line = null;
-                            while ((line = response.readLine()) != null) {
-                                sb.append(line + "\n");
+                try
+                {
+                    BufferedReader response = new BufferedReader(new InputStreamReader(is, "iso-8859-1"), 8);
+                    StringBuilder sb = new StringBuilder();
+                    String line = null;
+                    while ((line = response.readLine()) != null) {
+                        sb.append(line + "\n");
 
-                                is.close();
-                                resultPremium = sb.toString();
-
-
-                            }
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                        //PROCCESS WBSITES REPSONSE
-                        try {
-                            JSONObject jsonRegular = new JSONObject(resultRegular);
-                            //JSONObject jsonPremium = new JSONObject(resultPremium);
-
-                            String successRegular = jsonRegular.getString("Accepted");
-                            //int successPremium = jsonPremium.getInt("success");
-
-                            //if (successPremium == 1)
-                                isPremium = true;
-
-                            if (successRegular.equals("True")) {
-                                Intent intent = new Intent(LogInScreen.this, UserHomePage.class);
-                                intent.putExtra("username", username);
-                                startActivity(intent);
-                                isPremium = false;
-                            } else {
-                                Toast.makeText(getApplicationContext(), "Incorrect Username or Password", Toast.LENGTH_LONG).show();
-                            }
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
+                        is.close();
+                        result = sb.toString();
                     }
-                    else if(username.trim().length() == 0)
+                }
+                catch(Exception e)
+                {
+                    e.printStackTrace();
+                }
+
+                try
+                {
+                    JSONObject json = new JSONObject(result);
+
+                    int success = json.getInt("success");
+
+                    if(success == 1)
                     {
-                        Toast.makeText(getApplicationContext(),"No username entered.",Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(LogInScreen.this,UserHomePage.class);
+                        intent.putExtra("username",username);
+                        startActivity(intent);
                     }
-                    else if(password.trim().length() == 0)
+                    else
                     {
-                        Toast.makeText(getApplicationContext(),"No password entered.",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"Incorrect Username or Password",Toast.LENGTH_LONG).show();
                     }
+                }
+                catch(Exception e)
+                {
+                    e.printStackTrace();
+                }
             }
         });
     }
 
-    private class ValidateUser extends AsyncTask<String, Void, String> {
-
-        @Override
-        protected String doInBackground(String... params) {
-            return null;
-        }
-    }
 
     public void startRegistration(View view)
     {

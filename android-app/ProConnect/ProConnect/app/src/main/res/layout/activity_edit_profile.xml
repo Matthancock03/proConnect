@@ -4,7 +4,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="#25AAA0"
     tools:context="com.example.brandon.proconnect.EditProfile">
 
 
@@ -13,8 +12,6 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Edit Profile"
-        android:textColor="#FFFFFF"
-        android:textStyle="italic"
         android:id="@+id/EditProfileText"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -23,9 +20,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Username:"
+        android:id="@+id/ChangeUsernameText"
+        android:layout_below="@+id/EditProfileText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Password:"
         android:id="@+id/ChangePasswordText"
-        android:layout_below="@+id/ChangeEmailText"
+        android:layout_below="@+id/ChangeUsernameText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="30dp"/>
@@ -47,12 +55,21 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Email:"
         android:id="@+id/ChangeEmailText"
-        android:layout_below="@+id/EditProfileText"
+        android:layout_below="@+id/ChangeConfirmPasswordText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="30dp"/>
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Resume"
+        android:id="@+id/ChangeResumeText"
+        android:layout_below="@+id/ChangeEmailText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -60,7 +77,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Profile Picture"
         android:id="@+id/RegularProfilePictureText"
-        android:layout_below="@+id/ChangeConfirmPasswordText"
+        android:layout_below="@+id/ChangeResumeText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="30dp"/>
@@ -70,39 +87,56 @@
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:text="Choose File"
+        android:id="@+id/ChangeResumeButton"
+        android:layout_alignTop="@+id/ChangeResumeText"
+        android:layout_toRightOf="@+id/ChangeResumeText"
+        android:layout_toEndOf="@+id/ChangeResumeText" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Choose FIle"
         android:id="@+id/ChangeProfilePictureButton"
         android:layout_alignTop="@+id/RegularProfilePictureText"
         android:layout_toRightOf="@+id/RegularProfilePictureText"
         android:layout_toEndOf="@+id/RegularProfilePictureText" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
+        android:inputType="textPersonName"
         android:ems="10"
-        android:background="@drawable/loginstyle"
-        android:id="@+id/ChangePassword"
-        android:layout_alignTop="@+id/ChangePasswordText"
-        android:layout_toRightOf="@+id/ChangePasswordText"
-        />
+        android:id="@+id/ChangeUsername"
+        android:layout_alignTop="@+id/ChangeUsernameText"
+        android:layout_toRightOf="@+id/ChangeUsernameText"
+        android:layout_toEndOf="@+id/ChangeUsernameText" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:background="@drawable/loginstyle"
+        android:id="@+id/ChangePassword"
+        android:layout_alignTop="@+id/ChangePasswordText"
+        android:layout_alignLeft="@+id/ChangeUsername"
+        android:layout_alignStart="@+id/ChangeUsername" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
         android:id="@+id/ChangeConfirmPassword"
         android:layout_alignTop="@+id/ChangeConfirmPasswordText"
         android:layout_toRightOf="@+id/ChangeConfirmPasswordText"
         android:layout_toEndOf="@+id/ChangeConfirmPasswordText" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:background="@drawable/loginstyle"
         android:id="@+id/ChangeEmail"
         android:layout_alignTop="@+id/ChangeEmailText"
         android:layout_toRightOf="@+id/ChangeEmailText"
@@ -114,10 +148,10 @@
         android:layout_height="wrap_content"
         android:text="Save Changes"
         android:id="@+id/SaveChangesButton"
-        android:layout_marginTop="66dp"
+        android:layout_marginTop="62dp"
         android:layout_below="@+id/ChangeProfilePictureButton"
-        android:layout_alignLeft="@+id/ChangeConfirmPassword"
-        android:layout_alignStart="@+id/ChangeConfirmPassword" />
+        android:layout_toRightOf="@+id/ChangeResumeButton"
+        android:layout_toEndOf="@+id/ChangeResumeButton" />
 
     <Button
         style="?android:attr/buttonStyleSmall"

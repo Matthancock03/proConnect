@@ -25,7 +25,7 @@ public class UserHomePage extends ActionBarActivity {
 
         Intent intent = getIntent();
 
-        etuser.setText("Welcome " + intent.getExtras().getString("username"));
+        etuser.setText(intent.getExtras().getString("username"));
 
         LogOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,12 +52,8 @@ public class UserHomePage extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        switch (item.getItemId())
-        {
-            case R.id.edit_profile:
-                Intent intent = new Intent(UserHomePage.this,EditProfile.class);
-                startActivity(intent);
-                break;
+        if (id == R.id.action_settings) {
+            return true;
         }
 
         return super.onOptionsItemSelected(item);

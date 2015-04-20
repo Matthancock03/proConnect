@@ -14,6 +14,7 @@ public class EditProfile extends ActionBarActivity {
         setContentView(R.layout.activity_edit_profile);
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

@@ -14,7 +14,9 @@
         android:id="@+id/CurrentUserLoggedInText"
         android:text="(UserName)"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_toLeftOf="@+id/LogOutButton"
+        android:layout_toStartOf="@+id/LogOutButton"
+        android:layout_marginLeft="5dp"/>
 
     <ImageView
         android:layout_width="80dp"
@@ -25,13 +27,72 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Edit Profile"
+        android:id="@+id/EditProfileClickable"
+        android:layout_below="@+id/ProfilePicture"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Inbox"
+        android:id="@+id/InboxClickable"
+        android:layout_below="@+id/EditProfileClickable"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Forum"
+        android:id="@+id/ForumClickable"
+        android:layout_below="@+id/InboxClickable"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Connections"
+        android:id="@+id/ConnectionsClickable"
+        android:layout_below="@+id/ForumClickable"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Jobs"
+        android:id="@+id/JobsClickable"
+        android:layout_below="@+id/ConnectionsClickable"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"/>
+
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log Out"
         android:id="@+id/LogOutButton"
-        android:layout_alignTop="@+id/CurrentUserLoggedInText"
+        android:layout_above="@+id/EditProfileClickable"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -39,83 +100,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Name:"
-        android:id="@+id/textView"
-        android:layout_below="@+id/ProfilePicture"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Headline:"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
+        android:text="Search"
+        android:id="@+id/SearchClickable"
+        android:layout_below="@+id/JobsClickable"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="42dp" />
+        android:layout_marginTop="20dp"
+        android:clickable="true"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Location:"
-        android:id="@+id/textView3"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Current Employer:"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="46dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/setNameText"
-        android:layout_below="@+id/ProfilePicture"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_toEndOf="@+id/textView" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/setHeadlineText"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_toRightOf="@+id/ProfilePicture"
-        android:layout_toEndOf="@+id/ProfilePicture" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/setLocationText"
-        android:layout_alignTop="@+id/textView3"
-        android:layout_alignLeft="@+id/setHeadlineText"
-        android:layout_alignStart="@+id/setHeadlineText" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/setEmployerText"
-        android:layout_alignTop="@+id/textView4"
-        android:layout_toRightOf="@+id/textView4"
-        android:layout_toEndOf="@+id/textView4" />
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome"
+        android:id="@+id/WelcomeText"
+        android:layout_marginLeft="50dp"
+        android:layout_above="@+id/ProfilePicture"
+        android:layout_toLeftOf="@+id/CurrentUserLoggedInText"
+        android:layout_toStartOf="@+id/CurrentUserLoggedInText"
+        />
 
 </RelativeLayout>
