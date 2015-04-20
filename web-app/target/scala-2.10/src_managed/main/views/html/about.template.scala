@@ -27,7 +27,7 @@ object about extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,
         _display_ {
 
 Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any](format.raw/*1.21*/("""
-<link rel="stylesheet" href=""""),_display_(Seq[Any](/*2.31*/routes/*2.37*/.Assets.at("stylesheets/splash.min.css"))),format.raw/*2.77*/("""">
+<link rel="stylesheet" href=""""),_display_(Seq[Any](/*2.31*/routes/*2.37*/.Assets.at("stylesheets/splash.css"))),format.raw/*2.73*/("""">
 <div class="container-fluid">
 
 
@@ -158,10 +158,10 @@ ProConnect provides an Android application were users can disscuss and share exp
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Apr 19 16:21:50 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/about.scala.html
-                    HASH: 208af6b37847a62a1e511c1d79585a7bed208ee3
-                    MATRIX: 864->1|890->19|928->20|994->51|1008->57|1069->97|1631->623|1652->635|1726->686|4945->3873
+                    DATE: Sun Apr 19 20:38:29 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/about.scala.html
+                    HASH: 487cc3c9903e2ca6aa6de1838f1f589cd39ee2c1
+                    MATRIX: 864->1|890->19|928->20|995->52|1009->58|1066->94|1641->633|1662->645|1736->696|5060->3988
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|148->120
                     -- GENERATED --
                 */

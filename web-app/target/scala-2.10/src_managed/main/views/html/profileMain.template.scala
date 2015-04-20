@@ -26,7 +26,7 @@ object profileMain extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appen
     def apply():play.api.templates.HtmlFormat.Appendable = {
         _display_ {
 
-Seq[Any](format.raw/*1.1*/("""ok then? save"""))}
+Seq[Any]()}
     }
     
     def render(): play.api.templates.HtmlFormat.Appendable = apply()
@@ -38,11 +38,11 @@ Seq[Any](format.raw/*1.1*/("""ok then? save"""))}
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun Apr 19 19:30:47 PDT 2015
+                    DATE: Sun Apr 19 20:38:30 PDT 2015
                     SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/profileMain.scala.html
-                    HASH: d4b45b17a3b39b391bbcf03298fee473526b303f
-                    MATRIX: 861->0
-                    LINES: 29->1
+                    HASH: c7efc0f75c87094f54f4173904bb22e85df9d1e0
+                    MATRIX: 
+                    LINES: 
                     -- GENERATED --
                 */
             
