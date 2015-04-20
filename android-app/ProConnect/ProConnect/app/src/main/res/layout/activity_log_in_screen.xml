@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="#25AAA0"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".LogInScreen"
@@ -11,7 +12,11 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/ProConnect"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="italic"
         android:id="@+id/ProConnectTitle"
+        android:layout_marginTop="110dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -43,6 +48,7 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/UsernameEditText"
+        android:background="@drawable/loginstyle"
         android:layout_alignTop="@+id/UsernameText"
         android:layout_toRightOf="@+id/UsernameText"
         android:layout_toEndOf="@+id/UsernameText" />
@@ -53,6 +59,7 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/PasswordEditText"
+        android:background="@drawable/loginstyle"
         android:layout_alignTop="@+id/PasswordText"
         android:layout_toRightOf="@+id/PasswordText"
         android:layout_toEndOf="@+id/PasswordText" />

@@ -1,5 +1,9 @@
 package com.example.brandon.proconnect;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.StrictMode;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -18,16 +22,23 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONObject;
 
+import java.io.BufferedReader;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class RegisterPremiumUser extends ActionBarActivity {
-
-    private EditText etName,etPassword,etConfirmPassword,etEmail,etCompanyName;
-    private Button Submit;
+    private static final int GALLERY = 0;
+    private static final int CAMERA = 1;
+    private Intent getPictureIntent = null;
+    private EditText etPassword,etConfirmPassword,etEmail,etCompanyName;
+    private Button Submit,photoSubmit;
+    InputStream is = null;
+    String result = "";
+    int success = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,55 +48,73 @@ public class RegisterPremiumUser extends ActionBarActivity {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-        etName = (EditText) findViewById(R.id.PremiumUsernameEdit);
         etPassword = (EditText) findViewById(R.id.PremiumPasswordEdit);
         etConfirmPassword = (EditText) findViewById(R.id.PremiumConfirmPasswordEdit);
         etEmail = (EditText) findViewById(R.id.PremiumEmailEdit);
         etCompanyName = (EditText) findViewById(R.id.ComanyNameEdit);
 
-
+        photoSubmit = (Button) findViewById(R.id.PremiumProfilePictureButton);
         Submit = (Button) findViewById(R.id.PremiumRegisterSubmitButton);
+
+        photoSubmit = (Button) findViewById(R.id.PremiumProfilePictureButton);
+
+        photoSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder chooser = new AlertDialog.Builder(RegisterPremiumUser.this);
+                chooser.setTitle("Choose Picture Option");
+                chooser.setMessage("How do you want to upload your picture?");
+
+                chooser.setPositiveButton("Gallery", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        getPictureIntent = new Intent(Intent.ACTION_GET_CONTENT, null);
+                        getPictureIntent.setType("image/*");
+                        startActivityForResult(getPictureIntent,GALLERY);
+                    }
+                });
+
+                chooser.setNegativeButton("Camera", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        getPictureIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                        startActivityForResult(getPictureIntent, CAMERA);
+
+                    }
+                });
+
+                chooser.show();
+            }
+        });
 
         Submit.setOnClickListener(new View.OnClickListener() {
 
-            InputStream is = null;
-
             @Override
             public void onClick(View v) {
-                String name = "" + etName.getText().toString();
                 String password = "" + etPassword.getText().toString();
                 String confirmPassword = ""+etConfirmPassword.getText().toString();
                 String email = ""+etEmail.getText().toString();
                 String companyName = ""+etCompanyName.getText().toString();
 
                 if(confirmPassword.equals(password)) {
-                    List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
-
-                    nameValuePairs.add(new BasicNameValuePair("name", name));
-                    nameValuePairs.add(new BasicNameValuePair("password", password));
-                    nameValuePairs.add(new BasicNameValuePair("email", email));
-                    nameValuePairs.add(new BasicNameValuePair("companyName",companyName));
-
-                    try {
-                        HttpClient httpClient = new DefaultHttpClient();
-
-                        HttpPost httpPost = new HttpPost("http://192.168.1.129/Connect_Premium_db.php");
-
-                        httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-
-                        HttpResponse response = httpClient.execute(httpPost);
-
-                        HttpEntity entity = response.getEntity();
-
-                        is = entity.getContent();
-
-                        Toast.makeText(getApplicationContext(), "Account Created!", Toast.LENGTH_LONG).show();
-
-                        finish();
-                    } catch (Exception e) {
-                        e.printStackTrace();
+                    if(password.trim().length() !=0 && email.trim().length() !=0 && companyName.trim().length() !=0) {
+                        ValidateUser validate = new ValidateUser();
+                        validate.execute(new String[]{password, confirmPassword, email, companyName});
                     }
-                }else
+                    else if(password.trim().length() == 0)
+                    {
+                        Toast.makeText(getApplicationContext(),"Password field blank.",Toast.LENGTH_LONG).show();
+                    }
+                    else if(email.trim().length() == 0)
+                    {
+                        Toast.makeText(getApplicationContext(),"Email field blank.",Toast.LENGTH_LONG).show();
+                    }
+                    else if(companyName.trim().length() == 0)
+                    {
+                        Toast.makeText(getApplicationContext(),"Company Name field blank.",Toast.LENGTH_LONG).show();
+                    }
+
+                    }else
                 {
                     Toast.makeText(getApplicationContext(),"Passwords don't match.",Toast.LENGTH_LONG).show();
                 }
@@ -93,6 +122,63 @@ public class RegisterPremiumUser extends ActionBarActivity {
         });
     }
 
+    private class ValidateUser extends AsyncTask<String, Void, String> {
+        protected String doInBackground(String... params) {
+            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
+
+            nameValuePairs.add(new BasicNameValuePair("password", params[0]));
+            nameValuePairs.add(new BasicNameValuePair("email", params[2]));
+            nameValuePairs.add(new BasicNameValuePair("companyName", params[3]));
+
+            try {
+                HttpClient httpClient = new DefaultHttpClient();
+
+                HttpPost httpPost = new HttpPost("http://192.168.1.119/Connect_Premium_db.php");
+
+                httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+
+                HttpResponse response = httpClient.execute(httpPost);
+
+                HttpEntity entity = response.getEntity();
+
+                is = entity.getContent();
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            try {
+                BufferedReader response = new BufferedReader(new InputStreamReader(is, "iso-8859-1"), 8);
+                StringBuilder sb = new StringBuilder();
+                String line = null;
+                while ((line = response.readLine()) != null) {
+                    sb.append(line + "\n");
+
+                    is.close();
+                    result = sb.toString();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return result;
+        }
+
+        protected void onPostExecute(String s) {
+            try {
+                JSONObject json = new JSONObject(result);
+                success = json.getInt("Success");
+
+                if (success == 1) {
+                    Toast.makeText(getApplicationContext(), "Account Created!", Toast.LENGTH_LONG).show();
+                    finish();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Username Exists!", Toast.LENGTH_LONG).show();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+}
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

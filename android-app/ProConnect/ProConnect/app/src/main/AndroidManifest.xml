@@ -3,6 +3,8 @@
     package="com.example.brandon.proconnect" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera"
+                                android:required="true"/>
 
     <application
         android:allowBackup="true"
@@ -31,7 +33,7 @@
         </activity>
         <activity
             android:name=".ProconnectHomePage"
-            android:label="@string/title_activity_proconnect_home_page" >
+            android:label="ProConnect" >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

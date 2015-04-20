@@ -1,28 +1,83 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent"
     tools:context="com.example.brandon.proconnect.ProconnectHomePage">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="ProConnect"
-        android:id="@+id/ProConnectTitle"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get Connected"
-        android:id="@+id/GetConnectedButton"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="148dp" />
+            android:background="#25AAA0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ProConnect"
+                android:textColor="#FFFFFF"
+                android:textSize="50dp"
+                android:textStyle="italic"
+                android:id="@+id/ProConnectTitle"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal|top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="A New Way To Connect"
+                android:textSize="18dp"
+                android:id="@+id/ProConnectTitleText"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:background="#FFFFFF">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Connected"
+                android:textColor="#0AA0D9"
+                android:id="@+id/GetConnectedButton"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#FFF568"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal|bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Come meet all the professionals already exploring what ProConnect has to offer. Take your professional network to the next level and get connected in a way you never thought possible."
+                android:textSize="17dp"
+                android:id="@+id/ProConnectTitleText2"
+                android:layout_gravity="center_horizontal|top" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ProConnectImage"
+                android:layout_gravity="left|bottom"
+                android:focusableInTouchMode="false"
+                android:src="@mipmap/proconnect" />
+        </FrameLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>

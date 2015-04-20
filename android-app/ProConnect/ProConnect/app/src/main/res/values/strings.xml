@@ -4,6 +4,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="ProConnect">ProConnect</string>
+    <string name="edit_profile">Edit Profile</string>
     <string name="title_activity_register_premium_user">RegisterPremiumUser</string>
     <string name="title_activity_regular_registration">RegularRegistration</string>
     <string name="title_activity_register_regular_user">RegisterRegularUser</string>
