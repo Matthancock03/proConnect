@@ -5,8 +5,9 @@
 @black-lt: #2D3033;
 @yellow-cool: #FFF568;
 
-.profileImage{
-
+.feed-image{
+  height: 50px;
+  width: auto;
 }
 
 .panel > .panel-heading {
@@ -16,17 +17,39 @@
 
 }
 
-.peopleCarouselImg{
-  width: auto !important;
-  max-height: 300px;
+.head-text{
+  margin-top: 10px;
+  color: @black-lt;
+  font-size: 20px;
+  font-family: 'Abril Fatface';
+  font-variant: small-caps;
+  font-weight: bold;
 }
 
-.carousel {
-  max-height: 300px !important;
-  overflow: hidden;
+.feed-head{
+  display: inline-block;
+}
 
-  .item img {
-    width: auto;
-    height: 300px;
-  }
+.foot-text{
+  margin-top: 10px;
+  color: @black-lt;
+  font-size: 10px;
+  font-family: 'Abril Fatface';
+  font-weight: bold;
+}
+
+.feed-div{
+    padding-top: 15px;
+    height: 700px;
+    overflow-y:auto;
+
+}
+a{
+  color: @black-lt;
+  text-decoration: none;
+}
+
+a:hover{
+  color: @black-lt;
+  text-decoration: none;
 }

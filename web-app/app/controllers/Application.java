@@ -30,6 +30,20 @@ public class Application extends Controller{
     return ok(splash.render());
   }
 
+
+  public static Result help(){
+    return ok(help.render());
+  }
+
+  public static Result search(){
+    return ok(search.render());
+  }
+
+  public static Result message(){
+    return ok(message.render());
+  }
+
+
   @SecureSocial.SecuredAction
    public static Result index() {
        Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);
@@ -39,6 +53,7 @@ public class Application extends Controller{
    @SecureSocial.UserAwareAction
    public static Result userAware() {
        Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);
+
        final String userName = user != null ? user.fullName() : "guest";
        final String email = user.email().get() != null ? user.email().get() : "No email provided";
        final String provider = user.identityId().providerId() != null ? user.identityId().providerId() : "No provider";

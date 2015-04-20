@@ -11,24 +11,39 @@ import play.Logger;
 import securesocial.core.*;
 import securesocial.*;
 import securesocial.core.java.SecureSocial;
+import play.mvc.BodyParser;
+import play.libs.Json;
+import play.libs.Json.*;
+import java.util.*;
+import static play.libs.Json.toJson;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import com.fasterxml.jackson.databind.node.*;
+import com.fasterxml.jackson.databind.JsonNode;
+import play.mvc.Result;
+import play.libs.F.Function;
+import play.libs.F.Promise;
+import models.FeedItem;
 
 
 public class DbController extends Controller{
-
-
-  public static Result loginPage(){
-    Form<loginFormData> loginFormData = Form.form(loginFormData.class);
-    Form<signUpFormData> signUpFormData = Form.form(signUpFormData.class);
-
-    return ok(login.render("", loginFormData, signUpFormData));
-  }
 
   public static Result editProfile(){
 
     return ok(profileEdit.render());
   }
 
-  public static Result loginUser(){
+  //@SecureSocial.SecuredAction
+  public static Result home(){
+    Promise<JsonNode> feedNode = NewsFeed.feedTest();
+    List<FeedItem> feeds = new ArrayList();
+    FeedItem feedItem = new FeedItem();
+    //r apJsonNode feed = feedNode.get(100000);
+    feeds.add(feedItem);
+    return ok(home.render(feeds));
+  }
+
+  /*public static Result loginUser(){
       Form<loginFormData> formData = Form.form(loginFormData.class).bindFromRequest();
       if (formData.hasErrors()) {
         Form<loginFormData> loginFormData = Form.form(loginFormData.class);
@@ -40,12 +55,11 @@ public class DbController extends Controller{
         return ok(home.render());
     }
   }
-
-  @SecureSocial.SecuredAction
-  public static Result home(){
-    return ok(home.render());
-  }
-
+    public static Result loginPage(){
+      Form<loginFormData> loginFormData = Form.form(loginFormData.class);
+      Form<signUpFormData> signUpFormData = Form.form(signUpFormData.class);
+      return ok(login.render("", loginFormData, signUpFormData));
+    }
   public static Result signUpUser(){
       Form<signUpFormData> formData = Form.form(signUpFormData.class).bindFromRequest();
       if (formData.hasErrors()) {
@@ -58,5 +72,5 @@ public class DbController extends Controller{
       return ok("Registered!");
     }
   }
-
+  */
 }

@@ -49,22 +49,103 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
       <div class="col-xs-3 column">
   		</div>
       <div class="col-xs-6 column">
-        <h1 class ="header-text text-center">ProConnect</h1>
+				<h1 class ="header-text text-left"> ProConnect </h1>
+				<h1 class ="text-center">Connect with Proffesionals</h1>
   		</div>
   		<div class="col-xs-3 column">
   		</div>
     </div>
 
+	</div>
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="row clearfix">
+					<div class="col-md-4 column">
+						<h2>
+							Getting Started
+						</h2>
+						<p>
+							Our purpose is to connect with other proffesionals and share skill sets and accomplisments. Hiring managers and recruiters have the ability to search a compiled database of candidates that meet their criteria.
+						</p>
+						<p>
+							<a class="btn" href="#">Get Started Here »</a>
+						</p><img alt="140x140" src = "  http://proconnect.herokuapp.com/assets/images/proConnect.jpg " class="img-rounded" />
+					</div>
+					<div class="col-md-4 column">
+					</div>
+					<div class="col-md-4 column">
+						<h2>
+							Take proConnect with you
+						</h2>
+						<p>
+ProConnect provides an Android application were users can disscuss and share experiences on the go.
+						</p>
+						<p>
+							<a class="btn" href="#">View details »</a>
+						</p><img alt="140x140" src=" http://www.smallbusinesscomputing.com/imagesvr_ce/9337/Technology_350.jpg" class="img-rounded" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row clearfix">
+			<div class="col-md-4 column">
+			</div>
+			<div class="col-md-4 column">
+			</div>
+			<div class="col-md-4 column">
+			</div>
+
+
+
+
+
+
+
+
       <div class="row clearfix">
         <div class="col-xs-3 column">
     		</div>
         <div class="col-xs-6 column">
-          <h1 class ="text-center">About Page Coming Soon</h1>
+          <h1 class ="text-center"></h1>
+
+
+                    <h3 style="color:green",class ="text-left">  <b> About us </b>
+                    <p>
+                    Welcome to Proconnect, a professional networking service - a networking service that helps professional to connect with worlds of professions
+                     </p>
+</h3>
+<p></p>
+                    <h3 style="color:black",class ="text-left",style="font-size:200%"> <b>Mission</b>
+                    <p>
+                     Our Mission is to help people to create a profile and connect with other professionals, to join discussions, share experiences, and make announcements.
+                    </p>
+</h3>
+<p></p>
+
+                   <h3 style="color:green",class ="text-left">  <b>Information</b>
+                    <p>
+                   Procennect is publicly held and has a diversified business model
+                    </p>
+                    <p></p>
+                    <p></p>
+                    <p style="color:black">
+                      For more information about our company, please visit our Company Page.
+                      </p>
+                    <p>
+
+                    </p>
+                    <p></p>
+             <p>
+              For more information, please contact us at proconect.com.
+             </p>
+
+   </h3>
+
         </div>
         <div class="col-xs-3 column">
         </div>
       </div>
-""")))})),format.raw/*39.2*/("""
+""")))})),format.raw/*120.2*/("""
 """))}
     }
     
@@ -77,11 +158,11 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Apr 02 09:21:14 PDT 2015
+                    DATE: Sun Apr 19 16:21:50 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/about.scala.html
-                    HASH: ee9bba5c708652382fdf682c5465d7b8366de14d
-                    MATRIX: 864->1|890->19|928->20|994->51|1008->57|1069->97|1631->623|1652->635|1726->686|2347->1276
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|67->39
+                    HASH: 208af6b37847a62a1e511c1d79585a7bed208ee3
+                    MATRIX: 864->1|890->19|928->20|994->51|1008->57|1069->97|1631->623|1652->635|1726->686|4945->3873
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|148->120
                     -- GENERATED --
                 */
             

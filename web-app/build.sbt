@@ -13,9 +13,8 @@ libraryDependencies ++= Seq(
   "org.mindrot"  % "jbcrypt"   % "0.3m",
   "postgresql" % "postgresql" % "9.1-901-1.jdbc4",
   "org.twitter4j" % "twitter4j-core" % "3.0.3",
-  "ws.securesocial" %% "securesocial" % "2.1.3"
+  "ws.securesocial" %% "securesocial" % "2.1.3",
+  "org.json"%"org.json"%"chargebee-1.0"
 )
-
-resolvers += Resolver.url("sbt-plugin-releases", new URL("http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/"))(Resolver.ivyStylePatterns)
 
 play.Project.playJavaSettings

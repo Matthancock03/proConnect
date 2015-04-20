@@ -20,21 +20,23 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
-object home extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template0[play.api.templates.HtmlFormat.Appendable] {
+object home extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template1[List[FeedItem],play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply():play.api.templates.HtmlFormat.Appendable = {
+    def apply/*1.2*/(feedItems: List[FeedItem]):play.api.templates.HtmlFormat.Appendable = {
         _display_ {import helper._
 
 
-Seq[Any](format.raw/*2.1*/("""
-"""),_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any](format.raw/*3.22*/("""
-	<link rel="stylesheet" href=""""),_display_(Seq[Any](/*4.32*/routes/*4.38*/.Assets.at("stylesheets/home.min.css"))),format.raw/*4.76*/("""">
+Seq[Any](format.raw/*1.29*/("""
+
+"""),format.raw/*4.1*/("""
+"""),_display_(Seq[Any](/*5.2*/main("ProConnect")/*5.20*/ {_display_(Seq[Any](format.raw/*5.22*/("""
+	<link rel="stylesheet" href=""""),_display_(Seq[Any](/*6.32*/routes/*6.38*/.Assets.at("stylesheets/home.min.css"))),format.raw/*6.76*/("""">
 
 
 <div class="container-fluid">
 	<div class="row clearfix">
-		"""),_display_(Seq[Any](/*9.4*/navbar/*9.10*/.render())),format.raw/*9.19*/("""
+		"""),_display_(Seq[Any](/*11.4*/navbar/*11.10*/.render())),format.raw/*11.19*/("""
 	</div>
 
 	<div class="row clearfix">
@@ -44,7 +46,7 @@ Seq[Any](format.raw/*2.1*/("""
 
 	<div class="row clearfix">
 		<div class="col-xs-2 column">
-			<img alt="140x140" class = "img-thumbnail profileImage" src="http://i.imgur.com/PcoAz60.jpg?1" />
+			<img alt="140x140" class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*21.66*/routes/*21.72*/.Assets.at("images/profile_holder.png"))),format.raw/*21.111*/("""" />
 
 			<dl class="dl-horizontal">
 				<dt>
@@ -60,42 +62,26 @@ Seq[Any](format.raw/*2.1*/("""
 		</div>
 
 		<div class="col-xs-6 column clearfix">
-			<div class="carousel slide" id="carousel-13062">
-				<ol class="carousel-indicators">
-					<li class="active" data-slide-to="0" data-target="#carousel-13062">
-					</li>
-					<li data-slide-to="1" data-target="#carousel-13062">
-					</li>
-					<li data-slide-to="2" data-target="#carousel-13062">
-					</li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="item active">
-						<img class="img-responsive center-block" alt="" src=""""),_display_(Seq[Any](/*46.61*/routes/*46.67*/.Assets.at("images/businessImage1.jpg"))),format.raw/*46.106*/("""" />
-						<div class="carousel-caption">
-							<h4>
-								Engage Your Peers
-							</h4>
+		<img alt="140x140" class = "img-thumbnail profileImage" target="_blank" src=""""),_display_(Seq[Any](/*37.81*/routes/*37.87*/.Assets.at("images/header.jpg"))),format.raw/*37.118*/("""" />
+			<div class="feed-div">
+			"""),_display_(Seq[Any](/*39.5*/for(feedItem <- feedItems) yield /*39.31*/{_display_(Seq[Any](format.raw/*39.32*/("""
+				"""),_display_(Seq[Any](/*40.6*/if(feedItem.publish_date != "")/*40.37*/{_display_(Seq[Any](format.raw/*40.38*/("""
+					<a href=""""),_display_(Seq[Any](/*41.16*/feedItem/*41.24*/.url)),format.raw/*41.28*/("""" style="text-decoration: none;">
+					<div class="panel panel-default">
+						<div class="panel-body">
+						<div>
+							<img alt="" class="feed-image feed-head" src=""""),_display_(Seq[Any](/*45.55*/routes/*45.61*/.Assets.at("images/tech.png"))),format.raw/*45.90*/("""" />
+							<h3 class="panel-title head-text feed-head">"""),_display_(Seq[Any](/*46.53*/feedItem/*46.61*/.title)),format.raw/*46.67*/("""</h3>
 						</div>
+						<br>
+						<p style="padding-top: 10px;">"""),_display_(Seq[Any](/*49.38*/feedItem/*49.46*/.summary)),format.raw/*49.54*/("""</p>
+						<p class="foot-text">"""),_display_(Seq[Any](/*50.29*/feedItem/*50.37*/.publish_date)),format.raw/*50.50*/("""  """),_display_(Seq[Any](/*50.53*/feedItem/*50.61*/.source)),format.raw/*50.68*/("""</p>
 					</div>
-					<div class="item">
-						<img class="img-responsive center-block" alt="" src=""""),_display_(Seq[Any](/*54.61*/routes/*54.67*/.Assets.at("images/business2.jpg"))),format.raw/*54.101*/("""" />
-						<div class="carousel-caption">
-							<h4>
-								Get Connected
-							</h4>
-						</div>
-					</div>
-					<div class="item">
-						<img class="img-responsive center-block" alt="" src=""""),_display_(Seq[Any](/*62.61*/routes/*62.67*/.Assets.at("images/proConnect.jpg"))),format.raw/*62.102*/("""" />
-						<div class="carousel-caption">
-							<h4>
-								ProConnect
-							</h4>
-						</div>
-					</div>
-				</div> <a class="left carousel-control" href="#carousel-13062" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-13062" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-			</div>
+				</div>
+				</a>
+				""")))})),format.raw/*54.6*/("""
+			""")))})),format.raw/*55.5*/("""
+		</div>
 		</div>
 		<div class="col-xs-4 column">
 			<div>
@@ -109,12 +95,6 @@ Seq[Any](format.raw/*2.1*/("""
 								<li class="list-group-item">First item</li>
 							  <li class="list-group-item">Second item</li>
 							  <li class="list-group-item">Third item</li>
-								<li class="list-group-item">First item</li>
-							  <li class="list-group-item">Second item</li>
-							  <li class="list-group-item">Third item</li>
-								<li class="list-group-item">First item</li>
-							  <li class="list-group-item">Second item</li>
-							  <li class="list-group-item">Third item</li>
 							</ul>
 				  </div>
 				</div>
@@ -123,84 +103,27 @@ Seq[Any](format.raw/*2.1*/("""
 
 
 		</div>
-	<div class="row clearfix">
-		<div class="col-xs-6 column">
-			<h2>
-				Heading
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				<a class="btn" href="#">View details »</a>
-			</p>
-		</div>
-		<div class="col-xs-6 column">
-			<h2>
-				Heading
-			</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
-			<p>
-				<a class="btn" href="#">View details »</a>
-			</p>
-		</div>
-	</div>
-	<div class="row clearfix">
-		<div class="col-xs-4 column">
-			<dl>
-				<dt>
-					Description lists
-				</dt>
-				<dd>
-					A description list is perfect for defining terms.
-				</dd>
-			</dl>
-		</div>
-		<div class="col-xs-4 column">
-			<dl>
-				<dt>
-					Description lists
-				</dt>
-				<dd>
-					A description list is perfect for defining terms.
-				</dd>
-			</dl>
-		</div>
-		<div class="col-xs-4 column">
-			<dl>
-				<dt>
-					Description lists
-				</dt>
-				<dd>
-					A description list is perfect for defining terms.
-				</dd>
-			</dl>
-		</div>
-	</div>
-	<div class="row clearfix">
-	</div>
+
   </div>
 </div>
-""")))})),format.raw/*158.2*/("""
+""")))})),format.raw/*81.2*/("""
 """))}
     }
     
-    def render(): play.api.templates.HtmlFormat.Appendable = apply()
+    def render(feedItems:List[FeedItem]): play.api.templates.HtmlFormat.Appendable = apply(feedItems)
     
-    def f:(() => play.api.templates.HtmlFormat.Appendable) = () => apply()
+    def f:((List[FeedItem]) => play.api.templates.HtmlFormat.Appendable) = (feedItems) => apply(feedItems)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Apr 02 10:05:33 PDT 2015
+                    DATE: Sun Apr 19 16:21:50 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
-                    HASH: 83aa004a45e850f666452cd24513a7e0d23d8584
-                    MATRIX: 870->17|906->19|932->37|971->39|1038->71|1052->77|1111->115|1211->181|1225->187|1255->196|2210->1115|2225->1121|2287->1160|2525->1362|2540->1368|2597->1402|2831->1600|2846->1606|2904->1641|5683->4388
-                    LINES: 30->2|31->3|31->3|31->3|32->4|32->4|32->4|37->9|37->9|37->9|74->46|74->46|74->46|82->54|82->54|82->54|90->62|90->62|90->62|186->158
+                    HASH: d1d26c950e83aac048e6744ed2b9ce88d6b00997
+                    MATRIX: 781->1|918->28|946->47|982->49|1008->67|1047->69|1114->101|1128->107|1187->145|1288->211|1303->217|1334->226|1584->440|1599->446|1661->485|2006->794|2021->800|2075->831|2145->866|2187->892|2226->893|2267->899|2307->930|2346->931|2398->947|2415->955|2441->959|2647->1129|2662->1135|2713->1164|2806->1221|2823->1229|2851->1235|2954->1302|2971->1310|3001->1318|3070->1351|3087->1359|3122->1372|3161->1375|3178->1383|3207->1390|3280->1432|3316->1437|3991->2081
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|39->11|39->11|39->11|49->21|49->21|49->21|65->37|65->37|65->37|67->39|67->39|67->39|68->40|68->40|68->40|69->41|69->41|69->41|73->45|73->45|73->45|74->46|74->46|74->46|77->49|77->49|77->49|78->50|78->50|78->50|78->50|78->50|78->50|82->54|83->55|109->81
                     -- GENERATED --
                 */
             
