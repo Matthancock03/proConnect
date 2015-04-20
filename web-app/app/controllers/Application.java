@@ -11,7 +11,7 @@ import play.Logger;
 import securesocial.core.*;
 import securesocial.*;
 import securesocial.core.java.SecureSocial;
-
+import plugins.*;
 
 
 public class Application extends Controller{

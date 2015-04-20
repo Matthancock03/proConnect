@@ -26,7 +26,13 @@ public class User{
   public String firstName;
   public String lastName;
   public String email;
+
   public String loginProvider;
+  public String token;
+  public String secret;
+  public String avatarUrl;
+  public String authMethod;
+  
   public byte[] profilePicture;
 
 
