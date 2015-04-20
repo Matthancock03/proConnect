@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2015-04-19 16:46:23,627 - [INFO] - from play in pool-6-thread-5 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
@@ -231,4 +232,313 @@ Application started (Dev)
 
 2015-04-19 19:29:59,863 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
 [securesocial] calling deleteExpiredTokens()
+=======
+2015-04-19 16:30:48,016 - [INFO] - from play in pool-6-thread-1 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2015-04-19 16:31:08,954 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6lpb4pg4k - Internal server error, for (GET) [/loginUser?] ->
+
+play.PlayExceptions$CompilationException: Compilation error[object Android in package controllers cannot be accessed in package controllers]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+
+2015-04-19 16:31:09,046 - [WARN] - from play in New I/O worker #1 
+No application found at invoker init
+
+2015-04-19 16:32:39,622 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-19 16:32:40,314 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-19 16:32:40,444 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-19 16:32:40,451 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-19 16:32:40,454 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-19 16:32:40,457 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-19 16:32:40,462 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-19 16:32:40,463 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-19 16:32:40,463 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-19 16:32:40,464 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-19 16:32:40,473 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-19 16:34:35,103 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: userpass
+
+2015-04-19 16:34:35,104 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: google
+
+2015-04-19 16:34:35,105 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-19 16:34:35,105 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-19 16:34:35,108 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-19 16:34:35,110 - [INFO] - from play in play-internal-execution-context-1 
+Shutdown application default Akka system.
+
+2015-04-19 16:34:35,558 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-19 16:34:35,605 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-19 16:34:35,639 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-19 16:34:35,641 - [DEBUG] - from application in play-akka.actor.default-dispatcher-9 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-19 16:34:35,645 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-19 16:34:35,647 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-19 16:34:35,652 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-19 16:34:35,653 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-19 16:34:35,653 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-19 16:34:35,653 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-19 16:34:35,654 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-19 16:36:31,142 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: userpass
+
+2015-04-19 16:36:31,145 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: google
+
+2015-04-19 16:36:31,150 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-19 16:36:31,151 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-19 16:36:31,151 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-19 16:36:31,151 - [INFO] - from play in play-internal-execution-context-1 
+Shutdown application default Akka system.
+
+2015-04-19 16:36:31,283 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-19 16:36:31,344 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-19 16:36:31,383 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-19 16:36:31,384 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-19 16:36:31,385 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-19 16:36:31,386 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-19 16:36:31,384 - [DEBUG] - from application in play-akka.actor.default-dispatcher-9 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-19 16:36:31,392 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-19 16:36:31,394 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-19 16:36:31,395 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-19 16:36:31,395 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-19 16:41:31,388 - [DEBUG] - from application in play-akka.actor.default-dispatcher-13 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-19 16:42:01,568 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: userpass
+
+2015-04-19 16:42:01,568 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: google
+
+2015-04-19 16:42:01,568 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-19 16:42:01,569 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-19 16:42:01,569 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-19 16:42:01,569 - [INFO] - from play in play-internal-execution-context-1 
+Shutdown application default Akka system.
+
+2015-04-19 16:42:01,678 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-19 16:42:01,738 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-19 16:42:01,767 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-19 16:42:01,768 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-19 16:42:01,768 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-19 16:42:01,769 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-19 16:42:01,769 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-19 16:42:01,769 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-19 16:42:01,769 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-19 16:42:01,769 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-19 16:42:01,768 - [DEBUG] - from application in play-akka.actor.default-dispatcher-13 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-19 16:47:01,778 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-19 16:52:01,778 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-19 16:53:05,804 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: userpass
+
+2015-04-19 16:53:05,804 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: google
+
+2015-04-19 16:53:05,804 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-19 16:53:05,805 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-19 16:53:05,805 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-19 16:53:05,805 - [INFO] - from play in play-internal-execution-context-1 
+Shutdown application default Akka system.
+
+2015-04-19 16:53:05,934 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-19 16:53:05,988 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-19 16:53:06,019 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-19 16:53:06,021 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-19 16:53:06,024 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-19 16:53:06,033 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-19 16:53:06,034 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-19 16:53:06,035 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-19 16:53:06,035 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-19 16:53:06,035 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-19 16:53:06,035 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-19 16:53:16,876 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
+[securesocial] bootstrap path = securesocial/bootstrap/css/bootstrap.min.css
+
+2015-04-19 16:53:16,878 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
+[securesocial] assets controller = controllers.ReverseAssets
+
+2015-04-19 16:53:16,880 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
+[securesocial] favicon path = securesocial/images/favicon.png
+
+2015-04-19 16:53:16,881 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
+[securesocial] Jquery path = securesocial/javascripts/jquery-1.7.1.min.js
+
+2015-04-19 16:53:16,882 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
+[securesocial] custom css path = None
+
+2015-04-19 16:53:18,993 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
+
+2015-04-19 16:53:18,994 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=53d4d994-a994-4849-8ae8-da89b46058f2]
+
+2015-04-19 16:53:19,683 - [DEBUG] - from application in play-akka.actor.default-dispatcher-20 
+[securesocial] got json back [{"access_token":"ya29.WgGpQ6zJLpTdAx0-KFbL10ymVyiI0q6N9srAk6AX2NYumHpu5mPkSIdf20tWeSrggCRif-18Picjcw","token_type":"Bearer","expires_in":3600,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjhmYWNhM2UwZWZmMzdkNDE2ZDBhOGE5NzcwZDhmMDljN2VlZmZjZTMifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTA3OTI1NDIxNzg4ODI3MzA5NTIxIiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6Im1hdHRoYW5jb2NrMDNAZ21haWwuY29tIiwiYXRfaGFzaCI6IjB2ckt2SGNxcHpLajV4VWo1XzMxUkEiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0Mjk0ODc1OTgsImV4cCI6MTQyOTQ5MTE5OH0.ofsw1oFbQHePDajf5XiOhemZGdvk3hw1eBI76-0vs15Diixd_UJ2sTSMpiUMRFApWoUvi38diLkgRaTqhk6VvWGjiKTteUM7JJzrZDHqaj5Xk1ynIP7Ob4Gmo-ukBrF24OFWpjFB3joNdPBXAXI2-7RoFAYBNKWcgFv4g7Rsm0Q"}]
+
+2015-04-19 16:53:19,725 - [DEBUG] - from application in play-akka.actor.default-dispatcher-20 
+[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.WgGpQ6zJLpTdAx0-KFbL10ymVyiI0q6N9srAk6AX2NYumHpu5mPkSIdf20tWeSrggCRif-18Picjcw,Some(Bearer),Some(3600),None)),None))
+
+2015-04-19 16:53:20,101 - [DEBUG] - from application in play-akka.actor.default-dispatcher-20 
+[securesocial] user logged in : [SocialUser(IdentityId(107925421788827309521,google),Matthew,Hancock,Matthew Hancock,Some(matthancock03@gmail.com),Some(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.WgGpQ6zJLpTdAx0-KFbL10ymVyiI0q6N9srAk6AX2NYumHpu5mPkSIdf20tWeSrggCRif-18Picjcw,Some(Bearer),Some(3600),None)),None)]
+>>>>>>> d4f2cbdd18cae83fa3631fee70bf447ae4a7bf82
 

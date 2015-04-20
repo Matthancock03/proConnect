@@ -31,85 +31,10 @@ Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any
 
 
 
-
-  <h1>Connections Coming Soon!</h1>
-
-
-
-
 <div class="container">
 	<div class="row clearfix">
 		<div class="col-md-12 column">
-			<nav class="navbar navbar-default" role="navigation">
-				<div class="navbar-header">
-					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>
-				</div>
-				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="#">Link</a>
-						</li>
-						<li>
-							<a href="#">Link</a>
-						</li>
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">People</a>
-								</li>
-								<li>
-									<a href="#">Jobs</a>
-								</li>
-								<li>
-									<a href="#">Companies</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">Groups</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">Inbox</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group">
-							<input type="text" class="form-control" />
-						</div> <button type="submit" class="btn btn-default">Submit</button>
-					</form>
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="#">Link</a>
-						</li>
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Action</a>
-								</li>
-								<li>
-									<a href="#">Another action</a>
-								</li>
-								<li>
-									<a href="#">Something else here</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">Separated link</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				
-			</nav>
+		
 			<h3>
 				Advanced People Search
 			</h3>
@@ -120,7 +45,7 @@ Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any
 					</h3>
 				</div>
 				<div class="panel-body">
-					Compnaies 
+					Compnaies
 				</div>
 				<div class="panel-footer">
 					Location
@@ -152,7 +77,8 @@ Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any
 		</div>
 	</div>
 </div>
-""")))})))}
+""")))})),format.raw/*54.2*/("""
+"""))}
     }
     
     def render(): play.api.templates.HtmlFormat.Appendable = apply()
@@ -164,11 +90,11 @@ Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Apr 16 15:20:44 PDT 2015
-                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/search.scala.html
-                    HASH: 0abd8a5b7fe78b9cbd599e0912f28ddc3629e4df
-                    MATRIX: 865->5|891->23|930->25|968->29|981->35|1009->42
-                    LINES: 29->3|29->3|29->3|30->4|30->4|30->4
+                    DATE: Sun Apr 19 16:52:54 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/search.scala.html
+                    HASH: 3f910e8e1e872011963c9083b5848b9f779100db
+                    MATRIX: 865->3|891->21|930->23|967->26|980->32|1008->39|1797->797
+                    LINES: 29->3|29->3|29->3|30->4|30->4|30->4|80->54
                     -- GENERATED --
                 */
             

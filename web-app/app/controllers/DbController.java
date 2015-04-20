@@ -43,18 +43,6 @@ public class DbController extends Controller{
     return ok(home.render(feeds));
   }
 
-  @BodyParser.Of(BodyParser.Json.class)
-  public static Result androidLogin(String name, String password) {
-
-      ObjectNode result = Json.newObject();
-        if(name != ""){
-          result.put("Accepted", "True");
-        }else{
-          result.put("Accepted", "False");
-        }
-        return ok(result);
-  }
-
   /*public static Result loginUser(){
       Form<loginFormData> formData = Form.form(loginFormData.class).bindFromRequest();
       if (formData.hasErrors()) {
