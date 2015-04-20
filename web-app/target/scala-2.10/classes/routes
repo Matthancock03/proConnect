@@ -11,8 +11,10 @@ GET      /forum                    controllers.Application.forum()
 GET      /connections              controllers.Application.connections()
 GET      /about                    controllers.Application.about()
 GET      /help                     controllers.Application.help()
-GET		 /message                  controllers.Application.message()
-GET      /androidLogin             controllers.DbController.androidLogin(name: String, password: String)
+GET		   /message                  controllers.Application.message()
+GET		   /search                  controllers.Application.search()
+GET      /androidLogin             controllers.Android.androidLogin(name: String, password: String)
+GET      /androidCreateAccount     controllers.Android.androidCreateAccount(name: String, password: String)
 GET      /feedZilla                controllers.NewsFeed.feedZilla()
 
 # Map static resources from the /public folder to the /assets URL path

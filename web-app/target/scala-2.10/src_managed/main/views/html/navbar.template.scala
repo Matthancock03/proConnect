@@ -54,7 +54,7 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
-   
+
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account<span class="caret"></span></a>
@@ -82,10 +82,10 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Apr 16 15:40:34 PDT 2015
-                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/navbar.scala.html
-                    HASH: cdc97ba43dec0812b3ce8cb4f73012ffd9c686c3
-                    MATRIX: 856->2|1423->533|1438->539|1480->559|1748->791|1763->797|1805->817|1878->854|1893->860|1942->887|2018->927|2033->933|2081->959|2161->1003|2176->1009|2220->1031|2292->1067|2307->1073|2349->1093|3017->1725|3032->1731|3073->1750|3150->1791|3165->1797|3207->1817|3333->1907|3354->1919|3428->1971
+                    DATE: Sun Apr 19 16:52:54 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/navbar.scala.html
+                    HASH: 24818ff7a6e2ea70927c009f8981381d5f206edd
+                    MATRIX: 856->1|1413->522|1428->528|1470->548|1733->775|1748->781|1790->801|1862->837|1877->843|1926->870|2001->909|2016->915|2064->941|2143->984|2158->990|2202->1012|2273->1047|2288->1053|2330->1073|2980->1687|2995->1693|3036->1712|3112->1752|3127->1758|3169->1778|3293->1866|3314->1878|3388->1930
                     LINES: 29->2|39->12|39->12|39->12|44->17|44->17|44->17|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21|63->36|63->36|63->36|64->37|64->37|64->37|66->39|66->39|66->39
                     -- GENERATED --
                 */

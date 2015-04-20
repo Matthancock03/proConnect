@@ -34,7 +34,7 @@ public class NewsFeed extends Controller {
 									FeedItem feedItem4 = new FeedItem();
 									FeedItem feedItem5 = new FeedItem();
 									FeedItem feedItem6 = new FeedItem();
-									
+
  									JsonNode rootNode = json.path("articles");
 									JsonNode newNode = rootNode.path("publish_date");
 
