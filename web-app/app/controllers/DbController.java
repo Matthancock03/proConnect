@@ -33,6 +33,12 @@ public class DbController extends Controller{
     return ok(profileEdit.render());
   }
 
+  public static Result profileMain(){
+
+    return ok(profileMain.render());
+  }
+
+
   //@SecureSocial.SecuredAction
   public static Result home(){
     Promise<JsonNode> feedNode = NewsFeed.feedTest();

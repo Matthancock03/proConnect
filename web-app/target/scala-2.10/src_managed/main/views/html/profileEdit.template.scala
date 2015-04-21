@@ -34,8 +34,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 <div class="container">
   <div class="row clearfix">
     <div class="col-md-3 column">
-      <img alt="140x140" src="http://lorempixel.com/140/140/" /><br /><br /><br />
+      <img alt="140x140" src=""""),_display_(Seq[Any](/*9.32*/routes/*9.38*/.Assets.at("images/profile_holder.png"))),format.raw/*9.77*/("""" /><br /><br /><br />
+      <a href=""""),_display_(Seq[Any](/*10.17*/routes/*10.23*/.DbController.profileMain())),format.raw/*10.50*/("""">
       <button type="button" class="btn btn-default">Edit Profile</button>
+    </a>
     </div>
     <div class="col-md-6 column">
       <h3>
@@ -105,7 +107,8 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
     </div>
   </div>
 </div>
-""")))})))}
+""")))})),format.raw/*82.2*/("""
+"""))}
     }
     
     def render(): play.api.templates.HtmlFormat.Appendable = apply()
@@ -117,11 +120,11 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Apr 20 16:50:52 PDT 2015
+                    DATE: Mon Apr 20 22:42:04 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileEdit.scala.html
-                    HASH: a52b6b8834b2b7f2d442f8f0e033236d5815b060
-                    MATRIX: 870->1|895->18|933->19|969->21|982->27|1010->34|1077->66|1091->72|1157->117
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|32->4|32->4|32->4
+                    HASH: 77e0d2852fdd1b40005cf697720c2279869caef7
+                    MATRIX: 870->1|895->18|933->19|969->21|982->27|1010->34|1077->66|1091->72|1157->117|1314->239|1328->245|1388->284|1463->323|1478->329|1527->356|3746->2544
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|32->4|32->4|32->4|37->9|37->9|37->9|38->10|38->10|38->10|110->82
                     -- GENERATED --
                 */
             

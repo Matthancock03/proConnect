@@ -28,12 +28,12 @@ object profileMain extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appen
 
 Seq[Any](_display_(Seq[Any](/*2.2*/main("ProConnect")/*2.20*/{_display_(Seq[Any](format.raw/*2.21*/("""
   """),_display_(Seq[Any](/*3.4*/navbar/*3.10*/.render)),format.raw/*3.17*/("""
-  
+
 
 <div class="container-fluid">
 	<div class="row clearfix">
 		<div class="col-xs-2 column logo-img img-div">
-			<img alt="140x140" class="img-rounded"src="http://lorempixel.com/140/140/" />
+			<img alt="140x140" class="img-rounded"src=""""),_display_(Seq[Any](/*9.48*/routes/*9.54*/.Assets.at("images/profile_holder.png"))),format.raw/*9.93*/(""""/>
       <label for="exampleInputFile">Profile Image</label><input type="file" id="exampleInputFile" />
 		</div>
     <div class="col-xs-2 column">
@@ -112,11 +112,11 @@ Seq[Any](_display_(Seq[Any](/*2.2*/main("ProConnect")/*2.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Apr 20 16:50:52 PDT 2015
+                    DATE: Mon Apr 20 22:42:04 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileMain.scala.html
-                    HASH: 844cdcc3c7cf1f5a386105ad0085e862c985abd7
-                    MATRIX: 870->2|896->20|934->21|972->25|986->31|1014->38|1436->425|1451->431|1500->471|1539->472|4550->3452|4592->3463
-                    LINES: 29->2|29->2|29->2|30->3|30->3|30->3|42->15|42->15|42->15|42->15|100->73|102->75
+                    HASH: 88e9c0a7e7a073bbaf0d91a5749e5635ea384d00
+                    MATRIX: 870->2|896->20|934->21|972->25|986->31|1014->38|1206->195|1220->201|1280->240|1513->438|1528->444|1577->484|1616->485|4627->3465|4669->3476
+                    LINES: 29->2|29->2|29->2|30->3|30->3|30->3|36->9|36->9|36->9|42->15|42->15|42->15|42->15|100->73|102->75
                     -- GENERATED --
                 */
             

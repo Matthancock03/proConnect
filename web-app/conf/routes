@@ -7,14 +7,15 @@
 GET      /                         controllers.Application.splashPage()
 GET      /loginUser                controllers.DbController.home()
 GET      /userAware                controllers.Application.userAware()
-GET      /editProfile              controllers.DbController.editProfile
+GET      /editProfile              controllers.DbController.editProfile()
+GET      /profileMain              controllers.DbController.profileMain()
 GET      /forum                    controllers.Application.forum()
 GET      /connections              controllers.Application.connections()
 GET      /about                    controllers.Application.about()
 GET      /help                     controllers.Application.help()
 GET		   /message                  controllers.Application.message()
-GET		   /search                  controllers.Application.search()
-GET		   /profileMain                  controllers.Application.profileMain()
+GET		   /search                   controllers.Application.search()
+GET		   /profileMain              controllers.Application.profileMain()
 GET      /feedZilla                controllers.NewsFeed.feedZilla()
 
 ########## Android###################

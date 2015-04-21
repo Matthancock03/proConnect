@@ -33,6 +33,11 @@ public class User{
   public String avatarUrl;
   public String authMethod;
 //
+  public String[] experience;
+  public String[] education;
+  public String[] projects;
+  public String location;
+  public String aboutMe;
   public byte[] profilePicture;
 
 

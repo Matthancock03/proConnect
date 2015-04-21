@@ -38,7 +38,7 @@
 			<div class="feed-div">
 			@for(feedItem <- feedItems){
 				@if(feedItem.publish_date != ""){
-					<a href="@feedItem.url" style="text-decoration: none;">
+					<a href="@feedItem.url" target="_blank" style="text-decoration: none;">
 					<div class="panel panel-default">
 						<div class="panel-body">
 						<div>
