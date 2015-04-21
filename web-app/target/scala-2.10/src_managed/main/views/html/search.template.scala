@@ -34,7 +34,7 @@ Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any
 <div class="container">
 	<div class="row clearfix">
 		<div class="col-md-12 column">
-		
+
 			<h3>
 				Advanced People Search
 			</h3>
@@ -90,10 +90,10 @@ Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Apr 20 16:50:52 PDT 2015
+                    DATE: Tue Apr 21 00:23:51 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/search.scala.html
-                    HASH: 3f910e8e1e872011963c9083b5848b9f779100db
-                    MATRIX: 865->3|891->21|930->23|967->26|980->32|1008->39|1797->797
+                    HASH: bff5559246d59439a724c49cbfee133cf614f74d
+                    MATRIX: 865->3|891->21|930->23|967->26|980->32|1008->39|1795->795
                     LINES: 29->3|29->3|29->3|30->4|30->4|30->4|80->54
                     -- GENERATED --
                 */

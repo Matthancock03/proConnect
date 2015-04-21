@@ -22,12 +22,16 @@ public class NewsFeed extends Controller {
 
 	public static Promise<Result> feedZilla() {
     final Promise<Result> resultPromise = WS.url("http://api.feedzilla.com/v1/categories/30/articles.json")
-		.setQueryParameter("count","2" ).setQueryParameter("order", "date").get().map(
+		.setQueryParameter("count","10" ).setQueryParameter("order", "date").get().map(
             new Function<WS.Response, Result>() {
                 public Result apply(WS.Response response) {
 									Logger.debug(response.getBody());
 									JsonNode json = response.asJson();
+
+
+
 									List feeds = new ArrayList();
+									FeedItem[] feedItems = new FeedItem[11];
 									FeedItem feedItem = new FeedItem();
 									FeedItem feedItem2 = new FeedItem();
 									FeedItem feedItem3 = new FeedItem();
@@ -37,15 +41,23 @@ public class NewsFeed extends Controller {
 
  									JsonNode rootNode = json.path("articles");
 									JsonNode newNode = rootNode.path("publish_date");
+									int x = 0;
+									for (JsonNode item : rootNode) {
+										feedItems[x] = new FeedItem();
+										feedItems[x].publish_date = item.get("publish_date").textValue();
+										feedItems[x].source = item.get("source").textValue();
+										feedItems[x].source_url = item.get("source_url").textValue();
+										feedItems[x].summary = item.get("summary").textValue();
+										feedItems[x].title = item.get("title").textValue();
+										feedItems[x].url = item.get("url").textValue();
+										feeds.add(feedItems[x]);
+										x++;
+										Logger.debug(item.get("publish_date").textValue());
+										}
 
-									feedItem.publish_date =  json.findPath("publish_date").textValue();
-							    feedItem.source = json.findPath("source").textValue();
-							    feedItem.source_url = json.findPath("source_url").textValue();
-							    feedItem.summary = json.findPath("summary").textValue();
-							    feedItem.title = json.findPath("title").textValue();
-							    feedItem.url = json.findPath("url").textValue();
 
-									feedItem2.publish_date =  json.findPath("publish_date").textValue();
+
+									feedItems[2].publish_date =  json.findPath("publish_date").textValue();
 									feedItem2.source = json.findPath("source").textValue();
 									feedItem2.source_url = json.findPath("source_url").textValue();
 									feedItem2.summary = json.findPath("summary").textValue();
