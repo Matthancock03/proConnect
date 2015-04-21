@@ -22,17 +22,17 @@ import play.db.*;
 public class User{
 
 
-  public String id;
+//  public String id;
   public String firstName;
   public String lastName;
   public String email;
 
   public String loginProvider;
-  public String token;
+  //public String token;
   public String secret;
   public String avatarUrl;
   public String authMethod;
-  
+//
   public byte[] profilePicture;
 
 
@@ -46,8 +46,8 @@ public class User{
 
   }
 
-public static void uploadPic(){
+  public static void uploadPic(){
 
-}
+  }
 
 }

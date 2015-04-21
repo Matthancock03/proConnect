@@ -26,15 +26,21 @@ import play.libs.F.Promise;
 import models.*;
 
 public class Android extends Controller{
+
   @BodyParser.Of(BodyParser.Json.class)
+  @SecureSocial.UserAwareAction
   public static Result androidLogin(String name, String password) {
     ObjectNode result = Json.newObject();
 
-        if(name == "denied" || name != ""){
+        if(name == "denied" || name == ""){
           result.put("Accepted", "False");
         }else{
           User user = new User();
-
+          Identity userId = (Identity) ctx().args.get(SecureSocial.USER_KEY);
+          user.loadUser(userId);
+          JsonNode jsonUser = Json.toJson(user);
+          Logger.debug(jsonUser.toString());
+          return ok(jsonUser);
         }
         return ok(result);
   }

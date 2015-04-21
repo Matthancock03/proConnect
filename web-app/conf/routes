@@ -2,6 +2,7 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+########### Web App##################
 #POST     /login                   controllers.Application.login()
 GET      /                         controllers.Application.splashPage()
 GET      /loginUser                controllers.DbController.home()
@@ -14,9 +15,12 @@ GET      /help                     controllers.Application.help()
 GET		   /message                  controllers.Application.message()
 GET		   /search                  controllers.Application.search()
 GET		   /profileMain                  controllers.Application.profileMain()
+GET      /feedZilla                controllers.NewsFeed.feedZilla()
+
+########## Android###################
 GET      /androidLogin             controllers.Android.androidLogin(name: String, password: String)
 GET      /androidCreateAccount     controllers.Android.androidCreateAccount(name: String, password: String)
-GET      /feedZilla                controllers.NewsFeed.feedZilla()
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
