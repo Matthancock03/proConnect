@@ -24,22 +24,24 @@ object profileMain extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appen
 
     /**/
     def apply():play.api.templates.HtmlFormat.Appendable = {
-        _display_ {
+        _display_ {import helper._
 
-Seq[Any](_display_(Seq[Any](/*2.2*/main("ProConnect")/*2.20*/{_display_(Seq[Any](format.raw/*2.21*/("""
-  """),_display_(Seq[Any](/*3.4*/navbar/*3.10*/.render)),format.raw/*3.17*/("""
 
+Seq[Any](format.raw/*2.1*/("""
+"""),_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/{_display_(Seq[Any](format.raw/*3.21*/("""
+  """),_display_(Seq[Any](/*4.4*/navbar/*4.10*/.render)),format.raw/*4.17*/("""
+  
 
 <div class="container-fluid">
 	<div class="row clearfix">
 		<div class="col-xs-2 column logo-img img-div">
-			<img alt="140x140" class="img-rounded"src=""""),_display_(Seq[Any](/*9.48*/routes/*9.54*/.Assets.at("images/profile_holder.png"))),format.raw/*9.93*/(""""/>
+			<img alt="140x140" class="img-rounded"src="http://lorempixel.com/140/140/" />
       <label for="exampleInputFile">Profile Image</label><input type="file" id="exampleInputFile" />
 		</div>
     <div class="col-xs-2 column">
     </div>
 		<div class="col-xs-6 column">
-      """),_display_(Seq[Any](/*15.8*/helper/*15.14*/.form(action = routes.DbController.home)/*15.54*/{_display_(Seq[Any](format.raw/*15.55*/("""
+      """),_display_(Seq[Any](/*16.8*/helper/*16.14*/.form(action = routes.DbController.home)/*16.54*/{_display_(Seq[Any](format.raw/*16.55*/("""
 				<div class="form-group break-after">
 					 <label class="spacer">Name</label><input type="text" class="form-control" id="exampleInputEmail1" />
 					 <label class="spacer-min">Personal Headline</label><input type="text"  class="form-control" id="exampleInputPassword1" />
@@ -97,9 +99,9 @@ Seq[Any](_display_(Seq[Any](/*2.2*/main("ProConnect")/*2.20*/{_display_(Seq[Any]
     </div>
       </div>
       <div class="col-xs-2 column bottom-div"></div>
-    """)))})),format.raw/*73.6*/("""
+    """)))})),format.raw/*74.6*/("""
 		</div>
-""")))})),format.raw/*75.2*/("""
+""")))})),format.raw/*76.2*/("""
 """))}
     }
     
@@ -112,11 +114,11 @@ Seq[Any](_display_(Seq[Any](/*2.2*/main("ProConnect")/*2.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Apr 20 22:42:04 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileMain.scala.html
-                    HASH: 88e9c0a7e7a073bbaf0d91a5749e5635ea384d00
-                    MATRIX: 870->2|896->20|934->21|972->25|986->31|1014->38|1206->195|1220->201|1280->240|1513->438|1528->444|1577->484|1616->485|4627->3465|4669->3476
-                    LINES: 29->2|29->2|29->2|30->3|30->3|30->3|36->9|36->9|36->9|42->15|42->15|42->15|42->15|100->73|102->75
+                    DATE: Tue Apr 21 10:40:34 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/profileMain.scala.html
+                    HASH: dc033192f9a4a57f39ed8f30b20814166ca062c7
+                    MATRIX: 878->18|915->21|941->39|979->40|1018->45|1032->51|1060->58|1494->457|1509->463|1558->503|1597->504|4666->3542|4710->3555
+                    LINES: 30->2|31->3|31->3|31->3|32->4|32->4|32->4|44->16|44->16|44->16|44->16|102->74|104->76
                     -- GENERATED --
                 */
             

@@ -11,7 +11,7 @@ import play.Logger;
 import securesocial.core.*;
 import securesocial.*;
 import securesocial.core.java.SecureSocial;
-import plugins.*;
+
 
 
 public class Application extends Controller{
@@ -41,10 +41,6 @@ public class Application extends Controller{
 
   public static Result message(){
     return ok(message.render());
-  }
-
-    public static Result profileMain(){
-    return ok(profileMain.render());
   }
 
 

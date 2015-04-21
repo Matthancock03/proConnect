@@ -15,7 +15,7 @@ GET      /about                    controllers.Application.about()
 GET      /help                     controllers.Application.help()
 GET		   /message                  controllers.Application.message()
 GET		   /search                   controllers.Application.search()
-GET		   /profileMain              controllers.Application.profileMain()
+
 GET      /feedZilla                controllers.NewsFeed.feedZilla()
 
 ########## Android###################

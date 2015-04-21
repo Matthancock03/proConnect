@@ -24,11 +24,9 @@ object navbar extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable
 
     /**/
     def apply():play.api.templates.HtmlFormat.Appendable = {
-        _display_ {import helper._
+        _display_ {
 
-
-Seq[Any](format.raw/*2.1*/("""
-<nav class="navbar navbar-inverse">
+Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -38,34 +36,34 @@ Seq[Any](format.raw/*2.1*/("""
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href=""""),_display_(Seq[Any](/*13.38*/routes/*13.44*/.DbController.home())),format.raw/*13.64*/("""">Proconnect</a>
+      <a class="navbar-brand" href=""""),_display_(Seq[Any](/*12.38*/routes/*12.44*/.DbController.home())),format.raw/*12.64*/("""">Proconnect</a>
     </div>
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li><a href=""""),_display_(Seq[Any](/*18.21*/routes/*18.27*/.DbController.home())),format.raw/*18.47*/("""">Home</a></li>
-      <li><a href=""""),_display_(Seq[Any](/*19.21*/routes/*19.27*/.DbController.editProfile())),format.raw/*19.54*/("""">Profile</a></li>
-      <li><a href=""""),_display_(Seq[Any](/*20.21*/routes/*20.27*/.Application.connections())),format.raw/*20.53*/("""">Connections</a></li>
-      <li><a href=""""),_display_(Seq[Any](/*21.21*/routes/*21.27*/.Application.message())),format.raw/*21.49*/("""">Messages</a></li>
- <li><a href=""""),_display_(Seq[Any](/*22.16*/routes/*22.22*/.Application.forum())),format.raw/*22.42*/("""">Forums</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*17.21*/routes/*17.27*/.DbController.home())),format.raw/*17.47*/("""">Home</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*18.21*/routes/*18.27*/.DbController.editProfile())),format.raw/*18.54*/("""">Profile</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*19.21*/routes/*19.27*/.Application.connections())),format.raw/*19.53*/("""">Connections</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*20.21*/routes/*20.27*/.Application.message())),format.raw/*20.49*/("""">Messages</a></li>
+ <li><a href=""""),_display_(Seq[Any](/*21.16*/routes/*21.22*/.Application.forum())),format.raw/*21.42*/("""">Forums</a></li>
 
     </ul>
-    """),_display_(Seq[Any](/*25.6*/form(routes.Application.search(), 'class -> "navbar-form navbar-left")/*25.76*/{_display_(Seq[Any](format.raw/*25.77*/("""
+    <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Search">
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
-    """)))})),format.raw/*30.6*/("""
+    </form>
 
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account<span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
           <li><a href="#">Settings</a></li>
-          <li><a href=""""),_display_(Seq[Any](/*37.25*/routes/*37.31*/.Application.help())),format.raw/*37.50*/("""">Help</a></li>
-          <li><a href=""""),_display_(Seq[Any](/*38.25*/routes/*38.31*/.Application.about())),format.raw/*38.51*/("""">About ProConnect</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*36.25*/routes/*36.31*/.Application.help())),format.raw/*36.50*/("""">Help</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*37.25*/routes/*37.31*/.Application.about())),format.raw/*37.51*/("""">About ProConnect</a></li>
           <li class="divider"></li>
-          <li><a href=""""),_display_(Seq[Any](/*40.25*/securesocial/*40.37*/.controllers.routes.LoginPage.logout().absoluteURL())),format.raw/*40.89*/("""">Sign Out</a></li>
+          <li><a href=""""),_display_(Seq[Any](/*39.25*/securesocial/*39.37*/.controllers.routes.LoginPage.logout().absoluteURL())),format.raw/*39.89*/("""">Sign Out</a></li>
         </ul>
       </li>
     </ul>
@@ -84,11 +82,11 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Apr 21 00:23:51 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/navbar.scala.html
-                    HASH: fb51781a8009604671c4b74ffc85ddceeb4c3186
-                    MATRIX: 872->17|1430->539|1445->545|1487->565|1750->792|1765->798|1807->818|1879->854|1894->860|1943->887|2018->926|2033->932|2081->958|2160->1001|2175->1007|2219->1029|2290->1064|2305->1070|2347->1090|2416->1124|2495->1194|2534->1195|2753->1383|3124->1718|3139->1724|3180->1743|3256->1783|3271->1789|3313->1809|3437->1897|3458->1909|3532->1961
-                    LINES: 30->2|41->13|41->13|41->13|46->18|46->18|46->18|47->19|47->19|47->19|48->20|48->20|48->20|49->21|49->21|49->21|50->22|50->22|50->22|53->25|53->25|53->25|58->30|65->37|65->37|65->37|66->38|66->38|66->38|68->40|68->40|68->40
+                    DATE: Tue Apr 21 10:40:34 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/navbar.scala.html
+                    HASH: efa7fcb5bec98b2dcfcd5682929ec0d707c6bb20
+                    MATRIX: 856->2|1423->533|1438->539|1480->559|1748->791|1763->797|1805->817|1878->854|1893->860|1942->887|2018->927|2033->933|2081->959|2161->1003|2176->1009|2220->1031|2292->1067|2307->1073|2349->1093|3014->1722|3029->1728|3070->1747|3147->1788|3162->1794|3204->1814|3330->1904|3351->1916|3425->1968
+                    LINES: 29->2|39->12|39->12|39->12|44->17|44->17|44->17|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21|63->36|63->36|63->36|64->37|64->37|64->37|66->39|66->39|66->39
                     -- GENERATED --
                 */
             

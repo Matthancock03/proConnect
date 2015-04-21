@@ -1,3 +1,100 @@
-2015-04-21 00:23:56,554 - [INFO] - from play in pool-7764-thread-3 
+2015-04-21 10:40:21,963 - [INFO] - from play in pool-6-thread-3 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2015-04-21 10:41:21,673 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6lpnp5332 - Internal server error, for (GET) [/forum] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value profileMain is not a member of object controllers.Application]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+
+2015-04-21 10:41:22,124 - [WARN] - from play in New I/O worker #1 
+No application found at invoker init
+
+2015-04-21 10:42:00,166 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6lpnp784e - Internal server error, for (GET) [/forum] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value profileMain is not a member of object controllers.Application]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+
+2015-04-21 10:44:13,786 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-21 10:44:16,567 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-21 10:44:16,864 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-21 10:44:16,880 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-21 10:44:16,880 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-21 10:44:16,895 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-21 10:44:16,911 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-21 10:44:16,911 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-21 10:44:16,911 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-21 10:44:16,911 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-21 10:44:16,942 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-21 10:49:16,894 - [DEBUG] - from application in play-akka.actor.default-dispatcher-14 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-21 10:54:16,891 - [DEBUG] - from application in play-akka.actor.default-dispatcher-36 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-21 10:59:16,892 - [DEBUG] - from application in play-akka.actor.default-dispatcher-41 
+[securesocial] calling deleteExpiredTokens()
 

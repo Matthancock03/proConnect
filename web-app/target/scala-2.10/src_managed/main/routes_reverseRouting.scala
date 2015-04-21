@@ -1,6 +1,6 @@
-// @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
-// @HASH:d7760f17e959835d9b3d2fab79b76b70ed6573e9
-// @DATE:Mon Apr 20 22:42:08 PDT 2015
+// @SOURCE:C:/Users/Roya/Documents/GitHub/proConnect/web-app/conf/routes
+// @HASH:0115d157fd9a3f638213f7813f84d5ca9f9571c8
+// @DATE:Tue Apr 21 10:43:15 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -18,7 +18,6 @@ import Router.queryString
 // @LINE:23
 // @LINE:22
 // @LINE:19
-// @LINE:18
 // @LINE:17
 // @LINE:16
 // @LINE:15
@@ -71,7 +70,6 @@ def at(file:String): Call = {
 }
                           
 
-// @LINE:18
 // @LINE:17
 // @LINE:16
 // @LINE:15
@@ -128,12 +126,6 @@ def about(): Call = {
 // @LINE:17
 def search(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "search")
-}
-                                                
-
-// @LINE:18
-def profileMain(): Call = {
-   Call("GET", _prefix + { _defaultPrefix } + "profileMain")
 }
                                                 
     
@@ -343,7 +335,6 @@ def login(): Call = {
 // @LINE:23
 // @LINE:22
 // @LINE:19
-// @LINE:18
 // @LINE:17
 // @LINE:16
 // @LINE:15
@@ -411,7 +402,6 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:18
 // @LINE:17
 // @LINE:16
 // @LINE:15
@@ -506,17 +496,6 @@ def search : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "search"})
-      }
-   """
-)
-                        
-
-// @LINE:18
-def profileMain : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Application.profileMain",
-   """
-      function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "profileMain"})
       }
    """
 )
@@ -828,7 +807,6 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
 // @LINE:23
 // @LINE:22
 // @LINE:19
-// @LINE:18
 // @LINE:17
 // @LINE:16
 // @LINE:15
@@ -882,7 +860,6 @@ def at(file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
-// @LINE:18
 // @LINE:17
 // @LINE:16
 // @LINE:15
@@ -940,12 +917,6 @@ def about(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:17
 def search(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.search(), HandlerDef(this, "controllers.Application", "search", Seq(), "GET", """""", _prefix + """search""")
-)
-                      
-
-// @LINE:18
-def profileMain(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.profileMain(), HandlerDef(this, "controllers.Application", "profileMain", Seq(), "GET", """""", _prefix + """profileMain""")
 )
                       
     
