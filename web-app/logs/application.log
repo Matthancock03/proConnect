@@ -1,100 +1,388 @@
-2015-04-21 10:40:21,963 - [INFO] - from play in pool-6-thread-3 
+2015-04-22 13:04:26,154 - [INFO] - from play in pool-6-thread-4 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-04-21 10:41:21,673 - [ERROR] - from application in New I/O worker #1 
-
-
-! @6lpnp5332 - Internal server error, for (GET) [/forum] ->
-
-play.PlayExceptions$CompilationException: Compilation error[value profileMain is not a member of object controllers.Application]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-
-2015-04-21 10:41:22,124 - [WARN] - from play in New I/O worker #1 
-No application found at invoker init
-
-2015-04-21 10:42:00,166 - [ERROR] - from application in New I/O worker #1 
-
-
-! @6lpnp784e - Internal server error, for (GET) [/forum] ->
-
-play.PlayExceptions$CompilationException: Compilation error[value profileMain is not a member of object controllers.Application]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-
-2015-04-21 10:44:13,786 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-22 13:09:11,525 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-04-21 10:44:16,567 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-22 13:09:13,068 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
 
-2015-04-21 10:44:16,864 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-22 13:09:14,478 - [INFO] - from play in play-internal-execution-context-1 
 Starting application default Akka system.
 
-2015-04-21 10:44:16,880 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
+2015-04-22 13:09:14,522 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
 [securesocial] calling deleteExpiredTokens()
 
-2015-04-21 10:44:16,880 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-22 13:09:14,524 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded user service: class plugins.InMemoryUserService
 
-2015-04-21 10:44:16,895 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-22 13:09:14,525 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded password hasher bcrypt
 
-2015-04-21 10:44:16,911 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-22 13:09:14,532 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: twitter
 
-2015-04-21 10:44:16,911 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-22 13:09:14,533 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: facebook
 
-2015-04-21 10:44:16,911 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-22 13:09:14,534 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: google
 
-2015-04-21 10:44:16,911 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-22 13:09:14,536 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: userpass
 
-2015-04-21 10:44:16,942 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-22 13:09:14,575 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-04-21 10:49:16,894 - [DEBUG] - from application in play-akka.actor.default-dispatcher-14 
+2015-04-22 13:09:29,169 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
+<?xml version="1.0"?><rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:cf="http://www.microsoft.com/schemas/rss/core/2005" version="2.0"><channel><cf:treatAs>list</cf:treatAs><title>USATODAY.com Feed</title><link>http://www.usatoday.com</link><description>http://www.usatoday.com</description><language>en-us</language><copyright>Copyright 2015, USATODAY.COM, USA TODAY</copyright><lastBuildDate>Wed, 22 Apr 2015 04:08:52 GMT</lastBuildDate><image><title>USATODAY.com</title><width>135</width><height>20</height><link>http://www.usatoday.com</link><url>http://i.usatoday.net/_common/_images/usatodaycom_135x20.gif</url></image><cf:listinfo><cf:sort element="pubDate" data-type="date" label="Date/Time Order" default="false"></cf:sort><cf:sort element="title" data-type="text" label="Title Order" default="false"></cf:sort></cf:listinfo><item><title>Not for everyone: Intel Compute Stick is a PC that fits in your pocket</title><link>http://www.usatoday.com/story/tech/columnist/baig/2015/04/22/intel-compute-stick-is-pc-that-fits-in-pocket/26175695/</link><pubDate>Wed, 22 Apr 2015 10:59:38 GMT</pubDate><description>Intel Compute Stick plugs into a TV or monitor to turn it into a Windows PC</description><guid isPermalink="true">http://www.usatoday.com/story/tech/columnist/baig/2015/04/22/intel-compute-stick-is-pc-that-fits-in-pocket/26175695/</guid></item><item><title>Defense Mobile launches wireless service for vets</title><link>http://www.usatoday.com/story/tech/2015/04/22/defensemobile-launches-wireless-service-for-active-military-veterans/26125247/</link><pubDate>Wed, 22 Apr 2015 03:39:58 GMT</pubDate><description>Under one plan, Defense Mobile members can pay as little as $24 a month.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/22/defensemobile-launches-wireless-service-for-active-military-veterans/26125247/</guid></item><item><title>Study: Drivers want more tech to prevent crashes</title><link>http://www.usatoday.com/story/money/cars/2015/04/22/jd-power-survey-tech/26183551/</link><pubDate>Wed, 22 Apr 2015 12:59:19 GMT</pubDate><description>The results are good news for those developing self-driving cars.</description><guid isPermalink="true">http://www.usatoday.com/story/money/cars/2015/04/22/jd-power-survey-tech/26183551/</guid></item><item><title>App developers prep games for Apple Watch</title><link>http://www.usatoday.com/story/tech/2015/04/21/app-developers-prep-games-for-apple-watch/26098857/</link><pubDate>Tue, 21 Apr 2015 01:38:44 GMT</pubDate><description>Hundreds of games expected for Apple Watch beginning Friday</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/21/app-developers-prep-games-for-apple-watch/26098857/</guid></item><item><title>Tesla shares jump, Q1 earnings loom</title><link>http://americasmarkets.usatoday.com/2015/04/22/what-to-expect-from-teslas-q2-earnings-report/</link><pubDate>Wed, 22 Apr 2015 02:15:06 GMT</pubDate><description>Tesla reports May 6, but analysts are already picking apart the electric-car maker</description><guid isPermalink="true">http://americasmarkets.usatoday.com/2015/04/22/what-to-expect-from-teslas-q2-earnings-report/</guid></item><item><title>Facebook unveils phone app Hello</title><link>http://www.usatoday.com/story/tech/personal/2015/04/22/facebook-hello/26183827/</link><pubDate>Wed, 22 Apr 2015 01:35:56 GMT</pubDate><description>App lets users accept, receive phone calls; links contacts to Facebook.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/personal/2015/04/22/facebook-hello/26183827/</guid></item><item><title>Majority of e-waste comes from...appliances?</title><link>http://laundry.reviewed.com/news/appliances-not-gadgets-make-up-majority-of-e-waste?utm_source=usat&amp;utm_medium=referral&amp;utm_campaign=collab</link><pubDate>Wed, 22 Apr 2015 11:51:54 GMT</pubDate><description>Appliances, and not gadgets like smartphones, make up most of the world's e-waste.</description><guid isPermalink="true">http://laundry.reviewed.com/news/appliances-not-gadgets-make-up-majority-of-e-waste?utm_source=usat&amp;utm_medium=referral&amp;utm_campaign=collab</guid></item><item><title>5 things to know about 'Mobilegeddon'</title><link>http://www.usatoday.com/story/tech/2015/04/21/5-things-to-know-about-google-mobilegeddon/26123275/</link><pubDate>Tue, 21 Apr 2015 12:06:06 GMT</pubDate><description>Changes not expected to kick in for a week</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/21/5-things-to-know-about-google-mobilegeddon/26123275/</guid></item><item><title>Look up! Here comes the Lyrid meteor shower</title><link>http://www.usatoday.com/story/tech/2015/04/21/lyrid-meteor-shower/26120003/</link><pubDate>Tue, 21 Apr 2015 11:30:18 GMT</pubDate><description>April's top meteor shower, the Lyrid, should peak over the next couple of nights.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/21/lyrid-meteor-shower/26120003/</guid></item><item><title>Tech Five: Yahoo flat despite earnings miss</title><link>http://www.usatoday.com/story/tech/2015/04/22/tech-stocks-yahoo/26171359/</link><pubDate>Wed, 22 Apr 2015 09:12:33 GMT</pubDate><description>Company missed on revenue, earnings for first quarter.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/22/tech-stocks-yahoo/26171359/</guid></item><item><title>This Apple Watch with gold band is not for sale</title><link>http://www.usatoday.com/story/tech/personal/2015/04/21/apple-watch-gold/26119521/</link><pubDate>Tue, 21 Apr 2015 11:24:36 GMT</pubDate><description>Special edition watch appeared on wrists of Karl Lagerfeld, Beyonce.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/personal/2015/04/21/apple-watch-gold/26119521/</guid></item><item><title>Homeland Security to open Silicon Valley office</title><link>http://www.usatoday.com/story/tech/2015/04/21/department-of-homeland-security-silicon-valley-office/26150621/</link><pubDate>Tue, 21 Apr 2015 08:13:53 GMT</pubDate><description>The move west is a peace offering to the tech community.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/21/department-of-homeland-security-silicon-valley-office/26150621/</guid></item><item><title>Computer security has failed, says keynote at giant security gathering</title><link>http://www.usatoday.com/story/tech/2015/04/21/rsa-amit-yoran-computer-security-failed/26139927/</link><pubDate>Tue, 21 Apr 2015 06:14:24 GMT</pubDate><description>What we've been doing for decades isn't getting the job done, said Amit Yoran, RSA president.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/21/rsa-amit-yoran-computer-security-failed/26139927/</guid></item><item><title>Facebook tweaks News Feed to favor friends</title><link>http://www.usatoday.com/story/tech/2015/04/21/facebook-news-feed-algorithm-change/26143023/</link><pubDate>Tue, 21 Apr 2015 05:53:05 GMT</pubDate><description>The algorithm change could choke traffic to some publishers and Facebook pages.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/21/facebook-news-feed-algorithm-change/26143023/</guid></item><item><title>Android Wear update just in time for rival Apple Watch</title><link>http://www.usatoday.com/story/tech/columnist/baig/2015/04/20/android-wear-update-comes-just-in-time-for-applewatch/26064527/</link><pubDate>Mon, 20 Apr 2015 10:02:54 GMT</pubDate><description>Google is releasing an Android Wear update it hopes will steal Apple's thunder.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/columnist/baig/2015/04/20/android-wear-update-comes-just-in-time-for-applewatch/26064527/</guid></item><item><title>Book: Elon Musk almost sold Tesla to Google</title><link>http://www.usatoday.com/story/money/cars/2015/04/20/elon-musk-tesla-google/26093781/</link><pubDate>Mon, 20 Apr 2015 05:34:30 GMT</pubDate><description>The price would have been $6 billion, plus $5 billion in improvements and Musk stayed on</description><guid isPermalink="true">http://www.usatoday.com/story/money/cars/2015/04/20/elon-musk-tesla-google/26093781/</guid></item><item><title>Verizon new plan not as cheap as advertised</title><link>http://www.usatoday.com/story/tech/2015/04/19/verizon-new-plan-not-as-cheap-as-advertised/26050061/</link><pubDate>Sun, 19 Apr 2015 08:33:44 GMT</pubDate><description>Reporter's savings: just $5 monthly</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/19/verizon-new-plan-not-as-cheap-as-advertised/26050061/</guid></item><item><title>GE's 12-foot smoker uses data to cook the perfect BBQ</title><link>http://ovens.reviewed.com/video/4186626690001?utm_source=usat&amp;utm_medium=referral&amp;utm_campaign=collab</link><pubDate>Tue, 21 Apr 2015 03:46:50 GMT</pubDate><description>We learned from GE about cooking with data to make some amazing BBQ.</description><guid isPermalink="true">http://ovens.reviewed.com/video/4186626690001?utm_source=usat&amp;utm_medium=referral&amp;utm_campaign=collab</guid></item><item><title>Welcome to the smart Garden of Edyn</title><link>http://smarthome.reviewed.com/features/welcome-to-the-smart-garden-of-edyn</link><pubDate>Tue, 21 Apr 2015 02:53:29 GMT</pubDate><description>Alas, even those of us with a green thumb can often be challenged in our home gardens.</description><guid isPermalink="true">http://smarthome.reviewed.com/features/welcome-to-the-smart-garden-of-edyn</guid></item><item><title>Thousands of apps planned for Apple Watch</title><link>http://www.usatoday.com/story/tech/2015/04/17/thousands-of-apps-for-apple-watch/25927313/</link><pubDate>Fri, 17 Apr 2015 09:38:00 GMT</pubDate><description>Smaller apps have quicker and bite-size way to relay information.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/17/thousands-of-apps-for-apple-watch/25927313/</guid></item></channel></rss>
+
+2015-04-22 13:09:29,188 - [ERROR] - from play in play-internal-execution-context-1 
+Cannot invoke the action, eventually got an error: java.lang.RuntimeException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: org.jboss.netty.buffer.ChannelBufferInputStream@1acd28d5; line: 1, column: 2]
+
+2015-04-22 13:09:29,253 - [ERROR] - from application in play-internal-execution-context-1 
+
+
+! @6m05pif4n - Internal server error, for (GET) [/feedZilla] ->
+
+play.api.Application$$anon$1: Execution exception[[RuntimeException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: org.jboss.netty.buffer.ChannelBufferInputStream@1acd28d5; line: 1, column: 2]]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: org.jboss.netty.buffer.ChannelBufferInputStream@1acd28d5; line: 1, column: 2]
+	at play.libs.Json.parse(Json.java:82) ~[play-json_2.10-2.2.3.jar:2.2.3]
+	at play.libs.WS$Response.asJson(WS.java:704) ~[play-java_2.10-2.2.3.jar:2.2.3]
+	at controllers.NewsFeed$1.apply(NewsFeed.java:29) ~[na:na]
+	at controllers.NewsFeed$1.apply(NewsFeed.java:26) ~[na:na]
+	at play.core.j.FPromiseHelper$$anonfun$map$1.apply(FPromiseHelper.scala:79) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.util.Success$$anonfun$map$1.apply(Try.scala:206) ~[scala-library-2.10.3.jar:na]
+	at scala.util.Try$.apply(Try.scala:161) ~[scala-library-2.10.3.jar:na]
+	at scala.util.Success.map(Try.scala:206) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: org.jboss.netty.buffer.ChannelBufferInputStream@1acd28d5; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1369) ~[jackson-core-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:599) ~[jackson-core-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:520) ~[jackson-core-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2267) ~[jackson-core-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:779) ~[jackson-core-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:665) ~[jackson-core-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:2926) ~[jackson-databind-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:2873) ~[jackson-databind-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2080) ~[jackson-databind-2.2.2.jar:2.2.2]
+	at play.libs.Json.parse(Json.java:80) ~[play-json_2.10-2.2.3.jar:2.2.3]
+	... 17 common frames omitted
+
+2015-04-22 13:10:43,499 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: userpass
+
+2015-04-22 13:10:43,507 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: google
+
+2015-04-22 13:10:43,507 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-22 13:10:43,507 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-22 13:10:43,517 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-22 13:10:43,519 - [INFO] - from play in play-internal-execution-context-1 
+Shutdown application default Akka system.
+
+2015-04-22 13:10:44,225 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-22 13:10:44,345 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-22 13:10:44,375 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-22 13:10:44,377 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-22 13:10:44,377 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-22 13:10:44,378 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-22 13:10:44,378 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-22 13:10:44,379 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-22 13:10:44,379 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-22 13:10:44,378 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
 [securesocial] calling deleteExpiredTokens()
 
-2015-04-21 10:54:16,891 - [DEBUG] - from application in play-akka.actor.default-dispatcher-36 
+2015-04-22 13:10:44,387 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-22 13:10:44,777 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+<?xml version="1.0"?><rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:cf="http://www.microsoft.com/schemas/rss/core/2005" version="2.0"><channel><cf:treatAs>list</cf:treatAs><title>USATODAY.com Feed</title><link>http://www.usatoday.com</link><description>http://www.usatoday.com</description><language>en-us</language><copyright>Copyright 2015, USATODAY.COM, USA TODAY</copyright><lastBuildDate>Wed, 22 Apr 2015 04:08:52 GMT</lastBuildDate><image><title>USATODAY.com</title><width>135</width><height>20</height><link>http://www.usatoday.com</link><url>http://i.usatoday.net/_common/_images/usatodaycom_135x20.gif</url></image><cf:listinfo><cf:sort element="pubDate" data-type="date" label="Date/Time Order" default="false"></cf:sort><cf:sort element="title" data-type="text" label="Title Order" default="false"></cf:sort></cf:listinfo><item><title>Not for everyone: Intel Compute Stick is a PC that fits in your pocket</title><link>http://www.usatoday.com/story/tech/columnist/baig/2015/04/22/intel-compute-stick-is-pc-that-fits-in-pocket/26175695/</link><pubDate>Wed, 22 Apr 2015 10:59:38 GMT</pubDate><description>Intel Compute Stick plugs into a TV or monitor to turn it into a Windows PC</description><guid isPermalink="true">http://www.usatoday.com/story/tech/columnist/baig/2015/04/22/intel-compute-stick-is-pc-that-fits-in-pocket/26175695/</guid></item><item><title>Defense Mobile launches wireless service for vets</title><link>http://www.usatoday.com/story/tech/2015/04/22/defensemobile-launches-wireless-service-for-active-military-veterans/26125247/</link><pubDate>Wed, 22 Apr 2015 03:39:58 GMT</pubDate><description>Under one plan, Defense Mobile members can pay as little as $24 a month.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/22/defensemobile-launches-wireless-service-for-active-military-veterans/26125247/</guid></item><item><title>Study: Drivers want more tech to prevent crashes</title><link>http://www.usatoday.com/story/money/cars/2015/04/22/jd-power-survey-tech/26183551/</link><pubDate>Wed, 22 Apr 2015 12:59:19 GMT</pubDate><description>The results are good news for those developing self-driving cars.</description><guid isPermalink="true">http://www.usatoday.com/story/money/cars/2015/04/22/jd-power-survey-tech/26183551/</guid></item><item><title>App developers prep games for Apple Watch</title><link>http://www.usatoday.com/story/tech/2015/04/21/app-developers-prep-games-for-apple-watch/26098857/</link><pubDate>Tue, 21 Apr 2015 01:38:44 GMT</pubDate><description>Hundreds of games expected for Apple Watch beginning Friday</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/21/app-developers-prep-games-for-apple-watch/26098857/</guid></item><item><title>Tesla shares jump, Q1 earnings loom</title><link>http://americasmarkets.usatoday.com/2015/04/22/what-to-expect-from-teslas-q2-earnings-report/</link><pubDate>Wed, 22 Apr 2015 02:15:06 GMT</pubDate><description>Tesla reports May 6, but analysts are already picking apart the electric-car maker</description><guid isPermalink="true">http://americasmarkets.usatoday.com/2015/04/22/what-to-expect-from-teslas-q2-earnings-report/</guid></item><item><title>Facebook unveils phone app Hello</title><link>http://www.usatoday.com/story/tech/personal/2015/04/22/facebook-hello/26183827/</link><pubDate>Wed, 22 Apr 2015 01:35:56 GMT</pubDate><description>App lets users accept, receive phone calls; links contacts to Facebook.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/personal/2015/04/22/facebook-hello/26183827/</guid></item><item><title>Majority of e-waste comes from...appliances?</title><link>http://laundry.reviewed.com/news/appliances-not-gadgets-make-up-majority-of-e-waste?utm_source=usat&amp;utm_medium=referral&amp;utm_campaign=collab</link><pubDate>Wed, 22 Apr 2015 11:51:54 GMT</pubDate><description>Appliances, and not gadgets like smartphones, make up most of the world's e-waste.</description><guid isPermalink="true">http://laundry.reviewed.com/news/appliances-not-gadgets-make-up-majority-of-e-waste?utm_source=usat&amp;utm_medium=referral&amp;utm_campaign=collab</guid></item><item><title>5 things to know about 'Mobilegeddon'</title><link>http://www.usatoday.com/story/tech/2015/04/21/5-things-to-know-about-google-mobilegeddon/26123275/</link><pubDate>Tue, 21 Apr 2015 12:06:06 GMT</pubDate><description>Changes not expected to kick in for a week</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/21/5-things-to-know-about-google-mobilegeddon/26123275/</guid></item><item><title>Look up! Here comes the Lyrid meteor shower</title><link>http://www.usatoday.com/story/tech/2015/04/21/lyrid-meteor-shower/26120003/</link><pubDate>Tue, 21 Apr 2015 11:30:18 GMT</pubDate><description>April's top meteor shower, the Lyrid, should peak over the next couple of nights.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/21/lyrid-meteor-shower/26120003/</guid></item><item><title>Tech Five: Yahoo flat despite earnings miss</title><link>http://www.usatoday.com/story/tech/2015/04/22/tech-stocks-yahoo/26171359/</link><pubDate>Wed, 22 Apr 2015 09:12:33 GMT</pubDate><description>Company missed on revenue, earnings for first quarter.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/22/tech-stocks-yahoo/26171359/</guid></item><item><title>This Apple Watch with gold band is not for sale</title><link>http://www.usatoday.com/story/tech/personal/2015/04/21/apple-watch-gold/26119521/</link><pubDate>Tue, 21 Apr 2015 11:24:36 GMT</pubDate><description>Special edition watch appeared on wrists of Karl Lagerfeld, Beyonce.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/personal/2015/04/21/apple-watch-gold/26119521/</guid></item><item><title>Homeland Security to open Silicon Valley office</title><link>http://www.usatoday.com/story/tech/2015/04/21/department-of-homeland-security-silicon-valley-office/26150621/</link><pubDate>Tue, 21 Apr 2015 08:13:53 GMT</pubDate><description>The move west is a peace offering to the tech community.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/21/department-of-homeland-security-silicon-valley-office/26150621/</guid></item><item><title>Computer security has failed, says keynote at giant security gathering</title><link>http://www.usatoday.com/story/tech/2015/04/21/rsa-amit-yoran-computer-security-failed/26139927/</link><pubDate>Tue, 21 Apr 2015 06:14:24 GMT</pubDate><description>What we've been doing for decades isn't getting the job done, said Amit Yoran, RSA president.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/21/rsa-amit-yoran-computer-security-failed/26139927/</guid></item><item><title>Facebook tweaks News Feed to favor friends</title><link>http://www.usatoday.com/story/tech/2015/04/21/facebook-news-feed-algorithm-change/26143023/</link><pubDate>Tue, 21 Apr 2015 05:53:05 GMT</pubDate><description>The algorithm change could choke traffic to some publishers and Facebook pages.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/21/facebook-news-feed-algorithm-change/26143023/</guid></item><item><title>Android Wear update just in time for rival Apple Watch</title><link>http://www.usatoday.com/story/tech/columnist/baig/2015/04/20/android-wear-update-comes-just-in-time-for-applewatch/26064527/</link><pubDate>Mon, 20 Apr 2015 10:02:54 GMT</pubDate><description>Google is releasing an Android Wear update it hopes will steal Apple's thunder.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/columnist/baig/2015/04/20/android-wear-update-comes-just-in-time-for-applewatch/26064527/</guid></item><item><title>Book: Elon Musk almost sold Tesla to Google</title><link>http://www.usatoday.com/story/money/cars/2015/04/20/elon-musk-tesla-google/26093781/</link><pubDate>Mon, 20 Apr 2015 05:34:30 GMT</pubDate><description>The price would have been $6 billion, plus $5 billion in improvements and Musk stayed on</description><guid isPermalink="true">http://www.usatoday.com/story/money/cars/2015/04/20/elon-musk-tesla-google/26093781/</guid></item><item><title>Verizon new plan not as cheap as advertised</title><link>http://www.usatoday.com/story/tech/2015/04/19/verizon-new-plan-not-as-cheap-as-advertised/26050061/</link><pubDate>Sun, 19 Apr 2015 08:33:44 GMT</pubDate><description>Reporter's savings: just $5 monthly</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/19/verizon-new-plan-not-as-cheap-as-advertised/26050061/</guid></item><item><title>GE's 12-foot smoker uses data to cook the perfect BBQ</title><link>http://ovens.reviewed.com/video/4186626690001?utm_source=usat&amp;utm_medium=referral&amp;utm_campaign=collab</link><pubDate>Tue, 21 Apr 2015 03:46:50 GMT</pubDate><description>We learned from GE about cooking with data to make some amazing BBQ.</description><guid isPermalink="true">http://ovens.reviewed.com/video/4186626690001?utm_source=usat&amp;utm_medium=referral&amp;utm_campaign=collab</guid></item><item><title>Welcome to the smart Garden of Edyn</title><link>http://smarthome.reviewed.com/features/welcome-to-the-smart-garden-of-edyn</link><pubDate>Tue, 21 Apr 2015 02:53:29 GMT</pubDate><description>Alas, even those of us with a green thumb can often be challenged in our home gardens.</description><guid isPermalink="true">http://smarthome.reviewed.com/features/welcome-to-the-smart-garden-of-edyn</guid></item><item><title>Thousands of apps planned for Apple Watch</title><link>http://www.usatoday.com/story/tech/2015/04/17/thousands-of-apps-for-apple-watch/25927313/</link><pubDate>Fri, 17 Apr 2015 09:38:00 GMT</pubDate><description>Smaller apps have quicker and bite-size way to relay information.</description><guid isPermalink="true">http://www.usatoday.com/story/tech/2015/04/17/thousands-of-apps-for-apple-watch/25927313/</guid></item></channel></rss>
+
+2015-04-22 13:10:44,779 - [ERROR] - from play in play-internal-execution-context-1 
+Cannot invoke the action, eventually got an error: java.lang.RuntimeException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: org.jboss.netty.buffer.ChannelBufferInputStream@48753b46; line: 1, column: 2]
+
+2015-04-22 13:10:44,784 - [ERROR] - from application in play-internal-execution-context-1 
+
+
+! @6m05pmmo6 - Internal server error, for (GET) [/feedZilla] ->
+
+play.api.Application$$anon$1: Execution exception[[RuntimeException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: org.jboss.netty.buffer.ChannelBufferInputStream@48753b46; line: 1, column: 2]]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: org.jboss.netty.buffer.ChannelBufferInputStream@48753b46; line: 1, column: 2]
+	at play.libs.Json.parse(Json.java:82) ~[play-json_2.10-2.2.3.jar:2.2.3]
+	at play.libs.WS$Response.asJson(WS.java:704) ~[play-java_2.10-2.2.3.jar:2.2.3]
+	at controllers.NewsFeed$1.apply(NewsFeed.java:29) ~[na:na]
+	at controllers.NewsFeed$1.apply(NewsFeed.java:26) ~[na:na]
+	at play.core.j.FPromiseHelper$$anonfun$map$1.apply(FPromiseHelper.scala:79) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.util.Success$$anonfun$map$1.apply(Try.scala:206) ~[scala-library-2.10.3.jar:na]
+	at scala.util.Try$.apply(Try.scala:161) ~[scala-library-2.10.3.jar:na]
+	at scala.util.Success.map(Try.scala:206) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: org.jboss.netty.buffer.ChannelBufferInputStream@48753b46; line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1369) ~[jackson-core-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:599) ~[jackson-core-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:520) ~[jackson-core-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2267) ~[jackson-core-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:779) ~[jackson-core-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:665) ~[jackson-core-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:2926) ~[jackson-databind-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:2873) ~[jackson-databind-2.2.2.jar:2.2.2]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2080) ~[jackson-databind-2.2.2.jar:2.2.2]
+	at play.libs.Json.parse(Json.java:80) ~[play-json_2.10-2.2.3.jar:2.2.3]
+	... 17 common frames omitted
+
+2015-04-22 13:11:08,390 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+[securesocial] bootstrap path = securesocial/bootstrap/css/bootstrap.min.css
+
+2015-04-22 13:11:08,394 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+[securesocial] assets controller = controllers.ReverseAssets
+
+2015-04-22 13:11:08,415 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+[securesocial] favicon path = securesocial/images/favicon.png
+
+2015-04-22 13:11:08,417 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+[securesocial] Jquery path = securesocial/javascripts/jquery-1.7.1.min.js
+
+2015-04-22 13:11:08,419 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+[securesocial] custom css path = None
+
+2015-04-22 13:14:34,328 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: userpass
+
+2015-04-22 13:14:34,328 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: google
+
+2015-04-22 13:14:34,329 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-22 13:14:34,329 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-22 13:14:34,329 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-22 13:14:34,329 - [INFO] - from play in play-internal-execution-context-1 
+Shutdown application default Akka system.
+
+2015-04-22 13:14:34,496 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-22 13:14:34,605 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-22 13:14:34,638 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-22 13:14:34,638 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-22 13:14:34,638 - [DEBUG] - from application in play-akka.actor.default-dispatcher-16 
 [securesocial] calling deleteExpiredTokens()
 
-2015-04-21 10:59:16,892 - [DEBUG] - from application in play-akka.actor.default-dispatcher-41 
-[securesocial] calling deleteExpiredTokens()
+2015-04-22 13:14:34,640 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-22 13:14:34,640 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-22 13:14:34,640 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-22 13:14:34,641 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-22 13:14:34,641 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-22 13:14:34,641 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-22 13:14:34,722 - [DEBUG] - from application in play-akka.actor.default-dispatcher-16 
+[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
+
+2015-04-22 13:14:34,725 - [DEBUG] - from application in play-akka.actor.default-dispatcher-16 
+[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=991bc74e-88e3-42c4-8a13-f3e8d28afc16]
+
+2015-04-22 13:14:36,756 - [DEBUG] - from application in play-akka.actor.default-dispatcher-16 
+[securesocial] got json back [{"access_token":"ya29.XQEn8SyVOS099hgSvZiYmCza8FsEUF25t36hyTDHnzMzsFI4Am-_x0hMgeJVHhGKB1eiqRpP_gfIOg","token_type":"Bearer","expires_in":3599,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImU2OGI2YzY3NTU4YzgyNzZmNGExZDdlMGM4NTAxNTUzYTVkNjc3NTUifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTA3OTI1NDIxNzg4ODI3MzA5NTIxIiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6Im1hdHRoYW5jb2NrMDNAZ21haWwuY29tIiwiYXRfaGFzaCI6InFjOTUwUjdLU3hIWkVDMnZNei1XX3ciLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0Mjk3MzM2NzQsImV4cCI6MTQyOTczNzI3NH0.E8thI0RaDYtntKxNNQkodWQdBYfg4_rvnY51UUKJdqyRmNaZSKgt2GYKG6GOz5-ldOPClMh9OMCyFxX7PBKJK5bmsOhMK_92CEi-nVyufRU4-DPeK4QxZ8t9OenRlU2pkxgdRWMeTBHN_qpASOcd2MF2GgyTlhVcpGGnJro0RWo"}]
+
+2015-04-22 13:14:36,946 - [DEBUG] - from application in play-akka.actor.default-dispatcher-16 
+[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.XQEn8SyVOS099hgSvZiYmCza8FsEUF25t36hyTDHnzMzsFI4Am-_x0hMgeJVHhGKB1eiqRpP_gfIOg,Some(Bearer),Some(3599),None)),None))
+
+2015-04-22 13:14:37,345 - [DEBUG] - from application in play-akka.actor.default-dispatcher-16 
+[securesocial] user logged in : [SocialUser(IdentityId(107925421788827309521,google),Matthew,Hancock,Matthew Hancock,Some(matthancock03@gmail.com),Some(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.XQEn8SyVOS099hgSvZiYmCza8FsEUF25t36hyTDHnzMzsFI4Am-_x0hMgeJVHhGKB1eiqRpP_gfIOg,Some(Bearer),Some(3599),None)),None)]
+
+2015-04-22 13:14:49,305 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+{"stories":[{"description":"Revenue for the first quarter was $3.54 billion, up 42%. Analysts had expected revenue of $3.56 billion.","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/2015/04/22/facebook-first-quarter-earnings/26185103/"}],"link":"http://www.usatoday.com/story/tech/2015/04/22/facebook-first-quarter-earnings/26185103/","pubDate":"Wed, 22 Apr 2015 04:10:09 GMT","title":"Facebook revenue lighter than expected"},{"description":"The results are good news for those developing self-driving cars.","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/money/cars/2015/04/22/jd-power-survey-tech/26183551/"}],"link":"http://www.usatoday.com/story/money/cars/2015/04/22/jd-power-survey-tech/26183551/","pubDate":"Wed, 22 Apr 2015 12:59:19 GMT","title":"Study: Drivers want more tech to prevent crashes"},{"description":"Intel Compute Stick plugs into a TV or monitor to turn it into a Windows PC","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/columnist/baig/2015/04/22/intel-compute-stick-is-pc-that-fits-in-pocket/26175695/"}],"link":"http://www.usatoday.com/story/tech/columnist/baig/2015/04/22/intel-compute-stick-is-pc-that-fits-in-pocket/26175695/","pubDate":"Wed, 22 Apr 2015 10:59:38 GMT","title":"Not for everyone: Intel Compute Stick is a PC that fits in your pocket"},{"description":"Under one plan, Defense Mobile members can pay as little as $24 a month.","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/2015/04/22/defensemobile-launches-wireless-service-for-active-military-veterans/26125247/"}],"link":"http://www.usatoday.com/story/tech/2015/04/22/defensemobile-launches-wireless-service-for-active-military-veterans/26125247/","pubDate":"Wed, 22 Apr 2015 03:39:58 GMT","title":"Defense Mobile launches wireless service for vets"},{"description":"Hundreds of games expected for Apple Watch beginning Friday","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/2015/04/21/app-developers-prep-games-for-apple-watch/26098857/"}],"link":"http://www.usatoday.com/story/tech/2015/04/21/app-developers-prep-games-for-apple-watch/26098857/","pubDate":"Tue, 21 Apr 2015 01:38:44 GMT","title":"App developers prep games for Apple Watch"},{"description":"Tesla reports May 6, but analysts are already picking apart the electric-car maker","guid":[{"isPermalink":"true","value":"http://americasmarkets.usatoday.com/2015/04/22/what-to-expect-from-teslas-q2-earnings-report/"}],"link":"http://americasmarkets.usatoday.com/2015/04/22/what-to-expect-from-teslas-q2-earnings-report/","pubDate":"Wed, 22 Apr 2015 02:15:06 GMT","title":"Tesla shares jump, Q1 earnings loom"},{"description":"App lets users accept, receive phone calls; links contacts to Facebook.","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/personal/2015/04/22/facebook-hello/26183827/"}],"link":"http://www.usatoday.com/story/tech/personal/2015/04/22/facebook-hello/26183827/","pubDate":"Wed, 22 Apr 2015 01:35:56 GMT","title":"Facebook unveils phone app Hello"},{"description":"Appliances, and not gadgets like smartphones, make up most of the world's e-waste.","guid":[{"isPermalink":"true","value":"http://laundry.reviewed.com/news/appliances-not-gadgets-make-up-majority-of-e-waste?utm_source=usat&utm_medium=referral&utm_campaign=collab"}],"link":"http://laundry.reviewed.com/news/appliances-not-gadgets-make-up-majority-of-e-waste?utm_source=usat&utm_medium=referral&utm_campaign=collab","pubDate":"Wed, 22 Apr 2015 11:51:54 GMT","title":"Majority of e-waste comes from...appliances?"},{"description":"Changes not expected to kick in for a week","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/2015/04/21/5-things-to-know-about-google-mobilegeddon/26123275/"}],"link":"http://www.usatoday.com/story/tech/2015/04/21/5-things-to-know-about-google-mobilegeddon/26123275/","pubDate":"Tue, 21 Apr 2015 12:06:06 GMT","title":"5 things to know about 'Mobilegeddon'"},{"description":"April's top meteor shower, the Lyrid, should peak over the next couple of nights.","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/2015/04/21/lyrid-meteor-shower/26120003/"}],"link":"http://www.usatoday.com/story/tech/2015/04/21/lyrid-meteor-shower/26120003/","pubDate":"Tue, 21 Apr 2015 11:30:18 GMT","title":"Look up! Here comes the Lyrid meteor shower"},{"description":"Company missed on revenue, earnings for first quarter.","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/2015/04/22/tech-stocks-yahoo/26171359/"}],"link":"http://www.usatoday.com/story/tech/2015/04/22/tech-stocks-yahoo/26171359/","pubDate":"Wed, 22 Apr 2015 09:12:33 GMT","title":"Tech Five: Yahoo flat despite earnings miss"},{"description":"Special edition watch appeared on wrists of Karl Lagerfeld, Beyonce.","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/personal/2015/04/21/apple-watch-gold/26119521/"}],"link":"http://www.usatoday.com/story/tech/personal/2015/04/21/apple-watch-gold/26119521/","pubDate":"Tue, 21 Apr 2015 11:24:36 GMT","title":"This Apple Watch with gold band is not for sale"},{"description":"The move west is a peace offering to the tech community.","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/2015/04/21/department-of-homeland-security-silicon-valley-office/26150621/"}],"link":"http://www.usatoday.com/story/tech/2015/04/21/department-of-homeland-security-silicon-valley-office/26150621/","pubDate":"Tue, 21 Apr 2015 08:13:53 GMT","title":"Homeland Security to open Silicon Valley office"},{"description":"What we've been doing for decades isn't getting the job done, said Amit Yoran, RSA president.","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/2015/04/21/rsa-amit-yoran-computer-security-failed/26139927/"}],"link":"http://www.usatoday.com/story/tech/2015/04/21/rsa-amit-yoran-computer-security-failed/26139927/","pubDate":"Tue, 21 Apr 2015 06:14:24 GMT","title":"Computer security has failed, says keynote at giant security gathering"},{"description":"The algorithm change could choke traffic to some publishers and Facebook pages.","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/2015/04/21/facebook-news-feed-algorithm-change/26143023/"}],"link":"http://www.usatoday.com/story/tech/2015/04/21/facebook-news-feed-algorithm-change/26143023/","pubDate":"Tue, 21 Apr 2015 05:53:05 GMT","title":"Facebook tweaks News Feed to favor friends"},{"description":"Google is releasing an Android Wear update it hopes will steal Apple's thunder.","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/columnist/baig/2015/04/20/android-wear-update-comes-just-in-time-for-applewatch/26064527/"}],"link":"http://www.usatoday.com/story/tech/columnist/baig/2015/04/20/android-wear-update-comes-just-in-time-for-applewatch/26064527/","pubDate":"Mon, 20 Apr 2015 10:02:54 GMT","title":"Android Wear update just in time for rival Apple Watch"},{"description":"The price would have been $6 billion, plus $5 billion in improvements and Musk stayed on","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/money/cars/2015/04/20/elon-musk-tesla-google/26093781/"}],"link":"http://www.usatoday.com/story/money/cars/2015/04/20/elon-musk-tesla-google/26093781/","pubDate":"Mon, 20 Apr 2015 05:34:30 GMT","title":"Book: Elon Musk almost sold Tesla to Google"},{"description":"Reporter's savings: just $5 monthly","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/2015/04/19/verizon-new-plan-not-as-cheap-as-advertised/26050061/"}],"link":"http://www.usatoday.com/story/tech/2015/04/19/verizon-new-plan-not-as-cheap-as-advertised/26050061/","pubDate":"Sun, 19 Apr 2015 08:33:44 GMT","title":"Verizon new plan not as cheap as advertised"},{"description":"We learned from GE about cooking with data to make some amazing BBQ.","guid":[{"isPermalink":"true","value":"http://ovens.reviewed.com/video/4186626690001?utm_source=usat&utm_medium=referral&utm_campaign=collab"}],"link":"http://ovens.reviewed.com/video/4186626690001?utm_source=usat&utm_medium=referral&utm_campaign=collab","pubDate":"Tue, 21 Apr 2015 03:46:50 GMT","title":"GE's 12-foot smoker uses data to cook the perfect BBQ"},{"description":"Smaller apps have quicker and bite-size way to relay information.","guid":[{"isPermalink":"true","value":"http://www.usatoday.com/story/tech/2015/04/17/thousands-of-apps-for-apple-watch/25927313/"}],"link":"http://www.usatoday.com/story/tech/2015/04/17/thousands-of-apps-for-apple-watch/25927313/","pubDate":"Fri, 17 Apr 2015 09:38:00 GMT","title":"Thousands of apps planned for Apple Watch"}]}
+
+2015-04-22 13:14:49,385 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Wed, 22 Apr 2015 04:10:09 GMT
+
+2015-04-22 13:14:49,385 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Wed, 22 Apr 2015 12:59:19 GMT
+
+2015-04-22 13:14:49,385 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Wed, 22 Apr 2015 10:59:38 GMT
+
+2015-04-22 13:14:49,385 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Wed, 22 Apr 2015 03:39:58 GMT
+
+2015-04-22 13:14:49,385 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Tue, 21 Apr 2015 01:38:44 GMT
+
+2015-04-22 13:14:49,385 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Wed, 22 Apr 2015 02:15:06 GMT
+
+2015-04-22 13:14:49,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Wed, 22 Apr 2015 01:35:56 GMT
+
+2015-04-22 13:14:49,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Wed, 22 Apr 2015 11:51:54 GMT
+
+2015-04-22 13:14:49,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Tue, 21 Apr 2015 12:06:06 GMT
+
+2015-04-22 13:14:49,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Tue, 21 Apr 2015 11:30:18 GMT
+
+2015-04-22 13:14:49,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Wed, 22 Apr 2015 09:12:33 GMT
+
+2015-04-22 13:14:49,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Tue, 21 Apr 2015 11:24:36 GMT
+
+2015-04-22 13:14:49,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Tue, 21 Apr 2015 08:13:53 GMT
+
+2015-04-22 13:14:49,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Tue, 21 Apr 2015 06:14:24 GMT
+
+2015-04-22 13:14:49,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Tue, 21 Apr 2015 05:53:05 GMT
+
+2015-04-22 13:14:49,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Mon, 20 Apr 2015 10:02:54 GMT
+
+2015-04-22 13:14:49,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Mon, 20 Apr 2015 05:34:30 GMT
+
+2015-04-22 13:14:49,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Sun, 19 Apr 2015 08:33:44 GMT
+
+2015-04-22 13:14:49,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Tue, 21 Apr 2015 03:46:50 GMT
+
+2015-04-22 13:14:49,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+Fri, 17 Apr 2015 09:38:00 GMT
+
+2015-04-22 13:14:49,387 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+rootNode = Wed, 22 Apr 2015 04:10:09 GMT
+
+2015-04-22 13:16:26,626 - [INFO] - from application in pool-6-thread-4 
+[securesocial] unloaded identity provider: userpass
+
+2015-04-22 13:16:26,627 - [INFO] - from application in pool-6-thread-4 
+[securesocial] unloaded identity provider: google
+
+2015-04-22 13:16:26,627 - [INFO] - from application in pool-6-thread-4 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-22 13:16:26,627 - [INFO] - from application in pool-6-thread-4 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-22 13:16:26,627 - [INFO] - from application in pool-6-thread-4 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-22 13:16:26,627 - [INFO] - from play in pool-6-thread-4 
+Shutdown application default Akka system.
 

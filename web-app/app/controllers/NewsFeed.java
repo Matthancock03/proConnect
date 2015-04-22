@@ -18,11 +18,12 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 
 
 
-public class NewsFeed extends Controller {
+public class NewsFeed extends Controller { 
 
-	public static Promise<Result> feedZilla() {
-    final Promise<Result> resultPromise = WS.url("http://api.feedzilla.com/v1/categories/30/articles.json")
-		.setQueryParameter("count","10" ).setQueryParameter("order", "date").get().map(
+	public static Promise<Result> feedZilla() { 
+    final Promise<Result> resultPromise = WS.url("http://api.usatoday.com/open/articles/topnews/tech?api_key=9hapmrud874jnvas9q8nprtr")
+		.setQueryParameter("count","20" ).setQueryParameter("encoding", "json")
+		.setQueryParameter("days", "7").setQueryParameter("api_key", "9hapmrud874jnvas9q8nprtr").get().map(
             new Function<WS.Response, Result>() {
                 public Result apply(WS.Response response) {
 									Logger.debug(response.getBody());
@@ -31,7 +32,7 @@ public class NewsFeed extends Controller {
 
 
 									List feeds = new ArrayList();
-									FeedItem[] feedItems = new FeedItem[11];
+									FeedItem[] feedItems = new FeedItem[21];
 									FeedItem feedItem = new FeedItem();
 									FeedItem feedItem2 = new FeedItem();
 									FeedItem feedItem3 = new FeedItem();
@@ -39,24 +40,24 @@ public class NewsFeed extends Controller {
 									FeedItem feedItem5 = new FeedItem();
 									FeedItem feedItem6 = new FeedItem();
 
- 									JsonNode rootNode = json.path("articles");
-									JsonNode newNode = rootNode.path("publish_date");
+ 									JsonNode rootNode = json.path("stories");
+									//JsonNode newNode = rootNode.path("publish_date");
 									int x = 0;
 									for (JsonNode item : rootNode) {
 										feedItems[x] = new FeedItem();
-										feedItems[x].publish_date = item.get("publish_date").textValue();
-										feedItems[x].source = item.get("source").textValue();
-										feedItems[x].source_url = item.get("source_url").textValue();
-										feedItems[x].summary = item.get("summary").textValue();
+										feedItems[x].publish_date = item.get("pubDate").textValue();
+										feedItems[x].source = item.get("link").textValue();
+										feedItems[x].source_url = item.get("link").textValue();
+										feedItems[x].summary = item.get("description").textValue();
 										feedItems[x].title = item.get("title").textValue();
-										feedItems[x].url = item.get("url").textValue();
+										feedItems[x].url = item.get("link").textValue();
 										feeds.add(feedItems[x]);
 										x++;
-										Logger.debug(item.get("publish_date").textValue());
+										Logger.debug(item.get("pubDate").textValue());
 										}
 
 
-
+									/*
 									feedItems[2].publish_date =  json.findPath("publish_date").textValue();
 									feedItem2.source = json.findPath("source").textValue();
 									feedItem2.source_url = json.findPath("source_url").textValue();
@@ -98,8 +99,9 @@ public class NewsFeed extends Controller {
 									feeds.add(feedItem4);
 									feeds.add(feedItem5);
 									feeds.add(feedItem6);
-									Logger.debug("rootNode = "+ json.findPath("publish_date").textValue());
-									Logger.debug("idNode = "+ json.findPath("publish_date").textValue());
+									*/
+									Logger.debug("rootNode = "+ json.findPath("pubDate").textValue());
+									//Logger.debug("idNode = "+ json.findPath("publish_date").textValue());
 
                     return ok(home.render(feeds));
                 }
