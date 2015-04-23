@@ -6,18 +6,14 @@
 	<link rel="stylesheet" href="@routes.Assets.at("stylesheets/home.min.css")">
 
 
-<div class="container-fluid">
-	<div class="row clearfix">
+<div class="container-fluid" style="height: 100%;">
+	<div class="row clearfix" style="width: 100%;">
 		@navbar.render()
 	</div>
 
-	<div class="row clearfix">
-		<div class="col-xs-12 column">
-		</div>
-	</div>
 
-	<div class="row clearfix">
-		<div class="col-xs-2 column">
+	<div class="row clearfix" style="height: 100%;">
+		<div class="col-xs-3 column profile-div">
 			<img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")" />
 
 			<dl class="dl-horizontal">
@@ -33,8 +29,8 @@
 			</dl>
 		</div>
 
-		<div class="col-xs-6 column clearfix">
-		<img alt="140x140" class = "img-thumbnail profileImage" target="_blank" src="@routes.Assets.at("images/header.jpg")" />
+		<div class="col-xs-6 column clearfix feed-container">
+		<img alt="140x140" class = "img-thumbnail headImage" target="_blank" src="@routes.Assets.at("images/header.jpg")" />
 			<div class="feed-div">
 			@for(feedItem <- feedItems){
 				@if(feedItem.publish_date != ""){
@@ -55,8 +51,8 @@
 			}
 		</div>
 		</div>
-		<div class="col-xs-4 column">
-			<div>
+		<div class="col-xs-3 column clearfix">
+			<div style="padding-top: 10px;">
 				<div class="panel panel-default">
 				  <div class="panel-heading">Twitter Feed</div>
 				  <div class="panel-body">

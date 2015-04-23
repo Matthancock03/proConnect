@@ -1,11 +1,34 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
 .feed-image {
   height: 50px;
   width: auto;
 }
+.profileImage {
+  height: 220px;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
 .panel > .panel-heading {
   background-image: none;
-  background-color: #0c98cf;
+  background-color: #69b9ff;
   color: white;
+}
+.headImage {
+  height: 85px;
+  width: 100%;
+}
+.profile-text {
+  margin-top: 10px;
+  color: #2d3033;
+  font-size: 20px;
+  font-family: 'Abril Fatface';
+  font-variant: small-caps;
+  font-weight: bold;
 }
 .head-text {
   margin-top: 10px;
@@ -24,6 +47,15 @@
   font-size: 10px;
   font-family: 'Abril Fatface';
   font-weight: bold;
+}
+.profile-div {
+  background-color: #69b9ff !important;
+  width: 250px;
+  margin-right: 20px;
+  height: 100%;
+}
+.feed-container {
+  padding-top: 10px;
 }
 .feed-div {
   padding-top: 15px;
