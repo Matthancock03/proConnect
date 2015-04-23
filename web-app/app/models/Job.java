@@ -9,6 +9,11 @@ import play.db.*;
 
 
 
+/**This class constructs and implements aspects of a user's job.
+ * @author Proconnectors
+ *
+ */
+
 public class Job {
 
 }

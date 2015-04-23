@@ -25,9 +25,19 @@ import play.libs.F.Function;
 import play.libs.F.Promise;
 import models.*;
 
+/**This class extends the Controller class functionality to allow the Android application to authenticate users.
+ * @author Proconnectors
+ *
+ */
 public class Android extends Controller{
 
-  @BodyParser.Of(BodyParser.Json.class)
+  /**
+   * This checks login information for the android platform typed in by the user.
+ * @param name the name of the user attempting to login
+ * @param password the password of the user attempting to login
+ * @return an 200 response that will display if a user logged in successfully.
+ */
+@BodyParser.Of(BodyParser.Json.class)
   @SecureSocial.UserAwareAction
   public static Result androidLogin(String name, String password) {
     ObjectNode result = Json.newObject();
@@ -45,7 +55,12 @@ public class Android extends Controller{
         return ok(result);
   }
 
-  public static Result androidCreateAccount(String name, String password){
+  /**This creates a HTTP response in regards to creating a new account on the Android platform.
+ * @param name the name of the user
+ * @param password the password of the user
+ * @return a 200 response that will allow for the account to be created or not
+ */
+public static Result androidCreateAccount(String name, String password){
 
     ObjectNode result = Json.newObject();
     if(name == "denied" || name != ""){
