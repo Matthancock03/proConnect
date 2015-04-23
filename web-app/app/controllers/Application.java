@@ -13,44 +13,77 @@ import securesocial.*;
 import securesocial.core.java.SecureSocial;
 
 
-
+/**
+ * This class extends the Controller class functionality to route webpages within the application.
+ * @author Proconnectors
+ *
+ */
 public class Application extends Controller{
-
+	
+/**
+ * This produces a HTTP result for the about page.
+ * @return a 200 response that will render the about page on the screen.
+ */
   public static Result about(){
     return ok(about.render());
   }
 
-  public static Result forum(){
+/**This produces a HTTP result for the forum page.
+ * @return a 200 response that will render the forum page on the screen.
+ */
+public static Result forum(){
     return ok(forum.render());
   }
-  public static Result connections(){
+  /**This produces a HTTP result for the connections page.
+ * @return a 200 response that will render the connections page on the screen.
+ */
+public static Result connections(){
     return ok(connections.render());
   }
-  public static Result splashPage(){
+
+  /**This produces a HTTP result for the splash page.
+ * @return a 200 response that will render the splash page on the screen.
+ */
+public static Result splashPage(){
     return ok(splash.render());
   }
 
 
-  public static Result help(){
+  /**This produces a HTTP result for the help page.
+ * @return a 200 response that will render the help page on the screen.
+ */
+public static Result help(){
     return ok(help.render());
   }
 
-  public static Result search(){
+  /**This produces a HTTP result for the search page.
+ * @return a 200 response that will render the search page on the screen
+ */
+public static Result search(){
     return ok(search.render());
   }
 
-  public static Result message(){
+  /**This produces a HTTP result for the messages page.
+ * @return a 200 response that will render the messages page on the screen. 
+ */
+public static Result message(){
     return ok(message.render());
   }
 
 
-  @SecureSocial.SecuredAction
+  /**This checks to see if there is an authenticated user.
+ * @return a 200 response indicating the authenticate user.
+ */
+@SecureSocial.SecuredAction
    public static Result index() {
        Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);
        return ok("index.render(user)");
    }
 
-   @SecureSocial.UserAwareAction
+   /**This checks to see if the current user is an authenticated user or not.
+ * @return a 200 response indicating the current user's name, email, and provider.
+ */
+@SecureSocial.UserAwareAction
    public static Result userAware() {
        Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);
 
@@ -60,7 +93,10 @@ public class Application extends Controller{
        return ok("Hello " + userName + " " + email + " " + provider);
    }
 
-   @SecureSocial.SecuredAction(ajaxCall = true)
+   /**This will redirect the webpage to a forbidden error.
+ * @return a 200 response indicating an error.
+ */
+@SecureSocial.SecuredAction(ajaxCall = true)
    public static Result ajaxCall() {
        return ok("{'Matt': 'Hancock'}");
    }
