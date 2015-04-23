@@ -21,6 +21,7 @@ import org.json.JSONObject;
 import com.fasterxml.jackson.databind.node.*;
 import com.fasterxml.jackson.databind.JsonNode;
 import play.mvc.Result;
+import models.*;
 
 
 
@@ -28,17 +29,17 @@ import play.mvc.Result;
 public class DbController extends Controller{
 
   public static Result editProfile(){
-
-    return ok(profileEdit.render());
+    User user = new User();
+    return ok(profileEdit.render(user));
   }
 
   public static Result profileMain(){
-
-    return ok(profileMain.render());
+    User user = new User();
+    return ok(profileMain.render(user));
   }
 
 
-  
+
   /*public static Result loginUser(){
       Form<loginFormData> formData = Form.form(loginFormData.class).bindFromRequest();
       if (formData.hasErrors()) {

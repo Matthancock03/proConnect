@@ -19,7 +19,7 @@ import securesocial.core.java.SecureSocial;
  *
  */
 public class Application extends Controller{
-	
+
 /**
  * This produces a HTTP result for the about page.
  * @return a 200 response that will render the about page on the screen.
@@ -64,7 +64,7 @@ public static Result search(){
   }
 
   /**This produces a HTTP result for the messages page.
- * @return a 200 response that will render the messages page on the screen. 
+ * @return a 200 response that will render the messages page on the screen.
  */
 public static Result message(){
     return ok(message.render());

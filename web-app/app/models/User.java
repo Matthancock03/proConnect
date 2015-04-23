@@ -25,6 +25,7 @@ public class User{
 //  public String id;
   public String firstName;
   public String lastName;
+  public String userName;
   public String email;
 
   public String loginProvider;
@@ -42,13 +43,13 @@ public class User{
 
 
 
-  public void loadUser(Identity user){
+  public static User loadUser(Identity user){
     //this.id = user.id;
-    firstName = user.fullName();
-    lastName = user.fullName();
-    loginProvider = user.identityId().providerId();
-    email = user.email().get();
-
+    User newUser = new User();
+    newUser.userName = user != null ? user.fullName() : "guest";
+    newUser.loginProvider = user.identityId().providerId() != null ? user.identityId().providerId() : "No provider";
+    newUser.email = user.email().get() != null ? user.email().get() : "No email provided";
+    return newUser;
   }
 
   public static void uploadPic(){
