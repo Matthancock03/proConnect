@@ -25,7 +25,7 @@ public class FeedItem {
   public String[] comments;
 
   /**Constructor to create a FeedItem.
- * 
+ *
  */
 public FeedItem(){
 

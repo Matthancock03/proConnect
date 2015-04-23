@@ -32,7 +32,7 @@ import models.*;
  */
 public class DbController extends Controller{
 
-<<<<<<< HEAD
+
   public static Result editProfile(){
     User user = new User();
     return ok(profileEdit.render(user));
@@ -41,25 +41,7 @@ public class DbController extends Controller{
   public static Result profileMain(){
     User user = new User();
     return ok(profileMain.render(user));
-=======
-  /**This produces a HTTP result for the edit profile page.
- * @return a 200 response that renders the edit profile page.
- */
-public static Result editProfile(){
-
-    return ok(profileEdit.render());
   }
-
-  /**This produces a HTTP result for the main profile page.
- * @return a 200 response that renders the main profile page.
- */
-public static Result profileMain(){
-
-    return ok(profileMain.render());
->>>>>>> c67e7ddcf9a2dab5e48727619297c7ebd963d42c
-  }
-
-
 
   /*public static Result loginUser(){
       Form<loginFormData> formData = Form.form(loginFormData.class).bindFromRequest();
