@@ -13,10 +13,17 @@ import anorm.SqlParser;
 import controllers.*;
 import org.mindrot.jbcrypt.BCrypt;
 
+/**This class allows for the login to the database.
+ * @author Proconnectors
+ *
+ */
 public class LoginDB{
 
 
-  public static void login(){
+  /**This function allows for the process of logging in to the database.
+ * 
+ */
+public static void login(){
 
     try{
       Connection connection = DB.getConnection();

@@ -18,8 +18,15 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 
 
 
+/**This class allows for the NewsFeed to be created and implemented.
+ * @author Proconnectors
+ *
+ */
 public class NewsFeed extends Controller { 
 
+	/** This grabs the data and creates the homeFeed from that data.
+	 * @return a promise<Result> that will allow the homeFeed to be constructed without blocking
+	 */
 	public static Promise<Result> homeFeed() { 
     final Promise<Result> resultPromise = WS.url("http://api.usatoday.com/open/articles/topnews/tech?api_key=9hapmrud874jnvas9q8nprtr")
 		.setQueryParameter("count","20" ).setQueryParameter("encoding", "json")
@@ -110,6 +117,9 @@ public class NewsFeed extends Controller {
     return resultPromise;
 	}
 
+	/**This tests the homeFeed method.
+	 * @return a Promise<JsonNode> that will construct the test without blocking.
+	 */
 	public static Promise<JsonNode> feedTest(){
 		Promise<JsonNode> jsonPromise = WS.url("http://api.feedzilla.com/v1/categories/30/articles.json").setQueryParameter("count","2" ).get().map(
         new Function<WS.Response, JsonNode>() {

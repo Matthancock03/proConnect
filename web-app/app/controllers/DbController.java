@@ -25,14 +25,24 @@ import play.mvc.Result;
 
 
 
+/**This class extends the Controller package's functionality to allow the database controller to access the information stored in the database.
+ * @author Proconnectors
+ *
+ */
 public class DbController extends Controller{
 
-  public static Result editProfile(){
+  /**This produces a HTTP result for the edit profile page.
+ * @return a 200 response that renders the edit profile page.
+ */
+public static Result editProfile(){
 
     return ok(profileEdit.render());
   }
 
-  public static Result profileMain(){
+  /**This produces a HTTP result for the main profile page.
+ * @return a 200 response that renders the main profile page.
+ */
+public static Result profileMain(){
 
     return ok(profileMain.render());
   }

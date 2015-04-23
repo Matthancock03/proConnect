@@ -11,6 +11,10 @@ import anorm.SqlParser;
 import controllers.*;
 import org.mindrot.jbcrypt.BCrypt;
 
+/**This class creates a connection with the database with various functions.
+ * @author Proconnectors
+ *
+ */
 public class JDBC
 {
   	private static String driver;
@@ -26,6 +30,9 @@ public class JDBC
 	/*
 	Function to create a connection to database
 	*/
+	/**Function to create a connection to database
+	 * 
+	 */
 	static void createConnection()
   	{
 		String url = "postgres://vtzlbwlzomypny:WcZuJmUgpzHV5L_kaYFfEXjhDd@ec2-184-73-221-47.compute-1.amazonaws.com:5432/dcn8fp0jefq7ef";
@@ -49,6 +56,9 @@ public class JDBC
 	/*
 	Function to close the connection to database
 	*/
+  	/**Function to close the connection to database
+  	 * 
+  	 */
   	static void closeConnection()
   	{
 	  	try
@@ -66,6 +76,11 @@ public class JDBC
 	/*
 	Function for authenticating user
 	*/
+	/**Function for authenticating user
+	 * @param email the email of the user
+	 * @param password the password of the user
+	 * @return
+	 */
 	static String authenticateCustID(String email, String password)
   	{
 		String actualPassword = null;
@@ -92,6 +107,14 @@ public class JDBC
 		return null;
   	}//authenticateCustID
 
+	/** Function to create an account for an user in the database.
+	 * @param fName first name of the user for the new account
+	 * @param lName last name of the user for the new account
+	 * @param email email of the user for the new account
+	 * @param password password of the user for the new account
+	 * @param recruiter boolean if new acccount is a recruiter
+	 * @return true if account is succesfully created
+	 */
 	static boolean createAccount(String fName, String lName, String email, String password, boolean recruiter)
   	{
 	  	try
@@ -115,8 +138,12 @@ public class JDBC
 			e.printStackTrace();
 			return false;}//end catch
 	  return true;
-  }//edn createCustID
+  }//end createCustID
 
+	/**Gets the id of the user
+	 * @param email email associated with the user's account
+	 * @return the id
+	 */
 	static int getId (String email)
 	{
 		try
@@ -133,6 +160,10 @@ public class JDBC
 		return 0;
 	}//getID
 
+	/**Function to check if account with specified email exists or not.
+	 * @param email the email of the user.
+	 * @return boolean if the account exists or not.
+	 */
 	static boolean checkIfAccountExist(String email)
   	{
 	  	try
@@ -149,6 +180,11 @@ public class JDBC
 	  return false;
   	}//end checkIfAccountExist
 
+	/**Function to check if user is a member.
+	 * @param forumid forumid is the id for the specified forum
+	 * @param id id the id for the user
+	 * @return check the member in the forum.
+	 */
 	static boolean checkMember (int forumid, int id)
 	{
 		try
@@ -167,6 +203,11 @@ public class JDBC
 	  return false;
 	}//checkMember
 
+	/**Function to create a forum.
+	 * @param host host is the host user
+	 * @param forumName forumname a name to specify the forum to be created
+	 * @return created new forum
+	 */
 	static boolean createForum (int host, String forumName)
 	{
 		try
@@ -191,6 +232,11 @@ public class JDBC
 	  return true;
 	}//createForum
 
+	/**Function to add a member to a forum.
+	 * @param forumid forumid is the id for the forum
+	 * @param member member is the id of the member
+	 * @return the new member added to the forum
+	 */
 	static boolean addMember (int forumid, int member)
 	{
 		try

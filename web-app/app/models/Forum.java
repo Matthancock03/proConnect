@@ -8,6 +8,10 @@ import java.sql.*;
 import play.db.*;
 
 
+/**This class sets up aspects of the Forum module.
+ * @author Proconnectors
+ *
+ */
 public class Forum {
 
   public String forumId;
@@ -16,11 +20,19 @@ public class Forum {
   public String body;
   public Forum[] responses;
 
-  public Forum (){
+  /**Constructor to create a Forum.
+ * 
+ */
+public Forum (){
 
   }
 
-  public Forum (String forId, String header, String topBody){
+  /**This constructs a forum with a forum id, header, and body.
+ * @param forId the id number of the selected forum
+ * @param header the name of the topic header for the selected topic.
+ * @param topBody the body of the selected topic in the selected forum.
+ */
+public Forum (String forId, String header, String topBody){
     forumId = forId;
     header = topicHeader;
     body = topBody;

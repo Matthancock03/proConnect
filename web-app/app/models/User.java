@@ -19,6 +19,10 @@ import play.db.*;
 
 
 
+/**This class represents all aspects of a user.
+ * @author Proconnectors
+ *
+ */
 public class User{
 
 
@@ -42,7 +46,10 @@ public class User{
 
 
 
-  public void loadUser(Identity user){
+  /**Function to load details of the selected user.
+ * @param user user is the selected user
+ */
+public void loadUser(Identity user){
     //this.id = user.id;
     firstName = user.fullName();
     lastName = user.fullName();
@@ -51,7 +58,10 @@ public class User{
 
   }
 
-  public static void uploadPic(){
+  /**Function to upload a picture for a user.
+ * 
+ */
+public static void uploadPic(){
 
   }
 
