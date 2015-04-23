@@ -21,9 +21,8 @@ import org.json.JSONObject;
 import com.fasterxml.jackson.databind.node.*;
 import com.fasterxml.jackson.databind.JsonNode;
 import play.mvc.Result;
-import play.libs.F.Function;
-import play.libs.F.Promise;
-import models.FeedItem;
+
+
 
 
 public class DbController extends Controller{
@@ -39,16 +38,7 @@ public class DbController extends Controller{
   }
 
 
-  //@SecureSocial.SecuredAction
-  public static Result home(){
-    Promise<JsonNode> feedNode = NewsFeed.feedTest();
-    List<FeedItem> feeds = new ArrayList();
-    FeedItem feedItem = new FeedItem();
-    //r apJsonNode feed = feedNode.get(100000);
-    feeds.add(feedItem);
-    return ok(home.render(feeds));
-  }
-
+  
   /*public static Result loginUser(){
       Form<loginFormData> formData = Form.form(loginFormData.class).bindFromRequest();
       if (formData.hasErrors()) {

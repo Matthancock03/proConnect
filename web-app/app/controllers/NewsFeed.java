@@ -20,7 +20,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 
 public class NewsFeed extends Controller { 
 
-	public static Promise<Result> feedZilla() { 
+	public static Promise<Result> homeFeed() { 
     final Promise<Result> resultPromise = WS.url("http://api.usatoday.com/open/articles/topnews/tech?api_key=9hapmrud874jnvas9q8nprtr")
 		.setQueryParameter("count","20" ).setQueryParameter("encoding", "json")
 		.setQueryParameter("days", "7").setQueryParameter("api_key", "9hapmrud874jnvas9q8nprtr").get().map(

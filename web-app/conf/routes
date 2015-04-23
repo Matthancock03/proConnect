@@ -5,7 +5,7 @@
 ########### Web App##################
 #POST     /login                   controllers.Application.login()
 GET      /                         controllers.Application.splashPage()
-GET      /loginUser                controllers.DbController.home()
+GET      /loginUser                controllers.NewsFeed.homeFeed()
 GET      /userAware                controllers.Application.userAware()
 GET      /editProfile              controllers.DbController.editProfile()
 GET      /profileMain              controllers.DbController.profileMain()
@@ -16,7 +16,6 @@ GET      /help                     controllers.Application.help()
 GET		   /message                  controllers.Application.message()
 GET		   /search                   controllers.Application.search()
 
-GET      /feedZilla                controllers.NewsFeed.feedZilla()
 
 ########## Android###################
 GET      /androidLogin             controllers.Android.androidLogin(name: String, password: String)

@@ -41,7 +41,7 @@ Seq[Any](format.raw/*2.1*/("""
     <div class="col-xs-2 column">
     </div>
 		<div class="col-xs-6 column">
-      """),_display_(Seq[Any](/*16.8*/helper/*16.14*/.form(action = routes.DbController.home)/*16.54*/{_display_(Seq[Any](format.raw/*16.55*/("""
+      """),_display_(Seq[Any](/*16.8*/helper/*16.14*/.form(action = routes.NewsFeed.homeFeed)/*16.54*/{_display_(Seq[Any](format.raw/*16.55*/("""
 				<div class="form-group break-after">
 					 <label class="spacer">Name</label><input type="text" class="form-control" id="exampleInputEmail1" />
 					 <label class="spacer-min">Personal Headline</label><input type="text"  class="form-control" id="exampleInputPassword1" />
@@ -114,9 +114,9 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed Apr 22 09:04:48 PDT 2015
+                    DATE: Wed Apr 22 17:34:13 PDT 2015
                     SOURCE: /home/beyondprosthetics/repos/school/proConnect/web-app/app/views/profileMain.scala.html
-                    HASH: 3088215f49a4fcb3787c03de2dbb5cf228348841
+                    HASH: 136df876fb2f4391722ab0eb19ccc22e21c3dfaf
                     MATRIX: 877->17|913->19|939->37|977->38|1015->42|1029->48|1057->55|1479->442|1494->448|1543->488|1582->489|4593->3469|4635->3480
                     LINES: 30->2|31->3|31->3|31->3|32->4|32->4|32->4|44->16|44->16|44->16|44->16|102->74|104->76
                     -- GENERATED --
