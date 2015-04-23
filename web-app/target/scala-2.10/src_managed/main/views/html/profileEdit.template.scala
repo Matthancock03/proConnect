@@ -20,22 +20,27 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
-object profileEdit extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template0[play.api.templates.HtmlFormat.Appendable] {
+object profileEdit extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template2[List[FeedItem],User,play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply():play.api.templates.HtmlFormat.Appendable = {
-        _display_ {
+    def apply/*1.2*/(feedItems: List[FeedItem], user:User):play.api.templates.HtmlFormat.Appendable = {
+        _display_ {import helper._
 
-Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](format.raw/*1.20*/("""
-"""),_display_(Seq[Any](/*2.2*/navbar/*2.8*/.render)),format.raw/*2.15*/("""
 
-<link rel="stylesheet" href=""""),_display_(Seq[Any](/*4.31*/routes/*4.37*/.Assets.at("stylesheets/editProfile.min.css"))),format.raw/*4.82*/("""">
+Seq[Any](format.raw/*1.40*/("""
+
+"""),format.raw/*4.1*/("""
+
+"""),_display_(Seq[Any](/*6.2*/main("ProConect")/*6.19*/{_display_(Seq[Any](format.raw/*6.20*/("""
+"""),_display_(Seq[Any](/*7.2*/navbar/*7.8*/.render)),format.raw/*7.15*/("""
+
+<link rel="stylesheet" href=""""),_display_(Seq[Any](/*9.31*/routes/*9.37*/.Assets.at("stylesheets/editProfile.min.css"))),format.raw/*9.82*/("""">
 
 <div class="container">
   <div class="row clearfix">
     <div class="col-md-3 column">
-      <img alt="140x140" src=""""),_display_(Seq[Any](/*9.32*/routes/*9.38*/.Assets.at("images/profile_holder.png"))),format.raw/*9.77*/("""" /><br /><br /><br />
-      <a href=""""),_display_(Seq[Any](/*10.17*/routes/*10.23*/.DbController.profileMain())),format.raw/*10.50*/("""">
+      <img alt="140x140" src=""""),_display_(Seq[Any](/*14.32*/routes/*14.38*/.Assets.at("images/profile_holder.png"))),format.raw/*14.77*/("""" /><br /><br /><br />
+      <a href=""""),_display_(Seq[Any](/*15.17*/routes/*15.23*/.DbController.profileMain())),format.raw/*15.50*/("""">
       <button type="button" class="btn btn-default">Edit Profile</button>
     </a>
     </div>
@@ -107,24 +112,24 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
     </div>
   </div>
 </div>
-""")))})),format.raw/*82.2*/("""
+""")))})),format.raw/*87.2*/("""
 """))}
     }
     
-    def render(): play.api.templates.HtmlFormat.Appendable = apply()
+    def render(feedItems:List[FeedItem],user:User): play.api.templates.HtmlFormat.Appendable = apply(feedItems,user)
     
-    def f:(() => play.api.templates.HtmlFormat.Appendable) = () => apply()
+    def f:((List[FeedItem],User) => play.api.templates.HtmlFormat.Appendable) = (feedItems,user) => apply(feedItems,user)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed Apr 22 19:23:21 PDT 2015
+                    DATE: Wed Apr 22 21:33:16 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileEdit.scala.html
-                    HASH: 77e0d2852fdd1b40005cf697720c2279869caef7
-                    MATRIX: 870->1|895->18|933->19|969->21|982->27|1010->34|1077->66|1091->72|1157->117|1314->239|1328->245|1388->284|1463->323|1478->329|1527->356|3746->2544
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|32->4|32->4|32->4|37->9|37->9|37->9|38->10|38->10|38->10|110->82
+                    HASH: f8033578c28218eb7660194f4060b431747b4603
+                    MATRIX: 793->1|941->39|969->58|1006->61|1031->78|1069->79|1105->81|1118->87|1146->94|1213->126|1227->132|1293->177|1451->299|1466->305|1527->344|1602->383|1617->389|1666->416|3885->2604
+                    LINES: 26->1|30->1|32->4|34->6|34->6|34->6|35->7|35->7|35->7|37->9|37->9|37->9|42->14|42->14|42->14|43->15|43->15|43->15|115->87
                     -- GENERATED --
                 */
             

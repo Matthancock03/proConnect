@@ -9,7 +9,7 @@ import play.libs.F.Promise;
 import com.fasterxml.jackson.databind.JsonNode;
 import play.libs.Json;
 import views.html.*;
-import models.FeedItem;
+import models.*;
 import play.Logger;
 import java.util.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -30,6 +30,7 @@ public class NewsFeed extends Controller {
 									List feeds = new ArrayList();
 									FeedItem[] feedItems = new FeedItem[21];
  									JsonNode rootNode = json.path("stories");
+									User user = new User();
 
 									int x = 0;
 									for (JsonNode item : rootNode) { //Loads results from api call to JsonNode. Stores in FeedItem
@@ -42,10 +43,10 @@ public class NewsFeed extends Controller {
 										feedItems[x].url = item.get("link").textValue();
 										feeds.add(feedItems[x]);
 										x++;
-										Logger.debug(item.get("pubDate").textValue());
+										//Logger.debug(item.get("pubDate").textValue());
 										}
 
-                    return ok(home.render(feeds));
+                    return ok(home.render(feeds, user));
                 }
             }
     );

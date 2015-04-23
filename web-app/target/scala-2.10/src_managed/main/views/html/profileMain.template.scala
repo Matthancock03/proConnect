@@ -20,17 +20,19 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
-object profileMain extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template0[play.api.templates.HtmlFormat.Appendable] {
+object profileMain extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template2[List[FeedItem],User,play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply():play.api.templates.HtmlFormat.Appendable = {
+    def apply/*1.2*/(feedItems: List[FeedItem], user:User):play.api.templates.HtmlFormat.Appendable = {
         _display_ {import helper._
 
 
-Seq[Any](format.raw/*2.1*/("""
-"""),_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/{_display_(Seq[Any](format.raw/*3.21*/("""
-  """),_display_(Seq[Any](/*4.4*/navbar/*4.10*/.render)),format.raw/*4.17*/("""
-  
+Seq[Any](format.raw/*1.40*/("""
+
+"""),format.raw/*4.1*/("""
+"""),_display_(Seq[Any](/*5.2*/main("ProConnect")/*5.20*/{_display_(Seq[Any](format.raw/*5.21*/("""
+  """),_display_(Seq[Any](/*6.4*/navbar/*6.10*/.render)),format.raw/*6.17*/("""
+
 
 <div class="container-fluid">
 	<div class="row clearfix">
@@ -41,7 +43,7 @@ Seq[Any](format.raw/*2.1*/("""
     <div class="col-xs-2 column">
     </div>
 		<div class="col-xs-6 column">
-      """),_display_(Seq[Any](/*16.8*/helper/*16.14*/.form(action = routes.NewsFeed.homeFeed)/*16.54*/{_display_(Seq[Any](format.raw/*16.55*/("""
+      """),_display_(Seq[Any](/*18.8*/helper/*18.14*/.form(action = routes.NewsFeed.homeFeed)/*18.54*/{_display_(Seq[Any](format.raw/*18.55*/("""
 				<div class="form-group break-after">
 					 <label class="spacer">Name</label><input type="text" class="form-control" id="exampleInputEmail1" />
 					 <label class="spacer-min">Personal Headline</label><input type="text"  class="form-control" id="exampleInputPassword1" />
@@ -99,26 +101,26 @@ Seq[Any](format.raw/*2.1*/("""
     </div>
       </div>
       <div class="col-xs-2 column bottom-div"></div>
-    """)))})),format.raw/*74.6*/("""
+    """)))})),format.raw/*76.6*/("""
 		</div>
-""")))})),format.raw/*76.2*/("""
+""")))})),format.raw/*78.2*/("""
 """))}
     }
     
-    def render(): play.api.templates.HtmlFormat.Appendable = apply()
+    def render(feedItems:List[FeedItem],user:User): play.api.templates.HtmlFormat.Appendable = apply(feedItems,user)
     
-    def f:(() => play.api.templates.HtmlFormat.Appendable) = () => apply()
+    def f:((List[FeedItem],User) => play.api.templates.HtmlFormat.Appendable) = (feedItems,user) => apply(feedItems,user)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed Apr 22 19:23:20 PDT 2015
+                    DATE: Wed Apr 22 21:33:16 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileMain.scala.html
-                    HASH: 136df876fb2f4391722ab0eb19ccc22e21c3dfaf
-                    MATRIX: 877->17|913->19|939->37|977->38|1015->42|1029->48|1057->55|1479->442|1494->448|1543->488|1582->489|4593->3469|4635->3480
-                    LINES: 30->2|31->3|31->3|31->3|32->4|32->4|32->4|44->16|44->16|44->16|44->16|102->74|104->76
+                    HASH: ae8fc169f2d903aacfbe46125d8f11d58c717e55
+                    MATRIX: 793->1|941->39|969->58|1005->60|1031->78|1069->79|1107->83|1121->89|1149->96|1569->481|1584->487|1633->527|1672->528|4683->3508|4725->3519
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|46->18|46->18|46->18|46->18|104->76|106->78
                     -- GENERATED --
                 */
             

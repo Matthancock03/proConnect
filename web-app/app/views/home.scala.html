@@ -1,4 +1,4 @@
-@(feedItems: List[FeedItem])
+@(feedItems: List[FeedItem], user:User)
 
 @import helper._
 
@@ -7,29 +7,31 @@
 
 
 <div class="container-fluid" style="height: 100%;">
-	<div class="row clearfix" style="width: 100%;">
+	<div class="row clearfix">
 		@navbar.render()
 	</div>
 
 
 	<div class="row clearfix" style="height: 100%;">
-		<div class="col-xs-3 column profile-div">
-			<img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")" />
+		<div class="col-xs-3 column" style="padding-left: 0px; height: 100%;">
+			<div class="profile-div">
+				<img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")" />
 
-			<dl class="dl-horizontal">
-				<dt>
-					Matthew Hancock
-				</dt>
-				<dd>
-					Beyond Prosthetics
-				</dd>
-				<dd>
-					San Jose State University
-				</dd>
-			</dl>
+				<dl class="dl-horizontal">
+					<dt>
+						<p class="profile-text">Matthew Hancock</p>
+					</dt>
+					<dd>
+						Beyond Prosthetics
+					</dd>
+					<dd>
+						San Jose State University
+					</dd>
+				</dl>
+		</div>
 		</div>
 
-		<div class="col-xs-6 column clearfix feed-container">
+		<div class="col-xs-6 column feed-container">
 		<img alt="140x140" class = "img-thumbnail headImage" target="_blank" src="@routes.Assets.at("images/header.jpg")" />
 			<div class="feed-div">
 			@for(feedItem <- feedItems){
@@ -51,8 +53,8 @@
 			}
 		</div>
 		</div>
-		<div class="col-xs-3 column clearfix">
-			<div style="padding-top: 10px;">
+		<div class="col-xs-3 column">
+			<div>
 				<div class="panel panel-default">
 				  <div class="panel-heading">Twitter Feed</div>
 				  <div class="panel-body">
