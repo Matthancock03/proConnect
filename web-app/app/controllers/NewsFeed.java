@@ -18,22 +18,17 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 
 
 
-<<<<<<< HEAD
-public class NewsFeed extends Controller {
 
-	public static Promise<Result> homeFeed() {
-=======
 /**This class allows for the NewsFeed to be created and implemented.
  * @author Proconnectors
  *
  */
-public class NewsFeed extends Controller { 
+public class NewsFeed extends Controller {
 
 	/** This grabs the data and creates the homeFeed from that data.
 	 * @return a promise<Result> that will allow the homeFeed to be constructed without blocking
 	 */
-	public static Promise<Result> homeFeed() { 
->>>>>>> c67e7ddcf9a2dab5e48727619297c7ebd963d42c
+	public static Promise<Result> homeFeed() {
     final Promise<Result> resultPromise = WS.url("http://api.usatoday.com/open/articles/topnews/tech?api_key=9hapmrud874jnvas9q8nprtr")
 		.setQueryParameter("count","20" ).setQueryParameter("encoding", "json")
 		.setQueryParameter("days", "7").setQueryParameter("api_key", "9hapmrud874jnvas9q8nprtr").get().map(
