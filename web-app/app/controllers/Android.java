@@ -37,7 +37,7 @@ public class Android extends Controller{
  * @param password the password of the user attempting to login
  * @return an 200 response that will display if a user logged in successfully.
  */
-@BodyParser.Of(BodyParser.Json.class)
+  @BodyParser.Of(BodyParser.Json.class)
   @SecureSocial.UserAwareAction
   public static Result androidLogin(String name, String password) {
     ObjectNode result = Json.newObject();

@@ -15,19 +15,31 @@
 	<div class="row clearfix" style="height: 100%;">
 		<div class="col-xs-3 column" style="padding-left: 0px; height: 100%;">
 			<div class="profile-div">
+				@if(user.profilePicture != null){
+				
+				}else{
 				<img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")" />
-
+				}
 				<dl class="dl-horizontal">
 					<dt>
-						<p class="profile-text">Matthew Hancock</p>
+					@if(user.userName != null){
+						<p class="profile-text">@user.userName</p>
+					}else{
+						<p class="profile-text">Guest</p>
+					}
 					</dt>
 					<dd>
+					@if(user.currentEmployer != null){
 						Beyond Prosthetics
+					}
 					</dd>
 					<dd>
+					@if(user.recentSchool != null){
 						San Jose State University
+						}
 					</dd>
 				</dl>
+				
 		</div>
 		</div>
 

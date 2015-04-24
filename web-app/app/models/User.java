@@ -27,6 +27,11 @@ public class User{
   public String lastName;
   public String userName;
   public String email;
+  public String currentEmployer;
+  public String recentSchool;
+  public String location;
+  public String aboutMe;
+  public byte[] profilePicture;
 
   public String loginProvider;
   //public String token;
@@ -37,10 +42,6 @@ public class User{
   public String[] experience;
   public String[] education;
   public String[] projects;
-  public String location;
-  public String aboutMe;
-  public byte[] profilePicture;
-
 
 
   public static User loadUser(Identity user){

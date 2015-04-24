@@ -11,24 +11,33 @@
 <div class="container">
   <div class="row clearfix">
     <div class="col-md-3 column">
-      <img alt="140x140" src="@routes.Assets.at("images/profile_holder.png")" /><br /><br /><br />
-      <a href="@routes.DbController.profileMain()">
+      @if(user.profilePicture != null){
+        
+        }else{
+        <img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")" />
+        }      
+        <a href="@routes.DbController.profileMain()">
       <button type="button" class="btn btn-default">Edit Profile</button>
     </a>
     </div>
     <div class="col-md-6 column">
-      <h3>
-        Name
-      </h3>
-      <h3>
-        Personal Headline
-      </h3>
-      <h3>
-        Current Employer
-      </h3>
-      <h3>
-        Location
-      </h3>
+      @if(user.userName != null){
+            <h3>@user.userName</h3> 
+          }else{
+            <h3>Guest</h3>
+          }   
+
+        @if(user.aboutMe != null){
+          <h3>@user.aboutMe</h3>
+        }
+     
+      @if(user.currentEmployer != null){
+          <h3>@user.currentEmployer</h3>
+        }
+
+      @if(user.location != null){
+          <h3>@user.location</h3>
+        }
     </div>
   </div>
   <div class="row clearfix">

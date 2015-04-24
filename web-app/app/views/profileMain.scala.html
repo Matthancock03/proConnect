@@ -1,4 +1,4 @@
-@(user:User)
+@(user: Form[User])
 
 @import helper._
 
@@ -9,15 +9,20 @@
 <div class="container-fluid">
 	<div class="row clearfix">
 		<div class="col-xs-2 column logo-img img-div">
-			<img alt="140x140" class="img-rounded"src="http://lorempixel.com/140/140/" />
-      <label for="exampleInputFile">Profile Image</label><input type="file" id="exampleInputFile" />
+ 
+        <img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")" />
+        
+        <label for="exampleInputFile">Profile Image</label><input type="file" id="exampleInputFile" />
 		</div>
     <div class="col-xs-2 column">
     </div>
 		<div class="col-xs-6 column">
       @helper.form(action = routes.NewsFeed.homeFeed){
 				<div class="form-group break-after">
-					 <label class="spacer">Name</label><input type="text" class="form-control" id="exampleInputEmail1" />
+					 <label class="spacer">Name</label>@helper.inputText(user("username"), 'class -> "form-control")
+           @helper.input(user("email")) { (id, name, value, args) =>
+            <input type="text" name="@name" id="@id" @toHtmlArgs(args)>
+            }
 					 <label class="spacer-min">Personal Headline</label><input type="text"  class="form-control" id="exampleInputPassword1" />
            <label class="spacer-min">Location</label><input type="text"  class="form-control" id="exampleInputPassword1" />
            <label class="spacer-min">Current Employer</label><input type="text"  class="form-control" id="exampleInputPassword1" />

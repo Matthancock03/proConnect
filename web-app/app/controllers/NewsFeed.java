@@ -10,12 +10,14 @@ import com.fasterxml.jackson.databind.JsonNode;
 import play.libs.Json;
 import views.html.*;
 import models.*;
-import play.Logger;
 import java.util.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-
+import play.Logger;
+import securesocial.core.*;
+import securesocial.*;
+import securesocial.core.java.SecureSocial;
 
 
 
@@ -28,6 +30,7 @@ public class NewsFeed extends Controller {
 	/** This grabs the data and creates the homeFeed from that data.
 	 * @return a promise<Result> that will allow the homeFeed to be constructed without blocking
 	 */
+	@SecureSocial.UserAwareAction
 	public static Promise<Result> homeFeed() {
     final Promise<Result> resultPromise = WS.url("http://api.usatoday.com/open/articles/topnews/tech?api_key=9hapmrud874jnvas9q8nprtr")
 		.setQueryParameter("count","20" ).setQueryParameter("encoding", "json")
@@ -38,8 +41,16 @@ public class NewsFeed extends Controller {
 									List feeds = new ArrayList();
 									FeedItem[] feedItems = new FeedItem[21];
  									JsonNode rootNode = json.path("stories");
-									User user = new User();
-
+ 									User user = new User();
+ 									try{
+ 									Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+									user = User.loadUser(userID);                                  //Loads user values into User model.
+									} catch (Exception e){
+										Logger.debug("Null Pointer");
+									}
+									/*String userName = userID != null ? userID.fullName() : "guest";
+									Logger.debug(userName);
+									*/
 									int x = 0;
 									for (JsonNode item : rootNode) { //Loads results from api call to JsonNode. Stores in FeedItem
 										feedItems[x] = new FeedItem();

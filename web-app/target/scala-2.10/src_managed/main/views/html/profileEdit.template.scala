@@ -20,14 +20,14 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
-object profileEdit extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template2[List[FeedItem],User,play.api.templates.HtmlFormat.Appendable] {
+object profileEdit extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template1[User,play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply/*1.2*/(feedItems: List[FeedItem], user:User):play.api.templates.HtmlFormat.Appendable = {
+    def apply/*1.2*/(user:User):play.api.templates.HtmlFormat.Appendable = {
         _display_ {import helper._
 
 
-Seq[Any](format.raw/*1.40*/("""
+Seq[Any](format.raw/*1.13*/("""
 
 """),format.raw/*4.1*/("""
 
@@ -39,24 +39,33 @@ Seq[Any](format.raw/*1.40*/("""
 <div class="container">
   <div class="row clearfix">
     <div class="col-md-3 column">
-      <img alt="140x140" src=""""),_display_(Seq[Any](/*14.32*/routes/*14.38*/.Assets.at("images/profile_holder.png"))),format.raw/*14.77*/("""" /><br /><br /><br />
-      <a href=""""),_display_(Seq[Any](/*15.17*/routes/*15.23*/.DbController.profileMain())),format.raw/*15.50*/("""">
+      """),_display_(Seq[Any](/*14.8*/if(user.profilePicture != null)/*14.39*/{_display_(Seq[Any](format.raw/*14.40*/("""
+        
+        """)))}/*16.10*/else/*16.14*/{_display_(Seq[Any](format.raw/*16.15*/("""
+        <img alt="140x140" class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*17.71*/routes/*17.77*/.Assets.at("images/profile_holder.png"))),format.raw/*17.116*/("""" />
+        """)))})),format.raw/*18.10*/("""      
+        <a href=""""),_display_(Seq[Any](/*19.19*/routes/*19.25*/.DbController.profileMain())),format.raw/*19.52*/("""">
       <button type="button" class="btn btn-default">Edit Profile</button>
     </a>
     </div>
     <div class="col-md-6 column">
-      <h3>
-        Name
-      </h3>
-      <h3>
-        Personal Headline
-      </h3>
-      <h3>
-        Current Employer
-      </h3>
-      <h3>
-        Location
-      </h3>
+      """),_display_(Seq[Any](/*24.8*/if(user.userName != null)/*24.33*/{_display_(Seq[Any](format.raw/*24.34*/("""
+            <h3>"""),_display_(Seq[Any](/*25.18*/user/*25.22*/.userName)),format.raw/*25.31*/("""</h3> 
+          """)))}/*26.12*/else/*26.16*/{_display_(Seq[Any](format.raw/*26.17*/("""
+            <h3>Guest</h3>
+          """)))})),format.raw/*28.12*/("""   
+
+        """),_display_(Seq[Any](/*30.10*/if(user.aboutMe != null)/*30.34*/{_display_(Seq[Any](format.raw/*30.35*/("""
+          <h3>"""),_display_(Seq[Any](/*31.16*/user/*31.20*/.aboutMe)),format.raw/*31.28*/("""</h3>
+        """)))})),format.raw/*32.10*/("""
+     
+      """),_display_(Seq[Any](/*34.8*/if(user.currentEmployer != null)/*34.40*/{_display_(Seq[Any](format.raw/*34.41*/("""
+          <h3>"""),_display_(Seq[Any](/*35.16*/user/*35.20*/.currentEmployer)),format.raw/*35.36*/("""</h3>
+        """)))})),format.raw/*36.10*/("""
+
+      """),_display_(Seq[Any](/*38.8*/if(user.location != null)/*38.33*/{_display_(Seq[Any](format.raw/*38.34*/("""
+          <h3>"""),_display_(Seq[Any](/*39.16*/user/*39.20*/.location)),format.raw/*39.29*/("""</h3>
+        """)))})),format.raw/*40.10*/("""
     </div>
   </div>
   <div class="row clearfix">
@@ -112,24 +121,24 @@ Seq[Any](format.raw/*1.40*/("""
     </div>
   </div>
 </div>
-""")))})),format.raw/*87.2*/("""
+""")))})),format.raw/*96.2*/("""
 """))}
     }
     
-    def render(feedItems:List[FeedItem],user:User): play.api.templates.HtmlFormat.Appendable = apply(feedItems,user)
+    def render(user:User): play.api.templates.HtmlFormat.Appendable = apply(user)
     
-    def f:((List[FeedItem],User) => play.api.templates.HtmlFormat.Appendable) = (feedItems,user) => apply(feedItems,user)
+    def f:((User) => play.api.templates.HtmlFormat.Appendable) = (user) => apply(user)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed Apr 22 21:33:16 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileEdit.scala.html
-                    HASH: f8033578c28218eb7660194f4060b431747b4603
-                    MATRIX: 793->1|941->39|969->58|1006->61|1031->78|1069->79|1105->81|1118->87|1146->94|1213->126|1227->132|1293->177|1451->299|1466->305|1527->344|1602->383|1617->389|1666->416|3885->2604
-                    LINES: 26->1|30->1|32->4|34->6|34->6|34->6|35->7|35->7|35->7|37->9|37->9|37->9|42->14|42->14|42->14|43->15|43->15|43->15|115->87
+                    DATE: Fri Apr 24 14:13:34 PDT 2015
+                    SOURCE: /home/beyondprosthetics/repos/school/proConnect/web-app/app/views/profileEdit.scala.html
+                    HASH: 5b3671a64c81721986bf20b94db5f81d8a369cd5
+                    MATRIX: 778->1|899->12|927->31|964->34|989->51|1027->52|1063->54|1076->60|1104->67|1171->99|1185->105|1251->150|1384->248|1424->279|1463->280|1501->299|1514->303|1553->304|1660->375|1675->381|1737->420|1783->434|1844->459|1859->465|1908->492|2081->630|2115->655|2154->656|2208->674|2221->678|2252->687|2289->705|2302->709|2341->710|2412->749|2462->763|2495->787|2534->788|2586->804|2599->808|2629->816|2676->831|2725->845|2766->877|2805->878|2857->894|2870->898|2908->914|2955->929|2999->938|3033->963|3072->964|3124->980|3137->984|3168->993|3215->1008|5131->2893
+                    LINES: 26->1|30->1|32->4|34->6|34->6|34->6|35->7|35->7|35->7|37->9|37->9|37->9|42->14|42->14|42->14|44->16|44->16|44->16|45->17|45->17|45->17|46->18|47->19|47->19|47->19|52->24|52->24|52->24|53->25|53->25|53->25|54->26|54->26|54->26|56->28|58->30|58->30|58->30|59->31|59->31|59->31|60->32|62->34|62->34|62->34|63->35|63->35|63->35|64->36|66->38|66->38|66->38|67->39|67->39|67->39|68->40|124->96
                     -- GENERATED --
                 */
             

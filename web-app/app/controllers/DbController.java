@@ -32,15 +32,32 @@ import models.*;
  */
 public class DbController extends Controller{
 
-
+  @SecureSocial.UserAwareAction
   public static Result editProfile(){
     User user = new User();
+              try{
+                  Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+                  user = User.loadUser(userID);                                  //Loads user values into User model.
+                  } catch (Exception e){
+                    Logger.debug("Null Pointer");
+                  }
     return ok(profileEdit.render(user));
   }
-
+  @SecureSocial.UserAwareAction
   public static Result profileMain(){
     User user = new User();
-    return ok(profileMain.render(user));
+    Form<User> userForm = Form.form(User.class);
+
+              try{
+                  Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+                  user = User.loadUser(userID);   
+                  Form<User> userFilled =  userForm.fill(user); 
+                  return ok(profileMain.render(userFilled));                             //Loads user values into User model.
+                  } catch (Exception e){
+                    Logger.debug("Null Pointer");
+                  }
+
+    return ok(profileMain.render(userForm));
   }
 
   /*public static Result loginUser(){
