@@ -10,6 +10,8 @@ import anorm.Sql;
 import anorm.SqlParser;
 import controllers.*;
 import org.mindrot.jbcrypt.BCrypt;
+import play.Logger;
+
 
 /**This class creates a connection with the database with various functions.
  * @author Proconnectors
@@ -31,11 +33,11 @@ public class JDBC
 	Function to create a connection to database
 	*/
 	/**Function to create a connection to database
-	 * 
+	 *
 	 */
-	static void createConnection()
+	public void createConnection()
   	{
-		String url = "postgres://vtzlbwlzomypny:WcZuJmUgpzHV5L_kaYFfEXjhDd@ec2-184-73-221-47.compute-1.amazonaws.com:5432/dcn8fp0jefq7ef";
+		/*String url = "postgres://vtzlbwlzomypny:WcZuJmUgpzHV5L_kaYFfEXjhDd@ec2-184-73-221-47.compute-1.amazonaws.com:5432/dcn8fp0jefq7ef";
 		Properties props = new Properties();
 		props.setProperty("user","vtzlbwlzomypny ");
 		props.setProperty("password","WcZuJmUgpzHV5L_kaYFfEXjhDd");
@@ -50,14 +52,23 @@ public class JDBC
   	    {
   	        System.out.println("Exception in main()");
   	        e.printStackTrace();
-  	     }//end catch
+  	     }//end catch*/
+         try{
+         Connection connection = DB.getConnection();
+         Logger.debug("Connection Established");
+       }//end try
+       catch (Exception e)
+       {
+         Logger.debug("Connection Failed");
+           e.printStackTrace();
+        }//end catch*/
   	}// end createConnection
 
 	/*
 	Function to close the connection to database
 	*/
   	/**Function to close the connection to database
-  	 * 
+  	 *
   	 */
   	static void closeConnection()
   	{

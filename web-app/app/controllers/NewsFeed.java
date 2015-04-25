@@ -42,15 +42,7 @@ public class NewsFeed extends Controller {
 									FeedItem[] feedItems = new FeedItem[21];
  									JsonNode rootNode = json.path("stories");
  									User user = new User();
- 									try{
- 									Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
-									user = User.loadUser(userID);                                  //Loads user values into User model.
-									} catch (Exception e){
-										Logger.debug("Null Pointer");
-									}
-									/*String userName = userID != null ? userID.fullName() : "guest";
-									Logger.debug(userName);
-									*/
+
 									int x = 0;
 									for (JsonNode item : rootNode) { //Loads results from api call to JsonNode. Stores in FeedItem
 										feedItems[x] = new FeedItem();
@@ -64,6 +56,19 @@ public class NewsFeed extends Controller {
 										x++;
 										//Logger.debug(item.get("pubDate").textValue());
 										}
+
+
+ 									try{
+ 									Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+									user = User.loadUser(userID);
+									user.save();                              //Loads user values into User model.
+									} catch (Exception e){
+										Logger.debug("Null Pointer homeFeed");
+
+									}
+									/*String userName = userID != null ? userID.fullName() : "guest";
+									Logger.debug(userName);
+									*/
 
                     return ok(home.render(feeds, user));
                 }

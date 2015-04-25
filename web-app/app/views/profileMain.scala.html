@@ -17,9 +17,10 @@
     <div class="col-xs-2 column">
     </div>
 		<div class="col-xs-6 column">
-      @helper.form(action = routes.NewsFeed.homeFeed){
+      @helper.form(action = routes.DbController.saveUser){
 				<div class="form-group break-after">
 					 @helper.inputText(user("userName"), 'class -> "form-control", '_label -> "Name" )
+           @helper.inputText(user("email"), 'class -> "form-control", '_label -> "Email Address" )
            @helper.inputText(user("aboutMe"), 'class -> "form-control", '_label -> "Personal Headline" )
            @helper.inputText(user("location"), 'class -> "form-control", '_label -> "Location" )
            @helper.inputText(user("currentEmployer"), 'class -> "form-control", '_label -> "Current Employer" )
@@ -67,7 +68,7 @@
                 </button>
               </div>
           </div>
-          <button type="submit" class="btn save-button">Submit</button>
+          <button type="submit" class="btn save-button" style="padding-bottom=25px">Submit</button>
     </div>
       </div>
       <div class="col-xs-2 column bottom-div"></div>

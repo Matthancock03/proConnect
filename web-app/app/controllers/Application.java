@@ -45,6 +45,8 @@ public static Result connections(){
  * @return a 200 response that will render the splash page on the screen.
  */
 public static Result splashPage(){
+    JDBC jdbc = new JDBC();
+    jdbc.createConnection();
     return ok(splash.render());
   }
 

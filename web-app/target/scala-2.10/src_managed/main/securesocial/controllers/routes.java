@@ -1,6 +1,6 @@
 // @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
-// @HASH:bbc63cdce83ded2a388b5ca4924abf5fdd4275ce
-// @DATE:Fri Apr 24 19:13:35 PDT 2015
+// @HASH:8935bf0ef104a30d7071c371a4cf6b4e08c90325
+// @DATE:Fri Apr 24 23:25:10 PDT 2015
 
 package securesocial.controllers;
 
