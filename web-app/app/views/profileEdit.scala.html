@@ -12,25 +12,25 @@
   <div class="row clearfix">
     <div class="col-md-3 column">
       @if(user.profilePicture != null){
-        
+
         }else{
         <img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")" />
-        }      
+        }
         <a href="@routes.DbController.profileMain()">
       <button type="button" class="btn btn-default">Edit Profile</button>
     </a>
     </div>
     <div class="col-md-6 column">
       @if(user.userName != null){
-            <h3>@user.userName</h3> 
+            <h3>@user.userName</h3>
           }else{
             <h3>Guest</h3>
-          }   
+          }
 
         @if(user.aboutMe != null){
           <h3>@user.aboutMe</h3>
         }
-     
+
       @if(user.currentEmployer != null){
           <h3>@user.currentEmployer</h3>
         }

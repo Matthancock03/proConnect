@@ -37,7 +37,8 @@ public class DbController extends Controller{
     User user = new User();
               try{
                   Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
-                  user = User.loadUser(userID);                                  //Loads user values into User model.
+                  user = User.loadUser(userID);
+                  Logger.debug(user.userName);                              //Loads user values into User model.
                   } catch (Exception e){
                     Logger.debug("Null Pointer");
                   }
@@ -50,8 +51,11 @@ public class DbController extends Controller{
 
               try{
                   Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
-                  user = User.loadUser(userID);   
-                  Form<User> userFilled =  userForm.fill(user); 
+                  user = User.loadUser(userID);
+                  Form<User> userFilled =  Form.form(User.class).fill(user);
+                  Logger.debug("User Form passed");
+                  Logger.debug(user.userName);
+                  Logger.debug(userForm.field("userName").value());
                   return ok(profileMain.render(userFilled));                             //Loads user values into User model.
                   } catch (Exception e){
                     Logger.debug("Null Pointer");

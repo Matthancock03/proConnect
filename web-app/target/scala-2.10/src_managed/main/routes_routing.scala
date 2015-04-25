@@ -1,6 +1,6 @@
-// @SOURCE:/home/beyondprosthetics/repos/school/proConnect/web-app/conf/routes
+// @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
 // @HASH:bbc63cdce83ded2a388b5ca4924abf5fdd4275ce
-// @DATE:Fri Apr 24 13:50:53 PDT 2015
+// @DATE:Fri Apr 24 19:13:35 PDT 2015
 
 
 import play.core._
