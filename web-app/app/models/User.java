@@ -29,11 +29,13 @@ public class User extends Model{
   @Id
   public long id;
 
-  public String firstName;
-  public String lastName;
+  @Version
+  public java.util.Date version;
+
   public String userName;
 
   @Constraints.Required
+  @Column(unique=true)
   public String email;
 
   public String currentEmployer;
@@ -45,7 +47,6 @@ public class User extends Model{
   public byte[] profilePicture;
 
   public String loginProvider;
-  //public String token;
   public String secret;
   public String avatarUrl;
   public String authMethod;
@@ -61,20 +62,45 @@ public class User extends Model{
   public static User loadUser(Identity user){
     //this.id = user.id;
     String userEmail = user.email().get() != null ? user.email().get() : "No email provided";
+    Logger.debug(userEmail);
     User newUser = User.find.where().eq("email", userEmail).findUnique();
+
     if(newUser == null){
-      Logger.debug("User Not Found");
-      newUser = new User();
+      /*newUser = new User();
+      newUser.email = userEmail;
       newUser.userName = user != null ? user.fullName() : "Guest";
       newUser.loginProvider = user.identityId().providerId() != null ? user.identityId().providerId() : "No provider";
+      newUser.save();
+      Logger.debug("User id: " + Long.toString(newUser.id));
+      */
+    }
+
+    return newUser;
+  }
+
+  public static User loadUser(String email){
+    //this.id = user.id;
+    Logger.debug("Find email: email");
+    User newUser = User.find.where().eq("email", email).findUnique();
+
+    if(newUser == null){
+      newUser = new User();
+      /*
       newUser.email = userEmail;
+      newUser.userName = user != null ? user.fullName() : "Guest";
+      newUser.loginProvider = user.identityId().providerId() != null ? user.identityId().providerId() : "No provider";
+      newUser.save();
+      Logger.debug("User id: " + Long.toString(newUser.id));
+      */
     }
 
     return newUser;
   }
 
 
-  public void saveUser(User user){
+  public static void saveUser(User user){
+
+
   }
 
   public static void uploadPic(){

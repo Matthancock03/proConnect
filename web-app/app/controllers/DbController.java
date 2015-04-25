@@ -32,25 +32,24 @@ import play.libs.WS;
 /**This class extends the Controller package's functionality to allow the database controller to access the information stored in the database.
  * @author Proconnectors
  *
- */
+e  */
 public class DbController extends Controller{
 
   @SecureSocial.UserAwareAction
   public static Result editProfile(){
-    User user = new User();
-
+    User user;
     Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
     user = User.loadUser(userID);
     Logger.debug(user.userName);                              //Loads user values into User model.
 
     return ok(profileEdit.render(user));
   }
+
+
   @SecureSocial.UserAwareAction
   public static Result profileMain(){
-    User user = new User();
-    Form<User> userForm = Form.form(User.class);
-
-
+    User user;
+   Form<User> userForm = Form.form(User.class);
    Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
    user = User.loadUser(userID);
    Form<User> userFilled =  Form.form(User.class).fill(user);
@@ -64,9 +63,15 @@ public class DbController extends Controller{
   public static Promise<Result>  saveUser(){
     Form<User> user = Form.form(User.class);
     User userData = user.bindFromRequest().get();
+    User dbUser = User.loadUser(userData.email);
+
     Logger.debug("User Form Bind Sucessful");
-    Logger.debug(userData.userName);
-    userData.save();
+    Logger.debug("Before Merge: " + dbUser.userName);
+    Logger.debug( "Save User id: " +  Long.toString(userData.id));
+    Logger.debug( "DbUser id: " +  Long.toString(dbUser.id));
+    mergeResults(dbUser,userData);
+    Logger.debug("After Merge: " + dbUser.userName);
+    dbUser.update();
 
     final Promise<Result> resultPromise = WS.url("http://api.usatoday.com/open/articles/topnews/tech?api_key=9hapmrud874jnvas9q8nprtr")
 		.setQueryParameter("count","20" ).setQueryParameter("encoding", "json")
@@ -118,34 +123,15 @@ public class DbController extends Controller{
     User userData = user.bindFromRequest().get();
     return ok("Form Sucessful");
   }
-  /*public static Result loginUser(){
-      Form<loginFormData> formData = Form.form(loginFormData.class).bindFromRequest();
-      if (formData.hasErrors()) {
-        Form<loginFormData> loginFormData = Form.form(loginFormData.class);
-        Form<signUpFormData> signUpFormData = Form.form(signUpFormData.class);
-        return badRequest(login.render("Ensure fields are filled correctly", loginFormData, signUpFormData));
-    } else {
-        loginFormData user = formData.get();
-        //Logger.debug(user.email + "  " + user.password);
-        return ok(home.render());
+    private static void mergeResults(User out, User in){
+      out.userName = in.userName;
+      out.experience = in.experience;
+      out.education = in.education;
+      out.projects = in.projects;
+      out.aboutMe = in.aboutMe;
+      out.recentSchool = in.recentSchool;
+      out.currentEmployer = in.currentEmployer;
+      out.location = in.location;
+
     }
-  }
-    public static Result loginPage(){
-      Form<loginFormData> loginFormData = Form.form(loginFormData.class);
-      Form<signUpFormData> signUpFormData = Form.form(signUpFormData.class);
-      return ok(login.render("", loginFormData, signUpFormData));
-    }
-  public static Result signUpUser(){
-      Form<signUpFormData> formData = Form.form(signUpFormData.class).bindFromRequest();
-      if (formData.hasErrors()) {
-        Form<loginFormData> loginFormData = Form.form(loginFormData.class);
-        Form<signUpFormData> signUpFormData = Form.form(signUpFormData.class);
-        return badRequest(login.render("Ensure fields are filled correctly", loginFormData, signUpFormData));
-    } else {
-      signUpFormData user = formData.get();
-      //Logger.debug(user.email + "  " + user.password + "  " + user.passwordVerification);
-      return ok("Registered!");
-    }
-  }
-  */
 }

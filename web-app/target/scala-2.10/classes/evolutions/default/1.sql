@@ -13,8 +13,6 @@ create table forum (
 
 create table user (
   id                        bigint not null,
-  first_name                varchar(255),
-  last_name                 varchar(255),
   user_name                 varchar(255),
   email                     varchar(255),
   current_employer          varchar(255),
@@ -29,6 +27,8 @@ create table user (
   experience                varchar(255),
   education                 varchar(255),
   projects                  varchar(255),
+  version                   timestamp not null,
+  constraint uq_user_email unique (email),
   constraint pk_user primary key (id))
 ;
 

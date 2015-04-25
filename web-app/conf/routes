@@ -17,6 +17,7 @@ GET		   /message                  controllers.Application.message()
 GET		   /search                   controllers.Application.search()
 POST     /saveUser                 controllers.DbController.saveUser()
 POST     /getFormData              controllers.DbController.getFormData()
+GET      /systemEntry              controllers.Application.systemEntry()
 
 ########## Android###################
 GET      /androidLogin             controllers.Android.androidLogin(name: String, password: String)

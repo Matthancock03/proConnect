@@ -1,0 +1,35 @@
+@import helper._
+
+
+@main("ProConnect"){
+<link rel="stylesheet" href="@routes.Assets.at("stylesheets/splash.min.css")">
+
+<div class="container-fluid">
+
+
+	<div class="row clearfix topSplash">
+    <nav class="navbar navbar-inverse">
+  				<div class="navbar-header">
+  					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  						<span class="sr-only">Toggle navigation</span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  					</button>
+  					<a class="navbar-brand" href="#">ProConnect</a>
+  				</div>
+  				<div id="navbar" class="collapse navbar-collapse">
+  			</div>
+  		</nav>
+      @helper.form(action = routes.DbController.profileMain){
+        <h3>Please enter a password for your account</h3>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd">
+            <label for="pwd">Password Verification:</label>
+            <input type="password" class="form-control" id="pwdVer">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+      }
+</div>
+}

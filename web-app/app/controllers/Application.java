@@ -45,8 +45,6 @@ public static Result connections(){
  * @return a 200 response that will render the splash page on the screen.
  */
 public static Result splashPage(){
-    JDBC jdbc = new JDBC();
-    jdbc.createConnection();
     return ok(splash.render());
   }
 
@@ -57,6 +55,25 @@ public static Result splashPage(){
 public static Result help(){
     return ok(help.render());
   }
+@SecureSocial.UserAwareAction
+  public static Result systemEntry(){
+    Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);
+
+    User newUser = User.loadUser(user);
+
+    if(newUser == null){
+      Logger.debug("User Not Found");
+      newUser = new User();
+      newUser.userName = user != null ? user.fullName() : "Guest";
+      newUser.loginProvider = user.identityId().providerId() != null ? user.identityId().providerId() : "No provider";
+      newUser.email = user.email().get() != null ? user.email().get() : "No email provided";
+      newUser.save();
+      return ok(systemEntry.render());
+    }
+    return DbController.editProfile();
+}
+
+
 
   /**This produces a HTTP result for the search page.
  * @return a 200 response that will render the search page on the screen
@@ -76,7 +93,7 @@ public static Result message(){
   /**This checks to see if there is an authenticated user.
  * @return a 200 response indicating the authenticate user.
  */
-@SecureSocial.SecuredAction
+   @SecureSocial.SecuredAction
    public static Result index() {
        Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);
        return ok("index.render(user)");
