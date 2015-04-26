@@ -33,23 +33,28 @@ Seq[Any](format.raw/*2.1*/("""
 <link rel="stylesheet" href=""""),_display_(Seq[Any](/*5.31*/routes/*5.37*/.Assets.at("stylesheets/splash.min.css"))),format.raw/*5.77*/("""">
 
 <div class="container-fluid">
-
+	<nav class="navbar navbar-inverse">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">ProConnect</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+			</div>
+		</nav>
 
 	<div class="row clearfix topSplash">
-    <nav class="navbar navbar-inverse">
-  				<div class="navbar-header">
-  					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-  						<span class="sr-only">Toggle navigation</span>
-  						<span class="icon-bar"></span>
-  						<span class="icon-bar"></span>
-  						<span class="icon-bar"></span>
-  					</button>
-  					<a class="navbar-brand" href="#">ProConnect</a>
-  				</div>
-  				<div id="navbar" class="collapse navbar-collapse">
-  			</div>
-  		</nav>
-      """),_display_(Seq[Any](/*24.8*/helper/*24.14*/.form(action = routes.DbController.profileMain)/*24.61*/{_display_(Seq[Any](format.raw/*24.62*/("""
+    <div class="col-xs-4">
+
+    </div>
+		<div class="col-xs-4">
+
+
+      """),_display_(Seq[Any](/*29.8*/helper/*29.14*/.form(action = routes.DbController.profileMain)/*29.61*/{_display_(Seq[Any](format.raw/*29.62*/("""
         <h3>Please enter a password for your account</h3>
           <div class="form-group">
             <label for="pwd">Password:</label>
@@ -58,9 +63,13 @@ Seq[Any](format.raw/*2.1*/("""
             <input type="password" class="form-control" id="pwdVer">
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
-      """)))})),format.raw/*33.8*/("""
+      """)))})),format.raw/*38.8*/("""
+			</div>
+			<div class="col-xs-4">
+
+			</div>
 </div>
-""")))})),format.raw/*35.2*/("""
+""")))})),format.raw/*44.2*/("""
 """))}
     }
     
@@ -73,11 +82,11 @@ Seq[Any](format.raw/*2.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Apr 25 11:25:52 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/systemEntry.scala.html
-                    HASH: 8f9b9cf6ad2df7e7676027d74a2beb2118745a44
-                    MATRIX: 877->17|914->20|940->38|978->39|1044->70|1058->76|1119->116|1798->760|1813->766|1869->813|1908->814|2371->1246|2411->1255
-                    LINES: 30->2|32->4|32->4|32->4|33->5|33->5|33->5|52->24|52->24|52->24|52->24|61->33|63->35
+                    DATE: Sat Apr 25 17:11:58 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/web-app/app/views/systemEntry.scala.html
+                    HASH: ff786514eb637eb9841b69313d17afdc8f0a0e9d
+                    MATRIX: 877->17|914->20|940->38|978->39|1044->70|1058->76|1119->116|1836->798|1851->804|1907->851|1946->852|2409->1284|2496->1340
+                    LINES: 30->2|32->4|32->4|32->4|33->5|33->5|33->5|57->29|57->29|57->29|57->29|66->38|72->44
                     -- GENERATED --
                 */
             

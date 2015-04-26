@@ -20,14 +20,14 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
-object profileEdit extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template1[User,play.api.templates.HtmlFormat.Appendable] {
+object profileEdit extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template1[UserModel,play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply/*1.2*/(user:User):play.api.templates.HtmlFormat.Appendable = {
+    def apply/*1.2*/(user:UserModel):play.api.templates.HtmlFormat.Appendable = {
         _display_ {import helper._
 
 
-Seq[Any](format.raw/*1.13*/("""
+Seq[Any](format.raw/*1.18*/("""
 
 """),format.raw/*4.1*/("""
 
@@ -122,19 +122,19 @@ Seq[Any](format.raw/*1.13*/("""
 """))}
     }
     
-    def render(user:User): play.api.templates.HtmlFormat.Appendable = apply(user)
+    def render(user:UserModel): play.api.templates.HtmlFormat.Appendable = apply(user)
     
-    def f:((User) => play.api.templates.HtmlFormat.Appendable) = (user) => apply(user)
+    def f:((UserModel) => play.api.templates.HtmlFormat.Appendable) = (user) => apply(user)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Apr 25 11:12:23 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileEdit.scala.html
-                    HASH: f0b25fce8358d1c5e54464aabd68866a8c488233
-                    MATRIX: 778->1|899->12|927->31|964->34|989->51|1027->52|1063->54|1076->60|1104->67|1171->99|1185->105|1251->150|1384->248|1424->279|1463->280|1493->291|1506->295|1545->296|1652->367|1667->373|1729->412|1775->426|1830->445|1845->451|1894->478|2067->616|2101->641|2140->642|2194->660|2207->664|2238->673|2274->690|2287->694|2326->695|2397->734|2444->745|2477->769|2516->770|2568->786|2581->790|2611->798|2658->813|2702->822|2743->854|2782->855|2834->871|2847->875|2885->891|2932->906|2976->915|3010->940|3049->941|3101->957|3114->961|3145->970|3192->985|3370->1127|3403->1151|3442->1152|3506->1180|3519->1184|3549->1192|3606->1217|3778->1354|3814->1381|3853->1382|3909->1402|3922->1406|3955->1417|4005->1436|4192->1588|4228->1615|4267->1616|4323->1636|4336->1640|4367->1649|4417->1668|4585->1801|4621->1828|4660->1829|4716->1849|4729->1853|4761->1863|4811->1882|4871->1911
+                    DATE: Sat Apr 25 17:11:59 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/web-app/app/views/profileEdit.scala.html
+                    HASH: 8efc18eacf9f0605962b7f0e16a9ccff975e9568
+                    MATRIX: 783->1|909->17|937->36|974->39|999->56|1037->57|1073->59|1086->65|1114->72|1181->104|1195->110|1261->155|1394->253|1434->284|1473->285|1503->296|1516->300|1555->301|1662->372|1677->378|1739->417|1785->431|1840->450|1855->456|1904->483|2077->621|2111->646|2150->647|2204->665|2217->669|2248->678|2284->695|2297->699|2336->700|2407->739|2454->750|2487->774|2526->775|2578->791|2591->795|2621->803|2668->818|2712->827|2753->859|2792->860|2844->876|2857->880|2895->896|2942->911|2986->920|3020->945|3059->946|3111->962|3124->966|3155->975|3202->990|3380->1132|3413->1156|3452->1157|3516->1185|3529->1189|3559->1197|3616->1222|3788->1359|3824->1386|3863->1387|3919->1407|3932->1411|3965->1422|4015->1441|4202->1593|4238->1620|4277->1621|4333->1641|4346->1645|4377->1654|4427->1673|4595->1806|4631->1833|4670->1834|4726->1854|4739->1858|4771->1868|4821->1887|4881->1916
                     LINES: 26->1|30->1|32->4|34->6|34->6|34->6|35->7|35->7|35->7|37->9|37->9|37->9|42->14|42->14|42->14|44->16|44->16|44->16|45->17|45->17|45->17|46->18|47->19|47->19|47->19|52->24|52->24|52->24|53->25|53->25|53->25|54->26|54->26|54->26|56->28|58->30|58->30|58->30|59->31|59->31|59->31|60->32|62->34|62->34|62->34|63->35|63->35|63->35|64->36|66->38|66->38|66->38|67->39|67->39|67->39|68->40|76->48|76->48|76->48|78->50|78->50|78->50|80->52|89->61|89->61|89->61|91->63|91->63|91->63|93->65|101->73|101->73|101->73|103->75|103->75|103->75|105->77|113->85|113->85|113->85|115->87|115->87|115->87|117->89|121->93
                     -- GENERATED --
                 */

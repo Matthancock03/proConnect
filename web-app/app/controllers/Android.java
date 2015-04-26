@@ -45,9 +45,9 @@ public class Android extends Controller{
         if(name == "denied" || name == ""){
           result.put("Accepted", "False");
         }else{
-          User user = new User();
+          UserModel user = new UserModel();
           Identity userId = (Identity) ctx().args.get(SecureSocial.USER_KEY);
-          user.loadUser(userId);
+          user.loadUserModel(userId);
           JsonNode jsonUser = Json.toJson(user);
           Logger.debug(jsonUser.toString());
           return ok(jsonUser);

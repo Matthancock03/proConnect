@@ -37,10 +37,10 @@ public class DbController extends Controller{
 
   @SecureSocial.UserAwareAction
   public static Result editProfile(){
-    User user;
+    UserModel user;
     Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
-    user = User.loadUser(userID);
-    Logger.debug(user.userName);                              //Loads user values into User model.
+    user = UserModel.loadUserModel(userID);
+    Logger.debug(user.userName);                              //Loads user values into UserModel model.
 
     return ok(profileEdit.render(user));
   }
@@ -48,12 +48,12 @@ public class DbController extends Controller{
 
   @SecureSocial.UserAwareAction
   public static Result profileMain(){
-    User user;
-   Form<User> userForm = Form.form(User.class);
+    UserModel user;
+   Form<UserModel> userForm = Form.form(UserModel.class);
    Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
-   user = User.loadUser(userID);
-   Form<User> userFilled =  Form.form(User.class).fill(user);
-   Logger.debug("User Form passed");
+   user = UserModel.loadUserModel(userID);
+   Form<UserModel> userFilled =  Form.form(UserModel.class).fill(user);
+   Logger.debug("UserModel Form passed");
    Logger.debug(user.userName);
 
     return ok(profileMain.render(userFilled));
@@ -61,17 +61,17 @@ public class DbController extends Controller{
 
   @SecureSocial.UserAwareAction
   public static Promise<Result>  saveUser(){
-    Form<User> user = Form.form(User.class);
-    User userData = user.bindFromRequest().get();
-    User dbUser = User.loadUser(userData.email);
+    Form<UserModel> user = Form.form(UserModel.class);
+    UserModel userData = user.bindFromRequest().get();
+    UserModel dbUserModel = UserModel.loadUserModel(userData.email);
 
-    Logger.debug("User Form Bind Sucessful");
-    Logger.debug("Before Merge: " + dbUser.userName);
-    Logger.debug( "Save User id: " +  Long.toString(userData.id));
-    Logger.debug( "DbUser id: " +  Long.toString(dbUser.id));
-    mergeResults(dbUser,userData);
-    Logger.debug("After Merge: " + dbUser.userName);
-    dbUser.update();
+    Logger.debug("UserModel Form Bind Sucessful");
+    Logger.debug("Before Merge: " + dbUserModel.userName);
+    Logger.debug( "Save UserModel id: " +  Long.toString(userData.id));
+    Logger.debug( "DbUserModel id: " +  Long.toString(dbUserModel.id));
+    mergeResults(dbUserModel,userData);
+    Logger.debug("After Merge: " + dbUserModel.userName);
+    dbUserModel.update();
 
     final Promise<Result> resultPromise = WS.url("http://api.usatoday.com/open/articles/topnews/tech?api_key=9hapmrud874jnvas9q8nprtr")
 		.setQueryParameter("count","20" ).setQueryParameter("encoding", "json")
@@ -83,7 +83,7 @@ public class DbController extends Controller{
 									List feeds = new ArrayList();
 									FeedItem[] feedItems = new FeedItem[21];
  									JsonNode rootNode = json.path("stories");
- 									User user = new User();
+ 									UserModel user = new UserModel();
 
 									int x = 0;
 									for (JsonNode item : rootNode) { //Loads results from api call to JsonNode. Stores in FeedItem
@@ -102,7 +102,7 @@ public class DbController extends Controller{
 
  									try{
  									Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
-									user = User.loadUser(userID);                                  //Loads user values into User model.
+									user = UserModel.loadUserModel(userID);                                  //Loads user values into UserModel model.
 									} catch (Exception e){
 										Logger.debug("Null Pointer homeFeed");
 
@@ -119,11 +119,11 @@ public class DbController extends Controller{
 	}
 
   public static Result getFormData(){
-    Form<User> user = Form.form(User.class);
-    User userData = user.bindFromRequest().get();
+    Form<UserModel> user = Form.form(UserModel.class);
+    UserModel userData = user.bindFromRequest().get();
     return ok("Form Sucessful");
   }
-    private static void mergeResults(User out, User in){
+    private static void mergeResults(UserModel out, UserModel in){
       out.userName = in.userName;
       out.experience = in.experience;
       out.education = in.education;

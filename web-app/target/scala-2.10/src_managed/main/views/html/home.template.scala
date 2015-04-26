@@ -20,14 +20,14 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
-object home extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template2[List[FeedItem],User,play.api.templates.HtmlFormat.Appendable] {
+object home extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template2[List[FeedItem],UserModel,play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply/*1.2*/(feedItems: List[FeedItem], user:User):play.api.templates.HtmlFormat.Appendable = {
+    def apply/*1.2*/(feedItems: List[FeedItem], user:UserModel):play.api.templates.HtmlFormat.Appendable = {
         _display_ {import helper._
 
 
-Seq[Any](format.raw/*1.40*/("""
+Seq[Any](format.raw/*1.45*/("""
 
 """),format.raw/*4.1*/("""
 """),_display_(Seq[Any](/*5.2*/main("ProConnect")/*5.20*/ {_display_(Seq[Any](format.raw/*5.22*/("""
@@ -58,12 +58,12 @@ Seq[Any](format.raw/*1.40*/("""
 					</dt>
 					<dd>
 					"""),_display_(Seq[Any](/*32.7*/if(user.currentEmployer != null)/*32.39*/{_display_(Seq[Any](format.raw/*32.40*/("""
-						Beyond Prosthetics
+					<p class="profile-text">"""),_display_(Seq[Any](/*33.31*/user/*33.35*/.currentEmployer)),format.raw/*33.51*/("""</p>
 					""")))})),format.raw/*34.7*/("""
 					</dd>
 					<dd>
 					"""),_display_(Seq[Any](/*37.7*/if(user.recentSchool != null)/*37.36*/{_display_(Seq[Any](format.raw/*37.37*/("""
-						San Jose State University
+						<p class="profile-text">"""),_display_(Seq[Any](/*38.32*/user/*38.36*/.recentSchool)),format.raw/*38.49*/("""</p>
 						""")))})),format.raw/*39.8*/("""
 					</dd>
 				</dl>
@@ -120,20 +120,20 @@ Seq[Any](format.raw/*1.40*/("""
 """))}
     }
     
-    def render(feedItems:List[FeedItem],user:User): play.api.templates.HtmlFormat.Appendable = apply(feedItems,user)
+    def render(feedItems:List[FeedItem],user:UserModel): play.api.templates.HtmlFormat.Appendable = apply(feedItems,user)
     
-    def f:((List[FeedItem],User) => play.api.templates.HtmlFormat.Appendable) = (feedItems,user) => apply(feedItems,user)
+    def f:((List[FeedItem],UserModel) => play.api.templates.HtmlFormat.Appendable) = (feedItems,user) => apply(feedItems,user)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Apr 25 11:12:22 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
-                    HASH: 5f3a2fe75d212425889738eaa68ea75129e15e6e
-                    MATRIX: 786->1|934->39|962->58|998->60|1024->78|1063->80|1130->112|1144->118|1203->156|1326->244|1341->250|1372->259|1575->427|1615->458|1654->459|1679->466|1692->470|1731->471|1834->538|1849->544|1911->583|1952->593|2035->641|2069->666|2108->667|2176->699|2189->703|2220->712|2249->723|2262->727|2301->728|2379->775|2442->803|2483->835|2522->836|2585->868|2648->896|2686->925|2725->926|2796->966|2998->1132|3013->1138|3067->1169|3137->1204|3179->1230|3218->1231|3259->1237|3299->1268|3338->1269|3390->1285|3407->1293|3433->1297|3655->1483|3670->1489|3721->1518|3814->1575|3831->1583|3859->1589|3962->1656|3979->1664|4009->1672|4078->1705|4095->1713|4130->1726|4169->1729|4186->1737|4215->1744|4288->1786|4324->1791|4999->2435
-                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|39->11|39->11|39->11|46->18|46->18|46->18|48->20|48->20|48->20|49->21|49->21|49->21|50->22|53->25|53->25|53->25|54->26|54->26|54->26|55->27|55->27|55->27|57->29|60->32|60->32|60->32|62->34|65->37|65->37|65->37|67->39|75->47|75->47|75->47|77->49|77->49|77->49|78->50|78->50|78->50|79->51|79->51|79->51|83->55|83->55|83->55|84->56|84->56|84->56|87->59|87->59|87->59|88->60|88->60|88->60|88->60|88->60|88->60|92->64|93->65|119->91
+                    DATE: Sat Apr 25 17:11:58 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/web-app/app/views/home.scala.html
+                    HASH: c23867275b983d165534660f848a66de03f798af
+                    MATRIX: 791->1|944->44|972->63|1008->65|1034->83|1073->85|1140->117|1154->123|1213->161|1336->249|1351->255|1382->264|1585->432|1625->463|1664->464|1689->471|1702->475|1741->476|1844->543|1859->549|1921->588|1962->598|2045->646|2079->671|2118->672|2186->704|2199->708|2230->717|2259->728|2272->732|2311->733|2389->780|2452->808|2493->840|2532->841|2599->872|2612->876|2650->892|2692->903|2755->931|2793->960|2832->961|2900->993|2913->997|2948->1010|2991->1022|3193->1188|3208->1194|3262->1225|3332->1260|3374->1286|3413->1287|3454->1293|3494->1324|3533->1325|3585->1341|3602->1349|3628->1353|3850->1539|3865->1545|3916->1574|4009->1631|4026->1639|4054->1645|4157->1712|4174->1720|4204->1728|4273->1761|4290->1769|4325->1782|4364->1785|4381->1793|4410->1800|4483->1842|4519->1847|5194->2491
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|39->11|39->11|39->11|46->18|46->18|46->18|48->20|48->20|48->20|49->21|49->21|49->21|50->22|53->25|53->25|53->25|54->26|54->26|54->26|55->27|55->27|55->27|57->29|60->32|60->32|60->32|61->33|61->33|61->33|62->34|65->37|65->37|65->37|66->38|66->38|66->38|67->39|75->47|75->47|75->47|77->49|77->49|77->49|78->50|78->50|78->50|79->51|79->51|79->51|83->55|83->55|83->55|84->56|84->56|84->56|87->59|87->59|87->59|88->60|88->60|88->60|88->60|88->60|88->60|92->64|93->65|119->91
                     -- GENERATED --
                 */
             

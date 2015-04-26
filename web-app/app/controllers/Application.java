@@ -59,15 +59,15 @@ public static Result help(){
   public static Result systemEntry(){
     Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);
 
-    User newUser = User.loadUser(user);
+    UserModel newUserModel = UserModel.loadUserModel(user);
 
-    if(newUser == null){
-      Logger.debug("User Not Found");
-      newUser = new User();
-      newUser.userName = user != null ? user.fullName() : "Guest";
-      newUser.loginProvider = user.identityId().providerId() != null ? user.identityId().providerId() : "No provider";
-      newUser.email = user.email().get() != null ? user.email().get() : "No email provided";
-      newUser.save();
+    if(newUserModel == null){
+      Logger.debug("UserModel Not Found");
+      newUserModel = new UserModel();
+      newUserModel.userName = user != null ? user.fullName() : "Guest";
+      newUserModel.loginProvider = user.identityId().providerId() != null ? user.identityId().providerId() : "No provider";
+      newUserModel.email = user.email().get() != null ? user.email().get() : "No email provided";
+      newUserModel.save();
       return ok(systemEntry.render());
     }
     return DbController.editProfile();

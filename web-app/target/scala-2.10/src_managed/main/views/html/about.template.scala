@@ -158,8 +158,8 @@ ProConnect provides an Android application were users can disscuss and share exp
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Apr 25 11:12:22 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/about.scala.html
+                    DATE: Sat Apr 25 17:11:58 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/web-app/app/views/about.scala.html
                     HASH: cd453643d0689b0f8ee1f4616ecf3768e73c477c
                     MATRIX: 864->1|890->19|928->20|994->51|1008->57|1065->93|1627->619|1648->631|1722->682|4941->3869
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|148->120

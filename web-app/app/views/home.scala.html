@@ -1,4 +1,4 @@
-@(feedItems: List[FeedItem], user:User)
+@(feedItems: List[FeedItem], user:UserModel)
 
 @import helper._
 
@@ -30,12 +30,12 @@
 					</dt>
 					<dd>
 					@if(user.currentEmployer != null){
-						Beyond Prosthetics
+					<p class="profile-text">@user.currentEmployer</p>
 					}
 					</dd>
 					<dd>
 					@if(user.recentSchool != null){
-						San Jose State University
+						<p class="profile-text">@user.recentSchool</p>
 						}
 					</dd>
 				</dl>
