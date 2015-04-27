@@ -19,6 +19,7 @@ create table user_model (
   recent_school             varchar(255),
   location                  varchar(255),
   about_me                  varchar(255),
+  password                  varchar(255),
   profile_picture           varchar(255),
   login_provider            varchar(255),
   secret                    varchar(255),
@@ -52,3 +53,4 @@ SET REFERENTIAL_INTEGRITY TRUE;
 drop sequence if exists forum_seq;
 
 drop sequence if exists user_model_seq;
+

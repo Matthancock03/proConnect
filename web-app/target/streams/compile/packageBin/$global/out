@@ -538,6 +538,8 @@
 [0m[[0mdebug[0m] [0m	  /home/misanthropic/repos/schoolWork/web-app/target/scala-2.10/classes/models/UserModel.class[0m
 [0m[[0mdebug[0m] [0m	public/bower_components/backbone/test/sync.js[0m
 [0m[[0mdebug[0m] [0m	  /home/misanthropic/repos/schoolWork/web-app/target/scala-2.10/classes/public/bower_components/backbone/test/sync.js[0m
+[0m[[0mdebug[0m] [0m	public/stylesheets/profile.min.css[0m
+[0m[[0mdebug[0m] [0m	  /home/misanthropic/repos/schoolWork/web-app/target/scala-2.10/classes/public/stylesheets/profile.min.css[0m
 [0m[[0mdebug[0m] [0m	public/bower_components/backbone/docs/public/fonts/aller-bold.woff[0m
 [0m[[0mdebug[0m] [0m	  /home/misanthropic/repos/schoolWork/web-app/target/scala-2.10/classes/public/bower_components/backbone/docs/public/fonts/aller-bold.woff[0m
 [0m[[0mdebug[0m] [0m	public/images/interview-success.jpg[0m
@@ -768,6 +770,8 @@
 [0m[[0mdebug[0m] [0m	  /home/misanthropic/repos/schoolWork/web-app/target/scala-2.10/classes/securesocial/controllers/ref/ReverseRegistration$$anonfun$handleStartResetPassword$1.class[0m
 [0m[[0mdebug[0m] [0m	Routes$$anonfun$routes$1$$anonfun$applyOrElse$28.class[0m
 [0m[[0mdebug[0m] [0m	  /home/misanthropic/repos/schoolWork/web-app/target/scala-2.10/classes/Routes$$anonfun$routes$1$$anonfun$applyOrElse$28.class[0m
+[0m[[0mdebug[0m] [0m	public/stylesheets/profile.css[0m
+[0m[[0mdebug[0m] [0m	  /home/misanthropic/repos/schoolWork/web-app/target/scala-2.10/classes/public/stylesheets/profile.css[0m
 [0m[[0mdebug[0m] [0m	public/bower_components/backbone/docs/images/hulu.png[0m
 [0m[[0mdebug[0m] [0m	  /home/misanthropic/repos/schoolWork/web-app/target/scala-2.10/classes/public/bower_components/backbone/docs/images/hulu.png[0m
 [0m[[0mdebug[0m] [0m	views/html/index$$anonfun$f$1.class[0m

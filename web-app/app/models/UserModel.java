@@ -43,6 +43,9 @@ public class UserModel  extends Model{
   public String location;
   public String aboutMe;
 
+  @Constraints.Required
+  public String password;
+
 
   public String profilePicture;
 
@@ -88,7 +91,6 @@ public class UserModel  extends Model{
       /*
       newUserModel.email = userEmail;
       newUserModel.userName = user != null ? user.fullName() : "Guest";
-      newUserModel.loginProvider = user.identityId().providerId() != null ? user.identityId().providerId() : "No provider";
       newUserModel.save();
       Logger.debug("UserModel id: " + Long.toString(newUserModel.id));
       */

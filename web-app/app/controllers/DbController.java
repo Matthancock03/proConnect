@@ -55,18 +55,19 @@ public class DbController extends Controller{
    Form<UserModel> userFilled =  Form.form(UserModel.class).fill(user);
    Logger.debug("UserModel Form passed");
    Logger.debug(user.userName);
-
-    return ok(profileMain.render(userFilled));
+   Logger.debug(user.password);
+   Logger.debug(user.aboutMe);
+    return ok(profileMain.render(userFilled,user));
   }
 
   @SecureSocial.UserAwareAction
-  public static Promise<Result>  saveUser(){
+  public static Promise<Result>  saveUser(){ // Saves user submission from editProfile page
     Form<UserModel> user = Form.form(UserModel.class);
     UserModel userData = user.bindFromRequest().get();
     UserModel dbUserModel = UserModel.loadUserModel(userData.email);
 
     Logger.debug("UserModel Form Bind Sucessful");
-    Logger.debug("Before Merge: " + dbUserModel.userName);
+    Logger.debug("Before Merge: " + dbUserModel.password);
     Logger.debug( "Save UserModel id: " +  Long.toString(userData.id));
     Logger.debug( "DbUserModel id: " +  Long.toString(dbUserModel.id));
     mergeResults(dbUserModel,userData);
@@ -123,7 +124,8 @@ public class DbController extends Controller{
     UserModel userData = user.bindFromRequest().get();
     return ok("Form Sucessful");
   }
-    private static void mergeResults(UserModel out, UserModel in){
+
+    private static void mergeResults(UserModel out, UserModel in){ // Merges Form submission with current UserModel
       out.userName = in.userName;
       out.experience = in.experience;
       out.education = in.education;
@@ -132,6 +134,7 @@ public class DbController extends Controller{
       out.recentSchool = in.recentSchool;
       out.currentEmployer = in.currentEmployer;
       out.location = in.location;
+      out.password = in.password;
 
     }
 }

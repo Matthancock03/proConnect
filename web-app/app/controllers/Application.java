@@ -55,21 +55,35 @@ public static Result splashPage(){
 public static Result help(){
     return ok(help.render());
   }
-@SecureSocial.UserAwareAction
-  public static Result systemEntry(){
-    Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);
 
-    UserModel newUserModel = UserModel.loadUserModel(user);
+  @SecureSocial.UserAwareAction
+  public static Result systemEntry(){
+    Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+    Logger.debug(userID.identityId().providerId());
+    UserModel newUserModel;
+
+    if(userID.identityId().providerId() == "twitter"){//Checks if login method is twitter as twitter does not provide email.
+
+    }
+
+    newUserModel = UserModel.loadUserModel(userID);
 
     if(newUserModel == null){
-      Logger.debug("UserModel Not Found");
       newUserModel = new UserModel();
-      newUserModel.userName = user != null ? user.fullName() : "Guest";
-      newUserModel.loginProvider = user.identityId().providerId() != null ? user.identityId().providerId() : "No provider";
-      newUserModel.email = user.email().get() != null ? user.email().get() : "No email provided";
-      newUserModel.save();
-      return ok(systemEntry.render());
+     Logger.debug("UserModel Not Found");
+
+     newUserModel.password = "None Entered";
+     newUserModel.userName = userID != null ? userID.fullName() : "guest";
+     newUserModel.email = userID.email().get() != null ? userID.email().get() : "No email provided";
+     newUserModel.loginProvider = userID.identityId().providerId() != null ? userID.identityId().providerId() : "No provider";
+
+     Form<UserModel> userFilled =  Form.form(UserModel.class).fill(newUserModel);
+     Logger.debug("UserModel Form passed");
+     Logger.debug(newUserModel.userName);
+     newUserModel.save();
+      return ok(profileMain.render(userFilled, newUserModel));
     }
+
     return DbController.editProfile();
 }
 

@@ -1,6 +1,6 @@
 // @SOURCE:/home/misanthropic/repos/schoolWork/web-app/conf/routes
 // @HASH:35d47f6690c0a952cc057092f98975fd199ccdc7
-// @DATE:Sat Apr 25 17:11:54 PDT 2015
+// @DATE:Sun Apr 26 22:28:02 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._

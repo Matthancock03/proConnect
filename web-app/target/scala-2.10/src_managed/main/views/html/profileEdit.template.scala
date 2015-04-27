@@ -30,95 +30,109 @@ object profileEdit extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appen
 Seq[Any](format.raw/*1.18*/("""
 
 """),format.raw/*4.1*/("""
+<link rel="stylesheet" href=""""),_display_(Seq[Any](/*5.31*/routes/*5.37*/.Assets.at("stylesheets/profile.min.css"))),format.raw/*5.78*/("""">
 
-"""),_display_(Seq[Any](/*6.2*/main("ProConect")/*6.19*/{_display_(Seq[Any](format.raw/*6.20*/("""
-"""),_display_(Seq[Any](/*7.2*/navbar/*7.8*/.render)),format.raw/*7.15*/("""
+"""),_display_(Seq[Any](/*7.2*/main("ProConect")/*7.19*/{_display_(Seq[Any](format.raw/*7.20*/("""
+"""),_display_(Seq[Any](/*8.2*/navbar/*8.8*/.render)),format.raw/*8.15*/("""
 
-<link rel="stylesheet" href=""""),_display_(Seq[Any](/*9.31*/routes/*9.37*/.Assets.at("stylesheets/editProfile.min.css"))),format.raw/*9.82*/("""">
 
 <div class="container">
   <div class="row clearfix">
-    <div class="col-md-3 column">
+    <div class="col-md-2 column img-div">
       """),_display_(Seq[Any](/*14.8*/if(user.profilePicture != null)/*14.39*/{_display_(Seq[Any](format.raw/*14.40*/("""
 
         """)))}/*16.10*/else/*16.14*/{_display_(Seq[Any](format.raw/*16.15*/("""
         <img alt="140x140" class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*17.71*/routes/*17.77*/.Assets.at("images/profile_holder.png"))),format.raw/*17.116*/("""" />
         """)))})),format.raw/*18.10*/("""
-        <a href=""""),_display_(Seq[Any](/*19.19*/routes/*19.25*/.DbController.profileMain())),format.raw/*19.52*/("""">
-      <button type="button" class="btn btn-default">Edit Profile</button>
+        """),_display_(Seq[Any](/*19.10*/if(user.userName != null)/*19.35*/{_display_(Seq[Any](format.raw/*19.36*/("""
+              <h4>"""),_display_(Seq[Any](/*20.20*/user/*20.24*/.userName)),format.raw/*20.33*/("""</h4>
+            """)))}/*21.14*/else/*21.18*/{_display_(Seq[Any](format.raw/*21.19*/("""
+              <h4>Guest</h4>
+            """)))})),format.raw/*23.14*/("""
+        <a href=""""),_display_(Seq[Any](/*24.19*/routes/*24.25*/.DbController.profileMain())),format.raw/*24.52*/("""">
+      <button type="button" class="btn btn-default edit-button">Edit Profile</button>
     </a>
     </div>
+    <div class="col-xs-2"></div>
+
     <div class="col-md-6 column">
-      """),_display_(Seq[Any](/*24.8*/if(user.userName != null)/*24.33*/{_display_(Seq[Any](format.raw/*24.34*/("""
-            <h3>"""),_display_(Seq[Any](/*25.18*/user/*25.22*/.userName)),format.raw/*25.31*/("""</h3>
-          """)))}/*26.12*/else/*26.16*/{_display_(Seq[Any](format.raw/*26.17*/("""
-            <h3>Guest</h3>
-          """)))})),format.raw/*28.12*/("""
+        """),_display_(Seq[Any](/*31.10*/if(user.aboutMe != null)/*31.34*/{_display_(Seq[Any](format.raw/*31.35*/("""
+          <h3>"""),_display_(Seq[Any](/*32.16*/user/*32.20*/.aboutMe)),format.raw/*32.28*/("""</h3>
+        """)))})),format.raw/*33.10*/("""
 
-        """),_display_(Seq[Any](/*30.10*/if(user.aboutMe != null)/*30.34*/{_display_(Seq[Any](format.raw/*30.35*/("""
-          <h3>"""),_display_(Seq[Any](/*31.16*/user/*31.20*/.aboutMe)),format.raw/*31.28*/("""</h3>
-        """)))})),format.raw/*32.10*/("""
+      """),_display_(Seq[Any](/*35.8*/if(user.currentEmployer != null)/*35.40*/{_display_(Seq[Any](format.raw/*35.41*/("""
+          <h3>"""),_display_(Seq[Any](/*36.16*/user/*36.20*/.currentEmployer)),format.raw/*36.36*/("""</h3>
+        """)))})),format.raw/*37.10*/("""
 
-      """),_display_(Seq[Any](/*34.8*/if(user.currentEmployer != null)/*34.40*/{_display_(Seq[Any](format.raw/*34.41*/("""
-          <h3>"""),_display_(Seq[Any](/*35.16*/user/*35.20*/.currentEmployer)),format.raw/*35.36*/("""</h3>
-        """)))})),format.raw/*36.10*/("""
-
-      """),_display_(Seq[Any](/*38.8*/if(user.location != null)/*38.33*/{_display_(Seq[Any](format.raw/*38.34*/("""
-          <h3>"""),_display_(Seq[Any](/*39.16*/user/*39.20*/.location)),format.raw/*39.29*/("""</h3>
-        """)))})),format.raw/*40.10*/("""
+      """),_display_(Seq[Any](/*39.8*/if(user.location != null)/*39.33*/{_display_(Seq[Any](format.raw/*39.34*/("""
+          <h3>"""),_display_(Seq[Any](/*40.16*/user/*40.20*/.location)),format.raw/*40.29*/("""</h3>
+        """)))})),format.raw/*41.10*/("""
     </div>
+    <div class="col-xs-2"></div>
   </div>
   <div class="row clearfix">
-      <div class="col-md-12 column">
+    <div class="col-xs-4">
+
+    </div>
+      <div class="col-xs-8 column">
         <h2>
           About Me
         </h2>
-        """),_display_(Seq[Any](/*48.10*/if(user.aboutMe != null)/*48.34*/{_display_(Seq[Any](format.raw/*48.35*/("""
+        """),_display_(Seq[Any](/*53.10*/if(user.aboutMe != null)/*53.34*/{_display_(Seq[Any](format.raw/*53.35*/("""
           <p>
-            """),_display_(Seq[Any](/*50.14*/user/*50.18*/.aboutMe)),format.raw/*50.26*/("""
+            """),_display_(Seq[Any](/*55.14*/user/*55.18*/.aboutMe)),format.raw/*55.26*/("""
           </p>
-        """)))})),format.raw/*52.10*/("""
+        """)))})),format.raw/*57.10*/("""
 
       </div>
   </div>
   <div class="row clearfix">
-    <div class="col-md-12 column">
+    <div class="col-xs-4">
+
+    </div>
+    <div class="col-xs-8 column">
       <h2>
         Experience
       </h2>
-      """),_display_(Seq[Any](/*61.8*/if(user.experience != null)/*61.35*/{_display_(Seq[Any](format.raw/*61.36*/("""
+      """),_display_(Seq[Any](/*69.8*/if(user.experience != null)/*69.35*/{_display_(Seq[Any](format.raw/*69.36*/("""
       <p>
-        """),_display_(Seq[Any](/*63.10*/user/*63.14*/.experience)),format.raw/*63.25*/("""
+        """),_display_(Seq[Any](/*71.10*/user/*71.14*/.experience)),format.raw/*71.25*/("""
       </p>
-      """)))})),format.raw/*65.8*/("""
+      """)))})),format.raw/*73.8*/("""
     </div>
   </div>
   <div class="row clearfix">
-    <div class="col-md-12 column">
+    <div class="col-xs-4">
+
+    </div>
+    <div class="col-xs-8 column">
       <h2>
         Projects or Skills Highlight
       </h2>
-      """),_display_(Seq[Any](/*73.8*/if(user.experience != null)/*73.35*/{_display_(Seq[Any](format.raw/*73.36*/("""
+      """),_display_(Seq[Any](/*84.8*/if(user.experience != null)/*84.35*/{_display_(Seq[Any](format.raw/*84.36*/("""
       <p>
-        """),_display_(Seq[Any](/*75.10*/user/*75.14*/.projects)),format.raw/*75.23*/("""
+        """),_display_(Seq[Any](/*86.10*/user/*86.14*/.projects)),format.raw/*86.23*/("""
       </p>
-      """)))})),format.raw/*77.8*/("""
+      """)))})),format.raw/*88.8*/("""
     </div>
   </div>
   <div class="row clearfix">
-    <div class="col-md-12 column">
+    <div class="col-xs-4">
+
+    </div>
+    <div class="col-xs-8 column">
       <h2>
         Education
       </h2>
-      """),_display_(Seq[Any](/*85.8*/if(user.experience != null)/*85.35*/{_display_(Seq[Any](format.raw/*85.36*/("""
+      """),_display_(Seq[Any](/*99.8*/if(user.experience != null)/*99.35*/{_display_(Seq[Any](format.raw/*99.36*/("""
       <p>
-        """),_display_(Seq[Any](/*87.10*/user/*87.14*/.education)),format.raw/*87.24*/("""
+        """),_display_(Seq[Any](/*101.10*/user/*101.14*/.education)),format.raw/*101.24*/("""
       </p>
-      """)))})),format.raw/*89.8*/("""
+      """)))})),format.raw/*103.8*/("""
     </div>
   </div>
 </div>
-""")))})),format.raw/*93.2*/("""
+""")))})),format.raw/*107.2*/("""
 """))}
     }
     
@@ -131,11 +145,11 @@ Seq[Any](format.raw/*1.18*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Apr 25 17:11:59 PDT 2015
+                    DATE: Sun Apr 26 22:28:06 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/web-app/app/views/profileEdit.scala.html
-                    HASH: 8efc18eacf9f0605962b7f0e16a9ccff975e9568
-                    MATRIX: 783->1|909->17|937->36|974->39|999->56|1037->57|1073->59|1086->65|1114->72|1181->104|1195->110|1261->155|1394->253|1434->284|1473->285|1503->296|1516->300|1555->301|1662->372|1677->378|1739->417|1785->431|1840->450|1855->456|1904->483|2077->621|2111->646|2150->647|2204->665|2217->669|2248->678|2284->695|2297->699|2336->700|2407->739|2454->750|2487->774|2526->775|2578->791|2591->795|2621->803|2668->818|2712->827|2753->859|2792->860|2844->876|2857->880|2895->896|2942->911|2986->920|3020->945|3059->946|3111->962|3124->966|3155->975|3202->990|3380->1132|3413->1156|3452->1157|3516->1185|3529->1189|3559->1197|3616->1222|3788->1359|3824->1386|3863->1387|3919->1407|3932->1411|3965->1422|4015->1441|4202->1593|4238->1620|4277->1621|4333->1641|4346->1645|4377->1654|4427->1673|4595->1806|4631->1833|4670->1834|4726->1854|4739->1858|4771->1868|4821->1887|4881->1916
-                    LINES: 26->1|30->1|32->4|34->6|34->6|34->6|35->7|35->7|35->7|37->9|37->9|37->9|42->14|42->14|42->14|44->16|44->16|44->16|45->17|45->17|45->17|46->18|47->19|47->19|47->19|52->24|52->24|52->24|53->25|53->25|53->25|54->26|54->26|54->26|56->28|58->30|58->30|58->30|59->31|59->31|59->31|60->32|62->34|62->34|62->34|63->35|63->35|63->35|64->36|66->38|66->38|66->38|67->39|67->39|67->39|68->40|76->48|76->48|76->48|78->50|78->50|78->50|80->52|89->61|89->61|89->61|91->63|91->63|91->63|93->65|101->73|101->73|101->73|103->75|103->75|103->75|105->77|113->85|113->85|113->85|115->87|115->87|115->87|117->89|121->93
+                    HASH: 3615e398b2eb899b94eae3484bb655d6127852f5
+                    MATRIX: 783->1|909->17|937->36|1003->67|1017->73|1079->114|1118->119|1143->136|1181->137|1217->139|1230->145|1258->152|1398->257|1438->288|1477->289|1507->300|1520->304|1559->305|1666->376|1681->382|1743->421|1789->435|1835->445|1869->470|1908->471|1964->491|1977->495|2008->504|2046->523|2059->527|2098->528|2173->571|2228->590|2243->596|2292->623|2514->809|2547->833|2586->834|2638->850|2651->854|2681->862|2728->877|2772->886|2813->918|2852->919|2904->935|2917->939|2955->955|3002->970|3046->979|3080->1004|3119->1005|3171->1021|3184->1025|3215->1034|3262->1049|3511->1262|3544->1286|3583->1287|3647->1315|3660->1319|3690->1327|3747->1352|3957->1527|3993->1554|4032->1555|4088->1575|4101->1579|4134->1590|4184->1609|4409->1799|4445->1826|4484->1827|4540->1847|4553->1851|4584->1860|4634->1879|4840->2050|4876->2077|4915->2078|4972->2098|4986->2102|5019->2112|5070->2131|5131->2160
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|35->7|35->7|35->7|36->8|36->8|36->8|42->14|42->14|42->14|44->16|44->16|44->16|45->17|45->17|45->17|46->18|47->19|47->19|47->19|48->20|48->20|48->20|49->21|49->21|49->21|51->23|52->24|52->24|52->24|59->31|59->31|59->31|60->32|60->32|60->32|61->33|63->35|63->35|63->35|64->36|64->36|64->36|65->37|67->39|67->39|67->39|68->40|68->40|68->40|69->41|81->53|81->53|81->53|83->55|83->55|83->55|85->57|97->69|97->69|97->69|99->71|99->71|99->71|101->73|112->84|112->84|112->84|114->86|114->86|114->86|116->88|127->99|127->99|127->99|129->101|129->101|129->101|131->103|135->107
                     -- GENERATED --
                 */
             

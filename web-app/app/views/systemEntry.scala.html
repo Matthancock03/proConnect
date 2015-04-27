@@ -1,3 +1,5 @@
+@(user:UserModel)
+
 @import helper._
 
 
@@ -19,15 +21,15 @@
 			</div>
 		</nav>
 
-	<div class="row clearfix topSplash">
+	<div class="row clearfix ">
     <div class="col-xs-4">
 
     </div>
-		<div class="col-xs-4">
+		<div class="col-xs-4 topSplash">
 
 
       @helper.form(action = routes.DbController.profileMain){
-        <h3>Please enter a password for your account</h3>
+        <h3>Please enter a password to associate with your account.</h3>
           <div class="form-group">
             <label for="pwd">Password:</label>
             <input type="password" class="form-control" id="pwd">

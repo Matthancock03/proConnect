@@ -70,6 +70,7 @@
 				<div class="panel panel-default">
 				  <div class="panel-heading">Twitter Feed</div>
 				  <div class="panel-body">
+						@if(user.loginProvider == "twitter"){
 						<ul class="list-group overflow-y-scroll tweetTable">
 							  <li class="list-group-item">First item</li>
 							  <li class="list-group-item">Second item</li>
@@ -78,6 +79,9 @@
 							  <li class="list-group-item">Second item</li>
 							  <li class="list-group-item">Third item</li>
 							</ul>
+						}else{
+							<p>Enter your twitter information for a feed of recent tweets!</p>
+						}
 				  </div>
 				</div>
 			</div>
