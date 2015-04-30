@@ -56,7 +56,6 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 				Frequently Asked Questions<br />
 			</h3>
 
-		
 	<div class="row clearfix">
 		<div class="col-md-6 column">
 			<div class="panel panel-default">
@@ -65,15 +64,19 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 						ProConnect Account
 					</h3>
 				</div>
+				
+  <div class="panel-body">
+  <a href="#" class="btn" data-toggle="collapse" data-target="#demo">How do I update my ProConnect profile?</button>
+  <div id="demo" class="collapse in">
+    answer
+  </div>
+  </div>
+
 				<div class="panel-body">
-
-
-
-				<a href="#" class="btn" type="button">How do I update my profile page?</a>
-					
-				</div>
-				<div class="panel-body">
-				<a href="#" class="btn" type="button">How can I turn off Twitter feed?</a>
+				<a href="#" class="btn" data-toggle="collapse" data-target="#demo">How can I turn off Twitter feed?</button>
+  <div id="demo" class="collapse in">
+    answer
+  </div>
 				</div>
 				<div class="panel-body">
 				<a href="#" class="btn" type="button">How do I change my profile picture?</a>
@@ -202,10 +205,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Apr 27 14:50:08 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/help.scala.html
-                    HASH: 726216531b3004cd80b80ba82039b567008bc039
-                    MATRIX: 863->1|888->18|926->19|962->21|975->27|1003->34
+                    DATE: Wed Apr 29 23:37:09 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/help.scala.html
+                    HASH: b40eb1fa42fb2790b85603ae1e1b521f92523490
+                    MATRIX: 863->1|888->18|926->19|963->22|976->28|1004->35
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2
                     -- GENERATED --
                 */
