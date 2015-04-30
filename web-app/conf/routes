@@ -20,8 +20,8 @@ POST     /getFormData              controllers.DbController.getFormData()
 GET      /systemEntry              controllers.Application.systemEntry()
 
 ########## Android###################
-GET      /androidLogin             controllers.Android.androidLogin(name: String, password: String)
-GET      /androidCreateAccount     controllers.Android.androidCreateAccount(name: String, password: String)
+GET      /androidLogin             controllers.Android.androidLogin(email: String, password: String)
+GET      /androidCreateAccount     controllers.Android.androidCreateAccount(email: String, password: String)
 
 
 # Map static resources from the /public folder to the /assets URL path

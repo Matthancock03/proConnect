@@ -47,7 +47,7 @@ public class UserModel  extends Model{
   public String password;
 
 
-  public String profilePicture;
+  public byte[] profilePicture;
 
   public String loginProvider;
   public String secret;
@@ -63,20 +63,9 @@ public class UserModel  extends Model{
 
 
   public static UserModel loadUserModel(Identity user){
-    //this.id = user.id;
     String userEmail = user.email().get() != null ? user.email().get() : "No email provided";
     Logger.debug(userEmail);
     UserModel newUserModel = UserModel.find.where().eq("email", userEmail).findUnique();
-
-    if(newUserModel == null){
-      /*newUserModel = new UserModel();
-      newUserModel.email = userEmail;
-      newUserModel.userName = user != null ? user.fullName() : "Guest";
-      newUserModel.loginProvider = user.identityId().providerId() != null ? user.identityId().providerId() : "No provider";
-      newUserModel.save();
-      Logger.debug("UserModel id: " + Long.toString(newUserModel.id));
-      */
-    }
 
     return newUserModel;
   }
@@ -88,21 +77,9 @@ public class UserModel  extends Model{
 
     if(newUserModel == null){
       newUserModel = new UserModel();
-      /*
-      newUserModel.email = userEmail;
-      newUserModel.userName = user != null ? user.fullName() : "Guest";
-      newUserModel.save();
-      Logger.debug("UserModel id: " + Long.toString(newUserModel.id));
-      */
     }
 
     return newUserModel;
-  }
-
-
-  public static void saveUserModel(UserModel user){
-
-
   }
 
   public static void uploadPic(){

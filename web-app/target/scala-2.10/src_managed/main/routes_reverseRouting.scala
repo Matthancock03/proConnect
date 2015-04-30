@@ -1,6 +1,6 @@
 // @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
-// @HASH:35d47f6690c0a952cc057092f98975fd199ccdc7
-// @DATE:Mon Apr 27 14:50:00 PDT 2015
+// @HASH:bc99353aa65f82e219557f72168b3767f10769d3
+// @DATE:Wed Apr 29 19:03:32 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -181,14 +181,14 @@ class ReverseAndroid {
     
 
 // @LINE:24
-def androidCreateAccount(name:String, password:String): Call = {
-   Call("GET", _prefix + { _defaultPrefix } + "androidCreateAccount" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("name", name)), Some(implicitly[QueryStringBindable[String]].unbind("password", password)))))
+def androidCreateAccount(email:String, password:String): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "androidCreateAccount" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("email", email)), Some(implicitly[QueryStringBindable[String]].unbind("password", password)))))
 }
                                                 
 
 // @LINE:23
-def androidLogin(name:String, password:String): Call = {
-   Call("GET", _prefix + { _defaultPrefix } + "androidLogin" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("name", name)), Some(implicitly[QueryStringBindable[String]].unbind("password", password)))))
+def androidLogin(email:String, password:String): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "androidLogin" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("email", email)), Some(implicitly[QueryStringBindable[String]].unbind("password", password)))))
 }
                                                 
     
@@ -597,8 +597,8 @@ class ReverseAndroid {
 def androidCreateAccount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Android.androidCreateAccount",
    """
-      function(name,password) {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "androidCreateAccount" + _qS([(""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("name", name), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("password", password)])})
+      function(email,password) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "androidCreateAccount" + _qS([(""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("email", email), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("password", password)])})
       }
    """
 )
@@ -608,8 +608,8 @@ def androidCreateAccount : JavascriptReverseRoute = JavascriptReverseRoute(
 def androidLogin : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Android.androidLogin",
    """
-      function(name,password) {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "androidLogin" + _qS([(""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("name", name), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("password", password)])})
+      function(email,password) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "androidLogin" + _qS([(""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("email", email), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("password", password)])})
       }
    """
 )
@@ -1014,14 +1014,14 @@ class ReverseAndroid {
     
 
 // @LINE:24
-def androidCreateAccount(name:String, password:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Android.androidCreateAccount(name, password), HandlerDef(this, "controllers.Android", "androidCreateAccount", Seq(classOf[String], classOf[String]), "GET", """""", _prefix + """androidCreateAccount""")
+def androidCreateAccount(email:String, password:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Android.androidCreateAccount(email, password), HandlerDef(this, "controllers.Android", "androidCreateAccount", Seq(classOf[String], classOf[String]), "GET", """""", _prefix + """androidCreateAccount""")
 )
                       
 
 // @LINE:23
-def androidLogin(name:String, password:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Android.androidLogin(name, password), HandlerDef(this, "controllers.Android", "androidLogin", Seq(classOf[String], classOf[String]), "GET", """######### Android###################""", _prefix + """androidLogin""")
+def androidLogin(email:String, password:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Android.androidLogin(email, password), HandlerDef(this, "controllers.Android", "androidLogin", Seq(classOf[String], classOf[String]), "GET", """######### Android###################""", _prefix + """androidLogin""")
 )
                       
     

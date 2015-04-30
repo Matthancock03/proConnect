@@ -48,6 +48,9 @@ public class InMemoryUserService extends BaseUserService {
         // this sample returns the same user object, but you could return an instance of your own class
         // here as long as it implements the Identity interface. This will allow you to use your own class in the
         // protected actions and event callbacks. The same goes for the doFind(UserId userId) method.
+
+        user.passwordInfo().get().password();
+
         return user;
     }
 

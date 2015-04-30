@@ -28,10 +28,12 @@ public class Forum extends Model{
   @Id
   public String forumId;
 
+  public String subId;
   public String ownerId;
   public String topicHeader;
   public String body;
-  public List<Forum> responses = new ArrayList<Forum>();
+  Timestamp cretimestamp;
+  //public List<Forum> responses = new ArrayList<Forum>();
 
   /**Constructor to create a Forum.
  *

@@ -5,9 +5,11 @@
 
 create table forum (
   forum_id                  varchar(255) not null,
+  sub_id                    varchar(255),
   owner_id                  varchar(255),
   topic_header              varchar(255),
   body                      varchar(255),
+  cretimestamp              timestamp,
   constraint pk_forum primary key (forum_id))
 ;
 
@@ -20,7 +22,7 @@ create table user_model (
   location                  varchar(255),
   about_me                  varchar(255),
   password                  varchar(255),
-  profile_picture           varchar(255),
+  profile_picture           varbinary(255),
   login_provider            varchar(255),
   secret                    varchar(255),
   avatar_url                varchar(255),

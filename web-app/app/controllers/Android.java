@@ -38,32 +38,37 @@ public class Android extends Controller{
  * @return an 200 response that will display if a user logged in successfully.
  */
   @BodyParser.Of(BodyParser.Json.class)
-  @SecureSocial.UserAwareAction
-  public static Result androidLogin(String name, String password) {
+  public static Result androidLogin(String email, String password) {
     ObjectNode result = Json.newObject();
 
-        if(name == "denied" || name == ""){
-          result.put("Accepted", "False");
+      UserModel user = new UserModel();
+      user.loadUserModel(email);
+
+        if(user == null){
+          result.put("Rejected", "User Not Found");
         }else{
-          UserModel user = new UserModel();
-          Identity userId = (Identity) ctx().args.get(SecureSocial.USER_KEY);
-          user.loadUserModel(userId);
-          JsonNode jsonUser = Json.toJson(user);
-          Logger.debug(jsonUser.toString());
-          return ok(jsonUser);
+            if(user.password == password){
+            JsonNode jsonUser = Json.toJson(user);
+            Logger.debug(jsonUser.toString());
+            return ok(jsonUser);
+          }else{
+            result.put("Rejected", "Invalid Password");
+            }
         }
+
         return ok(result);
   }
+
 
   /**This creates a HTTP response in regards to creating a new account on the Android platform.
  * @param name the name of the user
  * @param password the password of the user
  * @return a 200 response that will allow for the account to be created or not
  */
-public static Result androidCreateAccount(String name, String password){
+public static Result androidCreateAccount(String email, String password){
 
     ObjectNode result = Json.newObject();
-    if(name == "denied" || name != ""){
+    if(email== "denied" || email != ""){
       result.put("Accepted", "False");
     }else{
       result.put("Accepted", "True");
