@@ -22,7 +22,7 @@ create table user_model (
   location                  varchar(255),
   about_me                  varchar(255),
   password                  varchar(255),
-  profile_picture           varbinary(255),
+  profile_picture           varchar(255),
   login_provider            varchar(255),
   secret                    varchar(255),
   avatar_url                varchar(255),

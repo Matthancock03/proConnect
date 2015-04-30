@@ -27,7 +27,6 @@ public class Forum extends Model{
 
   @Id
   public String forumId;
-
   public String subId;
   public String ownerId;
   public String topicHeader;

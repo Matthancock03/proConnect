@@ -41,20 +41,21 @@ public class Android extends Controller{
   public static Result androidLogin(String email, String password) {
     ObjectNode result = Json.newObject();
 
-      UserModel user = new UserModel();
-      user.loadUserModel(email);
+        UserModel user = UserModel.loadUserModel(email);
 
-        if(user == null){
-          result.put("Rejected", "User Not Found");
-        }else{
-            if(user.password == password){
+            if(user == null){
+              result.put("Rejected", "User Not Found");
+              return ok(result);
+            }
+            Logger.debug(user.password + " url: " + password );
+
+            if(user.password.equals(password)){
             JsonNode jsonUser = Json.toJson(user);
-            Logger.debug(jsonUser.toString());
+            Logger.debug(user.password + " url: " + password );
             return ok(jsonUser);
           }else{
             result.put("Rejected", "Invalid Password");
             }
-        }
 
         return ok(result);
   }
@@ -67,11 +68,16 @@ public class Android extends Controller{
  */
 public static Result androidCreateAccount(String email, String password){
 
+    UserModel user = UserModel.loadUserModel(email);
     ObjectNode result = Json.newObject();
-    if(email== "denied" || email != ""){
-      result.put("Accepted", "False");
+    if(user != null){
+      result.put("Rejected", "User Exists");
     }else{
-      result.put("Accepted", "True");
+      user = new UserModel();
+      user.email = email;
+      user.password = password;
+      user.save();
+      result.put("Accepted", "Account Created");
     }
     return ok(result);
   }

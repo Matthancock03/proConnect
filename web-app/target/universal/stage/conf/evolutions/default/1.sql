@@ -5,9 +5,11 @@
 
 create table forum (
   forum_id                  varchar(255) not null,
+  sub_id                    varchar(255),
   owner_id                  varchar(255),
   topic_header              varchar(255),
   body                      varchar(255),
+  cretimestamp              timestamp,
   constraint pk_forum primary key (forum_id))
 ;
 

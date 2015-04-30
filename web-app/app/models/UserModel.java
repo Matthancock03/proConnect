@@ -47,7 +47,7 @@ public class UserModel  extends Model{
   public String password;
 
 
-  public byte[] profilePicture;
+  public String profilePicture;
 
   public String loginProvider;
   public String secret;
@@ -74,10 +74,6 @@ public class UserModel  extends Model{
     //this.id = user.id;
     Logger.debug("Find email: email");
     UserModel newUserModel = UserModel.find.where().eq("email", email).findUnique();
-
-    if(newUserModel == null){
-      newUserModel = new UserModel();
-    }
 
     return newUserModel;
   }
