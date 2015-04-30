@@ -82,7 +82,7 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Apr 30 11:58:31 PDT 2015
+                    DATE: Thu Apr 30 14:37:20 PDT 2015
                     SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/navbar.scala.html
                     HASH: d58fad4979dfb3f3229a4c17884ab787effeae49
                     MATRIX: 856->2|1423->533|1438->539|1480->559|1748->791|1763->797|1805->817|1878->854|1893->860|1942->887|2018->927|2033->933|2081->959|2161->1003|2176->1009|2220->1031|2292->1067|2307->1073|2349->1093|3014->1722|3029->1728|3070->1747|3147->1788|3162->1794|3204->1814|3330->1904|3351->1916|3425->1968
