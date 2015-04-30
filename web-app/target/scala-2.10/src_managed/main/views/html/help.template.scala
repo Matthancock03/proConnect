@@ -65,27 +65,35 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 						</h3>
 					</div>
 					
-	  <div class="panel-body">
-	  <a href="#" class="btn" data-toggle="collapse" data-target="#demo">How do I update my ProConnect profile?</button>
-	  <div id="demo" class="collapse in">
-	    answer
-	  </div>
-	  </div>
+				  <div class="panel-body">
+					  <a   data-toggle="collapse" data-target="#demo0">How do I update my ProConnect profile?</a>
+					  <div id="demo0" class="collapse">
+					    answer
+					  </div>
+				  </div>
 
 					<div class="panel-body">
-						<a href="#" class="btn" data-toggle="collapse" data-target="#demo">How can I turn off Twitter feed?</button>
-	  <div id="demo" class="collapse in">
-	    answer
-	  </div>
+						<a data-toggle="collapse" data-target="#demo1">How can I turn off Twitter feed?</a>
+					    <div id="demo1" class="collapse">
+					    answer
+					  	</div>
+
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">How do I change my profile picture?</a>
+						<a data-toggle="collapse" data-target="#demo2">How do I change my profile picture?</a>
+						<div id="demo2" class="collapse">
+					    answer
+					  	</div>
 					</div>
+
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">How can I delete my proConnect account?</a>
+							<a data-toggle="collapse" data-target="#demo3">How can I delete my proConnect account?</a>
+							<div id="demo3" class="collapse">
+						    answer
+					  		</div>
+					  	</div>
 					</div>
-				</div>
-			</div>
+			
 			<div class="col-md-6 column">
 				<div class="panel panel-default">
 					<div class="panel-heading">
@@ -205,9 +213,9 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Apr 30 13:45:43 PDT 2015
+                    DATE: Thu Apr 30 14:12:45 PDT 2015
                     SOURCE: /home/beyondprosthetics/repos/school/proConnect/web-app/app/views/help.scala.html
-                    HASH: 808c36d0d214806c3cecff9126c038fbf57cb64c
+                    HASH: 9bed4eff26400faefc799dd7445effffc0c20b8c
                     MATRIX: 863->2|888->19|926->20|963->23|976->29|1004->36
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2
                     -- GENERATED --
