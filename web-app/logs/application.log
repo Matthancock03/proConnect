@@ -1,13 +1,13 @@
-2015-04-30 08:32:27,882 - [INFO] - from play in pool-6-thread-6 
+2015-04-30 13:40:17,858 - [INFO] - from play in pool-6-thread-5 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-04-30 08:32:45,497 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-30 13:41:20,386 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-04-30 08:32:47,312 - [ERROR] - from application in New I/O worker #1 
+2015-04-30 13:41:22,290 - [ERROR] - from application in New I/O worker #1 
 
 
-! @6m2ajo96k - Internal server error, for (GET) [/] ->
+! @6m2c8bk5o - Internal server error, for (GET) [/] ->
 
 play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
 	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:486) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
@@ -40,28 +40,28 @@ play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evoluti
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
 
-2015-04-30 08:32:49,614 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:28,413 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] unloaded identity provider: userpass
 
-2015-04-30 08:32:49,654 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:28,435 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] unloaded identity provider: google
 
-2015-04-30 08:32:49,657 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:28,436 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] unloaded identity provider: facebook
 
-2015-04-30 08:32:49,657 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:28,437 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] unloaded identity provider: twitter
 
-2015-04-30 08:32:49,659 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:28,442 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] unloaded password hasher bcrypt
 
-2015-04-30 08:32:50,304 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-30 13:42:28,854 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-04-30 08:32:50,609 - [ERROR] - from application in New I/O worker #2 
+2015-04-30 13:42:28,920 - [ERROR] - from application in New I/O worker #1 
 
 
-! @6m2ajoe55 - Internal server error, for (GET) [/] ->
+! @6m2c8fenh - Internal server error, for (GET) [/] ->
 
 play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
 	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:486) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
@@ -94,54 +94,51 @@ play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evoluti
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
 
-2015-04-30 08:32:56,960 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:48,928 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] unloaded identity provider: userpass
 
-2015-04-30 08:32:56,960 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:48,931 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] unloaded identity provider: google
 
-2015-04-30 08:32:56,960 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:48,932 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] unloaded identity provider: facebook
 
-2015-04-30 08:32:56,961 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:48,932 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] unloaded identity provider: twitter
 
-2015-04-30 08:32:56,961 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:48,932 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] unloaded password hasher bcrypt
 
-2015-04-30 08:32:57,276 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-30 13:42:49,101 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-04-30 08:32:57,800 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:49,476 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
 
-2015-04-30 08:32:57,882 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-30 13:42:49,519 - [INFO] - from play in play-internal-execution-context-1 
 Starting application default Akka system.
 
-2015-04-30 08:32:57,902 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
+2015-04-30 13:42:49,524 - [DEBUG] - from application in play-akka.actor.default-dispatcher-3 
 [securesocial] calling deleteExpiredTokens()
 
-2015-04-30 08:32:57,920 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:49,529 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded user service: class plugins.InMemoryUserService
 
-2015-04-30 08:32:57,924 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:49,531 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded password hasher bcrypt
 
-2015-04-30 08:32:57,926 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:49,540 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: twitter
 
-2015-04-30 08:32:57,926 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:49,545 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: facebook
 
-2015-04-30 08:32:57,926 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:49,546 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: google
 
-2015-04-30 08:32:57,927 - [INFO] - from application in play-internal-execution-context-1 
+2015-04-30 13:42:49,548 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: userpass
 
-2015-04-30 08:32:57,937 - [INFO] - from play in play-internal-execution-context-1 
+2015-04-30 13:42:49,575 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
-
-2015-04-30 08:37:57,897 - [DEBUG] - from application in play-akka.actor.default-dispatcher-9 
-[securesocial] calling deleteExpiredTokens()
 
