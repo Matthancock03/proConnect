@@ -1,25 +1,36 @@
-2015-04-30 14:37:09,207 - [INFO] - from play in pool-6-thread-4 
+2015-04-30 18:12:15,540 - [INFO] - from play in pool-6-thread-4 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-04-30 14:38:37,699 - [ERROR] - from application in New I/O worker #1 
+2015-04-30 18:15:05,404 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-30 18:15:08,769 - [ERROR] - from application in New I/O worker #1 
 
 
-! @6m2cfp647 - Internal server error, for (GET) [/help] ->
+! @6m2dia9l2 - Internal server error, for (GET) [/forum] ->
 
-play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatException: For input string: "<<<<<<< HEAD
-1430428525477
-=======
-1430428372070
->>>>>>> 5dc5a4380c796f7fa8da84ae4c697c6649986a34
-"]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:309) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:486) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at play.api.db.evolutions.EvolutionsPlugin.withLock(Evolutions.scala:507) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:461) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:459) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library-2.10.3.jar:na]
+	at play.api.db.evolutions.EvolutionsPlugin.onStart(Evolutions.scala:459) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library-2.10.3.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$.start(Play.scala:87) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.3.jar:2.2.3]
 	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library-2.10.3.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.3.jar:2.2.3]
 	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
 	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
 	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
@@ -28,99 +39,384 @@ play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatExcept
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-java.lang.NumberFormatException: For input string: "<<<<<<< HEAD
-1430428525477
-=======
-1430428372070
->>>>>>> 5dc5a4380c796f7fa8da84ae4c697c6649986a34
-"
-	at java.lang.NumberFormatException.forInputString(Unknown Source) ~[na:1.8.0_31]
-	at java.lang.Long.parseLong(Unknown Source) ~[na:1.8.0_31]
-	at java.lang.Long.parseLong(Unknown Source) ~[na:1.8.0_31]
-	at scala.collection.immutable.StringLike$class.toLong(StringLike.scala:230) ~[scala-library-2.10.3.jar:na]
-	at scala.collection.immutable.StringOps.toLong(StringOps.scala:31) ~[scala-library-2.10.3.jar:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:100) ~[na:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:95) ~[na:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:35) ~[scala-library-2.10.3.jar:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:34) ~[scala-library-2.10.3.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library-2.10.3.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
 
-2015-04-30 14:38:38,155 - [WARN] - from play in New I/O worker #1 
-No application found at invoker init
+2015-04-30 18:15:34,881 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: userpass
 
-2015-04-30 14:40:03,068 - [ERROR] - from application in New I/O worker #1 
+2015-04-30 18:15:34,886 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: google
+
+2015-04-30 18:15:34,887 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-30 18:15:34,888 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-30 18:15:34,891 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-30 18:15:36,037 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-30 18:15:37,389 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-30 18:15:37,428 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-04-30 18:15:37,439 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 18:15:37,442 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-30 18:15:37,444 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-30 18:15:37,445 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-04-30 18:15:37,446 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-04-30 18:15:37,447 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-04-30 18:15:37,448 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-04-30 18:15:37,459 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-04-30 18:20:37,449 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 18:25:37,449 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 18:30:37,442 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 18:35:37,449 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 18:40:37,450 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 18:45:37,453 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 18:50:37,452 - [DEBUG] - from application in play-akka.actor.default-dispatcher-17 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 18:55:37,453 - [DEBUG] - from application in play-akka.actor.default-dispatcher-14 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 19:00:37,450 - [DEBUG] - from application in play-akka.actor.default-dispatcher-14 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 19:04:48,210 - [INFO] - from application in play-internal-execution-context-7 
+[securesocial] unloaded identity provider: userpass
+
+2015-04-30 19:04:48,214 - [INFO] - from application in play-internal-execution-context-7 
+[securesocial] unloaded identity provider: google
+
+2015-04-30 19:04:48,218 - [INFO] - from application in play-internal-execution-context-7 
+[securesocial] unloaded identity provider: facebook
+
+2015-04-30 19:04:48,219 - [INFO] - from application in play-internal-execution-context-7 
+[securesocial] unloaded identity provider: twitter
+
+2015-04-30 19:04:48,220 - [INFO] - from application in play-internal-execution-context-7 
+[securesocial] unloaded password hasher bcrypt
+
+2015-04-30 19:04:48,226 - [INFO] - from play in play-internal-execution-context-7 
+Shutdown application default Akka system.
+
+2015-04-30 19:04:48,692 - [INFO] - from play in play-internal-execution-context-7 
+database [default] connected at jdbc:h2:mem:play
+
+2015-04-30 19:04:49,116 - [INFO] - from application in play-internal-execution-context-7 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-04-30 19:04:49,130 - [INFO] - from play in play-internal-execution-context-7 
+Starting application default Akka system.
+
+2015-04-30 19:04:49,130 - [INFO] - from application in play-internal-execution-context-7 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-04-30 19:04:49,131 - [DEBUG] - from application in play-akka.actor.default-dispatcher-14 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 19:04:49,131 - [INFO] - from application in play-internal-execution-context-7 
+[securesocial] loaded password hasher bcrypt
+
+2015-04-30 19:04:49,138 - [INFO] - from application in play-internal-execution-context-7 
+[securesocial] loaded identity provider: twitter
+
+2015-04-30 19:04:49,141 - [INFO] - from application in play-internal-execution-context-7 
+[securesocial] loaded identity provider: facebook
+
+2015-04-30 19:04:49,142 - [INFO] - from application in play-internal-execution-context-7 
+[securesocial] loaded identity provider: google
+
+2015-04-30 19:04:49,145 - [INFO] - from application in play-internal-execution-context-7 
+[securesocial] loaded identity provider: userpass
+
+2015-04-30 19:04:49,160 - [INFO] - from play in play-internal-execution-context-7 
+Application started (Dev)
+
+2015-04-30 19:09:40,721 - [DEBUG] - from application in play-akka.actor.default-dispatcher-41 
+Null Pointer homeFeed
+
+2015-04-30 19:09:49,145 - [DEBUG] - from application in play-akka.actor.default-dispatcher-47 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 19:10:58,734 - [DEBUG] - from application in play-akka.actor.default-dispatcher-60 
+Null Pointer homeFeed
+
+2015-04-30 19:11:00,109 - [ERROR] - from play in play-internal-execution-context-7 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-04-30 19:11:00,165 - [ERROR] - from application in play-internal-execution-context-7 
 
 
-! @6m2cg42em - Internal server error, for (GET) [/help] ->
+! @6m2dpj1eb - Internal server error, for (GET) [/profileMain] ->
 
-play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatException: For input string: "<<<<<<< HEAD
-1430428525477
-=======
-1430428372070
->>>>>>> 5dc5a4380c796f7fa8da84ae4c697c6649986a34
-"]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:309) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-java.lang.NumberFormatException: For input string: "<<<<<<< HEAD
-1430428525477
-=======
-1430428372070
->>>>>>> 5dc5a4380c796f7fa8da84ae4c697c6649986a34
-"
-	at java.lang.NumberFormatException.forInputString(Unknown Source) ~[na:1.8.0_31]
-	at java.lang.Long.parseLong(Unknown Source) ~[na:1.8.0_31]
-	at java.lang.Long.parseLong(Unknown Source) ~[na:1.8.0_31]
-	at scala.collection.immutable.StringLike$class.toLong(StringLike.scala:230) ~[scala-library-2.10.3.jar:na]
-	at scala.collection.immutable.StringOps.toLong(StringOps.scala:31) ~[scala-library-2.10.3.jar:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:100) ~[na:na]
-	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:95) ~[na:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:35) ~[scala-library-2.10.3.jar:na]
-	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:34) ~[scala-library-2.10.3.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library-2.10.3.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at models.UserModel.loadUserModel(UserModel.java:66) ~[na:na]
+	at controllers.DbController.editProfile(DbController.java:42) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(routes_routing.scala:198) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(routes_routing.scala:198) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at securesocial.core.java.SecureSocial$UserAware.call(SecureSocial.java:263) ~[securesocial_2.10-2.1.3.jar:2.1.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+
+2015-04-30 19:11:20,104 - [DEBUG] - from application in play-akka.actor.default-dispatcher-62 
+Null Pointer homeFeed
+
+2015-04-30 19:11:35,432 - [DEBUG] - from application in play-akka.actor.default-dispatcher-60 
+[securesocial] bootstrap path = securesocial/bootstrap/css/bootstrap.min.css
+
+2015-04-30 19:11:35,434 - [DEBUG] - from application in play-akka.actor.default-dispatcher-60 
+[securesocial] assets controller = controllers.ReverseAssets
+
+2015-04-30 19:11:35,440 - [DEBUG] - from application in play-akka.actor.default-dispatcher-60 
+[securesocial] favicon path = securesocial/images/favicon.png
+
+2015-04-30 19:11:35,443 - [DEBUG] - from application in play-akka.actor.default-dispatcher-60 
+[securesocial] Jquery path = securesocial/javascripts/jquery-1.7.1.min.js
+
+2015-04-30 19:11:35,444 - [DEBUG] - from application in play-akka.actor.default-dispatcher-60 
+[securesocial] custom css path = None
+
+2015-04-30 19:11:38,271 - [DEBUG] - from application in play-akka.actor.default-dispatcher-67 
+[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
+
+2015-04-30 19:11:38,274 - [DEBUG] - from application in play-akka.actor.default-dispatcher-67 
+[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=b2024f70-96a1-40af-8f97-3904781e4491]
+
+2015-04-30 19:11:57,087 - [DEBUG] - from application in play-akka.actor.default-dispatcher-64 
+[securesocial] got json back [{"access_token":"ya29.ZgGvqovdPYajYwqtjSHE3xKs1Zi-qYdOgwskPSL6xgslm5OfWQZyByfA9Ur-kFrdc0cfTY5P2dQN5A","token_type":"Bearer","expires_in":3600,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjNiNDNmYjZiNDNlYzIxZDNhMGQ1MjM2M2RlYjEyZDYyYTY1NTgwYzUifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTEyMDExMzA5MTEzMzk4NTY3MjE0IiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6InJveWEuZGVsYW5AZ21haWwuY29tIiwiYXRfaGFzaCI6ImVUYWFzdFBrcEFnUDRUandFUUg1X1EiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0MzA0NDYzMTcsImV4cCI6MTQzMDQ0OTkxN30.FHRuuDv_OM6-5H-Zhem_vvLOETYHhxNnjbr2NLU1oI2DSgpCD7jk3eMs-2_-NarMoFr4cvuBWsc7d3P6FnYujC8p1RJx55ou5Yrhogyn_z7kUdVoRwda2l4VcjFwmLq2WEsMNkafWrDr2V85bVar4ziTxJ9lOmtuDrvWEkLK4Vs"}]
+
+2015-04-30 19:11:57,239 - [DEBUG] - from application in play-akka.actor.default-dispatcher-64 
+[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.ZgGvqovdPYajYwqtjSHE3xKs1Zi-qYdOgwskPSL6xgslm5OfWQZyByfA9Ur-kFrdc0cfTY5P2dQN5A,Some(Bearer),Some(3600),None)),None))
+
+2015-04-30 19:11:57,565 - [DEBUG] - from application in play-akka.actor.default-dispatcher-64 
+[securesocial] user logged in : [SocialUser(IdentityId(112011309113398567214,google),Roya,Delparastaran,Roya Delparastaran,Some(roya.delan@gmail.com),Some(https://lh6.googleusercontent.com/-cDtLdZvl068/AAAAAAAAAAI/AAAAAAAAAJk/jn8vVjds07E/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.ZgGvqovdPYajYwqtjSHE3xKs1Zi-qYdOgwskPSL6xgslm5OfWQZyByfA9Ur-kFrdc0cfTY5P2dQN5A,Some(Bearer),Some(3600),None)),None)]
+
+2015-04-30 19:11:57,705 - [DEBUG] - from application in play-akka.actor.default-dispatcher-60 
+google
+
+2015-04-30 19:11:57,706 - [DEBUG] - from application in play-akka.actor.default-dispatcher-60 
+roya.delan@gmail.com
+
+2015-04-30 19:11:57,982 - [DEBUG] - from application in play-akka.actor.default-dispatcher-60 
+UserModel Not Found
+
+2015-04-30 19:11:58,040 - [DEBUG] - from application in play-akka.actor.default-dispatcher-60 
+UserModel Form passed
+
+2015-04-30 19:11:58,040 - [DEBUG] - from application in play-akka.actor.default-dispatcher-60 
+Roya Delparastaran
+
+2015-04-30 19:12:46,998 - [DEBUG] - from application in play-akka.actor.default-dispatcher-59 
+Find email: email
+
+2015-04-30 19:12:47,020 - [DEBUG] - from application in play-akka.actor.default-dispatcher-59 
+UserModel Form Bind Sucessful
+
+2015-04-30 19:12:47,020 - [DEBUG] - from application in play-akka.actor.default-dispatcher-59 
+Before Merge: None Entered
+
+2015-04-30 19:12:47,021 - [DEBUG] - from application in play-akka.actor.default-dispatcher-59 
+Save UserModel id: 0
+
+2015-04-30 19:12:47,023 - [DEBUG] - from application in play-akka.actor.default-dispatcher-59 
+DbUserModel id: 1
+
+2015-04-30 19:12:47,027 - [DEBUG] - from application in play-akka.actor.default-dispatcher-59 
+After Merge: Roya Delparastaran
+
+2015-04-30 19:12:47,279 - [DEBUG] - from application in play-akka.actor.default-dispatcher-59 
+roya.delan@gmail.com
+
+2015-04-30 19:13:16,164 - [DEBUG] - from application in play-akka.actor.default-dispatcher-74 
+roya.delan@gmail.com
+
+2015-04-30 19:13:16,166 - [DEBUG] - from application in play-akka.actor.default-dispatcher-74 
+Roya Delparastaran
+
+2015-04-30 19:14:49,143 - [DEBUG] - from application in play-akka.actor.default-dispatcher-74 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 19:19:49,148 - [DEBUG] - from application in play-akka.actor.default-dispatcher-86 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 19:24:49,149 - [DEBUG] - from application in play-akka.actor.default-dispatcher-86 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 19:28:16,878 - [DEBUG] - from application in play-akka.actor.default-dispatcher-101 
+roya.delan@gmail.com
+
+2015-04-30 19:28:16,882 - [DEBUG] - from application in play-akka.actor.default-dispatcher-101 
+Roya Delparastaran
+
+2015-04-30 19:29:49,133 - [DEBUG] - from application in play-akka.actor.default-dispatcher-111 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:34,541 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:34,895 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:34,897 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,190 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,208 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,292 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,386 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,434 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,476 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,515 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,553 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,566 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,586 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,590 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,602 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,613 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,617 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,624 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,631 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,650 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,664 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,666 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,672 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,685 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:35,688 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:38,050 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:38,062 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:38,072 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:38,082 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:38,092 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:38,102 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:11:38,112 - [DEBUG] - from application in play-akka.actor.default-dispatcher-109 
+[securesocial] calling deleteExpiredTokens()
+
+2015-04-30 22:14:49,132 - [DEBUG] - from application in play-akka.actor.default-dispatcher-119 
+[securesocial] calling deleteExpiredTokens()
 
