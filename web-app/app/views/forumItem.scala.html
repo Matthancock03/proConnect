@@ -1,0 +1,38 @@
+@(forumItems: List[Forum])
+@main("ProConnect") {
+@navbar.render()
+
+
+<div class="container-fluid">
+
+		<div class="feed-div">
+			@for(forumItem <- forumItems){
+				@if(forumItem.topicHeader != ""){
+					<div class="panel panel-default">
+						<div class="panel-body">
+						<div>
+							<h3 class="panel-title head-text feed-head">@forumItem.topicHeader</h3>
+						</div>
+						<br>
+						<p style="padding-top: 10px;">@forumItem.body</p>
+					</div>
+				</div>
+				}
+
+			}
+		</div>
+
+
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<form role="form">
+				<div class="form-group">
+					 <label for="exampleInputComment">Comment Section</label><input class="form-control" id="exampleInputEmail1" type="email" />
+				</div>
+
+				</div> <button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
+}

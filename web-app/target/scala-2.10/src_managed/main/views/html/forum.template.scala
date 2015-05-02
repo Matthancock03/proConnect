@@ -71,7 +71,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								Interviews could be stressful. You can build confidence and ace your interview with these 7 simple and easy steps and give a great first impression to the employer.<br /><br /><br />
 							</p>
 							<p>
-								<a class="btn btn-success" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a>
 							</p>
 						</div>
 					</div>
@@ -84,10 +84,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								How to Get a Job With No Experience
 							</h3>
 							<p>
-								Having no experience for a job of your choice will not necessarily eliminate you from being a good candidate. Your dedication, communication skills, and work ethic play a big role. However, in order to stand out you will need to follow a few rules and strategies. 
+								Having no experience for a job of your choice will not necessarily eliminate you from being a good candidate. Your dedication, communication skills, and work ethic play a big role. However, in order to stand out you will need to follow a few rules and strategies.
 							</p>
 							<p>
-								<a class="btn btn-success" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a>
 							</p>
 						</div>
 					</div>
@@ -103,7 +103,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								They say choose your passion as your major and you will never have to work a day in your life. While this is true, there is more to knowing what major is right for you.
 							</p>
 							<p>
-								<a class="btn btn-success" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a>
 							</p>
 						</div>
 					</div>
@@ -121,7 +121,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								Whether you want to grow your business or get an entry job position, networking is one of the many crucial factors which you should practice like any other skill to master it.
 							</p>
 							<p>
-								<a class="btn btn-success" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a>
 							</p>
 						</div>
 					</div>
@@ -131,13 +131,13 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 						<img src="https://media.licdn.com/mpr/mpr/p/8/005/081/32b/3e3556e.jpg" width="400" height="400"/>
 						<div class="caption">
 							<h3>
-								10 Steps to Starting a Business 
+								10 Steps to Starting a Business
 							</h3>
 							<p>
 								Starting a business involves a lot of research, financial investment, and going through a series of legal work. These 10 steps can help you get your business started and also prepare and manage your business.
 							</p>
 							<p>
-								<a class="btn btn-success" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a>
 							</p>
 						</div>
 					</div>
@@ -171,7 +171,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								Whether you want to admit it or not, money is a huge part of your life nowadays, thus knowing how to manage it will help you take controlof your life and get you ahead financially and socially.
 							</p>
 							<p>
-								<a class="btn btn-success" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a>
 							</p>
 						</div>
 					</div>
@@ -187,7 +187,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								It's human nature to desire success no matter where they are in life. However, it's easier said than done, hence not a lot of people are willing to do what is necessary to reach success.
 							</p>
 							<p>
-								<a class="btn btn-success" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a>
 							</p>
 						</div>
 					</div>
@@ -200,10 +200,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 								General Discussion
 							</h3>
 							<p>
-								If you cannot find the forum looking for, you can either create your own forum or try this one. You can find a wide variety of topics and questions in this forum. 
+								If you cannot find the forum looking for, you can either create your own forum or try this one. You can find a wide variety of topics and questions in this forum.
 							</p>
 							<p>
-								<a class="btn btn-success" href="#">Read</a> 
+								<a class="btn btn-success" href="#">Read</a>
 							</p>
 						</div>
 					</div>
@@ -252,10 +252,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Apr 30 14:24:21 MST 2015
+                    DATE: Sat May 02 15:50:34 MST 2015
                     SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/forum.scala.html
-                    HASH: c48967934f9e96e1c80ea9f75e7c9e2d7bdfa5f1
-                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|7982->6979
+                    HASH: 2fdfe525d8717c8bf82703d5af99eaefa0e4626c
+                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|7971->6968
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|242->214
                     -- GENERATED --
                 */

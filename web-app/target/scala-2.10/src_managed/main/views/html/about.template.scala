@@ -158,7 +158,7 @@ ProConnect provides an Android application were users can disscuss and share exp
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Apr 30 14:24:21 MST 2015
+                    DATE: Sat May 02 15:50:34 MST 2015
                     SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/about.scala.html
                     HASH: 487cc3c9903e2ca6aa6de1838f1f589cd39ee2c1
                     MATRIX: 864->1|890->19|928->20|995->52|1009->58|1066->94|1641->633|1662->645|1736->696|5060->3988

@@ -11,7 +11,7 @@ import play.Logger;
 import securesocial.core.*;
 import securesocial.*;
 import securesocial.core.java.SecureSocial;
-
+import java.util.*;
 
 /**
  * This class extends the Controller class functionality to route webpages within the application.
@@ -34,6 +34,15 @@ public class Application extends Controller{
 public static Result forum(){
     return ok(forum.render());
   }
+
+public static Result forumItem(){
+  List<Forum> forumList = new ArrayList();
+  Forum forum = new Forum();
+  forum.topicHeader = "How to Prepare for an Interview";
+  forum.body = "Interviews could be stressful. You can build confidence and ace your interview with these 7 simple and easy steps and give a great first impression to the employer.";
+  forumList.add(forum);
+  return ok(forumItem.render(forumList));
+}
   /**This produces a HTTP result for the connections page.
  * @return a 200 response that will render the connections page on the screen.
  */

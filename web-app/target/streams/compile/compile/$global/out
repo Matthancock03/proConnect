@@ -13,3 +13,41 @@
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
 [0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
+java.lang.NumberFormatException: For input string: "<<<<<<< HEAD
+1430540316204
+=======
+1430537887916
+>>>>>>> eb128e2ccccaac7919d7603fd8be6880464fd712
+"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.parseLong(Long.java:631)
+	at scala.collection.immutable.StringLike$class.toLong(StringLike.scala:230)
+	at scala.collection.immutable.StringOps.toLong(StringOps.scala:31)
+	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:100)
+	at play.PlayCommands$$anonfun$PostCompile$1.apply(PlayCommands.scala:95)
+	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:35)
+	at scala.Function8$$anonfun$tupled$1.apply(Function8.scala:34)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42)
+	at sbt.std.Transform$$anon$4.work(System.scala:64)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18)
+	at sbt.Execute.work(Execute.scala:244)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[0m[[31merror[0m] [0m(compile:[31mcompile[0m) java.lang.NumberFormatException: For input string: "<<<<<<< HEAD[0m
+[0m[[31merror[0m] [0m1430540316204[0m
+[0m[[31merror[0m] [0m=======[0m
+[0m[[31merror[0m] [0m1430537887916[0m
+[0m[[31merror[0m] [0m>>>>>>> eb128e2ccccaac7919d7603fd8be6880464fd712[0m
+[0m[[31merror[0m] [0m"[0m
