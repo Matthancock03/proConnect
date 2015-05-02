@@ -22,7 +22,7 @@ create table user_model (
   location                  varchar(255),
   about_me                  varchar(255),
   password                  varchar(255),
-  profile_picture           varchar(255),
+  profile_picture           bytea,
   login_provider            varchar(255),
   secret                    varchar(255),
   avatar_url                varchar(255),
@@ -44,13 +44,9 @@ create sequence user_model_seq;
 
 # --- !Downs
 
-SET REFERENTIAL_INTEGRITY FALSE;
+drop table if exists forum cascade;
 
-drop table if exists forum;
-
-drop table if exists user_model;
-
-SET REFERENTIAL_INTEGRITY TRUE;
+drop table if exists user_model cascade;
 
 drop sequence if exists forum_seq;
 

@@ -9,27 +9,28 @@
 
 <div class="container-fluid">
 	<div class="row clearfix">
+    @helper.form(action = routes.DbController.saveUser, 'enctype -> "multipart/form-data"){
+
 		<div class="col-xs-2 column logo-img img-div">
 
+      @if(userModel.profilePicture != null){
+        <img class = "img-thumbnail profileImage" src="@routes.DbController.getProfilePic(userModel.email)" />
+      }else{
         <img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")" />
+        }
+        @helper.inputFile(user("profilePicture"), 'class -> "form-control", '_label -> "Upload/Change your profile image" )
 
-        <label for="exampleInputFile">Profile Image</label><input type="file" id="exampleInputFile" />
-		</div>
+    </div>
     <div class="col-xs-2 column">
     </div>
 		<div class="col-xs-6 column" style="margin-top: 40px;">
-      @if(userModel.password == null || userModel.password == "None Entered" || userModel.aboutMe == null || userModel.aboutMe == ""){
-        <h2>Please input some data and let's get Connected!</h2>
-      }
-      @helper.form(action = routes.DbController.saveUser){
 				<div class="form-group break-after">
 					 @helper.inputText(user("userName"), 'class -> "form-control", '_label -> "Name" )
            @helper.inputText(user("email"), 'class -> "form-control", '_label -> "Email Address", 'readonly -> "readonly" )
-           @if(userModel.password == null || userModel.password == "None Entered"){
-            <h3>Please enter a password to associate with your account.</h3>
-           @helper.inputText(user("password"), 'class -> "form-control", '_label -> "Password", 'type -> "password")
+           @if(userModel.password == null || userModel.password == ""){
+             @helper.inputText(user("password"), 'class -> "form-control", '_label -> "Password", 'type -> "password")
          }else{
-           @helper.inputText(user("password"), 'class -> "form-control", '_label -> "Password",'type -> "password", 'readonly -> "readonly")
+             @helper.inputText(user("password"), 'class -> "form-control", '_label -> "Password",'type -> "password", 'readonly -> "readonly")
          }
            @helper.inputText(user("aboutMe"), 'class -> "form-control", '_label -> "Personal Headline" )
            @helper.inputText(user("location"), 'class -> "form-control", '_label -> "Location" )

@@ -44,9 +44,9 @@ Seq[Any](format.raw/*1.45*/("""
 		<div class="col-xs-3 column" style="padding-left: 0px; height: 100%;">
 			<div class="profile-div">
 				"""),_display_(Seq[Any](/*18.6*/if(user.profilePicture != null)/*18.37*/{_display_(Seq[Any](format.raw/*18.38*/("""
-
+					<img class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*19.54*/routes/*19.60*/.DbController.getProfilePic(user.email))),format.raw/*19.99*/("""" />
 				""")))}/*20.6*/else/*20.10*/{_display_(Seq[Any](format.raw/*20.11*/("""
-				<img alt="140x140" class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*21.67*/routes/*21.73*/.Assets.at("images/profile_holder.png"))),format.raw/*21.112*/("""" />
+					<img alt="140x140" class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*21.68*/routes/*21.74*/.Assets.at("images/profile_holder.png"))),format.raw/*21.113*/("""" />
 				""")))})),format.raw/*22.6*/("""
 				<dl class="dl-horizontal">
 					<dt>
@@ -72,33 +72,32 @@ Seq[Any](format.raw/*1.45*/("""
 		</div>
 
 		<div class="col-xs-6 column feed-container">
-		<img alt="140x140" class = "img-thumbnail headImage" target="_blank" src=""""),_display_(Seq[Any](/*47.78*/routes/*47.84*/.Assets.at("images/header.jpg"))),format.raw/*47.115*/("""" />
 			<div class="feed-div">
-			"""),_display_(Seq[Any](/*49.5*/for(feedItem <- feedItems) yield /*49.31*/{_display_(Seq[Any](format.raw/*49.32*/("""
-				"""),_display_(Seq[Any](/*50.6*/if(feedItem.publish_date != "")/*50.37*/{_display_(Seq[Any](format.raw/*50.38*/("""
-					<a href=""""),_display_(Seq[Any](/*51.16*/feedItem/*51.24*/.url)),format.raw/*51.28*/("""" target="_blank" style="text-decoration: none;">
+			"""),_display_(Seq[Any](/*48.5*/for(feedItem <- feedItems) yield /*48.31*/{_display_(Seq[Any](format.raw/*48.32*/("""
+				"""),_display_(Seq[Any](/*49.6*/if(feedItem.publish_date != "")/*49.37*/{_display_(Seq[Any](format.raw/*49.38*/("""
+					<a href=""""),_display_(Seq[Any](/*50.16*/feedItem/*50.24*/.url)),format.raw/*50.28*/("""" target="_blank" style="text-decoration: none;">
 					<div class="panel panel-default">
 						<div class="panel-body">
 						<div>
-							<img alt="" class="feed-image feed-head" src=""""),_display_(Seq[Any](/*55.55*/routes/*55.61*/.Assets.at("images/tech.png"))),format.raw/*55.90*/("""" />
-							<h3 class="panel-title head-text feed-head">"""),_display_(Seq[Any](/*56.53*/feedItem/*56.61*/.title)),format.raw/*56.67*/("""</h3>
+							<img alt="" class="feed-image feed-head" src=""""),_display_(Seq[Any](/*54.55*/routes/*54.61*/.Assets.at("images/tech.png"))),format.raw/*54.90*/("""" />
+							<h3 class="panel-title head-text feed-head">"""),_display_(Seq[Any](/*55.53*/feedItem/*55.61*/.title)),format.raw/*55.67*/("""</h3>
 						</div>
 						<br>
-						<p style="padding-top: 10px;">"""),_display_(Seq[Any](/*59.38*/feedItem/*59.46*/.summary)),format.raw/*59.54*/("""</p>
-						<p class="foot-text">"""),_display_(Seq[Any](/*60.29*/feedItem/*60.37*/.publish_date)),format.raw/*60.50*/("""  """),_display_(Seq[Any](/*60.53*/feedItem/*60.61*/.source)),format.raw/*60.68*/("""</p>
+						<p style="padding-top: 10px;">"""),_display_(Seq[Any](/*58.38*/feedItem/*58.46*/.summary)),format.raw/*58.54*/("""</p>
+						<p class="foot-text">"""),_display_(Seq[Any](/*59.29*/feedItem/*59.37*/.publish_date)),format.raw/*59.50*/("""  """),_display_(Seq[Any](/*59.53*/feedItem/*59.61*/.source)),format.raw/*59.68*/("""</p>
 					</div>
 				</div>
 				</a>
-				""")))})),format.raw/*64.6*/("""
-			""")))})),format.raw/*65.5*/("""
+				""")))})),format.raw/*63.6*/("""
+			""")))})),format.raw/*64.5*/("""
 		</div>
 		</div>
-		<div class="col-xs-3 column">
+		<div class="col-xs-3 column" style="margin-top: 25px;">
 			<div>
 				<div class="panel panel-default">
 				  <div class="panel-heading">Twitter Feed</div>
 				  <div class="panel-body">
-						"""),_display_(Seq[Any](/*73.8*/if(user.loginProvider == "twitter")/*73.43*/{_display_(Seq[Any](format.raw/*73.44*/("""
+						"""),_display_(Seq[Any](/*72.8*/if(user.loginProvider == "twitter")/*72.43*/{_display_(Seq[Any](format.raw/*72.44*/("""
 						<ul class="list-group overflow-y-scroll tweetTable">
 							  <li class="list-group-item">First item</li>
 							  <li class="list-group-item">Second item</li>
@@ -107,9 +106,9 @@ Seq[Any](format.raw/*1.45*/("""
 							  <li class="list-group-item">Second item</li>
 							  <li class="list-group-item">Third item</li>
 							</ul>
-						""")))}/*82.8*/else/*82.12*/{_display_(Seq[Any](format.raw/*82.13*/("""
+						""")))}/*81.8*/else/*81.12*/{_display_(Seq[Any](format.raw/*81.13*/("""
 							<p>Enter your twitter information for a feed of recent tweets!</p>
-						""")))})),format.raw/*84.8*/("""
+						""")))})),format.raw/*83.8*/("""
 				  </div>
 				</div>
 			</div>
@@ -120,7 +119,7 @@ Seq[Any](format.raw/*1.45*/("""
 
   </div>
 </div>
-""")))})),format.raw/*95.2*/("""
+""")))})),format.raw/*94.2*/("""
 """))}
     }
     
@@ -133,11 +132,11 @@ Seq[Any](format.raw/*1.45*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri May 01 20:26:11 PDT 2015
+                    DATE: Sat May 02 00:01:35 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
-                    HASH: 59352adddb331a4888d61d1d678cc587e722fa70
-                    MATRIX: 791->1|944->44|972->63|1008->65|1034->83|1073->85|1140->117|1154->123|1213->161|1336->249|1351->255|1382->264|1585->432|1625->463|1664->464|1689->471|1702->475|1741->476|1844->543|1859->549|1921->588|1962->598|2045->646|2079->671|2118->672|2186->704|2199->708|2230->717|2259->728|2272->732|2311->733|2389->780|2452->808|2493->840|2532->841|2599->872|2612->876|2650->892|2692->903|2755->931|2793->960|2832->961|2900->993|2913->997|2948->1010|2991->1022|3193->1188|3208->1194|3262->1225|3332->1260|3374->1286|3413->1287|3454->1293|3494->1324|3533->1325|3585->1341|3602->1349|3628->1353|3850->1539|3865->1545|3916->1574|4009->1631|4026->1639|4054->1645|4157->1712|4174->1720|4204->1728|4273->1761|4290->1769|4325->1782|4364->1785|4381->1793|4410->1800|4483->1842|4519->1847|4742->2035|4786->2070|4825->2071|5242->2470|5255->2474|5294->2475|5407->2557|5511->2630
-                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|39->11|39->11|39->11|46->18|46->18|46->18|48->20|48->20|48->20|49->21|49->21|49->21|50->22|53->25|53->25|53->25|54->26|54->26|54->26|55->27|55->27|55->27|57->29|60->32|60->32|60->32|61->33|61->33|61->33|62->34|65->37|65->37|65->37|66->38|66->38|66->38|67->39|75->47|75->47|75->47|77->49|77->49|77->49|78->50|78->50|78->50|79->51|79->51|79->51|83->55|83->55|83->55|84->56|84->56|84->56|87->59|87->59|87->59|88->60|88->60|88->60|88->60|88->60|88->60|92->64|93->65|101->73|101->73|101->73|110->82|110->82|110->82|112->84|123->95
+                    HASH: 682ddfe69fd58277b6144886eaa546f6214f0e82
+                    MATRIX: 791->1|944->44|972->63|1008->65|1034->83|1073->85|1140->117|1154->123|1213->161|1336->249|1351->255|1382->264|1585->432|1625->463|1664->464|1754->518|1769->524|1830->563|1858->573|1871->577|1910->578|2014->646|2029->652|2091->691|2132->701|2215->749|2249->774|2288->775|2356->807|2369->811|2400->820|2429->831|2442->835|2481->836|2559->883|2622->911|2663->943|2702->944|2769->975|2782->979|2820->995|2862->1006|2925->1034|2963->1063|3002->1064|3070->1096|3083->1100|3118->1113|3161->1125|3315->1244|3357->1270|3396->1271|3437->1277|3477->1308|3516->1309|3568->1325|3585->1333|3611->1337|3833->1523|3848->1529|3899->1558|3992->1615|4009->1623|4037->1629|4140->1696|4157->1704|4187->1712|4256->1745|4273->1753|4308->1766|4347->1769|4364->1777|4393->1784|4466->1826|4502->1831|4751->2045|4795->2080|4834->2081|5251->2480|5264->2484|5303->2485|5416->2567|5520->2640
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|39->11|39->11|39->11|46->18|46->18|46->18|47->19|47->19|47->19|48->20|48->20|48->20|49->21|49->21|49->21|50->22|53->25|53->25|53->25|54->26|54->26|54->26|55->27|55->27|55->27|57->29|60->32|60->32|60->32|61->33|61->33|61->33|62->34|65->37|65->37|65->37|66->38|66->38|66->38|67->39|76->48|76->48|76->48|77->49|77->49|77->49|78->50|78->50|78->50|82->54|82->54|82->54|83->55|83->55|83->55|86->58|86->58|86->58|87->59|87->59|87->59|87->59|87->59|87->59|91->63|92->64|100->72|100->72|100->72|109->81|109->81|109->81|111->83|122->94
                     -- GENERATED --
                 */
             

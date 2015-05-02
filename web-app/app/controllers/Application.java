@@ -67,8 +67,13 @@ public static Result help(){
 
   @SecureSocial.UserAwareAction
   public static Result systemEntry(){
-    Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
-    Logger.debug(userID.identityId().providerId());
+    Identity userID;
+    try{
+        userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+        Logger.debug(userID.identityId().providerId());
+    }catch(Exception e){
+        return ok(splash.render());
+    }
     UserModel newUserModel;
 
     if(userID.identityId().providerId() == "twitter"){//Checks if login method is twitter as twitter does not provide email.
@@ -81,7 +86,7 @@ public static Result help(){
       newUserModel = new UserModel();
      Logger.debug("UserModel Not Found");
 
-     newUserModel.password = "None Entered";
+     newUserModel.password = "";
      newUserModel.userName = userID != null ? userID.fullName() : "guest";
      newUserModel.email = userID.email().get() != null ? userID.email().get() : "No email provided";
      newUserModel.loginProvider = userID.identityId().providerId() != null ? userID.identityId().providerId() : "No provider";
@@ -118,8 +123,12 @@ public static Result message(){
  */
    @SecureSocial.SecuredAction
    public static Result index() {
-       Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);
-       return ok("index.render(user)");
+     try{
+       Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+     }catch(Exception e){
+         return ok(splash.render());
+     }
+     return ok("index.render(user)");
    }
 
    /**This checks to see if the current user is an authenticated user or not.
@@ -127,8 +136,12 @@ public static Result message(){
  */
 @SecureSocial.UserAwareAction
    public static Result userAware() {
-       Identity user = (Identity) ctx().args.get(SecureSocial.USER_KEY);
-
+       Identity user;
+       try{
+         user = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+       }catch(Exception e){
+           return ok(splash.render());
+       }
        final String userName = user != null ? user.fullName() : "guest";
        final String email = user.email().get() != null ? user.email().get() : "No email provided";
        final String provider = user.identityId().providerId() != null ? user.identityId().providerId() : "No provider";

@@ -2,13 +2,16 @@ html,
 body {
   height: 100%;
 }
+body {
+  background-color: #d5d8d9;
+}
 .feed-image {
   height: 50px;
   width: auto;
 }
 .profileImage {
-  height: 220px;
-  width: auto;
+  width: 90%;
+  height: auto;
   margin-top: 10px;
   margin-bottom: 15px;
 }
@@ -48,16 +51,18 @@ body {
   font-weight: bold;
 }
 .profile-div {
-  background-color: #69b9ff !important;
-  padding-left: 15px;
-  height: 100%;
-  width: 85%;
+  background-color: #6C6E70 !important;
+  width: 80%;
+  margin-left: 45px;
+  padding-left: 10%;
+  height: 60%;
+  padding-top: 7%;
 }
 .feed-container {
   padding-top: 10px;
 }
 .feed-div {
-  padding-top: 15px;
+  margin-top: 35px;
   height: 700px;
   overflow-y: auto;
 }

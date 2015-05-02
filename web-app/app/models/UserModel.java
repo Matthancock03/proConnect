@@ -46,8 +46,8 @@ public class UserModel  extends Model{
   @Constraints.Required
   public String password;
 
- 
-  public String profilePicture;
+  @Lob
+  public byte[] profilePicture;
 
   public String loginProvider;
   public String secret;
@@ -78,17 +78,6 @@ public class UserModel  extends Model{
     return newUserModel;
   }
 
-  public static void uploadPic(byte[] picture){
-
-
-  }
-
-  public static byte[] getPic(){
-  	byte[] picture = new byte[200];
-
-
-  	return picture;
-  }
 
   public static Finder<Long,UserModel> find = new Finder<Long,UserModel>(
   Long.class, UserModel.class

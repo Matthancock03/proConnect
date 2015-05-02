@@ -37,31 +37,32 @@ Seq[Any](format.raw/*1.47*/("""
 
 <div class="container-fluid">
 	<div class="row clearfix">
+    """),_display_(Seq[Any](/*12.6*/helper/*12.12*/.form(action = routes.DbController.saveUser, 'enctype -> "multipart/form-data")/*12.91*/{_display_(Seq[Any](format.raw/*12.92*/("""
+
 		<div class="col-xs-2 column logo-img img-div">
 
-        <img alt="140x140" class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*14.71*/routes/*14.77*/.Assets.at("images/profile_holder.png"))),format.raw/*14.116*/("""" />
+      """),_display_(Seq[Any](/*16.8*/if(userModel.profilePicture != null)/*16.44*/{_display_(Seq[Any](format.raw/*16.45*/("""
+        <img class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*17.57*/routes/*17.63*/.DbController.getProfilePic(userModel.email))),format.raw/*17.107*/("""" />
+      """)))}/*18.8*/else/*18.12*/{_display_(Seq[Any](format.raw/*18.13*/("""
+        <img alt="140x140" class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*19.71*/routes/*19.77*/.Assets.at("images/profile_holder.png"))),format.raw/*19.116*/("""" />
+        """)))})),format.raw/*20.10*/("""
+        """),_display_(Seq[Any](/*21.10*/helper/*21.16*/.inputFile(user("profilePicture"), 'class -> "form-control", '_label -> "Upload/Change your profile image" ))),format.raw/*21.124*/("""
 
-        <label for="exampleInputFile">Profile Image</label><input type="file" id="exampleInputFile" />
-		</div>
+    </div>
     <div class="col-xs-2 column">
     </div>
 		<div class="col-xs-6 column" style="margin-top: 40px;">
-      """),_display_(Seq[Any](/*21.8*/if(userModel.password == null || userModel.password == "None Entered" || userModel.aboutMe == null || userModel.aboutMe == "")/*21.134*/{_display_(Seq[Any](format.raw/*21.135*/("""
-        <h2>Please input some data and let's get Connected!</h2>
-      """)))})),format.raw/*23.8*/("""
-      """),_display_(Seq[Any](/*24.8*/helper/*24.14*/.form(action = routes.DbController.saveUser)/*24.58*/{_display_(Seq[Any](format.raw/*24.59*/("""
 				<div class="form-group break-after">
-					 """),_display_(Seq[Any](/*26.8*/helper/*26.14*/.inputText(user("userName"), 'class -> "form-control", '_label -> "Name" ))),format.raw/*26.88*/("""
-           """),_display_(Seq[Any](/*27.13*/helper/*27.19*/.inputText(user("email"), 'class -> "form-control", '_label -> "Email Address", 'readonly -> "readonly" ))),format.raw/*27.124*/("""
-           """),_display_(Seq[Any](/*28.13*/if(userModel.password == null || userModel.password == "None Entered")/*28.83*/{_display_(Seq[Any](format.raw/*28.84*/("""
-            <h3>Please enter a password to associate with your account.</h3>
-           """),_display_(Seq[Any](/*30.13*/helper/*30.19*/.inputText(user("password"), 'class -> "form-control", '_label -> "Password", 'type -> "password"))),format.raw/*30.117*/("""
-         """)))}/*31.11*/else/*31.15*/{_display_(Seq[Any](format.raw/*31.16*/("""
-           """),_display_(Seq[Any](/*32.13*/helper/*32.19*/.inputText(user("password"), 'class -> "form-control", '_label -> "Password",'type -> "password", 'readonly -> "readonly"))),format.raw/*32.141*/("""
-         """)))})),format.raw/*33.11*/("""
-           """),_display_(Seq[Any](/*34.13*/helper/*34.19*/.inputText(user("aboutMe"), 'class -> "form-control", '_label -> "Personal Headline" ))),format.raw/*34.105*/("""
-           """),_display_(Seq[Any](/*35.13*/helper/*35.19*/.inputText(user("location"), 'class -> "form-control", '_label -> "Location" ))),format.raw/*35.97*/("""
-           """),_display_(Seq[Any](/*36.13*/helper/*36.19*/.inputText(user("currentEmployer"), 'class -> "form-control", '_label -> "Current Employer" ))),format.raw/*36.112*/("""
+					 """),_display_(Seq[Any](/*28.8*/helper/*28.14*/.inputText(user("userName"), 'class -> "form-control", '_label -> "Name" ))),format.raw/*28.88*/("""
+           """),_display_(Seq[Any](/*29.13*/helper/*29.19*/.inputText(user("email"), 'class -> "form-control", '_label -> "Email Address", 'readonly -> "readonly" ))),format.raw/*29.124*/("""
+           """),_display_(Seq[Any](/*30.13*/if(userModel.password == null || userModel.password == "")/*30.71*/{_display_(Seq[Any](format.raw/*30.72*/("""
+             """),_display_(Seq[Any](/*31.15*/helper/*31.21*/.inputText(user("password"), 'class -> "form-control", '_label -> "Password", 'type -> "password"))),format.raw/*31.119*/("""
+         """)))}/*32.11*/else/*32.15*/{_display_(Seq[Any](format.raw/*32.16*/("""
+             """),_display_(Seq[Any](/*33.15*/helper/*33.21*/.inputText(user("password"), 'class -> "form-control", '_label -> "Password",'type -> "password", 'readonly -> "readonly"))),format.raw/*33.143*/("""
+         """)))})),format.raw/*34.11*/("""
+           """),_display_(Seq[Any](/*35.13*/helper/*35.19*/.inputText(user("aboutMe"), 'class -> "form-control", '_label -> "Personal Headline" ))),format.raw/*35.105*/("""
+           """),_display_(Seq[Any](/*36.13*/helper/*36.19*/.inputText(user("location"), 'class -> "form-control", '_label -> "Location" ))),format.raw/*36.97*/("""
+           """),_display_(Seq[Any](/*37.13*/helper/*37.19*/.inputText(user("currentEmployer"), 'class -> "form-control", '_label -> "Current Employer" ))),format.raw/*37.112*/("""
 				</div>
 
 		</div>
@@ -71,10 +72,10 @@ Seq[Any](format.raw/*1.47*/("""
     <div class="col-xs-2 column logo-img"></div>
 		<div class="col-xs-8 column">
           <div class="break-after">
-            """),_display_(Seq[Any](/*46.14*/helper/*46.20*/.textarea(user("experience"), 'class -> "form-control", '_label -> "About Me", 'rows -> "4" ))),format.raw/*46.113*/("""
+            """),_display_(Seq[Any](/*47.14*/helper/*47.20*/.textarea(user("experience"), 'class -> "form-control", '_label -> "About Me", 'rows -> "4" ))),format.raw/*47.113*/("""
           </div>
           <div class="break-after">
-            """),_display_(Seq[Any](/*49.14*/helper/*49.20*/.textarea(user("experience"), 'class -> "form-control", '_label -> "Experience", 'rows -> "4" ))),format.raw/*49.115*/("""
+            """),_display_(Seq[Any](/*50.14*/helper/*50.20*/.textarea(user("experience"), 'class -> "form-control", '_label -> "Experience", 'rows -> "4" ))),format.raw/*50.115*/("""
             <div>
               <button type="button" class="btn btn-info pull-right btn-xs" aria-label="left Align">
                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
@@ -85,7 +86,7 @@ Seq[Any](format.raw/*1.47*/("""
           </div>
           </div>
           <div class="break-after">
-              """),_display_(Seq[Any](/*60.16*/helper/*60.22*/.textarea(user("projects"), 'class -> "form-control", '_label -> "Projects Or Skills Highlight", 'rows -> "4" ))),format.raw/*60.133*/("""
+              """),_display_(Seq[Any](/*61.16*/helper/*61.22*/.textarea(user("projects"), 'class -> "form-control", '_label -> "Projects Or Skills Highlight", 'rows -> "4" ))),format.raw/*61.133*/("""
               <div>
                 <button type="button" class="btn btn-info btn-xs pull-right" aria-label="right Align">
                   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
@@ -97,7 +98,7 @@ Seq[Any](format.raw/*1.47*/("""
               </div>
             </div>
             <div class="break-after">
-                """),_display_(Seq[Any](/*72.18*/helper/*72.24*/.textarea(user("education"), 'class -> "form-control", '_label -> "Education", 'rows -> "4" ))),format.raw/*72.117*/("""
+                """),_display_(Seq[Any](/*73.18*/helper/*73.24*/.textarea(user("education"), 'class -> "form-control", '_label -> "Education", 'rows -> "4" ))),format.raw/*73.117*/("""
                 <div>
                   <button type="button" class="btn btn-info pull-right btn-xs" aria-label="left Align">
                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
@@ -112,9 +113,9 @@ Seq[Any](format.raw/*1.47*/("""
         </div>
       </div>
       <div class="col-xs-2 column bottom-div"></div>
-    """)))})),format.raw/*87.6*/("""
+    """)))})),format.raw/*88.6*/("""
 		</div>
-""")))})),format.raw/*89.2*/("""
+""")))})),format.raw/*90.2*/("""
 """))}
     }
     
@@ -127,11 +128,11 @@ Seq[Any](format.raw/*1.47*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri May 01 20:26:11 PDT 2015
+                    DATE: Sat May 02 00:01:35 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileMain.scala.html
-                    HASH: 1d2a4be993e8c4d7a2301d37808ced27bc9b116a
-                    MATRIX: 799->1|954->46|982->65|1018->67|1044->85|1082->86|1120->90|1134->96|1162->103|1229->135|1243->141|1309->186|1527->368|1542->374|1604->413|1867->641|2003->767|2043->768|2147->841|2190->849|2205->855|2258->899|2297->900|2381->949|2396->955|2492->1029|2541->1042|2556->1048|2684->1153|2733->1166|2812->1236|2851->1237|2977->1327|2992->1333|3113->1431|3143->1442|3156->1446|3195->1447|3244->1460|3259->1466|3404->1588|3447->1599|3496->1612|3511->1618|3620->1704|3669->1717|3684->1723|3784->1801|3833->1814|3848->1820|3964->1913|4228->2141|4243->2147|4359->2240|4462->2307|4477->2313|4595->2408|5144->2921|5159->2927|5293->3038|5875->3584|5890->3590|6006->3683|6702->4348|6744->4359
-                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|36->8|36->8|36->8|42->14|42->14|42->14|49->21|49->21|49->21|51->23|52->24|52->24|52->24|52->24|54->26|54->26|54->26|55->27|55->27|55->27|56->28|56->28|56->28|58->30|58->30|58->30|59->31|59->31|59->31|60->32|60->32|60->32|61->33|62->34|62->34|62->34|63->35|63->35|63->35|64->36|64->36|64->36|74->46|74->46|74->46|77->49|77->49|77->49|88->60|88->60|88->60|100->72|100->72|100->72|115->87|117->89
+                    HASH: 4549c3e614e468ee7e9c97b4ac2065819c2a160a
+                    MATRIX: 799->1|954->46|982->65|1018->67|1044->85|1082->86|1120->90|1134->96|1162->103|1229->135|1243->141|1309->186|1411->253|1426->259|1514->338|1553->339|1647->398|1692->434|1731->435|1824->492|1839->498|1906->542|1936->554|1949->558|1988->559|2095->630|2110->636|2172->675|2218->689|2264->699|2279->705|2410->813|2609->977|2624->983|2720->1057|2769->1070|2784->1076|2912->1181|2961->1194|3028->1252|3067->1253|3118->1268|3133->1274|3254->1372|3284->1383|3297->1387|3336->1388|3387->1403|3402->1409|3547->1531|3590->1542|3639->1555|3654->1561|3763->1647|3812->1660|3827->1666|3927->1744|3976->1757|3991->1763|4107->1856|4371->2084|4386->2090|4502->2183|4605->2250|4620->2256|4738->2351|5287->2864|5302->2870|5436->2981|6018->3527|6033->3533|6149->3626|6845->4291|6887->4302
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|36->8|36->8|36->8|40->12|40->12|40->12|40->12|44->16|44->16|44->16|45->17|45->17|45->17|46->18|46->18|46->18|47->19|47->19|47->19|48->20|49->21|49->21|49->21|56->28|56->28|56->28|57->29|57->29|57->29|58->30|58->30|58->30|59->31|59->31|59->31|60->32|60->32|60->32|61->33|61->33|61->33|62->34|63->35|63->35|63->35|64->36|64->36|64->36|65->37|65->37|65->37|75->47|75->47|75->47|78->50|78->50|78->50|89->61|89->61|89->61|101->73|101->73|101->73|116->88|118->90
                     -- GENERATED --
                 */
             
