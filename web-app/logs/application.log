@@ -4767,3 +4767,6 @@ Application started (Dev)
 2015-05-01 21:23:36,605 - [DEBUG] - from application in play-akka.actor.default-dispatcher-403 
 [securesocial] calling deleteExpiredTokens()
 
+2015-05-01 21:28:36,625 - [DEBUG] - from application in play-akka.actor.default-dispatcher-403 
+[securesocial] calling deleteExpiredTokens()
+
