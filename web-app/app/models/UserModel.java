@@ -57,6 +57,7 @@ public class UserModel  extends Model{
   public String experience;
   public String education;
   public String projects;
+  public boolean isPremium;
   //public List<String> experience = new ArrayList<String>();
   //public List<String> education = new ArrayList<String>();
   //public List<String> projects = new ArrayList<String>();

@@ -32,7 +32,6 @@ public class Forum extends Model{
   public String topicHeader;
   public String body;
   Timestamp cretimestamp;
-  //public List<Forum> responses = new ArrayList<Forum>();
 
   /**Constructor to create a Forum.
  *
@@ -40,7 +39,7 @@ public class Forum extends Model{
 public Forum (){
 
   }
-
+  
   /**This constructs a forum with a forum id, header, and body.
  * @param forId the id number of the selected forum
  * @param header the name of the topic header for the selected topic.

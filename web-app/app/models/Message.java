@@ -22,16 +22,15 @@ import play.db.ebean.Model.Finder;
 import play.Logger;
 
 @Entity
-public class Job extends Model  {
+public class Message extends Model {
 
-  @Id
-  public Long jobId;
-  public Long posterId;
-  public String postTitle;
-  public String jobTitle;
-  public String jobDescription;
-  public String companyName;
+  public Long senderId;
+  public Long recipientId;
+  public String messageTitle;
+  public String messageBody;
   public boolean isRead;
   Timestamp tstamp;
+
+
 
 }

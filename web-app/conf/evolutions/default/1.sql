@@ -13,6 +13,27 @@ create table forum (
   constraint pk_forum primary key (forum_id))
 ;
 
+create table job (
+  job_id                    bigint not null,
+  poster_id                 bigint,
+  post_title                varchar(255),
+  job_title                 varchar(255),
+  job_description           varchar(255),
+  company_name              varchar(255),
+  is_read                   boolean,
+  tstamp                    timestamp,
+  constraint pk_job primary key (job_id))
+;
+
+create table message (
+  sender_id                 bigint,
+  recipient_id              bigint,
+  message_title             varchar(255),
+  message_body              varchar(255),
+  is_read                   boolean,
+  tstamp                    timestamp)
+;
+
 create table user_model (
   id                        bigint not null,
   user_name                 varchar(255),
@@ -30,12 +51,15 @@ create table user_model (
   experience                varchar(255),
   education                 varchar(255),
   projects                  varchar(255),
+  is_premium                boolean,
   version                   timestamp not null,
   constraint uq_user_model_email unique (email),
   constraint pk_user_model primary key (id))
 ;
 
 create sequence forum_seq;
+
+create sequence job_seq;
 
 create sequence user_model_seq;
 
@@ -46,9 +70,15 @@ create sequence user_model_seq;
 
 drop table if exists forum cascade;
 
+drop table if exists job cascade;
+
+drop table if exists message cascade;
+
 drop table if exists user_model cascade;
 
 drop sequence if exists forum_seq;
+
+drop sequence if exists job_seq;
 
 drop sequence if exists user_model_seq;
 
