@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2015-05-02 15:50:29,425 - [INFO] - from play in pool-6-thread-6 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
@@ -14,6 +15,21 @@ play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatExcept
 "]
 	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:309) ~[na:na]
 	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+=======
+2015-05-02 13:13:25,623 - [INFO] - from play in pool-6-thread-5 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2015-05-02 13:21:45,012 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6m30k0a20 - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
 	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
 	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
 	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
@@ -28,6 +44,51 @@ play.PlayExceptions$UnexpectedException: Unexpected exception[NumberFormatExcept
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+
+2015-05-02 13:21:45,189 - [WARN] - from play in New I/O worker #1 
+No application found at invoker init
+
+2015-05-02 13:26:07,627 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
+
+2015-05-02 13:26:08,753 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6m30kfa6h - Internal server error, for (GET) [/] ->
+
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:486) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at play.api.db.evolutions.EvolutionsPlugin.withLock(Evolutions.scala:507) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:461) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:459) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library-2.10.3.jar:na]
+	at play.api.db.evolutions.EvolutionsPlugin.onStart(Evolutions.scala:459) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library-2.10.3.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$.start(Play.scala:87) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.3.jar:2.2.3]
+>>>>>>> 8f9ed6157bd56181ad0b73743b3620babe9daf06
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+<<<<<<< HEAD
 java.lang.NumberFormatException: For input string: "<<<<<<< HEAD
 1430540316204
 =======
@@ -123,4 +184,126 @@ java.lang.NumberFormatException: For input string: "<<<<<<< HEAD
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+=======
+
+2015-05-02 13:26:17,591 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: userpass
+
+2015-05-02 13:26:17,617 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: google
+
+2015-05-02 13:26:17,617 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: facebook
+
+2015-05-02 13:26:17,617 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: twitter
+
+2015-05-02 13:26:17,619 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded password hasher bcrypt
+
+2015-05-02 13:26:22,525 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
+
+2015-05-02 13:26:23,093 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-05-02 13:26:23,147 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-05-02 13:26:23,152 - [DEBUG] - from application in play-akka.actor.default-dispatcher-3 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-02 13:26:23,155 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-05-02 13:26:23,156 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-05-02 13:26:23,158 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-05-02 13:26:23,158 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-05-02 13:26:23,158 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-05-02 13:26:23,158 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-05-02 13:26:23,166 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-05-02 13:31:23,160 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-02 13:36:23,160 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-02 13:41:23,160 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-02 13:46:23,160 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-02 13:51:23,160 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-02 13:56:23,160 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-02 14:01:23,160 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-02 14:05:57,176 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: userpass
+
+2015-05-02 14:05:57,176 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: google
+
+2015-05-02 14:05:57,177 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: facebook
+
+2015-05-02 14:05:57,177 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded identity provider: twitter
+
+2015-05-02 14:05:57,178 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] unloaded password hasher bcrypt
+
+2015-05-02 14:05:57,179 - [INFO] - from play in play-internal-execution-context-1 
+Shutdown application default Akka system.
+
+2015-05-02 14:06:03,396 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
+
+2015-05-02 14:06:03,698 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-05-02 14:06:03,717 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-05-02 14:06:03,717 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-05-02 14:06:03,717 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-02 14:06:03,719 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-05-02 14:06:03,726 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: twitter
+
+2015-05-02 14:06:03,727 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-05-02 14:06:03,727 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-05-02 14:06:03,727 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-05-02 14:06:03,728 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+>>>>>>> 8f9ed6157bd56181ad0b73743b3620babe9daf06
 

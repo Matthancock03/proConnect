@@ -4,7 +4,6 @@ package controllers;
 import play.*;
 import play.api.libs.json.JsPath;
 import play.mvc.*;
-import views.formData.*;
 import views.html.*;
 import play.data.*;
 import play.Logger;
@@ -59,6 +58,16 @@ public class Android extends Controller{
 
         return ok(result);
   }
+
+  @BodyParser.Of(BodyParser.Json.class)
+  public static Result androidSaveUser() {
+    JsonNode json = request().body().asJson();
+    if(json == null) {
+        return ok("Bind Failed");
+    }
+
+   return ok("Bind Sucessful");
+ }
 
 
   /**This creates a HTTP response in regards to creating a new account on the Android platform.

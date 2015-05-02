@@ -33,14 +33,14 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 		<div class="col-md-12 column">
 			<div class="page-header">
 				<h1>
-					Messages 
+					Messages
 				</h1>
 			</div>
 		</div>
 	</div>
 	<div class="row clearfix">
 		<div class="col-md-2 column">
-			
+
 			<div class="btn-group btn-group-vertical btn-group-md">
 			<br /><br /><br />
 			 <button type="button" class="btn btn-success">Compose</button>
@@ -178,7 +178,8 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 		</div>
 	</div>
 </div>
-""")))})))}
+""")))})),format.raw/*153.2*/("""
+"""))}
     }
     
     def render(): play.api.templates.HtmlFormat.Appendable = apply()
@@ -190,11 +191,19 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Sat May 02 15:50:34 MST 2015
                     SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/message.scala.html
                     HASH: 85145a2ad6b621ee2f55887eb58601446f9bf079
                     MATRIX: 866->1|891->18|929->19|966->22|979->28|1007->35
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2
+=======
+                    DATE: Sat May 02 14:04:39 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/message.scala.html
+                    HASH: 935fabd2d81053aed37c6d9b5a186b5aa4bea012
+                    MATRIX: 866->1|891->18|929->19|965->21|978->27|1006->34|3960->2956
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|181->153
+>>>>>>> 8f9ed6157bd56181ad0b73743b3620babe9daf06
                     -- GENERATED --
                 */
             

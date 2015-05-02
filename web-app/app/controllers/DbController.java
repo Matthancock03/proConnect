@@ -4,7 +4,6 @@ package controllers;
 import play.*;
 import play.api.libs.json.JsPath;
 import play.mvc.*;
-import views.formData.*;
 import views.html.*;
 import play.data.*;
 import play.Logger;
@@ -25,7 +24,10 @@ import models.*;
 import play.libs.F.Function;
 import play.libs.F.Promise;
 import play.libs.WS;
-
+import play.mvc.Http.MultipartFormData.*;
+import play.mvc.Http.*;
+import java.io.File;
+import java.nio.file.Files;
 
 
 
@@ -50,13 +52,17 @@ public class DbController extends Controller{
   public static Result profileMain(){
     UserModel user;
    Form<UserModel> userForm = Form.form(UserModel.class);
-   Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+   Identity userID;
+
+   try{
+       userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+       Logger.debug(userID.identityId().providerId());
+   }catch(Exception e){
+       return ok(splash.render());
+   }
+
    user = UserModel.loadUserModel(userID);
    Form<UserModel> userFilled =  Form.form(UserModel.class).fill(user);
-   Logger.debug("UserModel Form passed");
-   Logger.debug(user.userName);
-   Logger.debug(user.password);
-   Logger.debug(user.aboutMe);
     return ok(profileMain.render(userFilled,user));
   }
 
@@ -66,7 +72,30 @@ public class DbController extends Controller{
     UserModel userData = user.bindFromRequest().get();
     UserModel dbUserModel = UserModel.loadUserModel(userData.email);
 
-    Logger.debug("UserModel Form Bind Sucessful");
+    /*Logger.debug("Form Name " + userData.userName );
+    Logger.debug("Form Email " + userData.email );
+    Logger.debug("Form Password: " + dbUserModel.password);
+    Logger.debug( "Save UserModel id: " +  Long.toString(userData.id));
+    Logger.debug( "DbUserModel id: " +  Long.toString(dbUserModel.id));
+*/
+
+    try{
+  MultipartFormData body = request().body().asMultipartFormData();
+  MultipartFormData.FilePart picture = body.getFile("profilePicture");
+    if (picture != null) {
+      String fileName = picture.getFilename();
+      String contentType = picture.getContentType();
+      File file = picture.getFile();
+      dbUserModel.profilePicture = com.google.common.io.Files.toByteArray(file);
+      Logger.debug("Image captured!");
+    } else {
+      Logger.debug("Unable to capture image.");
+    }
+  }catch(Exception e){
+    Logger.debug("Form Error.");
+  }
+
+
     Logger.debug("Before Merge: " + dbUserModel.password);
     Logger.debug( "Save UserModel id: " +  Long.toString(userData.id));
     Logger.debug( "DbUserModel id: " +  Long.toString(dbUserModel.id));
@@ -101,18 +130,7 @@ public class DbController extends Controller{
 										}
 
 
- 									try{
- 									Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
-									user = UserModel.loadUserModel(userID);                                  //Loads user values into UserModel model.
-									} catch (Exception e){
-										Logger.debug("Null Pointer homeFeed");
-
-									}
-									/*String userName = userID != null ? userID.fullName() : "guest";
-									Logger.debug(userName);
-									*/
-
-                    return ok(home.render(feeds, user));
+                    return ok(home.render(feeds, dbUserModel));
                 }
             }
     );
@@ -123,6 +141,11 @@ public class DbController extends Controller{
     Form<UserModel> user = Form.form(UserModel.class);
     UserModel userData = user.bindFromRequest().get();
     return ok("Form Sucessful");
+  }
+
+  public static Result getProfilePic(String email){
+    UserModel user = UserModel.loadUserModel(email);
+    return ok(user.profilePicture);
   }
 
     private static void mergeResults(UserModel out, UserModel in){ // Merges Form submission with current UserModel

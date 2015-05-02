@@ -12,8 +12,8 @@
   <div class="row clearfix">
     <div class="col-md-2 column img-div">
       @if(user.profilePicture != null){
-
-        }else{
+        <img class = "img-thumbnail profileImage" src="@routes.DbController.getProfilePic(user.email)" />
+      }else{
         <img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")" />
         }
         @if(user.userName != null){

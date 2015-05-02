@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 // @SOURCE:C:/Users/Eya/Documents/GitHub/proConnect/web-app/conf/routes
 // @HASH:05b5e3c9d70ed5d549198182ded81ee49a82d11f
 // @DATE:Sat May 02 15:50:31 MST 2015
+=======
+// @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
+// @HASH:4d3207f81801417e1764a842bb8a24dc24661de6
+// @DATE:Sat May 02 14:04:24 PDT 2015
+>>>>>>> 8f9ed6157bd56181ad0b73743b3620babe9daf06
 
 package controllers;
 

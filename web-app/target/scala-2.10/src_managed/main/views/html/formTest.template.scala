@@ -38,8 +38,13 @@ Seq[Any]()}
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Sat May 02 15:50:34 MST 2015
                     SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/formTest.scala.html
+=======
+                    DATE: Sat May 02 13:10:10 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/formTest.scala.html
+>>>>>>> 8f9ed6157bd56181ad0b73743b3620babe9daf06
                     HASH: c7efc0f75c87094f54f4173904bb22e85df9d1e0
                     MATRIX: 
                     LINES: 

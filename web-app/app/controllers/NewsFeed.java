@@ -63,12 +63,9 @@ public class NewsFeed extends Controller {
 									user = UserModel.loadUserModel(userID);
 									user.save();                              //Loads user values into UserModel model.
 									} catch (Exception e){
-										Logger.debug("Null Pointer homeFeed");
+										return ok(splash.render());
 
 									}
-									/*String userName = userID != null ? userID.fullName() : "guest";
-									Logger.debug(userName);
-									*/
 
                     return ok(home.render(feeds, user));
                 }
