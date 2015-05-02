@@ -24,6 +24,7 @@ GET      /getProfilePic            controllers.DbController.getProfilePic(email:
 ########## Android###################
 GET      /androidLogin             controllers.Android.androidLogin(email: String, password: String)
 GET      /androidCreateAccount     controllers.Android.androidCreateAccount(email: String, password: String)
+POST     /androidSaveUser          controllers.Android.androidSaveUser()
 
 
 # Map static resources from the /public folder to the /assets URL path

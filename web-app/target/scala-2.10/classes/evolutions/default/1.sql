@@ -4,11 +4,12 @@
 # --- !Ups
 
 create table forum (
-  forum_id                  varchar(255) not null,
+  forum_id                  bigint not null,
   sub_id                    varchar(255),
   owner_id                  varchar(255),
   topic_header              varchar(255),
   body                      varchar(255),
+  image_url                 varchar(255),
   cretimestamp              timestamp,
   constraint pk_forum primary key (forum_id))
 ;
@@ -26,12 +27,14 @@ create table job (
 ;
 
 create table message (
+  message_id                bigint not null,
   sender_id                 bigint,
   recipient_id              bigint,
   message_title             varchar(255),
   message_body              varchar(255),
   is_read                   boolean,
-  tstamp                    timestamp)
+  tstamp                    timestamp,
+  constraint pk_message primary key (message_id))
 ;
 
 create table user_model (
@@ -61,6 +64,8 @@ create sequence forum_seq;
 
 create sequence job_seq;
 
+create sequence message_seq;
+
 create sequence user_model_seq;
 
 
@@ -79,6 +84,8 @@ drop table if exists user_model cascade;
 drop sequence if exists forum_seq;
 
 drop sequence if exists job_seq;
+
+drop sequence if exists message_seq;
 
 drop sequence if exists user_model_seq;
 

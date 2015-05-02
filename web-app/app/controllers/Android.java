@@ -59,6 +59,16 @@ public class Android extends Controller{
         return ok(result);
   }
 
+  @BodyParser.Of(BodyParser.Json.class)
+  public static Result androidSaveUser() {
+    JsonNode json = request().body().asJson();
+    if(json == null) {
+        return ok("Bind Failed");
+    }
+
+   return ok("Bind Sucessful");
+ }
+
 
   /**This creates a HTTP response in regards to creating a new account on the Android platform.
  * @param name the name of the user
