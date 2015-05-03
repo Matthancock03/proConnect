@@ -7,7 +7,15 @@
 		revision="1.0-SNAPSHOT"
 		conf="optional"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar"
+<<<<<<< HEAD
 		date="20150502150935"/>
+=======
+<<<<<<< HEAD
+		date="20150502155020"/>
+=======
+		date="20150502131007"/>
+>>>>>>> 8f9ed6157bd56181ad0b73743b3620babe9daf06
+>>>>>>> b5cd3ede55911f15f7cd40c3fa35efc022e62ba8
 	<dependencies>
 	</dependencies>
 </ivy-report>

@@ -20,14 +20,15 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
-object forum extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template0[play.api.templates.HtmlFormat.Appendable] {
+object forum extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template1[List[Forum],play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply():play.api.templates.HtmlFormat.Appendable = {
+    def apply/*1.2*/(forumItems: List[Forum]):play.api.templates.HtmlFormat.Appendable = {
         _display_ {
 
-Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any](format.raw/*1.21*/("""
-  """),_display_(Seq[Any](/*2.4*/navbar/*2.10*/.render)),format.raw/*2.17*/("""
+Seq[Any](format.raw/*1.27*/("""
+"""),_display_(Seq[Any](/*2.2*/main("ProConnect")/*2.20*/{_display_(Seq[Any](format.raw/*2.21*/("""
+  """),_display_(Seq[Any](/*3.4*/navbar/*3.10*/.render)),format.raw/*3.17*/("""
 
 <div class="container">
 	<div class="row clearfix">
@@ -235,24 +236,44 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 		</div>
 	</div>
 </div>
+<<<<<<< HEAD
 """)))})),format.raw/*210.2*/("""
+=======
+""")))})),format.raw/*215.2*/("""
+>>>>>>> b5cd3ede55911f15f7cd40c3fa35efc022e62ba8
 """))}
     }
     
-    def render(): play.api.templates.HtmlFormat.Appendable = apply()
+    def render(forumItems:List[Forum]): play.api.templates.HtmlFormat.Appendable = apply(forumItems)
     
-    def f:(() => play.api.templates.HtmlFormat.Appendable) = () => apply()
+    def f:((List[Forum]) => play.api.templates.HtmlFormat.Appendable) = (forumItems) => apply(forumItems)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Sat May 02 16:34:45 PDT 2015
                     SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/forum.scala.html
                     HASH: cc0077a0acc79439cef17af8373378b463b46e97
                     MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|7732->6729
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|238->210
+=======
+<<<<<<< HEAD
+                    DATE: Sat May 02 15:50:34 MST 2015
+                    SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/forum.scala.html
+                    HASH: 2fdfe525d8717c8bf82703d5af99eaefa0e4626c
+                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|7971->6968
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|242->214
+=======
+                    DATE: Sat May 02 14:04:39 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/forum.scala.html
+                    HASH: a8924076be2712f9417e0cac5f9653440b8d3ff8
+                    MATRIX: 779->1|898->26|934->28|960->46|998->47|1036->51|1050->57|1078->64|7828->6782
+                    LINES: 26->1|29->1|30->2|30->2|30->2|31->3|31->3|31->3|243->215
+>>>>>>> 8f9ed6157bd56181ad0b73743b3620babe9daf06
+>>>>>>> b5cd3ede55911f15f7cd40c3fa35efc022e62ba8
                     -- GENERATED --
                 */
             

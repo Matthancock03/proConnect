@@ -26,11 +26,12 @@ import play.db.ebean.Model.Finder;
 public class Forum extends Model{
 
   @Id
-  public String forumId;
+  public Long   forumId;
   public String subId;
   public String ownerId;
   public String topicHeader;
   public String body;
+  public String imageUrl;
   Timestamp cretimestamp;
 
   /**Constructor to create a Forum.
@@ -39,16 +40,25 @@ public class Forum extends Model{
 public Forum (){
 
   }
-  
+
   /**This constructs a forum with a forum id, header, and body.
  * @param forId the id number of the selected forum
  * @param header the name of the topic header for the selected topic.
  * @param topBody the body of the selected topic in the selected forum.
  */
-public Forum (String forId, String header, String topBody){
-    forumId = forId;
+public Forum (String header, String topBody){
     header = topicHeader;
     body = topBody;
   }
+
+  public List<Forum> getForumArray(){
+
+    List<Forum> forumArray = Forum.find.all();
+    return forumArray;
+  }
+
+  public static Finder<Long,Forum> find = new Finder<Long,Forum>(
+    Long.class, Forum.class
+  );
 
 }

@@ -24,6 +24,8 @@ import play.Logger;
 @Entity
 public class Message extends Model {
 
+  @Id
+  public Long messageId;
   public Long senderId;
   public Long recipientId;
   public String messageTitle;
@@ -32,5 +34,14 @@ public class Message extends Model {
   Timestamp tstamp;
 
 
+  public List<Message> getMessageArray(String userId){
+
+    List<Message> messageArray = find.where().eq("senderId", userId).findList();
+    return messageArray;
+  }
+
+  public static Finder<Long,Message> find = new Finder<Long,Message>(
+      Long.class, Message.class
+    );
 
 }
