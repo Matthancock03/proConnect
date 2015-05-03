@@ -49,13 +49,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 			</div>
 		</div>
 		<div class="col-md-6 column">
-		<form class="navbar-form navbar-right" role="search">
-
-		      <div class="form-group">
-		        <input type="text" class="form-control" placeholder="Search for Messages">
-		      </div>
-		      <button type="submit" class="btn btn-success">Submit</button>
-		    </form>
+		
 			<table class="table table-condensed">
 				<thead>
 					<tr>
@@ -74,7 +68,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
+					<tr class="success">
 						<td>
 							1
 						</td>
@@ -88,7 +82,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 							Read
 						</td>
 					</tr>
-					<tr class="active">
+					<tr class="success">
 						<td>
 							2
 						</td>
@@ -116,7 +110,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 							Read
 						</td>
 					</tr>
-					<tr class="warning">
+					<tr class="success">
 						<td>
 							4
 						</td>
@@ -130,7 +124,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 							Read
 						</td>
 					</tr>
-					<tr class="danger">
+					<tr class="success">
 						<td>
 							5
 						</td>
@@ -190,10 +184,10 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri May 01 23:52:10 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/message.scala.html
-                    HASH: cbcd88adb17665a5eca4cc87effe6f293845ae72
-                    MATRIX: 866->1|891->18|929->19|965->21|978->27|1006->34
+                    DATE: Sat May 02 16:42:05 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/message.scala.html
+                    HASH: b6be4e2c14afbbb1c3ff15282d95e872ff82c9b7
+                    MATRIX: 866->1|891->18|929->19|966->22|979->28|1007->35
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2
                     -- GENERATED --
                 */

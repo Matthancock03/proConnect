@@ -60,28 +60,13 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 		<div class="row clearfix">
 			<div class="col-md-12 column">
 				<div class="row clearfix">
-					<div class="col-md-4 column">
-						<h2>
-							Getting Started
-						</h2>
-						<p>
-							Our purpose is to connect with other proffesionals and share skill sets and accomplisments. Hiring managers and recruiters have the ability to search a compiled database of candidates that meet their criteria.
-						</p>
-						<p>
-							<a class="btn" href="#">Get Started Here »</a>
-						</p><img alt="140x140" src = "  http://proconnect.herokuapp.com/assets/images/proConnect.jpg " class="img-rounded" />
-					</div>
+					
 					<div class="col-md-4 column">
 					</div>
 					<div class="col-md-4 column">
-						<h2>
-							Take proConnect with you
-						</h2>
+						
 						<p>
-ProConnect provides an Android application were users can disscuss and share experiences on the go.
-						</p>
-						<p>
-							<a class="btn" href="#">View details »</a>
+							
 						</p><img alt="140x140" src=" http://www.smallbusinesscomputing.com/imagesvr_ce/9337/Technology_350.jpg" class="img-rounded" />
 					</div>
 				</div>
@@ -111,32 +96,26 @@ ProConnect provides an Android application were users can disscuss and share exp
 
                     <h3 style="color:green",class ="text-left">  <b> About us </b>
                     <p>
-                    Welcome to Proconnect, a professional networking service - a networking service that helps professional to connect with worlds of professions
+                    Welcome to Proconnect, a professional networking service - a networking service which helps you take your professional network to the next level.
+                    Our goal is to help you connect with other proffesionals and share skill sets and accomplisments. Hiring managers and recruiters have the ability to search a compiled database of candidates that meet their criteria.
                      </p>
 </h3>
-<p></p>
                     <h3 style="color:black",class ="text-left",style="font-size:200%"> <b>Mission</b>
                     <p>
-                     Our Mission is to help people to create a profile and connect with other professionals, to join discussions, share experiences, and make announcements.
+                     Our mission is to help people create a personal profile and connect with other professionals, to join discussions, share experiences, and make announcements.
                     </p>
 </h3>
-<p></p>
 
+<h3 style="color:black",class ="text-left",style="font-size:200%"> <b>ProConnect On the Go</b>
+<p>
+Download the ProConnect app on Google Play and take part in discussions and share your experiences on the go.
+</p>
                    <h3 style="color:green",class ="text-left">  <b>Information</b>
-                    <p>
-                   Procennect is publicly held and has a diversified business model
-                    </p>
-                    <p></p>
-                    <p></p>
                     <p style="color:black">
                       For more information about our company, please visit our Company Page.
                       </p>
-                    <p>
-
-                    </p>
-                    <p></p>
              <p>
-              For more information, please contact us at proconect.com.
+              For more information, please contact us at supportproConnectors.com.
              </p>
 
    </h3>
@@ -145,7 +124,7 @@ ProConnect provides an Android application were users can disscuss and share exp
         <div class="col-xs-3 column">
         </div>
       </div>
-""")))})),format.raw/*120.2*/("""
+""")))})),format.raw/*99.2*/("""
 """))}
     }
     
@@ -158,11 +137,11 @@ ProConnect provides an Android application were users can disscuss and share exp
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri May 01 23:52:09 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/about.scala.html
-                    HASH: cd453643d0689b0f8ee1f4616ecf3768e73c477c
-                    MATRIX: 864->1|890->19|928->20|994->51|1008->57|1065->93|1627->619|1648->631|1722->682|4941->3869
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|148->120
+                    DATE: Sat May 02 16:14:50 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/about.scala.html
+                    HASH: d59b59fd2cdc5d7e6347a1e3d7f23a6f0dfec6ae
+                    MATRIX: 864->1|890->19|928->20|995->52|1009->58|1066->94|1641->633|1662->645|1736->696|4502->3431
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|127->99
                     -- GENERATED --
                 */
             

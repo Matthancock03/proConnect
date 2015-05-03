@@ -33,23 +33,19 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<h3>
-				Forums</br ><br /><br />
+				Forums</br ><br />
 			</h3>
 
 
 <div class="container">
 	<div class="row clearfix">
 		<div class="col-md-6 column">
-			 <button type="button" class="btn btn-success">New Forum</button>
+		<p align ="right">
+			 <button type="button" class="btn btn-success">New Forum</button><br /><br />
+			 </p>
 		</div>
 		<div class="col-md-6 column">
-			 <form class="navbar-form navbar-right" role="search">
-
-		      <div class="form-group">
-		        <input type="text" class="form-control" placeholder="Search for Forums">
-		      </div>
-		      <button type="submit" class="btn btn-success">Submit</button>
-		    </form>
+		
 
 		</div>
 		</div>
@@ -239,7 +235,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 		</div>
 	</div>
 </div>
-""")))})),format.raw/*214.2*/("""
+""")))})),format.raw/*210.2*/("""
 """))}
     }
     
@@ -252,11 +248,11 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri May 01 23:52:08 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/forum.scala.html
-                    HASH: 5dfae69aa675e998b2c43de550729291d4002c9f
-                    MATRIX: 864->1|890->19|928->20|966->24|980->30|1008->37|7758->6755
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|242->214
+                    DATE: Sat May 02 16:34:45 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/forum.scala.html
+                    HASH: cc0077a0acc79439cef17af8373378b463b46e97
+                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|7732->6729
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|238->210
                     -- GENERATED --
                 */
             
