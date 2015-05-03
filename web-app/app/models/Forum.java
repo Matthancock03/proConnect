@@ -51,10 +51,15 @@ public Forum (String header, String topBody){
     body = topBody;
   }
 
-  public List<Forum> getForumArray(){
+  public static List<Forum> getForumArray(){
 
     List<Forum> forumArray = Forum.find.all();
     return forumArray;
+  }
+  public static Forum getForumItem(Long id){
+
+    Forum forumIt = Forum.find.where().eq("forumId",id).findUnique();
+    return forumIt;
   }
 
   public static Finder<Long,Forum> find = new Finder<Long,Forum>(

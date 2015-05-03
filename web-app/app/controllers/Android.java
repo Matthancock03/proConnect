@@ -67,7 +67,7 @@ public class Android extends Controller{
     }
 
    return ok("Bind Sucessful");
- }
+  }
 
 
   /**This creates a HTTP response in regards to creating a new account on the Android platform.

@@ -64,10 +64,10 @@ public class UserModel  extends Model{
 
 
   public static UserModel loadUserModel(Identity user){
-    String userEmail = user.email().get() != null ? user.email().get() : "No email provided";
-    Logger.debug(userEmail);
+    Logger.debug("loadUserModel Identity email: " + user.email().get());
+    String userEmail = user.email().get();
     UserModel newUserModel = UserModel.find.where().eq("email", userEmail).findUnique();
-
+    Logger.debug("LoadUserModel UserModel email : " + userEmail);
     return newUserModel;
   }
 
@@ -76,6 +76,11 @@ public class UserModel  extends Model{
     Logger.debug("Find email: email");
     UserModel newUserModel = UserModel.find.where().eq("email", email).findUnique();
 
+    return newUserModel;
+  }
+
+  public static List<UserModel> findByName(String name){
+    List<UserModel> newUserModel = find.where().ilike("userName", "%" + name + "%").findList();
     return newUserModel;
   }
 

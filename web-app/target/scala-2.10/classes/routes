@@ -20,6 +20,7 @@ POST     /getFormData              controllers.DbController.getFormData()
 GET      /systemEntry              controllers.Application.systemEntry()
 GET      /forumItem                controllers.Application.forumItem()
 GET      /getProfilePic            controllers.DbController.getProfilePic(email: String)
+GET      /sendMessage              controllers.UserController.sendMessage()
 
 ########## Android###################
 GET      /androidLogin             controllers.Android.androidLogin(email: String, password: String)

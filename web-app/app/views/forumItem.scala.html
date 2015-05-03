@@ -1,4 +1,4 @@
-@(forumItems: List[Forum])
+@(forumItem: Forum)
 @main("ProConnect") {
 @navbar.render()
 
@@ -6,7 +6,6 @@
 <div class="container-fluid">
 
 		<div class="feed-div">
-			@for(forumItem <- forumItems){
 				@if(forumItem.topicHeader != ""){
 					<div class="panel panel-default">
 						<div class="panel-body">
@@ -18,8 +17,6 @@
 					</div>
 				</div>
 				}
-
-			}
 		</div>
 
 

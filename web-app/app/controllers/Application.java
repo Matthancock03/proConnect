@@ -42,12 +42,15 @@ public static Result forum(){
   }
 
 public static Result forumItem(){
-  List<Forum> forumList = new ArrayList();
   Forum forumIt = new Forum();
+  try{
+    Long idNumber =  new Long(000000000001);
+    forumIt = Forum.getForumItem(idNumber);
+  }catch(Exception e){
   forumIt.topicHeader = "How to Prepare for an Interview";
   forumIt.body = "Interviews could be stressful. You can build confidence and ace your interview with these 7 simple and easy steps and give a great first impression to the employer.";
-  forumList.add(forumIt);
-  return ok(forumItem.render(forumList));
+  }
+  return ok(forumItem.render(forumIt));
 }
   /**This produces a HTTP result for the connections page.
  * @return a 200 response that will render the connections page on the screen.
