@@ -2,6 +2,9 @@
   background-color: #25aaa0;
   height: 350px;
 }
+body {
+  background-color: #ebebeb;
+}
 .bottom-text {
   margin-top: 25px;
 }

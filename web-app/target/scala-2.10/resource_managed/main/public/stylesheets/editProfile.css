@@ -4,6 +4,9 @@
   padding-left: 50px;
   padding-right: 50px;
 }
+body {
+  background-color: #ebebeb;
+}
 .img-div {
   background-color: #6c6e70;
   padding-top: 25px;
