@@ -30,54 +30,103 @@ Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any
  """),_display_(Seq[Any](/*4.3*/navbar/*4.9*/.render)),format.raw/*4.16*/("""
 
 
-
 <div class="container">
 	<div class="row clearfix">
-		<div class="col-md-12 column">
-
-			<h3>
-				Advanced People Search
-			</h3>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">
-						Relationship
-					</h3>
-				</div>
-				<div class="panel-body">
-					Compnaies
-				</div>
-				<div class="panel-footer">
-					Location
-				</div>
-			</div>
-			<ul class="pagination">
-				<li>
-					<a href="#">Prev</a>
-				</li>
-				<li>
-					<a href="#">1</a>
-				</li>
-				<li>
-					<a href="#">2</a>
-				</li>
-				<li>
-					<a href="#">3</a>
-				</li>
-				<li>
-					<a href="#">4</a>
-				</li>
-				<li>
-					<a href="#">5</a>
-				</li>
-				<li>
-					<a href="#">Next</a>
-				</li>
-			</ul>
+		<div class="col-md-5 column">
+			<img alt="140x140" src="http://www.clker.com/cliparts/z/1/T/u/9/2/search-icon-md.png"  width="42" height="42" />
 		</div>
 	</div>
 </div>
-""")))})),format.raw/*54.2*/("""
+
+
+
+
+
+<br />
+<br />
+<br />
+<br />
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+	<div class="row clearfix">
+
+
+<li><a href="#search"></a>
+  <ul>
+  <li><form id="searchbar">
+      <input type="text">
+      </form></li>
+ </ul>
+</li>
+
+
+
+		<div class="col-md-6 column">
+			<h3>
+				People Search
+				<br />
+<br />
+<font size="2">
+<form action="">
+<input type="checkbox" name="vehicle" value="Bike">People<br />
+<input type="checkbox" name="vehicle" value="Car">Relationship <br />
+<input type="checkbox" name="vehicle" value="Bike">Profession<br />
+<input type="checkbox" name="vehicle" value="Car">School<br />
+</font>
+</form>
+		</h3> <a href="#" class="btn" type="button" style="background-color:lightgreen">Search</a>
+	
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<li><a href="#search"></a>
+  <ul>
+  <li><form id="searchbar">
+      <input type="text">
+      </form></li>
+ </ul>
+</li>
+
+		<div class="col-md-6 column">
+			<h3>
+
+
+
+				Job Search <br />
+<br />
+<font size="2">
+<form action="">
+<input type="checkbox" name="vehicle" value="Bike">Jobs<br />
+<input type="checkbox" name="vehicle" value="Car">Companies <br />
+<input type="checkbox" name="vehicle" value="Bike">Industry<br />
+</font>
+</form>
+
+
+
+
+			</h3> <a href="#" class="btn" type="button" style="background-color:lightgreen">Search</a>
+		</div>
+	</div>
+</div>
+
+
+
+""")))})),format.raw/*103.2*/("""
 """))}
     }
     
@@ -90,11 +139,11 @@ Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat May 02 13:10:11 PDT 2015
+                    DATE: Sat May 02 17:51:22 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/search.scala.html
-                    HASH: bff5559246d59439a724c49cbfee133cf614f74d
-                    MATRIX: 865->3|891->21|930->23|967->26|980->32|1008->39|1795->795
-                    LINES: 29->3|29->3|29->3|30->4|30->4|30->4|80->54
+                    HASH: a41b162bb3204a8e4fad66b03465583b5a95c416
+                    MATRIX: 865->3|891->21|930->23|967->26|980->32|1008->39|2573->1572
+                    LINES: 29->3|29->3|29->3|30->4|30->4|30->4|129->103
                     -- GENERATED --
                 */
             
