@@ -41,9 +41,9 @@ Seq[Any](format.raw/*1.27*/("""
 <div class="container">
 	<div class="row clearfix">
 		<div class="col-md-6 column">
-		<p align ="right">
-			 <button type="button" class="btn btn-success">New Forum</button><br /><br />
-			 </p>
+	
+			 <button type="button" class="btn btn-success" align="right">New Forum</button><br /><br />
+
 		</div>
 		<div class="col-md-6 column">
 		
@@ -75,7 +75,7 @@ Seq[Any](format.raw/*1.27*/("""
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img src="http://www.jobinterviewperfection.com/images/interview-success.jpg" width="400" height="400"/>
+						<img src="http://usajobs.me/wp-content/uploads/2015/03/business-women-success.jpg" />
 						<div class="caption">
 							<h3>
 								How to Get a Job With No Experience
@@ -141,7 +141,7 @@ Seq[Any](format.raw/*1.27*/("""
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img src="http://familywings.org/wp-content/uploads/2011/04/a-paper_11.jpg" width="200" height="200"/>
+						<img src="http://gomdl.com/wp-content/uploads/2013/03/Student-Studying.jpg"/>
 						<div class="caption">
 							<h3>
 								Study Tips
@@ -208,35 +208,9 @@ Seq[Any](format.raw/*1.27*/("""
 			</div>
 		</div>
 	</div>
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<ul class="pagination">
-				<li>
-					<a href="#">Prev</a>
-				</li>
-				<li>
-					<a href="#">1</a>
-				</li>
-				<li>
-					<a href="#">2</a>
-				</li>
-				<li>
-					<a href="#">3</a>
-				</li>
-				<li>
-					<a href="#">4</a>
-				</li>
-				<li>
-					<a href="#">5</a>
-				</li>
-				<li>
-					<a href="#">Next</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+	
 </div>
-""")))})),format.raw/*211.2*/("""
+""")))})),format.raw/*185.2*/("""
 """))}
     }
     
@@ -249,11 +223,11 @@ Seq[Any](format.raw/*1.27*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun May 03 21:22:29 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/forum.scala.html
-                    HASH: 68536d36e32d8ef467802415724e42641aec9bb1
-                    MATRIX: 779->1|898->26|934->28|960->46|998->47|1036->51|1050->57|1078->64|7593->6547
-                    LINES: 26->1|29->1|30->2|30->2|30->2|31->3|31->3|31->3|239->211
+                    DATE: Sun May 03 23:25:00 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/forum.scala.html
+                    HASH: 0ed583cc05575e4ea7cb8b32766f6d36723ed872
+                    MATRIX: 779->1|898->26|935->29|961->47|999->48|1038->53|1052->59|1080->66|7308->6262
+                    LINES: 26->1|29->1|30->2|30->2|30->2|31->3|31->3|31->3|213->185
                     -- GENERATED --
                 */
             

@@ -1,0 +1,25 @@
+@(jobItem: Forum)
+@main("ProConnect") {
+@navbar.render()
+
+
+<div class="container-fluid">
+
+		<div class="feed-div">
+				@if(jobItem.topicHeader != ""){
+					<div class="panel panel-default">
+						<div class="panel-body">
+						<div>
+							<h3 class="panel-title head-text feed-head">@jobItem.topicHeader</h3>
+						</div>
+						<br>
+						<p style="padding-top: 10px;">@jobItem.body</p>
+					</div>
+				</div>
+				}
+		</div>
+
+
+	
+</div>
+}

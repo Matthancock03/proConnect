@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 // @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
 // @HASH:be2725e0e55c2aba1fed04b9369831c0ece17d17
 // @DATE:Sun May 03 23:11:17 PDT 2015
+=======
+// @SOURCE:C:/Users/Roya/Documents/GitHub/proConnect/web-app/conf/routes
+// @HASH:6181ff6d87079987fbe7da3d9c92acdfaaaa7fb3
+// @DATE:Sun May 03 21:30:40 PDT 2015
+>>>>>>> f5d7bb961f10beffc7185a311b322c15f074366a
 
 package securesocial.controllers;
 
