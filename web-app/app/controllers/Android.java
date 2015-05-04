@@ -70,7 +70,10 @@ public class Android extends Controller{
     try{
       user = UserModel.loadUserModel(email);
     }
+catch (Exception e){
+  System.out.println("Exception");
 
+}
     user.userName = json.get("userName").textValue();
 
 
