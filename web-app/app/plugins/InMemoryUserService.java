@@ -69,18 +69,7 @@ public class InMemoryUserService extends BaseUserService {
 
     @Override
     public Identity doFindByEmailAndProvider(String email, String providerId) {
-        Identity result = null;
-        for( Identity user : users.values() ) {
-            Option<String> optionalEmail = user.email();
-            if ( user.identityId().providerId().equals(providerId) &&
-                 optionalEmail.isDefined() &&
-                 optionalEmail.get().equalsIgnoreCase(email))
-            {
-                result = user;
-                break;
-            }
-        }
-        return result;
+      return doFind(new IdentityId(email, providerId));
     }
 
     @Override

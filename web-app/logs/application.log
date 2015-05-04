@@ -1,360 +1,51 @@
-2015-05-04 09:22:15,000 - [INFO] - from play in pool-6-thread-4 
+2015-05-04 10:00:17,459 - [INFO] - from play in pool-6-thread-1 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-05-04 09:22:51,608 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-04 10:01:11,183 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
 
-2015-05-04 09:22:53,709 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-04 10:01:13,045 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
 
-2015-05-04 09:22:54,779 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-04 10:01:13,564 - [INFO] - from play in play-internal-execution-context-1 
 Starting application default Akka system.
 
-2015-05-04 09:22:54,825 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+2015-05-04 10:01:13,609 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
 [securesocial] calling deleteExpiredTokens()
 
-2015-05-04 09:22:54,828 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-04 10:01:13,613 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded user service: class plugins.InMemoryUserService
 
-2015-05-04 09:22:54,831 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-04 10:01:13,615 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded password hasher bcrypt
 
-2015-05-04 09:22:54,858 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-04 10:01:13,620 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: facebook
 
-2015-05-04 09:22:54,859 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-04 10:01:13,620 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: google
 
-2015-05-04 09:22:54,859 - [INFO] - from application in play-internal-execution-context-1 
+2015-05-04 10:01:13,621 - [INFO] - from application in play-internal-execution-context-1 
 [securesocial] loaded identity provider: userpass
 
-2015-05-04 09:22:54,880 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-04 10:01:13,629 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-05-04 09:23:11,702 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
+2015-05-04 10:01:18,298 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
 [securesocial] bootstrap path = securesocial/bootstrap/css/bootstrap.min.css
 
-2015-05-04 09:23:11,703 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
+2015-05-04 10:01:18,299 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
 [securesocial] assets controller = controllers.ReverseAssets
 
-2015-05-04 09:23:11,705 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
+2015-05-04 10:01:18,301 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
 [securesocial] favicon path = securesocial/images/favicon.png
 
-2015-05-04 09:23:11,707 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
+2015-05-04 10:01:18,302 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
 [securesocial] Jquery path = securesocial/javascripts/jquery-1.7.1.min.js
 
-2015-05-04 09:23:11,710 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
+2015-05-04 10:01:18,303 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
 [securesocial] custom css path = None
 
-2015-05-04 09:23:15,383 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
-[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
-
-2015-05-04 09:23:15,384 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
-[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=f47e80e4-4cb6-492d-b975-cbbe0953d4c5]
-
-2015-05-04 09:23:16,592 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
-[securesocial] got json back [{"access_token":"ya29.aQFrpqEGf837VNfSm7xN3IlGQ5sZwjlLJGtymoJ_UmA3OVPUQdDFBSD4ElANx-XfKrnAWgyx1KN9Ig","token_type":"Bearer","expires_in":3599,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjE1NWNkYTNhNDE3ZWY2ZmFkNjI5ZTc5YzljYWMxYzM4ZDQwODkxYmEifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTA3OTI1NDIxNzg4ODI3MzA5NTIxIiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6Im1hdHRoYW5jb2NrMDNAZ21haWwuY29tIiwiYXRfaGFzaCI6ImpCN2VHZGpuN1g4NnY3Nnk5UV9lRFEiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0MzA3NTY1OTYsImV4cCI6MTQzMDc2MDE5Nn0.If4sAp-vQS8zF3gSbtoScxFY9iTUECvJ7c3eV5GBetGvvxeoNUD8PCb51szgj628gd0THRz9z8HjA_7xTLRldVLGawPzX9OKUDohNQKufP5g_D5oLFXboSllfUJ5bukvQQFvqh7Lu3_hb0lBmacuWh4YUMDHQNU_vFITWiNhQmo"}]
-
-2015-05-04 09:23:16,645 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
-[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.aQFrpqEGf837VNfSm7xN3IlGQ5sZwjlLJGtymoJ_UmA3OVPUQdDFBSD4ElANx-XfKrnAWgyx1KN9Ig,Some(Bearer),Some(3599),None)),None))
-
-2015-05-04 09:23:17,116 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
-[securesocial] user logged in : [SocialUser(IdentityId(107925421788827309521,google),Matthew,Hancock,Matthew Hancock,Some(matthancock03@gmail.com),Some(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.aQFrpqEGf837VNfSm7xN3IlGQ5sZwjlLJGtymoJ_UmA3OVPUQdDFBSD4ElANx-XfKrnAWgyx1KN9Ig,Some(Bearer),Some(3599),None)),None)]
-
-2015-05-04 09:23:17,267 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
-google
-
-2015-05-04 09:23:17,268 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:23:17,549 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:23:17,567 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:23:17,769 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:23:17,770 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
-Matthew Hancock
-
-2015-05-04 09:23:18,639 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
-Find email: email
-
-2015-05-04 09:23:30,600 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:23:30,784 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:23:30,785 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
-Matthew Hancock
-
-2015-05-04 09:23:31,404 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
-Find email: email
-
-2015-05-04 09:23:34,384 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
-google
-
-2015-05-04 09:23:34,384 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:23:34,564 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:23:36,343 - [DEBUG] - from application in play-akka.actor.default-dispatcher-4 
-Find email: email
-
-2015-05-04 09:23:41,565 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:23:41,743 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:27:54,835 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
+2015-05-04 10:06:13,616 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
 [securesocial] calling deleteExpiredTokens()
-
-2015-05-04 09:32:54,835 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
-[securesocial] calling deleteExpiredTokens()
-
-2015-05-04 09:37:54,835 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
-[securesocial] calling deleteExpiredTokens()
-
-2015-05-04 09:42:25,003 - [INFO] - from application in play-internal-execution-context-2 
-[securesocial] unloaded identity provider: userpass
-
-2015-05-04 09:42:25,004 - [INFO] - from application in play-internal-execution-context-2 
-[securesocial] unloaded identity provider: google
-
-2015-05-04 09:42:25,005 - [INFO] - from application in play-internal-execution-context-2 
-[securesocial] unloaded identity provider: facebook
-
-2015-05-04 09:42:25,007 - [INFO] - from application in play-internal-execution-context-2 
-[securesocial] unloaded password hasher bcrypt
-
-2015-05-04 09:42:25,010 - [INFO] - from play in play-internal-execution-context-2 
-Shutdown application default Akka system.
-
-2015-05-04 09:42:30,015 - [INFO] - from play in play-internal-execution-context-2 
-database [default] connected at jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
-
-2015-05-04 09:42:30,294 - [INFO] - from application in play-internal-execution-context-2 
-[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2015-05-04 09:42:30,311 - [INFO] - from play in play-internal-execution-context-2 
-Starting application default Akka system.
-
-2015-05-04 09:42:30,312 - [INFO] - from application in play-internal-execution-context-2 
-[securesocial] loaded user service: class plugins.InMemoryUserService
-
-2015-05-04 09:42:30,312 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
-[securesocial] calling deleteExpiredTokens()
-
-2015-05-04 09:42:30,314 - [INFO] - from application in play-internal-execution-context-2 
-[securesocial] loaded password hasher bcrypt
-
-2015-05-04 09:42:30,316 - [INFO] - from application in play-internal-execution-context-2 
-[securesocial] loaded identity provider: facebook
-
-2015-05-04 09:42:30,316 - [INFO] - from application in play-internal-execution-context-2 
-[securesocial] loaded identity provider: google
-
-2015-05-04 09:42:30,316 - [INFO] - from application in play-internal-execution-context-2 
-[securesocial] loaded identity provider: userpass
-
-2015-05-04 09:42:30,317 - [INFO] - from play in play-internal-execution-context-2 
-Application started (Dev)
-
-2015-05-04 09:42:37,089 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
-[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
-
-2015-05-04 09:42:37,093 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
-[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=b19a562d-3896-46aa-9591-ff17ae16f76b]
-
-2015-05-04 09:42:37,476 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
-[securesocial] got json back [{"access_token":"ya29.aQFQIu8ZzPR93CrHVtDh0bP24tcWFwsp1TfJ0AU1_CiSvK4PmhnhrG2SQAlnRUkDbfuoIU5j5G8NAA","token_type":"Bearer","expires_in":3600,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjE1NWNkYTNhNDE3ZWY2ZmFkNjI5ZTc5YzljYWMxYzM4ZDQwODkxYmEifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTA3OTI1NDIxNzg4ODI3MzA5NTIxIiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6Im1hdHRoYW5jb2NrMDNAZ21haWwuY29tIiwiYXRfaGFzaCI6Imt0S3VVdk9fTkZOeEJrekV0ckRqb0EiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0MzA3NTc3NTcsImV4cCI6MTQzMDc2MTM1N30.hpyrtMU7Il9LJ6PnF0kQLGCRgNvZhekS79fJyuE20bzSDj5WP_OEU-uzEM3xqqN7ci3PrrrWjd2yX7e2IWJGCvhlkGsclXfOm6bFj1taR4kGsvdgQ4kWkZxr0l7pWU6dJ_YzG1cp8aGpYu2B48n9dTuYLHdDinAu4eYBFbdVANs"}]
-
-2015-05-04 09:42:37,477 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
-[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.aQFQIu8ZzPR93CrHVtDh0bP24tcWFwsp1TfJ0AU1_CiSvK4PmhnhrG2SQAlnRUkDbfuoIU5j5G8NAA,Some(Bearer),Some(3600),None)),None))
-
-2015-05-04 09:42:37,792 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
-[securesocial] user logged in : [SocialUser(IdentityId(107925421788827309521,google),Matthew,Hancock,Matthew Hancock,Some(matthancock03@gmail.com),Some(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.aQFQIu8ZzPR93CrHVtDh0bP24tcWFwsp1TfJ0AU1_CiSvK4PmhnhrG2SQAlnRUkDbfuoIU5j5G8NAA,Some(Bearer),Some(3600),None)),None)]
-
-2015-05-04 09:42:37,824 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
-google
-
-2015-05-04 09:42:37,824 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:42:38,015 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:42:38,019 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:42:38,212 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:42:38,213 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
-Matthew Hancock
-
-2015-05-04 09:42:38,896 - [DEBUG] - from application in play-akka.actor.default-dispatcher-16 
-Find email: email
-
-2015-05-04 09:42:55,271 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:42:55,448 - [DEBUG] - from application in play-akka.actor.default-dispatcher-7 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:42:56,176 - [DEBUG] - from application in play-akka.actor.default-dispatcher-14 
-Find email: email
-
-2015-05-04 09:46:59,768 - [DEBUG] - from application in play-akka.actor.default-dispatcher-22 
-User already logged in, skipping login page. Redirecting to /systemEntry
-
-2015-05-04 09:46:59,781 - [DEBUG] - from application in play-akka.actor.default-dispatcher-13 
-google
-
-2015-05-04 09:46:59,781 - [DEBUG] - from application in play-akka.actor.default-dispatcher-13 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:46:59,958 - [DEBUG] - from application in play-akka.actor.default-dispatcher-13 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:46:59,958 - [DEBUG] - from application in play-akka.actor.default-dispatcher-13 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:47:00,136 - [DEBUG] - from application in play-akka.actor.default-dispatcher-13 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:47:00,136 - [DEBUG] - from application in play-akka.actor.default-dispatcher-13 
-Matthew Hancock
-
-2015-05-04 09:47:01,209 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
-Find email: email
-
-2015-05-04 09:47:05,770 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:47:05,949 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:47:06,671 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
-Find email: email
-
-2015-05-04 09:47:09,765 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:47:09,937 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:47:09,938 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
-Matthew Hancock
-
-2015-05-04 09:47:10,568 - [DEBUG] - from application in play-akka.actor.default-dispatcher-20 
-Find email: email
-
-2015-05-04 09:47:15,787 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:47:15,965 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:47:26,221 - [DEBUG] - from application in play-akka.actor.default-dispatcher-22 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:47:26,398 - [DEBUG] - from application in play-akka.actor.default-dispatcher-22 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:47:30,324 - [DEBUG] - from application in play-akka.actor.default-dispatcher-22 
-[securesocial] calling deleteExpiredTokens()
-
-2015-05-04 09:48:25,768 - [INFO] - from application in play-internal-execution-context-6 
-[securesocial] unloaded identity provider: userpass
-
-2015-05-04 09:48:25,769 - [INFO] - from application in play-internal-execution-context-6 
-[securesocial] unloaded identity provider: google
-
-2015-05-04 09:48:25,769 - [INFO] - from application in play-internal-execution-context-6 
-[securesocial] unloaded identity provider: facebook
-
-2015-05-04 09:48:25,769 - [INFO] - from application in play-internal-execution-context-6 
-[securesocial] unloaded password hasher bcrypt
-
-2015-05-04 09:48:25,769 - [INFO] - from play in play-internal-execution-context-6 
-Shutdown application default Akka system.
-
-2015-05-04 09:48:30,518 - [INFO] - from play in play-internal-execution-context-6 
-database [default] connected at jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
-
-2015-05-04 09:48:30,799 - [INFO] - from application in play-internal-execution-context-6 
-[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
-
-2015-05-04 09:48:30,821 - [INFO] - from play in play-internal-execution-context-6 
-Starting application default Akka system.
-
-2015-05-04 09:48:30,826 - [INFO] - from application in play-internal-execution-context-6 
-[securesocial] loaded user service: class plugins.InMemoryUserService
-
-2015-05-04 09:48:30,826 - [INFO] - from application in play-internal-execution-context-6 
-[securesocial] loaded password hasher bcrypt
-
-2015-05-04 09:48:30,826 - [INFO] - from application in play-internal-execution-context-6 
-[securesocial] loaded identity provider: facebook
-
-2015-05-04 09:48:30,826 - [INFO] - from application in play-internal-execution-context-6 
-[securesocial] loaded identity provider: google
-
-2015-05-04 09:48:30,826 - [INFO] - from application in play-internal-execution-context-6 
-[securesocial] loaded identity provider: userpass
-
-2015-05-04 09:48:30,826 - [INFO] - from play in play-internal-execution-context-6 
-Application started (Dev)
-
-2015-05-04 09:48:30,826 - [DEBUG] - from application in play-akka.actor.default-dispatcher-17 
-[securesocial] calling deleteExpiredTokens()
-
-2015-05-04 09:48:35,148 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
-[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
-
-2015-05-04 09:48:35,149 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
-[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=a40d3bb1-0246-488e-b7bc-aca11a97478a]
-
-2015-05-04 09:48:35,534 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
-[securesocial] got json back [{"access_token":"ya29.aQExdfqa71D7BHd30dxRzY6b0FJfgYVbeWOVIl2ajoKgJU8kija31frIW-3aNV0gZo8z1-_o-rE0KA","token_type":"Bearer","expires_in":3600,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjE1NWNkYTNhNDE3ZWY2ZmFkNjI5ZTc5YzljYWMxYzM4ZDQwODkxYmEifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTA3OTI1NDIxNzg4ODI3MzA5NTIxIiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6Im1hdHRoYW5jb2NrMDNAZ21haWwuY29tIiwiYXRfaGFzaCI6IlNfeG9xSGltMXA5cno2ZXBISUEtS0EiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0MzA3NTgxMTUsImV4cCI6MTQzMDc2MTcxNX0.QuA2KlMHH5iqLzV9kV81a1ADnZdOvLGvZvTOMbARZPSZezAyr7yA0zLxeSt-BbyBDZHRrVPcbN6JX0dcrpfcYCqfXLoS-r7CGciOcRv0pmF62HsvdPazJ2SHa253HCYCHhRRZ0MIRBgCjBRD0AmA355_gLmgjlhdUbxrWPE8EDY"}]
-
-2015-05-04 09:48:35,535 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
-[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.aQExdfqa71D7BHd30dxRzY6b0FJfgYVbeWOVIl2ajoKgJU8kija31frIW-3aNV0gZo8z1-_o-rE0KA,Some(Bearer),Some(3600),None)),None))
-
-2015-05-04 09:48:35,853 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
-[securesocial] user logged in : [SocialUser(IdentityId(107925421788827309521,google),Matthew,Hancock,Matthew Hancock,Some(matthancock03@gmail.com),Some(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.aQExdfqa71D7BHd30dxRzY6b0FJfgYVbeWOVIl2ajoKgJU8kija31frIW-3aNV0gZo8z1-_o-rE0KA,Some(Bearer),Some(3600),None)),None)]
-
-2015-05-04 09:48:35,879 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
-google
-
-2015-05-04 09:48:35,879 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:48:36,065 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:48:36,068 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:48:36,255 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
-LoadUserModel UserModel email : matthancock03@gmail.com
-
-2015-05-04 09:48:36,255 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
-Matthew Hancock
-
-2015-05-04 09:48:37,022 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
-Find email: email
-
-2015-05-04 09:48:39,442 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
-loadUserModel Identity email: matthancock03@gmail.com
-
-2015-05-04 09:48:39,618 - [DEBUG] - from application in play-akka.actor.default-dispatcher-25 
-LoadUserModel UserModel email : matthancock03@gmail.com
 
