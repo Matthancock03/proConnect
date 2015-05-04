@@ -58,26 +58,26 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 
 	</div>
 		<div class="row clearfix">
-			<div class="col-md-12 column">
+			<div class="col-xs-4 column">
 				<div class="row clearfix">
-					
-					<div class="col-md-4 column">
+
+					<div class="col-xs-4 column">
 					</div>
-					<div class="col-md-4 column">
-						
+					<div class="col-xs-4 column">
+
 						<p>
-							
+
 						</p><img alt="140x140" src=" http://www.smallbusinesscomputing.com/imagesvr_ce/9337/Technology_350.jpg" class="img-rounded" />
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row clearfix">
-			<div class="col-md-4 column">
+			<div class="col-xs-4 column">
 			</div>
-			<div class="col-md-4 column">
+			<div class="col-xs-4 column">
 			</div>
-			<div class="col-md-4 column">
+			<div class="col-xs-4 column">
 			</div>
 
 
@@ -137,10 +137,10 @@ Download the ProConnect app on Google Play and take part in discussions and shar
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon May 04 00:25:35 PDT 2015
+                    DATE: Mon May 04 08:12:11 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/about.scala.html
-                    HASH: 5240d72a31b8c0f5dcabde7219cd8317abd71f8f
-                    MATRIX: 864->1|890->19|928->20|994->51|1008->57|1065->93|1627->619|1648->631|1722->682|4404->3333
+                    HASH: 2f3cc57ca2cbeb06f9fa540ba50c380462bc0f5c
+                    MATRIX: 864->1|890->19|928->20|994->51|1008->57|1065->93|1627->619|1648->631|1722->682|4385->3314
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|127->99
                     -- GENERATED --
                 */
