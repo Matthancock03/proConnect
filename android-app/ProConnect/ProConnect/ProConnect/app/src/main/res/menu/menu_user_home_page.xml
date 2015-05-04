@@ -9,4 +9,5 @@
     <item android:id="@+id/Connections" android:title="Connections" />
     <item android:id="@+id/jobs" android:title="Jobs" />
     <item android:id="@+id/Search" android:title="Search" />
+    <item android:id="@+id/LogOut" android:title="Log Out" />
 </menu>

@@ -12,6 +12,7 @@ import android.os.StrictMode;
 import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,75 +23,58 @@ import android.widget.Toast;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
-/**<p>
- * RegisterPremiumUser display the xml file for
- * A premium user registration form.
- * </p>
- * <p>
- * User will be asked to fill out entire form
- * and can choose to upload a profile picture if they wish.
- * </p>
- *
- * Account will be created for user, once the form is complete.
- *
- *<p>
- *User will be notified if fields are missing, or if
- *email is already in the system.
- *</p>
- *
- */
-public class RegisterPremiumUser extends ActionBarActivity {
+
+
+public class BeginningInfoPage extends ActionBarActivity {
+
     private static final int GALLERY = 0;
     private static final int CAMERA = 1;
     private Intent getPictureIntent = null;
+    private EditText etFname,etLname,etCurrentEmployer,etRecentSchool,etLocation,etExperience,etEducation,etProjects,etAboutMe;
     private ImageView profilePic;
-    private EditText etPassword,etConfirmPassword,etEmail;
     private Button Submit,photoSubmit;
     InputStream is = null;
+    String set = "";
     String result = "";
-    int success = 0;
+    String success = "";
+    String json = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_premium_user);
+        setContentView(R.layout.activity_beginning_info_page);
+
+        etFname = (EditText) findViewById(R.id.FirstNameEdit);
+        etLname = (EditText) findViewById(R.id.LastNameEdit);
+        etCurrentEmployer = (EditText) findViewById(R.id.CurrentEmployerEdit);
+        etRecentSchool = (EditText) findViewById(R.id.RecentSchoolEdit);
+        etLocation = (EditText) findViewById(R.id.LocationEdit);
+        etExperience = (EditText) findViewById(R.id.ExperienceEdit);
+        etEducation = (EditText) findViewById(R.id.EducationEdit);
+        etProjects = (EditText) findViewById(R.id.ProjectEdit);
+        etAboutMe = (EditText) findViewById(R.id.AboutMeEdit);
+        profilePic = (ImageView) findViewById(R.id.InfoThumbnail);
+        Submit = (Button) findViewById(R.id.InfoSubmitButton);
+        photoSubmit = (Button) findViewById(R.id.PictureButton);
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-        etPassword = (EditText) findViewById(R.id.PremiumPasswordEdit);
-        etConfirmPassword = (EditText) findViewById(R.id.PremiumConfirmPasswordEdit);
-        etEmail = (EditText) findViewById(R.id.PremiumEmailEdit);
-        profilePic = (ImageView) findViewById(R.id.PremiumThumbnail);
-
-        photoSubmit = (Button) findViewById(R.id.PremiumProfilePictureButton);
-        Submit = (Button) findViewById(R.id.PremiumRegisterSubmitButton);
-
-        photoSubmit = (Button) findViewById(R.id.PremiumProfilePictureButton);
-
-        /**<p>
-         * Ask the user if they want to grab the picture from their
-         * gallery, or if they want to take the picture.
-         * </p>
-         *
-         */
         photoSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder chooser = new AlertDialog.Builder(RegisterPremiumUser.this);
+                AlertDialog.Builder chooser = new AlertDialog.Builder(BeginningInfoPage.this);
                 chooser.setTitle("Choose Picture Option");
                 chooser.setMessage("How do you want to upload your picture?");
 
@@ -116,52 +100,61 @@ public class RegisterPremiumUser extends ActionBarActivity {
             }
         });
 
-        /**
-         * Checks to see if fields are filled and user can be registered
-         *
-         */
         Submit.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
-                String password = "" + etPassword.getText().toString();
-                String confirmPassword = ""+etConfirmPassword.getText().toString();
-                String email = ""+etEmail.getText().toString();
 
-                if(confirmPassword.equals(password)) {
-                    if(password.trim().length() !=0 && email.trim().length() !=0) {
-                        ValidateUser validate = new ValidateUser();
-                        validate.execute(new String[]{password, confirmPassword, email});
-                    }
-                    else if(email.trim().length() == 0)
-                    {
-                        Toast.makeText(getApplicationContext(),"Email field blank.",Toast.LENGTH_LONG).show();
-                    }
-                    else if(password.trim().length() == 0)
-                    {
-                        Toast.makeText(getApplicationContext(),"Password field blank.",Toast.LENGTH_LONG).show();
-                    }
+                String firstName = "" + etFname.getText().toString();
+                String lastName = "" + etLname.getText().toString();
+                String CurrentEmployer = "" + etCurrentEmployer.getText().toString();
+                String RecentSchool = "" + etRecentSchool.getText().toString();
+                String Location = "" + etLocation.getText().toString();
+                String Experience = "" + etExperience.getText().toString();
+                String Education = "" + etEducation.getText().toString();
+                String Project = "" + etProjects.getText().toString();
+                String aboutMe = "" + etAboutMe.getText().toString();
 
-                    }else
+                if(firstName.trim().length() !=0 && lastName.trim().length() !=0 && CurrentEmployer.trim().length() !=0 && RecentSchool.trim().length() != 0 && Location.trim().length() !=0 && Education.trim().length() !=0 && Project.trim().length() !=0 && Experience.trim().length() !=0)
                 {
-                    Toast.makeText(getApplicationContext(),"Passwords don't match.",Toast.LENGTH_LONG).show();
+                    UserInfo userinfo = new UserInfo();
+                    userinfo.execute(new String[]{firstName,lastName,CurrentEmployer,RecentSchool,Location,Experience,Education,Project,aboutMe});
+                }
+                else if(firstName.trim().length() == 0)
+                {
+                    Toast.makeText(getApplicationContext(),"First Name field blank.",Toast.LENGTH_LONG).show();
+                }
+                else if(lastName.trim().length() == 0)
+                {
+                    Toast.makeText(getApplicationContext(),"Last Name field blank.",Toast.LENGTH_LONG).show();
+                }
+                else if(CurrentEmployer.trim().length() == 0)
+                {
+                    Toast.makeText(getApplicationContext(),"Current Employer field blank.",Toast.LENGTH_LONG).show();
+                }
+                else if(RecentSchool.trim().length() == 0)
+                {
+                    Toast.makeText(getApplicationContext(),"Recent School field blank.",Toast.LENGTH_LONG).show();
+                }
+                else if(Location.trim().length() == 0)
+                {
+                    Toast.makeText(getApplicationContext(),"Location field blank.",Toast.LENGTH_LONG).show();
+                }
+                else if(Experience.trim().length() == 0)
+                {
+                    Toast.makeText(getApplicationContext(),"Experience field blank.",Toast.LENGTH_LONG).show();
+                }
+                else if(Education.trim().length() == 0)
+                {
+                    Toast.makeText(getApplicationContext(),"Education field blank.",Toast.LENGTH_LONG).show();
+                }
+                else if(Project.trim().length() == 0)
+                {
+                    Toast.makeText(getApplicationContext(),"Project field blank.",Toast.LENGTH_LONG).show();
                 }
             }
         });
     }
 
-
-    /**<p>
-     * This is an overridden method that store an image
-     * and set a thumbnail in an ImageView, based on if
-     * the user chose a picture from the gallery or
-     * if they took the picture at that moment.
-     * </p>
-     *
-     * @param requestCode Checks to see if user picked camera or gallery
-     * @param resultCode Checks to see if operation succeeded
-     * @param data The data of the picture is passed here
-     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -183,36 +176,37 @@ public class RegisterPremiumUser extends ActionBarActivity {
         }
     }
 
-    /**This class handles http requests off the UI thread
-     *
-     * <p>
-     * This class takes the information the user enters and
-     * stores it into a database through an http request.
-     * This will operate outside the UI thread
-     * so the app doesn't appear to be frozen.
-     * </p>
-     *
-     */
-    private class ValidateUser extends AsyncTask<String, Void, String> {
-        /**This is a Asynctask defined method.
-         *
-         * @param params The information that the user wants to store.
-         * @return The string representation of JSON object
-         */
+    private class UserInfo extends AsyncTask<String, Void, String>
+    {
+        @Override
         protected String doInBackground(String... params) {
+            json = "{\"userName\":\"" + params[0] + " " + params[1] + "\"," + "\"currentEmployer\":\"" + params[2] + "\"," + "\"recentSchool\":\"" + params[3] + "\"," + "\"aboutMe\":\"" + params[8] + "\"," + "\"experience\":\"" + params[4] + "\"," + "\"education\":\"" + params[5] + "\"," + "\"projects\":\"" + params[6] + "\"}";
+            try
+            {
+                JSONObject usermodel = new JSONObject(json);
+                set = usermodel.toString();
+            }
+            catch (JSONException e)
+            {
+                e.printStackTrace();
+            }
 
-            try {
+            try
+            {
                 HttpClient httpClient = new DefaultHttpClient();
 
-                HttpPost httpPost = new HttpPost("http://192.168.1.119/Connect_Premium_db.php");
+                HttpPost httpPost = new HttpPost("http://proconnect.herokuapp.com/androidSaveUser");
+
+                httpPost.setEntity(new StringEntity(set));
 
                 HttpResponse response = httpClient.execute(httpPost);
 
                 HttpEntity entity = response.getEntity();
 
                 is = entity.getContent();
-
-            } catch (Exception e) {
+            }
+            catch (Exception e)
+            {
                 e.printStackTrace();
             }
 
@@ -232,35 +226,19 @@ public class RegisterPremiumUser extends ActionBarActivity {
             return result;
         }
 
-        /**<p>
-         * This method converts string into json object
-         * and uses object to determine if user was
-         * able to register.
-         * </p>
-         *
-         * @param s The JSON string passed from doInBackground
-         */
+        @Override
         protected void onPostExecute(String s) {
-            try {
-                JSONObject json = new JSONObject(result);
-                success = json.getInt("Success");
-
-                if (success == 1) {
-                    Toast.makeText(getApplicationContext(), "Account Created!", Toast.LENGTH_LONG).show();
-                    finish();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Username Exists!", Toast.LENGTH_LONG).show();
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
+            if(s.length() != 0) {
+                Toast.makeText(getApplicationContext(),s,Toast.LENGTH_LONG).show();
             }
+            super.onPostExecute(s);
         }
-}
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_register_premium_user, menu);
+        getMenuInflater().inflate(R.menu.menu_beginning_info_page, menu);
         return true;
     }
 

@@ -3,32 +3,30 @@ package com.example.brandon.proconnect;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.media.ThumbnailUtils;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.StrictMode;
 import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.BasicResponseHandler;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
@@ -39,17 +37,30 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**<p>
+ * RegisterRegularUser display the xml file for
+ * A regular user registration form.
+ * </p>
+ * <p>
+ * User will be asked to fill out entire form
+ * and can choose to upload a profile picture if they wish.
+ * </p>
+ *
+ * Account will be created for user, once the form is complete.
+ *
+ *<p>
+ *User will be notified if fields are missing, or if
+ *email is already in the system.
+ *</p>
+ *
+ */
 public class RegisterRegularUser extends ActionBarActivity {
 
-    private static final int GALLERY = 0;
-    private static final int CAMERA = 1;
-    private Intent getPictureIntent = null;
-    private EditText etPassword,etConfirmPassword,etEmail,etFname,etLname;
-    private Button Submit,photoSubmit;
+    private EditText etPassword,etConfirmPassword,etEmail;
+    private Button Submit;
     InputStream is = null;
     String result = "";
-    int success = 0;
+    String success = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,41 +73,13 @@ public class RegisterRegularUser extends ActionBarActivity {
         etPassword = (EditText) findViewById(R.id.RegularPasswordEdit);
         etConfirmPassword = (EditText) findViewById(R.id.RegularConfirmPasswordEdit);
         etEmail = (EditText) findViewById(R.id.RegularEmailEdit);
-        etFname = (EditText) findViewById(R.id.RegularFirstNameEdit);
-        etLname = (EditText) findViewById(R.id.RegularLastNameEdit);
-
         Submit = (Button) findViewById(R.id.RegularSubmitButton);
-        photoSubmit = (Button) findViewById(R.id.RegularProfilePictureButton);
 
-        photoSubmit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder chooser = new AlertDialog.Builder(RegisterRegularUser.this);
-                chooser.setTitle("Choose Picture Option");
-                chooser.setMessage("How do you want to upload your picture?");
 
-                chooser.setPositiveButton("Gallery", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                            getPictureIntent = new Intent(Intent.ACTION_GET_CONTENT, null);
-                            getPictureIntent.setType("image/*");
-                            startActivityForResult(getPictureIntent,GALLERY);
-                    }
-                });
-
-                chooser.setNegativeButton("Camera", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        getPictureIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                        startActivityForResult(getPictureIntent, CAMERA);
-
-                    }
-                });
-
-                chooser.show();
-            }
-        });
-
+        /**
+         * Checks to see if fields are filled and user can be registered
+         *
+         */
         Submit.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -104,29 +87,19 @@ public class RegisterRegularUser extends ActionBarActivity {
                 String password = "" + etPassword.getText().toString();
                 String confirmPassword = ""+etConfirmPassword.getText().toString();
                 String email = ""+etEmail.getText().toString();
-                String fname = ""+etFname.getText().toString();
-                String lname = ""+etLname.getText().toString();
 
                 if(confirmPassword.equals(password)) {
-                    if(password.trim().length() !=0 && email.trim().length() !=0 && fname.trim().length() !=0 && lname.trim().length() !=0) {
+                    if(password.trim().length() !=0 && email.trim().length() !=0) {
                         validateUser validate = new validateUser();
-                        validate.execute(new String[]{password, confirmPassword, email, fname, lname});
-                    }
-                    else if(password.trim().length() == 0)
-                    {
-                        Toast.makeText(getApplicationContext(),"Password field blank.",Toast.LENGTH_LONG).show();
+                        validate.execute(new String[]{password, confirmPassword, email});
                     }
                     else if(email.trim().length() == 0)
                     {
                         Toast.makeText(getApplicationContext(),"Email field blank.",Toast.LENGTH_LONG).show();
                     }
-                    else if(fname.trim().length() == 0)
+                    else if(password.trim().length() == 0)
                     {
-                        Toast.makeText(getApplicationContext(),"First Name field blank.",Toast.LENGTH_LONG).show();
-                    }
-                    else if(lname.trim().length() == 0)
-                    {
-                        Toast.makeText(getApplicationContext(),"Last Name field blank.",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"Password field blank.",Toast.LENGTH_LONG).show();
                     }
 
                 }
@@ -135,24 +108,32 @@ public class RegisterRegularUser extends ActionBarActivity {
                 }
             }
         });
+
     }
 
+    /**This class handles http requests off the UI thread
+     *
+     * <p>
+     * This class takes the information the user enters and
+     * stores it into a database through an http request.
+     * This will operate outside the UI thread
+     * so the app doesn't appear to be frozen.
+     * </p>
+     *
+     */
     private class validateUser extends AsyncTask<String,Void,String>
     {
+        /**This is a Asynctask defined method.
+         *
+         * @param params The information that the user wants to store.
+         * @return The string representation of JSON object
+         */
         protected String doInBackground(String...params) {
-                List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
-
-                nameValuePairs.add(new BasicNameValuePair("password", params[0]));
-                nameValuePairs.add(new BasicNameValuePair("email", params[2]));
-                nameValuePairs.add(new BasicNameValuePair("fname", params[3]));
-                nameValuePairs.add(new BasicNameValuePair("lname", params[4]));
 
                 try {
                     HttpClient httpClient = new DefaultHttpClient();
 
-                    HttpPost httpPost = new HttpPost("http://192.168.1.119/Connect_Regular_db.php");
-
-                    httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+                    HttpGet httpPost = new HttpGet("http://proconnect.herokuapp.com/androidCreateAccount?email=" + params[2] + ";password=" + params[0]);
 
                     HttpResponse response = httpClient.execute(httpPost);
 
@@ -179,16 +160,28 @@ public class RegisterRegularUser extends ActionBarActivity {
             return result;
             }
 
+        /**<p>
+         * This method converts string into json object
+         * and uses object to determine if user was
+         * able to register.
+         * </p>
+         *
+         * @param s The JSON string passed from doInBackground
+         */
         protected void onPostExecute(String s) {
             try {
                 JSONObject json = new JSONObject(result);
-                success = json.getInt("Success");
+                if(json.has("Accepted"))
+                    success = json.getString("Accepted");
+                else
+                    success = "";
 
-                if (success == 1) {
+                if (success.equals("Account Created")) {
                     Toast.makeText(getApplicationContext(), "Account Created!", Toast.LENGTH_LONG).show();
-                    finish();
+                    Intent intent = new Intent(RegisterRegularUser.this,BeginningInfoPage.class);
+                    startActivity(intent);
                 } else {
-                    Toast.makeText(getApplicationContext(), "Username Exists!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "User Exists!", Toast.LENGTH_LONG).show();
                 }
             } catch (Exception e) {
                 e.printStackTrace();

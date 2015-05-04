@@ -56,20 +56,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Company Name:"
-        android:id="@+id/CompanyNameText"
-        android:layout_below="@+id/PremiumConfirmPasswordText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Profile Picture"
         android:id="@+id/PremiumProfilePictureText"
-        android:layout_below="@+id/CompanyNameText"
+        android:layout_below="@+id/PremiumConfirmPasswordText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="30dp"/>
@@ -85,14 +74,13 @@
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Submit"
         android:id="@+id/PremiumRegisterSubmitButton"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/PremiumRegistrationTitle"
-        android:layout_alignStart="@+id/PremiumRegistrationTitle"
-        android:layout_marginBottom="54dp" />
+        android:layout_alignLeft="@+id/PremiumProfilePictureButton"
+        android:layout_alignStart="@+id/PremiumProfilePictureButton" />
 
 
     <EditText
@@ -128,15 +116,12 @@
         android:layout_toRightOf="@+id/PremiumEmailText"
         android:layout_toEndOf="@+id/PremiumEmailText" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:background="@drawable/loginstyle"
-        android:id="@+id/ComanyNameEdit"
-        android:layout_alignTop="@+id/CompanyNameText"
-        android:layout_toRightOf="@+id/CompanyNameText"
-        android:layout_toEndOf="@+id/CompanyNameText" />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/PremiumThumbnail"
+        android:layout_above="@+id/PremiumRegisterSubmitButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp" />
 
 </RelativeLayout>
