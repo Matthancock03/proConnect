@@ -65,6 +65,12 @@ public class Android extends Controller{
     if(json == null) {
         return ok("Bind Failed");
     }
+    String email = json.get("email").textValue();
+    UserModel user;
+    try{
+      user = UserModel.loadUserModel(email);
+    }
+
 
    return ok("Bind Sucessful");
   }
