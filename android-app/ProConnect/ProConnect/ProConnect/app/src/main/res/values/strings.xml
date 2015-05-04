@@ -11,4 +11,5 @@
     <string name="title_activity_user_home_page">UserHomePage</string>
     <string name="title_activity_edit_profile">EditProfile</string>
     <string name="title_activity_proconnect_home_page">ProconnectHomePage</string>
+    <string name="title_activity_beginning_info_page">BeginningInfoPage</string>
 </resources>

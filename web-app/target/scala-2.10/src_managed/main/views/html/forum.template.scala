@@ -249,10 +249,17 @@ Seq[Any](format.raw/*1.27*/("""
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Sun May 03 19:02:57 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/forum.scala.html
                     HASH: 68536d36e32d8ef467802415724e42641aec9bb1
                     MATRIX: 779->1|898->26|934->28|960->46|998->47|1036->51|1050->57|1078->64|7593->6547
+=======
+                    DATE: Sun May 03 20:30:04 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/forum.scala.html
+                    HASH: 48a9aec32927949c13fd7c7f047cc64eb645a192
+                    MATRIX: 779->1|898->26|935->29|961->47|999->48|1038->53|1052->59|1080->66|7803->6757
+>>>>>>> 809766b0387ec15b411c17eeffb2b868aac46c94
                     LINES: 26->1|29->1|30->2|30->2|30->2|31->3|31->3|31->3|239->211
                     -- GENERATED --
                 */

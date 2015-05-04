@@ -52,57 +52,14 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="30dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="First Name:"
-        android:id="@+id/RegularFirstNameText"
-        android:layout_below="@+id/RegularConfirmPasswordText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Last Name:"
-        android:id="@+id/RegularLastNameText"
-        android:layout_below="@+id/RegularFirstNameText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Profile Picture"
-        android:id="@+id/RegularProfilePictureText"
-        android:layout_below="@+id/RegularLastNameText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp"/>
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:text="Choose File"
-        android:id="@+id/RegularProfilePictureButton"
-        android:layout_alignTop="@+id/RegularProfilePictureText"
-        android:layout_toRightOf="@+id/RegularProfilePictureText"
-        android:layout_toEndOf="@+id/RegularProfilePictureText" />
-
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Submit"
         android:id="@+id/RegularSubmitButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/RegularProfilePictureButton"
-        android:layout_alignStart="@+id/RegularProfilePictureButton"/>
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/RegularConfirmPasswordText"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="match_parent"
@@ -137,34 +94,5 @@
         android:layout_toRightOf="@+id/RegularEmailText"
         android:layout_toEndOf="@+id/RegularEmailText" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:background="@drawable/loginstyle"
-        android:id="@+id/RegularFirstNameEdit"
-        android:layout_alignTop="@+id/RegularFirstNameText"
-        android:layout_toRightOf="@+id/RegularFirstNameText"
-        android:layout_toEndOf="@+id/RegularFirstNameText" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:background="@drawable/loginstyle"
-        android:id="@+id/RegularLastNameEdit"
-        android:layout_alignTop="@+id/RegularLastNameText"
-        android:layout_toRightOf="@+id/RegularLastNameText"
-        android:layout_toEndOf="@+id/RegularLastNameText" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/RegularThumbnail"
-        android:layout_below="@+id/RegularProfilePictureButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

@@ -10,29 +10,21 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
+/**UserHomePage display the user profile.
+ *
+ * <p>
+ * Holds a container in the action bar to
+ * allow users to navigate through their
+ * profile page.
+ * </p>
+ */
 public class UserHomePage extends ActionBarActivity {
 
-    TextView etuser;
-    Button LogOutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_home_page);
-
-        etuser = (TextView) findViewById(R.id.CurrentUserLoggedInText);
-        LogOutButton = (Button) findViewById(R.id.LogOutButton);
-
-        Intent intent = getIntent();
-
-        etuser.setText("Welcome " + intent.getExtras().getString("username"));
-
-        LogOutButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
 
     }
 
@@ -57,6 +49,9 @@ public class UserHomePage extends ActionBarActivity {
             case R.id.edit_profile:
                 Intent intent = new Intent(UserHomePage.this,EditProfile.class);
                 startActivity(intent);
+                break;
+            case R.id.LogOut:
+                finish();
                 break;
         }
 

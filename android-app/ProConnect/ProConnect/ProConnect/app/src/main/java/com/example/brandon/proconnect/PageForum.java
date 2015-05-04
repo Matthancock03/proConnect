@@ -1,45 +1,24 @@
 package com.example.brandon.proconnect;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-/** ProconnectHomePage is used to display the xml file for
- *  the Proconnect mobile Homepage.
- *
- *  A button labeled "Get Connected!" will bring
- *  the user to the Login page when clicked.
- *
- */
-public class ProconnectHomePage extends ActionBarActivity {
 
-    Button ProconnectButton;
+public class PageForum extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_proconnect_home_page);
-
-        ProconnectButton = (Button) findViewById(R.id.GetConnectedButton);
-
-        ProconnectButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ProconnectHomePage.this,LogInScreen.class);
-                startActivity(intent);
-            }
-        });
+        setContentView(R.layout.activity_page_forum);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_proconnect_home_page, menu);
+        getMenuInflater().inflate(R.menu.menu_page_forum, menu);
         return true;
     }
 
