@@ -40,13 +40,8 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 		<div class="row clearfix">
 			<div class="col-md-12 column">
 				<img alt="140x140" src="http://www.medisolsoft.com/images/support.jpg" />
-				<form class="navbar-form navbar-right" role="search">
-			      <div class="form-group">
-			        <input type="text" class="form-control" placeholder="How Can We Help You?">
-			      </div>
-			      <button type="submit" class="btn btn-success">Submit</button>
-			    </form>
-			    <br /><br /><br />
+				
+			    <br /><br />
 
 			</div>
 		</div>
@@ -190,12 +185,12 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 		</div>
 
 		<div class="row clearfix">
-			<div class="col-md-6 column">
-				<img alt="140x140" src="http://www.medisolsoft.com/images/support.jpg" /><br /><br />
+			<div class="col-md-4 column">
+				<br /><img alt="140x140" src="http://www.medisolsoft.com/images/support.jpg" /><br /><br />
 			</div>
 			<div class="col-md-6 column">
 			<h3>
-				 Can't find what you are looking for?<br />Contact us at supportproConnectors.com and we will get back to you within 24 hours.
+				 <br /><br />Can't find what you are looking for?<br />Contact us at supportproConnectors.com and we will get back to you within 24 hours.
 				 </h3>
 			</div>
 		</div>
@@ -213,10 +208,31 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Sun May 03 18:04:20 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/help.scala.html
                     HASH: 9bed4eff26400faefc799dd7445effffc0c20b8c
                     MATRIX: 863->2|888->19|926->20|963->23|976->29|1004->36
+=======
+<<<<<<< HEAD
+                    DATE: Sat May 02 16:21:32 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/help.scala.html
+                    HASH: b356d412ddea5ed8c65ace6fd89e0186e9736a12
+                    MATRIX: 863->2|888->19|926->20|964->24|977->30|1005->37
+=======
+<<<<<<< HEAD
+                    DATE: Sat May 02 15:50:34 MST 2015
+                    SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/help.scala.html
+                    HASH: 86b5771674d4008ddec3c32553790afd1d6233dc
+                    MATRIX: 863->2|888->19|926->20|964->24|977->30|1005->37
+=======
+                    DATE: Sat May 02 13:10:10 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/help.scala.html
+                    HASH: 9bed4eff26400faefc799dd7445effffc0c20b8c
+                    MATRIX: 863->2|888->19|926->20|963->23|976->29|1004->36
+>>>>>>> 8f9ed6157bd56181ad0b73743b3620babe9daf06
+>>>>>>> b5cd3ede55911f15f7cd40c3fa35efc022e62ba8
+>>>>>>> 8f8ae877319c134aee014bdb30a07b08ec040e35
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2
                     -- GENERATED --
                 */
