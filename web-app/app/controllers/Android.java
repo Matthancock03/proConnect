@@ -71,6 +71,8 @@ public class Android extends Controller{
       user = UserModel.loadUserModel(email);
     }
 
+    user.userName = json.get("userName").textValue();
+
 
    return ok("Bind Sucessful");
   }
