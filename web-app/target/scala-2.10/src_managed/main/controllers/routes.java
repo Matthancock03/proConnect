@@ -1,6 +1,6 @@
-// @SOURCE:C:/Users/Roya/Documents/GitHub/proConnect/web-app/conf/routes
-// @HASH:6181ff6d87079987fbe7da3d9c92acdfaaaa7fb3
-// @DATE:Sun May 03 21:30:40 PDT 2015
+// @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
+// @HASH:be2725e0e55c2aba1fed04b9369831c0ece17d17
+// @DATE:Mon May 04 00:25:26 PDT 2015
 
 package controllers;
 
@@ -11,6 +11,7 @@ public static final controllers.ReverseWebJarAssets WebJarAssets = new controlle
 public static final controllers.ReverseUserController UserController = new controllers.ReverseUserController();
 public static final controllers.ReverseApplication Application = new controllers.ReverseApplication();
 public static final controllers.ReverseDbController DbController = new controllers.ReverseDbController();
+public static final controllers.ReverseMessageController MessageController = new controllers.ReverseMessageController();
 public static final controllers.ReverseSearchController SearchController = new controllers.ReverseSearchController();
 public static final controllers.ReverseAndroid Android = new controllers.ReverseAndroid();
 public static class javascript {
@@ -20,6 +21,7 @@ public static final controllers.javascript.ReverseWebJarAssets WebJarAssets = ne
 public static final controllers.javascript.ReverseUserController UserController = new controllers.javascript.ReverseUserController();
 public static final controllers.javascript.ReverseApplication Application = new controllers.javascript.ReverseApplication();
 public static final controllers.javascript.ReverseDbController DbController = new controllers.javascript.ReverseDbController();
+public static final controllers.javascript.ReverseMessageController MessageController = new controllers.javascript.ReverseMessageController();
 public static final controllers.javascript.ReverseSearchController SearchController = new controllers.javascript.ReverseSearchController();
 public static final controllers.javascript.ReverseAndroid Android = new controllers.javascript.ReverseAndroid();
 }
@@ -30,6 +32,7 @@ public static final controllers.ref.ReverseWebJarAssets WebJarAssets = new contr
 public static final controllers.ref.ReverseUserController UserController = new controllers.ref.ReverseUserController();
 public static final controllers.ref.ReverseApplication Application = new controllers.ref.ReverseApplication();
 public static final controllers.ref.ReverseDbController DbController = new controllers.ref.ReverseDbController();
+public static final controllers.ref.ReverseMessageController MessageController = new controllers.ref.ReverseMessageController();
 public static final controllers.ref.ReverseSearchController SearchController = new controllers.ref.ReverseSearchController();
 public static final controllers.ref.ReverseAndroid Android = new controllers.ref.ReverseAndroid();
 }

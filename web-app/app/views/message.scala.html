@@ -1,3 +1,5 @@
+@(messages: List[Message])
+
 @main("ProConect"){
 @navbar.render
 <div class="container">
@@ -21,7 +23,7 @@
 			</div>
 		</div>
 		<div class="col-md-6 column">
-		
+
 			<table class="table table-condensed">
 				<thead>
 					<tr>
@@ -40,76 +42,32 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr class="success">
+
+					@for((message, index) <- messages.zipWithIndex){
+					<tr>
 						<td>
-							1
+							@{index + 1}
 						</td>
 						<td>
-						<a href="#" class="btn" type="button">Message 1</a>
+							<a data-toggle="collapse" data-target="#@index">@message.messageTitle</a>
 						</td>
 						<td>
-							01/04/2012
+							@message.tstamp
 						</td>
 						<td>
-							Read
-						</td>
-					</tr>
-					<tr class="success">
-						<td>
-							2
-						</td>
-						<td>
-							<a href="#" class="btn" type="button">Message 2</a>
-						</td>
-						<td>
-							01/04/2012
-						</td>
-						<td>
-							Unread
+							@if(message.isRead){
+								Read
+							}else{
+								Unread
+							}
 						</td>
 					</tr>
-					<tr class="success">
-						<td>
-							3
-						</td>
-						<td>
-							<a href="#" class="btn" type="button">Message 3</a>
-						</td>
-						<td>
-							02/04/2012
-						</td>
-						<td>
-							Read
-						</td>
+
+					<tr id="@index" class="collapse">
+						<th>Message:</th><td rowspan="3">@message.messageBody</td>
 					</tr>
-					<tr class="success">
-						<td>
-							4
-						</td>
-						<td>
-							<a href="#" class="btn" type="button">Message 4</a>
-						</td>
-						<td>
-							03/04/2012
-						</td>
-						<td>
-							Read
-						</td>
-					</tr>
-					<tr class="success">
-						<td>
-							5
-						</td>
-						<td>
-							<a href="#" class="btn" type="button">Message 5</a>
-						</td>
-						<td>
-							04/04/2012
-						</td>
-						<td>
-							Read
-						</td>
-					</tr>
+
+				}
 				</tbody>
 			</table>
 		</div>

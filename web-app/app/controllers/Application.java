@@ -115,9 +115,6 @@ public static Result help(){
   /**This produces a HTTP result for the messages page.
  * @return a 200 response that will render the messages page on the screen.
  */
-public static Result message(){
-    return ok(message.render());
-  }
 
 
   /**This checks to see if there is an authenticated user.

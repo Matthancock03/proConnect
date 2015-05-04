@@ -44,7 +44,7 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
       <li><a href=""""),_display_(Seq[Any](/*17.21*/routes/*17.27*/.NewsFeed.homeFeed())),format.raw/*17.47*/("""">Home</a></li>
       <li><a href=""""),_display_(Seq[Any](/*18.21*/routes/*18.27*/.DbController.editProfile())),format.raw/*18.54*/("""">Profile</a></li>
       <li><a href=""""),_display_(Seq[Any](/*19.21*/routes/*19.27*/.Application.connections())),format.raw/*19.53*/("""">Connections</a></li>
-      <li><a href=""""),_display_(Seq[Any](/*20.21*/routes/*20.27*/.Application.message())),format.raw/*20.49*/("""">Messages</a></li>
+      <li><a href=""""),_display_(Seq[Any](/*20.21*/routes/*20.27*/.MessageController.message())),format.raw/*20.55*/("""">Messages</a></li>
  <li><a href=""""),_display_(Seq[Any](/*21.16*/routes/*21.22*/.Application.forum())),format.raw/*21.42*/("""">Forums</a></li>
 
     </ul>
@@ -85,10 +85,10 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun May 03 21:30:54 PDT 2015
-                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/navbar.scala.html
-                    HASH: 532353be3f16294103e98fcf5e5d38e5b07a1e04
-                    MATRIX: 856->2|1423->533|1438->539|1480->559|1748->791|1763->797|1805->817|1878->854|1893->860|1942->887|2018->927|2033->933|2081->959|2161->1003|2176->1009|2220->1031|2292->1067|2307->1073|2349->1093|2482->1190|2497->1196|2545->1222|2874->1515|2889->1521|2937->1547|3350->1924|3365->1930|3406->1949|3483->1990|3498->1996|3540->2016|3666->2106|3687->2118|3761->2170
+                    DATE: Mon May 04 00:25:35 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/navbar.scala.html
+                    HASH: a873dc03a1ba36962a7e4bde23ac18dfc709b7ff
+                    MATRIX: 856->1|1413->522|1428->528|1470->548|1733->775|1748->781|1790->801|1862->837|1877->843|1926->870|2001->909|2016->915|2064->941|2143->984|2158->990|2208->1018|2279->1053|2294->1059|2336->1079|2466->1173|2481->1179|2529->1205|2851->1491|2866->1497|2914->1523|3319->1892|3334->1898|3375->1917|3451->1957|3466->1963|3508->1983|3632->2071|3653->2083|3727->2135
                     LINES: 29->2|39->12|39->12|39->12|44->17|44->17|44->17|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21|51->24|51->24|51->24|58->31|58->31|58->31|66->39|66->39|66->39|67->40|67->40|67->40|69->42|69->42|69->42
                     -- GENERATED --
                 */

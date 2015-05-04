@@ -33,7 +33,7 @@ create table message (
   message_title             varchar(255),
   message_body              varchar(255),
   is_read                   boolean,
-  tstamp                    timestamp,
+  tstamp                    timestamp not null,
   constraint pk_message primary key (message_id))
 ;
 
@@ -48,9 +48,7 @@ create table user_model (
   password                  varchar(255),
   profile_picture           bytea,
   login_provider            varchar(255),
-  secret                    varchar(255),
-  avatar_url                varchar(255),
-  auth_method               varchar(255),
+  credit_card               varchar(255),
   experience                varchar(255),
   education                 varchar(255),
   projects                  varchar(255),

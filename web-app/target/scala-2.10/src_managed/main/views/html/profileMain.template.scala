@@ -63,8 +63,13 @@ Seq[Any](format.raw/*1.47*/("""
            """),_display_(Seq[Any](/*35.13*/helper/*35.19*/.inputText(user("aboutMe"), 'class -> "form-control", '_label -> "Personal Headline" ))),format.raw/*35.105*/("""
            """),_display_(Seq[Any](/*36.13*/helper/*36.19*/.inputText(user("location"), 'class -> "form-control", '_label -> "Location" ))),format.raw/*36.97*/("""
            """),_display_(Seq[Any](/*37.13*/helper/*37.19*/.inputText(user("currentEmployer"), 'class -> "form-control", '_label -> "Current Employer" ))),format.raw/*37.112*/("""
-           """),_display_(Seq[Any](/*38.13*/helper/*38.19*/.inputText(user("currentEmployer"), 'class -> "form-control", '_label -> "Credit Card Number"))),format.raw/*38.113*/("""
+<<<<<<< HEAD
+           """),_display_(Seq[Any](/*39.13*/helper/*39.19*/.checkbox(user("isPremium"), '_label -> "Check here for premium users"))),format.raw/*39.90*/("""
+           """),_display_(Seq[Any](/*40.13*/helper/*40.19*/.inputText(user("creditCard"), 'class -> "form-control", '_label -> "Credit Card Number (Required for Recruiters)"))),format.raw/*40.134*/("""
+=======
+           """),_display_(Seq[Any](/*42.13*/helper/*42.19*/.inputText(user("currentEmployer"), 'class -> "form-control", '_label -> "Credit Card Number"))),format.raw/*42.113*/("""
            <p>Required for Recruiters - $20 Monthly Fee</p>
+>>>>>>> f5d7bb961f10beffc7185a311b322c15f074366a
 				</div>
 
 		</div>
@@ -74,10 +79,10 @@ Seq[Any](format.raw/*1.47*/("""
     <div class="col-xs-2 column logo-img"></div>
 		<div class="col-xs-8 column">
           <div class="break-after">
-            """),_display_(Seq[Any](/*49.14*/helper/*49.20*/.textarea(user("experience"), 'class -> "form-control", '_label -> "About Me", 'rows -> "4" ))),format.raw/*49.113*/("""
+            """),_display_(Seq[Any](/*54.14*/helper/*54.20*/.textarea(user("experience"), 'class -> "form-control", '_label -> "About Me", 'rows -> "4" ))),format.raw/*54.113*/("""
           </div>
           <div class="break-after">
-            """),_display_(Seq[Any](/*52.14*/helper/*52.20*/.textarea(user("experience"), 'class -> "form-control", '_label -> "Experience", 'rows -> "4" ))),format.raw/*52.115*/("""
+            """),_display_(Seq[Any](/*57.14*/helper/*57.20*/.textarea(user("experience"), 'class -> "form-control", '_label -> "Experience", 'rows -> "4" ))),format.raw/*57.115*/("""
             <div>
               <button type="button" class="btn btn-info pull-right btn-xs" aria-label="left Align">
                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
@@ -88,7 +93,7 @@ Seq[Any](format.raw/*1.47*/("""
           </div>
           </div>
           <div class="break-after">
-              """),_display_(Seq[Any](/*63.16*/helper/*63.22*/.textarea(user("projects"), 'class -> "form-control", '_label -> "Projects Or Skills Highlight", 'rows -> "4" ))),format.raw/*63.133*/("""
+              """),_display_(Seq[Any](/*68.16*/helper/*68.22*/.textarea(user("projects"), 'class -> "form-control", '_label -> "Projects Or Skills Highlight", 'rows -> "4" ))),format.raw/*68.133*/("""
               <div>
                 <button type="button" class="btn btn-info btn-xs pull-right" aria-label="right Align">
                   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
@@ -100,7 +105,7 @@ Seq[Any](format.raw/*1.47*/("""
               </div>
             </div>
             <div class="break-after">
-                """),_display_(Seq[Any](/*75.18*/helper/*75.24*/.textarea(user("education"), 'class -> "form-control", '_label -> "Education", 'rows -> "4" ))),format.raw/*75.117*/("""
+                """),_display_(Seq[Any](/*80.18*/helper/*80.24*/.textarea(user("education"), 'class -> "form-control", '_label -> "Education", 'rows -> "4" ))),format.raw/*80.117*/("""
                 <div>
                   <button type="button" class="btn btn-info pull-right btn-xs" aria-label="left Align">
                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
@@ -115,9 +120,10 @@ Seq[Any](format.raw/*1.47*/("""
         </div>
       </div>
       <div class="col-xs-2 column bottom-div"></div>
-    """)))})),format.raw/*90.6*/("""
+    """)))})),format.raw/*95.6*/("""
 		</div>
-""")))})))}
+""")))})),format.raw/*97.2*/("""
+"""))}
     }
     
     def render(user:Form[UserModel],userModel:UserModel): play.api.templates.HtmlFormat.Appendable = apply(user,userModel)
@@ -129,11 +135,11 @@ Seq[Any](format.raw/*1.47*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun May 03 21:43:45 PDT 2015
-                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/profileMain.scala.html
-                    HASH: d5c1bd4bf464ad8689236115a8f4a076200888ff
-                    MATRIX: 799->1|955->46|985->68|1022->71|1048->89|1086->90|1125->95|1139->101|1167->108|1236->142|1250->148|1316->193|1422->264|1437->270|1525->349|1564->350|1662->413|1707->449|1746->450|1840->508|1855->514|1922->558|1953->571|1966->575|2005->576|2113->648|2128->654|2190->693|2237->708|2284->719|2299->725|2430->833|2636->1004|2651->1010|2747->1084|2797->1098|2812->1104|2940->1209|2990->1223|3057->1281|3096->1282|3148->1298|3163->1304|3284->1402|3315->1414|3328->1418|3367->1419|3419->1435|3434->1441|3579->1563|3623->1575|3673->1589|3688->1595|3797->1681|3847->1695|3862->1701|3962->1779|4012->1793|4027->1799|4143->1892|4193->1906|4208->1912|4325->2006|4660->2305|4675->2311|4791->2404|4897->2474|4912->2480|5030->2575|5590->3099|5605->3105|5739->3216|6333->3774|6348->3780|6464->3873|7175->4553
-                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|36->8|36->8|36->8|40->12|40->12|40->12|40->12|44->16|44->16|44->16|45->17|45->17|45->17|46->18|46->18|46->18|47->19|47->19|47->19|48->20|49->21|49->21|49->21|56->28|56->28|56->28|57->29|57->29|57->29|58->30|58->30|58->30|59->31|59->31|59->31|60->32|60->32|60->32|61->33|61->33|61->33|62->34|63->35|63->35|63->35|64->36|64->36|64->36|65->37|65->37|65->37|66->38|66->38|66->38|77->49|77->49|77->49|80->52|80->52|80->52|91->63|91->63|91->63|103->75|103->75|103->75|118->90
+                    DATE: Mon May 04 00:25:34 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileMain.scala.html
+                    HASH: e3a927621cc796ea6de62720ccb53146989e02e9
+                    MATRIX: 799->1|954->46|982->65|1018->67|1044->85|1082->86|1120->90|1134->96|1162->103|1229->135|1243->141|1309->186|1411->253|1426->259|1514->338|1553->339|1647->398|1692->434|1731->435|1824->492|1839->498|1906->542|1936->554|1949->558|1988->559|2095->630|2110->636|2172->675|2218->689|2264->699|2279->705|2410->813|2609->977|2624->983|2720->1057|2769->1070|2784->1076|2912->1181|2961->1194|3028->1252|3067->1253|3118->1268|3133->1274|3254->1372|3284->1383|3297->1387|3336->1388|3387->1403|3402->1409|3547->1531|3590->1542|3639->1555|3654->1561|3763->1647|3812->1660|3827->1666|3927->1744|3976->1757|3991->1763|4107->1856|4169->1882|4184->1888|4277->1959|4326->1972|4341->1978|4479->2093|4536->2114|4551->2120|4668->2214|5041->2551|5056->2557|5172->2650|5275->2717|5290->2723|5408->2818|5957->3331|5972->3337|6106->3448|6688->3994|6703->4000|6819->4093|7515->4758|7557->4769
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|36->8|36->8|36->8|40->12|40->12|40->12|40->12|44->16|44->16|44->16|45->17|45->17|45->17|46->18|46->18|46->18|47->19|47->19|47->19|48->20|49->21|49->21|49->21|56->28|56->28|56->28|57->29|57->29|57->29|58->30|58->30|58->30|59->31|59->31|59->31|60->32|60->32|60->32|61->33|61->33|61->33|62->34|63->35|63->35|63->35|64->36|64->36|64->36|65->37|65->37|65->37|67->39|67->39|67->39|68->40|68->40|68->40|70->42|70->42|70->42|82->54|82->54|82->54|85->57|85->57|85->57|96->68|96->68|96->68|108->80|108->80|108->80|123->95|125->97
                     -- GENERATED --
                 */
             
