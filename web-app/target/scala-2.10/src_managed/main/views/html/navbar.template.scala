@@ -48,15 +48,15 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
  <li><a href=""""),_display_(Seq[Any](/*21.16*/routes/*21.22*/.Application.forum())),format.raw/*21.42*/("""">Forums</a></li>
 
     </ul>
-    <form class="navbar-form navbar-left" role="search">
+    <form class="navbar-form navbar-left" role="search" action=""""),_display_(Seq[Any](/*24.66*/routes/*24.72*/.Application.search())),format.raw/*24.93*/("""">
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
+        <input type="text" class="form-control" placeholder="Search For Users">
       </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-  
-          <li><a href=""""),_display_(Seq[Any](/*30.25*/routes/*30.31*/.Application.search())),format.raw/*30.52*/("""">Search</a></li>
-
-    </form>
+      <button type="submit" class="btn btn-default">Search</button>
+</form>
+  <ul class="nav navbar-nav">
+    <li><a href=""""),_display_(Seq[Any](/*31.19*/routes/*31.25*/.Application.search())),format.raw/*31.46*/("""">Advanced Search</a></li>
+  </ul>
 
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
@@ -85,11 +85,11 @@ Seq[Any](format.raw/*2.1*/("""<nav class="navbar navbar-inverse">
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun May 03 18:07:29 PDT 2015
+                    DATE: Sun May 03 18:51:03 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/navbar.scala.html
-                    HASH: 6892bf7116c1406e048f9e821e1ef179b553fe54
-                    MATRIX: 856->1|1413->522|1428->528|1470->548|1733->775|1748->781|1790->801|1862->837|1877->843|1926->870|2001->909|2016->915|2064->941|2143->984|2158->990|2202->1012|2273->1047|2288->1053|2330->1073|2661->1368|2676->1374|2719->1395|3120->1760|3135->1766|3176->1785|3252->1825|3267->1831|3309->1851|3433->1939|3454->1951|3528->2003
-                    LINES: 29->2|39->12|39->12|39->12|44->17|44->17|44->17|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21|57->30|57->30|57->30|66->39|66->39|66->39|67->40|67->40|67->40|69->42|69->42|69->42
+                    HASH: ab66a650a8578e680f95030561282034bebf19f9
+                    MATRIX: 856->1|1413->522|1428->528|1470->548|1733->775|1748->781|1790->801|1862->837|1877->843|1926->870|2001->909|2016->915|2064->941|2143->984|2158->990|2202->1012|2273->1047|2288->1053|2330->1073|2460->1167|2475->1173|2518->1194|2805->1445|2820->1451|2863->1472|3268->1841|3283->1847|3324->1866|3400->1906|3415->1912|3457->1932|3581->2020|3602->2032|3676->2084
+                    LINES: 29->2|39->12|39->12|39->12|44->17|44->17|44->17|45->18|45->18|45->18|46->19|46->19|46->19|47->20|47->20|47->20|48->21|48->21|48->21|51->24|51->24|51->24|58->31|58->31|58->31|66->39|66->39|66->39|67->40|67->40|67->40|69->42|69->42|69->42
                     -- GENERATED --
                 */
             

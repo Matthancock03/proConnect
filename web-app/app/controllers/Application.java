@@ -115,8 +115,13 @@ public static Result help(){
   /**This produces a HTTP result for the search page.
  * @return a 200 response that will render the search page on the screen
  */
+@SecureSocial.UserAwareAction
 public static Result search(){
-    return ok(search.render());
+    UserModel user;
+    Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+    user = UserModel.loadUserModel(userID);
+    Logger.debug(user.userName);
+    return ok(search.render(user));
   }
 
   /**This produces a HTTP result for the messages page.

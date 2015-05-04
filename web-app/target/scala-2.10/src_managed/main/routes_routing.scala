@@ -1,6 +1,6 @@
 // @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
 // @HASH:e4b6a239889029f869b59350e8078c7ca17e1202
-// @DATE:Sun May 03 18:07:25 PDT 2015
+// @DATE:Sun May 03 18:21:54 PDT 2015
 
 
 import play.core._

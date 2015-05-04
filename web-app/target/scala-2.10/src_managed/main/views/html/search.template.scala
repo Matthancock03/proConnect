@@ -20,14 +20,19 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
-object search extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template0[play.api.templates.HtmlFormat.Appendable] {
+object search extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template1[UserModel,play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply():play.api.templates.HtmlFormat.Appendable = {
-        _display_ {
+    def apply/*1.2*/(user:UserModel):play.api.templates.HtmlFormat.Appendable = {
+        _display_ {import helper._
 
-Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any](format.raw/*3.22*/("""
- """),_display_(Seq[Any](/*4.3*/navbar/*4.9*/.render)),format.raw/*4.16*/("""
+
+Seq[Any](format.raw/*1.18*/("""
+
+"""),format.raw/*4.1*/("""
+
+"""),_display_(Seq[Any](/*6.2*/main("ProConnect")/*6.20*/ {_display_(Seq[Any](format.raw/*6.22*/("""
+ """),_display_(Seq[Any](/*7.3*/navbar/*7.9*/.render)),format.raw/*7.16*/("""
 
 
 <div class="container">
@@ -36,9 +41,6 @@ Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any
 			<img alt="140x140" src="http://www.clker.com/cliparts/z/1/T/u/9/2/search-icon-md.png"  width="42" height="42" />
 		</div>
 	</div>
-</div>
-
-
 
 
 
@@ -47,16 +49,6 @@ Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any
 <br />
 <br />
 
-
-
-
-
-
-
-
-
-
-<div class="container">
 	<div class="row clearfix">
 
 
@@ -84,7 +76,7 @@ Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any
 </font>
 </form>
 		</h3> <a href="#" class="btn" type="button" style="background-color:lightgreen">Search</a>
-	
+
 
 
 <br />
@@ -122,28 +114,28 @@ Seq[Any](_display_(Seq[Any](/*3.2*/main("ProConnect")/*3.20*/ {_display_(Seq[Any
 			</h3> <a href="#" class="btn" type="button" style="background-color:lightgreen">Search</a>
 		</div>
 	</div>
+  </div>
 </div>
 
 
-
-""")))})),format.raw/*103.2*/("""
+""")))})),format.raw/*93.2*/("""
 """))}
     }
     
-    def render(): play.api.templates.HtmlFormat.Appendable = apply()
+    def render(user:UserModel): play.api.templates.HtmlFormat.Appendable = apply(user)
     
-    def f:(() => play.api.templates.HtmlFormat.Appendable) = () => apply()
+    def f:((UserModel) => play.api.templates.HtmlFormat.Appendable) = (user) => apply(user)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun May 03 18:07:29 PDT 2015
+                    DATE: Sun May 03 18:51:03 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/search.scala.html
-                    HASH: a41b162bb3204a8e4fad66b03465583b5a95c416
-                    MATRIX: 865->3|891->21|930->23|967->26|980->32|1008->39|2573->1572
-                    LINES: 29->3|29->3|29->3|30->4|30->4|30->4|129->103
+                    HASH: 7916f94074365e0bf3c6132947eec1b40aa3eacc
+                    MATRIX: 778->1|904->17|932->36|969->39|995->57|1034->59|1071->62|1084->68|1112->75|2641->1573
+                    LINES: 26->1|30->1|32->4|34->6|34->6|34->6|35->7|35->7|35->7|121->93
                     -- GENERATED --
                 */
             
