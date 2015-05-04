@@ -235,7 +235,7 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 			
 			<div class="col-md-6 column">
 				 <h3>
-				 <br /><br />Can't find what you are looking for?<br />Contact us at supportproConnectors.com and we will get back to you within 24 hours.
+				 <br /><br />Can't find what you are looking for?<br />Contact us at supportproConnectors.com and we will get back to you within 24 hours.<br /><br />
 				 </h3>
 			</div>
 		</div>
@@ -254,10 +254,10 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon May 04 13:18:07 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/help.scala.html
-                    HASH: be39950a5ee0b3f437453a65fed528847729fbd5
-                    MATRIX: 863->2|888->19|926->20|963->23|976->29|1004->36|9047->8047
+                    DATE: Mon May 04 13:56:33 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/help.scala.html
+                    HASH: eceabea26318703eac3ecfbe8ca6429e89df456d
+                    MATRIX: 863->2|888->19|926->20|964->24|977->30|1005->37|9274->8274
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|244->216
                     -- GENERATED --
                 */
