@@ -236,11 +236,7 @@ Seq[Any](format.raw/*1.27*/("""
 		</div>
 	</div>
 </div>
-<<<<<<< HEAD
-""")))})),format.raw/*210.2*/("""
-=======
-""")))})),format.raw/*215.2*/("""
->>>>>>> b5cd3ede55911f15f7cd40c3fa35efc022e62ba8
+""")))})),format.raw/*211.2*/("""
 """))}
     }
     
@@ -253,27 +249,11 @@ Seq[Any](format.raw/*1.27*/("""
 }
                 /*
                     -- GENERATED --
-<<<<<<< HEAD
-                    DATE: Sat May 02 16:34:45 PDT 2015
+                    DATE: Sun May 03 12:58:47 PDT 2015
                     SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/forum.scala.html
-                    HASH: cc0077a0acc79439cef17af8373378b463b46e97
-                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|7732->6729
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|238->210
-=======
-<<<<<<< HEAD
-                    DATE: Sat May 02 15:50:34 MST 2015
-                    SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/forum.scala.html
-                    HASH: 2fdfe525d8717c8bf82703d5af99eaefa0e4626c
-                    MATRIX: 864->1|890->19|928->20|967->25|981->31|1009->38|7971->6968
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|242->214
-=======
-                    DATE: Sat May 02 14:04:39 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/forum.scala.html
-                    HASH: a8924076be2712f9417e0cac5f9653440b8d3ff8
-                    MATRIX: 779->1|898->26|934->28|960->46|998->47|1036->51|1050->57|1078->64|7828->6782
-                    LINES: 26->1|29->1|30->2|30->2|30->2|31->3|31->3|31->3|243->215
->>>>>>> 8f9ed6157bd56181ad0b73743b3620babe9daf06
->>>>>>> b5cd3ede55911f15f7cd40c3fa35efc022e62ba8
+                    HASH: 48a9aec32927949c13fd7c7f047cc64eb645a192
+                    MATRIX: 779->1|898->26|935->29|961->47|999->48|1038->53|1052->59|1080->66|7803->6757
+                    LINES: 26->1|29->1|30->2|30->2|30->2|31->3|31->3|31->3|239->211
                     -- GENERATED --
                 */
             

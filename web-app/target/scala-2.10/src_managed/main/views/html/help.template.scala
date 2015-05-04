@@ -63,28 +63,28 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 				  <div class="panel-body">
 					  <a   data-toggle="collapse" data-target="#demo0">How do I update my ProConnect profile?</a>
 					  <div id="demo0" class="collapse">
-					    answer
+					    You can update the information on your profile by clicking "Edit Profile" button on the Profile page.
 					  </div>
 				  </div>
 
 					<div class="panel-body">
 						<a data-toggle="collapse" data-target="#demo1">How can I turn off Twitter feed?</a>
 					    <div id="demo1" class="collapse">
-					    answer
+					    Unfortunately, it is not possible to turn off Twitter feed at this point.
 					  	</div>
 
 					</div>
 					<div class="panel-body">
 						<a data-toggle="collapse" data-target="#demo2">How do I change my profile picture?</a>
 						<div id="demo2" class="collapse">
-					    answer
+					    By clicking "Edit Profile" on the Profile page you will have the option of browsing for a photo on your computer and changing your picture.
 					  	</div>
 					</div>
 
 					<div class="panel-body">
 							<a data-toggle="collapse" data-target="#demo3">How can I delete my proConnect account?</a>
 							<div id="demo3" class="collapse">
-						    answer
+						    Unfortunately you cannot delete a ProConnect account at this point.
 					  		</div>
 					  	</div>
 					</div>
@@ -97,16 +97,28 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 						</h3>
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">How do I add friends on ProConnect?</a>
+					<a data-toggle="collapse" data-target="#demo4">How do I add connections on ProConnect?</a>
+							<div id="demo4" class="collapse">
+						    You can search for connections by typing a name in the "Search" bar and choosing "People" as a filter.
+					  		</div>
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">Where can I view who my connections are?</a>
+					<a data-toggle="collapse" data-target="#demo5">Where can I view who my connections are?</a>
+							<div id="demo5" class="collapse">
+						    You can view your connection list at the bottom of your profile page.
+					  		</div>
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">How can I remove someone from my connections?</a>
+					<a data-toggle="collapse" data-target="#demo6">How can I remove someone from my connections?</a>
+							<div id="demo6" class="collapse">
+						    You can remove a connection by clicking "Remove from Connection" on their profile.
+					  		</div>
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">How can I block someone on ProConnect?</a>
+					<a data-toggle="collapse" data-target="#demo7">How can I block someone on ProConnect?</a>
+							<div id="demo7" class="collapse">
+						    Unfortunately there is no feature to block someone on ProConnect at this point. If you want to report someone please feel free to contact us at supportProConnectors.com.
+					  		</div>
 					</div>
 				</div>
 			</div>
@@ -120,13 +132,22 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 						</h3>
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">What are forums for on ProConnect?</a>
+					<a data-toggle="collapse" data-target="#demo8">What are forums for on ProConnect?</a>
+							<div id="demo8" class="collapse">
+						    Forums are a way for our users to discuss and share their experiences with everybody else and hopefully learn a thing or two from them.
+					  		</div>
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">How can I create a new forum?</a>
+					<a data-toggle="collapse" data-target="#demo9">How can I create a new forum?</a>
+							<div id="demo9" class="collapse">
+						    If you are a premium user you can create a new forum by clicking "New Forum" on the Forum page.
+					  		</div>
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">How can I contribute to a forum?</a>
+					<a data-toggle="collapse" data-target="#demo10">How can I contribute to a forum?</a>
+							<div id="demo10" class="collapse">
+						    You can contribute to a forum by clicking on "Read" on any one of the forums you would like and submitting a comment in the comment section
+					  		</div>
 					</div>
 				</div>
 			</div>
@@ -138,16 +159,23 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 						</h3>
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">How can I search for jobs on ProConnect?</a>
+					<a data-toggle="collapse" data-target="#demo11">How can I search for jobs on ProConnect?</a>
+							<div id="demo11" class="collapse">
+						    To search for a job, simply type a job title or company name in the search bar. You can also filter the search result by clicking on either the "Job" or "Company" filter.
+					  		</div>
+					
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">How can I apply to a job through ProConnect?<br /><br /><br /><br /></a>
+					<a data-toggle="collapse" data-target="#demo12">How can I apply to a job through ProConnect?</a>
+							<div id="demo12" class="collapse">
+						    You cannot apply to a job on ProConnect directly. However, recruiters will provide a URL of where you can apply to the job on the job post.
+					  		</div>
 					</div>
 					
 				</div>
 			</div>
 		</div>
-		<div class="row clearfix">
+	
 			<div class="col-md-6 column">
 				<div class="panel panel-default">
 					<div class="panel-heading">
@@ -156,13 +184,23 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 						</h3>
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">How can I change my password?</a>
+					<a data-toggle="collapse" data-target="#demo13">How can I change my password?</a>
+							<div id="demo13" class="collapse">
+						    Please contact us at supportProConnectors.com if you want to change your password.
+					  		</div>
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">Who can view my profile?</a>
+					<a data-toggle="collapse" data-target="#demo14">Who can view my profile?</a>
+							<div id="demo14" class="collapse">
+						    Any ProConnect user is able to search your name and view your profile.
+					  		</div>
+					
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">How can I change my email address?</a>
+					<a data-toggle="collapse" data-target="#demo15">How can I change my email address?</a>
+							<div id="demo15" class="collapse">
+						    Once you sign up for an account you cannot change your email. You can always sign up for another account and use a different email address. For more help please contact us at supportProConnectors.com.
+					  		</div>
 					</div>
 				</div>
 			</div>
@@ -174,15 +212,21 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 						</h3>
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">What are the benefits of a premium account?</a>
+					<a data-toggle="collapse" data-target="#demo16">What are the benefits of a premium account?</a>
+							<div id="demo16" class="collapse">
+						    By signing up for a premium account, you will have access to find the right candidate for a job by searching based on experience, major, etc. You are also able to post jobs. Another feature that is only accessible to our premium users is being able to create forums.
+					  		</div>
 					</div>
 					<div class="panel-body">
-					<a href="#" class="btn" type="button">How can I cancel my premium membership?<br /><br /><br /><br /></a>
+					<a data-toggle="collapse" data-target="#demo17">How can I cancel my premium membership?</a>
+							<div id="demo17" class="collapse">
+						  If you accidentally signed up for a premium account and would like to change that a regular account please contact us at supportProConnectors.com.
+					  		</div>
 					</div>
 					
 				</div>
 			</div>
-		</div>
+		
 
 		<div class="row clearfix">
 			<div class="col-md-4 column">
@@ -208,24 +252,10 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
-<<<<<<< HEAD
-                    DATE: Sat May 02 16:21:32 PDT 2015
+                    DATE: Sun May 03 18:25:39 PDT 2015
                     SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/help.scala.html
-                    HASH: b356d412ddea5ed8c65ace6fd89e0186e9736a12
+                    HASH: 997ec5e0dcf9b913ae9b7a49413383a1e1610997
                     MATRIX: 863->2|888->19|926->20|964->24|977->30|1005->37
-=======
-<<<<<<< HEAD
-                    DATE: Sat May 02 15:50:34 MST 2015
-                    SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/help.scala.html
-                    HASH: 86b5771674d4008ddec3c32553790afd1d6233dc
-                    MATRIX: 863->2|888->19|926->20|964->24|977->30|1005->37
-=======
-                    DATE: Sat May 02 13:10:10 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/help.scala.html
-                    HASH: 9bed4eff26400faefc799dd7445effffc0c20b8c
-                    MATRIX: 863->2|888->19|926->20|963->23|976->29|1004->36
->>>>>>> 8f9ed6157bd56181ad0b73743b3620babe9daf06
->>>>>>> b5cd3ede55911f15f7cd40c3fa35efc022e62ba8
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2
                     -- GENERATED --
                 */

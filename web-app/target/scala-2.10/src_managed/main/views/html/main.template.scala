@@ -65,24 +65,10 @@ Seq[Any](format.raw/*1.32*/("""
 }
                 /*
                     -- GENERATED --
-<<<<<<< HEAD
-                    DATE: Sat May 02 15:10:05 PDT 2015
+                    DATE: Sun May 03 12:58:47 PDT 2015
                     SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/main.scala.html
                     HASH: c3ce70eb092990d26f1cdfcbec6e0865efe49473
                     MATRIX: 778->1|902->31|996->90|1022->95|1679->716|1694->722|1759->765|1837->807|1852->813|1912->851|1990->893|2005->899|2067->939|2271->1107|2286->1113|2344->1148|2422->1190|2451->1197
-=======
-<<<<<<< HEAD
-                    DATE: Sat May 02 15:50:34 MST 2015
-                    SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/main.scala.html
-                    HASH: c3ce70eb092990d26f1cdfcbec6e0865efe49473
-                    MATRIX: 778->1|902->31|996->90|1022->95|1679->716|1694->722|1759->765|1837->807|1852->813|1912->851|1990->893|2005->899|2067->939|2271->1107|2286->1113|2344->1148|2422->1190|2451->1197
-=======
-                    DATE: Sat May 02 13:10:10 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/main.scala.html
-                    HASH: 73a1f599712f7e59b8a2009bedf61b1851af0ea6
-                    MATRIX: 778->1|902->31|990->84|1016->89|1662->699|1677->705|1742->748|1819->789|1834->795|1894->833|1971->874|1986->880|2048->920|2250->1086|2265->1092|2323->1127|2398->1166|2427->1173
->>>>>>> 8f9ed6157bd56181ad0b73743b3620babe9daf06
->>>>>>> b5cd3ede55911f15f7cd40c3fa35efc022e62ba8
                     LINES: 26->1|29->1|35->7|35->7|46->18|46->18|46->18|47->19|47->19|47->19|48->20|48->20|48->20|50->22|50->22|50->22|53->25|53->25
                     -- GENERATED --
                 */
