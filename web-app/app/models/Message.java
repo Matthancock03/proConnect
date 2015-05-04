@@ -31,14 +31,25 @@ public class Message extends Model {
   public String messageTitle;
   public String messageBody;
   public boolean isRead;
-  Timestamp tstamp;
+
+  @Version
+  public java.util.Date tstamp;
 
 
-  public List<Message> getMessageArray(String userId){
+
+  public static List<Message> getMessageArray(Long userId){
+
+    List<Message> messageArray = find.where().eq("recipientId", userId).findList();
+    return messageArray;
+  }
+
+  public static List<Message> getSentMessages(Long userId){
 
     List<Message> messageArray = find.where().eq("senderId", userId).findList();
     return messageArray;
   }
+
+
 
   public static Finder<Long,Message> find = new Finder<Long,Message>(
       Long.class, Message.class

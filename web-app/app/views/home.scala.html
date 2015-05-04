@@ -27,8 +27,6 @@
 					}else{
 						<p class="profile-text">Guest</p>
 					}
-					<a href="#" class="btn" type="button">Connections to Add</a><br/>
-					<a href="#" class="btn" type="button">Messages</a>
 					</dt>
 					<dd>
 					@if(user.currentEmployer != null){
@@ -40,6 +38,8 @@
 						<p class="profile-text">@user.recentSchool</p>
 						}
 					</dd>
+					<a href="@routes.Application.connections()"><p class="profile-text">Connections to Add</p></a><br/>
+					<a href="@routes.MessageController.message()"><p class="profile-text">Messages</p></a>
 				</dl>
 
 		</div>

@@ -3,7 +3,7 @@ package controllers;
 import play.*;
 import play.api.libs.json.JsPath;
 import play.mvc.*;
-import play.data.Form;
+import play.data.*;
 import views.html.*;
 import plugins.*;
 import models.*;
@@ -23,16 +23,27 @@ public class UserController extends Controller{
 @SecureSocial.UserAwareAction
 public static Result sendMessage(){
 
+      Message message = new Message();
+      DynamicForm requestData = Form.form().bindFromRequest();
+      String messageHead = requestData.get("messageTitle");
+      String messageContent = requestData.get("messageBody");
+      String email = requestData.get("email");
+
+      Logger.debug("Message Title: " + messageHead + " Message Body: " + messageContent + " Recipient email: " + email);
       UserModel user;
-
+      UserModel sender;
       Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
-      Logger.debug("sendMessage Identity name: " + userID.fullName());
-      Logger.debug("sendMessage Identity email: " + userID.email().get());
+      sender = UserModel.loadUserModel(userID);
+      user = UserModel.loadUserModel(email);
 
-      user = UserModel.loadUserModel(userID);
-      Logger.debug("sendMessage After Load User: " + user.userName);
-                                   //Loads user values into UserModel model.
-      return ok(profileEdit.render(user));
+      message.senderId = sender.id;
+      message.recipientId = user.id;
+      message.messageTitle = messageHead;
+      message.messageBody = messageContent;
+      message.isRead = false;
+      message.save();
+      
+      return ok(searchedProfile.render(user));
 }
 
 public static Result searchUser(String name){

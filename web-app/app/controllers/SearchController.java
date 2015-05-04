@@ -28,4 +28,9 @@ public static Result search(){
     return ok(search.render(users));
   }
 
+  public static Result loadSearchedProfile(String email){
+    UserModel user = UserModel.loadUserModel(email);
+    return ok(searchedProfile.render(user));
+  }
+
 }

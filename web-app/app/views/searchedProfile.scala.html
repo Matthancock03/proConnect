@@ -32,7 +32,7 @@
           @form(routes.UserController.sendMessage()){
 
           	<div class="form-group" style="width: 50%; margin: 0 auto;">
-            <div style="width: 50%; margin: 0 auto;">
+            <div style="width: 75%; margin: 0 auto;">
           		<h2 class="form-signin-heading">Message</h2>
           			<input class="form-control"
           					placeholder="Message Title"
@@ -48,6 +48,14 @@
           					id="messageBody"
           					value=""
           				/>
+                  <input class="form-control"
+            					placeholder="Message"
+            					type="text"
+            					name="email"
+            					id="email"
+            					value="@user.email"
+                      style="display: none;"
+            				/>
 
           		<button class="btn btn-primary btn-lg btn-block" type="submit" style="width: 50%;">Send Message</button>
             </div>

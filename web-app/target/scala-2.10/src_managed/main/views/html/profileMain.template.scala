@@ -63,7 +63,8 @@ Seq[Any](format.raw/*1.47*/("""
            """),_display_(Seq[Any](/*35.13*/helper/*35.19*/.inputText(user("aboutMe"), 'class -> "form-control", '_label -> "Personal Headline" ))),format.raw/*35.105*/("""
            """),_display_(Seq[Any](/*36.13*/helper/*36.19*/.inputText(user("location"), 'class -> "form-control", '_label -> "Location" ))),format.raw/*36.97*/("""
            """),_display_(Seq[Any](/*37.13*/helper/*37.19*/.inputText(user("currentEmployer"), 'class -> "form-control", '_label -> "Current Employer" ))),format.raw/*37.112*/("""
-           """),_display_(Seq[Any](/*38.13*/helper/*38.19*/.inputText(user("currentEmployer"), 'class -> "form-control", '_label -> "Credit Card Number (Required for Recruiters)"))),format.raw/*38.139*/("""
+           """),_display_(Seq[Any](/*38.13*/helper/*38.19*/.checkbox(user("isPremium"), '_label -> "Check here for premium users"))),format.raw/*38.90*/("""
+           """),_display_(Seq[Any](/*39.13*/helper/*39.19*/.inputText(user("creditCard"), 'class -> "form-control", '_label -> "Credit Card Number (Required for Recruiters)"))),format.raw/*39.134*/("""
 				</div>
 
 		</div>
@@ -73,10 +74,10 @@ Seq[Any](format.raw/*1.47*/("""
     <div class="col-xs-2 column logo-img"></div>
 		<div class="col-xs-8 column">
           <div class="break-after">
-            """),_display_(Seq[Any](/*48.14*/helper/*48.20*/.textarea(user("experience"), 'class -> "form-control", '_label -> "About Me", 'rows -> "4" ))),format.raw/*48.113*/("""
+            """),_display_(Seq[Any](/*49.14*/helper/*49.20*/.textarea(user("experience"), 'class -> "form-control", '_label -> "About Me", 'rows -> "4" ))),format.raw/*49.113*/("""
           </div>
           <div class="break-after">
-            """),_display_(Seq[Any](/*51.14*/helper/*51.20*/.textarea(user("experience"), 'class -> "form-control", '_label -> "Experience", 'rows -> "4" ))),format.raw/*51.115*/("""
+            """),_display_(Seq[Any](/*52.14*/helper/*52.20*/.textarea(user("experience"), 'class -> "form-control", '_label -> "Experience", 'rows -> "4" ))),format.raw/*52.115*/("""
             <div>
               <button type="button" class="btn btn-info pull-right btn-xs" aria-label="left Align">
                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
@@ -87,7 +88,7 @@ Seq[Any](format.raw/*1.47*/("""
           </div>
           </div>
           <div class="break-after">
-              """),_display_(Seq[Any](/*62.16*/helper/*62.22*/.textarea(user("projects"), 'class -> "form-control", '_label -> "Projects Or Skills Highlight", 'rows -> "4" ))),format.raw/*62.133*/("""
+              """),_display_(Seq[Any](/*63.16*/helper/*63.22*/.textarea(user("projects"), 'class -> "form-control", '_label -> "Projects Or Skills Highlight", 'rows -> "4" ))),format.raw/*63.133*/("""
               <div>
                 <button type="button" class="btn btn-info btn-xs pull-right" aria-label="right Align">
                   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
@@ -99,7 +100,7 @@ Seq[Any](format.raw/*1.47*/("""
               </div>
             </div>
             <div class="break-after">
-                """),_display_(Seq[Any](/*74.18*/helper/*74.24*/.textarea(user("education"), 'class -> "form-control", '_label -> "Education", 'rows -> "4" ))),format.raw/*74.117*/("""
+                """),_display_(Seq[Any](/*75.18*/helper/*75.24*/.textarea(user("education"), 'class -> "form-control", '_label -> "Education", 'rows -> "4" ))),format.raw/*75.117*/("""
                 <div>
                   <button type="button" class="btn btn-info pull-right btn-xs" aria-label="left Align">
                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
@@ -114,9 +115,10 @@ Seq[Any](format.raw/*1.47*/("""
         </div>
       </div>
       <div class="col-xs-2 column bottom-div"></div>
-    """)))})),format.raw/*89.6*/("""
+    """)))})),format.raw/*90.6*/("""
 		</div>
-""")))})))}
+""")))})),format.raw/*92.2*/("""
+"""))}
     }
     
     def render(user:Form[UserModel],userModel:UserModel): play.api.templates.HtmlFormat.Appendable = apply(user,userModel)
@@ -128,11 +130,11 @@ Seq[Any](format.raw/*1.47*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun May 03 21:22:30 PDT 2015
+                    DATE: Sun May 03 23:17:09 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileMain.scala.html
-                    HASH: 640422e3711fb4df25ae7ca5a2b2f738d5bcab8f
-                    MATRIX: 799->1|954->46|982->65|1018->67|1044->85|1082->86|1120->90|1134->96|1162->103|1229->135|1243->141|1309->186|1411->253|1426->259|1514->338|1553->339|1647->398|1692->434|1731->435|1824->492|1839->498|1906->542|1936->554|1949->558|1988->559|2095->630|2110->636|2172->675|2218->689|2264->699|2279->705|2410->813|2609->977|2624->983|2720->1057|2769->1070|2784->1076|2912->1181|2961->1194|3028->1252|3067->1253|3118->1268|3133->1274|3254->1372|3284->1383|3297->1387|3336->1388|3387->1403|3402->1409|3547->1531|3590->1542|3639->1555|3654->1561|3763->1647|3812->1660|3827->1666|3927->1744|3976->1757|3991->1763|4107->1856|4156->1869|4171->1875|4314->1995|4578->2223|4593->2229|4709->2322|4812->2389|4827->2395|4945->2490|5494->3003|5509->3009|5643->3120|6225->3666|6240->3672|6356->3765|7052->4430
-                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|36->8|36->8|36->8|40->12|40->12|40->12|40->12|44->16|44->16|44->16|45->17|45->17|45->17|46->18|46->18|46->18|47->19|47->19|47->19|48->20|49->21|49->21|49->21|56->28|56->28|56->28|57->29|57->29|57->29|58->30|58->30|58->30|59->31|59->31|59->31|60->32|60->32|60->32|61->33|61->33|61->33|62->34|63->35|63->35|63->35|64->36|64->36|64->36|65->37|65->37|65->37|66->38|66->38|66->38|76->48|76->48|76->48|79->51|79->51|79->51|90->62|90->62|90->62|102->74|102->74|102->74|117->89
+                    HASH: d728536e141cf3087d74e28cb84ac57079190cab
+                    MATRIX: 799->1|954->46|982->65|1018->67|1044->85|1082->86|1120->90|1134->96|1162->103|1229->135|1243->141|1309->186|1411->253|1426->259|1514->338|1553->339|1647->398|1692->434|1731->435|1824->492|1839->498|1906->542|1936->554|1949->558|1988->559|2095->630|2110->636|2172->675|2218->689|2264->699|2279->705|2410->813|2609->977|2624->983|2720->1057|2769->1070|2784->1076|2912->1181|2961->1194|3028->1252|3067->1253|3118->1268|3133->1274|3254->1372|3284->1383|3297->1387|3336->1388|3387->1403|3402->1409|3547->1531|3590->1542|3639->1555|3654->1561|3763->1647|3812->1660|3827->1666|3927->1744|3976->1757|3991->1763|4107->1856|4156->1869|4171->1875|4264->1946|4313->1959|4328->1965|4466->2080|4730->2308|4745->2314|4861->2407|4964->2474|4979->2480|5097->2575|5646->3088|5661->3094|5795->3205|6377->3751|6392->3757|6508->3850|7204->4515|7246->4526
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|36->8|36->8|36->8|40->12|40->12|40->12|40->12|44->16|44->16|44->16|45->17|45->17|45->17|46->18|46->18|46->18|47->19|47->19|47->19|48->20|49->21|49->21|49->21|56->28|56->28|56->28|57->29|57->29|57->29|58->30|58->30|58->30|59->31|59->31|59->31|60->32|60->32|60->32|61->33|61->33|61->33|62->34|63->35|63->35|63->35|64->36|64->36|64->36|65->37|65->37|65->37|66->38|66->38|66->38|67->39|67->39|67->39|77->49|77->49|77->49|80->52|80->52|80->52|91->63|91->63|91->63|103->75|103->75|103->75|118->90|120->92
                     -- GENERATED --
                 */
             

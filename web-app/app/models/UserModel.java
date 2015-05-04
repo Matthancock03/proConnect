@@ -50,9 +50,7 @@ public class UserModel  extends Model{
   public byte[] profilePicture;
 
   public String loginProvider;
-  public String secret;
-  public String avatarUrl;
-  public String authMethod;
+  public String creditCard;
 
   public String experience;
   public String education;
