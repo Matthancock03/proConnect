@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 // @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
 // @HASH:f4ead42f8be0871f2bf9f80280ef1d87c6f9a593
 // @DATE:Mon May 04 12:59:11 PDT 2015
+=======
+// @SOURCE:C:/Users/Roya/Documents/GitHub/proConnect/web-app/conf/routes
+// @HASH:4d1eb1539c0a6d0edcf92328f6a263a6ffb260dc
+// @DATE:Mon May 04 10:39:08 PDT 2015
+>>>>>>> f9621eebc60b9a4b0951aaff41360a619414dca1
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._

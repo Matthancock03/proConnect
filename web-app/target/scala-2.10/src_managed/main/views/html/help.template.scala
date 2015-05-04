@@ -254,10 +254,17 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Mon May 04 09:52:33 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/help.scala.html
                     HASH: be39950a5ee0b3f437453a65fed528847729fbd5
                     MATRIX: 863->2|888->19|926->20|963->23|976->29|1004->36|9047->8047
+=======
+                    DATE: Mon May 04 10:39:17 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/help.scala.html
+                    HASH: dc679c167bbe6cf272b3ca005cec5f0a4d54f21c
+                    MATRIX: 863->2|888->19|926->20|964->24|977->30|1005->37|9262->8262
+>>>>>>> f9621eebc60b9a4b0951aaff41360a619414dca1
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|244->216
                     -- GENERATED --
                 */

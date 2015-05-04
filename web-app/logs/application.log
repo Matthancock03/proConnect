@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2015-05-04 12:06:04,736 - [INFO] - from play in pool-6-thread-1 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
@@ -722,3 +723,8 @@ loadUserModel Identity email: matthancock03@gmail.com
 2015-05-04 13:16:41,341 - [DEBUG] - from application in play-akka.actor.default-dispatcher-54 
 LoadUserModel UserModel email : matthancock03@gmail.com
 
+=======
+2015-05-04 12:45:32,188 - [INFO] - from play in pool-6-thread-1 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+>>>>>>> f9621eebc60b9a4b0951aaff41360a619414dca1

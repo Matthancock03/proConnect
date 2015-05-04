@@ -52,8 +52,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 				<h1 class ="header-text text-left"> ProConnect </h1>
 				<h1 class ="text-center">Connect with Proffesionals</h1>
   		</div>
-  		<div class="col-xs-3 column">
-  		</div>
+  		
     </div>
 
 	</div>
@@ -61,9 +60,11 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 			<div class="col-xs-4 column">
 				<div class="row clearfix">
 
-					<div class="col-xs-4 column">
+					<div class="col-xs-6 column">
 					</div>
-					<div class="col-xs-4 column">
+          <div class="col-xs-5 column">
+          </div>
+					<div class="col-xs-1 column">
 
 						<p>
 
@@ -106,17 +107,15 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
                     </p>
 </h3>
 
-<h3 style="color:black",class ="text-left",style="font-size:200%"> <b>ProConnect On the Go</b>
+<h3 style="color:green",class ="text-left",style="font-size:200%"> <b>ProConnect On the Go</b>
 <p>
 Download the ProConnect app on Google Play and take part in discussions and share your experiences on the go.
 </p>
-                   <h3 style="color:green",class ="text-left">  <b>Information</b>
+                   <h3 style="color:black",class ="text-left">  <b>Information</b>
                     <p style="color:black">
-                      For more information about our company, please visit our Company Page.
+                      For more information about our company, please visit our Company Page or contact us at supportproConnectors.com.
                       </p>
-             <p>
-              For more information, please contact us at supportproConnectors.com.
-             </p>
+          
 
    </h3>
 
@@ -124,7 +123,7 @@ Download the ProConnect app on Google Play and take part in discussions and shar
         <div class="col-xs-3 column">
         </div>
       </div>
-""")))})),format.raw/*99.2*/("""
+""")))})),format.raw/*98.2*/("""
 """))}
     }
     
@@ -137,11 +136,19 @@ Download the ProConnect app on Google Play and take part in discussions and shar
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Mon May 04 09:52:33 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/about.scala.html
                     HASH: 2f3cc57ca2cbeb06f9fa540ba50c380462bc0f5c
                     MATRIX: 864->1|890->19|928->20|994->51|1008->57|1065->93|1627->619|1648->631|1722->682|4385->3314
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|127->99
+=======
+                    DATE: Mon May 04 12:43:06 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/about.scala.html
+                    HASH: af80bc89b236d2cb2696e3a4ae94324282b91d14
+                    MATRIX: 864->1|890->19|928->20|995->52|1009->58|1066->94|1641->633|1662->645|1736->696|4434->3363
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|126->98
+>>>>>>> f9621eebc60b9a4b0951aaff41360a619414dca1
                     -- GENERATED --
                 */
             
