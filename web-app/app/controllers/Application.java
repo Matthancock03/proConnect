@@ -4,6 +4,7 @@ import play.*;
 import play.api.libs.json.JsPath;
 import play.mvc.*;
 import play.data.Form;
+import play.data.*;
 import views.html.*;
 import plugins.*;
 import models.*;
@@ -110,19 +111,6 @@ public static Result help(){
     return DbController.editProfile();
 }
 
-
-
-  /**This produces a HTTP result for the search page.
- * @return a 200 response that will render the search page on the screen
- */
-@SecureSocial.UserAwareAction
-public static Result search(){
-    UserModel user;
-    Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
-    user = UserModel.loadUserModel(userID);
-    Logger.debug(user.userName);
-    return ok(search.render(user));
-  }
 
   /**This produces a HTTP result for the messages page.
  * @return a 200 response that will render the messages page on the screen.

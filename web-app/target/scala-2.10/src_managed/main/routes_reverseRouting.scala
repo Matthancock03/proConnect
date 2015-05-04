@@ -1,6 +1,6 @@
 // @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
-// @HASH:e4b6a239889029f869b59350e8078c7ca17e1202
-// @DATE:Sun May 03 18:21:54 PDT 2015
+// @HASH:2a0dededb98ef8b31f07fb2ae3c0a97a4c572f10
+// @DATE:Sun May 03 20:37:46 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -91,7 +91,6 @@ def sendMessage(): Call = {
 
 // @LINE:21
 // @LINE:20
-// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -155,12 +154,6 @@ def systemEntry(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "systemEntry")
 }
                                                 
-
-// @LINE:17
-def search(): Call = {
-   Call("GET", _prefix + { _defaultPrefix } + "search")
-}
-                                                
     
 }
                           
@@ -200,6 +193,19 @@ def getFormData(): Call = {
 // @LINE:11
 def profileMain(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "editProfile")
+}
+                                                
+    
+}
+                          
+
+// @LINE:17
+class ReverseSearchController {
+    
+
+// @LINE:17
+def search(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "search")
 }
                                                 
     
@@ -482,7 +488,6 @@ def sendMessage : JavascriptReverseRoute = JavascriptReverseRoute(
 
 // @LINE:21
 // @LINE:20
-// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -591,17 +596,6 @@ def systemEntry : JavascriptReverseRoute = JavascriptReverseRoute(
    """
 )
                         
-
-// @LINE:17
-def search : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Application.search",
-   """
-      function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "search"})
-      }
-   """
-)
-                        
     
 }
               
@@ -664,6 +658,24 @@ def profileMain : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "editProfile"})
+      }
+   """
+)
+                        
+    
+}
+              
+
+// @LINE:17
+class ReverseSearchController {
+    
+
+// @LINE:17
+def search : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.SearchController.search",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "search"})
       }
    """
 )
@@ -1019,7 +1031,6 @@ def sendMessage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 
 // @LINE:21
 // @LINE:20
-// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -1084,12 +1095,6 @@ def systemEntry(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.systemEntry(), HandlerDef(this, "controllers.Application", "systemEntry", Seq(), "GET", """""", _prefix + """systemEntry""")
 )
                       
-
-// @LINE:17
-def search(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.search(), HandlerDef(this, "controllers.Application", "search", Seq(), "GET", """""", _prefix + """search""")
-)
-                      
     
 }
                           
@@ -1129,6 +1134,19 @@ def getFormData(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:11
 def profileMain(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.DbController.profileMain(), HandlerDef(this, "controllers.DbController", "profileMain", Seq(), "GET", """""", _prefix + """editProfile""")
+)
+                      
+    
+}
+                          
+
+// @LINE:17
+class ReverseSearchController {
+    
+
+// @LINE:17
+def search(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.SearchController.search(), HandlerDef(this, "controllers.SearchController", "search", Seq(), "GET", """""", _prefix + """search""")
 )
                       
     

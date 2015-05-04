@@ -1,0 +1,141 @@
+@(user:UserModel)
+
+@import helper._
+
+<link rel="stylesheet" href="@routes.Assets.at("stylesheets/profile.min.css")">
+
+@main("ProConect"){
+@navbar.render
+
+
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-2 column img-div">
+      @if(user.profilePicture != null){
+        <img class = "img-thumbnail profileImage" src="@routes.DbController.getProfilePic(user.email)" />
+      }else{
+        <img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")" />
+        }
+        @if(user.userName != null){
+              <h4>@user.userName</h4>
+            }else{
+              <h4>Guest</h4>
+            }
+
+      <!-- Large modal -->
+  <button type="button" class="btn btn-default edit-button" data-toggle="modal" data-target=".bs-example-modal-lg">Send Message</button>
+
+  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+          @form(routes.UserController.sendMessage()){
+
+          	<div class="form-group" style="width: 50%; margin: 0 auto;">
+            <div style="width: 50%; margin: 0 auto;">
+          		<h2 class="form-signin-heading">Message</h2>
+          			<input class="form-control"
+          					placeholder="Message Title"
+          					type="text"
+          					name="messageTitle"
+          					id="messageTitle"
+          					value=""
+          				/>
+          			<input class="form-control"
+          					placeholder="Message"
+          					type="text"
+          					name="messageBody"
+          					id="messageBody"
+          					value=""
+          				/>
+
+          		<button class="btn btn-primary btn-lg btn-block" type="submit" style="width: 50%;">Send Message</button>
+            </div>
+        	</div>
+          	}
+      </div>
+    </div>
+  </div> <!-- End modal -->
+
+
+    </div>
+    <div class="col-xs-2"></div>
+
+    <div class="col-md-6 column">
+        @if(user.aboutMe != null){
+          <h3>@user.aboutMe</h3>
+        }
+
+      @if(user.currentEmployer != null){
+          <h3>@user.currentEmployer</h3>
+        }
+
+      @if(user.location != null){
+          <h3>@user.location</h3>
+        }
+    </div>
+    <div class="col-xs-2"></div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-xs-4">
+
+    </div>
+      <div class="col-xs-8 column">
+        <h2>
+          About Me
+        </h2>
+        @if(user.aboutMe != null){
+          <p>
+            @user.aboutMe
+          </p>
+        }
+
+      </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-xs-4">
+
+    </div>
+    <div class="col-xs-8 column">
+      <h2>
+        Experience
+      </h2>
+      @if(user.experience != null){
+      <p>
+        @user.experience
+      </p>
+      }
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-xs-4">
+
+    </div>
+    <div class="col-xs-8 column">
+      <h2>
+        Projects or Skills Highlight
+      </h2>
+      @if(user.experience != null){
+      <p>
+        @user.projects
+      </p>
+      }
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-xs-4">
+
+    </div>
+    <div class="col-xs-8 column">
+      <h2>
+        Education
+      </h2>
+      @if(user.experience != null){
+      <p>
+        @user.education
+      </p>
+      }
+    </div>
+  </div>
+</div>
+}

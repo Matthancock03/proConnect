@@ -54,57 +54,22 @@ Seq[Any](format.raw/*1.18*/("""
           <button type="button" class="btn btn-default edit-button" name="editButton">Edit Profile</button>
         </div>
      </a>
-      <!-- Large modal -->
-  <button type="button" class="btn btn-default edit-button" data-toggle="modal" data-target=".bs-example-modal-lg">Send Message</button>
-
-  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-          """),_display_(Seq[Any](/*36.12*/form(routes.UserController.sendMessage())/*36.53*/{_display_(Seq[Any](format.raw/*36.54*/("""
-
-          	<div class="form-group" style="width: 50%; margin: 0 auto;">
-            <div style="width: 50%; margin: 0 auto;">
-          		<h2 class="form-signin-heading">Message</h2>
-          			<input class="form-control"
-          					placeholder="Message Title"
-          					type="text"
-          					name="messageTitle"
-          					id="messageTitle"
-          					value=""
-          				/>
-          			<input class="form-control"
-          					placeholder="Message"
-          					type="text"
-          					name="messageBody"
-          					id="messageBody"
-          					value=""
-          				/>
-
-          		<button class="btn btn-primary btn-lg btn-block" type="submit" style="width: 50%;">Send Message</button>
-            </div>
-        	</div>
-          	""")))})),format.raw/*59.13*/("""
-      </div>
-    </div>
-  </div> <!-- End modal -->
-
 
     </div>
     <div class="col-xs-2"></div>
 
     <div class="col-md-6 column">
-        """),_display_(Seq[Any](/*69.10*/if(user.aboutMe != null)/*69.34*/{_display_(Seq[Any](format.raw/*69.35*/("""
-          <h3>"""),_display_(Seq[Any](/*70.16*/user/*70.20*/.aboutMe)),format.raw/*70.28*/("""</h3>
-        """)))})),format.raw/*71.10*/("""
+        """),_display_(Seq[Any](/*34.10*/if(user.aboutMe != null)/*34.34*/{_display_(Seq[Any](format.raw/*34.35*/("""
+          <h3>"""),_display_(Seq[Any](/*35.16*/user/*35.20*/.aboutMe)),format.raw/*35.28*/("""</h3>
+        """)))})),format.raw/*36.10*/("""
 
-      """),_display_(Seq[Any](/*73.8*/if(user.currentEmployer != null)/*73.40*/{_display_(Seq[Any](format.raw/*73.41*/("""
-          <h3>"""),_display_(Seq[Any](/*74.16*/user/*74.20*/.currentEmployer)),format.raw/*74.36*/("""</h3>
-        """)))})),format.raw/*75.10*/("""
+      """),_display_(Seq[Any](/*38.8*/if(user.currentEmployer != null)/*38.40*/{_display_(Seq[Any](format.raw/*38.41*/("""
+          <h3>"""),_display_(Seq[Any](/*39.16*/user/*39.20*/.currentEmployer)),format.raw/*39.36*/("""</h3>
+        """)))})),format.raw/*40.10*/("""
 
-      """),_display_(Seq[Any](/*77.8*/if(user.location != null)/*77.33*/{_display_(Seq[Any](format.raw/*77.34*/("""
-          <h3>"""),_display_(Seq[Any](/*78.16*/user/*78.20*/.location)),format.raw/*78.29*/("""</h3>
-        """)))})),format.raw/*79.10*/("""
+      """),_display_(Seq[Any](/*42.8*/if(user.location != null)/*42.33*/{_display_(Seq[Any](format.raw/*42.34*/("""
+          <h3>"""),_display_(Seq[Any](/*43.16*/user/*43.20*/.location)),format.raw/*43.29*/("""</h3>
+        """)))})),format.raw/*44.10*/("""
     </div>
     <div class="col-xs-2"></div>
   </div>
@@ -116,11 +81,11 @@ Seq[Any](format.raw/*1.18*/("""
         <h2>
           About Me
         </h2>
-        """),_display_(Seq[Any](/*91.10*/if(user.aboutMe != null)/*91.34*/{_display_(Seq[Any](format.raw/*91.35*/("""
+        """),_display_(Seq[Any](/*56.10*/if(user.aboutMe != null)/*56.34*/{_display_(Seq[Any](format.raw/*56.35*/("""
           <p>
-            """),_display_(Seq[Any](/*93.14*/user/*93.18*/.aboutMe)),format.raw/*93.26*/("""
+            """),_display_(Seq[Any](/*58.14*/user/*58.18*/.aboutMe)),format.raw/*58.26*/("""
           </p>
-        """)))})),format.raw/*95.10*/("""
+        """)))})),format.raw/*60.10*/("""
 
       </div>
   </div>
@@ -132,11 +97,11 @@ Seq[Any](format.raw/*1.18*/("""
       <h2>
         Experience
       </h2>
-      """),_display_(Seq[Any](/*107.8*/if(user.experience != null)/*107.35*/{_display_(Seq[Any](format.raw/*107.36*/("""
+      """),_display_(Seq[Any](/*72.8*/if(user.experience != null)/*72.35*/{_display_(Seq[Any](format.raw/*72.36*/("""
       <p>
-        """),_display_(Seq[Any](/*109.10*/user/*109.14*/.experience)),format.raw/*109.25*/("""
+        """),_display_(Seq[Any](/*74.10*/user/*74.14*/.experience)),format.raw/*74.25*/("""
       </p>
-      """)))})),format.raw/*111.8*/("""
+      """)))})),format.raw/*76.8*/("""
     </div>
   </div>
   <div class="row clearfix">
@@ -147,11 +112,11 @@ Seq[Any](format.raw/*1.18*/("""
       <h2>
         Projects or Skills Highlight
       </h2>
-      """),_display_(Seq[Any](/*122.8*/if(user.experience != null)/*122.35*/{_display_(Seq[Any](format.raw/*122.36*/("""
+      """),_display_(Seq[Any](/*87.8*/if(user.experience != null)/*87.35*/{_display_(Seq[Any](format.raw/*87.36*/("""
       <p>
-        """),_display_(Seq[Any](/*124.10*/user/*124.14*/.projects)),format.raw/*124.23*/("""
+        """),_display_(Seq[Any](/*89.10*/user/*89.14*/.projects)),format.raw/*89.23*/("""
       </p>
-      """)))})),format.raw/*126.8*/("""
+      """)))})),format.raw/*91.8*/("""
     </div>
   </div>
   <div class="row clearfix">
@@ -162,15 +127,15 @@ Seq[Any](format.raw/*1.18*/("""
       <h2>
         Education
       </h2>
-      """),_display_(Seq[Any](/*137.8*/if(user.experience != null)/*137.35*/{_display_(Seq[Any](format.raw/*137.36*/("""
+      """),_display_(Seq[Any](/*102.8*/if(user.experience != null)/*102.35*/{_display_(Seq[Any](format.raw/*102.36*/("""
       <p>
-        """),_display_(Seq[Any](/*139.10*/user/*139.14*/.education)),format.raw/*139.24*/("""
+        """),_display_(Seq[Any](/*104.10*/user/*104.14*/.education)),format.raw/*104.24*/("""
       </p>
-      """)))})),format.raw/*141.8*/("""
+      """)))})),format.raw/*106.8*/("""
     </div>
   </div>
 </div>
-""")))})),format.raw/*145.2*/("""
+""")))})),format.raw/*110.2*/("""
 """))}
     }
     
@@ -183,11 +148,11 @@ Seq[Any](format.raw/*1.18*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun May 03 18:51:03 PDT 2015
+                    DATE: Sun May 03 21:17:32 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileEdit.scala.html
-                    HASH: 7a72ce311385df4c8f5815d033857e3ab41871ea
-                    MATRIX: 783->1|909->17|937->36|1003->67|1017->73|1079->114|1118->119|1143->136|1181->137|1217->139|1230->145|1258->152|1398->257|1438->288|1477->289|1570->346|1585->352|1647->391|1677->403|1690->407|1729->408|1836->479|1851->485|1913->524|1959->538|2005->548|2039->573|2078->574|2134->594|2147->598|2178->607|2216->626|2229->630|2268->631|2343->674|2396->691|2411->697|2460->724|3029->1257|3079->1298|3118->1299|3932->2081|4111->2224|4144->2248|4183->2249|4235->2265|4248->2269|4278->2277|4325->2292|4369->2301|4410->2333|4449->2334|4501->2350|4514->2354|4552->2370|4599->2385|4643->2394|4677->2419|4716->2420|4768->2436|4781->2440|4812->2449|4859->2464|5108->2677|5141->2701|5180->2702|5244->2730|5257->2734|5287->2742|5344->2767|5555->2942|5592->2969|5632->2970|5689->2990|5703->2994|5737->3005|5788->3024|6014->3214|6051->3241|6091->3242|6148->3262|6162->3266|6194->3275|6245->3294|6452->3465|6489->3492|6529->3493|6586->3513|6600->3517|6633->3527|6684->3546|6745->3575
-                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|35->7|35->7|35->7|36->8|36->8|36->8|42->14|42->14|42->14|43->15|43->15|43->15|44->16|44->16|44->16|45->17|45->17|45->17|46->18|47->19|47->19|47->19|48->20|48->20|48->20|49->21|49->21|49->21|51->23|52->24|52->24|52->24|64->36|64->36|64->36|87->59|97->69|97->69|97->69|98->70|98->70|98->70|99->71|101->73|101->73|101->73|102->74|102->74|102->74|103->75|105->77|105->77|105->77|106->78|106->78|106->78|107->79|119->91|119->91|119->91|121->93|121->93|121->93|123->95|135->107|135->107|135->107|137->109|137->109|137->109|139->111|150->122|150->122|150->122|152->124|152->124|152->124|154->126|165->137|165->137|165->137|167->139|167->139|167->139|169->141|173->145
+                    HASH: a7632cab023d4b4ea58bf0a555f2e3d69aa28804
+                    MATRIX: 783->1|909->17|937->36|1003->67|1017->73|1079->114|1118->119|1143->136|1181->137|1217->139|1230->145|1258->152|1398->257|1438->288|1477->289|1570->346|1585->352|1647->391|1677->403|1690->407|1729->408|1836->479|1851->485|1913->524|1959->538|2005->548|2039->573|2078->574|2134->594|2147->598|2178->607|2216->626|2229->630|2268->631|2343->674|2396->691|2411->697|2460->724|2737->965|2770->989|2809->990|2861->1006|2874->1010|2904->1018|2951->1033|2995->1042|3036->1074|3075->1075|3127->1091|3140->1095|3178->1111|3225->1126|3269->1135|3303->1160|3342->1161|3394->1177|3407->1181|3438->1190|3485->1205|3734->1418|3767->1442|3806->1443|3870->1471|3883->1475|3913->1483|3970->1508|4180->1683|4216->1710|4255->1711|4311->1731|4324->1735|4357->1746|4407->1765|4632->1955|4668->1982|4707->1983|4763->2003|4776->2007|4807->2016|4857->2035|5064->2206|5101->2233|5141->2234|5198->2254|5212->2258|5245->2268|5296->2287|5357->2316
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|35->7|35->7|35->7|36->8|36->8|36->8|42->14|42->14|42->14|43->15|43->15|43->15|44->16|44->16|44->16|45->17|45->17|45->17|46->18|47->19|47->19|47->19|48->20|48->20|48->20|49->21|49->21|49->21|51->23|52->24|52->24|52->24|62->34|62->34|62->34|63->35|63->35|63->35|64->36|66->38|66->38|66->38|67->39|67->39|67->39|68->40|70->42|70->42|70->42|71->43|71->43|71->43|72->44|84->56|84->56|84->56|86->58|86->58|86->58|88->60|100->72|100->72|100->72|102->74|102->74|102->74|104->76|115->87|115->87|115->87|117->89|117->89|117->89|119->91|130->102|130->102|130->102|132->104|132->104|132->104|134->106|138->110
                     -- GENERATED --
                 */
             

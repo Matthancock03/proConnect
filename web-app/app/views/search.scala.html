@@ -1,4 +1,4 @@
-@(user:UserModel)
+@(users: List[UserModel])
 
 @import helper._
 
@@ -9,85 +9,81 @@
 
 <div class="container">
 	<div class="row clearfix">
-		<div class="col-md-5 column">
+		<div class="col-xs-5 column">
 			<img alt="140x140" src="http://www.clker.com/cliparts/z/1/T/u/9/2/search-icon-md.png"  width="42" height="42" />
 		</div>
 	</div>
 
 
-
-<br />
-<br />
-<br />
-<br />
-
 	<div class="row clearfix">
 
-
-<li><a href="#search"></a>
-  <ul>
-  <li><form id="searchbar">
-      <input type="text">
-      </form></li>
- </ul>
-</li>
-
-
-
-		<div class="col-md-6 column">
+		<div class="col-xs-6 column">
 			<h3>
-				People Search
-				<br />
-<br />
-<font size="2">
-<form action="">
-<input type="checkbox" name="vehicle" value="Bike">People<br />
-<input type="checkbox" name="vehicle" value="Car">Relationship <br />
-<input type="checkbox" name="vehicle" value="Bike">Profession<br />
-<input type="checkbox" name="vehicle" value="Car">School<br />
-</font>
-</form>
-		</h3> <a href="#" class="btn" type="button" style="background-color:lightgreen">Search</a>
+				People Search</h3><br />
+
+        <font size="2">
+        <form action="" role="form">
+          <div class="form-group">
+              <input type="text" class="form-control">
+              <br />
+              <input type="checkbox" name="vehicle" value="Bike">People<br />
+              <input type="checkbox" name="vehicle" value="Car">Relationship <br />
+              <input type="checkbox" name="vehicle" value="Bike">Profession<br />
+              <input type="checkbox" name="vehicle" value="Car">School<br />
+            </font>
+              <a href="#" class="btn" type="button" style="background-color:lightgreen">Search</a>
+          </div>
+          </form>
+        </div>
 
 
+      		<div class="col-xs-6 column">
+      			   <h3>Job Search 		</h3><br />
 
-<br />
-<br />
-<br />
-<br />
-<br />
-
-<li><a href="#search"></a>
-  <ul>
-  <li><form id="searchbar">
-      <input type="text">
-      </form></li>
- </ul>
-</li>
-
-		<div class="col-md-6 column">
-			<h3>
-
-
-
-				Job Search <br />
-<br />
-<font size="2">
-<form action="">
-<input type="checkbox" name="vehicle" value="Bike">Jobs<br />
-<input type="checkbox" name="vehicle" value="Car">Companies <br />
-<input type="checkbox" name="vehicle" value="Bike">Industry<br />
-</font>
-</form>
-
-
-
-
-			</h3> <a href="#" class="btn" type="button" style="background-color:lightgreen">Search</a>
-		</div>
+                <font size="2">
+                <form action="" role="form">
+                   <div class="form-group">
+                    <input type="text" class="form-control">
+                    <br />
+                    <input type="checkbox" name="vehicle" value="Bike">Jobs<br />
+                    <input type="checkbox" name="vehicle" value="Car">Companies <br />
+                    <input type="checkbox" name="vehicle" value="Bike">Industry<br />
+                    </font>
+                    <a href="#" class="btn" type="button" style="background-color:lightgreen">Search</a>
+                    </div>
+                </form>
+              </div>
+            </div>
+                <div class="row clearfix">
+                  <div class="col-xs-3"></div>
+                  <div class="col-xs-6">
+                    <div class="feed-div">
+              			@for(user <- users){
+              					<a href="#">
+              					<div class="panel panel-default">
+              						<div class="panel-body">
+              						      <div>
+                                  @if(user.profilePicture != null){
+                          					<img class = "feed-image feed-head" src="@routes.DbController.getProfilePic(user.email)" />
+                          				}else{
+                          					<img alt="140x140" class = "feed-image feed-head" src="@routes.Assets.at("images/profile_holder.png")" />
+                          				}
+              							       <h3 class="panel-title head-text feed-head">@user.userName</h3>
+                      						</div>
+                      						<br>
+                      						<p style="padding-top: 10px;">@user.aboutMe</p>
+                                  <p style="padding-top: 10px;">@user.location</p>
+                      					</div>
+                      				</div>
+                				</a>
+                			}
+        		    </div>
+              </div>
+            <div class="col-xs-3"></div>
+          </div>
 	</div>
-  </div>
-</div>
+
+
 
 
 }

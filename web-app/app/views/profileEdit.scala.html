@@ -26,41 +26,6 @@
           <button type="button" class="btn btn-default edit-button" name="editButton">Edit Profile</button>
         </div>
      </a>
-      <!-- Large modal -->
-  <button type="button" class="btn btn-default edit-button" data-toggle="modal" data-target=".bs-example-modal-lg">Send Message</button>
-
-  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-          @form(routes.UserController.sendMessage()){
-
-          	<div class="form-group" style="width: 50%; margin: 0 auto;">
-            <div style="width: 50%; margin: 0 auto;">
-          		<h2 class="form-signin-heading">Message</h2>
-          			<input class="form-control"
-          					placeholder="Message Title"
-          					type="text"
-          					name="messageTitle"
-          					id="messageTitle"
-          					value=""
-          				/>
-          			<input class="form-control"
-          					placeholder="Message"
-          					type="text"
-          					name="messageBody"
-          					id="messageBody"
-          					value=""
-          				/>
-
-          		<button class="btn btn-primary btn-lg btn-block" type="submit" style="width: 50%;">Send Message</button>
-            </div>
-        	</div>
-          	}
-      </div>
-    </div>
-  </div> <!-- End modal -->
-
 
     </div>
     <div class="col-xs-2"></div>

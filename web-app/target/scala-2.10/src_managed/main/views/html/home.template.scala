@@ -55,16 +55,17 @@ Seq[Any](format.raw/*1.45*/("""
 					""")))}/*27.7*/else/*27.11*/{_display_(Seq[Any](format.raw/*27.12*/("""
 						<p class="profile-text">Guest</p>
 					""")))})),format.raw/*29.7*/("""
+					<p>Connections to Add</p>
 					</dt>
 					<dd>
-					"""),_display_(Seq[Any](/*32.7*/if(user.currentEmployer != null)/*32.39*/{_display_(Seq[Any](format.raw/*32.40*/("""
-					<p class="profile-text">"""),_display_(Seq[Any](/*33.31*/user/*33.35*/.currentEmployer)),format.raw/*33.51*/("""</p>
-					""")))})),format.raw/*34.7*/("""
+					"""),_display_(Seq[Any](/*33.7*/if(user.currentEmployer != null)/*33.39*/{_display_(Seq[Any](format.raw/*33.40*/("""
+					<p class="profile-text">"""),_display_(Seq[Any](/*34.31*/user/*34.35*/.currentEmployer)),format.raw/*34.51*/("""</p>
+					""")))})),format.raw/*35.7*/("""
 					</dd>
 					<dd>
-					"""),_display_(Seq[Any](/*37.7*/if(user.recentSchool != null)/*37.36*/{_display_(Seq[Any](format.raw/*37.37*/("""
-						<p class="profile-text">"""),_display_(Seq[Any](/*38.32*/user/*38.36*/.recentSchool)),format.raw/*38.49*/("""</p>
-						""")))})),format.raw/*39.8*/("""
+					"""),_display_(Seq[Any](/*38.7*/if(user.recentSchool != null)/*38.36*/{_display_(Seq[Any](format.raw/*38.37*/("""
+						<p class="profile-text">"""),_display_(Seq[Any](/*39.32*/user/*39.36*/.recentSchool)),format.raw/*39.49*/("""</p>
+						""")))})),format.raw/*40.8*/("""
 					</dd>
 				</dl>
 
@@ -73,23 +74,23 @@ Seq[Any](format.raw/*1.45*/("""
 
 		<div class="col-xs-6 column feed-container">
 			<div class="feed-div">
-			"""),_display_(Seq[Any](/*48.5*/for(feedItem <- feedItems) yield /*48.31*/{_display_(Seq[Any](format.raw/*48.32*/("""
-				"""),_display_(Seq[Any](/*49.6*/if(feedItem.publish_date != "")/*49.37*/{_display_(Seq[Any](format.raw/*49.38*/("""
-					<a href=""""),_display_(Seq[Any](/*50.16*/feedItem/*50.24*/.url)),format.raw/*50.28*/("""" target="_blank" style="text-decoration: none;">
+			"""),_display_(Seq[Any](/*49.5*/for(feedItem <- feedItems) yield /*49.31*/{_display_(Seq[Any](format.raw/*49.32*/("""
+				"""),_display_(Seq[Any](/*50.6*/if(feedItem.publish_date != "")/*50.37*/{_display_(Seq[Any](format.raw/*50.38*/("""
+					<a href=""""),_display_(Seq[Any](/*51.16*/feedItem/*51.24*/.url)),format.raw/*51.28*/("""" target="_blank" style="text-decoration: none;">
 					<div class="panel panel-default">
 						<div class="panel-body">
 						<div>
-							<img alt="" class="feed-image feed-head" src=""""),_display_(Seq[Any](/*54.55*/routes/*54.61*/.Assets.at("images/tech.png"))),format.raw/*54.90*/("""" />
-							<h3 class="panel-title head-text feed-head">"""),_display_(Seq[Any](/*55.53*/feedItem/*55.61*/.title)),format.raw/*55.67*/("""</h3>
+							<img alt="" class="feed-image feed-head" src=""""),_display_(Seq[Any](/*55.55*/routes/*55.61*/.Assets.at("images/tech.png"))),format.raw/*55.90*/("""" />
+							<h3 class="panel-title head-text feed-head">"""),_display_(Seq[Any](/*56.53*/feedItem/*56.61*/.title)),format.raw/*56.67*/("""</h3>
 						</div>
 						<br>
-						<p style="padding-top: 10px;">"""),_display_(Seq[Any](/*58.38*/feedItem/*58.46*/.summary)),format.raw/*58.54*/("""</p>
-						<p class="foot-text">"""),_display_(Seq[Any](/*59.29*/feedItem/*59.37*/.publish_date)),format.raw/*59.50*/("""  """),_display_(Seq[Any](/*59.53*/feedItem/*59.61*/.source)),format.raw/*59.68*/("""</p>
+						<p style="padding-top: 10px;">"""),_display_(Seq[Any](/*59.38*/feedItem/*59.46*/.summary)),format.raw/*59.54*/("""</p>
+						<p class="foot-text">"""),_display_(Seq[Any](/*60.29*/feedItem/*60.37*/.publish_date)),format.raw/*60.50*/("""  """),_display_(Seq[Any](/*60.53*/feedItem/*60.61*/.source)),format.raw/*60.68*/("""</p>
 					</div>
 				</div>
 				</a>
-				""")))})),format.raw/*63.6*/("""
-			""")))})),format.raw/*64.5*/("""
+				""")))})),format.raw/*64.6*/("""
+			""")))})),format.raw/*65.5*/("""
 		</div>
 		</div>
 		<div class="col-xs-3 column" style="margin-top: 25px;">
@@ -97,7 +98,7 @@ Seq[Any](format.raw/*1.45*/("""
 				<div class="panel panel-default">
 				  <div class="panel-heading">Twitter Feed</div>
 				  <div class="panel-body">
-						"""),_display_(Seq[Any](/*72.8*/if(user.loginProvider == "twitter")/*72.43*/{_display_(Seq[Any](format.raw/*72.44*/("""
+						"""),_display_(Seq[Any](/*73.8*/if(user.loginProvider == "twitter")/*73.43*/{_display_(Seq[Any](format.raw/*73.44*/("""
 						<ul class="list-group overflow-y-scroll tweetTable">
 							  <li class="list-group-item">First item</li>
 							  <li class="list-group-item">Second item</li>
@@ -106,9 +107,9 @@ Seq[Any](format.raw/*1.45*/("""
 							  <li class="list-group-item">Second item</li>
 							  <li class="list-group-item">Third item</li>
 							</ul>
-						""")))}/*81.8*/else/*81.12*/{_display_(Seq[Any](format.raw/*81.13*/("""
+						""")))}/*82.8*/else/*82.12*/{_display_(Seq[Any](format.raw/*82.13*/("""
 							<p>Enter your twitter information for a feed of recent tweets!</p>
-						""")))})),format.raw/*83.8*/("""
+						""")))})),format.raw/*84.8*/("""
 				  </div>
 				</div>
 			</div>
@@ -119,7 +120,7 @@ Seq[Any](format.raw/*1.45*/("""
 
   </div>
 </div>
-""")))})),format.raw/*94.2*/("""
+""")))})),format.raw/*95.2*/("""
 """))}
     }
     
@@ -132,11 +133,11 @@ Seq[Any](format.raw/*1.45*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun May 03 18:22:03 PDT 2015
+                    DATE: Sun May 03 21:17:32 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/home.scala.html
-                    HASH: 682ddfe69fd58277b6144886eaa546f6214f0e82
-                    MATRIX: 791->1|944->44|972->63|1008->65|1034->83|1073->85|1140->117|1154->123|1213->161|1336->249|1351->255|1382->264|1585->432|1625->463|1664->464|1754->518|1769->524|1830->563|1858->573|1871->577|1910->578|2014->646|2029->652|2091->691|2132->701|2215->749|2249->774|2288->775|2356->807|2369->811|2400->820|2429->831|2442->835|2481->836|2559->883|2622->911|2663->943|2702->944|2769->975|2782->979|2820->995|2862->1006|2925->1034|2963->1063|3002->1064|3070->1096|3083->1100|3118->1113|3161->1125|3315->1244|3357->1270|3396->1271|3437->1277|3477->1308|3516->1309|3568->1325|3585->1333|3611->1337|3833->1523|3848->1529|3899->1558|3992->1615|4009->1623|4037->1629|4140->1696|4157->1704|4187->1712|4256->1745|4273->1753|4308->1766|4347->1769|4364->1777|4393->1784|4466->1826|4502->1831|4751->2045|4795->2080|4834->2081|5251->2480|5264->2484|5303->2485|5416->2567|5520->2640
-                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|39->11|39->11|39->11|46->18|46->18|46->18|47->19|47->19|47->19|48->20|48->20|48->20|49->21|49->21|49->21|50->22|53->25|53->25|53->25|54->26|54->26|54->26|55->27|55->27|55->27|57->29|60->32|60->32|60->32|61->33|61->33|61->33|62->34|65->37|65->37|65->37|66->38|66->38|66->38|67->39|76->48|76->48|76->48|77->49|77->49|77->49|78->50|78->50|78->50|82->54|82->54|82->54|83->55|83->55|83->55|86->58|86->58|86->58|87->59|87->59|87->59|87->59|87->59|87->59|91->63|92->64|100->72|100->72|100->72|109->81|109->81|109->81|111->83|122->94
+                    HASH: 00cbcc5948e47d9bceda43056bc0d48bb2e6713a
+                    MATRIX: 791->1|944->44|972->63|1008->65|1034->83|1073->85|1140->117|1154->123|1213->161|1336->249|1351->255|1382->264|1585->432|1625->463|1664->464|1754->518|1769->524|1830->563|1858->573|1871->577|1910->578|2014->646|2029->652|2091->691|2132->701|2215->749|2249->774|2288->775|2356->807|2369->811|2400->820|2429->831|2442->835|2481->836|2559->883|2653->942|2694->974|2733->975|2800->1006|2813->1010|2851->1026|2893->1037|2956->1065|2994->1094|3033->1095|3101->1127|3114->1131|3149->1144|3192->1156|3346->1275|3388->1301|3427->1302|3468->1308|3508->1339|3547->1340|3599->1356|3616->1364|3642->1368|3864->1554|3879->1560|3930->1589|4023->1646|4040->1654|4068->1660|4171->1727|4188->1735|4218->1743|4287->1776|4304->1784|4339->1797|4378->1800|4395->1808|4424->1815|4497->1857|4533->1862|4782->2076|4826->2111|4865->2112|5282->2511|5295->2515|5334->2516|5447->2598|5551->2671
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|39->11|39->11|39->11|46->18|46->18|46->18|47->19|47->19|47->19|48->20|48->20|48->20|49->21|49->21|49->21|50->22|53->25|53->25|53->25|54->26|54->26|54->26|55->27|55->27|55->27|57->29|61->33|61->33|61->33|62->34|62->34|62->34|63->35|66->38|66->38|66->38|67->39|67->39|67->39|68->40|77->49|77->49|77->49|78->50|78->50|78->50|79->51|79->51|79->51|83->55|83->55|83->55|84->56|84->56|84->56|87->59|87->59|87->59|88->60|88->60|88->60|88->60|88->60|88->60|92->64|93->65|101->73|101->73|101->73|110->82|110->82|110->82|112->84|123->95
                     -- GENERATED --
                 */
             

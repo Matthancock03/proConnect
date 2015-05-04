@@ -1,6 +1,6 @@
 // @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
-// @HASH:e4b6a239889029f869b59350e8078c7ca17e1202
-// @DATE:Sun May 03 18:21:54 PDT 2015
+// @HASH:2a0dededb98ef8b31f07fb2ae3c0a97a4c572f10
+// @DATE:Sun May 03 20:37:46 PDT 2015
 
 package controllers;
 
@@ -11,6 +11,7 @@ public static final controllers.ReverseWebJarAssets WebJarAssets = new controlle
 public static final controllers.ReverseUserController UserController = new controllers.ReverseUserController();
 public static final controllers.ReverseApplication Application = new controllers.ReverseApplication();
 public static final controllers.ReverseDbController DbController = new controllers.ReverseDbController();
+public static final controllers.ReverseSearchController SearchController = new controllers.ReverseSearchController();
 public static final controllers.ReverseAndroid Android = new controllers.ReverseAndroid();
 public static class javascript {
 public static final controllers.javascript.ReverseNewsFeed NewsFeed = new controllers.javascript.ReverseNewsFeed();
@@ -19,6 +20,7 @@ public static final controllers.javascript.ReverseWebJarAssets WebJarAssets = ne
 public static final controllers.javascript.ReverseUserController UserController = new controllers.javascript.ReverseUserController();
 public static final controllers.javascript.ReverseApplication Application = new controllers.javascript.ReverseApplication();
 public static final controllers.javascript.ReverseDbController DbController = new controllers.javascript.ReverseDbController();
+public static final controllers.javascript.ReverseSearchController SearchController = new controllers.javascript.ReverseSearchController();
 public static final controllers.javascript.ReverseAndroid Android = new controllers.javascript.ReverseAndroid();
 }
 public static class ref {
@@ -28,6 +30,7 @@ public static final controllers.ref.ReverseWebJarAssets WebJarAssets = new contr
 public static final controllers.ref.ReverseUserController UserController = new controllers.ref.ReverseUserController();
 public static final controllers.ref.ReverseApplication Application = new controllers.ref.ReverseApplication();
 public static final controllers.ref.ReverseDbController DbController = new controllers.ref.ReverseDbController();
+public static final controllers.ref.ReverseSearchController SearchController = new controllers.ref.ReverseSearchController();
 public static final controllers.ref.ReverseAndroid Android = new controllers.ref.ReverseAndroid();
 }
 }
