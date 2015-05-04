@@ -1,24 +1,6 @@
-<<<<<<< HEAD
 // @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
 // @HASH:e4b6a239889029f869b59350e8078c7ca17e1202
-// @DATE:Sun May 03 18:04:11 PDT 2015
-=======
-<<<<<<< HEAD
-// @SOURCE:C:/Users/Roya/Documents/GitHub/proConnect/web-app/conf/routes
-// @HASH:9edbfe356764aa8a7a47ff5cec908b0428260996
-// @DATE:Sat May 02 15:09:55 PDT 2015
-=======
-<<<<<<< HEAD
-// @SOURCE:C:/Users/Eya/Documents/GitHub/proConnect/web-app/conf/routes
-// @HASH:05b5e3c9d70ed5d549198182ded81ee49a82d11f
-// @DATE:Sat May 02 15:50:31 MST 2015
-=======
-// @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
-// @HASH:4d3207f81801417e1764a842bb8a24dc24661de6
-// @DATE:Sat May 02 14:04:24 PDT 2015
->>>>>>> 8f9ed6157bd56181ad0b73743b3620babe9daf06
->>>>>>> b5cd3ede55911f15f7cd40c3fa35efc022e62ba8
->>>>>>> 8f8ae877319c134aee014bdb30a07b08ec040e35
+// @DATE:Sun May 03 18:07:25 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._

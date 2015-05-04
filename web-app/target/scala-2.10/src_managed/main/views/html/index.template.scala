@@ -67,31 +67,10 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 }
                 /*
                     -- GENERATED --
-<<<<<<< HEAD
-                    DATE: Sun May 03 18:04:20 PDT 2015
+                    DATE: Sun May 03 18:07:29 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/index.scala.html
                     HASH: 7a0e2e59a07c347656137bc3e5369973055ae701
                     MATRIX: 855->0|1486->595|1501->601|1570->648|1659->701|1674->707|1752->762|1841->815|1856->821|1929->872|2018->925|2033->931|2088->964
-=======
-<<<<<<< HEAD
-                    DATE: Sat May 02 15:10:05 PDT 2015
-                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/index.scala.html
-                    HASH: a23dcef0b97fbae07b9e49ec0fe787ec0aa87f28
-                    MATRIX: 855->0|1509->618|1524->624|1593->671|1683->725|1698->731|1776->786|1866->840|1881->846|1954->897|2044->951|2059->957|2114->990
-=======
-<<<<<<< HEAD
-                    DATE: Sat May 02 15:50:34 MST 2015
-                    SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/index.scala.html
-                    HASH: a23dcef0b97fbae07b9e49ec0fe787ec0aa87f28
-                    MATRIX: 855->0|1509->618|1524->624|1593->671|1683->725|1698->731|1776->786|1866->840|1881->846|1954->897|2044->951|2059->957|2114->990
-=======
-                    DATE: Sat May 02 13:10:11 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/index.scala.html
-                    HASH: 7a0e2e59a07c347656137bc3e5369973055ae701
-                    MATRIX: 855->0|1486->595|1501->601|1570->648|1659->701|1674->707|1752->762|1841->815|1856->821|1929->872|2018->925|2033->931|2088->964
->>>>>>> 8f9ed6157bd56181ad0b73743b3620babe9daf06
->>>>>>> b5cd3ede55911f15f7cd40c3fa35efc022e62ba8
->>>>>>> 8f8ae877319c134aee014bdb30a07b08ec040e35
                     LINES: 29->1|52->24|52->24|52->24|53->25|53->25|53->25|54->26|54->26|54->26|55->27|55->27|55->27
                     -- GENERATED --
                 */

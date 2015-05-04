@@ -137,29 +137,11 @@ Download the ProConnect app on Google Play and take part in discussions and shar
 }
                 /*
                     -- GENERATED --
-<<<<<<< HEAD
-                    DATE: Sun May 03 18:04:20 PDT 2015
-=======
-<<<<<<< HEAD
-                    DATE: Sat May 02 16:14:50 PDT 2015
-                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/about.scala.html
-                    HASH: d59b59fd2cdc5d7e6347a1e3d7f23a6f0dfec6ae
-                    MATRIX: 864->1|890->19|928->20|995->52|1009->58|1066->94|1641->633|1662->645|1736->696|4502->3431
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|127->99
-=======
-<<<<<<< HEAD
-                    DATE: Sat May 02 15:50:34 MST 2015
-                    SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/about.scala.html
-                    HASH: 487cc3c9903e2ca6aa6de1838f1f589cd39ee2c1
-                    MATRIX: 864->1|890->19|928->20|995->52|1009->58|1066->94|1641->633|1662->645|1736->696|5060->3988
-=======
-                    DATE: Sat May 02 13:10:11 PDT 2015
->>>>>>> 8f8ae877319c134aee014bdb30a07b08ec040e35
+                    DATE: Sun May 03 18:07:29 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/about.scala.html
-                    HASH: cd453643d0689b0f8ee1f4616ecf3768e73c477c
-                    MATRIX: 864->1|890->19|928->20|994->51|1008->57|1065->93|1627->619|1648->631|1722->682|4941->3869
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|148->120
->>>>>>> b5cd3ede55911f15f7cd40c3fa35efc022e62ba8
+                    HASH: 5240d72a31b8c0f5dcabde7219cd8317abd71f8f
+                    MATRIX: 864->1|890->19|928->20|994->51|1008->57|1065->93|1627->619|1648->631|1722->682|4404->3333
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|127->99
                     -- GENERATED --
                 */
             

@@ -172,7 +172,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 		</div>
 	</div>
 </div>
-""")))})),format.raw/*153.2*/("""
+""")))})),format.raw/*147.2*/("""
 """))}
     }
     
@@ -185,28 +185,11 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConect")/*1.19*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
-<<<<<<< HEAD
-                    DATE: Sun May 03 18:04:21 PDT 2015
-=======
-<<<<<<< HEAD
-                    DATE: Sat May 02 16:42:05 PDT 2015
-                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/message.scala.html
-                    HASH: b6be4e2c14afbbb1c3ff15282d95e872ff82c9b7
-=======
-<<<<<<< HEAD
-                    DATE: Sat May 02 15:50:34 MST 2015
-                    SOURCE: C:/Users/Eya/Documents/GitHub/proConnect/web-app/app/views/message.scala.html
-                    HASH: 85145a2ad6b621ee2f55887eb58601446f9bf079
->>>>>>> b5cd3ede55911f15f7cd40c3fa35efc022e62ba8
-                    MATRIX: 866->1|891->18|929->19|966->22|979->28|1007->35
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2
-=======
-                    DATE: Sat May 02 14:04:39 PDT 2015
->>>>>>> 8f8ae877319c134aee014bdb30a07b08ec040e35
+                    DATE: Sun May 03 18:07:29 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/message.scala.html
-                    HASH: 935fabd2d81053aed37c6d9b5a186b5aa4bea012
-                    MATRIX: 866->1|891->18|929->19|965->21|978->27|1006->34|3960->2956
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|181->153
+                    HASH: 34d140fb90ab42476494469ecb846141577f9387
+                    MATRIX: 866->1|891->18|929->19|965->21|978->27|1006->34|3707->2703
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|175->147
                     -- GENERATED --
                 */
             
