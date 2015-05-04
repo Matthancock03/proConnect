@@ -155,31 +155,6 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">
-							Job Search
-						</h3>
-					</div>
-					<div class="panel-body">
-					<a data-toggle="collapse" data-target="#demo11">How can I search for jobs on ProConnect?</a>
-							<div id="demo11" class="collapse">
-						    To search for a job, simply type a job title or company name in the search bar. You can also filter the search result by clicking on either the "Job" or "Company" filter.
-					  		</div>
-
-					</div>
-					<div class="panel-body">
-					<a data-toggle="collapse" data-target="#demo12">How can I apply to a job through ProConnect?</a>
-							<div id="demo12" class="collapse">
-						    You cannot apply to a job on ProConnect directly. However, recruiters will provide a URL of where you can apply to the job on the job post.
-					  		</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-			<div class="col-md-6 column">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">
 							Privacy Settings
 						</h3>
 					</div>
@@ -203,6 +178,32 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 					  		</div>
 					</div>
 				</div>
+			</div>
+		</div>
+
+			<div class="col-md-6 column">
+			<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							Job Search
+						</h3>
+					</div>
+					<div class="panel-body">
+					<a data-toggle="collapse" data-target="#demo11">How can I search for jobs on ProConnect?</a>
+							<div id="demo11" class="collapse">
+						    To search for a job, simply type a job title or company name in the search bar. You can also filter the search result by clicking on either the "Job" or "Company" filter.
+					  		</div>
+
+					</div>
+					<div class="panel-body">
+					<a data-toggle="collapse" data-target="#demo12">How can I apply to a job through ProConnect?</a>
+							<div id="demo12" class="collapse">
+						    You cannot apply to a job on ProConnect directly. However, recruiters will provide a URL of where you can apply to the job on the job post.
+					  		</div>
+					</div>
+
+				</div>
+			
 			</div>
 			<div class="col-md-6 column">
 				<div class="panel panel-default">
@@ -229,9 +230,9 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 
 
 		<div class="row clearfix">
-			<div class="col-md-4 column">
+			<div class="col-md-12 column">
 				<!-- <br /><img alt="140x140" src="http://www.medisolsoft.com/images/support.jpg" /><br /><br /> -->
-			</div>
+			
 			<div class="col-md-6 column">
 				 <h3>
 				 <br /><br />Can't find what you are looking for?<br />Contact us at supportproConnectors.com and we will get back to you within 24 hours.
@@ -240,7 +241,7 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 		</div>
 	</div>
 
-	""")))})),format.raw/*215.3*/("""
+	""")))})),format.raw/*216.3*/("""
 """))}
     }
     
@@ -253,11 +254,11 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
-                    DATE: Sun May 03 21:30:53 PDT 2015
+                    DATE: Mon May 04 01:06:09 PDT 2015
                     SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/help.scala.html
-                    HASH: 176fe9097aadba1f4fb4af7b2a06aef987db713c
-                    MATRIX: 863->2|888->19|926->20|964->24|977->30|1005->37|9263->8263
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|243->215
+                    HASH: dc679c167bbe6cf272b3ca005cec5f0a4d54f21c
+                    MATRIX: 863->2|888->19|926->20|964->24|977->30|1005->37|9262->8262
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|244->216
                     -- GENERATED --
                 */
             
