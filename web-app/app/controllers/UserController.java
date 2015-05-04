@@ -42,8 +42,40 @@ public static Result sendMessage(){
       message.messageBody = messageContent;
       message.isRead = false;
       message.save();
-      
+
       return ok(searchedProfile.render(user));
+}
+
+@SecureSocial.UserAwareAction
+public static Result replyMessage(){
+
+      Message mess = new Message();
+      DynamicForm requestData = Form.form().bindFromRequest();
+      String messageHead = requestData.get("messageTitle");
+      String messageContent = requestData.get("messageBody");
+
+      UserModel sender;
+      try{
+      Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+      sender = UserModel.loadUserModel(userID);
+      }catch(Exception e){
+        return ok(splash.render());
+      }
+
+      /*String id = requestData.get("id");
+      Long recipientId = Long.valueOf(String s).longValue(id);
+
+      Logger.debug("Message Title: " + messageHead + " Message Body: " + messageContent + " Recipient email: " + email);
+
+      message.senderId = sender.id;
+      message.recipientId = recipientId;
+      message.messageTitle = messageHead;
+      message.messageBody = messageContent;
+      message.isRead = false;
+      message.save();
+      */
+        List<Message> messages = Message.getMessageArray(sender.id);
+        return ok(message.render(messages));
 }
 
 public static Result searchUser(String name){

@@ -1,6 +1,6 @@
 // @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
-// @HASH:be2725e0e55c2aba1fed04b9369831c0ece17d17
-// @DATE:Mon May 04 09:52:29 PDT 2015
+// @HASH:f4ead42f8be0871f2bf9f80280ef1d87c6f9a593
+// @DATE:Mon May 04 12:59:11 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -13,13 +13,14 @@ import play.libs.F
 import Router.queryString
 
 
+// @LINE:41
 // @LINE:40
-// @LINE:39
+// @LINE:36
 // @LINE:35
 // @LINE:34
-// @LINE:33
+// @LINE:30
 // @LINE:29
-// @LINE:28
+// @LINE:27
 // @LINE:26
 // @LINE:25
 // @LINE:23
@@ -51,11 +52,11 @@ def homeFeed(): Call = {
 }
                           
 
-// @LINE:39
+// @LINE:40
 class ReverseAssets {
     
 
-// @LINE:39
+// @LINE:40
 def at(file:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
 }
@@ -64,11 +65,11 @@ def at(file:String): Call = {
 }
                           
 
-// @LINE:40
+// @LINE:41
 class ReverseWebJarAssets {
     
 
-// @LINE:40
+// @LINE:41
 def at(file:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "webjars/" + implicitly[PathBindable[String]].unbind("file", file))
 }
@@ -77,9 +78,16 @@ def at(file:String): Call = {
 }
                           
 
+// @LINE:26
 // @LINE:25
 class ReverseUserController {
     
+
+// @LINE:26
+def replyMessage(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "replyMessage")
+}
+                                                
 
 // @LINE:25
 def sendMessage(): Call = {
@@ -193,11 +201,11 @@ def profileMain(): Call = {
 }
                           
 
-// @LINE:26
+// @LINE:27
 class ReverseMessageController {
     
 
-// @LINE:26
+// @LINE:27
 def message(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "message")
 }
@@ -206,18 +214,18 @@ def message(): Call = {
 }
                           
 
+// @LINE:30
 // @LINE:29
-// @LINE:28
 class ReverseSearchController {
     
 
-// @LINE:28
+// @LINE:29
 def loadSearchedProfile(email:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "loadSearchedProfile" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("email", email)))))
 }
                                                 
 
-// @LINE:29
+// @LINE:30
 def search(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "search")
 }
@@ -226,25 +234,25 @@ def search(): Call = {
 }
                           
 
+// @LINE:36
 // @LINE:35
 // @LINE:34
-// @LINE:33
 class ReverseAndroid {
     
 
-// @LINE:34
+// @LINE:35
 def androidCreateAccount(email:String, password:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "androidCreateAccount" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("email", email)), Some(implicitly[QueryStringBindable[String]].unbind("password", password)))))
 }
                                                 
 
-// @LINE:35
+// @LINE:36
 def androidSaveUser(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "androidSaveUser")
 }
                                                 
 
-// @LINE:33
+// @LINE:34
 def androidLogin(email:String, password:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "androidLogin" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("email", email)), Some(implicitly[QueryStringBindable[String]].unbind("password", password)))))
 }
@@ -255,9 +263,10 @@ def androidLogin(email:String, password:String): Call = {
 }
                   
 
+// @LINE:63
 // @LINE:62
 // @LINE:61
-// @LINE:60
+// @LINE:57
 // @LINE:56
 // @LINE:55
 // @LINE:54
@@ -267,11 +276,11 @@ def androidLogin(email:String, password:String): Call = {
 // @LINE:50
 // @LINE:49
 // @LINE:48
-// @LINE:47
+// @LINE:45
 // @LINE:44
-// @LINE:43
 package securesocial.controllers {
 
+// @LINE:55
 // @LINE:54
 // @LINE:53
 // @LINE:52
@@ -279,53 +288,52 @@ package securesocial.controllers {
 // @LINE:50
 // @LINE:49
 // @LINE:48
-// @LINE:47
 class ReverseRegistration {
     
 
-// @LINE:47
+// @LINE:48
 def startSignUp(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "signup")
 }
                                                 
 
-// @LINE:48
+// @LINE:49
 def handleStartSignUp(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "signup")
 }
                                                 
 
-// @LINE:52
+// @LINE:53
 def handleStartResetPassword(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "reset")
 }
                                                 
 
-// @LINE:53
+// @LINE:54
 def resetPassword(token:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "reset/" + implicitly[PathBindable[String]].unbind("token", dynamicString(token)))
 }
                                                 
 
-// @LINE:49
+// @LINE:50
 def signUp(token:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "signup/" + implicitly[PathBindable[String]].unbind("token", dynamicString(token)))
 }
                                                 
 
-// @LINE:50
+// @LINE:51
 def handleSignUp(token:String): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "signup/" + implicitly[PathBindable[String]].unbind("token", dynamicString(token)))
 }
                                                 
 
-// @LINE:51
+// @LINE:52
 def startResetPassword(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "reset")
 }
                                                 
 
-// @LINE:54
+// @LINE:55
 def handleResetPassword(token:String): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "reset/" + implicitly[PathBindable[String]].unbind("token", dynamicString(token)))
 }
@@ -334,25 +342,25 @@ def handleResetPassword(token:String): Call = {
 }
                           
 
+// @LINE:63
 // @LINE:62
 // @LINE:61
-// @LINE:60
 class ReverseProviderController {
     
 
-// @LINE:62
+// @LINE:63
 def notAuthorized(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "not-authorized")
 }
                                                 
 
-// @LINE:60
+// @LINE:61
 def authenticate(provider:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "authenticate/" + implicitly[PathBindable[String]].unbind("provider", dynamicString(provider)))
 }
                                                 
 
-// @LINE:61
+// @LINE:62
 def authenticateByPost(provider:String): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "authenticate/" + implicitly[PathBindable[String]].unbind("provider", dynamicString(provider)))
 }
@@ -361,18 +369,18 @@ def authenticateByPost(provider:String): Call = {
 }
                           
 
+// @LINE:57
 // @LINE:56
-// @LINE:55
 class ReversePasswordChange {
     
 
-// @LINE:56
+// @LINE:57
 def handlePasswordChange(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "password")
 }
                                                 
 
-// @LINE:55
+// @LINE:56
 def page(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "password")
 }
@@ -381,18 +389,18 @@ def page(): Call = {
 }
                           
 
+// @LINE:45
 // @LINE:44
-// @LINE:43
 class ReverseLoginPage {
     
 
-// @LINE:44
+// @LINE:45
 def logout(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "logout")
 }
                                                 
 
-// @LINE:43
+// @LINE:44
 def login(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "login")
 }
@@ -404,13 +412,14 @@ def login(): Call = {
                   
 
 
+// @LINE:41
 // @LINE:40
-// @LINE:39
+// @LINE:36
 // @LINE:35
 // @LINE:34
-// @LINE:33
+// @LINE:30
 // @LINE:29
-// @LINE:28
+// @LINE:27
 // @LINE:26
 // @LINE:25
 // @LINE:23
@@ -447,11 +456,11 @@ def homeFeed : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:39
+// @LINE:40
 class ReverseAssets {
     
 
-// @LINE:39
+// @LINE:40
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.at",
    """
@@ -465,11 +474,11 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:40
+// @LINE:41
 class ReverseWebJarAssets {
     
 
-// @LINE:40
+// @LINE:41
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WebJarAssets.at",
    """
@@ -483,9 +492,21 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:26
 // @LINE:25
 class ReverseUserController {
     
+
+// @LINE:26
+def replyMessage : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.UserController.replyMessage",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "replyMessage"})
+      }
+   """
+)
+                        
 
 // @LINE:25
 def sendMessage : JavascriptReverseRoute = JavascriptReverseRoute(
@@ -669,11 +690,11 @@ def profileMain : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:26
+// @LINE:27
 class ReverseMessageController {
     
 
-// @LINE:26
+// @LINE:27
 def message : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.MessageController.message",
    """
@@ -687,12 +708,12 @@ def message : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:30
 // @LINE:29
-// @LINE:28
 class ReverseSearchController {
     
 
-// @LINE:28
+// @LINE:29
 def loadSearchedProfile : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.SearchController.loadSearchedProfile",
    """
@@ -703,7 +724,7 @@ def loadSearchedProfile : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:29
+// @LINE:30
 def search : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.SearchController.search",
    """
@@ -717,13 +738,13 @@ def search : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:36
 // @LINE:35
 // @LINE:34
-// @LINE:33
 class ReverseAndroid {
     
 
-// @LINE:34
+// @LINE:35
 def androidCreateAccount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Android.androidCreateAccount",
    """
@@ -734,7 +755,7 @@ def androidCreateAccount : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:35
+// @LINE:36
 def androidSaveUser : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Android.androidSaveUser",
    """
@@ -745,7 +766,7 @@ def androidSaveUser : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:33
+// @LINE:34
 def androidLogin : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Android.androidLogin",
    """
@@ -761,9 +782,10 @@ def androidLogin : JavascriptReverseRoute = JavascriptReverseRoute(
 }
         
 
+// @LINE:63
 // @LINE:62
 // @LINE:61
-// @LINE:60
+// @LINE:57
 // @LINE:56
 // @LINE:55
 // @LINE:54
@@ -773,11 +795,11 @@ def androidLogin : JavascriptReverseRoute = JavascriptReverseRoute(
 // @LINE:50
 // @LINE:49
 // @LINE:48
-// @LINE:47
+// @LINE:45
 // @LINE:44
-// @LINE:43
 package securesocial.controllers.javascript {
 
+// @LINE:55
 // @LINE:54
 // @LINE:53
 // @LINE:52
@@ -785,11 +807,10 @@ package securesocial.controllers.javascript {
 // @LINE:50
 // @LINE:49
 // @LINE:48
-// @LINE:47
 class ReverseRegistration {
     
 
-// @LINE:47
+// @LINE:48
 def startSignUp : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.Registration.startSignUp",
    """
@@ -800,7 +821,7 @@ def startSignUp : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:48
+// @LINE:49
 def handleStartSignUp : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.Registration.handleStartSignUp",
    """
@@ -811,7 +832,7 @@ def handleStartSignUp : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:52
+// @LINE:53
 def handleStartResetPassword : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.Registration.handleStartResetPassword",
    """
@@ -822,7 +843,7 @@ def handleStartResetPassword : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:53
+// @LINE:54
 def resetPassword : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.Registration.resetPassword",
    """
@@ -833,7 +854,7 @@ def resetPassword : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:49
+// @LINE:50
 def signUp : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.Registration.signUp",
    """
@@ -844,7 +865,7 @@ def signUp : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:50
+// @LINE:51
 def handleSignUp : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.Registration.handleSignUp",
    """
@@ -855,7 +876,7 @@ def handleSignUp : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:51
+// @LINE:52
 def startResetPassword : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.Registration.startResetPassword",
    """
@@ -866,7 +887,7 @@ def startResetPassword : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:54
+// @LINE:55
 def handleResetPassword : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.Registration.handleResetPassword",
    """
@@ -880,13 +901,13 @@ def handleResetPassword : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:63
 // @LINE:62
 // @LINE:61
-// @LINE:60
 class ReverseProviderController {
     
 
-// @LINE:62
+// @LINE:63
 def notAuthorized : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.ProviderController.notAuthorized",
    """
@@ -897,7 +918,7 @@ def notAuthorized : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:60
+// @LINE:61
 def authenticate : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.ProviderController.authenticate",
    """
@@ -908,7 +929,7 @@ def authenticate : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:61
+// @LINE:62
 def authenticateByPost : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.ProviderController.authenticateByPost",
    """
@@ -922,12 +943,12 @@ def authenticateByPost : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:57
 // @LINE:56
-// @LINE:55
 class ReversePasswordChange {
     
 
-// @LINE:56
+// @LINE:57
 def handlePasswordChange : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.PasswordChange.handlePasswordChange",
    """
@@ -938,7 +959,7 @@ def handlePasswordChange : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:55
+// @LINE:56
 def page : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.PasswordChange.page",
    """
@@ -952,12 +973,12 @@ def page : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:45
 // @LINE:44
-// @LINE:43
 class ReverseLoginPage {
     
 
-// @LINE:44
+// @LINE:45
 def logout : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.LoginPage.logout",
    """
@@ -968,7 +989,7 @@ def logout : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:43
+// @LINE:44
 def login : JavascriptReverseRoute = JavascriptReverseRoute(
    "securesocial.controllers.LoginPage.login",
    """
@@ -985,13 +1006,14 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:41
 // @LINE:40
-// @LINE:39
+// @LINE:36
 // @LINE:35
 // @LINE:34
-// @LINE:33
+// @LINE:30
 // @LINE:29
-// @LINE:28
+// @LINE:27
 // @LINE:26
 // @LINE:25
 // @LINE:23
@@ -1024,11 +1046,11 @@ def homeFeed(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
-// @LINE:39
+// @LINE:40
 class ReverseAssets {
     
 
-// @LINE:39
+// @LINE:40
 def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this, "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -1037,11 +1059,11 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
-// @LINE:40
+// @LINE:41
 class ReverseWebJarAssets {
     
 
-// @LINE:40
+// @LINE:41
 def at(file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.WebJarAssets.at(file), HandlerDef(this, "controllers.WebJarAssets", "at", Seq(classOf[String]), "GET", """""", _prefix + """webjars/$file<.+>""")
 )
@@ -1050,9 +1072,16 @@ def at(file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
+// @LINE:26
 // @LINE:25
 class ReverseUserController {
     
+
+// @LINE:26
+def replyMessage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.UserController.replyMessage(), HandlerDef(this, "controllers.UserController", "replyMessage", Seq(), "GET", """""", _prefix + """replyMessage""")
+)
+                      
 
 // @LINE:25
 def sendMessage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
@@ -1166,11 +1195,11 @@ def profileMain(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
-// @LINE:26
+// @LINE:27
 class ReverseMessageController {
     
 
-// @LINE:26
+// @LINE:27
 def message(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.MessageController.message(), HandlerDef(this, "controllers.MessageController", "message", Seq(), "GET", """""", _prefix + """message""")
 )
@@ -1179,18 +1208,18 @@ def message(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
+// @LINE:30
 // @LINE:29
-// @LINE:28
 class ReverseSearchController {
     
 
-// @LINE:28
+// @LINE:29
 def loadSearchedProfile(email:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.SearchController.loadSearchedProfile(email), HandlerDef(this, "controllers.SearchController", "loadSearchedProfile", Seq(classOf[String]), "GET", """""", _prefix + """loadSearchedProfile""")
 )
                       
 
-// @LINE:29
+// @LINE:30
 def search(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.SearchController.search(), HandlerDef(this, "controllers.SearchController", "search", Seq(), "GET", """""", _prefix + """search""")
 )
@@ -1199,25 +1228,25 @@ def search(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
+// @LINE:36
 // @LINE:35
 // @LINE:34
-// @LINE:33
 class ReverseAndroid {
     
 
-// @LINE:34
+// @LINE:35
 def androidCreateAccount(email:String, password:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Android.androidCreateAccount(email, password), HandlerDef(this, "controllers.Android", "androidCreateAccount", Seq(classOf[String], classOf[String]), "GET", """""", _prefix + """androidCreateAccount""")
 )
                       
 
-// @LINE:35
+// @LINE:36
 def androidSaveUser(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Android.androidSaveUser(), HandlerDef(this, "controllers.Android", "androidSaveUser", Seq(), "POST", """""", _prefix + """androidSaveUser""")
 )
                       
 
-// @LINE:33
+// @LINE:34
 def androidLogin(email:String, password:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Android.androidLogin(email, password), HandlerDef(this, "controllers.Android", "androidLogin", Seq(classOf[String], classOf[String]), "GET", """######### Android###################""", _prefix + """androidLogin""")
 )
@@ -1228,9 +1257,10 @@ def androidLogin(email:String, password:String): play.api.mvc.HandlerRef[_] = ne
 }
         
 
+// @LINE:63
 // @LINE:62
 // @LINE:61
-// @LINE:60
+// @LINE:57
 // @LINE:56
 // @LINE:55
 // @LINE:54
@@ -1240,12 +1270,12 @@ def androidLogin(email:String, password:String): play.api.mvc.HandlerRef[_] = ne
 // @LINE:50
 // @LINE:49
 // @LINE:48
-// @LINE:47
+// @LINE:45
 // @LINE:44
-// @LINE:43
 package securesocial.controllers.ref {
 
 
+// @LINE:55
 // @LINE:54
 // @LINE:53
 // @LINE:52
@@ -1253,53 +1283,52 @@ package securesocial.controllers.ref {
 // @LINE:50
 // @LINE:49
 // @LINE:48
-// @LINE:47
 class ReverseRegistration {
     
 
-// @LINE:47
+// @LINE:48
 def startSignUp(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.startSignUp(), HandlerDef(this, "securesocial.controllers.Registration", "startSignUp", Seq(), "GET", """ User Registration and password handling (only needed if you are using UsernamePasswordProvider)""", _prefix + """signup""")
 )
                       
 
-// @LINE:48
+// @LINE:49
 def handleStartSignUp(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.handleStartSignUp(), HandlerDef(this, "securesocial.controllers.Registration", "handleStartSignUp", Seq(), "POST", """""", _prefix + """signup""")
 )
                       
 
-// @LINE:52
+// @LINE:53
 def handleStartResetPassword(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.handleStartResetPassword(), HandlerDef(this, "securesocial.controllers.Registration", "handleStartResetPassword", Seq(), "POST", """""", _prefix + """reset""")
 )
                       
 
-// @LINE:53
+// @LINE:54
 def resetPassword(token:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.resetPassword(token), HandlerDef(this, "securesocial.controllers.Registration", "resetPassword", Seq(classOf[String]), "GET", """""", _prefix + """reset/$token<[^/]+>""")
 )
                       
 
-// @LINE:49
+// @LINE:50
 def signUp(token:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.signUp(token), HandlerDef(this, "securesocial.controllers.Registration", "signUp", Seq(classOf[String]), "GET", """""", _prefix + """signup/$token<[^/]+>""")
 )
                       
 
-// @LINE:50
+// @LINE:51
 def handleSignUp(token:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.handleSignUp(token), HandlerDef(this, "securesocial.controllers.Registration", "handleSignUp", Seq(classOf[String]), "POST", """""", _prefix + """signup/$token<[^/]+>""")
 )
                       
 
-// @LINE:51
+// @LINE:52
 def startResetPassword(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.startResetPassword(), HandlerDef(this, "securesocial.controllers.Registration", "startResetPassword", Seq(), "GET", """""", _prefix + """reset""")
 )
                       
 
-// @LINE:54
+// @LINE:55
 def handleResetPassword(token:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.Registration.handleResetPassword(token), HandlerDef(this, "securesocial.controllers.Registration", "handleResetPassword", Seq(classOf[String]), "POST", """""", _prefix + """reset/$token<[^/]+>""")
 )
@@ -1308,25 +1337,25 @@ def handleResetPassword(token:String): play.api.mvc.HandlerRef[_] = new play.api
 }
                           
 
+// @LINE:63
 // @LINE:62
 // @LINE:61
-// @LINE:60
 class ReverseProviderController {
     
 
-// @LINE:62
+// @LINE:63
 def notAuthorized(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.ProviderController.notAuthorized(), HandlerDef(this, "securesocial.controllers.ProviderController", "notAuthorized", Seq(), "GET", """""", _prefix + """not-authorized""")
 )
                       
 
-// @LINE:60
+// @LINE:61
 def authenticate(provider:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.ProviderController.authenticate(provider), HandlerDef(this, "securesocial.controllers.ProviderController", "authenticate", Seq(classOf[String]), "GET", """ Providers entry points""", _prefix + """authenticate/$provider<[^/]+>""")
 )
                       
 
-// @LINE:61
+// @LINE:62
 def authenticateByPost(provider:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.ProviderController.authenticateByPost(provider), HandlerDef(this, "securesocial.controllers.ProviderController", "authenticateByPost", Seq(classOf[String]), "POST", """""", _prefix + """authenticate/$provider<[^/]+>""")
 )
@@ -1335,18 +1364,18 @@ def authenticateByPost(provider:String): play.api.mvc.HandlerRef[_] = new play.a
 }
                           
 
+// @LINE:57
 // @LINE:56
-// @LINE:55
 class ReversePasswordChange {
     
 
-// @LINE:56
+// @LINE:57
 def handlePasswordChange(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.PasswordChange.handlePasswordChange(), HandlerDef(this, "securesocial.controllers.PasswordChange", "handlePasswordChange", Seq(), "POST", """""", _prefix + """password""")
 )
                       
 
-// @LINE:55
+// @LINE:56
 def page(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.PasswordChange.page(), HandlerDef(this, "securesocial.controllers.PasswordChange", "page", Seq(), "GET", """""", _prefix + """password""")
 )
@@ -1355,18 +1384,18 @@ def page(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
+// @LINE:45
 // @LINE:44
-// @LINE:43
 class ReverseLoginPage {
     
 
-// @LINE:44
+// @LINE:45
 def logout(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.LoginPage.logout(), HandlerDef(this, "securesocial.controllers.LoginPage", "logout", Seq(), "GET", """""", _prefix + """logout""")
 )
                       
 
-// @LINE:43
+// @LINE:44
 def login(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    securesocial.controllers.LoginPage.login(), HandlerDef(this, "securesocial.controllers.LoginPage", "login", Seq(), "GET", """ Login page""", _prefix + """login""")
 )

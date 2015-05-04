@@ -1,5 +1,7 @@
 @(messages: List[Message])
 
+@import helper._
+
 @main("ProConect"){
 @navbar.render
 <div class="container">
@@ -39,6 +41,9 @@
 						<th>
 							Status
 						</th>
+						<th>
+
+						</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -66,11 +71,57 @@
 					<tr id="@index" class="collapse">
 						<td>#</td>
 						<td colspan="3">@message.messageBody</td>
+						<td>
+							<a href="#" ><button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button></a>
+							<a href="#" ><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+						</td>
 					</tr>
 
 				}
 				</tbody>
 			</table>
+
+			<!-- Large modal -->
+
+  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+          @form(routes.UserController.replyMessage()){
+
+          	<div class="form-group" style="width: 50%; margin: 0 auto;">
+            <div style="width: 75%; margin: 0 auto;">
+          		<h2 class="form-signin-heading">Message</h2>
+          			<input class="form-control"
+          					placeholder="Message Title"
+          					type="text"
+          					name="messageTitle"
+          					id="messageTitle"
+          					value=""
+          				/>
+          			<input class="form-control"
+          					placeholder="Message"
+          					type="text"
+          					name="messageBody"
+          					id="messageBody"
+          					value=""
+          				/>
+									<input class="form-control"
+            					placeholder="User Id"
+            					type="text"
+            					name="id"
+            					id="id"
+            					value=""
+                      style="display: none;"
+            				/>
+          		<button class="btn btn-primary btn-lg btn-block" type="submit" style="width: 50%;">Send Message</button>
+            </div>
+        	</div>
+          	}
+      </div>
+    </div>
+  </div> <!-- End modal -->
+
 		</div>
 	</div>
 	<div class="row clearfix">
