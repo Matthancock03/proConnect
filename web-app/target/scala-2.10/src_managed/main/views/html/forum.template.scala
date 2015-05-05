@@ -117,7 +117,7 @@ Seq[Any](format.raw/*1.27*/("""
 								How to Grow your Network
 							</h3>
 							<p>
-								Whether you want to grow your business or get an entry job position, networking is one of the many crucial factors which you should practice like any other skill to master it.
+								Whether you want to grow your business or get an entry job position, networking is one of the many crucial factors which you should practice like any other skill to master it.<br /><br />
 							</p>
 							<p>
 								<a class="btn btn-success" href="#">Read</a>
@@ -133,7 +133,7 @@ Seq[Any](format.raw/*1.27*/("""
 								10 Steps to Starting a Business
 							</h3>
 							<p>
-								Starting a business involves a lot of research, financial investment, and going through a series of legal work. These 10 steps can help you get your business started and also prepare and manage your business.
+								Starting a business involves a lot of research, financial investment, and going through a series of legal work. These 10 steps can help you get your business started as well as prepare and manage your business.<br /><br />
 							</p>
 							<p>
 								<a class="btn btn-success" href="#">Read</a>
@@ -161,7 +161,7 @@ Seq[Any](format.raw/*1.27*/("""
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img src="http://www.outsourcedcfo.co.za/wp-content/uploads/2014/02/financial-management.jpg" width="400" height="400"/>
+						<img src="http://www.unomaha.edu/college-of-business-administration/finance-banking-real-estate/_files/images/finance1.jpg" width="400" height="400"/>
 						<div class="caption" width="400" height="400">
 							<h3>
 								Beginner's Guide to Managing Your Finances
@@ -183,7 +183,7 @@ Seq[Any](format.raw/*1.27*/("""
 								3 Ways to be More Successful
 							</h3>
 							<p>
-								It's human nature to desire success no matter where they are in life. However, it's easier said than done, hence not a lot of people are willing to do what is necessary to reach success.
+								It's human nature to desire success no matter where they are in life. However, it's easier said than done, hence not a lot of people are willing to do what is necessary to reach success.<br /><br />
 							</p>
 							<p>
 								<a class="btn btn-success" href="#">Read</a>
@@ -199,7 +199,7 @@ Seq[Any](format.raw/*1.27*/("""
 								General Discussion
 							</h3>
 							<p>
-								If you cannot find the forum looking for, you can either create your own forum or try this one. You can find a wide variety of topics and questions in this forum.
+								If you cannot find the forum looking for, you can either create your own forum or try this one. You can find a wide variety of topics and questions in this forum.<br /><br /><br /><br />
 							</p>
 							<p>
 								<a class="btn btn-success" href="#">Read</a>
@@ -208,11 +208,12 @@ Seq[Any](format.raw/*1.27*/("""
 					</div>
 				</div>
 			</div>
+			<br /><br />
 		</div>
 	</div>
 
-</div>
-""")))})),format.raw/*187.2*/("""
+
+""")))})),format.raw/*188.2*/("""
 """))}
     }
     
@@ -225,11 +226,11 @@ Seq[Any](format.raw/*1.27*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue May 05 13:01:23 PDT 2015
+                    DATE: Tue May 05 15:57:08 PDT 2015
                     SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/forum.scala.html
-                    HASH: 7296d80a5261cbef9bfba07c6ce5a6d15753a3cb
-                    MATRIX: 779->1|898->26|935->29|961->47|999->48|1038->53|1052->59|1080->66|7508->6462
-                    LINES: 26->1|29->1|30->2|30->2|30->2|31->3|31->3|31->3|215->187
+                    HASH: e1a2cf2f5a0b3ba6cabc80e169e7b1c79dbe2550
+                    MATRIX: 779->1|898->26|935->29|961->47|999->48|1038->53|1052->59|1080->66|7611->6565
+                    LINES: 26->1|29->1|30->2|30->2|30->2|31->3|31->3|31->3|216->188
                     -- GENERATED --
                 */
             
