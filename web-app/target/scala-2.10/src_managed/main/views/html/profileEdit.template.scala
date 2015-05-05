@@ -44,32 +44,43 @@ Seq[Any](format.raw/*1.18*/("""
       """)))}/*16.8*/else/*16.12*/{_display_(Seq[Any](format.raw/*16.13*/("""
         <img alt="140x140" class = "img-thumbnail profileImage" src=""""),_display_(Seq[Any](/*17.71*/routes/*17.77*/.Assets.at("images/profile_holder.png"))),format.raw/*17.116*/("""" />
         """)))})),format.raw/*18.10*/("""
-        """),_display_(Seq[Any](/*19.10*/if(user.userName != null)/*19.35*/{_display_(Seq[Any](format.raw/*19.36*/("""
-              <h4>"""),_display_(Seq[Any](/*20.20*/user/*20.24*/.userName)),format.raw/*20.33*/("""</h4>
-            """)))}/*21.14*/else/*21.18*/{_display_(Seq[Any](format.raw/*21.19*/("""
-              <h4>Guest</h4>
-            """)))})),format.raw/*23.14*/("""
-      <a href=""""),_display_(Seq[Any](/*24.17*/routes/*24.23*/.DbController.profileMain())),format.raw/*24.50*/("""">
+        <a href=""""),_display_(Seq[Any](/*19.19*/routes/*19.25*/.DbController.profileMain())),format.raw/*19.52*/("""">
           <div>
-          <button type="button" class="btn btn-default edit-button" name="editButton">Edit Profile</button>
+          <br />
+          <button type="button" class="btn btn-success edit-button" name="editButton">Edit Profile</button>
         </div>
      </a>
+        </div>
+
+
+<br /><br /><br />
+        <div class="col-md-5 column img-div" style="background-color: #FFFFFF;">
+        """),_display_(Seq[Any](/*30.10*/if(user.userName != null)/*30.35*/{_display_(Seq[Any](format.raw/*30.36*/("""
+              <h4>"""),_display_(Seq[Any](/*31.20*/user/*31.24*/.userName)),format.raw/*31.33*/("""</h4>
+            """)))}/*32.14*/else/*32.18*/{_display_(Seq[Any](format.raw/*32.19*/("""
+              <h4>Guest</h4>
+            """)))})),format.raw/*34.14*/("""
+            </div>
+      
 
     </div>
-    <div class="col-xs-1"></div>
+    <div class="col-md-3 column img-div"></div>
 
-    <div class="col-md-6 column" style="background-color: #FFFFFF;">
-        """),_display_(Seq[Any](/*34.10*/if(user.aboutMe != null)/*34.34*/{_display_(Seq[Any](format.raw/*34.35*/("""
-          <h3>"""),_display_(Seq[Any](/*35.16*/user/*35.20*/.headline)),format.raw/*35.29*/("""</h3>
-        """)))})),format.raw/*36.10*/("""
+    <div class="col-md-5 column" style="background-color: #FFFFFF;">
 
-      """),_display_(Seq[Any](/*38.8*/if(user.currentEmployer != null)/*38.40*/{_display_(Seq[Any](format.raw/*38.41*/("""
-          <h3>"""),_display_(Seq[Any](/*39.16*/user/*39.20*/.currentEmployer)),format.raw/*39.36*/("""</h3>
-        """)))})),format.raw/*40.10*/("""
+        """),_display_(Seq[Any](/*43.10*/if(user.aboutMe != null)/*43.34*/{_display_(Seq[Any](format.raw/*43.35*/("""
+          <h3>"""),_display_(Seq[Any](/*44.16*/user/*44.20*/.headline)),format.raw/*44.29*/("""</h3>
 
-      """),_display_(Seq[Any](/*42.8*/if(user.location != null)/*42.33*/{_display_(Seq[Any](format.raw/*42.34*/("""
-          <h3>"""),_display_(Seq[Any](/*43.16*/user/*43.20*/.location)),format.raw/*43.29*/("""</h3>
-        """)))})),format.raw/*44.10*/("""
+        """)))})),format.raw/*46.10*/("""
+
+
+      """),_display_(Seq[Any](/*49.8*/if(user.currentEmployer != null)/*49.40*/{_display_(Seq[Any](format.raw/*49.41*/("""
+          <h3>"""),_display_(Seq[Any](/*50.16*/user/*50.20*/.currentEmployer)),format.raw/*50.36*/("""</h3>
+        """)))})),format.raw/*51.10*/("""
+
+      """),_display_(Seq[Any](/*53.8*/if(user.location != null)/*53.33*/{_display_(Seq[Any](format.raw/*53.34*/("""
+          <h3>"""),_display_(Seq[Any](/*54.16*/user/*54.20*/.location)),format.raw/*54.29*/("""</h3>
+        """)))})),format.raw/*55.10*/("""
     </div>
     <div class="col-xs-2"></div>
   </div>
@@ -81,11 +92,11 @@ Seq[Any](format.raw/*1.18*/("""
         <h2>
           About Me
         </h2>
-        """),_display_(Seq[Any](/*56.10*/if(user.aboutMe != null)/*56.34*/{_display_(Seq[Any](format.raw/*56.35*/("""
+        """),_display_(Seq[Any](/*67.10*/if(user.aboutMe != null)/*67.34*/{_display_(Seq[Any](format.raw/*67.35*/("""
           <p>
-            """),_display_(Seq[Any](/*58.14*/user/*58.18*/.aboutMe)),format.raw/*58.26*/("""
+            """),_display_(Seq[Any](/*69.14*/user/*69.18*/.aboutMe)),format.raw/*69.26*/("""
           </p>
-        """)))})),format.raw/*60.10*/("""
+        """)))})),format.raw/*71.10*/("""
 
       </div>
   </div>
@@ -97,11 +108,11 @@ Seq[Any](format.raw/*1.18*/("""
       <h2>
         Experience
       </h2>
-      """),_display_(Seq[Any](/*72.8*/if(user.experience != null)/*72.35*/{_display_(Seq[Any](format.raw/*72.36*/("""
+      """),_display_(Seq[Any](/*83.8*/if(user.experience != null)/*83.35*/{_display_(Seq[Any](format.raw/*83.36*/("""
       <p>
-        """),_display_(Seq[Any](/*74.10*/user/*74.14*/.experience)),format.raw/*74.25*/("""
+        """),_display_(Seq[Any](/*85.10*/user/*85.14*/.experience)),format.raw/*85.25*/("""
       </p>
-      """)))})),format.raw/*76.8*/("""
+      """)))})),format.raw/*87.8*/("""
     </div>
   </div>
   <div class="row clearfix">
@@ -112,11 +123,11 @@ Seq[Any](format.raw/*1.18*/("""
       <h2>
         Projects or Skills Highlight
       </h2>
-      """),_display_(Seq[Any](/*87.8*/if(user.experience != null)/*87.35*/{_display_(Seq[Any](format.raw/*87.36*/("""
+      """),_display_(Seq[Any](/*98.8*/if(user.experience != null)/*98.35*/{_display_(Seq[Any](format.raw/*98.36*/("""
       <p>
-        """),_display_(Seq[Any](/*89.10*/user/*89.14*/.projects)),format.raw/*89.23*/("""
+        """),_display_(Seq[Any](/*100.10*/user/*100.14*/.projects)),format.raw/*100.23*/("""
       </p>
-      """)))})),format.raw/*91.8*/("""
+      """)))})),format.raw/*102.8*/("""
     </div>
   </div>
   <div class="row clearfix">
@@ -129,17 +140,17 @@ Seq[Any](format.raw/*1.18*/("""
       <h2>
         Education
       </h2>
-      """),_display_(Seq[Any](/*104.8*/if(user.experience != null)/*104.35*/{_display_(Seq[Any](format.raw/*104.36*/("""
+      """),_display_(Seq[Any](/*115.8*/if(user.experience != null)/*115.35*/{_display_(Seq[Any](format.raw/*115.36*/("""
       <p>
-        """),_display_(Seq[Any](/*106.10*/user/*106.14*/.education)),format.raw/*106.24*/("""
+        """),_display_(Seq[Any](/*117.10*/user/*117.14*/.education)),format.raw/*117.24*/("""
       </p>
-      """)))})),format.raw/*108.8*/("""
+      """)))})),format.raw/*119.8*/("""
     </div>
   </div>
 
 
 </div>
-""")))})),format.raw/*114.2*/("""
+""")))})),format.raw/*125.2*/("""
 """))}
     }
     
@@ -152,11 +163,11 @@ Seq[Any](format.raw/*1.18*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue May 05 11:20:29 PDT 2015
-                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileEdit.scala.html
-                    HASH: fb21e8a5e5cd933a7e43e84cf22c25dab4343db2
-                    MATRIX: 783->1|909->17|937->36|974->39|999->56|1037->57|1073->59|1086->65|1114->72|1180->103|1194->109|1252->146|1394->253|1434->284|1473->285|1566->342|1581->348|1643->387|1673->399|1686->403|1725->404|1832->475|1847->481|1909->520|1955->534|2001->544|2035->569|2074->570|2130->590|2143->594|2174->603|2212->622|2225->626|2264->627|2339->670|2392->687|2407->693|2456->720|2768->996|2801->1020|2840->1021|2892->1037|2905->1041|2936->1050|2983->1065|3027->1074|3068->1106|3107->1107|3159->1123|3172->1127|3210->1143|3257->1158|3301->1167|3335->1192|3374->1193|3426->1209|3439->1213|3470->1222|3517->1237|3801->1485|3834->1509|3873->1510|3937->1538|3950->1542|3980->1550|4037->1575|4282->1785|4318->1812|4357->1813|4413->1833|4426->1837|4459->1848|4509->1867|4769->2092|4805->2119|4844->2120|4900->2140|4913->2144|4944->2153|4994->2172|5238->2380|5275->2407|5315->2408|5372->2428|5386->2432|5419->2442|5470->2461|5533->2492
-                    LINES: 26->1|30->1|32->4|34->6|34->6|34->6|35->7|35->7|35->7|36->8|36->8|36->8|42->14|42->14|42->14|43->15|43->15|43->15|44->16|44->16|44->16|45->17|45->17|45->17|46->18|47->19|47->19|47->19|48->20|48->20|48->20|49->21|49->21|49->21|51->23|52->24|52->24|52->24|62->34|62->34|62->34|63->35|63->35|63->35|64->36|66->38|66->38|66->38|67->39|67->39|67->39|68->40|70->42|70->42|70->42|71->43|71->43|71->43|72->44|84->56|84->56|84->56|86->58|86->58|86->58|88->60|100->72|100->72|100->72|102->74|102->74|102->74|104->76|115->87|115->87|115->87|117->89|117->89|117->89|119->91|132->104|132->104|132->104|134->106|134->106|134->106|136->108|142->114
+                    DATE: Tue May 05 13:54:43 PDT 2015
+                    SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/profileEdit.scala.html
+                    HASH: 4f8cb66a738dad48eee6e9dba8babfa5f3b184f5
+                    MATRIX: 783->1|910->17|940->39|979->44|1004->61|1042->62|1079->65|1092->71|1120->78|1187->110|1201->116|1259->153|1407->266|1447->297|1486->298|1580->356|1595->362|1657->401|1688->414|1701->418|1740->419|1848->491|1863->497|1925->536|1972->551|2028->571|2043->577|2092->604|2434->910|2468->935|2507->936|2564->957|2577->961|2608->970|2647->990|2660->994|2699->995|2776->1040|2988->1216|3021->1240|3060->1241|3113->1258|3126->1262|3157->1271|3207->1289|3255->1302|3296->1334|3335->1335|3388->1352|3401->1356|3439->1372|3487->1388|3533->1399|3567->1424|3606->1425|3659->1442|3672->1446|3703->1455|3751->1471|4047->1731|4080->1755|4119->1756|4185->1786|4198->1790|4228->1798|4287->1825|4544->2047|4580->2074|4619->2075|4677->2097|4690->2101|4723->2112|4775->2133|5046->2369|5082->2396|5121->2397|5180->2419|5194->2423|5226->2432|5279->2453|5536->2674|5573->2701|5613->2702|5672->2724|5686->2728|5719->2738|5772->2759|5841->2796
+                    LINES: 26->1|30->1|32->4|34->6|34->6|34->6|35->7|35->7|35->7|36->8|36->8|36->8|42->14|42->14|42->14|43->15|43->15|43->15|44->16|44->16|44->16|45->17|45->17|45->17|46->18|47->19|47->19|47->19|58->30|58->30|58->30|59->31|59->31|59->31|60->32|60->32|60->32|62->34|71->43|71->43|71->43|72->44|72->44|72->44|74->46|77->49|77->49|77->49|78->50|78->50|78->50|79->51|81->53|81->53|81->53|82->54|82->54|82->54|83->55|95->67|95->67|95->67|97->69|97->69|97->69|99->71|111->83|111->83|111->83|113->85|113->85|113->85|115->87|126->98|126->98|126->98|128->100|128->100|128->100|130->102|143->115|143->115|143->115|145->117|145->117|145->117|147->119|153->125
                     -- GENERATED --
                 */
             

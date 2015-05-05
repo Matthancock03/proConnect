@@ -16,24 +16,35 @@
       }else{
         <img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")" />
         }
+        <a href="@routes.DbController.profileMain()">
+          <div>
+          <br />
+          <button type="button" class="btn btn-success edit-button" name="editButton">Edit Profile</button>
+        </div>
+     </a>
+        </div>
+
+
+<br /><br /><br />
+        <div class="col-md-5 column img-div" style="background-color: #FFFFFF;">
         @if(user.userName != null){
               <h4>@user.userName</h4>
             }else{
               <h4>Guest</h4>
             }
-      <a href="@routes.DbController.profileMain()">
-          <div>
-          <button type="button" class="btn btn-default edit-button" name="editButton">Edit Profile</button>
-        </div>
-     </a>
+            </div>
+      
 
     </div>
-    <div class="col-xs-1"></div>
+    <div class="col-md-3 column img-div"></div>
 
-    <div class="col-md-6 column" style="background-color: #FFFFFF;">
+    <div class="col-md-5 column" style="background-color: #FFFFFF;">
+
         @if(user.aboutMe != null){
           <h3>@user.headline</h3>
+
         }
+
 
       @if(user.currentEmployer != null){
           <h3>@user.currentEmployer</h3>
