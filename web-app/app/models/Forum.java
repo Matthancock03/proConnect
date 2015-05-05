@@ -66,4 +66,14 @@ public Forum (String header, String topBody){
     Long.class, Forum.class
   );
 
+  public static void initializeForum(){
+
+  Forum forum1 = new Forum();
+  
+  forum1.topicHeader = "How to Prepare for an Interview";
+  forum1.body = "Interviews could be stressful. You can build confidence and ace your interview with these 7 simple and easy steps and give a great first impression to the employer.";
+  forum1.imageUrl = "http://blog.peertransfer.com/wp-content/uploads/2013/04/Biz-Finding-A-Job-May-Mean-Getting-More-Niche.jpg";
+  forum1.save();
+  }
+
 }
