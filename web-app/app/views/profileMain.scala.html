@@ -11,7 +11,7 @@
 	<div class="row clearfix">
     @helper.form(action = routes.DbController.saveUser, 'enctype -> "multipart/form-data"){
 
-		<div class="col-xs-2 column logo-img img-div">
+		<div class="col-xs-3 column logo-img img-div">
 
       @if(userModel.profilePicture != null){
         <img class = "img-thumbnail profileImage" src="@routes.DbController.getProfilePic(userModel.email)" />
@@ -21,7 +21,7 @@
         @helper.inputFile(user("profilePicture"), 'class -> "form-control", '_label -> "Upload/Change your profile image" )
 
     </div>
-    <div class="col-xs-2 column">
+    <div class="col-xs-1 column">
     </div>
 		<div class="col-xs-6 column" style="margin-top: 40px; background-color: #FFFFFF;">
 				<div class="form-group break-after">
@@ -86,7 +86,7 @@
 
               </div>
           </div>
-          <button type="submit" class="btn save-button pull-right">Submit</button>
+          <button type="submit" class="btn save-button pull-right" style="margin-bottom: 15px;">Submit</button>
         </div>
       </div>
       <div class="col-xs-2 column bottom-div"></div>

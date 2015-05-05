@@ -136,7 +136,7 @@ Download the ProConnect app on Google Play and take part in discussions and shar
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue May 05 10:10:18 PDT 2015
+                    DATE: Tue May 05 11:02:40 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/about.scala.html
                     HASH: d4f5ffa6c06601fd79ccfdc4905baee2b5b33d96
                     MATRIX: 864->1|890->19|928->20|994->51|1008->57|1065->93|1627->619|1648->631|1722->682|4323->3252

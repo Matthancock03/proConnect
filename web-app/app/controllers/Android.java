@@ -81,11 +81,11 @@ public class Android extends Controller{
       user.education = json.get("education").textValue();
       user.creditCard = json.get("creditCard").textValue();
       user.save();
+      return ok("Bind Sucessful");
+
     }catch(Exception e){
       return ok("Save Failed. Invalid data.");
     }
-
-   return ok("Bind Sucessful");
   }
 
 

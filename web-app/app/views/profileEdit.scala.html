@@ -10,7 +10,7 @@
 
 <div class="container">
   <div class="row clearfix">
-    <div class="col-md-2 column img-div">
+    <div class="col-md-3 column img-div">
       @if(user.profilePicture != null){
         <img class = "img-thumbnail profileImage" src="@routes.DbController.getProfilePic(user.email)" />
       }else{
@@ -28,7 +28,7 @@
      </a>
 
     </div>
-    <div class="col-xs-2"></div>
+    <div class="col-xs-1"></div>
 
     <div class="col-md-6 column" style="background-color: #FFFFFF;">
         @if(user.aboutMe != null){
