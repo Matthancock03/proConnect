@@ -32,11 +32,15 @@ public static Result sendMessage(){
       Logger.debug("Message Title: " + messageHead + " Message Body: " + messageContent + " Recipient email: " + email);
       UserModel user;
       UserModel sender;
+      try{
       Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
       sender = UserModel.loadUserModel(userID);
       user = UserModel.loadUserModel(email);
-
+    }catch(Exception e){
+      return ok(splash.render());
+    }
       message.senderId = sender.id;
+      message.senderName = sender.userName;
       message.recipientId = user.id;
       message.messageTitle = messageHead;
       message.messageBody = messageContent;
@@ -78,6 +82,37 @@ public static Result replyMessage(){
         return ok(message.render(messages));
 }
 
+@SecureSocial.UserAwareAction
+public static Result addConnection(String email){
+  Logger.debug("Add Connection email: " + email);
+    Connection connection;
+    UserModel connectee;
+    UserModel connector;
+    try{
+    Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+    connector = UserModel.loadUserModel(userID);
+    connectee = UserModel.loadUserModel(email);
+  }catch(Exception e){
+    return ok(splash.render());
+    }
+
+    if(Connection.isConnected(connector.id, connectee.id)){
+      ok(searchedProfile.render(connectee));
+    }
+
+    Connection connect = new Connection();
+    Connection connect1 = new Connection();
+    connect.userId = connector.id;
+    connect.connectionId = connectee.id;
+    connect1.userId = connectee.id;
+    connect1.connectionId = connector.id;
+
+    connect.save();
+    connect1.save();
+
+  return ok(searchedProfile.render(connectee));
+}
+
 public static Result searchUser(String name){
   List<UserModel> user = UserModel.findByName(name);
 
@@ -96,6 +131,23 @@ public static Result premiumSearchUser(String name){
     }
 
   return ok("User Found");
+}
+
+@SecureSocial.UserAwareAction
+public static List<UserModel> getConnections(String email){
+  Logger.debug("Get Connections email: " + email);
+  UserModel user;
+  try{
+    Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+    user = UserModel.loadUserModel(userID);
+    }catch(Exception e){
+      List<UserModel> connects = new ArrayList();
+      return connects;
+    }
+
+  List<UserModel> connections = Connection.connections(user);
+
+  return connections;
 }
 
 

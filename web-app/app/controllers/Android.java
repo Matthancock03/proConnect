@@ -65,6 +65,7 @@ public class Android extends Controller{
     if(json == null) {
         return ok("Bind Failed");
     }
+
     String email = json.get("email").textValue();
     UserModel user;
     try{
@@ -74,7 +75,16 @@ public class Android extends Controller{
     }
 
     user.userName = json.get("userName").textValue();
-
+    user.currentEmployer = json.get("currentEmployer").textValue();
+    user.recentSchool = json.get("recentSchool").textValue();
+    user.headline = json.get("headline").textValue();
+    user.location = json.get("location").textValue();
+    user.aboutMe = json.get("aboutMe").textValue();
+    user.experience = json.get("experience").textValue();
+    user.projects = json.get("projects").textValue();
+    user.education = json.get("education").textValue();
+    user.creditCard = json.get("creditCard").textValue();
+    user.save();
 
    return ok("Bind Sucessful");
   }

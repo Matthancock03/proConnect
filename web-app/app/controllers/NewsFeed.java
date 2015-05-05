@@ -57,17 +57,19 @@ public class NewsFeed extends Controller {
 										//Logger.debug(item.get("pubDate").textValue());
 										}
 
-
+									List<UserModel> connections;
  									try{
  									Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
 									user = UserModel.loadUserModel(userID);
-									user.save();                              //Loads user values into UserModel model.
+									user.save();
+									connections = UserController.getConnections(user.email);
+
 									} catch (Exception e){
+
 										return ok(splash.render());
 
 									}
-
-                    return ok(home.render(feeds, user));
+                    return ok(home.render(feeds, user, connections));
                 }
             }
     );

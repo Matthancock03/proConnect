@@ -27,6 +27,7 @@ public class Message extends Model {
   @Id
   public Long messageId;
   public Long senderId;
+  public String senderName;
   public Long recipientId;
   public String messageTitle;
   public String messageBody;
@@ -48,6 +49,13 @@ public class Message extends Model {
     List<Message> messageArray = find.where().eq("senderId", userId).findList();
     return messageArray;
   }
+
+  public static Message findMessage(Long messageId){
+
+    Message messageArray = find.where().eq("messageId", messageId).findUnique();
+    return messageArray;
+  }
+
 
 
 

@@ -78,6 +78,11 @@ public class UserModel  extends Model{
     return newUserModel;
   }
 
+  public static UserModel loadUserById(Long id){
+    UserModel newUserModel = UserModel.find.where().eq("id", id).findUnique();
+    return newUserModel;
+  }
+
   public static List<UserModel> findByName(String name){
     List<UserModel> newUserModel = find.where().ilike("userName", "%" + name + "%").findList();
     return newUserModel;
