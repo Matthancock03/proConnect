@@ -21,9 +21,11 @@
 
 			<div class="btn-group btn-group-vertical btn-group-md">
 			<br /><br /><br />
-			 <button type="button" class="btn btn-success">Compose</button>
 			 <br />
-				 <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-left"></em>Inbox</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-center"></em> Sent</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-right"></em> Trash</button> <
+			<div>
+				  <a href="@routes.MessageController.message()"><button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-left"></em>Inbox</button></a>
+					<a href="@routes.MessageController.sentMessages()"><button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-right"></em> Sent</button></a>
+			</div>
 			</div>
 		</div>
 		<div class="col-xs-6 column">

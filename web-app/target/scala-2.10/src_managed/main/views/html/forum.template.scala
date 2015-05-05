@@ -41,12 +41,12 @@ Seq[Any](format.raw/*1.27*/("""
 <div class="container">
 	<div class="row clearfix">
 		<div class="col-md-6 column">
-	
+
 			 <button type="button" class="btn btn-success" align="right">New Forum</button><br /><br />
 
 		</div>
 		<div class="col-md-6 column">
-		
+
 
 		</div>
 		</div>
@@ -54,13 +54,15 @@ Seq[Any](format.raw/*1.27*/("""
 </div>
 
 	</div>
+
+
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img src="http://blog.peertransfer.com/wp-content/uploads/2013/04/Biz-Finding-A-Job-May-Mean-Getting-More-Niche.jpg" width="400" height="400" />
-						<div class="caption">
+						<div class="caption" width="400" height="400">
 							<h3>
 								How to Prepare for an Interview
 							</h3>
@@ -76,7 +78,7 @@ Seq[Any](format.raw/*1.27*/("""
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img src="http://usajobs.me/wp-content/uploads/2015/03/business-women-success.jpg" />
-						<div class="caption">
+						<div class="caption" width="400" height="400">
 							<h3>
 								How to Get a Job With No Experience
 							</h3>
@@ -110,7 +112,7 @@ Seq[Any](format.raw/*1.27*/("""
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img src="http://blog.nextsociety.com/wp-content/uploads/2014/09/entrepreneurship-networking-advice-1.jpg" width="400" height="400"/>
-						<div class="caption">
+						<div class="caption" width="400" height="400">
 							<h3>
 								How to Grow your Network
 							</h3>
@@ -126,7 +128,7 @@ Seq[Any](format.raw/*1.27*/("""
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img src="https://media.licdn.com/mpr/mpr/p/8/005/081/32b/3e3556e.jpg" width="400" height="400"/>
-						<div class="caption">
+						<div class="caption" width="400" height="400">
 							<h3>
 								10 Steps to Starting a Business
 							</h3>
@@ -142,7 +144,7 @@ Seq[Any](format.raw/*1.27*/("""
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img src="http://gomdl.com/wp-content/uploads/2013/03/Student-Studying.jpg"/>
-						<div class="caption">
+						<div class="caption" width="400" height="400">
 							<h3>
 								Study Tips
 							</h3>
@@ -160,7 +162,7 @@ Seq[Any](format.raw/*1.27*/("""
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img src="http://www.outsourcedcfo.co.za/wp-content/uploads/2014/02/financial-management.jpg" width="400" height="400"/>
-						<div class="caption">
+						<div class="caption" width="400" height="400">
 							<h3>
 								Beginner's Guide to Managing Your Finances
 							</h3>
@@ -176,7 +178,7 @@ Seq[Any](format.raw/*1.27*/("""
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img src="http://higherperspective.com/wp-content/uploads/2014/12/Successful-Business-Risk.jpg" width="400" height="400"/>
-						<div class="caption">
+						<div class="caption" width="400" height="400">
 							<h3>
 								3 Ways to be More Successful
 							</h3>
@@ -192,7 +194,7 @@ Seq[Any](format.raw/*1.27*/("""
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img src="https://venkyias.files.wordpress.com/2012/08/discussion1.jpg" width="400" height="400"/>
-						<div class="caption">
+						<div class="caption" width="400" height="400">
 							<h3>
 								General Discussion
 							</h3>
@@ -208,9 +210,9 @@ Seq[Any](format.raw/*1.27*/("""
 			</div>
 		</div>
 	</div>
-	
+
 </div>
-""")))})),format.raw/*185.2*/("""
+""")))})),format.raw/*187.2*/("""
 """))}
     }
     
@@ -223,11 +225,11 @@ Seq[Any](format.raw/*1.27*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue May 05 11:02:38 PDT 2015
+                    DATE: Tue May 05 11:33:58 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/forum.scala.html
-                    HASH: bb7e203d8e64123b05b095a9b1b0f78dd1a442f0
-                    MATRIX: 779->1|898->26|934->28|960->46|998->47|1036->51|1050->57|1078->64|7124->6078
-                    LINES: 26->1|29->1|30->2|30->2|30->2|31->3|31->3|31->3|213->185
+                    HASH: 58f27bc735da79f1afcabe3d6ac2738c94d06947
+                    MATRIX: 779->1|898->26|934->28|960->46|998->47|1036->51|1050->57|1078->64|7322->6276
+                    LINES: 26->1|29->1|30->2|30->2|30->2|31->3|31->3|31->3|215->187
                     -- GENERATED --
                 */
             

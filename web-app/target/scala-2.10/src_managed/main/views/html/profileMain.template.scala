@@ -81,46 +81,23 @@ Seq[Any](format.raw/*1.47*/("""
           </div>
           <div class="break-after">
             """),_display_(Seq[Any](/*55.14*/helper/*55.20*/.textarea(user("experience"), 'class -> "form-control", '_label -> "Experience", 'rows -> "4" ))),format.raw/*55.115*/("""
-            <div>
-              <button type="button" class="btn btn-info pull-right btn-xs" aria-label="left Align">
-                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-              </button>
-            <button type="button" class="btn btn-danger pull-right btn-xs" aria-label="left Align">
-              <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-            </button>
-          </div>
+
           </div>
           <div class="break-after">
-              """),_display_(Seq[Any](/*66.16*/helper/*66.22*/.textarea(user("projects"), 'class -> "form-control", '_label -> "Projects Or Skills Highlight", 'rows -> "4" ))),format.raw/*66.133*/("""
-              <div>
-                <button type="button" class="btn btn-info btn-xs pull-right" aria-label="right Align">
-                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                </button>
-                <button type="button" class="btn btn-danger btn-xs pull-right" aria-label="right Align">
-                  <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-                </button>
+              """),_display_(Seq[Any](/*59.16*/helper/*59.22*/.textarea(user("projects"), 'class -> "form-control", '_label -> "Projects Or Skills Highlight", 'rows -> "4" ))),format.raw/*59.133*/("""
 
-              </div>
             </div>
             <div class="break-after">
-                """),_display_(Seq[Any](/*78.18*/helper/*78.24*/.textarea(user("education"), 'class -> "form-control", '_label -> "Education", 'rows -> "4" ))),format.raw/*78.117*/("""
-                <div>
-                  <button type="button" class="btn btn-info pull-right btn-xs" aria-label="left Align">
-                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                  </button>
-                <button type="button" class="btn btn-danger pull-right  btn-xs" aria-label="left Align">
-                  <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-                </button>
+                """),_display_(Seq[Any](/*63.18*/helper/*63.24*/.textarea(user("education"), 'class -> "form-control", '_label -> "Education", 'rows -> "4" ))),format.raw/*63.117*/("""
 
-              </div>
           </div>
           <button type="submit" class="btn save-button pull-right" style="margin-bottom: 15px;">Submit</button>
         </div>
       </div>
       <div class="col-xs-2 column bottom-div"></div>
-    """)))})),format.raw/*93.6*/("""
+    """)))})),format.raw/*70.6*/("""
 		</div>
-""")))})),format.raw/*95.2*/("""
+""")))})),format.raw/*72.2*/("""
 """))}
     }
     
@@ -133,11 +110,11 @@ Seq[Any](format.raw/*1.47*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue May 05 11:02:39 PDT 2015
+                    DATE: Tue May 05 11:20:29 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileMain.scala.html
-                    HASH: ac820f4e80acf7c538caa04163209f80931d9ee9
-                    MATRIX: 799->1|954->46|982->65|1018->67|1044->85|1082->86|1120->90|1134->96|1162->103|1229->135|1243->141|1305->182|1407->249|1422->255|1510->334|1549->335|1643->394|1688->430|1727->431|1820->488|1835->494|1902->538|1932->550|1945->554|1984->555|2091->626|2106->632|2168->671|2214->685|2260->695|2275->701|2406->809|2632->1000|2647->1006|2743->1080|2792->1093|2807->1099|2935->1204|2984->1217|3051->1275|3090->1276|3141->1291|3156->1297|3277->1395|3307->1406|3320->1410|3359->1411|3410->1426|3425->1432|3570->1554|3613->1565|3662->1578|3677->1584|3787->1671|3836->1684|3851->1690|3951->1768|4000->1781|4015->1787|4131->1880|4181->1894|4196->1900|4289->1971|4338->1984|4353->1990|4465->2079|4825->2403|4840->2409|4953->2499|5056->2566|5071->2572|5189->2667|5738->3180|5753->3186|5887->3297|6469->3843|6484->3849|6600->3942|7325->4636|7367->4647
-                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|36->8|36->8|36->8|40->12|40->12|40->12|40->12|44->16|44->16|44->16|45->17|45->17|45->17|46->18|46->18|46->18|47->19|47->19|47->19|48->20|49->21|49->21|49->21|56->28|56->28|56->28|57->29|57->29|57->29|58->30|58->30|58->30|59->31|59->31|59->31|60->32|60->32|60->32|61->33|61->33|61->33|62->34|63->35|63->35|63->35|64->36|64->36|64->36|65->37|65->37|65->37|67->39|67->39|67->39|68->40|68->40|68->40|80->52|80->52|80->52|83->55|83->55|83->55|94->66|94->66|94->66|106->78|106->78|106->78|121->93|123->95
+                    HASH: 5e57b2aa76446f0c05d0a4fe4d3a20510c6a4ef6
+                    MATRIX: 799->1|954->46|982->65|1018->67|1044->85|1082->86|1120->90|1134->96|1162->103|1229->135|1243->141|1305->182|1407->249|1422->255|1510->334|1549->335|1643->394|1688->430|1727->431|1820->488|1835->494|1902->538|1932->550|1945->554|1984->555|2091->626|2106->632|2168->671|2214->685|2260->695|2275->701|2406->809|2632->1000|2647->1006|2743->1080|2792->1093|2807->1099|2935->1204|2984->1217|3051->1275|3090->1276|3141->1291|3156->1297|3277->1395|3307->1406|3320->1410|3359->1411|3410->1426|3425->1432|3570->1554|3613->1565|3662->1578|3677->1584|3787->1671|3836->1684|3851->1690|3951->1768|4000->1781|4015->1787|4131->1880|4181->1894|4196->1900|4289->1971|4338->1984|4353->1990|4465->2079|4825->2403|4840->2409|4953->2499|5056->2566|5071->2572|5189->2667|5295->2737|5310->2743|5444->2854|5556->2930|5571->2936|5687->3029|5935->3246|5977->3257
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|36->8|36->8|36->8|40->12|40->12|40->12|40->12|44->16|44->16|44->16|45->17|45->17|45->17|46->18|46->18|46->18|47->19|47->19|47->19|48->20|49->21|49->21|49->21|56->28|56->28|56->28|57->29|57->29|57->29|58->30|58->30|58->30|59->31|59->31|59->31|60->32|60->32|60->32|61->33|61->33|61->33|62->34|63->35|63->35|63->35|64->36|64->36|64->36|65->37|65->37|65->37|67->39|67->39|67->39|68->40|68->40|68->40|80->52|80->52|80->52|83->55|83->55|83->55|87->59|87->59|87->59|91->63|91->63|91->63|98->70|100->72
                     -- GENERATED --
                 */
             

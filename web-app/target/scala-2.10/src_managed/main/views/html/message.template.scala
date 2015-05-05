@@ -49,9 +49,11 @@ Seq[Any](format.raw/*1.27*/("""
 
 			<div class="btn-group btn-group-vertical btn-group-md">
 			<br /><br /><br />
-			 <button type="button" class="btn btn-success">Compose</button>
 			 <br />
-				 <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-left"></em>Inbox</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-center"></em> Sent</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-right"></em> Trash</button> <
+			<div>
+				  <a href=""""),_display_(Seq[Any](/*26.17*/routes/*26.23*/.MessageController.message())),format.raw/*26.51*/(""""><button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-left"></em>Inbox</button></a>
+					<a href=""""),_display_(Seq[Any](/*27.16*/routes/*27.22*/.MessageController.sentMessages())),format.raw/*27.55*/(""""><button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-right"></em> Sent</button></a>
+			</div>
 			</div>
 		</div>
 		<div class="col-xs-6 column">
@@ -81,39 +83,39 @@ Seq[Any](format.raw/*1.27*/("""
 				</thead>
 				<tbody>
 
-					"""),_display_(Seq[Any](/*56.7*/for((message, index) <- messages.zipWithIndex) yield /*56.53*/{_display_(Seq[Any](format.raw/*56.54*/("""
+					"""),_display_(Seq[Any](/*58.7*/for((message, index) <- messages.zipWithIndex) yield /*58.53*/{_display_(Seq[Any](format.raw/*58.54*/("""
 					<tr>
 						<td>
-							"""),_display_(Seq[Any](/*59.9*/{index + 1})),format.raw/*59.20*/("""
+							"""),_display_(Seq[Any](/*61.9*/{index + 1})),format.raw/*61.20*/("""
 						</td>
 						<td>
-							<a data-toggle="collapse" data-target="#"""),_display_(Seq[Any](/*62.49*/index)),format.raw/*62.54*/("""">"""),_display_(Seq[Any](/*62.57*/message/*62.64*/.messageTitle)),format.raw/*62.77*/("""</a>
+							<a data-toggle="collapse" data-target="#"""),_display_(Seq[Any](/*64.49*/index)),format.raw/*64.54*/("""">"""),_display_(Seq[Any](/*64.57*/message/*64.64*/.messageTitle)),format.raw/*64.77*/("""</a>
 						</td>
 						<td>
-							"""),_display_(Seq[Any](/*65.9*/message/*65.16*/.senderName)),format.raw/*65.27*/("""
+							"""),_display_(Seq[Any](/*67.9*/message/*67.16*/.senderName)),format.raw/*67.27*/("""
 						</td>
 						<td>
-							"""),_display_(Seq[Any](/*68.9*/message/*68.16*/.tstamp)),format.raw/*68.23*/("""
+							"""),_display_(Seq[Any](/*70.9*/message/*70.16*/.tstamp)),format.raw/*70.23*/("""
 						</td>
 						<td>
-							"""),_display_(Seq[Any](/*71.9*/if(message.isRead)/*71.27*/{_display_(Seq[Any](format.raw/*71.28*/("""
+							"""),_display_(Seq[Any](/*73.9*/if(message.isRead)/*73.27*/{_display_(Seq[Any](format.raw/*73.28*/("""
 								Read
-							""")))}/*73.9*/else/*73.13*/{_display_(Seq[Any](format.raw/*73.14*/("""
+							""")))}/*75.9*/else/*75.13*/{_display_(Seq[Any](format.raw/*75.14*/("""
 								Unread
-							""")))})),format.raw/*75.9*/("""
+							""")))})),format.raw/*77.9*/("""
 						</td>
 					</tr>
 
-					<tr id=""""),_display_(Seq[Any](/*79.15*/index)),format.raw/*79.20*/("""" class="collapse">
+					<tr id=""""),_display_(Seq[Any](/*81.15*/index)),format.raw/*81.20*/("""" class="collapse">
 						<td>#</td>
-						<td colspan="4">"""),_display_(Seq[Any](/*81.24*/message/*81.31*/.messageBody)),format.raw/*81.43*/("""</td>
+						<td colspan="4">"""),_display_(Seq[Any](/*83.24*/message/*83.31*/.messageBody)),format.raw/*83.43*/("""</td>
 						<td>
 							<a href="#" ><button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button></a>
-							<a href=""""),_display_(Seq[Any](/*84.18*/routes/*84.24*/.MessageController.deleteMessage(message.messageId))),format.raw/*84.75*/("""" ><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+							<a href=""""),_display_(Seq[Any](/*86.18*/routes/*86.24*/.MessageController.deleteMessage(message.messageId))),format.raw/*86.75*/("""" ><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
 						</td>
 					</tr>
 
-				""")))})),format.raw/*88.6*/("""
+				""")))})),format.raw/*90.6*/("""
 				</tbody>
 			</table>
 
@@ -123,7 +125,7 @@ Seq[Any](format.raw/*1.27*/("""
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
 
-          """),_display_(Seq[Any](/*98.12*/form(routes.UserController.replyMessage())/*98.54*/{_display_(Seq[Any](format.raw/*98.55*/("""
+          """),_display_(Seq[Any](/*100.12*/form(routes.UserController.replyMessage())/*100.54*/{_display_(Seq[Any](format.raw/*100.55*/("""
 
           	<div class="form-group" style="width: 50%; margin: 0 auto;">
             <div style="width: 75%; margin: 0 auto;">
@@ -153,7 +155,7 @@ Seq[Any](format.raw/*1.27*/("""
           		<button class="btn btn-primary btn-lg btn-block" type="submit" style="width: 50%;">Send Message</button>
             </div>
         	</div>
-          	""")))})),format.raw/*128.13*/("""
+          	""")))})),format.raw/*130.13*/("""
       </div>
     </div>
   </div> <!-- End modal -->
@@ -190,7 +192,7 @@ Seq[Any](format.raw/*1.27*/("""
 		</div>
 	</div>
 </div>
-""")))})),format.raw/*165.2*/("""
+""")))})),format.raw/*167.2*/("""
 """))}
     }
     
@@ -203,11 +205,11 @@ Seq[Any](format.raw/*1.27*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue May 05 11:02:40 PDT 2015
+                    DATE: Tue May 05 11:33:58 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/message.scala.html
-                    HASH: f7fc21162b414cf60df6df1479bd624944d72fa2
-                    MATRIX: 783->1|918->26|946->45|982->47|1007->64|1045->65|1112->97|1126->103|1186->142|1225->147|1238->153|1266->160|2428->1287|2490->1333|2529->1334|2594->1364|2627->1375|2735->1447|2762->1452|2801->1455|2817->1462|2852->1475|2923->1511|2939->1518|2972->1529|3039->1561|3055->1568|3084->1575|3151->1607|3178->1625|3217->1626|3257->1648|3270->1652|3309->1653|3364->1677|3439->1716|3466->1721|3562->1781|3578->1788|3612->1800|3891->2043|3906->2049|3979->2100|4121->2211|4425->2479|4476->2521|4515->2522|5576->3550|6141->4083
-                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|36->8|36->8|36->8|84->56|84->56|84->56|87->59|87->59|90->62|90->62|90->62|90->62|90->62|93->65|93->65|93->65|96->68|96->68|96->68|99->71|99->71|99->71|101->73|101->73|101->73|103->75|107->79|107->79|109->81|109->81|109->81|112->84|112->84|112->84|116->88|126->98|126->98|126->98|156->128|193->165
+                    HASH: 2c5aa878a93bb47a9a979acedef52301df3c075c
+                    MATRIX: 783->1|918->26|946->45|982->47|1007->64|1045->65|1112->97|1126->103|1186->142|1225->147|1238->153|1266->160|1655->513|1670->519|1720->547|1886->677|1901->683|1956->716|2511->1236|2573->1282|2612->1283|2677->1313|2710->1324|2818->1396|2845->1401|2884->1404|2900->1411|2935->1424|3006->1460|3022->1467|3055->1478|3122->1510|3138->1517|3167->1524|3234->1556|3261->1574|3300->1575|3340->1597|3353->1601|3392->1602|3447->1626|3522->1665|3549->1670|3645->1730|3661->1737|3695->1749|3974->1992|3989->1998|4062->2049|4204->2160|4509->2428|4561->2470|4601->2471|5662->3499|6227->4032
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|36->8|36->8|36->8|54->26|54->26|54->26|55->27|55->27|55->27|86->58|86->58|86->58|89->61|89->61|92->64|92->64|92->64|92->64|92->64|95->67|95->67|95->67|98->70|98->70|98->70|101->73|101->73|101->73|103->75|103->75|103->75|105->77|109->81|109->81|111->83|111->83|111->83|114->86|114->86|114->86|118->90|128->100|128->100|128->100|158->130|195->167
                     -- GENERATED --
                 */
             
