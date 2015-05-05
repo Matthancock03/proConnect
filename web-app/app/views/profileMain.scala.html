@@ -53,38 +53,15 @@
           </div>
           <div class="break-after">
             @helper.textarea(user("experience"), 'class -> "form-control", '_label -> "Experience", 'rows -> "4" )
-            <div>
-              <button type="button" class="btn btn-info pull-right btn-xs" aria-label="left Align">
-                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-              </button>
-            <button type="button" class="btn btn-danger pull-right btn-xs" aria-label="left Align">
-              <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-            </button>
-          </div>
+
           </div>
           <div class="break-after">
               @helper.textarea(user("projects"), 'class -> "form-control", '_label -> "Projects Or Skills Highlight", 'rows -> "4" )
-              <div>
-                <button type="button" class="btn btn-info btn-xs pull-right" aria-label="right Align">
-                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                </button>
-                <button type="button" class="btn btn-danger btn-xs pull-right" aria-label="right Align">
-                  <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-                </button>
 
-              </div>
             </div>
             <div class="break-after">
                 @helper.textarea(user("education"), 'class -> "form-control", '_label -> "Education", 'rows -> "4" )
-                <div>
-                  <button type="button" class="btn btn-info pull-right btn-xs" aria-label="left Align">
-                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                  </button>
-                <button type="button" class="btn btn-danger pull-right  btn-xs" aria-label="left Align">
-                  <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-                </button>
 
-              </div>
           </div>
           <button type="submit" class="btn save-button pull-right" style="margin-bottom: 15px;">Submit</button>
         </div>
