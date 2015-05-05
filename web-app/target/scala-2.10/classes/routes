@@ -22,12 +22,19 @@ GET      /help                     controllers.Application.help()
 GET      /systemEntry              controllers.Application.systemEntry()
 GET      /forumItem                controllers.Application.forumItem()
 
+
 GET      /sendMessage              controllers.UserController.sendMessage()
 GET      /replyMessage             controllers.UserController.replyMessage()
+GET      /addConnection            controllers.UserController.addConnection(email: String)
+
 GET		   /message                  controllers.MessageController.message()
+GET		   /deleteMessage            controllers.MessageController.deleteMessage(id: Long)
+
 
 GET      /loadSearchedProfile      controllers.SearchController.loadSearchedProfile(email:String)
 GET		   /search                   controllers.SearchController.search()
+GET      /loadProfile              controllers.SearchController.loadProfile(id: Long)
+
 
 
 ########## Android###################

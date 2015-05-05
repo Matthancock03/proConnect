@@ -41,6 +41,7 @@ create table job (
 create table message (
   message_id                bigint not null,
   sender_id                 bigint,
+  sender_name               varchar(255),
   recipient_id              bigint,
   message_title             varchar(255),
   message_body              varchar(255),

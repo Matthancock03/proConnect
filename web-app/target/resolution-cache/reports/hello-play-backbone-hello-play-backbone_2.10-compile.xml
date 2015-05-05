@@ -8,10 +8,14 @@
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar"
 <<<<<<< HEAD
+<<<<<<< HEAD
 		date="20150504133838"/>
 =======
 		date="20150504172015"/>
 >>>>>>> 2b258ea4a556f051de588edae1086775e04850b4
+=======
+		date="20150504194422"/>
+>>>>>>> b3a22e47a1a7935bbebab4765ffc738bee4e6801
 	<dependencies>
 		<module organisation="org.json" name="org.json">
 			<revision name="chargebee-1.0" status="release" pubdate="20120225001705" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.json.org/java/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="81">

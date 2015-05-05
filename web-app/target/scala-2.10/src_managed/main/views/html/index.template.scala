@@ -67,10 +67,17 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Mon May 04 13:38:51 PDT 2015
                     SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/index.scala.html
                     HASH: a23dcef0b97fbae07b9e49ec0fe787ec0aa87f28
                     MATRIX: 855->0|1509->618|1524->624|1593->671|1683->725|1698->731|1776->786|1866->840|1881->846|1954->897|2044->951|2059->957|2114->990
+=======
+                    DATE: Mon May 04 19:44:30 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/index.scala.html
+                    HASH: 7a0e2e59a07c347656137bc3e5369973055ae701
+                    MATRIX: 855->0|1486->595|1501->601|1570->648|1659->701|1674->707|1752->762|1841->815|1856->821|1929->872|2018->925|2033->931|2088->964
+>>>>>>> b3a22e47a1a7935bbebab4765ffc738bee4e6801
                     LINES: 29->1|52->24|52->24|52->24|53->25|53->25|53->25|54->26|54->26|54->26|55->27|55->27|55->27
                     -- GENERATED --
                 */

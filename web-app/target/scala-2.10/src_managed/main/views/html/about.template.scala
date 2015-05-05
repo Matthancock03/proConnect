@@ -136,10 +136,17 @@ Download the ProConnect app on Google Play and take part in discussions and shar
 }
                 /*
                     -- GENERATED --
+<<<<<<< HEAD
                     DATE: Mon May 04 13:38:51 PDT 2015
                     SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/about.scala.html
                     HASH: af80bc89b236d2cb2696e3a4ae94324282b91d14
                     MATRIX: 864->1|890->19|928->20|995->52|1009->58|1066->94|1641->633|1662->645|1736->696|4434->3363
+=======
+                    DATE: Mon May 04 19:44:30 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/about.scala.html
+                    HASH: d8dce4297e646595257bb27dfae956c4dbe63560
+                    MATRIX: 864->1|890->19|928->20|994->51|1008->57|1065->93|1627->619|1648->631|1722->682|4337->3266
+>>>>>>> b3a22e47a1a7935bbebab4765ffc738bee4e6801
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|126->98
                     -- GENERATED --
                 */

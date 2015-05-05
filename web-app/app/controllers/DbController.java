@@ -128,9 +128,10 @@ public class DbController extends Controller{
 										x++;
 										//Logger.debug(item.get("pubDate").textValue());
 										}
+                    List<UserModel> connections = UserController.getConnections(dbUserModel.email);
 
 
-                    return ok(home.render(feeds, dbUserModel));
+                    return ok(home.render(feeds, dbUserModel, connections));
                 }
             }
     );

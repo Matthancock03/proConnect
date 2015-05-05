@@ -4,9 +4,9 @@ import play.data.validation.Constraints;
 import play.data.*;
 import securesocial.core.java.SecureSocial;
 import scala.Option;
-import securesocial.core.Identity;
-import securesocial.core.IdentityId;
-import securesocial.core.java.BaseUserService;
+import securesocial.core.*;
+import securesocial.*;
+import securesocial.core.java.SecureSocial;
 import java.util.*;
 import java.io.*;
 import java.sql.*;
@@ -18,27 +18,43 @@ import play.data.format.*;
 import play.data.validation.*;
 import play.db.ebean.Model.Finder;
 import play.Logger;
+import views.html.*;
 
 
 
 @Entity
-public class Connection  extends Model{
+public class Connection extends Model{
 
   public Long userId;
   public Long connectionId;
 
-  public static List<UserModel> getConnections(){
-    List<UserModel> connections = new ArrayList();
-    return connections;
+  @SecureSocial.UserAwareAction
+  public static List<UserModel> connections(UserModel user){
+
+    List<UserModel> connects = new ArrayList();
+    List<Connection> connectionIds = Connection.find.where().eq("userId", user.id).findList();
+
+    for(Connection connect: connectionIds){
+      UserModel tempUserModel = UserModel.loadUserById(connect.connectionId);
+      connects.add(tempUserModel);
+    }
+
+    return connects;
   }
 
-  public static boolean isConnected(){
+  public static boolean isConnected(Long id1, Long id2){
+    Connection connect1 = Connection.find.where().eq("userId", id1).eq("connectionId", id2).findUnique();
+    Connection connect2 = Connection.find.where().eq("userId", id2).eq("connectionId", id1).findUnique();
 
-    return false;
+
+    if(connect1 == null && connect2 == null){
+      return false;
+    }
+    return true;
   }
 
-  public static Finder<Long,UserModel> find = new Finder<Long,UserModel>(
-  Long.class, UserModel.class
+  public static Finder<Long,Connection> find = new Finder<Long,Connection>(
+  Long.class, Connection.class
 );
 
 }

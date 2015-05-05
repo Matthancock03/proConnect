@@ -1,4 +1,4 @@
-@(feedItems: List[FeedItem], user:UserModel)
+@(feedItems: List[FeedItem], user:UserModel, connections: List[UserModel])
 
 @import helper._
 
@@ -38,8 +38,6 @@
 						<p class="profile-text">@user.recentSchool</p>
 						}
 					</dd>
-					<a href="@routes.Application.connections()"><p class="profile-text">Connections to Add</p></a><br/>
-					<a href="@routes.MessageController.message()"><p class="profile-text">Messages</p></a>
 				</dl>
 
 		</div>
@@ -81,10 +79,34 @@
 							  <li class="list-group-item">Third item</li>
 							</ul>
 						}else{
-							<p>Enter your twitter information for a feed of recent tweets!</p>
+
+							<div class="input-group">
+					      <input type="text" class="form-control" placeholder="Search Tweets">
+					      <span class="input-group-btn">
+					        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span>
+						      </button>
+					      </span>
+					    </div>
+							<p>Enter a query for a feed of recent tweets!</p>
 						}
 				  </div>
 				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading">Connections</div>
+					<div class="panel-body">
+						@if(connections != null){
+						<ul class="list-group overflow-y-scroll tweetTable">
+							@for(connection <- connections){
+								<a href="@routes.SearchController.loadSearchedProfile(connection.email)"><li class="list-group-item">@connection.userName</li></a>
+							}
+							</ul>
+						}else{
+							<p>Use the search bar to find friends and business associates.</p>
+						}
+					</div>
+				</div>
+
 			</div>
 		</div>
 

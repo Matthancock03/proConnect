@@ -21,7 +21,7 @@
 			<br /><br /><br />
 			 <button type="button" class="btn btn-success">Compose</button>
 			 <br />
-				 <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-left"></em> Inbox</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-center"></em> Sent</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-right"></em> Trash</button> <
+				 <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-left"></em>Inbox</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-center"></em> Sent</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-right"></em> Trash</button> <
 			</div>
 		</div>
 		<div class="col-xs-6 column">
@@ -34,6 +34,9 @@
 						</th>
 						<th>
 							Message
+						</th>
+						<th>
+							From
 						</th>
 						<th>
 							Date
@@ -57,6 +60,9 @@
 							<a data-toggle="collapse" data-target="#@index">@message.messageTitle</a>
 						</td>
 						<td>
+							@message.senderName
+						</td>
+						<td>
 							@message.tstamp
 						</td>
 						<td>
@@ -70,10 +76,10 @@
 
 					<tr id="@index" class="collapse">
 						<td>#</td>
-						<td colspan="3">@message.messageBody</td>
+						<td colspan="4">@message.messageBody</td>
 						<td>
 							<a href="#" ><button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button></a>
-							<a href="#" ><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+							<a href="@routes.MessageController.deleteMessage(message.messageId)" ><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
 						</td>
 					</tr>
 

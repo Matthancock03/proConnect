@@ -33,4 +33,9 @@ public static Result search(){
     return ok(searchedProfile.render(user));
   }
 
+  public static Result loadProfile(Long id){
+    UserModel user = UserModel.loadUserById(id);
+    return ok(searchedProfile.render(user));
+  }
+
 }

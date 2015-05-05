@@ -49,7 +49,7 @@ Seq[Any](format.raw/*1.27*/("""
 			<br /><br /><br />
 			 <button type="button" class="btn btn-success">Compose</button>
 			 <br />
-				 <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-left"></em> Inbox</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-center"></em> Sent</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-right"></em> Trash</button> <
+				 <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-left"></em>Inbox</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-center"></em> Sent</button> <button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-right"></em> Trash</button> <
 			</div>
 		</div>
 		<div class="col-xs-6 column">
@@ -64,6 +64,9 @@ Seq[Any](format.raw/*1.27*/("""
 							Message
 						</th>
 						<th>
+							From
+						</th>
+						<th>
 							Date
 						</th>
 						<th>
@@ -76,36 +79,39 @@ Seq[Any](format.raw/*1.27*/("""
 				</thead>
 				<tbody>
 
-					"""),_display_(Seq[Any](/*51.7*/for((message, index) <- messages.zipWithIndex) yield /*51.53*/{_display_(Seq[Any](format.raw/*51.54*/("""
+					"""),_display_(Seq[Any](/*54.7*/for((message, index) <- messages.zipWithIndex) yield /*54.53*/{_display_(Seq[Any](format.raw/*54.54*/("""
 					<tr>
 						<td>
-							"""),_display_(Seq[Any](/*54.9*/{index + 1})),format.raw/*54.20*/("""
+							"""),_display_(Seq[Any](/*57.9*/{index + 1})),format.raw/*57.20*/("""
 						</td>
 						<td>
-							<a data-toggle="collapse" data-target="#"""),_display_(Seq[Any](/*57.49*/index)),format.raw/*57.54*/("""">"""),_display_(Seq[Any](/*57.57*/message/*57.64*/.messageTitle)),format.raw/*57.77*/("""</a>
+							<a data-toggle="collapse" data-target="#"""),_display_(Seq[Any](/*60.49*/index)),format.raw/*60.54*/("""">"""),_display_(Seq[Any](/*60.57*/message/*60.64*/.messageTitle)),format.raw/*60.77*/("""</a>
 						</td>
 						<td>
-							"""),_display_(Seq[Any](/*60.9*/message/*60.16*/.tstamp)),format.raw/*60.23*/("""
+							"""),_display_(Seq[Any](/*63.9*/message/*63.16*/.senderName)),format.raw/*63.27*/("""
 						</td>
 						<td>
-							"""),_display_(Seq[Any](/*63.9*/if(message.isRead)/*63.27*/{_display_(Seq[Any](format.raw/*63.28*/("""
+							"""),_display_(Seq[Any](/*66.9*/message/*66.16*/.tstamp)),format.raw/*66.23*/("""
+						</td>
+						<td>
+							"""),_display_(Seq[Any](/*69.9*/if(message.isRead)/*69.27*/{_display_(Seq[Any](format.raw/*69.28*/("""
 								Read
-							""")))}/*65.9*/else/*65.13*/{_display_(Seq[Any](format.raw/*65.14*/("""
+							""")))}/*71.9*/else/*71.13*/{_display_(Seq[Any](format.raw/*71.14*/("""
 								Unread
-							""")))})),format.raw/*67.9*/("""
+							""")))})),format.raw/*73.9*/("""
 						</td>
 					</tr>
 
-					<tr id=""""),_display_(Seq[Any](/*71.15*/index)),format.raw/*71.20*/("""" class="collapse">
+					<tr id=""""),_display_(Seq[Any](/*77.15*/index)),format.raw/*77.20*/("""" class="collapse">
 						<td>#</td>
-						<td colspan="3">"""),_display_(Seq[Any](/*73.24*/message/*73.31*/.messageBody)),format.raw/*73.43*/("""</td>
+						<td colspan="4">"""),_display_(Seq[Any](/*79.24*/message/*79.31*/.messageBody)),format.raw/*79.43*/("""</td>
 						<td>
 							<a href="#" ><button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button></a>
-							<a href="#" ><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+							<a href=""""),_display_(Seq[Any](/*82.18*/routes/*82.24*/.MessageController.deleteMessage(message.messageId))),format.raw/*82.75*/("""" ><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
 						</td>
 					</tr>
 
-				""")))})),format.raw/*80.6*/("""
+				""")))})),format.raw/*86.6*/("""
 				</tbody>
 			</table>
 
@@ -115,7 +121,7 @@ Seq[Any](format.raw/*1.27*/("""
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
 
-          """),_display_(Seq[Any](/*90.12*/form(routes.UserController.replyMessage())/*90.54*/{_display_(Seq[Any](format.raw/*90.55*/("""
+          """),_display_(Seq[Any](/*96.12*/form(routes.UserController.replyMessage())/*96.54*/{_display_(Seq[Any](format.raw/*96.55*/("""
 
           	<div class="form-group" style="width: 50%; margin: 0 auto;">
             <div style="width: 75%; margin: 0 auto;">
@@ -145,7 +151,7 @@ Seq[Any](format.raw/*1.27*/("""
           		<button class="btn btn-primary btn-lg btn-block" type="submit" style="width: 50%;">Send Message</button>
             </div>
         	</div>
-          	""")))})),format.raw/*120.13*/("""
+          	""")))})),format.raw/*126.13*/("""
       </div>
     </div>
   </div> <!-- End modal -->
@@ -182,7 +188,7 @@ Seq[Any](format.raw/*1.27*/("""
 		</div>
 	</div>
 </div>
-""")))})),format.raw/*157.2*/("""
+""")))})),format.raw/*163.2*/("""
 """))}
     }
     
@@ -196,6 +202,7 @@ Seq[Any](format.raw/*1.27*/("""
                 /*
                     -- GENERATED --
 <<<<<<< HEAD
+<<<<<<< HEAD
                     DATE: Mon May 04 13:38:52 PDT 2015
                     SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/message.scala.html
                     HASH: 4cbec7d5a3c1107dec04f468ccf4d3f2e6f87205
@@ -207,6 +214,13 @@ Seq[Any](format.raw/*1.27*/("""
                     MATRIX: 783->1|918->26|946->45|982->47|1007->64|1045->65|1081->67|1094->73|1122->80|2250->1173|2312->1219|2351->1220|2416->1250|2449->1261|2557->1333|2584->1338|2623->1341|2639->1348|2674->1361|2745->1397|2761->1404|2790->1411|2857->1443|2884->1461|2923->1462|2963->1484|2976->1488|3015->1489|3070->1513|3145->1552|3172->1557|3268->1617|3284->1624|3318->1636|3703->1990|4007->2258|4058->2300|4097->2301|5158->3329|5723->3862
 >>>>>>> 2b258ea4a556f051de588edae1086775e04850b4
                     LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|79->51|79->51|79->51|82->54|82->54|85->57|85->57|85->57|85->57|85->57|88->60|88->60|88->60|91->63|91->63|91->63|93->65|93->65|93->65|95->67|99->71|99->71|101->73|101->73|101->73|108->80|118->90|118->90|118->90|148->120|185->157
+=======
+                    DATE: Mon May 04 22:14:10 PDT 2015
+                    SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/message.scala.html
+                    HASH: 32c6aeffa4a73a70a77cfef7c773b6fb8d83a2e8
+                    MATRIX: 783->1|918->26|946->45|982->47|1007->64|1045->65|1081->67|1094->73|1122->80|2284->1207|2346->1253|2385->1254|2450->1284|2483->1295|2591->1367|2618->1372|2657->1375|2673->1382|2708->1395|2779->1431|2795->1438|2828->1449|2895->1481|2911->1488|2940->1495|3007->1527|3034->1545|3073->1546|3113->1568|3126->1572|3165->1573|3220->1597|3295->1636|3322->1641|3418->1701|3434->1708|3468->1720|3747->1963|3762->1969|3835->2020|3977->2131|4281->2399|4332->2441|4371->2442|5432->3470|5997->4003
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|82->54|82->54|82->54|85->57|85->57|88->60|88->60|88->60|88->60|88->60|91->63|91->63|91->63|94->66|94->66|94->66|97->69|97->69|97->69|99->71|99->71|99->71|101->73|105->77|105->77|107->79|107->79|107->79|110->82|110->82|110->82|114->86|124->96|124->96|124->96|154->126|191->163
+>>>>>>> b3a22e47a1a7935bbebab4765ffc738bee4e6801
                     -- GENERATED --
                 */
             
