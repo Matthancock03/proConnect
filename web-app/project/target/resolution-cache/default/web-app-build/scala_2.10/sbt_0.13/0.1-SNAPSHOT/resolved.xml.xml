@@ -4,7 +4,11 @@
 		module="web-app-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
+<<<<<<< HEAD
 		publication="20150504133830"
+=======
+		publication="20150504172009"
+>>>>>>> 2b258ea4a556f051de588edae1086775e04850b4
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

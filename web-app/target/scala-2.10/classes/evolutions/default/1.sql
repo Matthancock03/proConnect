@@ -1,7 +1,19 @@
+<<<<<<< HEAD
 # --- Created by Ebean DDL
 # To stop Ebean DDL generation, remove this comment and start using Evolutions
 
 # --- !Ups
+=======
+# --- Created by Ebean DDL
+# To stop Ebean DDL generation, remove this comment and start using Evolutions
+
+# --- !Ups
+
+create table connection (
+  user_id                   bigint,
+  connection_id             bigint)
+;
+>>>>>>> 2b258ea4a556f051de588edae1086775e04850b4
 
 create table forum (
   forum_id                  bigint not null,
@@ -44,6 +56,10 @@ create table user_model (
   current_employer          varchar(255),
   recent_school             varchar(255),
   location                  varchar(255),
+<<<<<<< HEAD
+=======
+  headline                  varchar(255),
+>>>>>>> 2b258ea4a556f051de588edae1086775e04850b4
   about_me                  varchar(255),
   password                  varchar(255),
   profile_picture           bytea,
@@ -68,8 +84,15 @@ create sequence user_model_seq;
 
 
 
+<<<<<<< HEAD
 
 # --- !Downs
+=======
+
+# --- !Downs
+
+drop table if exists connection cascade;
+>>>>>>> 2b258ea4a556f051de588edae1086775e04850b4
 
 drop table if exists forum cascade;
 

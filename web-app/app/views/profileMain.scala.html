@@ -32,7 +32,7 @@
          }else{
              @helper.inputText(user("password"), 'class -> "form-control", '_label -> "Password",'type -> "password", 'readonly -> "readonly")
          }
-           @helper.inputText(user("aboutMe"), 'class -> "form-control", '_label -> "Personal Headline" )
+           @helper.inputText(user("headline"), 'class -> "form-control", '_label -> "Personal Headline" )
            @helper.inputText(user("location"), 'class -> "form-control", '_label -> "Location" )
            @helper.inputText(user("currentEmployer"), 'class -> "form-control", '_label -> "Current Employer" )
 
@@ -49,7 +49,7 @@
     <div class="col-xs-2 column logo-img"></div>
 		<div class="col-xs-8 column" style="background-color: #FFFFFF;">
           <div class="break-after">
-            @helper.textarea(user("experience"), 'class -> "form-control", '_label -> "About Me", 'rows -> "4" )
+            @helper.textarea(user("aboutMe"), 'class -> "form-control", '_label -> "About Me", 'rows -> "4" )
           </div>
           <div class="break-after">
             @helper.textarea(user("experience"), 'class -> "form-control", '_label -> "Experience", 'rows -> "4" )

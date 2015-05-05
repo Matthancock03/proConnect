@@ -3,6 +3,11 @@
 
 # --- !Ups
 
+create table connection (
+  user_id                   bigint,
+  connection_id             bigint)
+;
+
 create table forum (
   forum_id                  bigint not null,
   sub_id                    varchar(255),
@@ -44,6 +49,7 @@ create table user_model (
   current_employer          varchar(255),
   recent_school             varchar(255),
   location                  varchar(255),
+  headline                  varchar(255),
   about_me                  varchar(255),
   password                  varchar(255),
   profile_picture           bytea,
@@ -70,6 +76,8 @@ create sequence user_model_seq;
 
 
 # --- !Downs
+
+drop table if exists connection cascade;
 
 drop table if exists forum cascade;
 

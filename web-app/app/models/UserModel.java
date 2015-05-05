@@ -41,6 +41,7 @@ public class UserModel  extends Model{
   public String currentEmployer;
   public String recentSchool;
   public String location;
+  public String headline;
   public String aboutMe;
 
   @Constraints.Required
