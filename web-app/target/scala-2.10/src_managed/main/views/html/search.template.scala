@@ -33,6 +33,7 @@ Seq[Any](format.raw/*1.26*/("""
 
 """),_display_(Seq[Any](/*6.2*/main("ProConnect")/*6.20*/ {_display_(Seq[Any](format.raw/*6.22*/("""
  """),_display_(Seq[Any](/*7.3*/navbar/*7.9*/.render)),format.raw/*7.16*/("""
+ <link rel="stylesheet" href=""""),_display_(Seq[Any](/*8.32*/routes/*8.38*/.Assets.at("stylesheets/index.min.css"))),format.raw/*8.77*/("""">
 
 
 <div class="container">
@@ -86,25 +87,25 @@ Seq[Any](format.raw/*1.26*/("""
                   <div class="col-xs-2"></div>
                   <div class="col-xs-8">
                     <div class="feed-div">
-              			"""),_display_(Seq[Any](/*61.19*/for(user <- users) yield /*61.37*/{_display_(Seq[Any](format.raw/*61.38*/("""
-              					<a href=""""),_display_(Seq[Any](/*62.30*/routes/*62.36*/.SearchController.loadSearchedProfile(user.email))),format.raw/*62.85*/("""">
+              			"""),_display_(Seq[Any](/*62.19*/for(user <- users) yield /*62.37*/{_display_(Seq[Any](format.raw/*62.38*/("""
+              					<a href=""""),_display_(Seq[Any](/*63.30*/routes/*63.36*/.SearchController.loadSearchedProfile(user.email))),format.raw/*63.85*/("""">
               					<div class="panel panel-default">
               						<div class="panel-body">
               						      <div>
-                                  """),_display_(Seq[Any](/*66.36*/if(user.profilePicture != null)/*66.67*/{_display_(Seq[Any](format.raw/*66.68*/("""
-                          					<img class = "feed-image feed-head" src=""""),_display_(Seq[Any](/*67.74*/routes/*67.80*/.DbController.getProfilePic(user.email))),format.raw/*67.119*/("""" />
-                          				""")))}/*68.32*/else/*68.36*/{_display_(Seq[Any](format.raw/*68.37*/("""
-                          					<img alt="140x140" class = "feed-image feed-head" src=""""),_display_(Seq[Any](/*69.88*/routes/*69.94*/.Assets.at("images/profile_holder.png"))),format.raw/*69.133*/("""" />
-                          				""")))})),format.raw/*70.32*/("""
-              							       <h3 class="panel-title head-text feed-head">"""),_display_(Seq[Any](/*71.74*/user/*71.78*/.userName)),format.raw/*71.87*/("""</h3>
+                                  """),_display_(Seq[Any](/*67.36*/if(user.profilePicture != null)/*67.67*/{_display_(Seq[Any](format.raw/*67.68*/("""
+                          					<img class = "feed-image feed-head" src=""""),_display_(Seq[Any](/*68.74*/routes/*68.80*/.DbController.getProfilePic(user.email))),format.raw/*68.119*/("""" />
+                          				""")))}/*69.32*/else/*69.36*/{_display_(Seq[Any](format.raw/*69.37*/("""
+                          					<img alt="140x140" class = "feed-image feed-head" src=""""),_display_(Seq[Any](/*70.88*/routes/*70.94*/.Assets.at("images/profile_holder.png"))),format.raw/*70.133*/("""" />
+                          				""")))})),format.raw/*71.32*/("""
+              							       <h3 class="panel-title head-text feed-head">"""),_display_(Seq[Any](/*72.74*/user/*72.78*/.userName)),format.raw/*72.87*/("""</h3>
                       						</div>
                       						<br>
-                      						<p style="padding-top: 10px;">"""),_display_(Seq[Any](/*74.60*/user/*74.64*/.aboutMe)),format.raw/*74.72*/("""</p>
-                                  <p style="padding-top: 10px;">"""),_display_(Seq[Any](/*75.66*/user/*75.70*/.location)),format.raw/*75.79*/("""</p>
+                      						<p style="padding-top: 10px;">"""),_display_(Seq[Any](/*75.60*/user/*75.64*/.aboutMe)),format.raw/*75.72*/("""</p>
+                                  <p style="padding-top: 10px;">"""),_display_(Seq[Any](/*76.66*/user/*76.70*/.location)),format.raw/*76.79*/("""</p>
                       					</div>
                       				</div>
                 				</a>
-                			""")))})),format.raw/*79.21*/("""
+                			""")))})),format.raw/*80.21*/("""
         		    </div>
               </div>
             <div class="col-xs-2"></div>
@@ -114,7 +115,7 @@ Seq[Any](format.raw/*1.26*/("""
 
 
 
-""")))})),format.raw/*89.2*/("""
+""")))})),format.raw/*90.2*/("""
 """))}
     }
     
@@ -127,11 +128,11 @@ Seq[Any](format.raw/*1.26*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon May 04 19:44:30 PDT 2015
+                    DATE: Tue May 05 10:10:18 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/search.scala.html
-                    HASH: 26320fc5a403221d3bfae109d77749c52110fa5b
-                    MATRIX: 784->1|918->25|946->44|983->47|1009->65|1048->67|1085->70|1098->76|1126->83|3107->2028|3141->2046|3180->2047|3246->2077|3261->2083|3332->2132|3536->2300|3576->2331|3615->2332|3725->2406|3740->2412|3802->2451|3857->2487|3870->2491|3909->2492|4033->2580|4048->2586|4110->2625|4178->2661|4288->2735|4301->2739|4332->2748|4501->2881|4514->2885|4544->2893|4650->2963|4663->2967|4694->2976|4843->3093|4988->3207
-                    LINES: 26->1|30->1|32->4|34->6|34->6|34->6|35->7|35->7|35->7|89->61|89->61|89->61|90->62|90->62|90->62|94->66|94->66|94->66|95->67|95->67|95->67|96->68|96->68|96->68|97->69|97->69|97->69|98->70|99->71|99->71|99->71|102->74|102->74|102->74|103->75|103->75|103->75|107->79|117->89
+                    HASH: 347f381bfa16043fcd7ea6e4efe2e15574b62109
+                    MATRIX: 784->1|918->25|946->44|983->47|1009->65|1048->67|1085->70|1098->76|1126->83|1193->115|1207->121|1267->160|3250->2107|3284->2125|3323->2126|3389->2156|3404->2162|3475->2211|3679->2379|3719->2410|3758->2411|3868->2485|3883->2491|3945->2530|4000->2566|4013->2570|4052->2571|4176->2659|4191->2665|4253->2704|4321->2740|4431->2814|4444->2818|4475->2827|4644->2960|4657->2964|4687->2972|4793->3042|4806->3046|4837->3055|4986->3172|5131->3286
+                    LINES: 26->1|30->1|32->4|34->6|34->6|34->6|35->7|35->7|35->7|36->8|36->8|36->8|90->62|90->62|90->62|91->63|91->63|91->63|95->67|95->67|95->67|96->68|96->68|96->68|97->69|97->69|97->69|98->70|98->70|98->70|99->71|100->72|100->72|100->72|103->75|103->75|103->75|104->76|104->76|104->76|108->80|118->90
                     -- GENERATED --
                 */
             

@@ -29,15 +29,14 @@ object connections extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appen
 Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any](format.raw/*1.21*/("""
   """),_display_(Seq[Any](/*2.4*/navbar/*2.10*/.render)),format.raw/*2.17*/("""
 
-  <h1>
-
-""")))})),format.raw/*6.2*/("""
 
 
+
+<link rel="stylesheet" href=""""),_display_(Seq[Any](/*7.31*/routes/*7.37*/.Assets.at("stylesheets/index.min.css"))),format.raw/*7.76*/("""">
 
 
 			<h2>
-				Connections
+				Connections</h2>
 
         <form class="navbar-form navbar-right" role="Connect">
       <div class="form-group">
@@ -45,13 +44,8 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
       </div>
       <button type="submit" class="btn btn-default">Search</button>
       </form>
-			</h2>
 
 
-			<p>
-
-
-			</p>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
@@ -117,7 +111,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 	</div>
 </div>
 
-</h1>
+""")))})),format.raw/*86.2*/("""
 """))}
     }
     
@@ -130,11 +124,11 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon May 04 19:44:29 PDT 2015
+                    DATE: Tue May 05 10:10:18 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/connections.scala.html
-                    HASH: da6f209174b4fe51eb05f1f442816d562f32d5a2
-                    MATRIX: 870->1|896->19|934->20|972->24|986->30|1014->37|1055->48
-                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|34->6
+                    HASH: 398d698c620eb0d90579e84c380c7d43578ffde8
+                    MATRIX: 870->1|896->19|934->20|972->24|986->30|1014->37|1084->72|1098->78|1158->117|2862->1790
+                    LINES: 29->1|29->1|29->1|30->2|30->2|30->2|35->7|35->7|35->7|114->86
                     -- GENERATED --
                 */
             

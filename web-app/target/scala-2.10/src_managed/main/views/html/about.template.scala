@@ -52,7 +52,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 				<h1 class ="header-text text-left"> ProConnect </h1>
 				<h1 class ="text-center">Connect with Proffesionals</h1>
   		</div>
-  		
+
     </div>
 
 	</div>
@@ -115,7 +115,7 @@ Download the ProConnect app on Google Play and take part in discussions and shar
                     <p style="color:black">
                       For more information about our company, please visit our Company Page or contact us at supportproConnectors.com.
                       </p>
-          
+
 
    </h3>
 
@@ -136,10 +136,10 @@ Download the ProConnect app on Google Play and take part in discussions and shar
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon May 04 19:44:30 PDT 2015
+                    DATE: Tue May 05 10:10:18 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/about.scala.html
-                    HASH: d8dce4297e646595257bb27dfae956c4dbe63560
-                    MATRIX: 864->1|890->19|928->20|994->51|1008->57|1065->93|1627->619|1648->631|1722->682|4337->3266
+                    HASH: d4f5ffa6c06601fd79ccfdc4905baee2b5b33d96
+                    MATRIX: 864->1|890->19|928->20|994->51|1008->57|1065->93|1627->619|1648->631|1722->682|4323->3252
                     LINES: 29->1|29->1|29->1|30->2|30->2|30->2|43->15|43->15|43->15|126->98
                     -- GENERATED --
                 */

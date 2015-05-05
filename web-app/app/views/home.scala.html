@@ -100,6 +100,7 @@
 							@for(connection <- connections){
 								<a href="@routes.SearchController.loadSearchedProfile(connection.email)"><li class="list-group-item">@connection.userName</li></a>
 							}
+							<li>Use the search bar to find friends and business associates.</li>
 							</ul>
 						}else{
 							<p>Use the search bar to find friends and business associates.</p>
