@@ -7,8 +7,6 @@ import scala.Option;
 import securesocial.core.Identity;
 import securesocial.core.IdentityId;
 import securesocial.core.java.BaseUserService;
-import java.sql.Connection;
-import java.sql.Statement;
 import java.util.*;
 import java.io.*;
 import java.sql.*;
