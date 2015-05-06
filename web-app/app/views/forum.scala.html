@@ -28,9 +28,40 @@
 	</div>
 
 
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div class="row">
+    <div class="row clearfix">
+    <div class="col-md-12 column"></div>
+
+      @for(index <- 1 until (forumItems.size + 1)){
+
+      @if(index % 3 == 0){
+
+            <div class="row">
+      }
+
+      <div class="col-xs-4">
+        <div class="thumbnail">
+          <img src="@forumItems(index - 1).imageUrl" width="400" height="400" />
+          <div class="caption" width="400" height="400">
+            <h3>
+              @forumItems(index - 1).topicHeader
+            </h3>
+            <p>
+              @forumItems(index - 1).body<br /><br /><br />
+            </p>
+            <p>
+              <a class="btn btn-success" href="@routes.Application.forumItem(forumItems(index - 1).forumId)">Read</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+        @if(index % 3 == 0 && index != 0){
+        </div>
+        }
+      }
+<!--
+          <div class="row">
+
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img src="http://blog.peertransfer.com/wp-content/uploads/2013/04/Biz-Finding-A-Job-May-Mean-Getting-More-Niche.jpg" width="400" height="400" />
@@ -180,7 +211,7 @@
 					</div>
 				</div>
 			</div>
-			<br /><br />
+			<br /><br />-->
 		</div>
 	</div>
 

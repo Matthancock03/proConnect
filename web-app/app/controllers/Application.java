@@ -33,24 +33,29 @@ public class Application extends Controller{
  * @return a 200 response that will render the forum page on the screen.
  */
 public static Result forum(){
-  List<Forum> forumList = new ArrayList();
-  Forum forumIt = new Forum();
-  forumIt.topicHeader = "How to Prepare for an Interview";
-  forumIt.body = "Interviews could be stressful. You can build confidence and ace your interview with these 7 simple and easy steps and give a great first impression to the employer.";
-  forumList.add(forumIt);
+  List<Forum> forumList;
+  try{
+  forumList = Forum.getForumArray();
 
+  if(forumList.size() == 0){ //Checks if forum database is empty and initializes them.
+    Logger.debug("No Forum Items In DB");
+    Forum.initializeForum();
+    forumList = Forum.getForumArray();
+  }
+}catch(Exception e){
+  forumList = new ArrayList();
+}
     return ok(forum.render(forumList));
   }
 
-public static Result forumItem(){
+public static Result forumItem(Long id){
   Forum forumIt = new Forum();
   try{
-    Long idNumber =  new Long(000000000001);
-    forumIt = Forum.getForumItem(idNumber);
-  }catch(Exception e){
-  forumIt.topicHeader = "How to Prepare for an Interview";
-  forumIt.body = "Interviews could be stressful. You can build confidence and ace your interview with these 7 simple and easy steps and give a great first impression to the employer.";
-  }
+    forumIt = Forum.getForumItem(id);
+    }catch(Exception e){
+    forumIt.topicHeader = "How to Prepare for an Interview";
+    forumIt.body = "Interviews could be stressful. You can build confidence and ace your interview with these 7 simple and easy steps and give a great first impression to the employer.";
+    }
   return ok(forumItem.render(forumIt));
 }
   /**This produces a HTTP result for the connections page.

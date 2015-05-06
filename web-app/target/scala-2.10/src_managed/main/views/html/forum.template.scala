@@ -56,9 +56,40 @@ Seq[Any](format.raw/*1.27*/("""
 	</div>
 
 
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div class="row">
+    <div class="row clearfix">
+    <div class="col-md-12 column"></div>
+
+      """),_display_(Seq[Any](/*34.8*/for(index <- 1 until (forumItems.size + 1)) yield /*34.51*/{_display_(Seq[Any](format.raw/*34.52*/("""
+
+      """),_display_(Seq[Any](/*36.8*/if(index % 3 == 0)/*36.26*/{_display_(Seq[Any](format.raw/*36.27*/("""
+
+            <div class="row">
+      """)))})),format.raw/*39.8*/("""
+
+      <div class="col-xs-4">
+        <div class="thumbnail">
+          <img src=""""),_display_(Seq[Any](/*43.22*/forumItems(index - 1)/*43.43*/.imageUrl)),format.raw/*43.52*/("""" width="400" height="400" />
+          <div class="caption" width="400" height="400">
+            <h3>
+              """),_display_(Seq[Any](/*46.16*/forumItems(index - 1)/*46.37*/.topicHeader)),format.raw/*46.49*/("""
+            </h3>
+            <p>
+              """),_display_(Seq[Any](/*49.16*/forumItems(index - 1)/*49.37*/.body)),format.raw/*49.42*/("""<br /><br /><br />
+            </p>
+            <p>
+              <a class="btn btn-success" href=""""),_display_(Seq[Any](/*52.49*/routes/*52.55*/.Application.forumItem(forumItems(index - 1).forumId))),format.raw/*52.108*/("""">Read</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+        """),_display_(Seq[Any](/*58.10*/if(index % 3 == 0 && index != 0)/*58.42*/{_display_(Seq[Any](format.raw/*58.43*/("""
+        </div>
+        """)))})),format.raw/*60.10*/("""
+      """)))})),format.raw/*61.8*/("""
+<!--
+          <div class="row">
+
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img src="http://blog.peertransfer.com/wp-content/uploads/2013/04/Biz-Finding-A-Job-May-Mean-Getting-More-Niche.jpg" width="400" height="400" />
@@ -208,12 +239,12 @@ Seq[Any](format.raw/*1.27*/("""
 					</div>
 				</div>
 			</div>
-			<br /><br />
+			<br /><br />-->
 		</div>
 	</div>
 
 
-""")))})),format.raw/*188.2*/("""
+""")))})),format.raw/*219.2*/("""
 """))}
     }
     
@@ -226,11 +257,11 @@ Seq[Any](format.raw/*1.27*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue May 05 21:11:14 PDT 2015
+                    DATE: Wed May 06 00:05:47 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/forum.scala.html
-                    HASH: bccbbfdf9d2962a3c1f38046e07a4bba330e297c
-                    MATRIX: 779->1|898->26|934->28|960->46|998->47|1036->51|1050->57|1078->64|7424->6378
-                    LINES: 26->1|29->1|30->2|30->2|30->2|31->3|31->3|31->3|216->188
+                    HASH: 7c3cc489a83a047f9cab00c9ca9eb7c9528999e0
+                    MATRIX: 779->1|898->26|934->28|960->46|998->47|1036->51|1050->57|1078->64|1590->541|1649->584|1688->585|1732->594|1759->612|1798->613|1868->652|1988->736|2018->757|2049->766|2204->885|2234->906|2268->918|2354->968|2384->989|2411->994|2547->1094|2562->1100|2638->1153|2757->1236|2798->1268|2837->1269|2894->1294|2933->1302|8838->7175
+                    LINES: 26->1|29->1|30->2|30->2|30->2|31->3|31->3|31->3|62->34|62->34|62->34|64->36|64->36|64->36|67->39|71->43|71->43|71->43|74->46|74->46|74->46|77->49|77->49|77->49|80->52|80->52|80->52|86->58|86->58|86->58|88->60|89->61|247->219
                     -- GENERATED --
                 */
             

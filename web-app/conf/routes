@@ -20,7 +20,7 @@ GET      /connections              controllers.Application.connections()
 GET      /about                    controllers.Application.about()
 GET      /help                     controllers.Application.help()
 GET      /systemEntry              controllers.Application.systemEntry()
-GET      /forumItem                controllers.Application.forumItem()
+GET      /forumItem                controllers.Application.forumItem(id: Long)
 
 
 GET      /sendMessage              controllers.UserController.sendMessage()

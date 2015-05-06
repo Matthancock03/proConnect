@@ -30,6 +30,7 @@ public class Message extends Model {
   public String senderName;
   public Long recipientId;
   public String messageTitle;
+  @Lob
   public String messageBody;
   public boolean isRead;
 

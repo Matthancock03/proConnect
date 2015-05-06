@@ -32,35 +32,40 @@ Seq[Any](format.raw/*1.20*/("""
 
 
 <div class="container-fluid">
+	<div class="row clearfix">
+	<div class="col-xs-3">
 
-		<div class="feed-div">
-				"""),_display_(Seq[Any](/*9.6*/if(forumItem.topicHeader != "")/*9.37*/{_display_(Seq[Any](format.raw/*9.38*/("""
+	</div>
+	<div class="col-xs-6" style="margin-top: 20px;">
+	<img src=""""),_display_(Seq[Any](/*12.13*/forumItem/*12.22*/.imageUrl)),format.raw/*12.31*/(""""/>
+		<div class="feed-div" style="margin-top: 20px;">
+				"""),_display_(Seq[Any](/*14.6*/if(forumItem.topicHeader != "")/*14.37*/{_display_(Seq[Any](format.raw/*14.38*/("""
 					<div class="panel panel-default">
 						<div class="panel-body">
 						<div>
-							<h3 class="panel-title head-text feed-head">"""),_display_(Seq[Any](/*13.53*/forumItem/*13.62*/.topicHeader)),format.raw/*13.74*/("""</h3>
+							<h3 class="panel-title head-text feed-head">"""),_display_(Seq[Any](/*18.53*/forumItem/*18.62*/.topicHeader)),format.raw/*18.74*/("""</h3>
 						</div>
 						<br>
-						<p style="padding-top: 10px;">"""),_display_(Seq[Any](/*16.38*/forumItem/*16.47*/.body)),format.raw/*16.52*/("""</p>
+						<p style="padding-top: 10px;">"""),_display_(Seq[Any](/*21.38*/forumItem/*21.47*/.body)),format.raw/*21.52*/("""</p>
 					</div>
 				</div>
-				""")))})),format.raw/*19.6*/("""
+				""")))})),format.raw/*24.6*/("""
 		</div>
 
+				<form role="form">
+					<div class="form-group" style="margin-top: 15px;">
+						 <label for="exampleInputComment">Comment Section</label><input class="form-control" id="commentSubmission" type="text" />
+			 		<a href="#" ><button class="btn btn-default">Comment</button></a>
+						</div>
+					</form>
 
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<form role="form">
-				<div class="form-group">
-					 <label for="exampleInputComment">Comment Section</label><input class="form-control" id="exampleInputEmail1" type="email" />
 				</div>
+				<div class="col-xs-3">
 
-				</div> <button type="submit" class="btn btn-default">Submit</button>
-			</form>
+				</div>
 		</div>
 	</div>
-</div>
-""")))})),format.raw/*35.2*/("""
+""")))})),format.raw/*40.2*/("""
 """))}
     }
     
@@ -73,11 +78,11 @@ Seq[Any](format.raw/*1.20*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue May 05 21:11:15 PDT 2015
+                    DATE: Wed May 06 00:09:46 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/forumItem.scala.html
-                    HASH: 6fa72ac9e37c070b13edcb2b56d6c3fa4437d9cf
-                    MATRIX: 777->1|889->19|925->21|951->39|990->41|1026->43|1039->49|1069->58|1167->122|1206->153|1244->154|1415->289|1433->298|1467->310|1570->377|1588->386|1615->391|1679->424|2085->799
-                    LINES: 26->1|29->1|30->2|30->2|30->2|31->3|31->3|31->3|37->9|37->9|37->9|41->13|41->13|41->13|44->16|44->16|44->16|47->19|63->35
+                    HASH: 294e380963b0ceefce9732a08a2c068ad0924fcf
+                    MATRIX: 777->1|889->19|925->21|951->39|990->41|1026->43|1039->49|1069->58|1261->214|1279->223|1310->232|1405->292|1445->323|1484->324|1655->459|1673->468|1707->480|1810->547|1828->556|1855->561|1919->594|2336->980
+                    LINES: 26->1|29->1|30->2|30->2|30->2|31->3|31->3|31->3|40->12|40->12|40->12|42->14|42->14|42->14|46->18|46->18|46->18|49->21|49->21|49->21|52->24|68->40
                     -- GENERATED --
                 */
             

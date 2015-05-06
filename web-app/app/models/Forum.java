@@ -30,7 +30,10 @@ public class Forum extends Model{
   public String subId;
   public String ownerId;
   public String topicHeader;
+
+  @Lob
   public String body;
+  @Lob
   public String imageUrl;
   Timestamp cretimestamp;
 
@@ -52,29 +55,28 @@ public Forum (String header, String topBody){
   }
 
   public static List<Forum> getForumArray(){
-
     List<Forum> forumArray = Forum.find.all();
     return forumArray;
   }
-  public static Forum getForumItem(Long id){
 
+  public static Forum getForumItem(Long id){
     Forum forumIt = Forum.find.where().eq("forumId",id).findUnique();
     return forumIt;
   }
 
-  public static Finder<Long,Forum> find = new Finder<Long,Forum>(
-    Long.class, Forum.class
-  );
+  public static void saveComment(){
+    
+  }
 
   public static void initializeForum(){
 
   Forum forum1 = new Forum();
-  
+
   forum1.topicHeader = "How to Prepare for an Interview";
   forum1.body = "Interviews could be stressful. You can build confidence and ace your interview with these 7 simple and easy steps and give a great first impression to the employer.";
   forum1.imageUrl = "http://blog.peertransfer.com/wp-content/uploads/2013/04/Biz-Finding-A-Job-May-Mean-Getting-More-Niche.jpg";
   forum1.save();
-  
+
   Forum forum2 = new Forum();
   forum2.topicHeader = "How to Get a Job With No Experience";
   forum2.body = "Having no experience for a job of your choice will not necessarily eliminate you from being a good candidate. Your dedication, communication skills, and work ethic play a big role. However, in order to stand out you will need to follow a few rules and strategies.";
@@ -123,5 +125,10 @@ public Forum (String header, String topBody){
   forum9.imageUrl = "https://venkyias.files.wordpress.com/2012/08/discussion1.jpg";
   forum9.save();
   }
+
+  public static Finder<Long,Forum> find = new Finder<Long,Forum>(
+    Long.class, Forum.class
+  );
+
 
 }

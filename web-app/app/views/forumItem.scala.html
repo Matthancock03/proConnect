@@ -4,8 +4,13 @@
 
 
 <div class="container-fluid">
+	<div class="row clearfix">
+	<div class="col-xs-3">
 
-		<div class="feed-div">
+	</div>
+	<div class="col-xs-6" style="margin-top: 20px;">
+	<img src="@forumItem.imageUrl"/>
+		<div class="feed-div" style="margin-top: 20px;">
 				@if(forumItem.topicHeader != ""){
 					<div class="panel panel-default">
 						<div class="panel-body">
@@ -19,17 +24,17 @@
 				}
 		</div>
 
+				<form role="form">
+					<div class="form-group" style="margin-top: 15px;">
+						 <label for="exampleInputComment">Comment Section</label><input class="form-control" id="commentSubmission" type="text" />
+			 		<a href="#" ><button class="btn btn-default">Comment</button></a>
+						</div>
+					</form>
 
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<form role="form">
-				<div class="form-group">
-					 <label for="exampleInputComment">Comment Section</label><input class="form-control" id="exampleInputEmail1" type="email" />
 				</div>
+				<div class="col-xs-3">
 
-				</div> <button type="submit" class="btn btn-default">Submit</button>
-			</form>
+				</div>
 		</div>
 	</div>
-</div>
 }

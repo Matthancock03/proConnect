@@ -1,6 +1,6 @@
 // @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
-// @HASH:8a6afc8f958c23714dfd9fd0a297e764badd3f59
-// @DATE:Tue May 05 21:11:02 PDT 2015
+// @HASH:54cb331bfdeebfa2da04acc0d145f823da68fb2f
+// @DATE:Tue May 05 23:49:13 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -120,6 +120,12 @@ def addConnection(email:String): Call = {
 class ReverseApplication {
     
 
+// @LINE:23
+def forumItem(id:Long): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "forumItem" + queryString(List(Some(implicitly[QueryStringBindable[Long]].unbind("id", id)))))
+}
+                                                
+
 // @LINE:21
 def help(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "help")
@@ -135,12 +141,6 @@ def splashPage(): Call = {
 // @LINE:17
 def userAware(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "userAware")
-}
-                                                
-
-// @LINE:23
-def forumItem(): Call = {
-   Call("GET", _prefix + { _defaultPrefix } + "forumItem")
 }
                                                 
 
@@ -581,6 +581,17 @@ def addConnection : JavascriptReverseRoute = JavascriptReverseRoute(
 class ReverseApplication {
     
 
+// @LINE:23
+def forumItem : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.forumItem",
+   """
+      function(id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "forumItem" + _qS([(""" + implicitly[QueryStringBindable[Long]].javascriptUnbind + """)("id", id)])})
+      }
+   """
+)
+                        
+
 // @LINE:21
 def help : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.help",
@@ -609,17 +620,6 @@ def userAware : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "userAware"})
-      }
-   """
-)
-                        
-
-// @LINE:23
-def forumItem : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.Application.forumItem",
-   """
-      function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "forumItem"})
       }
    """
 )
@@ -1198,6 +1198,12 @@ def addConnection(email:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.H
 class ReverseApplication {
     
 
+// @LINE:23
+def forumItem(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.forumItem(id), HandlerDef(this, "controllers.Application", "forumItem", Seq(classOf[Long]), "GET", """""", _prefix + """forumItem""")
+)
+                      
+
 // @LINE:21
 def help(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.help(), HandlerDef(this, "controllers.Application", "help", Seq(), "GET", """""", _prefix + """help""")
@@ -1213,12 +1219,6 @@ def splashPage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:17
 def userAware(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.userAware(), HandlerDef(this, "controllers.Application", "userAware", Seq(), "GET", """""", _prefix + """userAware""")
-)
-                      
-
-// @LINE:23
-def forumItem(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.forumItem(), HandlerDef(this, "controllers.Application", "forumItem", Seq(), "GET", """""", _prefix + """forumItem""")
 )
                       
 

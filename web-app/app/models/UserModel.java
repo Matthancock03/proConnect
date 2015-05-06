@@ -42,6 +42,7 @@ public class UserModel  extends Model{
   public String recentSchool;
   public String location;
   public String headline;
+  @Lob
   public String aboutMe;
 
   @Constraints.Required
@@ -52,9 +53,11 @@ public class UserModel  extends Model{
 
   public String loginProvider;
   public String creditCard;
-
+  @Lob
   public String experience;
+  @Lob
   public String education;
+  @Lob
   public String projects;
   public boolean isPremium;
   //public List<String> experience = new ArrayList<String>();
