@@ -32,9 +32,11 @@ GET		   /getSentMessages                  controllers.MessageController.sentMess
 GET		   /deleteMessage            controllers.MessageController.deleteMessage(id: Long)
 
 
-GET      /loadSearchedProfile      controllers.SearchController.loadSearchedProfile(email:String)
+GET        /loadSearchedProfile      controllers.SearchController.loadSearchedProfile(email:String)
 GET		   /search                   controllers.SearchController.search()
-GET      /loadProfile              controllers.SearchController.loadProfile(id: Long)
+GET        /loadProfile              controllers.SearchController.loadProfile(id: Long)
+GET		   /search                   controllers.SearchController.searchBySkill()
+GET		   /search                   controllers.SearchController.searchByProfession()
 
 
 

@@ -20,6 +20,25 @@ public class SearchController extends Controller{
  * @return a 200 response that will render the search page on the screen
  */
 public static Result search(){
+
+
+    DynamicForm requestData = Form.form().bindFromRequest();
+    String queryName = requestData.get("searchParameter");
+    Logger.debug("Search Bind Results: " + queryName);
+    List<UserModel> users = UserModel.findByName(queryName);
+    return ok(search.render(users));
+  }
+
+  public static Result searchByProfession(){
+    DynamicForm requestData = Form.form().bindFromRequest();
+    String queryName = requestData.get("searchParameter");
+    Logger.debug("Search Bind Results: " + queryName);
+    List<UserModel> users = UserModel.findByName(queryName);
+
+    return ok(search.render(users));
+  }
+
+  public static Result searchBySkill(){
     DynamicForm requestData = Form.form().bindFromRequest();
     String queryName = requestData.get("searchParameter");
     Logger.debug("Search Bind Results: " + queryName);

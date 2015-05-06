@@ -91,6 +91,18 @@ public class UserModel  extends Model{
     return newUserModel;
   }
 
+    public static List<UserModel> findByProfession(String query){
+    List<UserModel> newUserModel = find.where().ilike("experience", "%" + query + "%").findList();
+    return newUserModel;
+  }
+
+    public static List<UserModel> findBySkill(String query){
+    List<UserModel> newUserModel = find.where().ilike("projects", "%" + name + "%").findList();
+    return newUserModel;
+  }
+
+
+
 
   public static Finder<Long,UserModel> find = new Finder<Long,UserModel>(
   Long.class, UserModel.class

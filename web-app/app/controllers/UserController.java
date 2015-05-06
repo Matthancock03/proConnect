@@ -96,6 +96,9 @@ public static Result addConnection(String email){
     return ok(splash.render());
     }
 
+      Logger.debug("Is Connected: " + Connection.isConnected(connector.id, connectee.id));
+      Logger.debug("Connector : " + connector.id + "Conectee: " + connectee.id));
+
     if(Connection.isConnected(connector.id, connectee.id)){
       ok(searchedProfile.render(connectee));
     }
