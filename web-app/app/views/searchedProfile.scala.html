@@ -14,17 +14,38 @@
       @if(user.profilePicture != null){
         <img class = "img-thumbnail profileImage" src="@routes.DbController.getProfilePic(user.email)" />
       }else{
-        <img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")" />
+        <img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")"/>
         }
+         <a href="@routes.UserController.addConnection(user.email)"><button type="button" class="btn btn-success edit-button" name="connect">Connect</button></a>
+
+      <!-- Large modal -->
+  <button type="button" class="btn btn-success edit-button" data-toggle="modal" data-target=".bs-example-modal-lg">Send Message</button>
+        </div>
+
+<br />
+        <div class="col-xs-6 column">
+          <div class="centerDiv" style="background-color: #FFFFFF;">
         @if(user.userName != null){
+
               <h4>@user.userName</h4>
             }else{
               <h4>Guest</h4>
             }
-  <a href="@routes.UserController.addConnection(user.email)"><button type="button" class="btn btn-default edit-button" name="connect">Connect</button></a>
+            @if(user.aboutMe != null){
+          <h3>@user.aboutMe</h3>
+        }
 
-      <!-- Large modal -->
-  <button type="button" class="btn btn-default edit-button" data-toggle="modal" data-target=".bs-example-modal-lg">Send Message</button>
+      @if(user.currentEmployer != null){
+          <h3>@user.currentEmployer</h3>
+        }
+
+      @if(user.location != null){
+          <h3>@user.location</h3>
+        }
+            </div>
+            </div>
+
+  
 
   <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -68,28 +89,14 @@
 
 
     </div>
-    <div class="col-xs-2"></div>
+    <div class="row clearfix">
+    <div class="col-md-2 column img-div"></div>
 
-    <div class="col-md-6 column" style="background-color: #FFFFFF;">
-        @if(user.aboutMe != null){
-          <h3>@user.aboutMe</h3>
-        }
-
-      @if(user.currentEmployer != null){
-          <h3>@user.currentEmployer</h3>
-        }
-
-      @if(user.location != null){
-          <h3>@user.location</h3>
-        }
-    </div>
-    <div class="col-xs-2"></div>
-  </div>
-  <div class="row clearfix">
-    <div class="col-xs-4">
-
-    </div>
-      <div class="col-xs-8 column" style="background-color: #FFFFFF;">
+    
+    
+     
+        <div class="col-xs-6 column">
+          <div class="centerDiv" style="background-color: #FFFFFF;">
         <h2>
           About Me
         </h2>
@@ -99,13 +106,9 @@
           </p>
         }
 
-      </div>
-  </div>
-  <div class="row clearfix">
-    <div class="col-xs-4">
-
-    </div>
-    <div class="col-xs-8 column" style="background-color: #FFFFFF;">
+      <br />
+  
+    
       <h2>
         Experience
       </h2>
@@ -114,13 +117,9 @@
         @user.experience
       </p>
       }
-    </div>
-  </div>
-  <div class="row clearfix">
-    <div class="col-xs-4">
+    <br />
 
-    </div>
-    <div class="col-xs-8 column" style="background-color: #FFFFFF;">
+    
       <h2>
         Projects or Skills Highlight
       </h2>
@@ -129,13 +128,7 @@
         @user.projects
       </p>
       }
-    </div>
-  </div>
-  <div class="row clearfix">
-    <div class="col-xs-4">
-
-    </div>
-    <div class="col-xs-8 column" style="background-color: #FFFFFF;">
+    <br />
       <h2>
         Education
       </h2>
@@ -144,6 +137,7 @@
         @user.education
       </p>
       }
+      <br />
     </div>
   </div>
 </div>
