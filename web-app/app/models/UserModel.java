@@ -97,7 +97,7 @@ public class UserModel  extends Model{
   }
 
     public static List<UserModel> findBySkill(String query){
-    List<UserModel> newUserModel = find.where().ilike("projects", "%" + name + "%").findList();
+    List<UserModel> newUserModel = find.where().ilike("projects", "%" + query + "%").findList();
     return newUserModel;
   }
 

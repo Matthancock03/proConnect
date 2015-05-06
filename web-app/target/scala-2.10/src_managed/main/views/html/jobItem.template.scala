@@ -63,7 +63,7 @@ Seq[Any](format.raw/*1.18*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed May 06 12:46:28 PDT 2015
+                    DATE: Wed May 06 12:54:24 PDT 2015
                     SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/jobItem.scala.html
                     HASH: 6c94de5939e17297fc61276da7695ddbfcb83787
                     MATRIX: 775->1|885->17|922->20|948->38|987->40|1024->43|1037->49|1067->58|1171->128|1208->157|1246->158|1421->297|1437->304|1471->316|1577->386|1593->393|1620->398|1687->434|1746->462

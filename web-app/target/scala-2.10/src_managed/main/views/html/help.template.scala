@@ -254,7 +254,7 @@ Seq[Any](_display_(Seq[Any](/*1.3*/main("ProConect")/*1.20*/{_display_(Seq[Any](
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed May 06 12:46:27 PDT 2015
+                    DATE: Wed May 06 12:54:23 PDT 2015
                     SOURCE: C:/Users/Roya/Documents/GitHub/proConnect/web-app/app/views/help.scala.html
                     HASH: eb7345f585647e02d56d9a2500430bc4dd429af7
                     MATRIX: 863->2|888->19|926->20|964->24|977->30|1005->37|9273->8273

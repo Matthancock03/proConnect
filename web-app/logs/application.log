@@ -1,10 +1,10 @@
-2015-05-06 12:48:10,504 - [INFO] - from play in pool-6-thread-3 
+2015-05-06 12:55:54,525 - [INFO] - from play in pool-6-thread-4 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-05-06 12:50:08,641 - [ERROR] - from application in New I/O worker #1 
+2015-05-06 12:58:20,027 - [ERROR] - from application in New I/O worker #1 
 
 
-! @6m43i3h6f - Internal server error, for (GET) [/] ->
+! @6m43j5g6p - Internal server error, for (GET) [/] ->
 
 play.PlayExceptions$CompilationException: Compilation error[error: ';' expected]
 	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
@@ -27,15 +27,15 @@ play.PlayExceptions$CompilationException: Compilation error[error: ';' expected]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
 
-2015-05-06 12:50:08,903 - [WARN] - from play in New I/O worker #1 
+2015-05-06 12:58:20,324 - [WARN] - from play in New I/O worker #1 
 No application found at invoker init
 
-2015-05-06 12:52:28,658 - [ERROR] - from application in New I/O worker #1 
+2015-05-06 12:59:42,095 - [ERROR] - from application in New I/O worker #1 
 
 
-! @6m43ibge0 - Internal server error, for (GET) [/] ->
+! @6m43ja7ih - Internal server error, for (GET) [/] ->
 
-play.PlayExceptions$CompilationException: Compilation error[error: ';' expected]
+play.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
 	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
 	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
 	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
@@ -55,4 +55,1660 @@ play.PlayExceptions$CompilationException: Compilation error[error: ';' expected]
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+
+2015-05-06 13:08:21,096 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
+
+2015-05-06 13:08:24,695 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-05-06 13:08:24,996 - [INFO] - from play in play-internal-execution-context-1 
+Starting application default Akka system.
+
+2015-05-06 13:08:25,020 - [DEBUG] - from application in play-akka.actor.default-dispatcher-5 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-06 13:08:25,025 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-05-06 13:08:25,031 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded password hasher bcrypt
+
+2015-05-06 13:08:25,043 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: facebook
+
+2015-05-06 13:08:25,044 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: google
+
+2015-05-06 13:08:25,047 - [INFO] - from application in play-internal-execution-context-1 
+[securesocial] loaded identity provider: userpass
+
+2015-05-06 13:08:25,068 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-05-06 13:08:31,695 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] bootstrap path = securesocial/bootstrap/css/bootstrap.min.css
+
+2015-05-06 13:08:31,698 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] assets controller = controllers.ReverseAssets
+
+2015-05-06 13:08:31,704 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] favicon path = securesocial/images/favicon.png
+
+2015-05-06 13:08:31,707 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] Jquery path = securesocial/javascripts/jquery-1.7.1.min.js
+
+2015-05-06 13:08:31,709 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+[securesocial] custom css path = None
+
+2015-05-06 13:08:34,582 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
+[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
+
+2015-05-06 13:08:34,588 - [DEBUG] - from application in play-akka.actor.default-dispatcher-10 
+[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=881d139c-211a-4e6e-a8f7-43c59f0ff3a7]
+
+2015-05-06 13:08:48,621 - [DEBUG] - from application in play-akka.actor.default-dispatcher-9 
+[securesocial] got json back [{"access_token":"ya29.awE0m4Tv267Jxg55AS-fyiikR22PUDqDIch4hO36tffUx1yZHMp3ySVxhvpCKa-5blk-x7mNJwS2pQ","token_type":"Bearer","expires_in":3600,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjMyOTJiYzJhZGEzMzlkYzY4YzZiMTRlZGU4ZDZkZmIyM2U0Y2NmZTUifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTEyMDExMzA5MTEzMzk4NTY3MjE0IiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6InJveWEuZGVsYW5AZ21haWwuY29tIiwiYXRfaGFzaCI6IjZFRlFENi1Uc0FiRThPSUlscmdBbkEiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0MzA5NDI5MjcsImV4cCI6MTQzMDk0NjUyN30.Iy9HOle5pDZUHcbUM1JYljtqCXQvHs0_UMx_AqOqMKqphzlRwwnwKv7SewgJxWjBf0LfiBfW_W794jWvXGss0tiBy8rVFVnnNhs6U3W2UgoWK7YZhE5vblW35YTwPe1kpIBn3Tah-gN803AuFfLgtGIPshU66N8UbbZDxoBSUnQ"}]
+
+2015-05-06 13:08:48,749 - [DEBUG] - from application in play-akka.actor.default-dispatcher-9 
+[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.awE0m4Tv267Jxg55AS-fyiikR22PUDqDIch4hO36tffUx1yZHMp3ySVxhvpCKa-5blk-x7mNJwS2pQ,Some(Bearer),Some(3600),None)),None))
+
+2015-05-06 13:08:49,980 - [DEBUG] - from application in play-akka.actor.default-dispatcher-9 
+[securesocial] user logged in : [SocialUser(IdentityId(112011309113398567214,google),Roya,Delparastaran,Roya Delparastaran,Some(roya.delan@gmail.com),Some(https://lh6.googleusercontent.com/-cDtLdZvl068/AAAAAAAAAAI/AAAAAAAAAJk/jn8vVjds07E/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.awE0m4Tv267Jxg55AS-fyiikR22PUDqDIch4hO36tffUx1yZHMp3ySVxhvpCKa-5blk-x7mNJwS2pQ,Some(Bearer),Some(3600),None)),None)]
+
+2015-05-06 13:08:50,257 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+google
+
+2015-05-06 13:08:50,259 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:08:50,904 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+LoadUserModel UserModel email : roya.delan@gmail.com
+
+2015-05-06 13:08:50,905 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+UserModel Not Found
+
+2015-05-06 13:08:50,937 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+UserModel Form passed
+
+2015-05-06 13:08:50,938 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+Roya Delparastaran
+
+2015-05-06 13:10:00,242 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:10:19,164 - [ERROR] - from com.jolbox.bonecp.ConnectionHandle in play-akka.actor.default-dispatcher-8 
+Database access problem. Killing off this connection and all remaining connections in the connection pool. SQL State = 08006
+
+2015-05-06 13:10:19,179 - [ERROR] - from play in play-internal-execution-context-2 
+Cannot invoke the action, eventually got an error: javax.persistence.PersistenceException: java.sql.SQLException: Connection is closed!
+
+2015-05-06 13:10:19,265 - [ERROR] - from application in play-internal-execution-context-2 
+
+
+! @6m43kke6d - Internal server error, for (GET) [/profileMain] ->
+
+play.api.Application$$anon$1: Execution exception[[PersistenceException: java.sql.SQLException: Connection is closed!]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: javax.persistence.PersistenceException: java.sql.SQLException: Connection is closed!
+	at com.avaje.ebeaninternal.server.transaction.JdbcTransaction.rollback(JdbcTransaction.java:641) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.transaction.JdbcTransaction.rollback(JdbcTransaction.java:622) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.BeanRequest.rollbackTransIfRequired(BeanRequest.java:87) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.findList(DefaultServer.java:1466) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.findUnique(DefaultServer.java:1230) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.querydefn.DefaultOrmQuery.findUnique(DefaultOrmQuery.java:903) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.util.DefaultExpressionList.findUnique(DefaultExpressionList.java:193) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at models.UserModel.loadUserModel(UserModel.java:71) ~[na:na]
+	at controllers.DbController.editProfile(DbController.java:44) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.apply(routes_routing.scala:229) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.apply(routes_routing.scala:229) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at securesocial.core.java.SecureSocial$UserAware.call(SecureSocial.java:263) ~[securesocial_2.10-2.1.3.jar:2.1.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+Caused by: java.sql.SQLException: Connection is closed!
+	at com.jolbox.bonecp.ConnectionHandle.checkClosed(ConnectionHandle.java:459) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.ConnectionHandle.rollback(ConnectionHandle.java:1270) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.avaje.ebeaninternal.server.transaction.JdbcTransaction.rollback(JdbcTransaction.java:634) ~[avaje-ebeanorm-3.2.2.jar:na]
+	... 28 common frames omitted
+
+2015-05-06 13:10:29,436 - [ERROR] - from play in play-internal-execution-context-2 
+Cannot invoke the action, eventually got an error: java.lang.IllegalStateException: No value
+
+2015-05-06 13:10:29,449 - [ERROR] - from application in play-internal-execution-context-2 
+
+
+! @6m43kl398 - Internal server error, for (POST) [/saveUser] ->
+
+play.api.Application$$anon$1: Execution exception[[IllegalStateException: No value]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: java.lang.IllegalStateException: No value
+	at play.libs.F$None.get(F.java:702) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.data.Form.get(Form.java:540) ~[play-java_2.10-2.2.3.jar:2.2.3]
+	at controllers.DbController.saveUser(DbController.java:72) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(routes_routing.scala:253) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(routes_routing.scala:253) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$8$$anon$3.invocation(Router.scala:198) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at securesocial.core.java.SecureSocial$UserAware.call(SecureSocial.java:263) ~[securesocial_2.10-2.1.3.jar:2.1.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+
+2015-05-06 13:10:44,420 - [DEBUG] - from application in play-akka.actor.default-dispatcher-8 
+Find email: email
+
+2015-05-06 13:10:45,427 - [ERROR] - from play in play-internal-execution-context-2 
+Cannot invoke the action, eventually got an error: javax.persistence.PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.
+
+2015-05-06 13:10:45,447 - [ERROR] - from application in play-internal-execution-context-2 
+
+
+! @6m43km10c - Internal server error, for (POST) [/saveUser] ->
+
+play.api.Application$$anon$1: Execution exception[[PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: javax.persistence.PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.
+	at com.avaje.ebeaninternal.server.transaction.TransactionManager.createQueryTransaction(TransactionManager.java:339) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.createQueryTransaction(DefaultServer.java:2018) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.OrmQueryRequest.initTransIfRequired(OrmQueryRequest.java:178) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.findList(DefaultServer.java:1459) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.findUnique(DefaultServer.java:1230) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.querydefn.DefaultOrmQuery.findUnique(DefaultOrmQuery.java:903) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.util.DefaultExpressionList.findUnique(DefaultExpressionList.java:193) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at models.UserModel.loadUserModel(UserModel.java:79) ~[na:na]
+	at controllers.DbController.saveUser(DbController.java:73) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(routes_routing.scala:253) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(routes_routing.scala:253) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$8$$anon$3.invocation(Router.scala:198) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at securesocial.core.java.SecureSocial$UserAware.call(SecureSocial.java:263) ~[securesocial_2.10-2.1.3.jar:2.1.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+Caused by: java.sql.SQLException: Timed out waiting for a free available connection.
+	at com.jolbox.bonecp.DefaultConnectionStrategy.getConnectionInternal(DefaultConnectionStrategy.java:88) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.AbstractConnectionStrategy.getConnection(AbstractConnectionStrategy.java:90) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.getConnection(BoneCP.java:553) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:131) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at play.db.ebean.EbeanPlugin$WrappingDatasource.getConnection(EbeanPlugin.java:147) ~[play-java-ebean_2.10-2.2.3.jar:2.2.3]
+	at com.avaje.ebeaninternal.server.transaction.TransactionManager.createQueryTransaction(TransactionManager.java:313) ~[avaje-ebeanorm-3.2.2.jar:na]
+	... 28 common frames omitted
+
+2015-05-06 13:11:22,192 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 10. Exception: java.net.ConnectException: Connection timed out: connect.Message:Connection refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2015-05-06 13:11:27,921 - [DEBUG] - from application in play-akka.actor.default-dispatcher-20 
+Search Bind Results: 
+
+2015-05-06 13:11:28,985 - [ERROR] - from play in play-internal-execution-context-2 
+Cannot invoke the action, eventually got an error: javax.persistence.PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.
+
+2015-05-06 13:11:29,014 - [ERROR] - from application in play-internal-execution-context-2 
+
+
+! @6m43kodc5 - Internal server error, for (GET) [/search?searchParameter=] ->
+
+play.api.Application$$anon$1: Execution exception[[PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: javax.persistence.PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.
+	at com.avaje.ebeaninternal.server.transaction.TransactionManager.createQueryTransaction(TransactionManager.java:339) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.createQueryTransaction(DefaultServer.java:2018) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.OrmQueryRequest.initTransIfRequired(OrmQueryRequest.java:178) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.findList(DefaultServer.java:1459) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.querydefn.DefaultOrmQuery.findList(DefaultOrmQuery.java:885) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.util.DefaultExpressionList.findList(DefaultExpressionList.java:177) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at models.UserModel.findByName(UserModel.java:90) ~[na:na]
+	at controllers.SearchController.search(SearchController.java:28) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$22$$anonfun$apply$22.apply(routes_routing.scala:389) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$22$$anonfun$apply$22.apply(routes_routing.scala:389) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+Caused by: java.sql.SQLException: Timed out waiting for a free available connection.
+	at com.jolbox.bonecp.DefaultConnectionStrategy.getConnectionInternal(DefaultConnectionStrategy.java:88) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.AbstractConnectionStrategy.getConnection(AbstractConnectionStrategy.java:90) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.getConnection(BoneCP.java:553) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:131) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at play.db.ebean.EbeanPlugin$WrappingDatasource.getConnection(EbeanPlugin.java:147) ~[play-java-ebean_2.10-2.2.3.jar:2.2.3]
+	at com.avaje.ebeaninternal.server.transaction.TransactionManager.createQueryTransaction(TransactionManager.java:313) ~[avaje-ebeanorm-3.2.2.jar:na]
+	... 26 common frames omitted
+
+2015-05-06 13:11:36,226 - [DEBUG] - from application in play-akka.actor.default-dispatcher-20 
+Search Bind Results: roya
+
+2015-05-06 13:11:37,230 - [ERROR] - from play in play-internal-execution-context-2 
+Cannot invoke the action, eventually got an error: javax.persistence.PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.
+
+2015-05-06 13:11:37,249 - [ERROR] - from application in play-internal-execution-context-2 
+
+
+! @6m43kopgk - Internal server error, for (GET) [/search?searchParameter=roya] ->
+
+play.api.Application$$anon$1: Execution exception[[PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: javax.persistence.PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.
+	at com.avaje.ebeaninternal.server.transaction.TransactionManager.createQueryTransaction(TransactionManager.java:339) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.createQueryTransaction(DefaultServer.java:2018) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.OrmQueryRequest.initTransIfRequired(OrmQueryRequest.java:178) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.findList(DefaultServer.java:1459) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.querydefn.DefaultOrmQuery.findList(DefaultOrmQuery.java:885) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.util.DefaultExpressionList.findList(DefaultExpressionList.java:177) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at models.UserModel.findByName(UserModel.java:90) ~[na:na]
+	at controllers.SearchController.search(SearchController.java:28) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$22$$anonfun$apply$22.apply(routes_routing.scala:389) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$22$$anonfun$apply$22.apply(routes_routing.scala:389) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+Caused by: java.sql.SQLException: Timed out waiting for a free available connection.
+	at com.jolbox.bonecp.DefaultConnectionStrategy.getConnectionInternal(DefaultConnectionStrategy.java:88) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.AbstractConnectionStrategy.getConnection(AbstractConnectionStrategy.java:90) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.getConnection(BoneCP.java:553) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:131) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at play.db.ebean.EbeanPlugin$WrappingDatasource.getConnection(EbeanPlugin.java:147) ~[play-java-ebean_2.10-2.2.3.jar:2.2.3]
+	at com.avaje.ebeaninternal.server.transaction.TransactionManager.createQueryTransaction(TransactionManager.java:313) ~[avaje-ebeanorm-3.2.2.jar:na]
+	... 26 common frames omitted
+
+2015-05-06 13:11:44,443 - [DEBUG] - from application in play-akka.actor.default-dispatcher-20 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:11:45,705 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 9. Exception: java.net.ConnectException: Connection timed out: connect.Message:Connection refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+
+2015-05-06 13:11:47,317 - [DEBUG] - from application in play-akka.actor.default-dispatcher-24 
+User already logged in, skipping login page. Redirecting to /systemEntry
+
+2015-05-06 13:11:47,340 - [DEBUG] - from application in play-akka.actor.default-dispatcher-20 
+google
+
+2015-05-06 13:11:47,341 - [DEBUG] - from application in play-akka.actor.default-dispatcher-20 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:11:48,346 - [ERROR] - from play in play-internal-execution-context-6 
+Cannot invoke the action, eventually got an error: javax.persistence.PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.
+
+2015-05-06 13:11:48,368 - [ERROR] - from application in play-internal-execution-context-6 
+
+
+! @6m43kpg2c - Internal server error, for (GET) [/systemEntry] ->
+
+play.api.Application$$anon$1: Execution exception[[PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: javax.persistence.PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.
+	at com.avaje.ebeaninternal.server.transaction.TransactionManager.createQueryTransaction(TransactionManager.java:339) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.createQueryTransaction(DefaultServer.java:2018) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.OrmQueryRequest.initTransIfRequired(OrmQueryRequest.java:178) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.findList(DefaultServer.java:1459) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.findUnique(DefaultServer.java:1230) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.querydefn.DefaultOrmQuery.findUnique(DefaultOrmQuery.java:903) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.util.DefaultExpressionList.findUnique(DefaultExpressionList.java:193) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at models.UserModel.loadUserModel(UserModel.java:71) ~[na:na]
+	at controllers.Application.systemEntry(Application.java:98) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:317) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:317) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at securesocial.core.java.SecureSocial$UserAware.call(SecureSocial.java:263) ~[securesocial_2.10-2.1.3.jar:2.1.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+Caused by: java.sql.SQLException: Timed out waiting for a free available connection.
+	at com.jolbox.bonecp.DefaultConnectionStrategy.getConnectionInternal(DefaultConnectionStrategy.java:88) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.AbstractConnectionStrategy.getConnection(AbstractConnectionStrategy.java:90) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.getConnection(BoneCP.java:553) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:131) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at play.db.ebean.EbeanPlugin$WrappingDatasource.getConnection(EbeanPlugin.java:147) ~[play-java-ebean_2.10-2.2.3.jar:2.2.3]
+	at com.avaje.ebeaninternal.server.transaction.TransactionManager.createQueryTransaction(TransactionManager.java:313) ~[avaje-ebeanorm-3.2.2.jar:na]
+	... 28 common frames omitted
+
+2015-05-06 13:11:48,556 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 8. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:11:51,302 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 7. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:11:54,024 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 6. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:11:56,743 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 5. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:11:59,463 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 4. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:02,338 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 3. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:03,189 - [DEBUG] - from application in play-akka.actor.default-dispatcher-18 
+User already logged in, skipping login page. Redirecting to /systemEntry
+
+2015-05-06 13:12:03,211 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+google
+
+2015-05-06 13:12:03,213 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:12:04,217 - [ERROR] - from play in play-internal-execution-context-9 
+Cannot invoke the action, eventually got an error: javax.persistence.PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.
+
+2015-05-06 13:12:04,234 - [ERROR] - from application in play-internal-execution-context-9 
+
+
+! @6m43l0del - Internal server error, for (GET) [/systemEntry] ->
+
+play.api.Application$$anon$1: Execution exception[[PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: javax.persistence.PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.
+	at com.avaje.ebeaninternal.server.transaction.TransactionManager.createQueryTransaction(TransactionManager.java:339) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.createQueryTransaction(DefaultServer.java:2018) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.OrmQueryRequest.initTransIfRequired(OrmQueryRequest.java:178) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.findList(DefaultServer.java:1459) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.findUnique(DefaultServer.java:1230) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.querydefn.DefaultOrmQuery.findUnique(DefaultOrmQuery.java:903) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.util.DefaultExpressionList.findUnique(DefaultExpressionList.java:193) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at models.UserModel.loadUserModel(UserModel.java:71) ~[na:na]
+	at controllers.Application.systemEntry(Application.java:98) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:317) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:317) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at securesocial.core.java.SecureSocial$UserAware.call(SecureSocial.java:263) ~[securesocial_2.10-2.1.3.jar:2.1.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+Caused by: java.sql.SQLException: Timed out waiting for a free available connection.
+	at com.jolbox.bonecp.DefaultConnectionStrategy.getConnectionInternal(DefaultConnectionStrategy.java:88) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.AbstractConnectionStrategy.getConnection(AbstractConnectionStrategy.java:90) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.getConnection(BoneCP.java:553) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:131) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at play.db.ebean.EbeanPlugin$WrappingDatasource.getConnection(EbeanPlugin.java:147) ~[play-java-ebean_2.10-2.2.3.jar:2.2.3]
+	at com.avaje.ebeaninternal.server.transaction.TransactionManager.createQueryTransaction(TransactionManager.java:313) ~[avaje-ebeanorm-3.2.2.jar:na]
+	... 28 common frames omitted
+
+2015-05-06 13:12:05,038 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 2. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:07,765 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 1. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:08,775 - [ERROR] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Error in trying to obtain a connection. Retrying in 1000ms
+org.postgresql.util.PSQLException: FATAL: too many connections for role "zsudjzswqtdfyj"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:471) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:112) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:32) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:393) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:267) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.obtainInternalConnection(BoneCP.java:269) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.ConnectionHandle.<init>(ConnectionHandle.java:242) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.fillConnections(PoolWatchThread.java:115) [bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.run(PoolWatchThread.java:82) [bonecp-0.8.0.RELEASE.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
+
+2015-05-06 13:12:11,567 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 10. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:14,299 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 9. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:16,979 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 8. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:19,711 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 7. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:22,406 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 6. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:25,105 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 5. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:27,765 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 4. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:30,538 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 3. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:33,283 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 2. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:36,073 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 1. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:37,079 - [ERROR] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Error in trying to obtain a connection. Retrying in 1000ms
+org.postgresql.util.PSQLException: FATAL: too many connections for role "zsudjzswqtdfyj"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:471) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:112) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:32) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:393) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:267) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.obtainInternalConnection(BoneCP.java:269) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.ConnectionHandle.<init>(ConnectionHandle.java:242) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.fillConnections(PoolWatchThread.java:115) [bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.run(PoolWatchThread.java:85) [bonecp-0.8.0.RELEASE.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
+
+2015-05-06 13:12:40,035 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 10. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:42,723 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 9. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:45,505 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 8. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:48,209 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 7. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:50,953 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 6. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:53,839 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 5. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:56,798 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 4. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:12:59,790 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 3. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:02,650 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 2. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:05,465 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 1. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:06,473 - [ERROR] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Error in trying to obtain a connection. Retrying in 1000ms
+org.postgresql.util.PSQLException: FATAL: too many connections for role "zsudjzswqtdfyj"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:471) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:112) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:32) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:393) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:267) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.obtainInternalConnection(BoneCP.java:269) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.ConnectionHandle.<init>(ConnectionHandle.java:242) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.fillConnections(PoolWatchThread.java:115) [bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.run(PoolWatchThread.java:82) [bonecp-0.8.0.RELEASE.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
+
+2015-05-06 13:13:09,185 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 10. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:11,978 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 9. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:14,719 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 8. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:17,394 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 7. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:20,148 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 6. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:23,026 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 5. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:25,033 - [DEBUG] - from application in play-akka.actor.default-dispatcher-26 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-06 13:13:25,794 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 4. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:28,658 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 3. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:31,418 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 2. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:34,175 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 1. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:35,182 - [ERROR] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Error in trying to obtain a connection. Retrying in 1000ms
+org.postgresql.util.PSQLException: FATAL: too many connections for role "zsudjzswqtdfyj"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:471) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:112) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:32) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:393) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:267) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.obtainInternalConnection(BoneCP.java:269) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.ConnectionHandle.<init>(ConnectionHandle.java:242) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.fillConnections(PoolWatchThread.java:115) [bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.run(PoolWatchThread.java:85) [bonecp-0.8.0.RELEASE.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
+
+2015-05-06 13:13:38,146 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 10. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:40,959 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 9. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:43,791 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 8. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:46,455 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 7. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:49,120 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 6. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:51,891 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 5. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:54,678 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 4. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:13:57,432 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 3. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:00,161 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 2. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:02,844 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 1. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:03,906 - [ERROR] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Error in trying to obtain a connection. Retrying in 1000ms
+org.postgresql.util.PSQLException: FATAL: too many connections for role "zsudjzswqtdfyj"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:471) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:112) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:32) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:393) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:267) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.obtainInternalConnection(BoneCP.java:269) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.ConnectionHandle.<init>(ConnectionHandle.java:242) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.fillConnections(PoolWatchThread.java:115) [bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.run(PoolWatchThread.java:82) [bonecp-0.8.0.RELEASE.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
+
+2015-05-06 13:14:04,034 - [DEBUG] - from application in play-akka.actor.default-dispatcher-32 
+User already logged in, skipping login page. Redirecting to /systemEntry
+
+2015-05-06 13:14:04,046 - [DEBUG] - from application in play-akka.actor.default-dispatcher-32 
+google
+
+2015-05-06 13:14:04,047 - [DEBUG] - from application in play-akka.actor.default-dispatcher-32 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:14:05,051 - [ERROR] - from play in play-internal-execution-context-11 
+Cannot invoke the action, eventually got an error: javax.persistence.PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.
+
+2015-05-06 13:14:05,072 - [ERROR] - from application in play-internal-execution-context-11 
+
+
+! @6m43l7a88 - Internal server error, for (GET) [/systemEntry] ->
+
+play.api.Application$$anon$1: Execution exception[[PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: javax.persistence.PersistenceException: java.sql.SQLException: Timed out waiting for a free available connection.
+	at com.avaje.ebeaninternal.server.transaction.TransactionManager.createQueryTransaction(TransactionManager.java:339) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.createQueryTransaction(DefaultServer.java:2018) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.OrmQueryRequest.initTransIfRequired(OrmQueryRequest.java:178) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.findList(DefaultServer.java:1459) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServer.findUnique(DefaultServer.java:1230) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.querydefn.DefaultOrmQuery.findUnique(DefaultOrmQuery.java:903) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.util.DefaultExpressionList.findUnique(DefaultExpressionList.java:193) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at models.UserModel.loadUserModel(UserModel.java:71) ~[na:na]
+	at controllers.Application.systemEntry(Application.java:98) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:317) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$13$$anonfun$apply$13.apply(routes_routing.scala:317) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at securesocial.core.java.SecureSocial$UserAware.call(SecureSocial.java:263) ~[securesocial_2.10-2.1.3.jar:2.1.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+Caused by: java.sql.SQLException: Timed out waiting for a free available connection.
+	at com.jolbox.bonecp.DefaultConnectionStrategy.getConnectionInternal(DefaultConnectionStrategy.java:88) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.AbstractConnectionStrategy.getConnection(AbstractConnectionStrategy.java:90) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.getConnection(BoneCP.java:553) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:131) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at play.db.ebean.EbeanPlugin$WrappingDatasource.getConnection(EbeanPlugin.java:147) ~[play-java-ebean_2.10-2.2.3.jar:2.2.3]
+	at com.avaje.ebeaninternal.server.transaction.TransactionManager.createQueryTransaction(TransactionManager.java:313) ~[avaje-ebeanorm-3.2.2.jar:na]
+	... 28 common frames omitted
+
+2015-05-06 13:14:06,635 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 10. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:09,355 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 9. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:12,506 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 8. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:15,320 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 7. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:18,090 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 6. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:20,879 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 5. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:23,720 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 4. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:26,361 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 3. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:29,023 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 2. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:31,805 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 1. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:32,809 - [ERROR] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Error in trying to obtain a connection. Retrying in 1000ms
+org.postgresql.util.PSQLException: FATAL: too many connections for role "zsudjzswqtdfyj"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:471) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:112) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:32) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:393) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:267) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.obtainInternalConnection(BoneCP.java:269) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.ConnectionHandle.<init>(ConnectionHandle.java:242) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.fillConnections(PoolWatchThread.java:115) [bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.run(PoolWatchThread.java:85) [bonecp-0.8.0.RELEASE.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
+
+2015-05-06 13:14:35,491 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 10. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:38,237 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 9. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:41,001 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 8. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:43,649 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 7. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:46,321 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 6. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:48,996 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 5. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:51,728 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in BoneCP-pool-watch-thread 
+Failed to acquire connection to jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory Sleeping for 1000ms and trying again. Attempts left: 4. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:52,149 - [INFO] - from application in play-internal-execution-context-10 
+[securesocial] unloaded identity provider: userpass
+
+2015-05-06 13:14:52,150 - [INFO] - from application in play-internal-execution-context-10 
+[securesocial] unloaded identity provider: google
+
+2015-05-06 13:14:52,151 - [INFO] - from application in play-internal-execution-context-10 
+[securesocial] unloaded identity provider: facebook
+
+2015-05-06 13:14:52,153 - [INFO] - from application in play-internal-execution-context-10 
+[securesocial] unloaded password hasher bcrypt
+
+2015-05-06 13:14:52,156 - [INFO] - from play in play-internal-execution-context-10 
+Shutdown application default Akka system.
+
+2015-05-06 13:14:52,263 - [ERROR] - from com.jolbox.bonecp.PoolWatchThread in BoneCP-pool-watch-thread 
+Error in trying to obtain a connection. Retrying in 1000ms
+org.postgresql.util.PSQLException: FATAL: too many connections for role "zsudjzswqtdfyj"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:471) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:112) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:32) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:393) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:267) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.obtainInternalConnection(BoneCP.java:269) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.ConnectionHandle.<init>(ConnectionHandle.java:242) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.fillConnections(PoolWatchThread.java:115) [bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.PoolWatchThread.run(PoolWatchThread.java:82) [bonecp-0.8.0.RELEASE.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
+
+2015-05-06 13:14:56,583 - [ERROR] - from com.jolbox.bonecp.hooks.AbstractConnectionHook in play-internal-execution-context-10 
+Failed to obtain initial connection Sleeping for 0ms and trying again. Attempts left: 0. Exception: null.Message:FATAL: too many connections for role "zsudjzswqtdfyj"
+
+2015-05-06 13:14:56,669 - [ERROR] - from application in New I/O worker #6 
+
+
+! @6m43la8h1 - Internal server error, for (GET) [/login] ->
+
+play.api.Configuration$$anon$1: Configuration error[Cannot connect to database [default]]
+	at play.api.Configuration$.play$api$Configuration$$configError(Configuration.scala:92) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Configuration.reportError(Configuration.scala:570) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:252) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:243) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.AbstractTraversable.map(Traversable.scala:105) ~[scala-library-2.10.3.jar:na]
+	at play.api.db.BoneCPPlugin.onStart(DB.scala:243) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library-2.10.3.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$.start(Play.scala:87) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library-2.10.3.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+Caused by: org.postgresql.util.PSQLException: FATAL: too many connections for role "zsudjzswqtdfyj"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:471) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:112) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:32) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:393) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:267) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at play.utils.ProxyDriver.connect(ProxyDriver.scala:9) ~[play_2.10-2.2.3.jar:2.2.3]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:416) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:245) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	... 30 common frames omitted
+
+2015-05-06 13:15:12,174 - [ERROR] - from application in New I/O worker #6 
+
+
+! @6m43la8h1 - Internal server error, for (GET) [/] ->
+
+play.api.Configuration$$anon$1: Configuration error[Cannot connect to database [default]]
+	at play.api.Configuration$.play$api$Configuration$$configError(Configuration.scala:92) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Configuration.reportError(Configuration.scala:570) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:252) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:243) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.AbstractTraversable.map(Traversable.scala:105) ~[scala-library-2.10.3.jar:na]
+	at play.api.db.BoneCPPlugin.onStart(DB.scala:243) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library-2.10.3.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$.start(Play.scala:87) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library-2.10.3.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+Caused by: org.postgresql.util.PSQLException: FATAL: too many connections for role "zsudjzswqtdfyj"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:471) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:112) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:32) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:393) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:267) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at play.utils.ProxyDriver.connect(ProxyDriver.scala:9) ~[play_2.10-2.2.3.jar:2.2.3]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:416) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:245) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	... 30 common frames omitted
+
+2015-05-06 13:15:14,861 - [ERROR] - from application in New I/O worker #6 
+
+
+! @6m43la8h1 - Internal server error, for (GET) [/] ->
+
+play.api.Configuration$$anon$1: Configuration error[Cannot connect to database [default]]
+	at play.api.Configuration$.play$api$Configuration$$configError(Configuration.scala:92) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Configuration.reportError(Configuration.scala:570) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:252) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:243) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.AbstractTraversable.map(Traversable.scala:105) ~[scala-library-2.10.3.jar:na]
+	at play.api.db.BoneCPPlugin.onStart(DB.scala:243) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library-2.10.3.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.Play$.start(Play.scala:87) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library-2.10.3.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+Caused by: org.postgresql.util.PSQLException: FATAL: too many connections for role "zsudjzswqtdfyj"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.readStartupMessages(ConnectionFactoryImpl.java:471) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:112) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:32) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.makeConnection(Driver.java:393) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at org.postgresql.Driver.connect(Driver.java:267) ~[postgresql-9.1-901-1.jdbc4.jar:na]
+	at play.utils.ProxyDriver.connect(ProxyDriver.scala:9) ~[play_2.10-2.2.3.jar:2.2.3]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[na:1.8.0_31]
+	at com.jolbox.bonecp.BoneCP.obtainRawInternalConnection(BoneCP.java:363) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCP.<init>(BoneCP.java:416) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at com.jolbox.bonecp.BoneCPDataSource.getConnection(BoneCPDataSource.java:120) ~[bonecp-0.8.0.RELEASE.jar:na]
+	at play.api.db.BoneCPPlugin$$anonfun$onStart$1.apply(DB.scala:245) ~[play-jdbc_2.10-2.2.3.jar:2.2.3]
+	... 30 common frames omitted
+
+2015-05-06 13:29:58,362 - [INFO] - from application in play-internal-execution-context-10 
+[securesocial] unloaded identity provider: userpass
+
+2015-05-06 13:29:58,364 - [INFO] - from application in play-internal-execution-context-10 
+[securesocial] unloaded identity provider: google
+
+2015-05-06 13:29:58,365 - [INFO] - from application in play-internal-execution-context-10 
+[securesocial] unloaded identity provider: facebook
+
+2015-05-06 13:29:58,369 - [INFO] - from application in play-internal-execution-context-10 
+[securesocial] unloaded password hasher bcrypt
+
+2015-05-06 13:30:03,894 - [INFO] - from play in play-internal-execution-context-10 
+database [default] connected at jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
+
+2015-05-06 13:30:04,834 - [INFO] - from application in play-internal-execution-context-10 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-05-06 13:30:04,863 - [INFO] - from play in play-internal-execution-context-10 
+Starting application default Akka system.
+
+2015-05-06 13:30:04,864 - [INFO] - from application in play-internal-execution-context-10 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-05-06 13:30:04,864 - [DEBUG] - from application in play-akka.actor.default-dispatcher-35 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-06 13:30:04,867 - [INFO] - from application in play-internal-execution-context-10 
+[securesocial] loaded password hasher bcrypt
+
+2015-05-06 13:30:04,873 - [INFO] - from application in play-internal-execution-context-10 
+[securesocial] loaded identity provider: facebook
+
+2015-05-06 13:30:04,877 - [INFO] - from application in play-internal-execution-context-10 
+[securesocial] loaded identity provider: google
+
+2015-05-06 13:30:04,880 - [INFO] - from application in play-internal-execution-context-10 
+[securesocial] loaded identity provider: userpass
+
+2015-05-06 13:30:04,884 - [INFO] - from play in play-internal-execution-context-10 
+Application started (Dev)
+
+2015-05-06 13:30:10,357 - [DEBUG] - from application in play-akka.actor.default-dispatcher-42 
+[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
+
+2015-05-06 13:30:10,359 - [DEBUG] - from application in play-akka.actor.default-dispatcher-42 
+[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=3b2db035-3efc-4776-9f5c-3e76aec1bbf3]
+
+2015-05-06 13:30:13,338 - [DEBUG] - from application in play-akka.actor.default-dispatcher-42 
+[securesocial] got json back [{"access_token":"ya29.awFvgXzewrh03Az6mbWk9xFwBmGPJOEK1_urggvejyeRr2e_H4s9CXHNiUtgdQpGskt3DUWlXrFtxg","token_type":"Bearer","expires_in":3600,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjZiMjVmYWJkZWM4OTMyZjBmM2Y4MWE1Y2UyZGExOTM4Zjc5Y2M2ZTgifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTEyMDExMzA5MTEzMzk4NTY3MjE0IiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6InJveWEuZGVsYW5AZ21haWwuY29tIiwiYXRfaGFzaCI6InZPYS16cXFERW9DQTZ4M1p4dTNQY2ciLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0MzA5NDQyMTIsImV4cCI6MTQzMDk0NzgxMn0.mTKhnsUS14ioQhRqEFbAK57qEl3yQs7EdpfucLQbvp5uVMQnbZjee9caorXvOwLIRJxUkW7q32wC1GmmZCK2S5ji0V2pXaM93mI-8loU-kq0ohgI90xEqw-p5RBzKPk59-ql0oG5CYfeU032WHpSor-xtTKpRsr1bBa104oTaRA"}]
+
+2015-05-06 13:30:13,362 - [DEBUG] - from application in play-akka.actor.default-dispatcher-42 
+[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.awFvgXzewrh03Az6mbWk9xFwBmGPJOEK1_urggvejyeRr2e_H4s9CXHNiUtgdQpGskt3DUWlXrFtxg,Some(Bearer),Some(3600),None)),None))
+
+2015-05-06 13:30:13,924 - [DEBUG] - from application in play-akka.actor.default-dispatcher-42 
+[securesocial] user logged in : [SocialUser(IdentityId(112011309113398567214,google),Roya,Delparastaran,Roya Delparastaran,Some(roya.delan@gmail.com),Some(https://lh6.googleusercontent.com/-cDtLdZvl068/AAAAAAAAAAI/AAAAAAAAAJk/jn8vVjds07E/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.awFvgXzewrh03Az6mbWk9xFwBmGPJOEK1_urggvejyeRr2e_H4s9CXHNiUtgdQpGskt3DUWlXrFtxg,Some(Bearer),Some(3600),None)),None)]
+
+2015-05-06 13:30:13,972 - [DEBUG] - from application in play-akka.actor.default-dispatcher-42 
+google
+
+2015-05-06 13:30:13,974 - [DEBUG] - from application in play-akka.actor.default-dispatcher-42 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:30:14,176 - [DEBUG] - from application in play-akka.actor.default-dispatcher-42 
+LoadUserModel UserModel email : roya.delan@gmail.com
+
+2015-05-06 13:30:14,181 - [DEBUG] - from application in play-akka.actor.default-dispatcher-42 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:30:14,368 - [DEBUG] - from application in play-akka.actor.default-dispatcher-42 
+LoadUserModel UserModel email : roya.delan@gmail.com
+
+2015-05-06 13:30:14,369 - [DEBUG] - from application in play-akka.actor.default-dispatcher-42 
+Roya Delparastaran
+
+2015-05-06 13:32:12,104 - [INFO] - from application in play-internal-execution-context-12 
+[securesocial] unloaded identity provider: userpass
+
+2015-05-06 13:32:12,109 - [INFO] - from application in play-internal-execution-context-12 
+[securesocial] unloaded identity provider: google
+
+2015-05-06 13:32:12,110 - [INFO] - from application in play-internal-execution-context-12 
+[securesocial] unloaded identity provider: facebook
+
+2015-05-06 13:32:12,113 - [INFO] - from application in play-internal-execution-context-12 
+[securesocial] unloaded password hasher bcrypt
+
+2015-05-06 13:32:12,116 - [INFO] - from play in play-internal-execution-context-12 
+Shutdown application default Akka system.
+
+2015-05-06 13:32:17,236 - [INFO] - from play in play-internal-execution-context-12 
+database [default] connected at jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
+
+2015-05-06 13:32:17,960 - [INFO] - from application in play-internal-execution-context-12 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-05-06 13:32:17,988 - [INFO] - from play in play-internal-execution-context-12 
+Starting application default Akka system.
+
+2015-05-06 13:32:17,990 - [DEBUG] - from application in play-akka.actor.default-dispatcher-37 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-06 13:32:17,992 - [INFO] - from application in play-internal-execution-context-12 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-05-06 13:32:18,000 - [INFO] - from application in play-internal-execution-context-12 
+[securesocial] loaded password hasher bcrypt
+
+2015-05-06 13:32:18,001 - [INFO] - from application in play-internal-execution-context-12 
+[securesocial] loaded identity provider: facebook
+
+2015-05-06 13:32:18,003 - [INFO] - from application in play-internal-execution-context-12 
+[securesocial] loaded identity provider: google
+
+2015-05-06 13:32:18,007 - [INFO] - from application in play-internal-execution-context-12 
+[securesocial] loaded identity provider: userpass
+
+2015-05-06 13:32:18,009 - [INFO] - from play in play-internal-execution-context-12 
+Application started (Dev)
+
+2015-05-06 13:32:18,034 - [ERROR] - from play in play-internal-execution-context-12 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-05-06 13:32:18,045 - [ERROR] - from application in play-internal-execution-context-12 
+
+
+! @6m43nhf3n - Internal server error, for (GET) [/profileMain] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at models.UserModel.loadUserModel(UserModel.java:69) ~[na:na]
+	at controllers.DbController.editProfile(DbController.java:44) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.apply(routes_routing.scala:229) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.apply(routes_routing.scala:229) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at securesocial.core.java.SecureSocial$UserAware.call(SecureSocial.java:263) ~[securesocial_2.10-2.1.3.jar:2.1.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+
+2015-05-06 13:32:32,334 - [DEBUG] - from application in play-akka.actor.default-dispatcher-46 
+[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
+
+2015-05-06 13:32:32,337 - [DEBUG] - from application in play-akka.actor.default-dispatcher-46 
+[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=88af27eb-c6e1-4c4b-8a42-bfe18c056c69]
+
+2015-05-06 13:32:36,180 - [DEBUG] - from application in play-akka.actor.default-dispatcher-45 
+[securesocial] got json back [{"access_token":"ya29.awEfTaC-6hiBA-bRlXO_JJ7Ti2rarAG6WmCNWiwxtt_VdTJVm8Vc1_SohhLlstmBgHfOikcEjRoDKg","token_type":"Bearer","expires_in":3600,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjZiMjVmYWJkZWM4OTMyZjBmM2Y4MWE1Y2UyZGExOTM4Zjc5Y2M2ZTgifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTEyMDExMzA5MTEzMzk4NTY3MjE0IiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6InJveWEuZGVsYW5AZ21haWwuY29tIiwiYXRfaGFzaCI6ImdrOXZWOFRKQnl6WVFTVDZFb2FZS1EiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0MzA5NDQzNTQsImV4cCI6MTQzMDk0Nzk1NH0.iclg21cItHrHAew3F5jxW4TUnxhry9mCBJ84spDNaEvMhbVxb8Ce4SNWPzxVCdJxWVX6E9S64lYcGWImoLNqJjc-aaRu2tXCv6Px2Z1amJ3ISU8tWLK6x98KlBQ6FJLgYq4pIMObKkRYF4VshdKLVSXVGX8bb49f-rYPXBJMfCE"}]
+
+2015-05-06 13:32:36,204 - [DEBUG] - from application in play-akka.actor.default-dispatcher-45 
+[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.awEfTaC-6hiBA-bRlXO_JJ7Ti2rarAG6WmCNWiwxtt_VdTJVm8Vc1_SohhLlstmBgHfOikcEjRoDKg,Some(Bearer),Some(3600),None)),None))
+
+2015-05-06 13:32:36,644 - [DEBUG] - from application in play-akka.actor.default-dispatcher-45 
+[securesocial] user logged in : [SocialUser(IdentityId(112011309113398567214,google),Roya,Delparastaran,Roya Delparastaran,Some(roya.delan@gmail.com),Some(https://lh6.googleusercontent.com/-cDtLdZvl068/AAAAAAAAAAI/AAAAAAAAAJk/jn8vVjds07E/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.awEfTaC-6hiBA-bRlXO_JJ7Ti2rarAG6WmCNWiwxtt_VdTJVm8Vc1_SohhLlstmBgHfOikcEjRoDKg,Some(Bearer),Some(3600),None)),None)]
+
+2015-05-06 13:32:36,681 - [DEBUG] - from application in play-akka.actor.default-dispatcher-37 
+google
+
+2015-05-06 13:32:36,684 - [DEBUG] - from application in play-akka.actor.default-dispatcher-37 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:32:36,889 - [DEBUG] - from application in play-akka.actor.default-dispatcher-37 
+LoadUserModel UserModel email : roya.delan@gmail.com
+
+2015-05-06 13:32:36,890 - [DEBUG] - from application in play-akka.actor.default-dispatcher-37 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:32:37,088 - [DEBUG] - from application in play-akka.actor.default-dispatcher-37 
+LoadUserModel UserModel email : roya.delan@gmail.com
+
+2015-05-06 13:32:37,090 - [DEBUG] - from application in play-akka.actor.default-dispatcher-37 
+Roya Delparastaran
+
+2015-05-06 13:33:27,266 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] unloaded identity provider: userpass
+
+2015-05-06 13:33:27,271 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] unloaded identity provider: google
+
+2015-05-06 13:33:27,274 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] unloaded identity provider: facebook
+
+2015-05-06 13:33:27,277 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] unloaded password hasher bcrypt
+
+2015-05-06 13:33:27,280 - [INFO] - from play in play-internal-execution-context-15 
+Shutdown application default Akka system.
+
+2015-05-06 13:33:32,146 - [INFO] - from play in play-internal-execution-context-15 
+database [default] connected at jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
+
+2015-05-06 13:33:32,879 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-05-06 13:33:32,900 - [INFO] - from play in play-internal-execution-context-15 
+Starting application default Akka system.
+
+2015-05-06 13:33:32,902 - [DEBUG] - from application in play-akka.actor.default-dispatcher-45 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-06 13:33:32,903 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-05-06 13:33:32,909 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded password hasher bcrypt
+
+2015-05-06 13:33:32,911 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded identity provider: facebook
+
+2015-05-06 13:33:32,913 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded identity provider: google
+
+2015-05-06 13:33:32,916 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded identity provider: userpass
+
+2015-05-06 13:33:32,919 - [INFO] - from play in play-internal-execution-context-15 
+Application started (Dev)
+
+2015-05-06 13:33:39,316 - [DEBUG] - from application in play-akka.actor.default-dispatcher-51 
+[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
+
+2015-05-06 13:33:39,318 - [DEBUG] - from application in play-akka.actor.default-dispatcher-51 
+[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=d7a38ec2-ac14-454e-a47f-4583d4bfcbca]
+
+2015-05-06 13:33:43,699 - [DEBUG] - from application in play-akka.actor.default-dispatcher-53 
+[securesocial] got json back [{"access_token":"ya29.awHoygX7MNdyZnuuj0e-tY3KqNITwoHokOgELGRI1HYO3z8X1W1VN61dcdj2HvaBCh_XqlQ2VpwV6g","token_type":"Bearer","expires_in":3600,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjZiMjVmYWJkZWM4OTMyZjBmM2Y4MWE1Y2UyZGExOTM4Zjc5Y2M2ZTgifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTEyMDExMzA5MTEzMzk4NTY3MjE0IiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6InJveWEuZGVsYW5AZ21haWwuY29tIiwiYXRfaGFzaCI6Iml3Q2x3UGN2eklibjdXX3ZyQURpX2ciLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0MzA5NDQ0MjIsImV4cCI6MTQzMDk0ODAyMn0.hHOspH3aXeNDNRb-MQbMC6Qy1lpLSZt9vAlpM6j6RuGuUTbxV12sBWY946pFGEwyPt4GdVhgtckemwwYjDORfdV4m6p53hO3nXWgCAf-6_dZGGODEN19OWsboUs2UdOnuT7ccroKCC7dQHsAE1asmnd4ZqQH4TMvaVwRcRfi0js"}]
+
+2015-05-06 13:33:43,723 - [DEBUG] - from application in play-akka.actor.default-dispatcher-53 
+[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.awHoygX7MNdyZnuuj0e-tY3KqNITwoHokOgELGRI1HYO3z8X1W1VN61dcdj2HvaBCh_XqlQ2VpwV6g,Some(Bearer),Some(3600),None)),None))
+
+2015-05-06 13:33:43,902 - [DEBUG] - from application in play-akka.actor.default-dispatcher-53 
+[securesocial] user logged in : [SocialUser(IdentityId(112011309113398567214,google),Roya,Delparastaran,Roya Delparastaran,Some(roya.delan@gmail.com),Some(https://lh6.googleusercontent.com/-cDtLdZvl068/AAAAAAAAAAI/AAAAAAAAAJk/jn8vVjds07E/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.awHoygX7MNdyZnuuj0e-tY3KqNITwoHokOgELGRI1HYO3z8X1W1VN61dcdj2HvaBCh_XqlQ2VpwV6g,Some(Bearer),Some(3600),None)),None)]
+
+2015-05-06 13:33:43,943 - [DEBUG] - from application in play-akka.actor.default-dispatcher-52 
+google
+
+2015-05-06 13:33:43,944 - [DEBUG] - from application in play-akka.actor.default-dispatcher-52 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:33:44,143 - [DEBUG] - from application in play-akka.actor.default-dispatcher-52 
+LoadUserModel UserModel email : roya.delan@gmail.com
+
+2015-05-06 13:33:44,148 - [DEBUG] - from application in play-akka.actor.default-dispatcher-52 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:33:44,353 - [DEBUG] - from application in play-akka.actor.default-dispatcher-52 
+LoadUserModel UserModel email : roya.delan@gmail.com
+
+2015-05-06 13:33:44,354 - [DEBUG] - from application in play-akka.actor.default-dispatcher-52 
+Roya Delparastaran
+
+2015-05-06 13:38:32,918 - [DEBUG] - from application in play-akka.actor.default-dispatcher-55 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-06 13:39:35,871 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] unloaded identity provider: userpass
+
+2015-05-06 13:39:35,871 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] unloaded identity provider: google
+
+2015-05-06 13:39:35,872 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] unloaded identity provider: facebook
+
+2015-05-06 13:39:35,872 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] unloaded password hasher bcrypt
+
+2015-05-06 13:39:35,872 - [INFO] - from play in play-internal-execution-context-15 
+Shutdown application default Akka system.
+
+2015-05-06 13:39:41,172 - [INFO] - from play in play-internal-execution-context-15 
+database [default] connected at jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
+
+2015-05-06 13:39:41,874 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-05-06 13:39:41,925 - [INFO] - from play in play-internal-execution-context-15 
+Starting application default Akka system.
+
+2015-05-06 13:39:41,929 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-05-06 13:39:41,929 - [DEBUG] - from application in play-akka.actor.default-dispatcher-55 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-06 13:39:41,930 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded password hasher bcrypt
+
+2015-05-06 13:39:41,936 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded identity provider: facebook
+
+2015-05-06 13:39:41,937 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded identity provider: google
+
+2015-05-06 13:39:41,938 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded identity provider: userpass
+
+2015-05-06 13:39:41,939 - [INFO] - from play in play-internal-execution-context-15 
+Application started (Dev)
+
+2015-05-06 13:39:51,766 - [DEBUG] - from application in play-akka.actor.default-dispatcher-66 
+[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
+
+2015-05-06 13:39:51,768 - [DEBUG] - from application in play-akka.actor.default-dispatcher-66 
+[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=995be0d1-6959-45c6-b0d5-a73e4a932ddc]
+
+2015-05-06 13:39:55,186 - [DEBUG] - from application in play-akka.actor.default-dispatcher-61 
+[securesocial] got json back [{"access_token":"ya29.awH9Y0dwRf5VEku3ZCdWB6EYjvMnKiDyIa1E8FOvqre0ET4es_dwjuCWuc7tpzAjmwsgmo7Aer9G-A","token_type":"Bearer","expires_in":3600,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjZiMjVmYWJkZWM4OTMyZjBmM2Y4MWE1Y2UyZGExOTM4Zjc5Y2M2ZTgifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTEyMDExMzA5MTEzMzk4NTY3MjE0IiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6InJveWEuZGVsYW5AZ21haWwuY29tIiwiYXRfaGFzaCI6IjktVktpdTc5ZHVrblpmRFl1UjVyTXciLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0MzA5NDQ3OTMsImV4cCI6MTQzMDk0ODM5M30.Iv38Y2t7ASKC6-6CIaqZWfgjcO_kONgGU7cgMhWNnSso76CdhEuwUvjS874jAZ7KfX6azKTd2rXBfkdZ_8DKJakqCfKG6zyr5MlSlo0H3KI42WaTKf2ucXepJls54X2spTQtXdfvyC5eBX0PaiwrWQHcOaWgp18ZlBefTF_apNk"}]
+
+2015-05-06 13:39:55,190 - [DEBUG] - from application in play-akka.actor.default-dispatcher-61 
+[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.awH9Y0dwRf5VEku3ZCdWB6EYjvMnKiDyIa1E8FOvqre0ET4es_dwjuCWuc7tpzAjmwsgmo7Aer9G-A,Some(Bearer),Some(3600),None)),None))
+
+2015-05-06 13:39:55,589 - [DEBUG] - from application in play-akka.actor.default-dispatcher-61 
+[securesocial] user logged in : [SocialUser(IdentityId(112011309113398567214,google),Roya,Delparastaran,Roya Delparastaran,Some(roya.delan@gmail.com),Some(https://lh6.googleusercontent.com/-cDtLdZvl068/AAAAAAAAAAI/AAAAAAAAAJk/jn8vVjds07E/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.awH9Y0dwRf5VEku3ZCdWB6EYjvMnKiDyIa1E8FOvqre0ET4es_dwjuCWuc7tpzAjmwsgmo7Aer9G-A,Some(Bearer),Some(3600),None)),None)]
+
+2015-05-06 13:39:55,615 - [DEBUG] - from application in play-akka.actor.default-dispatcher-66 
+google
+
+2015-05-06 13:39:55,616 - [DEBUG] - from application in play-akka.actor.default-dispatcher-66 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:39:55,799 - [DEBUG] - from application in play-akka.actor.default-dispatcher-66 
+LoadUserModel UserModel email : roya.delan@gmail.com
+
+2015-05-06 13:39:55,803 - [DEBUG] - from application in play-akka.actor.default-dispatcher-66 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:39:55,985 - [DEBUG] - from application in play-akka.actor.default-dispatcher-66 
+LoadUserModel UserModel email : roya.delan@gmail.com
+
+2015-05-06 13:39:55,986 - [DEBUG] - from application in play-akka.actor.default-dispatcher-66 
+Roya Delparastaran
+
+2015-05-06 13:41:01,058 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] unloaded identity provider: userpass
+
+2015-05-06 13:41:01,061 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] unloaded identity provider: google
+
+2015-05-06 13:41:01,067 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] unloaded identity provider: facebook
+
+2015-05-06 13:41:01,071 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] unloaded password hasher bcrypt
+
+2015-05-06 13:41:01,073 - [INFO] - from play in play-internal-execution-context-15 
+Shutdown application default Akka system.
+
+2015-05-06 13:41:06,425 - [INFO] - from play in play-internal-execution-context-15 
+database [default] connected at jdbc:postgresql://ec2-54-163-227-94.compute-1.amazonaws.com:5432/dctuk8ildn59ls?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory
+
+2015-05-06 13:41:07,303 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded templates plugin: securesocial.controllers.DefaultTemplatesPlugin
+
+2015-05-06 13:41:07,325 - [INFO] - from play in play-internal-execution-context-15 
+Starting application default Akka system.
+
+2015-05-06 13:41:07,327 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded user service: class plugins.InMemoryUserService
+
+2015-05-06 13:41:07,327 - [DEBUG] - from application in play-akka.actor.default-dispatcher-60 
+[securesocial] calling deleteExpiredTokens()
+
+2015-05-06 13:41:07,331 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded password hasher bcrypt
+
+2015-05-06 13:41:07,336 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded identity provider: facebook
+
+2015-05-06 13:41:07,339 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded identity provider: google
+
+2015-05-06 13:41:07,342 - [INFO] - from application in play-internal-execution-context-15 
+[securesocial] loaded identity provider: userpass
+
+2015-05-06 13:41:07,347 - [INFO] - from play in play-internal-execution-context-15 
+Application started (Dev)
+
+2015-05-06 13:41:11,853 - [DEBUG] - from application in play-akka.actor.default-dispatcher-76 
+[securesocial] authorizationUrl = https://accounts.google.com/o/oauth2/auth
+
+2015-05-06 13:41:11,856 - [DEBUG] - from application in play-akka.actor.default-dispatcher-76 
+[securesocial] redirecting to: [https://accounts.google.com/o/oauth2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=31854430568-dj5bm8eoqlnd2ntlgs2mk50q7l6808li.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauthenticate%2Fgoogle&response_type=code&state=a1e0c5d7-7c60-4a4b-9372-3660d213daa3]
+
+2015-05-06 13:41:15,414 - [DEBUG] - from application in play-akka.actor.default-dispatcher-75 
+[securesocial] got json back [{"access_token":"ya29.awHnN_QMyA38_ySRub-T5e1iQG6BEc5-hMZyXE2WPQtg1MisvPd-kE0sjkIeXYZClDb0KA5YIz1HZg","token_type":"Bearer","expires_in":3600,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjZiMjVmYWJkZWM4OTMyZjBmM2Y4MWE1Y2UyZGExOTM4Zjc5Y2M2ZTgifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMTEyMDExMzA5MTEzMzk4NTY3MjE0IiwiYXpwIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJlbWFpbCI6InJveWEuZGVsYW5AZ21haWwuY29tIiwiYXRfaGFzaCI6Im1oRXlUaEFPMUIzQkdObUpLT3paR0EiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXVkIjoiMzE4NTQ0MzA1NjgtZGo1Ym04ZW9xbG5kMm50bGdzMm1rNTBxN2w2ODA4bGkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJpYXQiOjE0MzA5NDQ4NzQsImV4cCI6MTQzMDk0ODQ3NH0.OnIOQxVMxI1CkFU3ByMb4HXrtvY4693g6sY_bAySDAJvQUJJcZgV_Gr_kf6x-gvQk0LXL4YBM11eF9bIsWZtpsYWgpJ3yaKKSuGkhvvCJWb2jMGEUXIalOZovdyL11zzyZhXz99Q3fE9Vwz4Korjhn2B9feXuAqwSF7hfPHkyp8"}]
+
+2015-05-06 13:41:15,439 - [DEBUG] - from application in play-akka.actor.default-dispatcher-75 
+[securesocial] user = Some(SocialUser(IdentityId(,google),,,,None,None,AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.awHnN_QMyA38_ySRub-T5e1iQG6BEc5-hMZyXE2WPQtg1MisvPd-kE0sjkIeXYZClDb0KA5YIz1HZg,Some(Bearer),Some(3600),None)),None))
+
+2015-05-06 13:41:15,682 - [DEBUG] - from application in play-akka.actor.default-dispatcher-75 
+[securesocial] user logged in : [SocialUser(IdentityId(112011309113398567214,google),Roya,Delparastaran,Roya Delparastaran,Some(roya.delan@gmail.com),Some(https://lh6.googleusercontent.com/-cDtLdZvl068/AAAAAAAAAAI/AAAAAAAAAJk/jn8vVjds07E/photo.jpg),AuthenticationMethod(oauth2),None,Some(OAuth2Info(ya29.awHnN_QMyA38_ySRub-T5e1iQG6BEc5-hMZyXE2WPQtg1MisvPd-kE0sjkIeXYZClDb0KA5YIz1HZg,Some(Bearer),Some(3600),None)),None)]
+
+2015-05-06 13:41:15,721 - [DEBUG] - from application in play-akka.actor.default-dispatcher-75 
+google
+
+2015-05-06 13:41:15,722 - [DEBUG] - from application in play-akka.actor.default-dispatcher-75 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:41:15,908 - [DEBUG] - from application in play-akka.actor.default-dispatcher-75 
+LoadUserModel UserModel email : roya.delan@gmail.com
+
+2015-05-06 13:41:15,925 - [DEBUG] - from application in play-akka.actor.default-dispatcher-75 
+loadUserModel Identity email: roya.delan@gmail.com
+
+2015-05-06 13:41:16,113 - [DEBUG] - from application in play-akka.actor.default-dispatcher-75 
+LoadUserModel UserModel email : roya.delan@gmail.com
+
+2015-05-06 13:41:16,114 - [DEBUG] - from application in play-akka.actor.default-dispatcher-75 
+Roya Delparastaran
 

@@ -97,7 +97,7 @@ public static Result addConnection(String email){
     }
 
       Logger.debug("Is Connected: " + Connection.isConnected(connector.id, connectee.id));
-      Logger.debug("Connector : " + connector.id + "Conectee: " + connectee.id));
+      Logger.debug("Connector : " + connector.id + "Conectee: " + connectee.id);
 
     if(Connection.isConnected(connector.id, connectee.id)){
       ok(searchedProfile.render(connectee));
