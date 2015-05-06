@@ -25,58 +25,33 @@
         </div>
 
 
-<br /><br /><br />
-        <div class="col-md-5 column img-div" style="background-color: #FFFFFF;">
-        @if(user.userName != null){
-              <h4>@user.userName</h4>
+        <div class="col-xs-6 column">
+          <div class="centerDiv" style="background-color: #FFFFFF;">
+           @if(user.userName != null){
+              <h4 class="nameText">@user.userName</h4>
             }else{
               <h4>Guest</h4>
             }
-            
-            </div>
-      
 
-    </div>
-    <div class="col-md-3 column img-div"></div>
+            @if(user.location != null){
+                <p class="headText"syle="margin-top: -10px;">@user.location</p>
+            }
 
-    <div class="col-md-5 column" style="background-color: #FFFFFF;">
+            @if(user.currentEmployer != null){
+                <p class="headText">@user.currentEmployer</p>
+            }
 
-        @if(user.aboutMe != null){
-          <h3>@user.headline</h3>
+            @if(user.recentSchool != null){
+                <p class="headText">@user.recentSchool</p>
+            }
 
-        }
-
-
-      @if(user.currentEmployer != null){
-          <h3>@user.currentEmployer</h3>
-        }
-
-      @if(user.location != null){
-          <h3>@user.location</h3>
-        }
-    </div>
-    
-<div class="row clearfix">
-    <div class="col-xs-7 column">
-      <h2>
-        
-      </h2>
-      
-      <p>
-        
-      </p>
-      
-    </div>
-    </div>
-
-
-  <div class="row clearfix">
-    <div class="col-xs-4">
-
-    </div>
-      <div class="col-xs-7 column" style="background-color: #FFFFFF;">
+            @if(user.headline != null){
+              <p class="headText">@user.headline</p>
+            }
+          </div>
+    <div style="background-color: #FFFFFF;">
         <h2>
-          About Me
+          About Me:
         </h2>
         @if(user.aboutMe != null){
           <p>
@@ -84,48 +59,26 @@
           </p>
         }
 
-      </div>
-  </div>
-
-  <div class="row clearfix">
-    <div class="col-xs-4">
-
-    </div>
-    <div class="col-xs-7 column" style="background-color: #FFFFFF;">
       <h2>
-        Experience
+        Experience:
       </h2>
       @if(user.experience != null){
       <p>
         @user.experience
       </p>
       }
-    </div>
-  </div>
-  <div class="row clearfix">
-    <div class="col-xs-4">
 
-    </div>
-    <div class="col-xs-7 column" style="background-color: #FFFFFF;">
       <h2>
-        Projects or Skills Highlight
+        Projects or Skills Highlight:
       </h2>
       @if(user.experience != null){
       <p>
         @user.projects
       </p>
       }
-    </div>
-  </div>
-  <div class="row clearfix">
-    <div class="col-xs-4">
-
-    </div>
-
-    <div class="col-xs-7 column" style="background-color: #FFFFFF;">
 
       <h2>
-        Education
+        Education:
       </h2>
       @if(user.experience != null){
       <p>
@@ -133,8 +86,7 @@
       </p>
       }
     </div>
-  </div>
-
-
+    </div>
+</div>
 </div>
 }

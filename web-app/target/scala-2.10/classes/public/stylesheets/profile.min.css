@@ -1,5 +1,8 @@
 .img-div{background-color:transparent;width:350px;height:auto;padding-top:25px;padding-left:25px;padding-bottom:15px}
-.profileImage{width:90%;height:auto;margin-top:10px;margin-bottom:15px}
+.profileImage{width:75%;height:auto;margin-top:5%;margin-bottom:15px}
+.centerDiv{text-align:center;width:100%;margin-left:12%;margin-top:6%;margin-bottom:15px;padding-bottom:20px}
+.headText{font-size:20px;font-weight:bold;line-height:10px;font-style:italic}
+.nameText{font-family:Helvetica;font-size:35px;font-weight:bold;font-style:italic;text-transform:none;line-height:40px}
 .logo-img{margin-top:50px;margin-left:40px}
 .edit-button{margin-top:10px;background-color:#0aa0d9}
 .break-after{border-bottom:1px solid #0aa0d9;margin-bottom:10px;padding-bottom:25px}
