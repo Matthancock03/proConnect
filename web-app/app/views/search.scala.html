@@ -63,14 +63,17 @@
               					<a href="@routes.SearchController.loadSearchedProfile(user.email)">
               					<div class="panel panel-default">
               						<div class="panel-body">
-              						      <div>
+              						      <div class="col-xs-4 column">
                                   @if(user.profilePicture != null){
                           					<img class = "feed-image feed-head" src="@routes.DbController.getProfilePic(user.email)" />
                           				}else{
                           					<img alt="140x140" class = "feed-image feed-head" src="@routes.Assets.at("images/profile_holder.png")" />
                           				}
+                                  </div>
+                                  <div class="col-xs-6 column">
+                                  <br />
               							       <h3 class="panel-title head-text feed-head">@user.userName</h3>
-                      						</div>
+                      						
                       						<br>
                       						<p style="padding-top: 10px;">@user.aboutMe</p>
                                   <p style="padding-top: 10px;">@user.location</p>
