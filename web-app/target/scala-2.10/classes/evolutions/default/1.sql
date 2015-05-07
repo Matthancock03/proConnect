@@ -4,8 +4,10 @@
 # --- !Ups
 
 create table connection (
+  connect_id                bigint not null,
   user_id                   bigint,
-  connection_id             bigint)
+  connection_id             bigint,
+  constraint pk_connection primary key (connect_id))
 ;
 
 create table forum (
@@ -65,6 +67,8 @@ create table user_model (
   constraint pk_user_model primary key (id))
 ;
 
+create sequence connection_seq;
+
 create sequence forum_seq;
 
 create sequence job_seq;
@@ -87,6 +91,8 @@ drop table if exists job cascade;
 drop table if exists message cascade;
 
 drop table if exists user_model cascade;
+
+drop sequence if exists connection_seq;
 
 drop sequence if exists forum_seq;
 

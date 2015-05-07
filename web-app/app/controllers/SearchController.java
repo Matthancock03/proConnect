@@ -23,38 +23,72 @@ public static Result search(){
 
 
     DynamicForm requestData = Form.form().bindFromRequest();
+    String skill = requestData.get("skill");
+    String profession = requestData.get("profession");
     String queryName = requestData.get("searchParameter");
+
+    if(skill != null && skill.equals("true")){
+      return searchBySkill(queryName);
+    }
+
+
+    if(profession != null && profession.equals("true")){
+      return searchByProfession(queryName);
+    }
+
     Logger.debug("Search Bind Results: " + queryName);
     List<UserModel> users = UserModel.findByName(queryName);
     return ok(search.render(users));
   }
 
-  public static Result searchByProfession(){
-    DynamicForm requestData = Form.form().bindFromRequest();
-    String queryName = requestData.get("searchParameter");
-    Logger.debug("Search Bind Results: " + queryName);
+  public static Result searchByProfession(String queryName){
     List<UserModel> users = UserModel.findByName(queryName);
 
-    return ok(search.render(users));
+    return ok("Search By Profession");
   }
 
-  public static Result searchBySkill(){
-    DynamicForm requestData = Form.form().bindFromRequest();
-    String queryName = requestData.get("searchParameter");
-    Logger.debug("Search Bind Results: " + queryName);
+  public static Result searchBySkill(String queryName){
     List<UserModel> users = UserModel.findByName(queryName);
 
-    return ok(search.render(users));
+    return ok("Search By Skill");
   }
 
+  @SecureSocial.UserAwareAction
   public static Result loadSearchedProfile(String email){
+    boolean isConnected;
+    Identity userID;
+
+    try{
+        userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+        Logger.debug(userID.identityId().providerId());
+    }catch(Exception e){
+        return ok(splash.render());
+    }
+
+    UserModel temp = UserModel.loadUserModel(userID);
     UserModel user = UserModel.loadUserModel(email);
-    return ok(searchedProfile.render(user));
+    isConnected = Connection.isConnected(temp.id, user.id);
+    Logger.debug("Load Searched Profile " + isConnected);
+
+    return ok(searchedProfile.render(user, isConnected));
   }
 
+  @SecureSocial.UserAwareAction
   public static Result loadProfile(Long id){
+    boolean isConnected;
+    Identity userID;
+
+    try{
+        userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+        Logger.debug(userID.identityId().providerId());
+    }catch(Exception e){
+        return ok(splash.render());
+    }
+    UserModel temp = UserModel.loadUserModel(userID);
     UserModel user = UserModel.loadUserById(id);
-    return ok(searchedProfile.render(user));
+    isConnected = Connection.isConnected(temp.id, id);
+
+    return ok(searchedProfile.render(user, isConnected));
   }
 
 }

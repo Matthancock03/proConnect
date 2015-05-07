@@ -15,6 +15,23 @@ h4.carousel-text-black.center-block {
   height: 50px;
   width: auto;
 }
+.connections-image {
+  height: auto;
+  width: 50px;
+  margin-right: 15px;
+}
+.connect-text {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 15px;
+  font-family: Helvetica;
+}
+.connect-table {
+  height: 250px;
+  overflow: scroll;
+  width: 100%;
+}
 .profileImage {
   width: 90%;
   height: auto;

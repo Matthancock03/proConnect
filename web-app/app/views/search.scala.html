@@ -23,16 +23,14 @@
 				People Search</h3><br />
 
         <font size="2">
-        <form action="" role="form">
+        <form action="@routes.SearchController.search()" role="search">
           <div class="form-group">
-              <input type="text" class="form-control">
+              <input type="text" class="form-control" name="searchParameter">
               <br />
-              <input type="checkbox" name="vehicle" value="Bike">People<br />
-              <input type="checkbox" name="vehicle" value="Car">Relationship <br />
-              <input type="checkbox" name="vehicle" value="Bike">Profession<br />
-              <input type="checkbox" name="vehicle" value="Car">School<br />
+              <input type="checkbox" name="profession" value="true">Profession<br />
+              <input type="checkbox" name="skill" value="true">Skill<br />
             </font>
-              <a href="#" class="btn" type="button" style="background-color:lightgreen">Search</a>
+              <button class="btn" type="submit" style="background-color:lightgreen">Search</button>
           </div>
           </form>
         </div>
@@ -73,7 +71,7 @@
                                   <div class="col-xs-6 column">
                                   <br />
               							       <h3 class="panel-title head-text feed-head">@user.userName</h3>
-                      						
+
                       						<br>
                       						<p style="padding-top: 10px;">@user.aboutMe</p>
                                   <p style="padding-top: 10px;">@user.location</p>

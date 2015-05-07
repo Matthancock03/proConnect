@@ -63,7 +63,7 @@ Seq[Any](format.raw/*1.18*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed May 06 19:49:41 PDT 2015
+                    DATE: Wed May 06 22:00:21 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/jobItem.scala.html
                     HASH: 0200b655adc2ceb8854b5bafb6f48b2ca0f08bf3
                     MATRIX: 775->1|885->17|921->19|947->37|986->39|1022->41|1035->47|1065->56|1163->120|1200->149|1238->150|1409->285|1425->292|1459->304|1562->371|1578->378|1605->383|1669->416|1721->437

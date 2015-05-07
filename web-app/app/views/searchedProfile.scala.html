@@ -1,4 +1,4 @@
-@(user:UserModel)
+@(user:UserModel, connected: Boolean)
 
 @import helper._
 
@@ -16,8 +16,11 @@
       }else{
         <img alt="140x140" class = "img-thumbnail profileImage" src="@routes.Assets.at("images/profile_holder.png")"/>
         }
+        @if(!connected){
          <a href="@routes.UserController.addConnection(user.email)"><button type="button" class="btn btn-success edit-button" name="connect">Connect</button></a>
-
+       }else{
+         <a href="@routes.UserController.removeConnection(user.email)"><button type="button" class="btn btn-success edit-button" name="connect">Remove Connection</button></a>
+       }
       <!-- Large modal -->
   <button type="button" class="btn btn-success edit-button" data-toggle="modal" data-target=".bs-example-modal-lg">Send Message</button>
         </div>
@@ -45,7 +48,7 @@
             </div>
             </div>
 
-  
+
 
   <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -92,9 +95,9 @@
     <div class="row clearfix">
     <div class="col-md-2 column img-div"></div>
 
-    
-    
-     
+
+
+
         <div class="col-xs-6 column">
           <div class="centerDiv" style="background-color: #FFFFFF;">
         <h2>
@@ -107,8 +110,8 @@
         }
 
       <br />
-  
-    
+
+
       <h2>
         Experience
       </h2>
@@ -119,7 +122,7 @@
       }
     <br />
 
-    
+
       <h2>
         Projects or Skills Highlight
       </h2>

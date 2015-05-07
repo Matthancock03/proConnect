@@ -45,6 +45,12 @@ public class Message extends Model {
     return messageArray;
   }
 
+  public static List<Message> getAndroidMessageArray(Long userId){
+    Logger.debug("Get Message Array User Id: " + userId);
+    List<Message> messageArray = find.where().eq("recipientId", userId).findList();
+    return messageArray;
+  }
+
   public static List<Message> getSentMessages(Long userId){
     Logger.debug("Get Sent Message User Id: " + userId);
     List<Message> messageArray = find.where().eq("senderId", userId).findList();

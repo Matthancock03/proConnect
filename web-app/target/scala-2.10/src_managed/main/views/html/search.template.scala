@@ -51,16 +51,14 @@ Seq[Any](format.raw/*1.26*/("""
 				People Search</h3><br />
 
         <font size="2">
-        <form action="" role="form">
+        <form action=""""),_display_(Seq[Any](/*26.24*/routes/*26.30*/.SearchController.search())),format.raw/*26.56*/("""" role="search">
           <div class="form-group">
-              <input type="text" class="form-control">
+              <input type="text" class="form-control" name="searchParameter">
               <br />
-              <input type="checkbox" name="vehicle" value="Bike">People<br />
-              <input type="checkbox" name="vehicle" value="Car">Relationship <br />
-              <input type="checkbox" name="vehicle" value="Bike">Profession<br />
-              <input type="checkbox" name="vehicle" value="Car">School<br />
+              <input type="checkbox" name="profession" value="true">Profession<br />
+              <input type="checkbox" name="skill" value="true">Skill<br />
             </font>
-              <a href="#" class="btn" type="button" style="background-color:lightgreen">Search</a>
+              <button class="btn" type="submit" style="background-color:lightgreen">Search</button>
           </div>
           </form>
         </div>
@@ -87,28 +85,28 @@ Seq[Any](format.raw/*1.26*/("""
                   <div class="col-xs-2"></div>
                   <div class="col-xs-8">
                     <div class="feed-div">
-              			"""),_display_(Seq[Any](/*62.19*/for(user <- users) yield /*62.37*/{_display_(Seq[Any](format.raw/*62.38*/("""
-              					<a href=""""),_display_(Seq[Any](/*63.30*/routes/*63.36*/.SearchController.loadSearchedProfile(user.email))),format.raw/*63.85*/("""">
+              			"""),_display_(Seq[Any](/*60.19*/for(user <- users) yield /*60.37*/{_display_(Seq[Any](format.raw/*60.38*/("""
+              					<a href=""""),_display_(Seq[Any](/*61.30*/routes/*61.36*/.SearchController.loadSearchedProfile(user.email))),format.raw/*61.85*/("""">
               					<div class="panel panel-default">
               						<div class="panel-body">
               						      <div class="col-xs-4 column">
-                                  """),_display_(Seq[Any](/*67.36*/if(user.profilePicture != null)/*67.67*/{_display_(Seq[Any](format.raw/*67.68*/("""
-                          					<img class = "feed-image feed-head" src=""""),_display_(Seq[Any](/*68.74*/routes/*68.80*/.DbController.getProfilePic(user.email))),format.raw/*68.119*/("""" />
-                          				""")))}/*69.32*/else/*69.36*/{_display_(Seq[Any](format.raw/*69.37*/("""
-                          					<img alt="140x140" class = "feed-image feed-head" src=""""),_display_(Seq[Any](/*70.88*/routes/*70.94*/.Assets.at("images/profile_holder.png"))),format.raw/*70.133*/("""" />
-                          				""")))})),format.raw/*71.32*/("""
+                                  """),_display_(Seq[Any](/*65.36*/if(user.profilePicture != null)/*65.67*/{_display_(Seq[Any](format.raw/*65.68*/("""
+                          					<img class = "feed-image feed-head" src=""""),_display_(Seq[Any](/*66.74*/routes/*66.80*/.DbController.getProfilePic(user.email))),format.raw/*66.119*/("""" />
+                          				""")))}/*67.32*/else/*67.36*/{_display_(Seq[Any](format.raw/*67.37*/("""
+                          					<img alt="140x140" class = "feed-image feed-head" src=""""),_display_(Seq[Any](/*68.88*/routes/*68.94*/.Assets.at("images/profile_holder.png"))),format.raw/*68.133*/("""" />
+                          				""")))})),format.raw/*69.32*/("""
                                   </div>
                                   <div class="col-xs-6 column">
                                   <br />
-              							       <h3 class="panel-title head-text feed-head">"""),_display_(Seq[Any](/*75.74*/user/*75.78*/.userName)),format.raw/*75.87*/("""</h3>
-                      						
+              							       <h3 class="panel-title head-text feed-head">"""),_display_(Seq[Any](/*73.74*/user/*73.78*/.userName)),format.raw/*73.87*/("""</h3>
+
                       						<br>
-                      						<p style="padding-top: 10px;">"""),_display_(Seq[Any](/*78.60*/user/*78.64*/.aboutMe)),format.raw/*78.72*/("""</p>
-                                  <p style="padding-top: 10px;">"""),_display_(Seq[Any](/*79.66*/user/*79.70*/.location)),format.raw/*79.79*/("""</p>
+                      						<p style="padding-top: 10px;">"""),_display_(Seq[Any](/*76.60*/user/*76.64*/.aboutMe)),format.raw/*76.72*/("""</p>
+                                  <p style="padding-top: 10px;">"""),_display_(Seq[Any](/*77.66*/user/*77.70*/.location)),format.raw/*77.79*/("""</p>
                       					</div>
                       				</div>
                 				</a>
-                			""")))})),format.raw/*83.21*/("""
+                			""")))})),format.raw/*81.21*/("""
         		    </div>
               </div>
             <div class="col-xs-2"></div>
@@ -118,7 +116,7 @@ Seq[Any](format.raw/*1.26*/("""
 
 
 
-""")))})),format.raw/*93.2*/("""
+""")))})),format.raw/*91.2*/("""
 """))}
     }
     
@@ -131,11 +129,11 @@ Seq[Any](format.raw/*1.26*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed May 06 19:01:46 PDT 2015
+                    DATE: Wed May 06 23:21:57 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/search.scala.html
-                    HASH: a5a9a1c13cf9406b80894202cb189dff70411917
-                    MATRIX: 784->1|918->25|946->44|983->47|1009->65|1048->67|1085->70|1098->76|1126->83|1193->115|1207->121|1267->160|3250->2107|3284->2125|3323->2126|3389->2156|3404->2162|3475->2211|3703->2403|3743->2434|3782->2435|3892->2509|3907->2515|3969->2554|4024->2590|4037->2594|4076->2595|4200->2683|4215->2689|4277->2728|4345->2764|4601->2984|4614->2988|4645->2997|4808->3124|4821->3128|4851->3136|4957->3206|4970->3210|5001->3219|5150->3336|5295->3450
-                    LINES: 26->1|30->1|32->4|34->6|34->6|34->6|35->7|35->7|35->7|36->8|36->8|36->8|90->62|90->62|90->62|91->63|91->63|91->63|95->67|95->67|95->67|96->68|96->68|96->68|97->69|97->69|97->69|98->70|98->70|98->70|99->71|103->75|103->75|103->75|106->78|106->78|106->78|107->79|107->79|107->79|111->83|121->93
+                    HASH: 4b928b206ca9d0b2891d9b9a75d60c60493a445a
+                    MATRIX: 784->1|918->25|946->44|983->47|1009->65|1048->67|1085->70|1098->76|1126->83|1193->115|1207->121|1267->160|1673->530|1688->536|1736->562|3215->2005|3249->2023|3288->2024|3354->2054|3369->2060|3440->2109|3668->2301|3708->2332|3747->2333|3857->2407|3872->2413|3934->2452|3989->2488|4002->2492|4041->2493|4165->2581|4180->2587|4242->2626|4310->2662|4566->2882|4579->2886|4610->2895|4745->2994|4758->2998|4788->3006|4894->3076|4907->3080|4938->3089|5087->3206|5232->3320
+                    LINES: 26->1|30->1|32->4|34->6|34->6|34->6|35->7|35->7|35->7|36->8|36->8|36->8|54->26|54->26|54->26|88->60|88->60|88->60|89->61|89->61|89->61|93->65|93->65|93->65|94->66|94->66|94->66|95->67|95->67|95->67|96->68|96->68|96->68|97->69|101->73|101->73|101->73|104->76|104->76|104->76|105->77|105->77|105->77|109->81|119->91
                     -- GENERATED --
                 */
             

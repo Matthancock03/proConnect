@@ -124,7 +124,7 @@ Seq[Any](_display_(Seq[Any](/*1.2*/main("ProConnect")/*1.20*/{_display_(Seq[Any]
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed May 06 19:01:46 PDT 2015
+                    DATE: Wed May 06 22:00:21 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/connections.scala.html
                     HASH: 398d698c620eb0d90579e84c380c7d43578ffde8
                     MATRIX: 870->1|896->19|934->20|972->24|986->30|1014->37|1084->72|1098->78|1158->117|2862->1790

@@ -24,6 +24,7 @@ public class UserController extends Controller{
 public static Result sendMessage(){
 
       Message message = new Message();
+      boolean isConnected;
       DynamicForm requestData = Form.form().bindFromRequest();
       String messageHead = requestData.get("messageTitle");
       String messageContent = requestData.get("messageBody");
@@ -32,6 +33,7 @@ public static Result sendMessage(){
       Logger.debug("Message Title: " + messageHead + " Message Body: " + messageContent + " Recipient email: " + email);
       UserModel user;
       UserModel sender;
+
       try{
       Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
       sender = UserModel.loadUserModel(userID);
@@ -39,6 +41,7 @@ public static Result sendMessage(){
     }catch(Exception e){
       return ok(splash.render());
     }
+
       message.senderId = sender.id;
       message.senderName = sender.userName;
       message.recipientId = user.id;
@@ -47,7 +50,10 @@ public static Result sendMessage(){
       message.isRead = false;
       message.save();
 
-      return ok(searchedProfile.render(user));
+
+      isConnected = Connection.isConnected(sender.id, user.id);
+
+      return ok(searchedProfile.render(user, isConnected));
 }
 
 @SecureSocial.UserAwareAction
@@ -84,10 +90,12 @@ public static Result replyMessage(){
 
 @SecureSocial.UserAwareAction
 public static Result addConnection(String email){
+  boolean isConnected;
   Logger.debug("Add Connection email: " + email);
     Connection connection;
     UserModel connectee;
     UserModel connector;
+
     try{
     Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
     connector = UserModel.loadUserModel(userID);
@@ -96,12 +104,6 @@ public static Result addConnection(String email){
     return ok(splash.render());
     }
 
-      Logger.debug("Is Connected: " + Connection.isConnected(connector.id, connectee.id));
-      Logger.debug("Connector : " + connector.id + "Conectee: " + connectee.id);
-
-    if(Connection.isConnected(connector.id, connectee.id)){
-      ok(searchedProfile.render(connectee));
-    }
 
     Connection connect = new Connection();
     Connection connect1 = new Connection();
@@ -113,8 +115,45 @@ public static Result addConnection(String email){
     connect.save();
     connect1.save();
 
-  return ok(searchedProfile.render(connectee));
+    isConnected = Connection.isConnected(connector.id, connectee.id);
+
+  return ok(searchedProfile.render(connectee, isConnected));
 }
+
+@SecureSocial.UserAwareAction
+public static Result removeConnection(String email){
+  boolean isConnected;
+  Logger.debug("Add Connection email: " + email);
+    Connection connection;
+    UserModel connectee;
+    UserModel connector;
+
+    try{
+        Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+        connector = UserModel.loadUserModel(userID);
+        connectee = UserModel.loadUserModel(email);
+      }catch(Exception e){
+        return ok(splash.render());
+    }
+
+      Connection.remove(connector.id, connectee.id);
+      isConnected = Connection.isConnected(connector.id, connectee.id);
+
+
+    /*Connection connect = new Connection();
+    Connection connect1 = new Connection();
+    connect.userId = connector.id;
+    connect.connectionId = connectee.id;
+    connect1.userId = connectee.id;
+    connect1.connectionId = connector.id;
+
+    connect.save();
+    connect1.save();*/
+
+  return ok(searchedProfile.render(connectee, isConnected));
+}
+
+
 
 public static Result searchUser(String name){
   List<UserModel> user = UserModel.findByName(name);
@@ -136,19 +175,33 @@ public static Result premiumSearchUser(String name){
   return ok("User Found");
 }
 
-@SecureSocial.UserAwareAction
+
 public static List<UserModel> getConnections(String email){
   Logger.debug("Get Connections email: " + email);
   UserModel user;
   try{
-    Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
-    user = UserModel.loadUserModel(userID);
+    user = UserModel.loadUserModel(email);
     }catch(Exception e){
       List<UserModel> connects = new ArrayList();
       return connects;
     }
 
   List<UserModel> connections = Connection.connections(user);
+
+  return connections;
+}
+
+public static List<UserModel> getAndroidConnections(String email){
+  Logger.debug("Get Connections email: " + email);
+  UserModel user;
+  try{
+    user = UserModel.loadUserModel(email);
+    }catch(Exception e){
+      List<UserModel> connects = new ArrayList();
+      return connects;
+    }
+
+  List<UserModel> connections = Connection.androidConnections(user);
 
   return connections;
 }

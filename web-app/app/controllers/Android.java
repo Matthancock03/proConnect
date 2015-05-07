@@ -117,11 +117,46 @@ public static Result androidCreateAccount(String email, String password){
     users = UserModel.findByName(name);
     for(UserModel user: users){
       result.put("user",Json.toJson(user));
+      //Logger.debug(Json.toJson(user));
     }
     return ok(result);
     }catch(Exception e){
       return ok("User not found");
     }
+  }
+
+  public static Result androidGetMessages(Long id){
+    List<Message> messages;
+    ObjectNode result = Json.newObject();
+    try{
+      messages = Message.getAndroidMessageArray(id);
+      for(Message message: messages){
+        result.put("message",Json.toJson(message));
+        //Logger.debug(Json.toJson(message));
+      }
+      return ok(result);
+    }catch(Exception e){
+      return ok("No Messages");
+    }
+  }
+
+  public static Result androidGetConnections(String email){
+    List<UserModel> users;
+    ObjectNode result = Json.newObject();
+    try{
+    users = UserController.getAndroidConnections(email);
+    for(UserModel user: users){
+      result.put("connection",Json.toJson(user));
+      //Logger.debug(Json.toJson(user));
+    }
+    return ok(result);
+    }catch(Exception e){
+      return ok("User not found");
+    }
+  }
+
+  public static Result androidAddConnection(Long id1, Long id2){
+    return ok("Connection Added");
   }
 
 }

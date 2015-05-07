@@ -96,11 +96,20 @@
 					<div class="panel-heading">Connections</div>
 					<div class="panel-body">
 						@if(connections != null){
-						<ul class="list-group overflow-y-scroll tweetTable">
+						<ul class="list-group overflow-y-scroll connect-table">
 							@for(connection <- connections){
-								<a href="@routes.SearchController.loadSearchedProfile(connection.email)"><li class="list-group-item">@connection.userName</li></a>
-							}
-							<li>Use the search bar to find friends and business associates.</li>
+								<a href="@routes.SearchController.loadSearchedProfile(connection.email)">
+									<li class="list-group-item">
+									@if(connection.profilePicture != null){
+										<img class = "connections-image feed-head" src="@routes.DbController.getProfilePic(connection.email)" />
+										}else{
+											<img alt="140x140" class = "connections-image feed-head" src="@routes.Assets.at("images/profile_holder.png")" />
+										}
+										<p class="connect-text feed-head"> @connection.userName</p>
+										</li>
+										</a>
+								}
+							<li style="margin-top: 5px;">Use the search bar to find friends and business associates.</li>
 							</ul>
 						}else{
 							<p>Use the search bar to find friends and business associates.</p>

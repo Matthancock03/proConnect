@@ -25,11 +25,27 @@ import views.html.*;
 @Entity
 public class Connection extends Model{
 
+  @Id
+  public Long connectId;
   public Long userId;
   public Long connectionId;
 
   @SecureSocial.UserAwareAction
   public static List<UserModel> connections(UserModel user){
+
+    List<UserModel> connects = new ArrayList();
+    List<Connection> connectionIds = Connection.find.where().eq("userId", user.id).findList();
+
+    for(Connection connect: connectionIds){
+      UserModel tempUserModel = UserModel.loadUserById(connect.connectionId);
+      connects.add(tempUserModel);
+    }
+
+    return connects;
+  }
+
+
+  public static List<UserModel> androidConnections(UserModel user){
 
     List<UserModel> connects = new ArrayList();
     List<Connection> connectionIds = Connection.find.where().eq("userId", user.id).findList();
@@ -51,6 +67,21 @@ public class Connection extends Model{
       return false;
     }
     return true;
+  }
+
+  public static void remove(Long id1, Long id2){
+    Connection connect1 = Connection.find.where().eq("userId", id1).eq("connectionId", id2).findUnique();
+    Connection connect2 = Connection.find.where().eq("userId", id2).eq("connectionId", id1).findUnique();
+
+
+    if(connect1 != null){
+      connect1.delete();
+    }
+
+    if(connect2 != null){
+      connect2.delete();
+    }
+
   }
 
   public static Finder<Long,Connection> find = new Finder<Long,Connection>(

@@ -26,17 +26,19 @@ GET      /forumItem                controllers.Application.forumItem(id: Long)
 GET      /sendMessage              controllers.UserController.sendMessage()
 GET      /replyMessage             controllers.UserController.replyMessage()
 GET      /addConnection            controllers.UserController.addConnection(email: String)
+GET      /removeConnection         controllers.UserController.removeConnection(email: String)
 
-GET		   /message                  controllers.MessageController.message()
-GET		   /getSentMessages                  controllers.MessageController.sentMessages()
-GET		   /deleteMessage            controllers.MessageController.deleteMessage(id: Long)
+
+GET		    /message                  controllers.MessageController.message()
+GET		    /getSentMessages          controllers.MessageController.sentMessages()
+GET		    /deleteMessage            controllers.MessageController.deleteMessage(id: Long)
 
 
 GET        /loadSearchedProfile      controllers.SearchController.loadSearchedProfile(email:String)
 GET		     /search                   controllers.SearchController.search()
 GET        /loadProfile              controllers.SearchController.loadProfile(id: Long)
-GET		     /searchBySkill                   controllers.SearchController.searchBySkill()
-GET		     /searchByProfession                   controllers.SearchController.searchByProfession()
+GET		     /searchBySkill            controllers.SearchController.searchBySkill(queryName: String)
+GET		     /searchByProfession       controllers.SearchController.searchByProfession(queryName: String)
 
 
 
@@ -45,6 +47,10 @@ GET      /androidLogin             controllers.Android.androidLogin(email: Strin
 GET      /androidCreateAccount     controllers.Android.androidCreateAccount(email: String, password: String)
 POST     /androidSaveUser          controllers.Android.androidSaveUser()
 GET      /androidSearchUser        controllers.Android.androidSearchUser(name: String)
+GET      /androidGetMessages       controllers.Android.androidGetMessages(id: Long)
+GET      /androidGetConnections    controllers.Android.androidGetConnections(email: String)
+GET      /androidAddConnection     controllers.Android.androidAddConnection(id1: Long, id2: Long)
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
