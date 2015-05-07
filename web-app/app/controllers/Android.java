@@ -110,4 +110,18 @@ public static Result androidCreateAccount(String email, String password){
     return ok(result);
   }
 
+  public static Result androidSearchUser(String name){
+    List<UserModel> users;
+    ObjectNode result = Json.newObject();
+    try{
+    users = UserModel.findByName(name);
+    for(UserModel user: users){
+      result.put("user",Json.toJson(user));
+    }
+    return ok(result);
+    }catch(Exception e){
+      return ok("User not found");
+    }
+  }
+
 }

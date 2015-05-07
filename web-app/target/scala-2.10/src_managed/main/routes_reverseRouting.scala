@@ -1,6 +1,6 @@
-// @SOURCE:C:/Users/Roya/Documents/GitHub/proConnect/web-app/conf/routes
-// @HASH:599d266496a9b0d3da0bc2e3418898016186db1a
-// @DATE:Wed May 06 12:54:12 PDT 2015
+// @SOURCE:/home/misanthropic/repos/schoolWork/proConnect/web-app/conf/routes
+// @HASH:55c534351f4fb64516e34ea720979c293ceaaf36
+// @DATE:Wed May 06 19:29:19 PDT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,6 +15,7 @@ import Router.queryString
 
 // @LINE:51
 // @LINE:50
+// @LINE:47
 // @LINE:46
 // @LINE:45
 // @LINE:44
@@ -251,7 +252,7 @@ class ReverseSearchController {
 
 // @LINE:39
 def searchByProfession(): Call = {
-   Call("GET", _prefix + { _defaultPrefix } + "search")
+   Call("GET", _prefix + { _defaultPrefix } + "searchByProfession")
 }
                                                 
 
@@ -263,7 +264,7 @@ def loadSearchedProfile(email:String): Call = {
 
 // @LINE:38
 def searchBySkill(): Call = {
-   Call("GET", _prefix + { _defaultPrefix } + "search")
+   Call("GET", _prefix + { _defaultPrefix } + "searchBySkill")
 }
                                                 
 
@@ -282,6 +283,7 @@ def search(): Call = {
 }
                           
 
+// @LINE:47
 // @LINE:46
 // @LINE:45
 // @LINE:44
@@ -297,6 +299,12 @@ def androidCreateAccount(email:String, password:String): Call = {
 // @LINE:46
 def androidSaveUser(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "androidSaveUser")
+}
+                                                
+
+// @LINE:47
+def androidSearchUser(name:String): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "androidSearchUser" + queryString(List(Some(implicitly[QueryStringBindable[String]].unbind("name", name)))))
 }
                                                 
 
@@ -462,6 +470,7 @@ def login(): Call = {
 
 // @LINE:51
 // @LINE:50
+// @LINE:47
 // @LINE:46
 // @LINE:45
 // @LINE:44
@@ -811,7 +820,7 @@ def searchByProfession : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.SearchController.searchByProfession",
    """
       function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "search"})
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "searchByProfession"})
       }
    """
 )
@@ -833,7 +842,7 @@ def searchBySkill : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.SearchController.searchBySkill",
    """
       function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "search"})
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "searchBySkill"})
       }
    """
 )
@@ -864,6 +873,7 @@ def search : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:47
 // @LINE:46
 // @LINE:45
 // @LINE:44
@@ -887,6 +897,17 @@ def androidSaveUser : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "androidSaveUser"})
+      }
+   """
+)
+                        
+
+// @LINE:47
+def androidSearchUser : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Android.androidSearchUser",
+   """
+      function(name) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "androidSearchUser" + _qS([(""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("name", name)])})
       }
    """
 )
@@ -1134,6 +1155,7 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
 
 // @LINE:51
 // @LINE:50
+// @LINE:47
 // @LINE:46
 // @LINE:45
 // @LINE:44
@@ -1371,7 +1393,7 @@ class ReverseSearchController {
 
 // @LINE:39
 def searchByProfession(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.SearchController.searchByProfession(), HandlerDef(this, "controllers.SearchController", "searchByProfession", Seq(), "GET", """""", _prefix + """search""")
+   controllers.SearchController.searchByProfession(), HandlerDef(this, "controllers.SearchController", "searchByProfession", Seq(), "GET", """""", _prefix + """searchByProfession""")
 )
                       
 
@@ -1383,7 +1405,7 @@ def loadSearchedProfile(email:String): play.api.mvc.HandlerRef[_] = new play.api
 
 // @LINE:38
 def searchBySkill(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.SearchController.searchBySkill(), HandlerDef(this, "controllers.SearchController", "searchBySkill", Seq(), "GET", """""", _prefix + """search""")
+   controllers.SearchController.searchBySkill(), HandlerDef(this, "controllers.SearchController", "searchBySkill", Seq(), "GET", """""", _prefix + """searchBySkill""")
 )
                       
 
@@ -1402,6 +1424,7 @@ def search(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
+// @LINE:47
 // @LINE:46
 // @LINE:45
 // @LINE:44
@@ -1417,6 +1440,12 @@ def androidCreateAccount(email:String, password:String): play.api.mvc.HandlerRef
 // @LINE:46
 def androidSaveUser(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Android.androidSaveUser(), HandlerDef(this, "controllers.Android", "androidSaveUser", Seq(), "POST", """""", _prefix + """androidSaveUser""")
+)
+                      
+
+// @LINE:47
+def androidSearchUser(name:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Android.androidSearchUser(name), HandlerDef(this, "controllers.Android", "androidSearchUser", Seq(classOf[String]), "GET", """""", _prefix + """androidSearchUser""")
 )
                       
 

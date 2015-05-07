@@ -33,10 +33,10 @@ GET		   /deleteMessage            controllers.MessageController.deleteMessage(id
 
 
 GET        /loadSearchedProfile      controllers.SearchController.loadSearchedProfile(email:String)
-GET		   /search                   controllers.SearchController.search()
+GET		     /search                   controllers.SearchController.search()
 GET        /loadProfile              controllers.SearchController.loadProfile(id: Long)
-GET		   /search                   controllers.SearchController.searchBySkill()
-GET		   /search                   controllers.SearchController.searchByProfession()
+GET		     /searchBySkill                   controllers.SearchController.searchBySkill()
+GET		     /searchByProfession                   controllers.SearchController.searchByProfession()
 
 
 
@@ -44,7 +44,7 @@ GET		   /search                   controllers.SearchController.searchByProfessio
 GET      /androidLogin             controllers.Android.androidLogin(email: String, password: String)
 GET      /androidCreateAccount     controllers.Android.androidCreateAccount(email: String, password: String)
 POST     /androidSaveUser          controllers.Android.androidSaveUser()
-
+GET      /androidSearchUser        controllers.Android.androidSearchUser(name: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
