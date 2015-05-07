@@ -21,13 +21,13 @@ GET      /about                    controllers.Application.about()
 GET      /help                     controllers.Application.help()
 GET      /systemEntry              controllers.Application.systemEntry()
 GET      /forumItem                controllers.Application.forumItem(id: Long)
-
+GET      /index                    controllers.Application.index()
 
 GET      /sendMessage              controllers.UserController.sendMessage()
 GET      /replyMessage             controllers.UserController.replyMessage()
 GET      /addConnection            controllers.UserController.addConnection(email: String)
 GET      /removeConnection         controllers.UserController.removeConnection(email: String)
-
+GET      /postJob                  controllers.UserController.postJob()
 
 GET		    /message                  controllers.MessageController.message()
 GET		    /getSentMessages          controllers.MessageController.sentMessages()
@@ -39,8 +39,9 @@ GET		     /search                   controllers.SearchController.search()
 GET        /loadProfile              controllers.SearchController.loadProfile(id: Long)
 GET		     /searchBySkill            controllers.SearchController.searchBySkill(queryName: String)
 GET		     /searchByProfession       controllers.SearchController.searchByProfession(queryName: String)
-
-
+GET		     /jobSearch                controllers.SearchController.jobSearch()
+GET		     /searchByCompany            controllers.SearchController.searchByCompany(queryName: String)
+GET		     /searchByIndustry      controllers.SearchController.searchByIndustry(queryName: String)
 
 ########## Android###################
 GET      /androidLogin             controllers.Android.androidLogin(email: String, password: String)

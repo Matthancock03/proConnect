@@ -150,6 +150,13 @@ public class DbController extends Controller{
   }
 
     private static void mergeResults(UserModel out, UserModel in){ // Merges Form submission with current UserModel
+
+        if(in.isPremium == true){
+        Logger.debug("in.isPremium = true");
+      }else{
+        Logger.debug("in.isPremium = false");
+        }
+
       out.userName = in.userName;
       out.experience = in.experience;
       out.education = in.education;
@@ -159,6 +166,8 @@ public class DbController extends Controller{
       out.currentEmployer = in.currentEmployer;
       out.location = in.location;
       out.password = in.password;
+      out.isPremium = in.isPremium;
+      out.creditCard = in.creditCard;
 
     }
 }

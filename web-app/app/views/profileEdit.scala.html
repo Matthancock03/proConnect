@@ -19,10 +19,62 @@
         <a href="@routes.DbController.profileMain()">
           <div>
           <br />
-          <button type="button" class="btn btn-success edit-button" name="editButton">Edit Profile</button>
+          <button type="button" class="btn btn-success edit-button" name="editButton">Edit Profile</button></a>
+
         </div>
-     </a>
+        @if(user.isPremium){
+          <!-- Large modal -->
+          <button type="button" class="btn btn-success edit-button" data-toggle="modal" data-target=".bs-example-modal-lg">Post Job</button>
+        }
         </div>
+
+
+          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+
+                  @form(routes.UserController.postJob()){
+
+                  	<div class="form-group" style="width: 50%; margin: 0 auto;">
+                    <div style="width: 75%; margin: 0 auto;">
+                  		<h2 class="form-signin-heading">Post Job</h2>
+                  			<input class="form-control"
+                  					placeholder="Job Title"
+                  					type="text"
+                  					name="jobTitle"
+                  					id="jobTitle"
+                  					value=""
+                  				/>
+                          <input class="form-control"
+                    					placeholder="Company"
+                    					type="text"
+                    					name="company"
+                    					id="company"
+                    					value=""
+                    				/>
+                  			<input class="form-control"
+                  					placeholder="Job Description"
+                  					type="text"
+                  					name="jobDescription"
+                  					id="jobDescription"
+                  					value=""
+                  				/>
+                          <input class="form-control"
+                    					placeholder=""
+                    					type="text"
+                    					name="email"
+                    					id="email"
+                    					value="@user.email"
+                              style="display: none; margin-bottom: 15px;"
+                    				/>
+
+                  		<button class="btn btn-primary btn-lg btn-block" type="submit" style="width: 50%; margin-bottom: 15px;">Post Job</button>
+                    </div>
+                	</div>
+                  	}
+              </div>
+            </div>
+          </div> <!-- End modal -->
 
 
 <br />

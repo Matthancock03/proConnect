@@ -35,8 +35,8 @@
            @helper.inputText(user("headline"), 'class -> "form-control", '_label -> "Personal Headline" )
            @helper.inputText(user("location"), 'class -> "form-control", '_label -> "Location" )
            @helper.inputText(user("currentEmployer"), 'class -> "form-control", '_label -> "Current Employer" )
-           @helper.inputText(user("recentSchool"), 'class -> "form-control", '_label -> "University or Institution" )
-           @helper.checkbox(user("isPremium"), '_label -> "Check here for premium users")
+           @helper.inputText(user("recentSchool"), 'class -> "form-control", '_label -> "University or Institution")
+           @helper.checkbox(user("isPremium"), '_label -> "Check here for premium users", 'value -> "true" )
            @helper.inputText(user("creditCard"), 'class -> "form-control", '_label -> "Credit Card Number")
            <p>Required for Recruiters - $20 Monthly Fee</p>
 

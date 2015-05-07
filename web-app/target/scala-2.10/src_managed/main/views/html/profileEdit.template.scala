@@ -47,79 +47,131 @@ Seq[Any](format.raw/*1.18*/("""
         <a href=""""),_display_(Seq[Any](/*19.19*/routes/*19.25*/.DbController.profileMain())),format.raw/*19.52*/("""">
           <div>
           <br />
-          <button type="button" class="btn btn-success edit-button" name="editButton">Edit Profile</button>
+          <button type="button" class="btn btn-success edit-button" name="editButton">Edit Profile</button></a>
+
         </div>
-     </a>
+        """),_display_(Seq[Any](/*25.10*/if(user.isPremium)/*25.28*/{_display_(Seq[Any](format.raw/*25.29*/("""
+          <!-- Large modal -->
+          <button type="button" class="btn btn-success edit-button" data-toggle="modal" data-target=".bs-example-modal-lg">Post Job</button>
+        """)))})),format.raw/*28.10*/("""
         </div>
+
+
+          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+
+                  """),_display_(Seq[Any](/*36.20*/form(routes.UserController.postJob())/*36.57*/{_display_(Seq[Any](format.raw/*36.58*/("""
+
+                  	<div class="form-group" style="width: 50%; margin: 0 auto;">
+                    <div style="width: 75%; margin: 0 auto;">
+                  		<h2 class="form-signin-heading">Post Job</h2>
+                  			<input class="form-control"
+                  					placeholder="Job Title"
+                  					type="text"
+                  					name="jobTitle"
+                  					id="jobTitle"
+                  					value=""
+                  				/>
+                          <input class="form-control"
+                    					placeholder="Company"
+                    					type="text"
+                    					name="company"
+                    					id="company"
+                    					value=""
+                    				/>
+                  			<input class="form-control"
+                  					placeholder="Job Description"
+                  					type="text"
+                  					name="jobDescription"
+                  					id="jobDescription"
+                  					value=""
+                  				/>
+                          <input class="form-control"
+                    					placeholder=""
+                    					type="text"
+                    					name="email"
+                    					id="email"
+                    					value=""""),_display_(Seq[Any](/*67.34*/user/*67.38*/.email)),format.raw/*67.44*/(""""
+                              style="display: none; margin-bottom: 15px;"
+                    				/>
+
+                  		<button class="btn btn-primary btn-lg btn-block" type="submit" style="width: 50%; margin-bottom: 15px;">Post Job</button>
+                    </div>
+                	</div>
+                  	""")))})),format.raw/*74.21*/("""
+              </div>
+            </div>
+          </div> <!-- End modal -->
 
 
 <br />
         <div class="col-xs-6 column">
           <div class="centerDiv" style="background-color: #FFFFFF;">
-           """),_display_(Seq[Any](/*31.13*/if(user.userName != null)/*31.38*/{_display_(Seq[Any](format.raw/*31.39*/("""
-              <h4 class="nameText">"""),_display_(Seq[Any](/*32.37*/user/*32.41*/.userName)),format.raw/*32.50*/("""</h4>
-            """)))}/*33.14*/else/*33.18*/{_display_(Seq[Any](format.raw/*33.19*/("""
+           """),_display_(Seq[Any](/*83.13*/if(user.userName != null)/*83.38*/{_display_(Seq[Any](format.raw/*83.39*/("""
+              <h4 class="nameText">"""),_display_(Seq[Any](/*84.37*/user/*84.41*/.userName)),format.raw/*84.50*/("""</h4>
+            """)))}/*85.14*/else/*85.18*/{_display_(Seq[Any](format.raw/*85.19*/("""
               <h4>Guest</h4>
-            """)))})),format.raw/*35.14*/("""
+            """)))})),format.raw/*87.14*/("""
 <br />
-            """),_display_(Seq[Any](/*37.14*/if(user.location != null)/*37.39*/{_display_(Seq[Any](format.raw/*37.40*/("""
-                <p class="headText"syle="margin-top: -10px;">"""),_display_(Seq[Any](/*38.63*/user/*38.67*/.location)),format.raw/*38.76*/("""</p>
-            """)))})),format.raw/*39.14*/("""
+            """),_display_(Seq[Any](/*89.14*/if(user.location != null)/*89.39*/{_display_(Seq[Any](format.raw/*89.40*/("""
+                <p class="headText"syle="margin-top: -10px;">"""),_display_(Seq[Any](/*90.63*/user/*90.67*/.location)),format.raw/*90.76*/("""</p>
+            """)))})),format.raw/*91.14*/("""
 
-            """),_display_(Seq[Any](/*41.14*/if(user.currentEmployer != null)/*41.46*/{_display_(Seq[Any](format.raw/*41.47*/("""
-                <p class="headText">"""),_display_(Seq[Any](/*42.38*/user/*42.42*/.currentEmployer)),format.raw/*42.58*/("""</p>
-            """)))})),format.raw/*43.14*/("""
+            """),_display_(Seq[Any](/*93.14*/if(user.currentEmployer != null)/*93.46*/{_display_(Seq[Any](format.raw/*93.47*/("""
+                <p class="headText">"""),_display_(Seq[Any](/*94.38*/user/*94.42*/.currentEmployer)),format.raw/*94.58*/("""</p>
+            """)))})),format.raw/*95.14*/("""
 
-            """),_display_(Seq[Any](/*45.14*/if(user.recentSchool != null)/*45.43*/{_display_(Seq[Any](format.raw/*45.44*/("""
-                <p class="headText">"""),_display_(Seq[Any](/*46.38*/user/*46.42*/.recentSchool)),format.raw/*46.55*/("""</p>
-            """)))})),format.raw/*47.14*/("""
+            """),_display_(Seq[Any](/*97.14*/if(user.recentSchool != null)/*97.43*/{_display_(Seq[Any](format.raw/*97.44*/("""
+                <p class="headText">"""),_display_(Seq[Any](/*98.38*/user/*98.42*/.recentSchool)),format.raw/*98.55*/("""</p>
+            """)))})),format.raw/*99.14*/("""
 
-            """),_display_(Seq[Any](/*49.14*/if(user.headline != null)/*49.39*/{_display_(Seq[Any](format.raw/*49.40*/("""
-              <p class="headText">"""),_display_(Seq[Any](/*50.36*/user/*50.40*/.headline)),format.raw/*50.49*/("""</p>
-            """)))})),format.raw/*51.14*/("""
+            """),_display_(Seq[Any](/*101.14*/if(user.headline != null)/*101.39*/{_display_(Seq[Any](format.raw/*101.40*/("""
+              <p class="headText">"""),_display_(Seq[Any](/*102.36*/user/*102.40*/.headline)),format.raw/*102.49*/("""</p>
+            """)))})),format.raw/*103.14*/("""
           </div>
           <br /><br /><br />
     <div class="centerDiv" style="background-color: #FFFFFF;">
         <h2>
           About Me:
         </h2>
-        """),_display_(Seq[Any](/*58.10*/if(user.aboutMe != null)/*58.34*/{_display_(Seq[Any](format.raw/*58.35*/("""
+        """),_display_(Seq[Any](/*110.10*/if(user.aboutMe != null)/*110.34*/{_display_(Seq[Any](format.raw/*110.35*/("""
           <p>
-            """),_display_(Seq[Any](/*60.14*/user/*60.18*/.aboutMe)),format.raw/*60.26*/("""
+            """),_display_(Seq[Any](/*112.14*/user/*112.18*/.aboutMe)),format.raw/*112.26*/("""
           </p>
-        """)))})),format.raw/*62.10*/("""
+        """)))})),format.raw/*114.10*/("""
 <br />
       <h2>
         Experience:
       </h2>
-      """),_display_(Seq[Any](/*67.8*/if(user.experience != null)/*67.35*/{_display_(Seq[Any](format.raw/*67.36*/("""
+      """),_display_(Seq[Any](/*119.8*/if(user.experience != null)/*119.35*/{_display_(Seq[Any](format.raw/*119.36*/("""
       <p>
-        """),_display_(Seq[Any](/*69.10*/user/*69.14*/.experience)),format.raw/*69.25*/("""
+        """),_display_(Seq[Any](/*121.10*/user/*121.14*/.experience)),format.raw/*121.25*/("""
       </p>
-      """)))})),format.raw/*71.8*/("""
+      """)))})),format.raw/*123.8*/("""
 <br />
       <h2>
         Projects or Skills Highlight:
       </h2>
-      """),_display_(Seq[Any](/*76.8*/if(user.experience != null)/*76.35*/{_display_(Seq[Any](format.raw/*76.36*/("""
+      """),_display_(Seq[Any](/*128.8*/if(user.experience != null)/*128.35*/{_display_(Seq[Any](format.raw/*128.36*/("""
       <p>
-        """),_display_(Seq[Any](/*78.10*/user/*78.14*/.projects)),format.raw/*78.23*/("""
+        """),_display_(Seq[Any](/*130.10*/user/*130.14*/.projects)),format.raw/*130.23*/("""
       </p>
-      """)))})),format.raw/*80.8*/("""
+      """)))})),format.raw/*132.8*/("""
 <br />
       <h2>
         Education:
       </h2>
-      """),_display_(Seq[Any](/*85.8*/if(user.experience != null)/*85.35*/{_display_(Seq[Any](format.raw/*85.36*/("""
+      """),_display_(Seq[Any](/*137.8*/if(user.experience != null)/*137.35*/{_display_(Seq[Any](format.raw/*137.36*/("""
       <p>
-        """),_display_(Seq[Any](/*87.10*/user/*87.14*/.education)),format.raw/*87.24*/("""
+        """),_display_(Seq[Any](/*139.10*/user/*139.14*/.education)),format.raw/*139.24*/("""
       </p>
-      """)))})),format.raw/*89.8*/("""
+      """)))})),format.raw/*141.8*/("""
     </div>
     </div>
 </div>
 </div>
-""")))})),format.raw/*94.2*/("""
+""")))})),format.raw/*146.2*/("""
 """))}
     }
     
@@ -132,11 +184,11 @@ Seq[Any](format.raw/*1.18*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed May 06 22:00:22 PDT 2015
+                    DATE: Thu May 07 00:26:11 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/profileEdit.scala.html
-                    HASH: 0e70d705371d2ba56532492e1d08194108aa1e49
-                    MATRIX: 783->1|909->17|937->36|974->39|999->56|1037->57|1073->59|1086->65|1114->72|1180->103|1194->109|1252->146|1394->253|1434->284|1473->285|1566->342|1581->348|1643->387|1673->399|1686->403|1725->404|1832->475|1847->481|1909->520|1955->534|2010->553|2025->559|2074->586|2422->898|2456->923|2495->924|2568->961|2581->965|2612->974|2650->993|2663->997|2702->998|2777->1041|2834->1062|2868->1087|2907->1088|3006->1151|3019->1155|3050->1164|3100->1182|3151->1197|3192->1229|3231->1230|3305->1268|3318->1272|3356->1288|3406->1306|3457->1321|3495->1350|3534->1351|3608->1389|3621->1393|3656->1406|3706->1424|3757->1439|3791->1464|3830->1465|3902->1501|3915->1505|3946->1514|3996->1532|4198->1698|4231->1722|4270->1723|4334->1751|4347->1755|4377->1763|4434->1788|4527->1846|4563->1873|4602->1874|4658->1894|4671->1898|4704->1909|4754->1928|4865->2004|4901->2031|4940->2032|4996->2052|5009->2056|5040->2065|5090->2084|5182->2141|5218->2168|5257->2169|5313->2189|5326->2193|5358->2203|5408->2222|5477->2260
-                    LINES: 26->1|30->1|32->4|34->6|34->6|34->6|35->7|35->7|35->7|36->8|36->8|36->8|42->14|42->14|42->14|43->15|43->15|43->15|44->16|44->16|44->16|45->17|45->17|45->17|46->18|47->19|47->19|47->19|59->31|59->31|59->31|60->32|60->32|60->32|61->33|61->33|61->33|63->35|65->37|65->37|65->37|66->38|66->38|66->38|67->39|69->41|69->41|69->41|70->42|70->42|70->42|71->43|73->45|73->45|73->45|74->46|74->46|74->46|75->47|77->49|77->49|77->49|78->50|78->50|78->50|79->51|86->58|86->58|86->58|88->60|88->60|88->60|90->62|95->67|95->67|95->67|97->69|97->69|97->69|99->71|104->76|104->76|104->76|106->78|106->78|106->78|108->80|113->85|113->85|113->85|115->87|115->87|115->87|117->89|122->94
+                    HASH: 61771a8b1cedf985b4cbc5df155e00fa1903ff5d
+                    MATRIX: 783->1|909->17|937->36|974->39|999->56|1037->57|1073->59|1086->65|1114->72|1180->103|1194->109|1252->146|1394->253|1434->284|1473->285|1566->342|1581->348|1643->387|1673->399|1686->403|1725->404|1832->475|1847->481|1909->520|1955->534|2010->553|2025->559|2074->586|2283->759|2310->777|2349->778|2563->960|2865->1226|2911->1263|2950->1264|4257->2535|4270->2539|4298->2545|4647->2862|4888->3067|4922->3092|4961->3093|5034->3130|5047->3134|5078->3143|5116->3162|5129->3166|5168->3167|5243->3210|5300->3231|5334->3256|5373->3257|5472->3320|5485->3324|5516->3333|5566->3351|5617->3366|5658->3398|5697->3399|5771->3437|5784->3441|5822->3457|5872->3475|5923->3490|5961->3519|6000->3520|6074->3558|6087->3562|6122->3575|6172->3593|6224->3608|6259->3633|6299->3634|6372->3670|6386->3674|6418->3683|6469->3701|6672->3867|6706->3891|6746->3892|6811->3920|6825->3924|6856->3932|6914->3957|7008->4015|7045->4042|7085->4043|7142->4063|7156->4067|7190->4078|7241->4097|7353->4173|7390->4200|7430->4201|7487->4221|7501->4225|7533->4234|7584->4253|7677->4310|7714->4337|7754->4338|7811->4358|7825->4362|7858->4372|7909->4391|7979->4429
+                    LINES: 26->1|30->1|32->4|34->6|34->6|34->6|35->7|35->7|35->7|36->8|36->8|36->8|42->14|42->14|42->14|43->15|43->15|43->15|44->16|44->16|44->16|45->17|45->17|45->17|46->18|47->19|47->19|47->19|53->25|53->25|53->25|56->28|64->36|64->36|64->36|95->67|95->67|95->67|102->74|111->83|111->83|111->83|112->84|112->84|112->84|113->85|113->85|113->85|115->87|117->89|117->89|117->89|118->90|118->90|118->90|119->91|121->93|121->93|121->93|122->94|122->94|122->94|123->95|125->97|125->97|125->97|126->98|126->98|126->98|127->99|129->101|129->101|129->101|130->102|130->102|130->102|131->103|138->110|138->110|138->110|140->112|140->112|140->112|142->114|147->119|147->119|147->119|149->121|149->121|149->121|151->123|156->128|156->128|156->128|158->130|158->130|158->130|160->132|165->137|165->137|165->137|167->139|167->139|167->139|169->141|174->146
                     -- GENERATED --
                 */
             

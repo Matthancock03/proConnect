@@ -44,15 +44,18 @@ Seq[Any](format.raw/*1.27*/("""
 			</div>
 		</div>
 	</div>
-	
+
 		<div class="col-xs-3 column">
 
-			<div class="btn-group btn-group-vertical btn-group-md">
+			<div class="btn-group btn-group-md">
 			<br /><br /><br />
 			 <br />
 			<div>
 				  <a href=""""),_display_(Seq[Any](/*26.17*/routes/*26.23*/.MessageController.message())),format.raw/*26.51*/(""""><button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-left"></em>Inbox</button></a>
-					<a href=""""),_display_(Seq[Any](/*27.16*/routes/*27.22*/.MessageController.sentMessages())),format.raw/*27.55*/(""""><button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-left"></em>Sent</button></a>
+				<div>
+					<br />
+					<a href=""""),_display_(Seq[Any](/*29.16*/routes/*29.22*/.MessageController.sentMessages())),format.raw/*29.55*/(""""><button class="btn btn-default" type="button"><em class="glyphicon glyphicon-align-left"></em>Sent</button></a>
+			  </div>
 			</div>
 			</div>
 		</div>
@@ -83,39 +86,39 @@ Seq[Any](format.raw/*1.27*/("""
 				</thead>
 				<tbody>
 
-					"""),_display_(Seq[Any](/*58.7*/for((message, index) <- messages.zipWithIndex) yield /*58.53*/{_display_(Seq[Any](format.raw/*58.54*/("""
+					"""),_display_(Seq[Any](/*61.7*/for((message, index) <- messages.zipWithIndex) yield /*61.53*/{_display_(Seq[Any](format.raw/*61.54*/("""
 					<tr>
 						<td>
-							"""),_display_(Seq[Any](/*61.9*/{index + 1})),format.raw/*61.20*/("""
+							"""),_display_(Seq[Any](/*64.9*/{index + 1})),format.raw/*64.20*/("""
 						</td>
 						<td>
-							<a data-toggle="collapse" data-target="#"""),_display_(Seq[Any](/*64.49*/index)),format.raw/*64.54*/("""">"""),_display_(Seq[Any](/*64.57*/message/*64.64*/.messageTitle)),format.raw/*64.77*/("""</a>
+							<a data-toggle="collapse" data-target="#"""),_display_(Seq[Any](/*67.49*/index)),format.raw/*67.54*/("""">"""),_display_(Seq[Any](/*67.57*/message/*67.64*/.messageTitle)),format.raw/*67.77*/("""</a>
 						</td>
 						<td>
-							"""),_display_(Seq[Any](/*67.9*/message/*67.16*/.senderName)),format.raw/*67.27*/("""
+							"""),_display_(Seq[Any](/*70.9*/message/*70.16*/.senderName)),format.raw/*70.27*/("""
 						</td>
 						<td>
-							"""),_display_(Seq[Any](/*70.9*/message/*70.16*/.tstamp)),format.raw/*70.23*/("""
+							"""),_display_(Seq[Any](/*73.9*/message/*73.16*/.tstamp)),format.raw/*73.23*/("""
 						</td>
 						<td>
-							"""),_display_(Seq[Any](/*73.9*/if(message.isRead)/*73.27*/{_display_(Seq[Any](format.raw/*73.28*/("""
+							"""),_display_(Seq[Any](/*76.9*/if(message.isRead)/*76.27*/{_display_(Seq[Any](format.raw/*76.28*/("""
 								Read
-							""")))}/*75.9*/else/*75.13*/{_display_(Seq[Any](format.raw/*75.14*/("""
+							""")))}/*78.9*/else/*78.13*/{_display_(Seq[Any](format.raw/*78.14*/("""
 								Unread
-							""")))})),format.raw/*77.9*/("""
+							""")))})),format.raw/*80.9*/("""
 						</td>
 					</tr>
 
-					<tr id=""""),_display_(Seq[Any](/*81.15*/index)),format.raw/*81.20*/("""" class="collapse">
+					<tr id=""""),_display_(Seq[Any](/*84.15*/index)),format.raw/*84.20*/("""" class="collapse">
 						<td>#</td>
-						<td colspan="4">"""),_display_(Seq[Any](/*83.24*/message/*83.31*/.messageBody)),format.raw/*83.43*/("""</td>
+						<td colspan="4">"""),_display_(Seq[Any](/*86.24*/message/*86.31*/.messageBody)),format.raw/*86.43*/("""</td>
 						<td>
 							<a href="#" ><button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button></a>
-							<a href=""""),_display_(Seq[Any](/*86.18*/routes/*86.24*/.MessageController.deleteMessage(message.messageId))),format.raw/*86.75*/("""" ><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+							<a href=""""),_display_(Seq[Any](/*89.18*/routes/*89.24*/.MessageController.deleteMessage(message.messageId))),format.raw/*89.75*/("""" ><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
 						</td>
 					</tr>
 
-				""")))})),format.raw/*90.6*/("""
+				""")))})),format.raw/*93.6*/("""
 				</tbody>
 			</table>
 
@@ -125,7 +128,7 @@ Seq[Any](format.raw/*1.27*/("""
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
 
-          """),_display_(Seq[Any](/*100.12*/form(routes.UserController.replyMessage())/*100.54*/{_display_(Seq[Any](format.raw/*100.55*/("""
+          """),_display_(Seq[Any](/*103.12*/form(routes.UserController.replyMessage())/*103.54*/{_display_(Seq[Any](format.raw/*103.55*/("""
 
           	<div class="form-group" style="width: 50%; margin: 0 auto;">
             <div style="width: 75%; margin: 0 auto;">
@@ -155,16 +158,16 @@ Seq[Any](format.raw/*1.27*/("""
           		<button class="btn btn-primary btn-lg btn-block" type="submit" style="width: 50%;">Send Message</button>
             </div>
         	</div>
-          	""")))})),format.raw/*130.13*/("""
+          	""")))})),format.raw/*133.13*/("""
       </div>
     </div>
   </div> <!-- End modal -->
 
 		</div>
 	</div>
-	
+
 </div>
-""")))})),format.raw/*139.2*/("""
+""")))})),format.raw/*142.2*/("""
 """))}
     }
     
@@ -177,11 +180,11 @@ Seq[Any](format.raw/*1.27*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed May 06 22:00:22 PDT 2015
+                    DATE: Thu May 07 00:26:11 PDT 2015
                     SOURCE: /home/misanthropic/repos/schoolWork/proConnect/web-app/app/views/message.scala.html
-                    HASH: b7233d976b242d94128035746f90e7f652e8c6d6
-                    MATRIX: 783->1|918->26|946->45|982->47|1007->64|1045->65|1112->97|1126->103|1186->142|1225->147|1238->153|1266->160|1629->487|1644->493|1694->521|1860->651|1875->657|1930->690|2483->1208|2545->1254|2584->1255|2649->1285|2682->1296|2790->1368|2817->1373|2856->1376|2872->1383|2907->1396|2978->1432|2994->1439|3027->1450|3094->1482|3110->1489|3139->1496|3206->1528|3233->1546|3272->1547|3312->1569|3325->1573|3364->1574|3419->1598|3494->1637|3521->1642|3617->1702|3633->1709|3667->1721|3946->1964|3961->1970|4034->2021|4176->2132|4481->2400|4533->2442|4573->2443|5634->3471|5747->3552
-                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|36->8|36->8|36->8|54->26|54->26|54->26|55->27|55->27|55->27|86->58|86->58|86->58|89->61|89->61|92->64|92->64|92->64|92->64|92->64|95->67|95->67|95->67|98->70|98->70|98->70|101->73|101->73|101->73|103->75|103->75|103->75|105->77|109->81|109->81|111->83|111->83|111->83|114->86|114->86|114->86|118->90|128->100|128->100|128->100|158->130|167->139
+                    HASH: 7e02ee98c0aa4e78b8f59bc17290605fd63444fa
+                    MATRIX: 783->1|918->26|946->45|982->47|1007->64|1045->65|1112->97|1126->103|1186->142|1225->147|1238->153|1266->160|1609->467|1624->473|1674->501|1862->653|1877->659|1932->692|2497->1222|2559->1268|2598->1269|2663->1299|2696->1310|2804->1382|2831->1387|2870->1390|2886->1397|2921->1410|2992->1446|3008->1453|3041->1464|3108->1496|3124->1503|3153->1510|3220->1542|3247->1560|3286->1561|3326->1583|3339->1587|3378->1588|3433->1612|3508->1651|3535->1656|3631->1716|3647->1723|3681->1735|3960->1978|3975->1984|4048->2035|4190->2146|4495->2414|4547->2456|4587->2457|5648->3485|5760->3565
+                    LINES: 26->1|30->1|32->4|33->5|33->5|33->5|34->6|34->6|34->6|36->8|36->8|36->8|54->26|54->26|54->26|57->29|57->29|57->29|89->61|89->61|89->61|92->64|92->64|95->67|95->67|95->67|95->67|95->67|98->70|98->70|98->70|101->73|101->73|101->73|104->76|104->76|104->76|106->78|106->78|106->78|108->80|112->84|112->84|114->86|114->86|114->86|117->89|117->89|117->89|121->93|131->103|131->103|131->103|161->133|170->142
                     -- GENERATED --
                 */
             

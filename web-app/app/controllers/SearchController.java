@@ -41,6 +41,28 @@ public static Result search(){
     return ok(search.render(users));
   }
 
+  public static Result jobSearch(){
+
+
+      DynamicForm requestData = Form.form().bindFromRequest();
+      String company = requestData.get("company");
+      String industry = requestData.get("industry");
+      String queryName = requestData.get("searchParameter");
+
+      if(company != null && company.equals("true")){
+        return searchByCompany(queryName);
+      }
+
+
+      if(industry != null && industry.equals("true")){
+        return searchByIndustry(queryName);
+      }
+
+      Logger.debug("Search Bind Results: " + queryName);
+      List<UserModel> users = UserModel.findByName(queryName);
+      return ok(search.render(users));
+    }
+
   public static Result searchByProfession(String queryName){
     List<UserModel> users = UserModel.findByName(queryName);
 
@@ -51,6 +73,18 @@ public static Result search(){
     List<UserModel> users = UserModel.findByName(queryName);
 
     return ok("Search By Skill");
+  }
+
+  public static Result searchByCompany(String queryName){
+    List<UserModel> users = UserModel.findByName(queryName);
+
+    return ok("Search By Company");
+  }
+
+  public static Result searchByIndustry(String queryName){
+    List<UserModel> users = UserModel.findByName(queryName);
+
+    return ok("Search By Industry");
   }
 
   @SecureSocial.UserAwareAction

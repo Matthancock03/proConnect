@@ -40,15 +40,14 @@
       			   <h3>Job Search 		</h3><br />
 
                 <font size="2">
-                <form action="" role="form">
+                  <form action="@routes.SearchController.jobSearch()" role="search">
                    <div class="form-group">
-                    <input type="text" class="form-control">
+                     <input type="text" class="form-control" name="searchParameter">
                     <br />
-                    <input type="checkbox" name="vehicle" value="Bike">Jobs<br />
-                    <input type="checkbox" name="vehicle" value="Car">Companies <br />
-                    <input type="checkbox" name="vehicle" value="Bike">Industry<br />
+                    <input type="checkbox" name="company" value="true">Company<br />
+                    <input type="checkbox" name="industry" value="true">Industry<br />
                     </font>
-                    <a href="#" class="btn" type="button" style="background-color:lightgreen">Search</a>
+                    <button class="btn" type="submit" style="background-color:lightgreen">Search</button>
                     </div>
                 </form>
               </div>

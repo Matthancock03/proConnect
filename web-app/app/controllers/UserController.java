@@ -175,6 +175,30 @@ public static Result premiumSearchUser(String name){
   return ok("User Found");
 }
 
+@SecureSocial.UserAwareAction
+public static Result postJob(){
+  DynamicForm requestData = Form.form().bindFromRequest();
+
+  UserModel user;
+  try{
+      Identity userID = (Identity) ctx().args.get(SecureSocial.USER_KEY); //Gets user properties from Secure Social
+      user = UserModel.loadUserModel(userID);
+    }catch(Exception e){
+      return ok(splash.render());
+  }
+
+  Job job = new Job();
+
+  job.companyName = requestData.get("company");
+  job.jobDescription = requestData.get("jobDescription");
+  job.jobTitle = requestData.get("jobTitle");
+  job.posterId = user.id;
+  job.save();
+
+
+  return ok(profileEdit.render(user));
+}
+
 
 public static List<UserModel> getConnections(String email){
   Logger.debug("Get Connections email: " + email);
