@@ -20,4 +20,3 @@ Site is live at http://proconnect.herokuapp.com.
 <h4>Inbox</h4>
 <img src="http://i.imgur.com/ydJaNA7.png" height="auto" width="300" title="source: imgur.com" />
 
-http://i.imgur.com/IaPAyCe.png
